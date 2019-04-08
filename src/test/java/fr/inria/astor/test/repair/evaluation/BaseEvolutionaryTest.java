@@ -5,6 +5,7 @@ import static org.junit.Assert.assertTrue;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.List;
 
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.Level;
@@ -15,7 +16,10 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 
-import fr.inria.main.AbstractMain;
+import fr.inria.astor.core.entities.OperatorInstance;
+import fr.inria.astor.core.entities.ProgramVariant;
+import fr.inria.astor.core.manipulation.MutationSupporter;
+import fr.inria.astor.core.setup.ConfigurationProperties;
 import spoon.support.StandardEnvironment;
 /**
  * 
@@ -26,7 +30,6 @@ public abstract class BaseEvolutionaryTest  {
 
 	public static Logger log = Logger.getLogger(Thread.currentThread().getName());
 	
-	protected AbstractMain main;
 	
 	@After
 	public void tearDown() throws Exception {
@@ -35,14 +38,12 @@ public abstract class BaseEvolutionaryTest  {
 	@Before
 	public void setUp() throws Exception {
 
-	
-		main = createMain();
+		MutationSupporter.cleanFactory();
 		
 		Logger.getLogger(StandardEnvironment.class).setLevel(Level.ERROR);
 		
 	}
 
-	public abstract AbstractMain createMain();
 	
 
 	public void createFileLogger(String file) throws IOException {
@@ -111,22 +112,25 @@ public abstract class BaseEvolutionaryTest  {
 		log.info("Stored variants: "+Arrays.toString(out.listFiles()));
 		int cantSol = 0;
 		for (File sol : out.listFiles()) {
-			cantSol += (sol.getName().startsWith("variant-"))?1:0;
+			cantSol += (sol.getName().startsWith(ConfigurationProperties.getProperty("pvariantfoldername") ))?1:0;
 		}
 		return cantSol;
 	}
 	
-	public void generic(
-			String location,
-			String folder,
-			String regression,
-			String failing, 
-			String dependenciespath,
-			String packageToInstrument, 
-			double thfl) throws Exception{};
 	
-	protected AbstractMain getMain(){
-		return this.main;
+	protected static boolean comparePatch(ProgramVariant variant,String patch){
+		boolean found = false;
+		
+		for(List<OperatorInstance> modif:  variant.getOperations().values()){
+			for (OperatorInstance modificationInstance : modif) {
+				if(patch.equals(modificationInstance.getModified())){
+					found = true;
+				}
+			}
+		}
+		
+		return found;
+		
 	}
 	
 	

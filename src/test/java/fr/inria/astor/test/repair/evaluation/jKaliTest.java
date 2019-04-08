@@ -10,7 +10,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import fr.inria.astor.core.setup.ConfigurationProperties;
-import fr.inria.main.AbstractMain;
 import fr.inria.main.evolution.AstorMain;
 /**
  * Execution of multiples kali scenarios.
@@ -72,19 +71,11 @@ public class jKaliTest extends BaseEvolutionaryTest{
 		
 	}
 	
-	
-	@Override
-	public AbstractMain createMain() {
-			return null;
-	}
-	@Override
-	public void generic(String location, String folder, String regression, String failing, String dependenciespath,
-			String packageToInstrument, double thfl) throws Exception {
-		
-	}
+
 	
 	@SuppressWarnings("static-access")
 	@Test
+	@Ignore //We ignore this test, Gzoltar works different with Java 8 
 	public void testMath2ExampleRemoveModeOneSolution() throws Exception {
 		AstorMain main1 = new AstorMain();
 
@@ -104,7 +95,7 @@ public class jKaliTest extends BaseEvolutionaryTest{
 
 	@SuppressWarnings("static-access")
 	@Test
-	@Ignore	
+	@Ignore
 	public void testMath2ExampleRemoveModeManySolutions() throws Exception {
 		AstorMain main1 = new AstorMain();
 

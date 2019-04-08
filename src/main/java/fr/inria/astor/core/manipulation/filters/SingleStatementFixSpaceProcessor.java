@@ -1,12 +1,9 @@
 package fr.inria.astor.core.manipulation.filters;
 
 import spoon.reflect.code.CtBlock;
-import spoon.reflect.code.CtCase;
 import spoon.reflect.code.CtCatch;
-import spoon.reflect.code.CtIf;
 import spoon.reflect.code.CtStatement;
 import spoon.reflect.code.CtTry;
-import spoon.reflect.code.CtWhile;
 import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtMethod;
 
@@ -31,8 +28,8 @@ public class SingleStatementFixSpaceProcessor  extends AbstractFixSpaceProcessor
 		if(!(element instanceof CtBlock  || element instanceof CtClass 
 				|| element instanceof CtMethod || element instanceof CtTry || element instanceof CtCatch)
 				&& //We check parents
-				((element.getParent() instanceof CtBlock) || (element.getParent() instanceof CtCase)
-						|| (element.getParent() instanceof CtIf) || (element.getParent() instanceof CtWhile))){
+				(element.getParent() instanceof CtBlock)
+				&& !(element.toString().startsWith("super"))){
 			add(element);
 		}
 	}

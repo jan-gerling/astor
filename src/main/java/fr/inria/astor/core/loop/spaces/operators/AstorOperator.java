@@ -5,11 +5,12 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-import fr.inria.astor.core.entities.ModificationInstance;
+import fr.inria.astor.core.entities.OperatorInstance;
 import fr.inria.astor.core.entities.ModificationPoint;
 import fr.inria.astor.core.entities.ProgramVariant;
 import fr.inria.astor.core.entities.SuspiciousModificationPoint;
 import fr.inria.astor.core.loop.population.ProgramVariantFactory;
+import spoon.reflect.code.CtBlock;
 import spoon.reflect.code.CtStatement;
 
 /**
@@ -29,7 +30,7 @@ public abstract class AstorOperator {
 	 * @param p program variant to modified
 	 * @return true if the changes were applied successfully
 	 */
-	public abstract boolean applyChangesInModel(ModificationInstance opInstance, ProgramVariant p);
+	public abstract boolean applyChangesInModel(OperatorInstance opInstance, ProgramVariant p);
 
 	/**
 	 * Method that undo the changes applies by this operator.
@@ -37,7 +38,7 @@ public abstract class AstorOperator {
 	 * @param p program variant to modified
 	 * @return true if the changes were applied successfully
 	 */
-	public abstract boolean undoChangesInModel(ModificationInstance opInstance, ProgramVariant p);
+	public abstract boolean undoChangesInModel(OperatorInstance opInstance, ProgramVariant p);
 
 	/**
 	 * Some operators add or remove modification points from a program variant. for instance, if a oprator removes statement S at moment T, 
@@ -47,27 +48,28 @@ public abstract class AstorOperator {
 	 * @param p
 	 * @return
 	 */
-	public abstract boolean updateProgramVariant(ModificationInstance opInstance, ProgramVariant p);
+	public abstract boolean updateProgramVariant(OperatorInstance opInstance, ProgramVariant p);
 	
 	/**
 	 * Create a modification instance from this operator
 	 * @param modificationPoint
 	 * @return
 	 */
-	public List<ModificationInstance> createModificationInstance(SuspiciousModificationPoint modificationPoint){
+	public List<OperatorInstance> createOperatorInstance(SuspiciousModificationPoint modificationPoint){
 		
-		List<ModificationInstance> instances = new ArrayList<>();
-		ModificationInstance modinst =  new ModificationInstance(modificationPoint, this,modificationPoint.getCodeElement(), null);
-		modinst.defineParentInformation(modificationPoint);
+		List<OperatorInstance> instances = new ArrayList<>();
+		OperatorInstance modinst =  new OperatorInstance(modificationPoint, this,modificationPoint.getCodeElement(), null);
 		instances.add(modinst);
 		return instances;
 	}
 	/**
+	 * Indicates whether the operator can be applied in the ModificationPoint passed as argument.
+	 * 
 	 * By default, we consider that an operator works at the level of CtStatement.
-	 * @param point
+	 * @param point location to modify
 	 * @return
 	 */
-	public  boolean applyToPoint(ModificationPoint point){
+	public  boolean canBeAppliedToPoint(ModificationPoint point){
 		return (point.getCodeElement() instanceof CtStatement);
 	};
 	
@@ -93,7 +95,7 @@ public abstract class AstorOperator {
 	 * @param operation
 	 * @return
 	 */
-	protected boolean addPoint(ProgramVariant variant, ModificationInstance operation) {
+	protected boolean addPoint(ProgramVariant variant, OperatorInstance operation) {
 		List<ModificationPoint> modifPoints = variant.getModificationPoints();
 
 		ModificationPoint existingPoints = operation.getModificationPoint();
@@ -117,7 +119,7 @@ public abstract class AstorOperator {
 	 * @param operation
 	 * @return
 	 */
-	protected boolean removePoint(ProgramVariant variant, ModificationInstance operation) {
+	protected boolean removePoint(ProgramVariant variant, OperatorInstance operation) {
 		List<ModificationPoint> modifPoints = variant.getModificationPoints();
 		boolean removed = modifPoints.remove(operation.getModificationPoint());
 		return removed;

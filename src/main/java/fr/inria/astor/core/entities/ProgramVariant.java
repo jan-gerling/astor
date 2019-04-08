@@ -4,11 +4,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
 import fr.inria.astor.core.manipulation.bytecode.entities.CompilationResult;
+import fr.inria.astor.core.setup.ConfigurationProperties;
 import spoon.reflect.declaration.CtClass;
+import spoon.reflect.declaration.CtElement;
 import spoon.reflect.declaration.CtType;
 
 /**
@@ -42,9 +45,9 @@ public class ProgramVariant {
 	protected Map<String, CtClass> loadClasses = new HashMap<String, CtClass>();
 	
 	/**
-	 * operations applied to gen, organizated by generations
+	 * operations applied to a Modification Point, organizated by generations
 	 */
-	protected Map<Integer,List<ModificationInstance>> operations  = null;
+	protected Map<Integer,List<OperatorInstance>> operations  = null;
 	/**
 	 * Fitness value of the variant	
 	 */
@@ -83,9 +86,12 @@ public class ProgramVariant {
 	 */
 	protected List<CtClass> modifiedClasses = new ArrayList<CtClass>();
 
+	
+	VariantValidationResult validationResult = null;
+	
 	public ProgramVariant(){
 		modificationPoints = new ArrayList<ModificationPoint>();
-		operations = new HashMap<Integer,List<ModificationInstance>>();
+		operations = new HashMap<Integer,List<OperatorInstance>>();
 	}
 
 	public ProgramVariant(int id) {
@@ -120,19 +126,19 @@ public class ProgramVariant {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public void putModificationInstance(int generation, ModificationInstance op){
-		List<ModificationInstance> modificationPoints = operations.get(generation);
+	public void putModificationInstance(int generation, OperatorInstance op){
+		List<OperatorInstance> modificationPoints = operations.get(generation);
 		if(modificationPoints == null){
-			modificationPoints = new ArrayList<ModificationInstance>();
+			modificationPoints = new ArrayList<OperatorInstance>();
 			operations.put(generation, modificationPoints);
 		}
 		modificationPoints.add(op);
 		
 	}
-	public Map<Integer, List<ModificationInstance>> getOperations() {
+	public Map<Integer, List<OperatorInstance>> getOperations() {
 		return operations;
 	}
-	public List<ModificationInstance> getOperations(int generation) {
+	public List<OperatorInstance> getOperations(int generation) {
 		return  operations.get(generation);
 	}
 
@@ -168,7 +174,7 @@ public class ProgramVariant {
 	}
 	
 	public String currentMutatorIdentifier() {
-		return (id >= 0)? ( "variant-" + id) : DEFAULT_ORIGINAL_VARIANT;
+		return (id >= 0)? ( ConfigurationProperties.getProperty("pvariantfoldername") + id) : DEFAULT_ORIGINAL_VARIANT;
 	}
 	/**
 	 * Return the classes affected by the variant. Note that those classes are shared between all variant, 
@@ -217,5 +223,38 @@ public class ProgramVariant {
 
 	public void setModifiedClasses(List<CtClass> resultedClasses) {
 		this.modifiedClasses = resultedClasses;
+	}
+
+	public VariantValidationResult getValidationResult() {
+		return validationResult;
+	}
+
+	public void setValidationResult(VariantValidationResult validationResult) {
+		this.validationResult = validationResult;
+	}
+	
+	public ModificationPoint getModificationPoint(CtElement element){
+		for (Iterator iterator = modificationPoints.iterator(); iterator.hasNext();) {
+			ModificationPoint modificationPoint = (ModificationPoint) iterator.next();
+			if(element == modificationPoint.getCodeElement())
+				return modificationPoint;
+		}
+		return null;
+	}
+	
+	public void addModificationPoints(List<? extends ModificationPoint> points){
+		for (ModificationPoint modificationPoint : points) {
+			this.modificationPoints.add(modificationPoint);
+			modificationPoint.setProgramVariant(this);
+		}
+	}
+	public List<CtType<?>> computeAffectedClassesByOperators() {
+		List<CtType<?>> typesToProcess = new ArrayList<>();
+		for (List<OperatorInstance> modifofGeneration : this.getOperations().values()) {
+			for (OperatorInstance modificationInstance : modifofGeneration) {
+				typesToProcess.add(modificationInstance.getModificationPoint().getCtClass());
+			}
+		}
+		return typesToProcess;
 	}
 }

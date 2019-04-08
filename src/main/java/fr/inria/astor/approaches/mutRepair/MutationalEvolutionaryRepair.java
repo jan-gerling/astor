@@ -7,17 +7,17 @@ import java.util.Map;
 
 import com.martiansoftware.jsap.JSAPException;
 
-import fr.inria.astor.core.entities.ModificationPoint;
-import fr.inria.astor.core.entities.MutantCtElement;
-import fr.inria.astor.core.entities.WeightCtElement;
-import fr.inria.astor.core.loop.spaces.operators.AstorOperator;
 import fr.inria.astor.approaches.jgenprog.JGenProg;
 import fr.inria.astor.approaches.jgenprog.operators.ReplaceOp;
 import fr.inria.astor.approaches.mutRepair.operators.ctmutators.LogicalBinaryOperatorMutator;
 import fr.inria.astor.approaches.mutRepair.operators.ctmutators.MutatorComposite;
 import fr.inria.astor.approaches.mutRepair.operators.ctmutators.NegationUnaryOperatorConditionMutator;
 import fr.inria.astor.approaches.mutRepair.operators.ctmutators.RelationalBinaryOperatorMutator;
-import fr.inria.astor.core.entities.ModificationInstance;
+import fr.inria.astor.core.entities.OperatorInstance;
+import fr.inria.astor.core.entities.ModificationPoint;
+import fr.inria.astor.core.entities.MutantCtElement;
+import fr.inria.astor.core.entities.WeightCtElement;
+import fr.inria.astor.core.loop.spaces.operators.AstorOperator;
 import fr.inria.astor.core.manipulation.MutationSupporter;
 import fr.inria.astor.core.setup.ProjectRepairFacade;
 import fr.inria.astor.core.setup.RandomManager;
@@ -62,7 +62,7 @@ public class MutationalEvolutionaryRepair extends JGenProg {
 	 * @throws IllegalAccessException
 	 */
 	 @Override
-	protected ModificationInstance createModificationForPoint(ModificationPoint gen) throws IllegalAccessException {
+	protected OperatorInstance createOperatorInstanceForPoint(ModificationPoint gen) throws IllegalAccessException {
 		ModificationPoint genSusp =  gen;
 							
 		AstorOperator operationType = new ReplaceOp();
@@ -81,7 +81,7 @@ public class MutationalEvolutionaryRepair extends JGenProg {
 			return null;
 		}
 		
-		ModificationInstance operation = new ModificationInstance();
+		OperatorInstance operation = new OperatorInstance();
 		operation.setOriginal(targetIF.getCondition());
 		operation.setOperationApplied(operationType);
 		operation.setModificationPoint(genSusp);
@@ -160,12 +160,12 @@ public class MutationalEvolutionaryRepair extends JGenProg {
 	  */
 	public List<MutantCtElement> getMutants(CtIf targetIF) {
 		List<MutantCtElement> mutations = null;
-		if(this.mutantsCache.containsKey(targetIF.getCondition().getSignature())){
-			 mutations = clone(this.mutantsCache.get(targetIF.getCondition().getSignature()));
+		if(this.mutantsCache.containsKey(targetIF.getCondition().toString())){
+			 mutations = clone(this.mutantsCache.get(targetIF.getCondition().toString()));
 		}
 		else{
 			mutations = this.mutatorBinary.execute(targetIF.getCondition());
-			mutantsCache.put(targetIF.getCondition().getSignature(), mutations);
+			mutantsCache.put(targetIF.getCondition().toString(), mutations);
 		}
 		return mutations;
 	}
@@ -194,7 +194,7 @@ public class MutationalEvolutionaryRepair extends JGenProg {
 		return clonedExpression;
 	}
 	@SuppressWarnings("rawtypes")
-	public void undoOperationToSpoonElement(ModificationInstance operation) {
+	public void undoOperationToSpoonElement(OperatorInstance operation) {
 		CtExpression ctst = (CtExpression) operation.getOriginal();
 		CtExpression fix = (CtExpression) operation.getModified();
 		try{
@@ -212,7 +212,7 @@ public class MutationalEvolutionaryRepair extends JGenProg {
 	 * @throws IllegalAccessException 
 	 */
 	@Override
-	protected void applyNewMutationOperationToSpoonElement(ModificationInstance operation) throws IllegalAccessException {
+	protected void applyNewMutationOperationToSpoonElement(OperatorInstance operation) throws IllegalAccessException {
 
 		boolean successful = false;
 		CtExpression ctst = (CtExpression) operation.getOriginal();

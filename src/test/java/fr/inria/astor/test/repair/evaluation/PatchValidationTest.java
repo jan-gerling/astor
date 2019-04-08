@@ -12,6 +12,16 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import fr.inria.astor.approaches.jgenprog.JGenProg;
+import fr.inria.astor.approaches.jgenprog.operators.ReplaceOp;
+import fr.inria.astor.core.entities.OperatorInstance;
+import fr.inria.astor.core.entities.ModificationPoint;
+import fr.inria.astor.core.entities.ProgramVariant;
+import fr.inria.astor.core.entities.SuspiciousModificationPoint;
+import fr.inria.astor.core.loop.AstorCoreEngine;
+import fr.inria.astor.util.ProcessUtil;
+import fr.inria.main.ExecutionMode;
+import fr.inria.main.evolution.AstorMain;
 import spoon.reflect.code.CtBlock;
 import spoon.reflect.code.CtStatement;
 import spoon.reflect.declaration.CtElement;
@@ -19,15 +29,6 @@ import spoon.reflect.factory.Factory;
 import spoon.reflect.factory.FactoryImpl;
 import spoon.support.DefaultCoreFactory;
 import spoon.support.StandardEnvironment;
-import fr.inria.astor.core.entities.ModificationPoint;
-import fr.inria.astor.approaches.jgenprog.JGenProg;
-import fr.inria.astor.approaches.jgenprog.operators.ReplaceOp;
-import fr.inria.astor.core.entities.ModificationInstance;
-import fr.inria.astor.core.entities.SuspiciousModificationPoint;
-import fr.inria.astor.util.ProcessUtil;
-import fr.inria.astor.core.entities.ProgramVariant;
-import fr.inria.main.ExecutionMode;
-import fr.inria.main.evolution.AstorMain;
 /**
  * This test cases aims at validating the mechanism of patch validation 
  * (We manually generate the candidate patches)
@@ -71,47 +72,51 @@ public class PatchValidationTest {
 		
 		main.initProject(location, projectId, dependenciespath, packageToInstrument, thfl, failing);
 
-		JGenProg jgp = main.createEngine(ExecutionMode.JGenProg);
+		AstorCoreEngine astor = main.createEngine(ExecutionMode.jGenProg);
 		
-		jgp.createInitialPopulation();
+		assertTrue("Wrong engine created",astor instanceof JGenProg);
 		
-		Assert.assertEquals(1, jgp.getVariants().size());
+		JGenProg jgp = (JGenProg) astor;
+		
+		Assert.assertEquals(1, astor.getVariants().size());
 
-		ProgramVariant variant = jgp.getVariants().get(0);
+		ProgramVariant variant = astor.getVariants().get(0);
 	
 		int currentGeneration = 1;
-		ModificationInstance operation1 = createDummyOperation1(variant, currentGeneration);
+		OperatorInstance operation1 = createDummyOperation1(variant, currentGeneration);
 		System.out.println("operation " + operation1);
 		assertNotNull(operation1);
 
 		boolean isSolution = false;
-		isSolution = jgp.processCreatedVariant(variant, currentGeneration);
+		isSolution = astor.processCreatedVariant(variant, currentGeneration);
 		// The model has not been changed.
 		assertFalse("Any solution was expected here", isSolution);
 
 		int afterFirstValidation = ProcessUtil.currentNumberProcess();
 		
-		jgp.applyNewOperationsToVariantModel(variant, currentGeneration);
+		astor.applyNewOperationsToVariantModel(variant, currentGeneration);
 
 		
-		isSolution = jgp.processCreatedVariant(variant, currentGeneration);
+		isSolution = astor.processCreatedVariant(variant, currentGeneration);
 
 		int afterPatchValidation = ProcessUtil.currentNumberProcess();
 
 		assertTrue("The variant must be a solution",isSolution);
 
-		System.out.println("\nSolutions:\n" + jgp.getSolutionData(jgp.getVariants(), 1));
+		System.out.println("\nSolutions:\n" + astor.getSolutionData(astor.getVariants(), 1));
 
-		jgp.prepareNextGeneration(jgp.getVariants(), 1);
+		astor.prepareNextGeneration(astor.getVariants(), 1);
 
-		assertNotNull("Any solution found",jgp.getSolutions());
+		assertNotNull("Any solution found",astor.getSolutions());
 
-		assertFalse("Solution set must be not empty",jgp.getSolutions().isEmpty());
+		assertFalse("Solution set must be not empty",astor.getSolutions().isEmpty());
 
 		assertEquals("Problems with number of process", processBeforeAll, afterFirstValidation);
 
 		assertEquals("Problems with number of  process", processBeforeAll, afterPatchValidation);
 
+		String printed = jgp.getIngredientStrategy().toString();
+		Assert.assertNotNull(printed);
 	}
 
 	@Test
@@ -146,26 +151,25 @@ public class PatchValidationTest {
 		
 		main.initProject(location, folder, dependenciespath, packageToInstrument, thfl, failing);
 
-		JGenProg jgp = main.createEngine(ExecutionMode.JGenProg);
-		jgp.createInitialPopulation();
+		AstorCoreEngine astor = main.createEngine(ExecutionMode.jGenProg);
 		
-		Assert.assertEquals(1, jgp.getVariants().size());
+		Assert.assertEquals(1, astor.getVariants().size());
 
-		ProgramVariant variant = jgp.getVariants().get(0);
+		ProgramVariant variant = astor.getVariants().get(0);
 		
 		int currentGeneration = 1;
-		ModificationInstance operation1 = createDummyOperation1(variant, currentGeneration);
+		OperatorInstance operation1 = createDummyOperation1(variant, currentGeneration);
 		assertNotNull(operation1);
 
 		boolean isSolution = false;
 	
-		jgp.applyNewOperationsToVariantModel(variant, currentGeneration);
+		astor.applyNewOperationsToVariantModel(variant, currentGeneration);
 		
-		isSolution = jgp.processCreatedVariant(variant, currentGeneration);
+		isSolution = astor.processCreatedVariant(variant, currentGeneration);
 		assertTrue("A solution is attended",isSolution);
 
 	}
-	private ModificationInstance createDummyOperation1(ProgramVariant variant, int currentGeneration) {
+	private OperatorInstance createDummyOperation1(ProgramVariant variant, int currentGeneration) {
 
 		SuspiciousModificationPoint genSusp = searchSuspiciousElement(variant, "n += 3", " ", 93);
 		assertNotNull(genSusp);
@@ -174,7 +178,7 @@ public class PatchValidationTest {
 		CtElement fix = createFix1();
 		assertEquals(fix.toString(), "n += 2");
 
-		ModificationInstance operation = new ModificationInstance();
+		OperatorInstance operation = new OperatorInstance();
 
 		operation.setOperationApplied(new ReplaceOp());
 		operation.setModificationPoint(genSusp);

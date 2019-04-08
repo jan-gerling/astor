@@ -1,23 +1,24 @@
 #!/bin/bash
 
 # compile test projects
-cd examples/Math-0c1ef/
-mvn test -DskipTests
-cd ../../
+function compile {
+    if [[ ! -d "$1target/classes" ]]; then
+        cd $1
+        mvn test -DskipTests
+        cd ../../
+    fi
+}
 
-cd examples/math_85/
-mvn test -DskipTests
-cd ../../
- 
-cd examples/math_70/
-mvn test -DskipTests
-cd ../../
-
-cd examples/Math-issue-288/
-mvn test -DskipTests
-cd ../../
-
-
-cd examples/math_2/
-mvn test -DskipTests
-cd ../../
+compile "examples/Math-0c1ef/"
+compile "examples/math_85/"
+compile "examples/math_70/"
+compile "examples/Math-issue-288/"
+compile "examples/math_2/"
+compile "examples/jsoup31be24/"
+compile "examples/introclass/3b2376/003/"
+compile "examples/math_50/"
+compile "examples/math_74/"
+compile "examples/math_76/"
+compile "examples/math_106/"
+compile "examples/lang_63/"
+compile "examples/lang_39/"

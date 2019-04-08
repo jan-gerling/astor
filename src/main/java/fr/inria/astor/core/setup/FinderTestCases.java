@@ -10,11 +10,8 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 import fr.inria.astor.core.faultlocalization.entity.TestClassesFinder;
-import fr.inria.astor.core.manipulation.MutationSupporter;
 import spoon.reflect.declaration.CtClass;
-import spoon.reflect.declaration.CtInterface;
 import spoon.reflect.declaration.CtType;
-import spoon.reflect.declaration.ModifierKind;
 
 /**
  * Class for manipulating information related to test cases.
@@ -33,7 +30,6 @@ public class FinderTestCases {
 			s+=tcr+File.pathSeparator;
 			tr.add(tcr);
 		}
-		//ConfigurationProperties.properties.setProperty("testcasesregression", s);
 		projectFacade.getProperties().setRegressionCases(tr);
 	}
 
@@ -62,7 +58,8 @@ public class FinderTestCases {
 	public static void updateRegressionTestCases(ProjectRepairFacade projectConfig) {
 		List<String> original = projectConfig.getProperties().getRegressionTestCases();
 		List<String> refined =	refineListofRegressionTestCases(original);
-		projectConfig.getProperties().setRegressionCases(refined);
+		if(!refined.isEmpty())
+			projectConfig.getProperties().setRegressionCases(refined);
 		log.debug("Refining list of test cases: original= "+original.size() 
 			+", refined= "+refined.size());
 	}
@@ -72,19 +69,20 @@ public class FinderTestCases {
 	 * I analyze each model of each test to validate whether is a test or not. 
 	 */
 
-	public static List<String> refineListofRegressionTestCases(List<String> allTest) {
+	private static List<String> refineListofRegressionTestCases(List<String> allTest) {
 			List<String> regressionCases = new ArrayList<String>();
 			List<String> ignoreTestcases = retriveIgnoreTestCases();
 			
+			log.debug("Ignored test cases: "+ignoreTestcases);
+			
+			if(ignoreTestcases.isEmpty())
+				return allTest;
+			
+			
 			for (String candidateTest : allTest) {
-				CtType<?> type = MutationSupporter.getFactory().Type().get(candidateTest);
-				
-				if (type != null && (!type.getModifiers().contains(ModifierKind.ABSTRACT))
-						&& !(type instanceof CtInterface) 
-						&& isValidConstructor(type)
-						&& !(isIgnoredTestCase(type.getQualifiedName(), ignoreTestcases)))
-				{
-					regressionCases.add(type.getQualifiedName());
+		
+				if(!(isIgnoredTestCase(candidateTest, ignoreTestcases))){
+					regressionCases.add(candidateTest);
 				}
 				
 			}
@@ -106,7 +104,8 @@ public class FinderTestCases {
 
 	private static List<String> retriveIgnoreTestCases() {
 		String list = ConfigurationProperties.getProperty("ignoredTestCases");
-		String[] cases = list.split(";");
+		log.debug("to ignore "+ list );
+		String[] cases = list.split(File.pathSeparator);
 		return 	Arrays.asList(cases);
 	}
 

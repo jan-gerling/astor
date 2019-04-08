@@ -7,21 +7,20 @@ import java.util.List;
 import com.martiansoftware.jsap.JSAPException;
 
 import fr.inria.astor.core.entities.Ingredient;
-import fr.inria.astor.core.entities.ModificationInstance;
+import fr.inria.astor.core.entities.OperatorInstance;
 import fr.inria.astor.core.entities.ModificationPoint;
 import fr.inria.astor.core.entities.ProgramVariant;
 import fr.inria.astor.core.entities.SuspiciousModificationPoint;
-import fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization;
-import fr.inria.astor.core.faultlocalization.IFaultLocalization;
 import fr.inria.astor.core.faultlocalization.entity.SuspiciousCode;
 import fr.inria.astor.core.loop.AstorCoreEngine;
-import fr.inria.astor.core.loop.spaces.ingredients.IngredientStrategy;
+import fr.inria.astor.core.loop.spaces.ingredients.IngredientSearchStrategy;
 import fr.inria.astor.core.loop.spaces.operators.AstorOperator;
 import fr.inria.astor.core.manipulation.MutationSupporter;
 import fr.inria.astor.core.manipulation.sourcecode.BlockReificationScanner;
 import fr.inria.astor.core.setup.ConfigurationProperties;
 import fr.inria.astor.core.setup.FinderTestCases;
 import fr.inria.astor.core.setup.ProjectRepairFacade;
+import fr.inria.astor.core.setup.RandomManager;
 import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtElement;
 import spoon.reflect.declaration.CtType;
@@ -35,25 +34,19 @@ import spoon.reflect.factory.Factory;
  */
 public class JGenProg extends AstorCoreEngine {
 
-	IngredientStrategy ingredientStrategy;
+	IngredientSearchStrategy ingredientSearchStrategy;
 	
 	public JGenProg(MutationSupporter mutatorExecutor, ProjectRepairFacade projFacade) throws JSAPException {
 		super(mutatorExecutor, projFacade);
-		//By default, we use GZoltar fault localization
-		this.faultLocalization = new GZoltarFaultLocalization();
 	}
 
-	public JGenProg(MutationSupporter mutatorExecutor, ProjectRepairFacade projFacade, IFaultLocalization faultLocalization) throws JSAPException {
-		super(mutatorExecutor, projFacade);
-		this.faultLocalization = faultLocalization;
-	}
-	
+
 	public void createInitialPopulation() throws Exception {
 		if (ConfigurationProperties.getPropertyBool("skipfaultlocalization")) {
 			// We dont use FL, so at this point the do not have suspicious
 			this.initPopulation(new ArrayList<SuspiciousCode>());
 		} else {
-			List<SuspiciousCode> suspicious = projectFacade.calculateSuspicious(faultLocalization);
+			List<SuspiciousCode> suspicious = projectFacade.calculateSuspicious(getFaultLocalization());
 			this.initPopulation(suspicious);
 		}
 	}
@@ -89,20 +82,36 @@ public class JGenProg extends AstorCoreEngine {
 			return;
 		}
 
-		if (this.ingredientStrategy != null) {
-			this.ingredientStrategy.refineSpaceForProgramVariant(originalVariant);
+		if (this.ingredientSearchStrategy != null) {
+			this.ingredientSearchStrategy.getIngredientSpace().defineSpace(originalVariant);
 		}
 
+		 setFitnessOfPopulation();
+	}
+	
+	protected void setFitnessOfPopulation(){
+		log.debug("Calculating fitness for original program variant.");
+		//temporal workaround for avoid changing the interface
+		String original = ConfigurationProperties.getProperty("forceExecuteRegression");
+		ConfigurationProperties.setProperty("forceExecuteRegression", Boolean.TRUE.toString());
+		
+		//Initial validation and fitness 
 		boolean validInstance = validateInstance(originalVariant);
 		if (validInstance) {
 			throw new IllegalStateException("The application under repair has not failling test cases");
 		}
-
+		
+		double fitness = this.fitnessFunction.calculateFitnessValue(originalVariant);
+		originalVariant.setFitness(fitness);
+		
+	
+		log.debug("The original fitness is : "+fitness);
 		for (ProgramVariant initvariant : variants) {
-			initvariant.setFitness(originalVariant.getFitness());
+			initvariant.setFitness(fitness);
 		}
-
-	}
+		ConfigurationProperties.setProperty("forceExecuteRegression", original);//WA.
+		
+	} 
 
 
 
@@ -147,7 +156,7 @@ public class JGenProg extends AstorCoreEngine {
 				mutatorSupporter.getClasses().add((CtClass) ctType);
 			}
 		}
-		//Finally, we update the list of test cases (we apply a pre-process using info from Spoon Model)
+		//We do not refine the test case list using the spoon model, due we do not create the model for test any more.
 		FinderTestCases.updateRegressionTestCases(projectFacade);
 	}
 
@@ -171,26 +180,26 @@ public class JGenProg extends AstorCoreEngine {
 		this.originalVariant = variants.get(0);
 
 		if (originalVariant.getModificationPoints().isEmpty()) {
-			throw new IllegalStateException("Variant without gens. It must have at least one.");
+			throw new IllegalStateException("Variant without any modification point. It must have at least one.");
 		}
 	}
 
 	/**
-	 * This method updates gens of a variant according to a created
+	 * This method updates modification point of a variant according to a created
 	 * GenOperationInstance
 	 * 
 	 * @param variant
-	 *            variant to modify the gen information
+	 *            variant to modify the modification point information
 	 * @param operationofGen
 	 *            operator to apply in the variant.
 	 */
 	@Override
-	protected void updateVariantGenList(ProgramVariant variant, ModificationInstance operation) {
+	protected void updateVariantGenList(ProgramVariant variant, OperatorInstance operation) {
 		operation.getOperationApplied().updateProgramVariant(operation, variant);
 	}
 
 	/**
-	 * Create a Gen Mutation for a given CtElement
+	 * Create a modification point Mutation for a given CtElement
 	 * 
 	 * @param ctElementPointed
 	 * @param className
@@ -199,11 +208,11 @@ public class JGenProg extends AstorCoreEngine {
 	 * @throws IllegalAccessException
 	 */
 	@Override
-	protected ModificationInstance createModificationForPoint(ModificationPoint modificationPoint) throws IllegalAccessException {
+	protected OperatorInstance createOperatorInstanceForPoint(ModificationPoint modificationPoint) throws IllegalAccessException {
 		SuspiciousModificationPoint suspModificationPoint = (SuspiciousModificationPoint) modificationPoint;
 
 		
-		AstorOperator operationType =  repairActionSpace.getNextOperator();
+		AstorOperator operationType =  operatorSelectionStrategy.getNextOperator(suspModificationPoint);
 
 		if (operationType == null) {
 			log.debug("Operation Null");
@@ -212,32 +221,30 @@ public class JGenProg extends AstorCoreEngine {
 
 		CtElement targetStmt = suspModificationPoint.getCodeElement();
 
-		ModificationInstance operation = new ModificationInstance();
+		OperatorInstance operation = new OperatorInstance();
 		operation.setOriginal(targetStmt);
 		operation.setOperationApplied(operationType);
 		operation.setModificationPoint(suspModificationPoint);
 		operation.defineParentInformation(suspModificationPoint);
 		
-		Ingredient fix = null;
-		
 		if(operationType.needIngredient()){
-			fix = this.ingredientStrategy.getFixIngredient(modificationPoint, operationType);
+			Ingredient fix = null;
+			fix = this.ingredientSearchStrategy.getFixIngredient(modificationPoint, operationType);
 			if(fix == null){
 				log.debug("Any ingredient for this point, we discard it");
 				return null;
+			}else{
+				operation.setModified(fix.getCode());
+				operation.setIngredientScope(fix.getScope());
 			}
 		}
 
-		if (fix != null) {
-			operation.setModified(fix.getCode());
-			operation.setIngredientScope(fix.getScope());
-		}
 		return operation;
 	}
 
 	
 	@Override
-	protected void undoOperationToSpoonElement(ModificationInstance operation) {
+	protected void undoOperationToSpoonElement(OperatorInstance operation) {
 		operation.undoModification();
 
 	}
@@ -246,7 +253,7 @@ public class JGenProg extends AstorCoreEngine {
 	 * 
 	 */
 	@Override
-	protected void applyPreviousMutationOperationToSpoonElement(ModificationInstance operation)
+	protected void applyPreviousMutationOperationToSpoonElement(OperatorInstance operation)
 			throws IllegalAccessException {
 		this.applyNewMutationOperationToSpoonElement(operation);
 
@@ -257,19 +264,75 @@ public class JGenProg extends AstorCoreEngine {
 	 * 
 	 */
 	@Override
-	protected void applyNewMutationOperationToSpoonElement(ModificationInstance operationInstance)
+	protected void applyNewMutationOperationToSpoonElement(OperatorInstance operationInstance)
 			throws IllegalAccessException {
 
 		operationInstance.applyModification();
 	
 	}
 
-	public IngredientStrategy getIngredientStrategy() {
-		return ingredientStrategy;
+	public IngredientSearchStrategy getIngredientStrategy() {
+		return ingredientSearchStrategy;
 	}
 
-	public void setIngredientStrategy(IngredientStrategy ingredientStrategy) {
-		this.ingredientStrategy = ingredientStrategy;
+	public void setIngredientStrategy(IngredientSearchStrategy ingredientStrategy) {
+		this.ingredientSearchStrategy = ingredientStrategy;
+	}
+
+	@Override
+	public void prepareNextGeneration(List<ProgramVariant> temporalInstances, int generation) {
+		
+		super.prepareNextGeneration(temporalInstances, generation);
+		if(false || ConfigurationProperties.getPropertyBool("applyCrossover")){
+			int numberVariants = this.variants.size();
+			if(numberVariants <= 1){
+				log.debug("CO|Not Enough variants to apply Crossover");
+				return;
+			}
+			
+			//We randomly choose the two variants to crossover
+			ProgramVariant v1 = this.variants.get(RandomManager.nextInt(numberVariants));
+			ProgramVariant v2 = this.variants.get(RandomManager.nextInt(numberVariants));
+			//Same instance
+			if(v1 == v2){
+				log.debug("CO|randomless chosen the same variant to apply crossover");
+				return;
+			}
+			
+			if(v1.getOperations().isEmpty() || v2.getOperations().isEmpty()){
+				log.debug("CO|Not Enough ops to apply Crossover");
+				return;
+			}
+			//we randomly select the generations to apply
+			int rgen1index = RandomManager.nextInt(v1.getOperations().keySet().size()) + 1;
+			int rgen2index = RandomManager.nextInt(v2.getOperations().keySet().size()) + 1;
+			
+			List<OperatorInstance> ops1 = v1.getOperations((int) v1.getOperations().keySet().toArray()[rgen1index]);
+			List<OperatorInstance> ops2 = v2.getOperations((int) v2.getOperations().keySet().toArray()[rgen2index]);
+	
+			OperatorInstance opinst1 = ops1.remove((int)RandomManager.nextInt(ops1.size()));
+			OperatorInstance opinst2 = ops2.remove((int)RandomManager.nextInt(ops2.size()));
+			
+			if(opinst1 == null || opinst2 == null){
+				log.debug("CO|We could not retrieve a operator");
+				return;
+			}
+			
+			//The generation of both new operators is the Last one.
+			//In the first variant we put the operator taken from the 2 one.
+			v1.putModificationInstance(generation, opinst2);
+			//In the second variant we put the operator taken from the 1 one.
+			v2.putModificationInstance(generation, opinst1);
+			//
+		}
+	}
+
+	@Override
+	public void showResults() {
+		super.showResults();
+		log.info("\nsuccessful_ing_attempts ("+this.currentStat.ingAttemptsSuccessfulPatches.size()+ "): "+this.currentStat.ingAttemptsSuccessfulPatches);
+		log.info("\nfailing_ing_attempts ("+this.currentStat.ingAttemptsFailingPatches.size()+ "): "+this.currentStat.ingAttemptsFailingPatches);
+		
 	}
 
 

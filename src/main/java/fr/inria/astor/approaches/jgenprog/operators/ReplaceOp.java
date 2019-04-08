@@ -1,9 +1,7 @@
 package fr.inria.astor.approaches.jgenprog.operators;
 
-import fr.inria.astor.core.entities.ModificationInstance;
-import fr.inria.astor.core.entities.ModificationPoint;
+import fr.inria.astor.core.entities.OperatorInstance;
 import fr.inria.astor.core.entities.ProgramVariant;
-import fr.inria.astor.core.loop.spaces.operators.AstorOperator;
 import spoon.reflect.code.CtBlock;
 import spoon.reflect.code.CtStatement;
 /**
@@ -11,10 +9,10 @@ import spoon.reflect.code.CtStatement;
  * @author Matias Martinez
  *
  */
-public class ReplaceOp extends AstorOperator {
+public class ReplaceOp extends StatementLevelOperator{
 
 
-	public boolean applyChangesInModel(ModificationInstance operation, ProgramVariant p) {
+	public boolean applyChangesInModel(OperatorInstance operation, ProgramVariant p) {
 		boolean successful = false;
 		CtStatement ctst = (CtStatement) operation.getOriginal();
 		CtStatement fix = (CtStatement) operation.getModified();
@@ -40,7 +38,7 @@ public class ReplaceOp extends AstorOperator {
 	}
 
 	@Override
-	public boolean updateProgramVariant(ModificationInstance opInstance, ProgramVariant p) {
+	public boolean updateProgramVariant(OperatorInstance opInstance, ProgramVariant p) {
 		boolean sucess = true;
 		sucess &= removePoint(p, opInstance);
 		sucess &= addPoint(p, opInstance);
@@ -50,7 +48,7 @@ public class ReplaceOp extends AstorOperator {
 	}
 
 	@Override
-	public boolean undoChangesInModel(ModificationInstance operation, ProgramVariant p) {
+	public boolean undoChangesInModel(OperatorInstance operation, ProgramVariant p) {
 		CtStatement ctst = (CtStatement) operation.getOriginal();
 		CtStatement fix = (CtStatement) operation.getModified();
 		CtBlock<?> parentBlock = operation.getParentBlock();
@@ -60,12 +58,6 @@ public class ReplaceOp extends AstorOperator {
 
 		}
 		return false;
-	}
-
-	@Override
-	public boolean applyToPoint(ModificationPoint point) {
-		
-		return (point.getCodeElement() instanceof CtStatement);
 	}
 	
 	@Override

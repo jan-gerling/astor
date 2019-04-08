@@ -1,18 +1,20 @@
 package fr.inria.astor.core.validation.executors;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 
 import fr.inria.astor.core.setup.ConfigurationProperties;
-import fr.inria.astor.core.setup.ProjectConfiguration;
 import fr.inria.astor.core.validation.entity.TestResult;
 import fr.inria.astor.junitexec.JUnitTestExecutor;
 
@@ -22,73 +24,110 @@ import fr.inria.astor.junitexec.JUnitTestExecutor;
  * @author Matias Martinez, matias.martinez@inria.fr
  * 
  */
-public class JUnitExecutorProcess {
+public abstract class JUnitExecutorProcess {
 
-	private Logger log = Logger.getLogger(Thread.currentThread().getName());
+	protected Logger log = Logger.getLogger(Thread.currentThread().getName());
+	boolean avoidInterruption = false;
+
+	public JUnitExecutorProcess(boolean avoidInterruption) {
+		this();
+		this.avoidInterruption = avoidInterruption;
+	}
 
 	public JUnitExecutorProcess() {
 		super();
 	}
 
-	public TestResult execute(URL[] path, List<String> classesToExecute, int waitTime) {
-		return execute(urlArrayToString(path), classesToExecute, waitTime);
+	public TestResult execute(String jvmPath, URL[] classpath, List<String> classesToExecute, int waitTime) {
+		return execute(jvmPath, urlArrayToString(classpath), classesToExecute, waitTime);
 	}
 
-	public TestResult execute(String path, List<String> classesToExecute, int waitTime) {
+	public TestResult execute(String jvmPath, String classpath, List<String> classesToExecute, int waitTime) {
 		Process p = null;
+		jvmPath += File.separator + "java";
+		String systemcp = defineInitialClasspath();
 
-		if (!ProjectConfiguration.validJDK())
-			throw new IllegalArgumentException(
-					"jdk folder not found, please configure property jvm4testexecution in the configuration.properties file");
-
-		String javaPath = ConfigurationProperties.getProperty("jvm4testexecution");
-		javaPath += File.separator + "java";
-		String systemcp = System.getProperty("java.class.path");
-
-		path = systemcp + File.pathSeparator + path;
+		classpath = systemcp + File.pathSeparator + classpath;
 
 		List<String> cls = new ArrayList<>(classesToExecute);
 
 		try {
 
 			List<String> command = new ArrayList<String>();
-			command.add(javaPath);
-			command.add("-cp");
-			command.add(path);
-			command.add(JUnitTestExecutor.class.getName());
 
+			command.add(jvmPath);
+			command.add("-Xmx2048m");
+			command.add("-cp");
+			command.add(classpath);
+			command.add(classNameToCall());
 			command.addAll(cls);
 
-			ProcessBuilder pb = new ProcessBuilder(command.toArray(new String[command.size()]));
+			printCommandToExecute(command);
+
+			// ProcessBuilder pb = new ProcessBuilder(command.toArray(new
+			// String[command.size()]));
+			ProcessBuilder pb = new ProcessBuilder("/bin/bash");
 			pb.redirectOutput();
 			pb.redirectErrorStream(true);
 			pb.directory(new File((ConfigurationProperties.getProperty("location"))));
 			long t_start = System.currentTimeMillis();
 			p = pb.start();
 
-			String commandString = command.toString().replace("[", "").replace("]", "").replace(",", " ");
-			int trunk = ConfigurationProperties.getPropertyInt("commandTrunk");
-			String commandToPrint = (trunk !=0 && commandString.length() > trunk )? (commandString.substring(0, trunk)+"..AND "+(commandString.length() - trunk)+" CHARS MORE..."):commandString;
-			log.debug("Executing process: \n" + commandToPrint);
+			BufferedWriter p_stdin = new BufferedWriter(new OutputStreamWriter(p.getOutputStream()));
 
-			Worker worker = new Worker(p);
-			worker.start();
-			worker.join(waitTime);
+			try {
+				//Set up the timezone
+				String timeZone = ConfigurationProperties.getProperty("timezone");
+				p_stdin.write("TZ=\"" + timeZone + "\"");
+				p_stdin.newLine();
+				p_stdin.flush();
+				p_stdin.write("export TZ");
+				p_stdin.newLine();
+				p_stdin.flush();
+				p_stdin.write("echo $TZ");
+				p_stdin.newLine();
+				p_stdin.flush();
+				//Writing the command
+				p_stdin.write(toString(command));
+				p_stdin.newLine();
+				p_stdin.flush();
+				
+
+				// end
+				p_stdin.write("exit");
+				p_stdin.newLine();
+				p_stdin.flush();
+				
+			} catch (IOException e) {
+				log.error(e);
+			}
+
+			//
+			p.waitFor(waitTime, TimeUnit.MILLISECONDS);
 			long t_end = System.currentTimeMillis();
-			
-			p.exitValue();
-			TestResult tr = getTestResult(p);
-			p.destroy();
 			log.debug("Execution time " + ((t_end - t_start) / 1000) + " seconds");
 
+			if (!avoidInterruption) {
+				log.debug("Running Exit Value");
+				// We force obtaining the exit value.
+				p.exitValue();
+			}
+
+			TestResult tr = getTestResult(p);
+			p.destroy();
+
 			return tr;
-		} catch ( IOException |InterruptedException |IllegalThreadStateException  ex) {
-			log.error("The Process that runs JUnit test cases had problems: " + ex.getMessage());
+		} catch (IOException | InterruptedException | IllegalThreadStateException ex) {
+			log.info("The Process that runs JUnit test cases had problems: " + ex.getMessage());
 			if (p != null)
 				p.destroy();
 		}
 		return null;
 	}
+
+	public abstract String defineInitialClasspath();
+
+	public abstract String classNameToCall();
 
 	/**
 	 * This method analyze the output of the junit executor (i.e.,
@@ -98,44 +137,7 @@ public class JUnitExecutorProcess {
 	 * @param p
 	 * @return
 	 */
-	private TestResult getTestResult(Process p) {
-		TestResult tr = new TestResult();
-		boolean success = false;
-		String out = "";
-		try {
-			BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
-			String line;
-			while ((line = in.readLine()) != null) {
-				out += line + "\n";
-				if (line.startsWith(JUnitTestExecutor.OUTSEP)) {
-					String[] s = line.split(JUnitTestExecutor.OUTSEP);
-					int nrtc = Integer.valueOf(s[1]);
-					tr.casesExecuted = nrtc;
-					int failing = Integer.valueOf(s[2]);
-					tr.failures = failing;
-					if (!"".equals(s[3])) {
-						String[] falinglist = s[3].replace("[", "").replace("]", "").split(",");
-						for (String string : falinglist) {
-							if (!string.trim().isEmpty())
-								tr.failTest.add(string.trim());
-						}
-					}
-					success = true;
-				}
-			}
-			in.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		if (success)
-			return tr;
-		else {
-			log.error("Error reading the validation process\n output: \n"+
-			out +" \n error: "+getProcessError(p.getErrorStream()));
-			
-			return null;
-		}
-	}
+	protected abstract TestResult getTestResult(Process p);
 
 	protected String urlArrayToString(URL[] urls) {
 		String s = "";
@@ -145,7 +147,8 @@ public class JUnitExecutorProcess {
 		}
 		return s;
 	}
-	private String getProcessError(InputStream str){
+
+	protected String getProcessError(InputStream str) {
 		String out = "";
 		try {
 			BufferedReader in = new BufferedReader(new InputStreamReader(str));
@@ -159,21 +162,19 @@ public class JUnitExecutorProcess {
 		}
 		return out;
 	}
-	private static class Worker extends Thread {
-		private final Process process;
-		private Integer exit;
 
-		private Worker(Process process) {
-			this.process = process;
-		}
+	private void printCommandToExecute(List<String> command) {
+		String commandString = toString(command);
+		int trunk = ConfigurationProperties.getPropertyInt("commandTrunk");
+		String commandToPrint = (trunk != 0 && commandString.length() > trunk)
+				? (commandString.substring(0, trunk) + "..AND " + (commandString.length() - trunk) + " CHARS MORE...")
+				: commandString;
+		log.debug("Executing process: \n" + commandToPrint);
+	}
 
-		public void run() {
-			try {
-				exit = process.waitFor();
-			} catch (InterruptedException ignore) {
-				return;
-			}
-		}
+	private String toString(List<String> command) {
+		String commandString = command.toString().replace("[", "").replace("]", "").replace(",", " ");
+		return commandString;
 	}
 
 }
