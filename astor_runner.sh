@@ -2,6 +2,8 @@
 # first argument: full path to directory to crawl, e.g. ~/astor/defect4j_tests/math70
 # second argument: full path to astor main directory, e.g. ~/astor/
 
+mkdir $2/results $2/results/done
+
 modes=(jmutrepair jkali jgenprog)
 scopes=(file package application)
 seedValue=10
@@ -18,6 +20,7 @@ for currenttest in $tests; do
 	echo -e "\e[32m\n\n\n\n* * * * * * * * New * * * * * * * *"
 	echo -e "\e[39mFILE:" fullPath "\n"
 	
+	#compile and current build test case
 	cd fullPath
 	mvn clean compile test |& tee results/$currenttest"-build-output"
 	cd $2
@@ -36,6 +39,8 @@ for currenttest in $tests; do
 			java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -scope $scope -jvm4testexecution $jvmPath -mode $mode -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location fullPath -dependencies ./examples/libs/junit-4.4.jar -flthreshold $treshold -seed $seedValue -maxtime $maxTime -stopfirst true |& tee results/$outputFileName
 		done	
 	done
-	 
+	
+	#move completed test cases to other directory
+	mv fullPath $2/results/done
     echo -e "- - - - - - - - END - - - - - - - -\n"
 done
