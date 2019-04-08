@@ -1,0 +1,172 @@
+2019-04-09 07:52:44,084 INFO main - command line arguments: [-scope  Package  -jvm4testexecution  /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin  -mode  jkali  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests//math_81  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -seed  10  -maxtime  100  -stopfirst  true]
+2019-04-09 07:52:44,774 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_81//bin//default from 225 classes with test cases
+2019-04-09 07:52:44,775 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-09 07:52:45,494 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_81//bin//default]
+2019-04-09 07:52:55,942 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.linear.EigenDecompositionImplTest#testMath308
+2019-04-09 07:52:55,947 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2101, fails: 1, GZoltar suspicious 17333
+2019-04-09 07:52:55,958 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 28 with susp > 0.5, we consider: 28
+2019-04-09 07:52:55,966 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_81//src//default, compliance level: 8
+2019-04-09 07:53:02,301 INFO main - 
+---- Initial suspicious size: 28
+2019-04-09 07:53:02,360 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1087, susp=0.5773502691896258]
+2019-04-09 07:53:02,462 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{computeShiftIncrement(III)V 0.0, lineNumber=1627, susp=0.5773502691896258]
+2019-04-09 07:53:02,532 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{computeShiftIncrement(III)V 0.0, lineNumber=1586, susp=0.5]
+2019-04-09 07:53:02,532 INFO main - Total suspicious from FL: 28,  25
+2019-04-09 07:53:02,532 INFO main - Total ModPoint created: 25
+2019-04-09 07:53:02,533 INFO main - Creating program variant #1, [Variant id: 1, #gens: 25, #ops: 0, parent:-]
+2019-04-09 07:53:13,108 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-09 07:53:13,108 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-09 07:53:13,108 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-09 07:53:13,108 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-09 07:53:13,108 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-09 07:53:13,108 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-09 07:53:13,108 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jkali
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-09 07:53:13,109 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= defect4j_tests//math_81
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-09 07:53:13,110 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 10
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= Package
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-09 07:53:13,111 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-09 07:53:13,112 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-09 07:53:13,114 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1509, el: CtReturnImpl
+2019-04-09 07:53:13,114 INFO main - -->op: RemoveOp: `return  ` ---> `-` at pos 0 of parent `{ 	return ; }`
+2019-04-09 07:53:14,008 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1529, el: CtAssignmentImpl
+2019-04-09 07:53:14,009 INFO main - -->op: RemoveOp: `tType = -5 ` ---> `-` at pos 0 of parent `{ 	tType = -5; 	double s [...]`
+2019-04-09 07:53:14,387 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1530, el: CtLocalVariableImpl
+2019-04-09 07:53:14,388 INFO main - -->op: RemoveOp: `double s = 0.25 * (dMin) ` ---> `-` at pos 1 of parent `{ 	tType = -5; 	double s [...]`
+2019-04-09 07:53:14,524 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1533, el: CtLocalVariableImpl
+2019-04-09 07:53:14,524 INFO main - -->op: RemoveOp: `final int np = nn - (2 * [...] ` ---> `-` at pos 2 of parent `{ 	tType = -5; 	double s [...]`
+2019-04-09 07:53:14,630 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1534, el: CtLocalVariableImpl
+2019-04-09 07:53:14,631 INFO main - -->op: RemoveOp: `double b1 = work[(np - 2)[...] ` ---> `-` at pos 3 of parent `{ 	tType = -5; 	double s [...]`
+2019-04-09 07:53:14,731 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1535, el: CtLocalVariableImpl
+2019-04-09 07:53:14,732 INFO main - -->op: RemoveOp: `double b2 = work[(np - 6)[...] ` ---> `-` at pos 4 of parent `{ 	tType = -5; 	double s [...]`
+2019-04-09 07:53:14,841 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1536, el: CtLocalVariableImpl
+2019-04-09 07:53:14,842 INFO main - -->op: RemoveOp: `final double gam = dN2 ` ---> `-` at pos 5 of parent `{ 	tType = -5; 	double s [...]`
+2019-04-09 07:53:14,962 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1537, el: CtIfImpl
+2019-04-09 07:53:14,963 INFO main - -->op: ReplaceIfBooleanOp: `if (((work[(np - 8)]) > b[...] ` ---> `if (true) { 	return ; }` at pos 6 of parent `{ 	tType = -5; 	double s [...]`
+2019-04-09 07:53:15,304 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1537, el: CtIfImpl
+2019-04-09 07:53:15,304 INFO main - -->op: ReplaceIfBooleanOp: `if (((work[(np - 8)]) > b[...] ` ---> `if (false) { 	return ; }` at pos 6 of parent `{ 	tType = -5; 	double s [...]`
+2019-04-09 07:53:15,670 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1537, el: CtIfImpl
+2019-04-09 07:53:15,670 INFO main - -->op: RemoveOp: `if (((work[(np - 8)]) > b[...] ` ---> `-` at pos 6 of parent `{ 	tType = -5; 	double s [...]`
+2019-04-09 07:53:16,073 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1540, el: CtLocalVariableImpl
+2019-04-09 07:53:16,074 INFO main - -->op: RemoveOp: `double a2 = ((work[(np - [...] ` ---> `-` at pos 7 of parent `{ 	tType = -5; 	double s [...]`
+2019-04-09 07:53:16,195 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1543, el: CtIfImpl
+2019-04-09 07:53:16,196 INFO main - -->op: ReplaceIfBooleanOp: `if ((end - start) > 2) { [...] ` ---> `if (true) { 	b2 = (work[([...]` at pos 8 of parent `{ 	tType = -5; 	double s [...]`
+2019-04-09 07:53:16,562 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1543, el: CtIfImpl
+2019-04-09 07:53:16,563 INFO main - -->op: ReplaceIfBooleanOp: `if ((end - start) > 2) { [...] ` ---> `if (false) { 	b2 = (work[[...]` at pos 8 of parent `{ 	tType = -5; 	double s [...]`
+2019-04-09 07:53:16,882 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1543, el: CtIfImpl
+2019-04-09 07:53:16,883 INFO main - -->op: RemoveOp: `if ((end - start) > 2) { [...] ` ---> `-` at pos 8 of parent `{ 	tType = -5; 	double s [...]`
+2019-04-09 07:53:17,195 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1544, el: CtAssignmentImpl
+2019-04-09 07:53:17,195 INFO main - -->op: RemoveOp: `b2 = (work[(nn - 13)]) / [...] ` ---> `-` at pos 0 of parent `{ 	b2 = (work[(nn - 13)])[...]`
+2019-04-09 07:53:17,507 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1621, el: CtAssignmentImpl
+2019-04-09 07:53:17,508 INFO main - -->op: RemoveOp: `tau = 0.25 * (dMin1) ` ---> `-` at pos 0 of parent `{ 	tau = 0.25 * (dMin1); [...]`
+2019-04-09 07:53:17,820 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1622, el: CtIfImpl
+2019-04-09 07:53:17,821 INFO main - -->op: ReplaceIfBooleanOp: `if ((dMin1) == (dN1)) { 	[...] ` ---> `if (true) { 	tau = 0.5 * [...]` at pos 1 of parent `{ 	tau = 0.25 * (dMin1); [...]`
+2019-04-09 07:53:18,116 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1622, el: CtIfImpl
+2019-04-09 07:53:18,116 INFO main - -->op: ReplaceIfBooleanOp: `if ((dMin1) == (dN1)) { 	[...] ` ---> `if (false) { 	tau = 0.5 *[...]` at pos 1 of parent `{ 	tau = 0.25 * (dMin1); [...]`
+2019-04-09 07:53:18,403 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1622, el: CtIfImpl
+2019-04-09 07:53:18,403 INFO main - -->op: RemoveOp: `if ((dMin1) == (dN1)) { 	[...] ` ---> `-` at pos 1 of parent `{ 	tau = 0.25 * (dMin1); [...]`
+2019-04-09 07:53:18,698 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1625, el: CtAssignmentImpl
+2019-04-09 07:53:18,699 INFO main - -->op: RemoveOp: `tType = -9 ` ---> `-` at pos 2 of parent `{ 	tau = 0.25 * (dMin1); [...]`
+2019-04-09 07:53:18,985 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1479, el: CtAssignmentImpl
+2019-04-09 07:53:18,986 INFO main - -->op: RemoveOp: `gam = dN ` ---> `-` at pos 0 of parent `{ 	gam = dN; 	a2 = 0.0; 	[...]`
+2019-04-09 07:53:19,065 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1480, el: CtAssignmentImpl
+2019-04-09 07:53:19,065 INFO main - -->op: RemoveOp: `a2 = 0.0 ` ---> `-` at pos 1 of parent `{ 	gam = dN; 	a2 = 0.0; 	[...]`
+2019-04-09 07:53:19,396 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1481, el: CtIfImpl
+2019-04-09 07:53:19,397 INFO main - -->op: ReplaceIfBooleanOp: `if ((work[(nn - 5)]) > (w[...] ` ---> `if (true) { 	return ; }` at pos 2 of parent `{ 	gam = dN; 	a2 = 0.0; 	[...]`
+2019-04-09 07:53:19,681 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1481, el: CtIfImpl
+2019-04-09 07:53:19,682 INFO main - -->op: ReplaceIfBooleanOp: `if ((work[(nn - 5)]) > (w[...] ` ---> `if (false) { 	return ; }` at pos 2 of parent `{ 	gam = dN; 	a2 = 0.0; 	[...]`
+2019-04-09 07:53:19,976 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1481, el: CtIfImpl
+2019-04-09 07:53:19,977 INFO main - -->op: RemoveOp: `if ((work[(nn - 5)]) > (w[...] ` ---> `-` at pos 2 of parent `{ 	gam = dN; 	a2 = 0.0; 	[...]`
+2019-04-09 07:53:20,263 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1484, el: CtAssignmentImpl
+2019-04-09 07:53:20,264 INFO main - -->op: RemoveOp: `b2 = (work[(nn - 5)]) / ([...] ` ---> `-` at pos 3 of parent `{ 	gam = dN; 	a2 = 0.0; 	[...]`
+2019-04-09 07:53:20,549 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1485, el: CtAssignmentImpl
+2019-04-09 07:53:20,550 INFO main - -->op: RemoveOp: `np = nn - 9 ` ---> `-` at pos 4 of parent `{ 	gam = dN; 	a2 = 0.0; 	[...]`
+2019-04-09 07:53:20,630 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1504, el: CtIfImpl
+2019-04-09 07:53:20,631 INFO main - -->op: ReplaceIfBooleanOp: `if (b2 == 0.0) { 	break; [...] ` ---> `if (true) { 	break; }` at pos 0 of parent `{ 	if (b2 == 0.0) { 		bre[...]`
+2019-04-09 07:53:20,936 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1504, el: CtIfImpl
+2019-04-09 07:53:20,936 INFO main - -->op: ReplaceIfBooleanOp: `if (b2 == 0.0) { 	break; [...] ` ---> `if (false) { 	break; }` at pos 0 of parent `{ 	if (b2 == 0.0) { 		bre[...]`
+2019-04-09 07:53:21,214 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1504, el: CtIfImpl
+2019-04-09 07:53:21,215 INFO main - -->op: RemoveOp: `if (b2 == 0.0) { 	break; [...] ` ---> `-` at pos 0 of parent `{ 	if (b2 == 0.0) { 		bre[...]`
+2019-04-09 07:53:21,499 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1507, el: CtAssignmentImpl
+2019-04-09 07:53:21,499 INFO main - -->op: RemoveOp: `b1 = b2 ` ---> `-` at pos 1 of parent `{ 	if (b2 == 0.0) { 		bre[...]`
+2019-04-09 07:53:21,814 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1508, el: CtIfImpl
+2019-04-09 07:53:21,814 INFO main - -->op: ReplaceIfBooleanOp: `if ((work[i4]) > (work[(i[...] ` ---> `if (true) 	return ; ` at pos 2 of parent `{ 	if (b2 == 0.0) { 		bre[...]`
+2019-04-09 07:53:22,098 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1508, el: CtIfImpl
+2019-04-09 07:53:22,099 INFO main - -->op: ReplaceIfBooleanOp: `if ((work[i4]) > (work[(i[...] ` ---> `if (false) 	return ; ` at pos 2 of parent `{ 	if (b2 == 0.0) { 		bre[...]`
+2019-04-09 07:53:22,381 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1508, el: CtIfImpl
+2019-04-09 07:53:22,381 INFO main - -->op: RemoveOp: `if ((work[i4]) > (work[(i[...] ` ---> `-` at pos 2 of parent `{ 	if (b2 == 0.0) { 		bre[...]`
+2019-04-09 07:53:22,698 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1511, el: CtAssignmentImpl
+2019-04-09 07:53:22,698 INFO main - -->op: RemoveOp: `b2 = b2 * ((work[i4]) / ([...] ` ---> `-` at pos 3 of parent `{ 	if (b2 == 0.0) { 		bre[...]`
+2019-04-09 07:53:23,038 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1512, el: CtAssignmentImpl
+2019-04-09 07:53:23,039 INFO main - -->op: RemoveOp: `a2 = a2 + b2 ` ---> `-` at pos 4 of parent `{ 	if (b2 == 0.0) { 		bre[...]`
+2019-04-09 07:53:23,368 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1513, el: CtIfImpl
+2019-04-09 07:53:23,368 INFO main - -->op: ReplaceIfBooleanOp: `if (((100 * (java.lang.Ma[...] ` ---> `if (true) { 	break; }` at pos 5 of parent `{ 	if (b2 == 0.0) { 		bre[...]`
+2019-04-09 07:53:23,698 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1513, el: CtIfImpl
+2019-04-09 07:53:23,698 INFO main - -->op: ReplaceIfBooleanOp: `if (((100 * (java.lang.Ma[...] ` ---> `if (false) { 	break; }` at pos 5 of parent `{ 	if (b2 == 0.0) { 		bre[...]`
+2019-04-09 07:53:24,043 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1513, el: CtIfImpl
+2019-04-09 07:53:24,044 INFO main - -->op: RemoveOp: `if (((100 * (java.lang.Ma[...] ` ---> `-` at pos 5 of parent `{ 	if (b2 == 0.0) { 		bre[...]`
+2019-04-09 07:53:24,351 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-09 07:53:24,351 INFO main - 
+successful_ing_attempts (0): []
+2019-04-09 07:53:24,351 INFO main - 
+failing_ing_attempts (39): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-09 07:53:24,351 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 40.261

@@ -1,0 +1,206 @@
+2019-04-09 07:45:41,485 INFO main - command line arguments: [-scope  File  -jvm4testexecution  /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin  -mode  jmutrepair  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests//math_80  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -seed  10  -maxtime  100  -stopfirst  true]
+2019-04-09 07:45:42,157 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_80//bin//default from 225 classes with test cases
+2019-04-09 07:45:42,159 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-09 07:45:42,830 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_80//bin//default]
+2019-04-09 07:45:53,563 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.linear.EigenDecompositionImplTest#testMathpbx02
+2019-04-09 07:45:53,568 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2102, fails: 1, GZoltar suspicious 17368
+2019-04-09 07:45:53,580 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 55 with susp > 0.5, we consider: 55
+2019-04-09 07:45:53,589 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_80//src//default, compliance level: 8
+2019-04-09 07:45:59,678 INFO main - 
+---- Initial suspicious size: 55
+2019-04-09 07:45:59,732 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{processGeneralBlock(I)V 0.0, lineNumber=871, susp=1.0]
+2019-04-09 07:45:59,741 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{processGeneralBlock(I)V 0.0, lineNumber=872, susp=1.0]
+2019-04-09 07:45:59,748 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{initialSplits(I)V 0.0, lineNumber=944, susp=1.0]
+2019-04-09 07:45:59,758 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{initialSplits(I)V 0.0, lineNumber=945, susp=1.0]
+2019-04-09 07:45:59,765 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{initialSplits(I)V 0.0, lineNumber=957, susp=1.0]
+2019-04-09 07:45:59,772 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{initialSplits(I)V 0.0, lineNumber=958, susp=1.0]
+2019-04-09 07:45:59,778 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{initialSplits(I)V 0.0, lineNumber=959, susp=1.0]
+2019-04-09 07:45:59,785 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{initialSplits(I)V 0.0, lineNumber=960, susp=1.0]
+2019-04-09 07:45:59,792 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1055, susp=1.0]
+2019-04-09 07:45:59,799 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1056, susp=1.0]
+2019-04-09 07:45:59,806 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1058, susp=1.0]
+2019-04-09 07:45:59,813 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1059, susp=1.0]
+2019-04-09 07:45:59,819 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1061, susp=1.0]
+2019-04-09 07:45:59,824 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1062, susp=1.0]
+2019-04-09 07:45:59,830 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1063, susp=1.0]
+2019-04-09 07:45:59,836 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{flipIfWarranted(II)Z 0.0, lineNumber=1135, susp=1.0]
+2019-04-09 07:45:59,841 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{flipIfWarranted(II)Z 0.0, lineNumber=1136, susp=1.0]
+2019-04-09 07:45:59,847 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{flipIfWarranted(II)Z 0.0, lineNumber=1137, susp=1.0]
+2019-04-09 07:45:59,852 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{flipIfWarranted(II)Z 0.0, lineNumber=1138, susp=1.0]
+2019-04-09 07:45:59,858 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{flipIfWarranted(II)Z 0.0, lineNumber=1139, susp=1.0]
+2019-04-09 07:45:59,863 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{flipIfWarranted(II)Z 0.0, lineNumber=1140, susp=1.0]
+2019-04-09 07:45:59,868 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{flipIfWarranted(II)Z 0.0, lineNumber=1142, susp=1.0]
+2019-04-09 07:45:59,874 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{flipIfWarranted(II)Z 0.0, lineNumber=1144, susp=1.0]
+2019-04-09 07:45:59,879 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{dqd(II)V 0.0, lineNumber=1384, susp=1.0]
+2019-04-09 07:45:59,885 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{dqd(II)V 0.0, lineNumber=1385, susp=1.0]
+2019-04-09 07:45:59,891 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{dqd(II)V 0.0, lineNumber=1386, susp=1.0]
+2019-04-09 07:45:59,896 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{dqd(II)V 0.0, lineNumber=1387, susp=1.0]
+2019-04-09 07:45:59,902 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{dqd(II)V 0.0, lineNumber=1404, susp=1.0]
+2019-04-09 07:45:59,908 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{dqd(II)V 0.0, lineNumber=1405, susp=1.0]
+2019-04-09 07:45:59,913 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{dqd(II)V 0.0, lineNumber=1406, susp=1.0]
+2019-04-09 07:45:59,919 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{dqd(II)V 0.0, lineNumber=1407, susp=1.0]
+2019-04-09 07:45:59,925 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{dqd(II)V 0.0, lineNumber=1414, susp=1.0]
+2019-04-09 07:45:59,931 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{dqd(II)V 0.0, lineNumber=1415, susp=1.0]
+2019-04-09 07:45:59,936 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1090, susp=0.7071067811865475]
+2019-04-09 07:45:59,942 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1091, susp=0.7071067811865475]
+2019-04-09 07:45:59,947 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1092, susp=0.7071067811865475]
+2019-04-09 07:45:59,952 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1093, susp=0.7071067811865475]
+2019-04-09 07:45:59,962 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{getEigenvector(I)Lorg/apache/commons/math/linear/RealVector; 0.0, lineNumber=337, susp=0.5773502691896258]
+2019-04-09 07:45:59,967 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{getEigenvector(I)Lorg/apache/commons/math/linear/RealVector; 0.0, lineNumber=339, susp=0.5773502691896258]
+2019-04-09 07:45:59,973 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1088, susp=0.5]
+2019-04-09 07:45:59,978 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1105, susp=0.5]
+2019-04-09 07:45:59,983 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1106, susp=0.5]
+2019-04-09 07:45:59,988 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{computeShiftIncrement(III)V 0.0, lineNumber=1530, susp=0.5]
+2019-04-09 07:45:59,993 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{computeShiftIncrement(III)V 0.0, lineNumber=1531, susp=0.5]
+2019-04-09 07:45:59,999 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{computeShiftIncrement(III)V 0.0, lineNumber=1534, susp=0.5]
+2019-04-09 07:46:00,004 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{computeShiftIncrement(III)V 0.0, lineNumber=1535, susp=0.5]
+2019-04-09 07:46:00,010 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{computeShiftIncrement(III)V 0.0, lineNumber=1536, susp=0.5]
+2019-04-09 07:46:00,015 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{computeShiftIncrement(III)V 0.0, lineNumber=1537, susp=0.5]
+2019-04-09 07:46:00,027 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{computeShiftIncrement(III)V 0.0, lineNumber=1541, susp=0.5]
+2019-04-09 07:46:00,050 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{computeShiftIncrement(III)V 0.0, lineNumber=1565, susp=0.5]
+2019-04-09 07:46:00,056 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{computeShiftIncrement(III)V 0.0, lineNumber=1570, susp=0.5]
+2019-04-09 07:46:00,057 INFO main - Total suspicious from FL: 55,  4
+2019-04-09 07:46:00,057 INFO main - Total ModPoint created: 4
+2019-04-09 07:46:00,057 INFO main - Creating program variant #1, [Variant id: 1, #gens: 4, #ops: 0, parent:-]
+2019-04-09 07:46:10,813 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-09 07:46:10,813 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-09 07:46:10,813 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-09 07:46:10,813 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-09 07:46:10,813 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-09 07:46:10,813 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jmutrepair
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-09 07:46:10,814 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= defect4j_tests//math_80
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 10
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-09 07:46:10,815 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= File
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-09 07:46:10,816 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-09 07:46:10,817 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-09 07:46:10,817 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-09 07:46:10,848 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 336, el: CtIfImpl
+2019-04-09 07:46:10,850 INFO main - -->op: IfExpresionMutOp: `(eigenvectors) == null ` ---> `(eigenvectors) != null` at pos -1 of parent `-`
+2019-04-09 07:46:11,803 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 336, el: CtIfImpl
+2019-04-09 07:46:11,804 INFO main - -->op: IfExpresionMutOp: `(eigenvectors) == null ` ---> `(eigenvectors) >= null` at pos -1 of parent `-`
+2019-04-09 07:46:11,996 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 336, el: CtIfImpl
+2019-04-09 07:46:11,996 INFO main - -->op: IfExpresionMutOp: `(eigenvectors) == null ` ---> `(eigenvectors) > null` at pos -1 of parent `-`
+2019-04-09 07:46:12,150 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 336, el: CtIfImpl
+2019-04-09 07:46:12,151 INFO main - -->op: IfExpresionMutOp: `(eigenvectors) == null ` ---> `(eigenvectors) <= null` at pos -1 of parent `-`
+2019-04-09 07:46:12,276 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 336, el: CtIfImpl
+2019-04-09 07:46:12,277 INFO main - -->op: IfExpresionMutOp: `(eigenvectors) == null ` ---> `(eigenvectors) < null` at pos -1 of parent `-`
+2019-04-09 07:46:12,372 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 336, el: CtIfImpl
+2019-04-09 07:46:12,372 INFO main - -->op: IfExpresionMutOp: `(eigenvectors) == null ` ---> `!((eigenvectors) == null)` at pos -1 of parent `-`
+2019-04-09 07:46:12,688 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1538, el: CtIfImpl
+2019-04-09 07:46:12,689 INFO main - -->op: IfExpresionMutOp: `((work[(np - 8)]) > b2) |[...] ` ---> `((work[(np - 8)]) > b2) &[...]` at pos -1 of parent `-`
+2019-04-09 07:46:13,009 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1538, el: CtIfImpl
+2019-04-09 07:46:13,009 INFO main - -->op: IfExpresionMutOp: `((work[(np - 8)]) > b2) |[...] ` ---> `((work[(np - 8)]) == b2) [...]` at pos -1 of parent `-`
+2019-04-09 07:46:13,365 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1538, el: CtIfImpl
+2019-04-09 07:46:13,365 INFO main - -->op: IfExpresionMutOp: `((work[(np - 8)]) > b2) |[...] ` ---> `((work[(np - 8)]) != b2) [...]` at pos -1 of parent `-`
+2019-04-09 07:46:13,691 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1538, el: CtIfImpl
+2019-04-09 07:46:13,692 INFO main - -->op: IfExpresionMutOp: `((work[(np - 8)]) > b2) |[...] ` ---> `((work[(np - 8)]) >= b2) [...]` at pos -1 of parent `-`
+2019-04-09 07:46:14,025 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1538, el: CtIfImpl
+2019-04-09 07:46:14,025 INFO main - -->op: IfExpresionMutOp: `((work[(np - 8)]) > b2) |[...] ` ---> `((work[(np - 8)]) <= b2) [...]` at pos -1 of parent `-`
+2019-04-09 07:46:14,359 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1538, el: CtIfImpl
+2019-04-09 07:46:14,359 INFO main - -->op: IfExpresionMutOp: `((work[(np - 8)]) > b2) |[...] ` ---> `((work[(np - 8)]) < b2) |[...]` at pos -1 of parent `-`
+2019-04-09 07:46:14,648 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1538, el: CtIfImpl
+2019-04-09 07:46:14,648 INFO main - -->op: IfExpresionMutOp: `((work[(np - 8)]) > b2) |[...] ` ---> `(!((work[(np - 8)]) > b2)[...]` at pos -1 of parent `-`
+2019-04-09 07:46:14,924 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1538, el: CtIfImpl
+2019-04-09 07:46:14,925 INFO main - -->op: IfExpresionMutOp: `((work[(np - 8)]) > b2) |[...] ` ---> `((work[(np - 8)]) > b2) |[...]` at pos -1 of parent `-`
+2019-04-09 07:46:15,192 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1538, el: CtIfImpl
+2019-04-09 07:46:15,192 INFO main - -->op: IfExpresionMutOp: `((work[(np - 8)]) > b2) |[...] ` ---> `((work[(np - 8)]) > b2) |[...]` at pos -1 of parent `-`
+2019-04-09 07:46:15,477 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1538, el: CtIfImpl
+2019-04-09 07:46:15,477 INFO main - -->op: IfExpresionMutOp: `((work[(np - 8)]) > b2) |[...] ` ---> `((work[(np - 8)]) > b2) |[...]` at pos -1 of parent `-`
+2019-04-09 07:46:15,755 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1538, el: CtIfImpl
+2019-04-09 07:46:15,755 INFO main - -->op: IfExpresionMutOp: `((work[(np - 8)]) > b2) |[...] ` ---> `((work[(np - 8)]) > b2) |[...]` at pos -1 of parent `-`
+2019-04-09 07:46:16,020 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1538, el: CtIfImpl
+2019-04-09 07:46:16,020 INFO main - -->op: IfExpresionMutOp: `((work[(np - 8)]) > b2) |[...] ` ---> `((work[(np - 8)]) > b2) |[...]` at pos -1 of parent `-`
+2019-04-09 07:46:16,304 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1538, el: CtIfImpl
+2019-04-09 07:46:16,304 INFO main - -->op: IfExpresionMutOp: `((work[(np - 8)]) > b2) |[...] ` ---> `((work[(np - 8)]) > b2) |[...]` at pos -1 of parent `-`
+2019-04-09 07:46:16,566 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1538, el: CtIfImpl
+2019-04-09 07:46:16,567 INFO main - -->op: IfExpresionMutOp: `((work[(np - 8)]) > b2) |[...] ` ---> `!(((work[(np - 8)]) > b2)[...]` at pos -1 of parent `-`
+2019-04-09 07:46:16,821 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1544, el: CtIfImpl
+2019-04-09 07:46:16,822 INFO main - -->op: IfExpresionMutOp: `(end - start) > 3 ` ---> `(end - start) == 3` at pos -1 of parent `-`
+2019-04-09 07:46:17,073 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1544, el: CtIfImpl
+2019-04-09 07:46:17,074 INFO main - -->op: IfExpresionMutOp: `(end - start) > 3 ` ---> `(end - start) != 3` at pos -1 of parent `-`
+2019-04-09 07:46:17,354 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1544, el: CtIfImpl
+2019-04-09 07:46:17,355 INFO main - -->op: IfExpresionMutOp: `(end - start) > 3 ` ---> `(end - start) >= 3` at pos -1 of parent `-`
+2019-04-09 07:46:17,647 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1544, el: CtIfImpl
+2019-04-09 07:46:17,647 INFO main - -->op: IfExpresionMutOp: `(end - start) > 3 ` ---> `(end - start) <= 3` at pos -1 of parent `-`
+2019-04-09 07:46:17,937 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1544, el: CtIfImpl
+2019-04-09 07:46:17,937 INFO main - -->op: IfExpresionMutOp: `(end - start) > 3 ` ---> `(end - start) < 3` at pos -1 of parent `-`
+2019-04-09 07:46:18,252 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1544, el: CtIfImpl
+2019-04-09 07:46:18,253 INFO main - -->op: IfExpresionMutOp: `(end - start) > 3 ` ---> `!((end - start) > 3)` at pos -1 of parent `-`
+2019-04-09 07:46:18,544 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1564, el: CtIfImpl
+2019-04-09 07:46:18,544 INFO main - -->op: IfExpresionMutOp: `a2 < cnst1 ` ---> `a2 == cnst1` at pos -1 of parent `-`
+2019-04-09 07:46:18,873 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1564, el: CtIfImpl
+2019-04-09 07:46:18,873 INFO main - -->op: IfExpresionMutOp: `a2 < cnst1 ` ---> `a2 != cnst1` at pos -1 of parent `-`
+2019-04-09 07:46:19,157 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1564, el: CtIfImpl
+2019-04-09 07:46:19,157 INFO main - -->op: IfExpresionMutOp: `a2 < cnst1 ` ---> `a2 >= cnst1` at pos -1 of parent `-`
+2019-04-09 07:46:19,418 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1564, el: CtIfImpl
+2019-04-09 07:46:19,419 INFO main - -->op: IfExpresionMutOp: `a2 < cnst1 ` ---> `a2 > cnst1` at pos -1 of parent `-`
+2019-04-09 07:46:19,691 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1564, el: CtIfImpl
+2019-04-09 07:46:19,691 INFO main - -->op: IfExpresionMutOp: `a2 < cnst1 ` ---> `a2 <= cnst1` at pos -1 of parent `-`
+2019-04-09 07:46:19,941 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1564, el: CtIfImpl
+2019-04-09 07:46:19,941 INFO main - -->op: IfExpresionMutOp: `a2 < cnst1 ` ---> `!(a2 < cnst1)` at pos -1 of parent `-`
+2019-04-09 07:46:20,194 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-09 07:46:20,195 INFO main - 
+successful_ing_attempts (0): []
+2019-04-09 07:46:20,195 INFO main - 
+failing_ing_attempts (32): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-09 07:46:20,195 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 38.703

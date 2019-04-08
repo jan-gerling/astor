@@ -1,0 +1,155 @@
+2019-04-09 07:36:41,651 INFO main - command line arguments: [-scope  Package  -jvm4testexecution  /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin  -mode  jkali  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests//math_77  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -seed  10  -maxtime  100  -stopfirst  true]
+2019-04-09 07:36:42,366 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_77//bin//default from 230 classes with test cases
+2019-04-09 07:36:42,368 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-09 07:36:43,034 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_77//bin//default]
+2019-04-09 07:36:53,749 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.linear.ArrayRealVectorTest#testBasicFunctions
+2019-04-09 07:36:53,752 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.linear.SparseRealVectorTest#testBasicFunctions
+2019-04-09 07:36:53,757 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2129, fails: 2, GZoltar suspicious 17017
+2019-04-09 07:36:53,768 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 33 with susp > 0.5, we consider: 33
+2019-04-09 07:36:53,777 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_77//src//default, compliance level: 8
+2019-04-09 07:36:59,907 INFO main - 
+---- Initial suspicious size: 33
+2019-04-09 07:37:00,010 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractRealVector, methodName=org.apache.commons.math.linear.AbstractRealVector{getNorm()D 0.0, lineNumber=216, susp=0.7071067811865475]
+2019-04-09 07:37:00,363 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector, methodName=org.apache.commons.math.linear.OpenMapRealVector{access$000(Lorg/apache/commons/math/linear/OpenMapRealVector;)Lorg/apache/commons/math/util/OpenIntToDoubleHashMap; 0.0, lineNumber=30, susp=0.5]
+2019-04-09 07:37:00,397 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector$OpenMapSparseIterator, methodName=org.apache.commons.math.linear.OpenMapRealVector$OpenMapSparseIterator{next()Ljava/lang/Object; 0.0, lineNumber=854, susp=0.5]
+2019-04-09 07:37:00,397 INFO main - Total suspicious from FL: 33,  30
+2019-04-09 07:37:00,397 INFO main - Total ModPoint created: 30
+2019-04-09 07:37:00,397 INFO main - Creating program variant #1, [Variant id: 1, #gens: 30, #ops: 0, parent:-]
+2019-04-09 07:37:10,542 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-09 07:37:10,542 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-09 07:37:10,542 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-09 07:37:10,543 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-09 07:37:10,543 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-09 07:37:10,543 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-09 07:37:10,543 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-09 07:37:10,543 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-09 07:37:10,543 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-09 07:37:10,543 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-09 07:37:10,543 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-09 07:37:10,543 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-09 07:37:10,543 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-09 07:37:10,543 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-09 07:37:10,543 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-09 07:37:10,543 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jkali
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= defect4j_tests//math_77
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-09 07:37:10,544 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 10
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-09 07:37:10,545 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= Package
+2019-04-09 07:37:10,546 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-09 07:37:10,546 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-09 07:37:10,546 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-09 07:37:10,546 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-09 07:37:10,546 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-09 07:37:10,546 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-09 07:37:10,546 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-09 07:37:10,546 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-09 07:37:10,546 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-09 07:37:10,546 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-09 07:37:10,546 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-09 07:37:10,546 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-09 07:37:10,546 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-09 07:37:10,546 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-09 07:37:10,547 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-09 07:37:10,547 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-09 07:37:10,547 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-09 07:37:10,547 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-09 07:37:10,547 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-09 07:37:10,548 INFO main - mod_point ModificPoint=ArrayRealVector line: 709, el: CtLocalVariableImpl
+2019-04-09 07:37:10,549 INFO main - -->op: RemoveOp: `double sum = 0 ` ---> `-` at pos 0 of parent `{ 	double sum = 0; 	for ([...]`
+2019-04-09 07:37:11,506 INFO main - mod_point ModificPoint=ArrayRealVector line: 710, el: CtForEachImpl
+2019-04-09 07:37:11,507 INFO main - -->op: RemoveOp: `for (double a : data) { 	[...] ` ---> `-` at pos 1 of parent `{ 	double sum = 0; 	for ([...]`
+2019-04-09 07:37:12,024 INFO main - mod_point ModificPoint=ArrayRealVector line: 711, el: CtOperatorAssignmentImpl
+2019-04-09 07:37:12,025 INFO main - -->op: RemoveOp: `sum += java.lang.Math.abs[...] ` ---> `-` at pos 0 of parent `{ 	sum += java.lang.Math.[...]`
+2019-04-09 07:37:12,455 INFO main - mod_point ModificPoint=ArrayRealVector line: 713, el: CtReturnImpl
+2019-04-09 07:37:12,455 INFO main - -->op: RemoveOp: `return sum ` ---> `-` at pos 2 of parent `{ 	double sum = 0; 	for ([...]`
+2019-04-09 07:37:12,661 INFO main - mod_point ModificPoint=ArrayRealVector line: 719, el: CtLocalVariableImpl
+2019-04-09 07:37:12,661 INFO main - -->op: RemoveOp: `double max = 0 ` ---> `-` at pos 0 of parent `{ 	double max = 0; 	for ([...]`
+2019-04-09 07:37:12,859 INFO main - mod_point ModificPoint=ArrayRealVector line: 720, el: CtForEachImpl
+2019-04-09 07:37:12,860 INFO main - -->op: RemoveOp: `for (double a : data) { 	[...] ` ---> `-` at pos 1 of parent `{ 	double max = 0; 	for ([...]`
+2019-04-09 07:37:13,269 INFO main - mod_point ModificPoint=ArrayRealVector line: 721, el: CtOperatorAssignmentImpl
+2019-04-09 07:37:13,269 INFO main - -->op: RemoveOp: `max += java.lang.Math.max[...] ` ---> `-` at pos 0 of parent `{ 	max += java.lang.Math.[...]`
+2019-04-09 07:37:13,660 INFO main - mod_point ModificPoint=ArrayRealVector line: 723, el: CtReturnImpl
+2019-04-09 07:37:13,660 INFO main - -->op: RemoveOp: `return max ` ---> `-` at pos 2 of parent `{ 	double max = 0; 	for ([...]`
+2019-04-09 07:37:13,867 INFO main - mod_point ModificPoint=AbstractRealVector line: 210, el: CtLocalVariableImpl
+2019-04-09 07:37:13,868 INFO main - -->op: RemoveOp: `double sum = 0 ` ---> `-` at pos 0 of parent `{ 	double sum = 0; 	java.[...]`
+2019-04-09 07:37:14,091 INFO main - mod_point ModificPoint=AbstractRealVector line: 211, el: CtLocalVariableImpl
+2019-04-09 07:37:14,092 INFO main - -->op: RemoveOp: `java.util.Iterator<org.ap[...] ` ---> `-` at pos 1 of parent `{ 	double sum = 0; 	java.[...]`
+2019-04-09 07:37:14,251 INFO main - mod_point ModificPoint=AbstractRealVector line: 213, el: CtWhileImpl
+2019-04-09 07:37:14,251 INFO main - -->op: RemoveOp: `while ((it.hasNext()) && [...] ` ---> `-` at pos 3 of parent `{ 	double sum = 0; 	java.[...]`
+2019-04-09 07:37:14,572 INFO main - mod_point ModificPoint=AbstractRealVector line: 214, el: CtLocalVariableImpl
+2019-04-09 07:37:14,572 INFO main - -->op: RemoveOp: `final double value = e.ge[...] ` ---> `-` at pos 0 of parent `{ 	final double value = e[...]`
+2019-04-09 07:37:14,721 INFO main - mod_point ModificPoint=AbstractRealVector line: 215, el: CtOperatorAssignmentImpl
+2019-04-09 07:37:14,721 INFO main - -->op: RemoveOp: `sum += value * value ` ---> `-` at pos 1 of parent `{ 	final double value = e[...]`
+2019-04-09 07:37:14,813 INFO main - mod_point ModificPoint=AbstractRealVector line: 217, el: CtReturnImpl
+2019-04-09 07:37:14,814 INFO main - -->op: RemoveOp: `return java.lang.Math.sqr[...] ` ---> `-` at pos 4 of parent `{ 	double sum = 0; 	java.[...]`
+2019-04-09 07:37:14,950 INFO main - mod_point ModificPoint=AbstractRealVector line: 222, el: CtLocalVariableImpl
+2019-04-09 07:37:14,950 INFO main - -->op: RemoveOp: `double norm = 0 ` ---> `-` at pos 0 of parent `{ 	double norm = 0; 	java[...]`
+2019-04-09 07:37:15,084 INFO main - mod_point ModificPoint=AbstractRealVector line: 223, el: CtLocalVariableImpl
+2019-04-09 07:37:15,085 INFO main - -->op: RemoveOp: `java.util.Iterator<org.ap[...] ` ---> `-` at pos 1 of parent `{ 	double norm = 0; 	java[...]`
+2019-04-09 07:37:15,221 INFO main - mod_point ModificPoint=AbstractRealVector line: 225, el: CtWhileImpl
+2019-04-09 07:37:15,222 INFO main - -->op: RemoveOp: `while ((it.hasNext()) && [...] ` ---> `-` at pos 3 of parent `{ 	double norm = 0; 	java[...]`
+2019-04-09 07:37:15,522 INFO main - mod_point ModificPoint=AbstractRealVector line: 226, el: CtOperatorAssignmentImpl
+2019-04-09 07:37:15,523 INFO main - -->op: RemoveOp: `norm += java.lang.Math.ab[...] ` ---> `-` at pos 0 of parent `{ 	norm += java.lang.Math[...]`
+2019-04-09 07:37:15,825 INFO main - mod_point ModificPoint=AbstractRealVector line: 228, el: CtReturnImpl
+2019-04-09 07:37:15,826 INFO main - -->op: RemoveOp: `return norm ` ---> `-` at pos 4 of parent `{ 	double norm = 0; 	java[...]`
+2019-04-09 07:37:16,001 INFO main - mod_point ModificPoint=OpenMapRealVector line: 499, el: CtLocalVariableImpl
+2019-04-09 07:37:16,003 INFO main - -->op: RemoveOp: `double max = 0 ` ---> `-` at pos 0 of parent `{ 	double max = 0; 	org.a[...]`
+2019-04-09 07:37:16,198 INFO main - mod_point ModificPoint=OpenMapRealVector line: 500, el: CtLocalVariableImpl
+2019-04-09 07:37:16,200 INFO main - -->op: RemoveOp: `org.apache.commons.math.u[...] ` ---> `-` at pos 1 of parent `{ 	double max = 0; 	org.a[...]`
+2019-04-09 07:37:16,394 INFO main - mod_point ModificPoint=OpenMapRealVector line: 501, el: CtWhileImpl
+2019-04-09 07:37:16,396 INFO main - -->op: RemoveOp: `while (iter.hasNext()) { [...] ` ---> `-` at pos 2 of parent `{ 	double max = 0; 	org.a[...]`
+2019-04-09 07:37:16,785 INFO main - mod_point ModificPoint=OpenMapRealVector line: 502, el: CtInvocationImpl
+2019-04-09 07:37:16,785 INFO main - -->op: RemoveOp: `iter.advance() ` ---> `-` at pos 0 of parent `{ 	iter.advance(); 	max +[...]`
+2019-04-09 07:37:17,099 INFO main - mod_point ModificPoint=OpenMapRealVector line: 503, el: CtOperatorAssignmentImpl
+2019-04-09 07:37:17,099 INFO main - -->op: RemoveOp: `max += iter.value() ` ---> `-` at pos 1 of parent `{ 	iter.advance(); 	max +[...]`
+2019-04-09 07:37:17,401 INFO main - mod_point ModificPoint=OpenMapRealVector line: 505, el: CtReturnImpl
+2019-04-09 07:37:17,402 INFO main - -->op: RemoveOp: `return max ` ---> `-` at pos 3 of parent `{ 	double max = 0; 	org.a[...]`
+2019-04-09 07:37:17,554 INFO main - mod_point ModificPoint=OpenMapRealVector line: 832, el: CtReturnImpl
+2019-04-09 07:37:17,555 INFO main - -->op: RemoveOp: `return iter.value() ` ---> `-` at pos 0 of parent `{ 	return iter.value(); }`
+2019-04-09 07:37:17,688 INFO main - mod_point ModificPoint=OpenMapRealVector line: 809, el: CtReturnImpl
+2019-04-09 07:37:17,695 INFO main - -->op: RemoveOp: `return new org.apache.com[...] ` ---> `-` at pos 0 of parent `{ 	return new org.apache.[...]`
+2019-04-09 07:37:17,825 INFO main - mod_point ModificPoint=OpenMapRealVector line: 870, el: CtReturnImpl
+2019-04-09 07:37:17,825 INFO main - -->op: RemoveOp: `return iter.hasNext() ` ---> `-` at pos 0 of parent `{ 	return iter.hasNext();[...]`
+2019-04-09 07:37:17,956 INFO main - mod_point ModificPoint=OpenMapRealVector line: 875, el: CtInvocationImpl
+2019-04-09 07:37:17,956 INFO main - -->op: RemoveOp: `iter.advance() ` ---> `-` at pos 0 of parent `{ 	iter.advance(); 	retur[...]`
+2019-04-09 07:37:18,231 INFO main - mod_point ModificPoint=OpenMapRealVector line: 876, el: CtReturnImpl
+2019-04-09 07:37:18,231 INFO main - -->op: RemoveOp: `return current ` ---> `-` at pos 1 of parent `{ 	iter.advance(); 	retur[...]`
+2019-04-09 07:37:18,361 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-09 07:37:18,361 INFO main - 
+successful_ing_attempts (0): []
+2019-04-09 07:37:18,361 INFO main - 
+failing_ing_attempts (30): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-09 07:37:18,361 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 36.703

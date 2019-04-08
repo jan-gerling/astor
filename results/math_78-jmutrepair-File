@@ -1,0 +1,117 @@
+2019-04-09 07:38:18,196 INFO main - command line arguments: [-scope  File  -jvm4testexecution  /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin  -mode  jmutrepair  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests//math_78  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -seed  10  -maxtime  100  -stopfirst  true]
+2019-04-09 07:38:18,885 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_78//bin//default from 226 classes with test cases
+2019-04-09 07:38:18,887 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-09 07:38:19,957 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_78//bin//default]
+2019-04-09 07:38:30,350 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.events.EventStateTest#closeEvents
+2019-04-09 07:38:30,356 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2106, fails: 1, GZoltar suspicious 17412
+2019-04-09 07:38:30,373 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 11 with susp > 0.5, we consider: 11
+2019-04-09 07:38:30,383 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_78//src//default, compliance level: 8
+2019-04-09 07:38:36,852 INFO main - 
+---- Initial suspicious size: 4
+2019-04-09 07:38:36,879 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D 0.0, lineNumber=178, susp=0.5773502691896258]
+2019-04-09 07:38:36,885 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D 0.0, lineNumber=181, susp=0.5773502691896258]
+2019-04-09 07:38:36,895 INFO main - Total suspicious from FL: 4,  2
+2019-04-09 07:38:36,895 INFO main - Total ModPoint created: 2
+2019-04-09 07:38:36,896 INFO main - Creating program variant #1, [Variant id: 1, #gens: 2, #ops: 0, parent:-]
+2019-04-09 07:38:47,866 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-09 07:38:47,866 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-09 07:38:47,867 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-09 07:38:47,867 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-09 07:38:47,867 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-09 07:38:47,867 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-09 07:38:47,867 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-09 07:38:47,867 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-09 07:38:47,867 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-09 07:38:47,867 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-09 07:38:47,867 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-09 07:38:47,867 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jmutrepair
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-09 07:38:47,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= defect4j_tests//math_78
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 10
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-09 07:38:47,869 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= File
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-09 07:38:47,870 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-09 07:38:47,872 INFO main - mod_point ModificPoint=BrentSolver line: 170, el: CtIfImpl
+2019-04-09 07:38:47,873 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-09 07:38:48,606 INFO main - mod_point ModificPoint=BrentSolver line: 170, el: CtIfImpl
+2019-04-09 07:38:48,607 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-09 07:38:48,836 INFO main - mod_point ModificPoint=BrentSolver line: 170, el: CtIfImpl
+2019-04-09 07:38:48,836 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-09 07:38:49,050 INFO main - mod_point ModificPoint=BrentSolver line: 170, el: CtIfImpl
+2019-04-09 07:38:49,050 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-09 07:38:49,258 INFO main - mod_point ModificPoint=BrentSolver line: 170, el: CtIfImpl
+2019-04-09 07:38:49,258 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-09 07:38:49,462 INFO main - mod_point ModificPoint=BrentSolver line: 170, el: CtIfImpl
+2019-04-09 07:38:49,462 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `!((java.lang.Math.abs(yMi[...]` at pos -1 of parent `-`
+2019-04-09 07:38:49,652 INFO main - mod_point ModificPoint=BrentSolver line: 173, el: CtIfImpl
+2019-04-09 07:38:49,652 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
+2019-04-09 07:38:49,836 INFO main - mod_point ModificPoint=BrentSolver line: 173, el: CtIfImpl
+2019-04-09 07:38:49,836 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
+2019-04-09 07:38:50,014 INFO main - mod_point ModificPoint=BrentSolver line: 173, el: CtIfImpl
+2019-04-09 07:38:50,015 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
+2019-04-09 07:38:50,222 INFO main - mod_point ModificPoint=BrentSolver line: 173, el: CtIfImpl
+2019-04-09 07:38:50,223 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
+2019-04-09 07:38:50,416 INFO main - mod_point ModificPoint=BrentSolver line: 173, el: CtIfImpl
+2019-04-09 07:38:50,416 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
+2019-04-09 07:38:50,591 INFO main - mod_point ModificPoint=BrentSolver line: 173, el: CtIfImpl
+2019-04-09 07:38:50,591 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `!((java.lang.Math.abs(yMa[...]` at pos -1 of parent `-`
+2019-04-09 07:38:50,770 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-09 07:38:50,770 INFO main - 
+successful_ing_attempts (0): []
+2019-04-09 07:38:50,771 INFO main - 
+failing_ing_attempts (12): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-09 07:38:50,771 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 32.569

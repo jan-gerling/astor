@@ -1,0 +1,132 @@
+2019-04-09 07:40:26,951 INFO main - command line arguments: [-scope  Package  -jvm4testexecution  /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin  -mode  jkali  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests//math_78  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -seed  10  -maxtime  100  -stopfirst  true]
+2019-04-09 07:40:27,697 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_78//bin//default from 226 classes with test cases
+2019-04-09 07:40:27,699 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-09 07:40:28,359 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_78//bin//default]
+2019-04-09 07:40:38,070 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.random.AbstractRandomGeneratorTest#testNextPoissonConsistency
+2019-04-09 07:40:38,072 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.events.EventStateTest#closeEvents
+2019-04-09 07:40:38,078 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2106, fails: 2, GZoltar suspicious 17412
+2019-04-09 07:40:38,089 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 19 with susp > 0.5, we consider: 19
+2019-04-09 07:40:38,098 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_78//src//default, compliance level: 8
+2019-04-09 07:40:44,270 INFO main - 
+---- Initial suspicious size: 16
+2019-04-09 07:40:44,271 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.RetryTestCase, methodName=org.apache.commons.math.RetryTestCase{runTest()V 0.0, lineNumber=52, susp=0.7071067811865475]
+2019-04-09 07:40:44,271 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.RetryTestCase, methodName=org.apache.commons.math.RetryTestCase{runTest()V 0.0, lineNumber=52, susp=0.7071067811865475]
+2019-04-09 07:40:44,310 INFO main - Total suspicious from FL: 16,  15
+2019-04-09 07:40:44,311 INFO main - Total ModPoint created: 15
+2019-04-09 07:40:44,311 INFO main - Creating program variant #1, [Variant id: 1, #gens: 15, #ops: 0, parent:-]
+2019-04-09 07:40:55,578 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-09 07:40:55,579 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-09 07:40:55,579 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-09 07:40:55,579 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-09 07:40:55,579 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-09 07:40:55,579 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-09 07:40:55,579 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-09 07:40:55,579 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-09 07:40:55,579 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-09 07:40:55,579 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-09 07:40:55,579 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jkali
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-09 07:40:55,580 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= defect4j_tests//math_78
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 10
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-09 07:40:55,581 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= Package
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-09 07:40:55,582 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-09 07:40:55,583 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-09 07:40:55,583 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-09 07:40:55,583 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-09 07:40:55,583 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-09 07:40:55,583 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-09 07:40:55,583 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-09 07:40:55,583 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-09 07:40:55,583 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-09 07:40:55,583 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-09 07:40:55,586 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 253, el: CtIfImpl
+2019-04-09 07:40:55,587 INFO main - -->op: ReplaceIfBooleanOp: `if (!(java.lang.Double.is[...] ` ---> `if (true) { 	double dev =[...]` at pos 0 of parent `{ 	if (!(java.lang.Double[...]`
+2019-04-09 07:40:56,337 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 253, el: CtIfImpl
+2019-04-09 07:40:56,338 INFO main - -->op: ReplaceIfBooleanOp: `if (!(java.lang.Double.is[...] ` ---> `if (false) { 	double dev [...]` at pos 0 of parent `{ 	if (!(java.lang.Double[...]`
+2019-04-09 07:40:56,588 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 253, el: CtIfImpl
+2019-04-09 07:40:56,589 INFO main - -->op: RemoveOp: `if (!(java.lang.Double.is[...] ` ---> `-` at pos 0 of parent `{ 	if (!(java.lang.Double[...]`
+2019-04-09 07:40:56,844 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 254, el: CtLocalVariableImpl
+2019-04-09 07:40:56,844 INFO main - -->op: RemoveOp: `double dev = cachedNormal[...] ` ---> `-` at pos 0 of parent `{ 	double dev = cachedNor[...]`
+2019-04-09 07:40:56,882 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 255, el: CtAssignmentImpl
+2019-04-09 07:40:56,883 INFO main - -->op: RemoveOp: `cachedNormalDeviate = jav[...] ` ---> `-` at pos 1 of parent `{ 	double dev = cachedNor[...]`
+2019-04-09 07:40:57,141 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 256, el: CtReturnImpl
+2019-04-09 07:40:57,142 INFO main - -->op: RemoveOp: `return dev ` ---> `-` at pos 2 of parent `{ 	double dev = cachedNor[...]`
+2019-04-09 07:40:57,375 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 258, el: CtLocalVariableImpl
+2019-04-09 07:40:57,375 INFO main - -->op: RemoveOp: `double v1 = 0 ` ---> `-` at pos 1 of parent `{ 	if (!(java.lang.Double[...]`
+2019-04-09 07:40:57,398 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 259, el: CtLocalVariableImpl
+2019-04-09 07:40:57,398 INFO main - -->op: RemoveOp: `double v2 = 0 ` ---> `-` at pos 2 of parent `{ 	if (!(java.lang.Double[...]`
+2019-04-09 07:40:57,418 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 260, el: CtLocalVariableImpl
+2019-04-09 07:40:57,418 INFO main - -->op: RemoveOp: `double s = 1 ` ---> `-` at pos 3 of parent `{ 	if (!(java.lang.Double[...]`
+2019-04-09 07:40:57,442 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 261, el: CtWhileImpl
+2019-04-09 07:40:57,443 INFO main - -->op: RemoveOp: `while (s >= 1) { 	v1 = (2[...] ` ---> `-` at pos 4 of parent `{ 	if (!(java.lang.Double[...]`
+2019-04-09 07:40:57,712 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 262, el: CtAssignmentImpl
+2019-04-09 07:40:57,712 INFO main - -->op: RemoveOp: `v1 = (2 * (nextDouble()))[...] ` ---> `-` at pos 0 of parent `{ 	v1 = (2 * (nextDouble([...]`
+2019-04-09 07:40:57,947 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 263, el: CtAssignmentImpl
+2019-04-09 07:40:57,947 INFO main - -->op: RemoveOp: `v2 = (2 * (nextDouble()))[...] ` ---> `-` at pos 1 of parent `{ 	v1 = (2 * (nextDouble([...]`
+2019-04-09 07:40:58,195 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 264, el: CtAssignmentImpl
+2019-04-09 07:40:58,196 INFO main - -->op: RemoveOp: `s = (v1 * v1) + (v2 * v2) ` ---> `-` at pos 2 of parent `{ 	v1 = (2 * (nextDouble([...]`
+2019-04-09 07:40:58,422 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 266, el: CtIfImpl
+2019-04-09 07:40:58,422 INFO main - -->op: ReplaceIfBooleanOp: `if (s != 0) { 	s = java.l[...] ` ---> `if (true) { 	s = java.lan[...]` at pos 5 of parent `{ 	if (!(java.lang.Double[...]`
+2019-04-09 07:40:58,668 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 266, el: CtIfImpl
+2019-04-09 07:40:58,668 INFO main - -->op: ReplaceIfBooleanOp: `if (s != 0) { 	s = java.l[...] ` ---> `if (false) { 	s = java.la[...]` at pos 5 of parent `{ 	if (!(java.lang.Double[...]`
+2019-04-09 07:40:58,887 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 266, el: CtIfImpl
+2019-04-09 07:40:58,888 INFO main - -->op: RemoveOp: `if (s != 0) { 	s = java.l[...] ` ---> `-` at pos 5 of parent `{ 	if (!(java.lang.Double[...]`
+2019-04-09 07:40:59,119 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 267, el: CtAssignmentImpl
+2019-04-09 07:40:59,119 INFO main - -->op: RemoveOp: `s = java.lang.Math.sqrt(([...] ` ---> `-` at pos 0 of parent `{ 	s = java.lang.Math.sqr[...]`
+2019-04-09 07:40:59,353 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 269, el: CtAssignmentImpl
+2019-04-09 07:40:59,353 INFO main - -->op: RemoveOp: `cachedNormalDeviate = v2 [...] ` ---> `-` at pos 6 of parent `{ 	if (!(java.lang.Double[...]`
+2019-04-09 07:40:59,603 INFO main - mod_point ModificPoint=AbstractRandomGenerator line: 270, el: CtReturnImpl
+2019-04-09 07:40:59,603 INFO main - -->op: RemoveOp: `return v1 * s ` ---> `-` at pos 7 of parent `{ 	if (!(java.lang.Double[...]`
+2019-04-09 07:40:59,620 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-09 07:40:59,621 INFO main - 
+successful_ing_attempts (0): []
+2019-04-09 07:40:59,621 INFO main - 
+failing_ing_attempts (19): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-09 07:40:59,621 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 32.663
