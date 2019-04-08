@@ -17,8 +17,8 @@ for currenttest in $tests; do
 	echo -e "FILE:" $currenttest "\n"
 	
 	cd $currenttest
-	mvn clean compile test
-	cd ../../
+	mvn clean compile test |& tee results/$=$currenttest"-build-output"
+	cd ~/astor/
 	mvn dependency:build-classpath -B | egrep -v "(^\[INFO\]|^\[WARNING\])" | tee /tmp/astor-classpath.txt
 	
 	# iterate over all of the three modes
