@@ -5,7 +5,7 @@
 mkdir $2/results $2/results/done
 
 modes=(jmutrepair jkali jgenprog)
-scopes=(file package application)
+scopes=(File Package Application)
 seedValue=10
 treshold=0.5
 maxTime=100
