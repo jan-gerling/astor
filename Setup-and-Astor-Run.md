@@ -54,9 +54,9 @@ mvn compile
 
 ### Run Tests:
 
-For convenience I wrote this bash script iterating over all folder in the given path (argument one), build the test case to fix, and then apply all three scopes and modes on them. ([bash script src](<https://github.com/jan-gerling/astor/blob/reproduce/astor_runner.sh>)) 
+For convenience I wrote this bash script iterating over all folder in the given path (argument one) and the full path to the astor root folder (argument two), build the test case to fix, and then apply all three scopes and modes on them. ([bash script src](<https://github.com/jan-gerling/astor/blob/reproduce/astor_runner.sh>)) 
 
 ```console
 chmod u+x astor_runner.sh
-./astor_runner.sh defect4j_tests/
+./astor_runner.sh defect4j_tests/ ~/astor/
 ```
