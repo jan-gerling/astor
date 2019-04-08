@@ -15,7 +15,7 @@ for currenttest in $tests; do
 	echo -e "\e[32m\n\n\n\n* * * * * * * * New * * * * * * * *"
 	echo -e "\e[39mFILE:" $currenttest "\n"
 	
-	cd $currenttest
+	cd $1/$currenttest
 	mvn clean compile test |& tee results/$currenttest"-build-output"
 	cd ~/astor/
 	mvn dependency:build-classpath -B | egrep -v "(^\[INFO\]|^\[WARNING\])" | tee /tmp/astor-classpath.txt
@@ -25,7 +25,7 @@ for currenttest in $tests; do
 		
 		# iterate over all of the three scopes
 		for scope in ${scopes[@]}; do		
-			echo -e "\n\n\FILE:\e[34m" $currenttest " run with mode: " $mode " in scope: " $scope "\n"
+			echo -e "\n\n\ \e[34mFILE:" $currenttest " run with mode: " $mode " in scope: " $scope "\n"
 			echo -e "java -cp" $(cat /tmp/astor-classpath.txt)":target/classes fr.inria.main.evolution.AstorMain -scope " $scope "-jvm4testexecution" $jvmPath "-mode " $mode "-srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location "$currenttest "-dependencies ./examples/libs/junit-4.4.jar -flthreshold "$treshold "-seed "$seedValue "-maxtime "$maxTime "-stopfirst true |& tee results/$outputFileName"
 			echo -e "\e[39m"
 		
