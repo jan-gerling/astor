@@ -15,7 +15,7 @@ tests=$(ls $1)
 
 # iterate over all tests given in the directory
 for currenttest in $tests; do
-	fullPath=$1/$currenttest
+	fullPath=$1$currenttest/
 
 	echo -e "\e[32m\n\n\n\n* * * * * * * * New * * * * * * * *"
 	echo -e "\e[39mFILE:" $fullPath "\n"
