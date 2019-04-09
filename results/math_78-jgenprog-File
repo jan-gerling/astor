@@ -1,0 +1,8 @@
+2019-04-09 07:41:30,993 INFO main - command line arguments: [-scope  File  -jvm4testexecution  /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin  -mode  jgenprog  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests//math_78  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -seed  10  -maxtime  100  -stopfirst  true]
+2019-04-09 07:41:31,729 ERROR fr.inria.main.evolution.AstorMain - Loading strategy File --java.lang.ClassNotFoundException: File
+Exception in thread "main" java.lang.Exception: Loading strategy: java.lang.ClassNotFoundException: File
+	at fr.inria.main.evolution.AstorMain.loadSpace(AstorMain.java:474)
+	at fr.inria.main.evolution.AstorMain.createEngine(AstorMain.java:135)
+	at fr.inria.main.evolution.AstorMain.run(AstorMain.java:494)
+	at fr.inria.main.evolution.AstorMain.execute(AstorMain.java:571)
+	at fr.inria.main.evolution.AstorMain.main(AstorMain.java:550)
