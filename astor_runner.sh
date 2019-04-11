@@ -25,7 +25,7 @@ if [ ! -d $resultsDir ]; then
 fi
 
 #build astor
-echo -e "\e[35m[BUILD] astor in $2 \e[39m" |& tee -a "$runSummary"
+echo -e "[\e[35mBUILD \e[39m] astor in $2" |& tee -a "$runSummary"
 cd $2
 mvn clean compile
 
@@ -34,7 +34,7 @@ for currenttest in $tests; do
 	fullPath=$1$currenttest/
 
 	echo -e "\e[32m\n* * * * * * * * New * * * * * * * *"
-	echo -e "\e[39m[FILE] $fullPath \n"
+	echo -e "[\e[39mFILE\e[39m] $fullPath \n"
 	
 	#compile and current build test case
 	cd $fullPath
@@ -53,26 +53,26 @@ for currenttest in $tests; do
 			
 			# check if this test was already run with the current configuration
 			if  [ ! -f "$outputFile" ] || grep -q "[DONE]" "$outputFile" ; then
-				echo -e "\e[35m[RUN] $runname \e[39m" |& tee -a "$runSummary"
+				echo -e "[\e[35mRUN\e[39m] $runname" |& tee -a "$runSummary"
 			
 				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -maxtime $maxTime -stopfirst true |& tee "$outputFile"
 				"[DONE]" |& tee "$outputFile"
-				echo -e "\e[32m[DONE]: $runname is finished! \e[39m" |& tee -a "$runSummary"
+				echo -e "[\e[32mDONE\e[39m]: $runname is finished!" |& tee -a "$runSummary"
 			else
-				echo -e "\e[33m[SKIP]: $runname was already done! \e[39m" |& tee -a "$runSummary"
+				echo -e "[\e[33mSKIP\e[39m]: $runname was already done!" |& tee -a "$runSummary"
 			fi	
 			
 			runTime=$(awk -F "Time Total(s): " "$outputFile")
 			echo -e "$runTime"
 			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
-				echo -e "\e[32m[SUCCESS]: $runname found a fix in $runTime seconds! \e[39m\n" |& tee -a "$runSummary"
+				echo -e "[\e[32mSUCCESS\e[39m]: $runname found a fix in $runTime seconds!\n" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "Exception" "$outputFile" ; then
 				exceptionInfo=$(grep "Exception" "$outputFile")
-				echo -e "\e[31m[EXCEPTION]: $runname had an exception: $exceptionInfo \e[39m\n" |& tee -a "$runSummary"
+				echo -e "[\e[31m[EXCEPTION\e[39m]: $runname had an exception: $exceptionInfo\n" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && $runTime > 0; then
-				echo -e "\e[33m[WARNING]: $runname did not find a fix in $runTime seconds! \e[39m\n" |& tee -a "$runSummary"
+				echo -e "[\e[33m[WARNING\e[39m]: $runname did not find a fix in $runTime seconds!\n" |& tee -a "$runSummary"
 			else 
-				echo -e "\e[31m[FAILURE]: $runname did not finish properly! \e[39m\n" |& tee -a "$runSummary"
+				echo -e "[\e[31mFAILURE\e[39m]: $runname did not finish properly!\n" |& tee -a "$runSummary"
 			fi
 		done	
 	done
