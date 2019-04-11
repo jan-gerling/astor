@@ -51,14 +51,15 @@ for currenttest in $tests; do
 				echo -e "\n\n\e[35m[RUN] $runname \e[39m\n"
 			
 				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -seed $seedValue -maxtime $maxTime -stopfirst true |& tee "$outputFile"
-				if  [-f "$outputFile"] && [ grep -Fxq "-Found Solution" "$outputFile"]; then
-					echo -e "\n\n\e[32m[SUCCESS]: $runname found a fix! \e[39m \n"
-					cp "$outputFile" "$resultsDir/success"
-				else 
-					echo -e "\n\n\e[33m[WARNING]: $runname did not find a fix! \e[39m \n"
-				done
 			else
 				echo -e "\n\n\e[33m[WARNING]: $runname was already done! \e[39m \n"
+			fi
+			
+			if  [-f "$outputFile"] && [ grep -Fxq "-Found Solution" "$outputFile"]; then
+					echo -e "\n\n\e[32m[SUCCESS]: $runname found a fix! \e[39m \n"
+					cp "$outputFile" "$resultsDir/success"
+			else 
+					echo -e "\n\n\e[33m[WARNING]: $runname did not find a fix! \e[39m \n"
 			fi
 		done	
 	done
