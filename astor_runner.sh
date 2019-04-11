@@ -44,7 +44,7 @@ for currenttest in $tests; do
 		# iterate over all of the three scopes
 		for scope in ${scopes[@]}; do	
 			runname="$currenttest-$mode-$scope"
-			outputFile="$resultsDir/$runname".txt"
+			outputFile="$resultsDir/$runname.txt"
 			
 			# check if this test was already run with the current configuration
 			if  [ ! -f "$outputFile" ] || [ grep -Fxq "[SUCCESS] for $runname" "$outputFile"]; then
