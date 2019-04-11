@@ -1,0 +1,151 @@
+2019-04-12 07:14:08,639 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jkali  -scope  package  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests/math_80/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-12 07:14:09,434 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_80//bin//default from 225 classes with test cases
+2019-04-12 07:14:09,436 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-12 07:14:10,135 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_80//bin//default]
+2019-04-12 07:14:21,043 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.linear.EigenDecompositionImplTest#testMathpbx02
+2019-04-12 07:14:21,049 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2102, fails: 1, GZoltar suspicious 17366
+2019-04-12 07:14:21,064 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 55 with susp > 0.5, we consider: 55
+2019-04-12 07:14:21,074 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_80//src//default, compliance level: 8
+2019-04-12 07:14:27,503 INFO main - 
+---- Initial suspicious size: 55
+2019-04-12 07:14:27,678 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1058, susp=1.0]
+2019-04-12 07:14:27,695 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1061, susp=1.0]
+2019-04-12 07:14:27,908 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{goodStep(II)I 0.0, lineNumber=1088, susp=0.5]
+2019-04-12 07:14:28,017 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.EigenDecompositionImpl, methodName=org.apache.commons.math.linear.EigenDecompositionImpl{computeShiftIncrement(III)V 0.0, lineNumber=1570, susp=0.5]
+2019-04-12 07:14:28,017 INFO main - Total suspicious from FL: 55,  51
+2019-04-12 07:14:28,017 INFO main - Total ModPoint created: 51
+2019-04-12 07:14:28,018 INFO main - Creating program variant #1, [Variant id: 1, #gens: 51, #ops: 0, parent:-]
+2019-04-12 07:14:35,931 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 07:14:35,931 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jkali
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-12 07:14:35,932 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= defect4j_tests/math_80/
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-12 07:14:35,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= package
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-12 07:14:35,934 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-12 07:14:35,935 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 07:14:35,936 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 871, el: CtAssignmentImpl
+2019-04-12 07:14:35,936 INFO main - -->op: RemoveOp: `i0 = 1 + (i / 4) ` ---> `-` at pos 0 of parent `{ 	i0 = 1 + (i / 4); 	bre[...]`
+2019-04-12 07:14:36,933 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 872, el: CtBreakImpl
+2019-04-12 07:14:36,933 INFO main - -->op: RemoveOp: `break ` ---> `-` at pos 1 of parent `{ 	i0 = 1 + (i / 4); 	bre[...]`
+2019-04-12 07:14:37,401 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 944, el: CtAssignmentImpl
+2019-04-12 07:14:37,401 INFO main - -->op: RemoveOp: `work[(i + 2)] = -0.0 ` ---> `-` at pos 0 of parent `{ 	work[(i + 2)] = -0.0; [...]`
+2019-04-12 07:14:37,829 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 945, el: CtAssignmentImpl
+2019-04-12 07:14:37,830 INFO main - -->op: RemoveOp: `d = work[i] ` ---> `-` at pos 1 of parent `{ 	work[(i + 2)] = -0.0; [...]`
+2019-04-12 07:14:38,239 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 957, el: CtAssignmentImpl
+2019-04-12 07:14:38,240 INFO main - -->op: RemoveOp: `work[i] = -0.0 ` ---> `-` at pos 0 of parent `{ 	work[i] = -0.0; 	work[[...]`
+2019-04-12 07:14:38,641 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 958, el: CtAssignmentImpl
+2019-04-12 07:14:38,641 INFO main - -->op: RemoveOp: `work[j] = d ` ---> `-` at pos 1 of parent `{ 	work[i] = -0.0; 	work[[...]`
+2019-04-12 07:14:39,029 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 959, el: CtAssignmentImpl
+2019-04-12 07:14:39,029 INFO main - -->op: RemoveOp: `work[(j + 2)] = 0.0 ` ---> `-` at pos 2 of parent `{ 	work[i] = -0.0; 	work[[...]`
+2019-04-12 07:14:39,475 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 960, el: CtAssignmentImpl
+2019-04-12 07:14:39,475 INFO main - -->op: RemoveOp: `d = work[(i + 2)] ` ---> `-` at pos 3 of parent `{ 	work[i] = -0.0; 	work[[...]`
+2019-04-12 07:14:39,850 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1055, el: CtAssignmentImpl
+2019-04-12 07:14:39,851 INFO main - -->op: RemoveOp: `dMin2 = java.lang.Math.mi[...] ` ---> `-` at pos 0 of parent `{ 	dMin2 = java.lang.Math[...]`
+2019-04-12 07:14:40,206 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1056, el: CtAssignmentImpl
+2019-04-12 07:14:40,207 INFO main - -->op: RemoveOp: `work[(l - 1)] = java.lang[...] ` ---> `-` at pos 1 of parent `{ 	dMin2 = java.lang.Math[...]`
+2019-04-12 07:14:40,587 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1059, el: CtAssignmentImpl
+2019-04-12 07:14:40,587 INFO main - -->op: RemoveOp: `work[(l - (2 * (pingPong)[...] ` ---> `-` at pos 2 of parent `{ 	dMin2 = java.lang.Math[...]`
+2019-04-12 07:14:40,983 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1062, el: CtAssignmentImpl
+2019-04-12 07:14:40,984 INFO main - -->op: RemoveOp: `qMax = java.lang.Math.max[...] ` ---> `-` at pos 3 of parent `{ 	dMin2 = java.lang.Math[...]`
+2019-04-12 07:14:41,371 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1063, el: CtAssignmentImpl
+2019-04-12 07:14:41,372 INFO main - -->op: RemoveOp: `dMin = -0.0 ` ---> `-` at pos 4 of parent `{ 	dMin2 = java.lang.Math[...]`
+2019-04-12 07:14:41,786 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1135, el: CtLocalVariableImpl
+2019-04-12 07:14:41,787 INFO main - -->op: RemoveOp: `int j = (4 * n) - 1 ` ---> `-` at pos 0 of parent `{ 	int j = (4 * n) - 1; 	[...]`
+2019-04-12 07:14:41,884 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1136, el: CtForImpl
+2019-04-12 07:14:41,884 INFO main - -->op: RemoveOp: `for (int i = 0; i < j; i [...] ` ---> `-` at pos 1 of parent `{ 	int j = (4 * n) - 1; 	[...]`
+2019-04-12 07:14:49,361 INFO main - mod_point ModificPoint=EigenDecompositionImpl line: 1137, el: CtForImpl
+2019-04-12 07:14:49,362 INFO main - -->op: RemoveOp: `for (int k = 0; k < 4; k [...] ` ---> `-` at pos 0 of parent `{ 	for (int k = 0; k < 4;[...]`
+2019-04-12 07:14:57,201 INFO main - -Found Solution, child variant #17
+2019-04-12 07:14:57,338 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-12 07:14:57,338 INFO main - 
+Solution details
+2019-04-12 07:14:57,339 INFO main - 
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 17
+ 
+time(sec)= 13
+operation: RemoveOp
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+line= 1137
+lineSuspiciousness= 1
+original statement= for (int k = 0; k < 4; k += step) {
+	final double tmp = work[(i + k)];
+	work[(i + k)] = work[(j - k)];
+	work[(j - k)] = tmp;
+}
+fixed statement= 
+generation= 1
+ingredientScope= -
+validation=|true|0|2102|[]|
+2019-04-12 07:14:57,339 INFO main - 
+successful_ing_attempts (1): [0]
+2019-04-12 07:14:57,339 INFO main - 
+failing_ing_attempts (15): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 07:14:57,339 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 48.692
+[DONE]

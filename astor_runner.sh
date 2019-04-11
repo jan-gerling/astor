@@ -11,26 +11,31 @@ maxTime=100
 #local path to your junit executable
 junitPath="./examples/libs/junit-4.4.jar"
 #abosulte path to the jre 7, used for defect4j
-jvmPath="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin"
+jvmPath="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin"
 tests=$(ls $1)
 
+date=$(date '+%d-%m-%Y-%H-%M-%S');
+runSummary=$resultsDir"/summary-"$date".txt"
+
+echo -e "[INFO] start run at $date" |& tee "$runSummary"
 #create results dir if necessary
 if [ ! -d $resultsDir ]; then
-	mkdir $resultsDir
-	echo -e "[INFO] created $resultsDir to store results"
+	mkdir $resultsDir $resultsDir/success
+	echo -e "[INFO] created $resultsDir to store results" |& tee -a "$runSummary"
 fi
 
 #build astor
-echo -e "\n\n\e[35m [BUILD] astor in cd $2 \e[39m\n"
+echo -e "[\e[35mBUILD\e[39m] astor in $2" |& tee -a "$runSummary"
 cd $2
-mvn clean compile
+mvn clean 
+mvn compile
 
 # iterate over all tests given in the directory
 for currenttest in $tests; do
 	fullPath=$1$currenttest/
 
-	echo -e "\e[32m\n\n\n\n* * * * * * * * New * * * * * * * *"
-	echo -e "\e[39mFILE:" $fullPath "\n"
+	echo -e "\e[32m\n* * * * * * * * New * * * * * * * *"
+	echo -e "[\e[39mFILE\e[39m] $fullPath \n"
 	
 	#compile and current build test case
 	cd $fullPath
@@ -43,19 +48,38 @@ for currenttest in $tests; do
 		
 		# iterate over all of the three scopes
 		for scope in ${scopes[@]}; do	
-			runname=$currenttest"-"$mode"-"$scope
-			outputFile=$resultsDir"/"$runname".txt"
+			runname="$currenttest-$mode-$scope"
+			outputFile="$resultsDir/$runname.txt"
+			successString="Found Solution"
+			summaryString="----SUMMARY_EXECUTION---"
+			exceptionString="Exception in thread"
 			
 			# check if this test was already run with the current configuration
-			echo -e "$outputFile"
-			if  [ ! -f "$outputFile" ] || [ grep -Fxq "[SUCCESS] for $runname" "$outputFile"]; then
-				echo -e "\n\n\e[35m [RUN] $runname \e[39m\n"
+			if  [ ! -f "$outputFile" ] || ! grep -q "[DONE]" "$outputFile" ; then
+				echo -e "[\e[35mRUN\e[39m] $runname" |& tee -a "$runSummary"
 			
-				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -seed $seedValue -maxtime $maxTime -stopfirst true |& tee outputFile
-				echo "[SUCCESS] for $runname" |& tee outputFile
+				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -maxtime $maxTime -stopfirst true &> "$outputFile"
+				echo "[DONE]" >> "$outputFile"
+				echo -e "[\e[32mDONE\e[39m]: $runname is finished!" |& tee -a "$runSummary"
 			else
-				echo -e "\n\n\e[33m [WARNING]: $runname was already done! \e[39m \n"
+				echo -e "[\e[33mSKIP\e[39m]: $runname was already done!" |& tee -a "$runSummary"
+			fi	
+
+			# quickly analyse the output for the summary
+			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
+				echo -e "[\e[32mSUCCESS\e[39m]: $runname found a fix!" |& tee -a "$runSummary"
+				awk '/$summaryString/,0' "$outputFile" |& tee -a "$runSummary"
+			elif [ -f "$outputFile" ] && grep -q "$exceptionString" "$outputFile" ; then				
+				echo -e "[\e[31m[EXCEPTION\e[39m]: $runname had an exception: $exceptionInfo" |& tee -a "$runSummary"
+				awk '/Exception in thread "main"/,0' "$outputFile" |& tee -a "$runSummary"
+			elif [ -f "$outputFile" ] && grep -q "SUMMARY_EXECUTION" "$outputFile" ; then
+				echo -e "[\e[33m[WARNING\e[39m]: $runname did not find a fix!" |& tee -a "$runSummary"
+				awk '/$summaryString/,0' "$outputFile" |& tee -a "$runSummary"	 		
+			else 
+				echo -e "[\e[31mFAILURE\e[39m]: $runname did not finish properly!" |& tee -a "$runSummary"
 			fi
+			
+			echo -e "\n" |& tee -a "$runSummary"
 		done	
 	done
     echo -e "- - - - - - - - END - - - - - - - -\n"

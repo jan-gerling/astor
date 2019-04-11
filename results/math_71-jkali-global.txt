@@ -1,0 +1,301 @@
+2019-04-12 03:09:20,762 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jkali  -scope  global  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan_gerling/astor/defect4j_tests/math_71/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.1  -maxtime  100  -stopfirst  true]
+2019-04-12 03:09:55,881 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//bin//default from 234 classes with test cases
+2019-04-12 03:09:55,885 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.1
+2019-04-12 03:10:20,246 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//bin//default]
+2019-04-12 03:16:24,330 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testMissedEndEvent
+2019-04-12 03:16:24,433 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testMissedEndEvent
+2019-04-12 03:16:24,442 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2169, fails: 2, GZoltar suspicious 17015
+2019-04-12 03:16:25,225 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 315 with susp > 0.1, we consider: 315
+2019-04-12 03:16:25,566 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//src//default, compliance level: 8
+2019-04-12 03:19:58,895 INFO main - 
+---- Initial suspicious size: 315
+2019-04-12 03:19:59,765 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=231, susp=1.0]
+2019-04-12 03:20:00,847 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{setInitialStepSize(D)V 0.0, lineNumber=155, susp=0.5]
+2019-04-12 03:20:01,301 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.DummyStepInterpolator, methodName=org.apache.commons.math.ode.sampling.DummyStepInterpolator{computeInterpolatedStateAndDerivatives(DD)V 0.0, lineNumber=109, susp=0.2672612419124244]
+2019-04-12 03:20:05,515 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{access$000(Lorg/apache/commons/math/ode/events/EventState;)Lorg/apache/commons/math/ode/events/EventHandler; 0.0, lineNumber=42, susp=0.1466471150213533]
+2019-04-12 03:20:05,768 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=143, susp=0.14509525002200233]
+2019-04-12 03:20:06,095 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=168, susp=0.14509525002200233]
+2019-04-12 03:20:06,211 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=204, susp=0.14509525002200233]
+2019-04-12 03:20:06,217 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stop()Z 0.0, lineNumber=219, susp=0.14509525002200233]
+2019-04-12 03:20:06,316 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{reset(D[D)Z 0.0, lineNumber=240, susp=0.14509525002200233]
+2019-04-12 03:20:07,094 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{reinitializeBegin(D[D)V 0.0, lineNumber=154, susp=0.14433756729740646]
+2019-04-12 03:20:08,943 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{stepAccepted(D[D)V 0.0, lineNumber=308, susp=0.14433756729740646]
+2019-04-12 03:20:09,426 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{addEndTimeChecker(DDLorg/apache/commons/math/ode/events/CombinedEventsManager;)Lorg/apache/commons/math/ode/events/CombinedEventsManager; 0.0, lineNumber=242, susp=0.1421338109037403]
+2019-04-12 03:20:11,561 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{addEventHandler(Lorg/apache/commons/math/ode/events/EventHandler;DDI)V 0.0, lineNumber=73, susp=0.14071950894605836]
+2019-04-12 03:20:11,567 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=207, susp=0.14002800840280097]
+2019-04-12 03:20:11,669 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=208, susp=0.14002800840280097]
+2019-04-12 03:20:11,920 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{setMaximalIterationCount(I)V 0.0, lineNumber=94, susp=0.14002800840280097]
+2019-04-12 03:20:12,064 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{computeDerivatives(D[D[D)V 0.0, lineNumber=183, susp=0.13608276348795434]
+2019-04-12 03:20:12,074 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{setEquations(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;)V 0.0, lineNumber=168, susp=0.13545709229571928]
+2019-04-12 03:20:12,464 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{sanityChecks(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)V 0.0, lineNumber=218, susp=0.13483997249264842]
+2019-04-12 03:20:13,011 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{shift()V 0.0, lineNumber=212, susp=0.13018891098082389]
+2019-04-12 03:20:13,235 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{storeTime(D)V 0.0, lineNumber=226, susp=0.13018891098082389]
+2019-04-12 03:20:13,240 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{setInterpolatedTime(D)V 0.0, lineNumber=247, susp=0.13018891098082389]
+2019-04-12 03:20:13,365 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{setAbsoluteAccuracy(D)V 0.0, lineNumber=79, susp=0.13018891098082389]
+2019-04-12 03:20:14,141 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=317, susp=0.12649110640673517]
+2019-04-12 03:20:14,256 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{setMaxEvaluations(I)V 0.0, lineNumber=144, susp=0.1259881576697424]
+2019-04-12 03:20:14,349 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{resetEvaluations()V 0.0, lineNumber=160, susp=0.1259881576697424]
+2019-04-12 03:20:14,509 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=283, susp=0.1259881576697424]
+2019-04-12 03:20:14,759 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=289, susp=0.1259881576697424]
+2019-04-12 03:20:14,936 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=347, susp=0.1259881576697424]
+2019-04-12 03:20:16,567 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{clearResult()V 0.0, lineNumber=167, susp=0.1203858530857692]
+2019-04-12 03:20:16,984 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{setResult(DI)V 0.0, lineNumber=144, susp=0.11547005383792514]
+2019-04-12 03:20:17,273 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=305, susp=0.11470786693528087]
+2019-04-12 03:20:17,456 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{verifyInterval(DD)V 0.0, lineNumber=213, susp=0.11396057645963795]
+2019-04-12 03:20:17,918 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=353, susp=0.11180339887498948]
+2019-04-12 03:20:18,179 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=360, susp=0.11180339887498948]
+2019-04-12 03:20:20,274 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=185, susp=0.10783277320343841]
+2019-04-12 03:20:20,624 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=213, susp=0.10783277320343841]
+2019-04-12 03:20:21,474 INFO main - Total suspicious from FL: 315,  278
+2019-04-12 03:20:21,474 INFO main - Total ModPoint created: 278
+2019-04-12 03:20:21,475 INFO main - Creating program variant #1, [Variant id: 1, #gens: 278, #ops: 0, parent:-]
+2019-04-12 03:24:52,538 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 03:24:52,538 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.1
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jkali
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-12 03:24:52,550 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /home/jan_gerling/astor/defect4j_tests/math_71/
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= global
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-12 03:24:52,551 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-12 03:24:52,552 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 03:24:52,657 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 180, el: CtAssignmentImpl
+2019-04-12 03:24:52,676 INFO main - -->op: RemoveOp: `loop = false ` ---> `-` at pos 0 of parent `{ 	loop = false; }`
+2019-04-12 03:27:17,718 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 03:27:17,752 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 300, el: CtAssignmentImpl
+2019-04-12 03:27:17,752 INFO main - -->op: RemoveOp: `loop = false ` ---> `-` at pos 0 of parent `{ 	loop = false; }`
+2019-04-12 03:29:24,421 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 03:29:24,453 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 03:29:24,453 INFO main - -->op: ReplaceIfBooleanOp: `if ((initialStepSize < (m[...] ` ---> `if (true) { 	initialStep [...]` at pos 0 of parent `{ 	if ((initialStepSize <[...]`
+2019-04-12 03:29:30,577 ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/jan_gerling/astor/defect4j_tests/math_71/hs_err_pid28661.log
+ 
+ error: 
+2019-04-12 03:29:30,578 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 03:29:30,578 INFO main - -->op: ReplaceIfBooleanOp: `if ((initialStepSize < (m[...] ` ---> `if (false) { 	initialStep[...]` at pos 0 of parent `{ 	if ((initialStepSize <[...]`
+2019-04-12 03:29:35,705 ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/jan_gerling/astor/defect4j_tests/math_71/hs_err_pid28664.log
+ 
+ error: 
+2019-04-12 03:29:35,706 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 03:29:35,706 INFO main - -->op: RemoveOp: `if ((initialStepSize < (m[...] ` ---> `-` at pos 0 of parent `{ 	if ((initialStepSize <[...]`
+2019-04-12 03:29:40,174 ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/jan_gerling/astor/defect4j_tests/math_71/hs_err_pid28667.log
+ 
+ error: 
+2019-04-12 03:29:40,174 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 153, el: CtAssignmentImpl
+2019-04-12 03:29:40,174 INFO main - -->op: RemoveOp: `initialStep = initialStep[...] ` ---> `-` at pos 0 of parent `{ 	initialStep = initialS[...]`
+2019-04-12 03:29:44,469 ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/jan_gerling/astor/defect4j_tests/math_71/hs_err_pid28670.log
+ 
+ error: 
+2019-04-12 03:29:44,470 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 211, el: CtReturnImpl
+2019-04-12 03:29:44,470 INFO main - -->op: RemoveOp: `return forward ? initialS[...] ` ---> `-` at pos 0 of parent `{ 	return forward ? initi[...]`
+2019-04-12 03:29:48,361 ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/jan_gerling/astor/defect4j_tests/math_71/hs_err_pid28673.log
+ 
+ error: 
+2019-04-12 03:29:48,362 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 292, el: CtAssignmentImpl
+2019-04-12 03:29:48,362 INFO main - -->op: RemoveOp: `filteredH = maxStep ` ---> `-` at pos 0 of parent `{ 	filteredH = maxStep; }`
+2019-04-12 03:29:52,406 ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/jan_gerling/astor/defect4j_tests/math_71/hs_err_pid28677.log
+ 
+ error: 
+2019-04-12 03:29:52,406 INFO main - mod_point ModificPoint=DummyStepInterpolator line: 107, el: CtInvocationImpl
+2019-04-12 03:29:52,406 INFO main - -->op: RemoveOp: `java.lang.System.arraycop[...] ` ---> `-` at pos 0 of parent `{ 	java.lang.System.array[...]`
+2019-04-12 03:29:56,398 ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/jan_gerling/astor/defect4j_tests/math_71/hs_err_pid28680.log
+ 
+ error: 
+2019-04-12 03:29:56,398 INFO main - mod_point ModificPoint=DummyStepInterpolator line: 108, el: CtInvocationImpl
+2019-04-12 03:29:56,399 INFO main - -->op: RemoveOp: `java.lang.System.arraycop[...] ` ---> `-` at pos 1 of parent `{ 	java.lang.System.array[...]`
+2019-04-12 03:30:00,193 ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/jan_gerling/astor/defect4j_tests/math_71/hs_err_pid28693.log
+ 
+ error: 
+2019-04-12 03:30:00,194 INFO main - mod_point ModificPoint=BrentSolver line: 335, el: CtAssignmentImpl
+2019-04-12 03:30:00,194 INFO main - -->op: RemoveOp: `x1 = x1 + (0.5 * toleranc[...] ` ---> `-` at pos 0 of parent `{ 	x1 = x1 + (0.5 * toler[...]`
+2019-04-12 03:30:03,901 ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/jan_gerling/astor/defect4j_tests/math_71/hs_err_pid28696.log
+ 
+ error: 
+2019-04-12 03:30:03,902 INFO main - mod_point ModificPoint=CombinedEventsManager line: 109, el: CtReturnImpl
+2019-04-12 03:30:03,902 INFO main - -->op: RemoveOp: `return states.isEmpty() ` ---> `-` at pos 0 of parent `{ 	return states.isEmpty([...]`
+2019-04-12 03:30:06,938 INFO main - mod_point ModificPoint=AbstractIntegrator line: 128, el: CtReturnImpl
+2019-04-12 03:30:06,939 INFO main - -->op: RemoveOp: `return false ` ---> `-` at pos 1 of parent `{ 	for (org.apache.common[...]`
+2019-04-12 03:30:10,066 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 123, el: CtAssignmentImpl
+2019-04-12 03:30:10,067 INFO main - -->op: RemoveOp: `interpolator = new org.ap[...] ` ---> `-` at pos 0 of parent `{ 	interpolator = new org[...]`
+2019-04-12 03:30:13,191 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 217, el: CtAssignmentImpl
+2019-04-12 03:30:13,191 INFO main - -->op: RemoveOp: `interpolator = new org.ap[...] ` ---> `-` at pos 0 of parent `{ 	interpolator = new org[...]`
+2019-04-12 03:30:16,731 INFO main - mod_point ModificPoint=EventState line: 334, el: CtIfImpl
+2019-04-12 03:30:16,731 INFO main - -->op: ReplaceIfBooleanOp: `if ((nextAction) == (org.[...] ` ---> `if (true) { 	handler.rese[...]` at pos 1 of parent `{ 	if (!(pendingEvent)) {[...]`
+2019-04-12 03:30:21,021 ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000d5580000, 150994944, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 150994944 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/jan_gerling/astor/defect4j_tests/math_71/hs_err_pid28699.log
+ 
+ error: 
+2019-04-12 03:30:21,022 INFO main - mod_point ModificPoint=EventState line: 334, el: CtIfImpl
+2019-04-12 03:30:21,022 INFO main - -->op: ReplaceIfBooleanOp: `if ((nextAction) == (org.[...] ` ---> `if (false) { 	handler.res[...]` at pos 1 of parent `{ 	if (!(pendingEvent)) {[...]`
+2019-04-12 03:30:25,081 ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000d5580000, 150994944, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 150994944 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/jan_gerling/astor/defect4j_tests/math_71/hs_err_pid28702.log
+ 
+ error: 
+2019-04-12 03:30:25,081 INFO main - mod_point ModificPoint=EventState line: 334, el: CtIfImpl
+2019-04-12 03:30:25,082 INFO main - -->op: RemoveOp: `if ((nextAction) == (org.[...] ` ---> `-` at pos 1 of parent `{ 	if (!(pendingEvent)) {[...]`
+2019-04-12 03:30:29,025 ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000d5580000, 150994944, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 150994944 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/jan_gerling/astor/defect4j_tests/math_71/hs_err_pid28705.log
+ 
+ error: 
+2019-04-12 03:30:29,026 INFO main - mod_point ModificPoint=EventState line: 337, el: CtAssignmentImpl
+2019-04-12 03:30:29,026 INFO main - -->op: RemoveOp: `pendingEvent = false ` ---> `-` at pos 2 of parent `{ 	if (!(pendingEvent)) {[...]`
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x000000075a880000, 254279680, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 254279680 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/jan_gerling/astor/hs_err_pid28302.log
+[DONE]

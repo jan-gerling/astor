@@ -6,8 +6,8 @@ To run Astor for our final setup follow this guideline.
 
 ### VM Creation:
 
-- **4vCPUs** - *because Astor does only require a fraction of the available resources*
-- **15GB Disk** - *this should be enough*
+- **7vCPUs** - *because Astor does only require a fraction of the available resources*
+- **39GB Memory** - *this should be enough*
 - **Debian 9 Stretch**
 
 
@@ -18,12 +18,12 @@ Just install all the necessary tools.
 
 ```console
 sudo apt-get update
-sudo apt-get install git vim software-properties-common maven debian-archive-keyring
+sudo apt-get install git vim software-properties-common maven debian-archive-keyring default-jdk
 ```
 
 
 
-### Install JREs:
+### Install JAVA 7:
 
 Install both JRE/JDK 8 and 7, because Astor needs JRE 8 and defect4j needs 7 (find the source for this again).
 
@@ -33,7 +33,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7638D0442B90D010
 sudo add-apt-repository 'deb http://httpredir.debian.org/debian experimental main'
 sudo add-apt-repository 'deb http://httpredir.debian.org/debian sid main'
 sudo apt-get update
-sudo apt-get install default-jdk openjdk-7-jdk
+sudo apt-get install openjdk-7-jdk
 ```
 
 
@@ -47,9 +47,6 @@ git clone https://github.com/jan-gerling/astor.git
 cd astor
 git checkout reproduce
 git pull
-
-mvn clean
-mvn compile
 ```
 
 
@@ -60,5 +57,10 @@ For convenience I wrote this bash script iterating over all folder in the given 
 
 ```console
 chmod u+x astor_runner.sh
-./astor_runner.sh defect4j_tests/ ~/astor/
+./astor_runner.sh ~/astor/defect4j_tests/ ~/astor/
 ```
+
+### Results:
+A summary of the results containing an execution summary and state can be found in results/summary-*date*.txt
+Detailed output for each execution can be found in /results.
+
