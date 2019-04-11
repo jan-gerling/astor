@@ -3,11 +3,6 @@
 # second argument: full path to astor main directory, e.g. ~/astor/
 
 resultsDir=$2results
-if [ ! -d $resultsDir ]; then
-	mkdir $resultsDir
-	echo -e "[INFO] created $resultsDir to store results"
-fi
-
 modes=(jmutrepair jkali jgenprog)
 scopes=(local package global)
 seedValue=10
@@ -17,8 +12,18 @@ maxTime=100
 junitPath="./examples/libs/junit-4.4.jar"
 #abosulte path to the jre 7, used for defect4j
 jvmPath="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin"
-
 tests=$(ls $1)
+
+#create results dir if necessary
+if [ ! -d $resultsDir ]; then
+	mkdir $resultsDir
+	echo -e "[INFO] created $resultsDir to store results"
+fi
+
+#build astor
+echo -e "\n\n\e[35m [BUILD] astor in $1 \e[39m\n"
+cd $1
+mvn clean compile
 
 # iterate over all tests given in the directory
 for currenttest in $tests; do
