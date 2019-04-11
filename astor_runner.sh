@@ -25,7 +25,7 @@ if [ ! -d $resultsDir ]; then
 fi
 
 #build astor
-echo -e "[\e[35mBUILD \e[39m] astor in $2" |& tee -a "$runSummary"
+echo -e "[\e[35mBUILD\e[39m] astor in $2" |& tee -a "$runSummary"
 cd $2
 mvn clean compile
 
@@ -50,6 +50,7 @@ for currenttest in $tests; do
 			runname="$currenttest-$mode-$scope"
 			outputFile="$resultsDir/$runname.txt"
 			successString="Found Solution"
+			timeString="Time Total(s)"
 			
 			# check if this test was already run with the current configuration
 			if  [ ! -f "$outputFile" ] || grep -q "[DONE]" "$outputFile" ; then
@@ -61,16 +62,19 @@ for currenttest in $tests; do
 			else
 				echo -e "[\e[33mSKIP\e[39m]: $runname was already done!" |& tee -a "$runSummary"
 			fi	
-			
-			runTime=$(awk -F "Time Total(s): " "$outputFile")
-			echo -e "$runTime"
+
 			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
 				echo -e "[\e[32mSUCCESS\e[39m]: $runname found a fix in $runTime seconds!\n" |& tee -a "$runSummary"
-			elif [ -f "$outputFile" ] && grep -q "Exception" "$outputFile" ; then
-				exceptionInfo=$(grep "Exception" "$outputFile")
+				summaryInfo=$(sed -n -e '/----SUMMARY_EXECUTION---/,$' "$outputFile")
+				echo -e "$summaryInfo" |& tee -a "$runSummary"
+			elif [ -f "$outputFile" ] && grep -q "Exception" "$outputFile" ; then				
 				echo -e "[\e[31m[EXCEPTION\e[39m]: $runname had an exception: $exceptionInfo\n" |& tee -a "$runSummary"
-			elif [ -f "$outputFile" ] && $runTime > 0; then
+				exceptionInfo=$(sed -n -e '/Exception/,$' "$outputFile")
+				echo -e "$exceptionInfo" |& tee -a "$runSummary"
+			elif [ -f "$outputFile" ] && grep -q "$timeString" "$outputFile" ; then
 				echo -e "[\e[33m[WARNING\e[39m]: $runname did not find a fix in $runTime seconds!\n" |& tee -a "$runSummary"
+				summaryInfo=$(sed -n -e '/----SUMMARY_EXECUTION---/,$' "$outputFile")
+				echo -e "$summaryInfo" |& tee -a "$runSummary"	 		
 			else 
 				echo -e "[\e[31mFAILURE\e[39m]: $runname did not finish properly!\n" |& tee -a "$runSummary"
 			fi
