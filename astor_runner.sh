@@ -56,6 +56,7 @@ for currenttest in $tests; do
 				echo -e "\e[35m[RUN] $runname \e[39m" |& tee -a "$runSummary"
 			
 				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -maxtime $maxTime -stopfirst true |& tee "$outputFile"
+				echo -e "[DONE]" |& tee "$outputFile"
 				echo -e "\e[32m[DONE]: $runname is finished! \e[39m" |& tee -a "$runSummary"
 			else
 				echo -e "\e[33m[SKIP]: $runname was already done! \e[39m" |& tee -a "$runSummary"
