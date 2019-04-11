@@ -59,15 +59,16 @@ for currenttest in $tests; do
 				echo -e "\e[32m[DONE]: $runname is finished! \e[39m" |& tee -a "$runSummary"
 			else
 				echo -e "\e[33m[SKIP]: $runname was already done! \e[39m" |& tee -a "$runSummary"
-			fi
+			fi	
 			
+			runTime=$(grep -oP '(?<=Time Total(s): ).*' "$outputFile")
 			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
-				echo -e "\e[32m[SUCCESS]: $runname found a fix! \e[39m\n" |& tee -a "$runSummary"
+				echo -e "\e[32m[SUCCESS]: $runname found a fix in $runTime seconds! \e[39m\n" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "Exception" "$outputFile" ; then
 				exceptionInfo=$(grep "Exception" "$outputFile")
 				echo -e "\e[31m[Exception]: $runname had an exception: $exceptionInfo \e[39m\n" |& tee -a "$runSummary"
-			elif [ -f "$outputFile" ] ; then
-				echo -e "\e[33m[WARNING]: $runname did not find a fix! \e[39m\n" |& tee -a "$runSummary"
+			elif [ -f "$outputFile" ] && $runTime > 0; then
+				echo -e "\e[33m[WARNING]: $runname did not find a fix in $runTime seconds! \e[39m\n" |& tee -a "$runSummary"
 			else 
 				echo -e "\e[31m[FAILURE]: $runname did not finish properly! \e[39m\n" |& tee -a "$runSummary"
 			fi
