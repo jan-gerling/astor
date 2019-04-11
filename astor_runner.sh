@@ -15,7 +15,7 @@ jvmPath="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin"
 tests=$(ls $1)
 
 date=$(date '+%d-%m-%Y-%H-%M-%S');
-runSummary="$resultsDir&date-summary.txt"
+runSummary=$resultsDir"/summary-"$date".txt"
 
 echo -e "[INFO] start run at $date" |& tee "$runSummary"
 #create results dir if necessary
@@ -53,12 +53,12 @@ for currenttest in $tests; do
 			
 			# check if this test was already run with the current configuration
 			if  [ ! -f "$outputFile" ] || grep -q "[DONE]" "$outputFile" ; then
-				echo -e "\n\n\e[35m[RUN] $runname \e[39m\n" |& tee -a "$runSummary"
+				echo -e "\e[35m[RUN] $runname \e[39m" |& tee -a "$runSummary"
 			
 				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -maxtime $maxTime -stopfirst true |& tee "$outputFile"
 				echo -e "\e[32m[DONE]: $runname is finished! \e[39m" |& tee -a "$runSummary"
 			else
-				echo -e "\e[33m[WARNING]: $runname was already done! \e[39m" |& tee -a "$runSummary"
+				echo -e "\e[33m[SKIP]: $runname was already done! \e[39m" |& tee -a "$runSummary"
 			fi
 			
 			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
