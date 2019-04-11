@@ -68,7 +68,7 @@ for currenttest in $tests; do
 				echo -e "\e[32m[SUCCESS]: $runname found a fix in $runTime seconds! \e[39m\n" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "Exception" "$outputFile" ; then
 				exceptionInfo=$(grep "Exception" "$outputFile")
-				echo -e "\e[31m[Exception]: $runname had an exception: $exceptionInfo \e[39m\n" |& tee -a "$runSummary"
+				echo -e "\e[31m[EXCEPTION]: $runname had an exception: $exceptionInfo \e[39m\n" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && $runTime > 0; then
 				echo -e "\e[33m[WARNING]: $runname did not find a fix in $runTime seconds! \e[39m\n" |& tee -a "$runSummary"
 			else 
