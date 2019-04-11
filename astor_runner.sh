@@ -65,15 +65,15 @@ for currenttest in $tests; do
 
 			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
 				echo -e "[\e[32mSUCCESS\e[39m]: $runname found a fix in $runTime seconds!\n" |& tee -a "$runSummary"
-				summaryInfo=grep -A "----SUMMARY_EXECUTION---" "$outputFile"
+				summaryInfo=$(grep -A "----SUMMARY_EXECUTION---" "$outputFile")
 				echo -e "$summaryInfo" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "Exception" "$outputFile" ; then				
 				echo -e "[\e[31m[EXCEPTION\e[39m]: $runname had an exception: $exceptionInfo\n" |& tee -a "$runSummary"
-				exceptionInfo=grep -A "Exception" "$outputFile"
+				exceptionInfo=$(grep -A "Exception" "$outputFile")
 				echo -e "$exceptionInfo" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "$timeString" "$outputFile" ; then
 				echo -e "[\e[33m[WARNING\e[39m]: $runname did not find a fix in $runTime seconds!\n" |& tee -a "$runSummary"
-				summaryInfo=grep -A "----SUMMARY_EXECUTION---" "$outputFile"
+				summaryInfo=$(grep -A "----SUMMARY_EXECUTION---" "$outputFile")
 				echo -e "$summaryInfo" |& tee -a "$runSummary"	 		
 			else 
 				echo -e "[\e[31mFAILURE\e[39m]: $runname did not finish properly!\n" |& tee -a "$runSummary"
