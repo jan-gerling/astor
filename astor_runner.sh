@@ -2,7 +2,11 @@
 # first argument: full path to directory to crawl, e.g. ~/astor/defect4j_tests/math70
 # second argument: full path to astor main directory, e.g. ~/astor/
 
-mkdir $2/results
+resultsDir=$2results
+if [ ! -d $resultsDir ]; then
+	mkdir $resultsDir
+	echo -e "[INFO] created $resultsDir to store results"
+fi
 
 modes=(jmutrepair jkali jgenprog)
 scopes=(local package global)
@@ -25,7 +29,7 @@ for currenttest in $tests; do
 	
 	#compile and current build test case
 	cd $fullPath
-	mvn clean compile test |& tee results/$currenttest"-build-output.txt"
+	mvn clean compile test |& tee $resultsDir$currenttest"-build-output.txt"
 	cd $2
 	mvn dependency:build-classpath -B | egrep -v "(^\[INFO\]|^\[WARNING\])" | tee /tmp/astor-classpath.txt
 	
@@ -35,16 +39,16 @@ for currenttest in $tests; do
 		# iterate over all of the three scopes
 		for scope in ${scopes[@]}; do	
 			runname=$currenttest"-"$mode"-"$scope
-			outputFileName=runname".txt"
-			if [! -f results/$outputFileName && grep -q "[SUCCESS] for" $runname "$outputFileName"]; then
-    				echo -e "\n\n\e[35m [RUN]" $runname "\n"
+			outputFile=$resultsDir"/"$runname".txt"
+			# check if this test was already run with the current configuration
+			if  [ ! -f "$outputFile" ] || [ grep -Fxq "[SUCCESS] for $runname" "$outputFile"]; then
+				echo -e "\n\n\e[35m [RUN] $runname\n"
 				echo -e "\e[39m"
 			
-				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -seed $seedValue -maxtime $maxTime -stopfirst true |& tee results/$outputFileName
-				echo "[SUCCESS] for" $runname >> results/$outputFileName
+				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -seed $seedValue -maxtime $maxTime -stopfirst true |& tee outputFile
+				echo "\e[42m[SUCCESS] for $runname\e[39m" |& tee outputFile
 			else
-				echo -e "\n\n\e[41m[WARNING]:" $runname " was already done!\n"
-				echo -e "\e[39m"
+				echo -e "\n\n\e[33m[WARNING]: $runname was already done! \e[39m\n"
 			fi
 		done	
 	done
