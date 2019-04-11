@@ -21,8 +21,8 @@ if [ ! -d $resultsDir ]; then
 fi
 
 #build astor
-echo -e "\n\n\e[35m [BUILD] astor in $1 \e[39m\n"
-cd $1
+echo -e "\n\n\e[35m [BUILD] astor in cd $2 \e[39m\n"
+cd $2
 mvn clean compile
 
 # iterate over all tests given in the directory
