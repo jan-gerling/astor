@@ -6,17 +6,17 @@ resultsDir=$2results
 modes=(jmutrepair jkali jgenprog)
 scopes=(local package global)
 seedValue=10
-treshold=0.5
+treshold=0.1
 maxTime=100
 #local path to your junit executable
 junitPath="./examples/libs/junit-4.4.jar"
 #abosulte path to the jre 7, used for defect4j
-jvmPath="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin"
+jvmPath="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin"
 tests=$(ls $1)
 
 #create results dir if necessary
 if [ ! -d $resultsDir ]; then
-	mkdir $resultsDir
+	mkdir $resultsDir $resultsDir/success
 	echo -e "[INFO] created $resultsDir to store results"
 fi
 
@@ -48,11 +48,17 @@ for currenttest in $tests; do
 			
 			# check if this test was already run with the current configuration
 			if  [ ! -f "$outputFile" ] || [ grep -Fxq "[SUCCESS] for $runname" "$outputFile"]; then
-				echo -e "\n\n\e[35m [RUN] $runname \e[39m\n"
+				echo -e "\n\n\e[35m[RUN] $runname \e[39m\n"
 			
 				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -seed $seedValue -maxtime $maxTime -stopfirst true |& tee "$outputFile"
+				if  [-f "$outputFile"] && [ grep -Fxq "-Found Solution" "$outputFile"]; then
+					echo -e "\n\n\e[32m[SUCCESS]: $runname found a fix! \e[39m \n"
+					cp "$outputFile" "$resultsDir/success"
+				else 
+					echo -e "\n\n\e[33m[WARNING]: $runname did not find a fix! \e[39m \n"
+				done
 			else
-				echo -e "\n\n\e[33m [WARNING]: $runname was already done! \e[39m \n"
+				echo -e "\n\n\e[33m[WARNING]: $runname was already done! \e[39m \n"
 			fi
 		done	
 	done
