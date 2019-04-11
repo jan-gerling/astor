@@ -42,11 +42,10 @@ for currenttest in $tests; do
 			outputFile=$resultsDir"/"$runname".txt"
 			# check if this test was already run with the current configuration
 			if  [ ! -f "$outputFile" ] || [ grep -Fxq "[SUCCESS] for $runname" "$outputFile"]; then
-				echo -e "\n\n\e[35m [RUN] $runname\n"
-				echo -e "\e[39m"
+				echo -e "\n\n\e[35m [RUN] $runname \e[39m\n"
 			
 				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -seed $seedValue -maxtime $maxTime -stopfirst true |& tee outputFile
-				echo "\e[42m[SUCCESS] for $runname\e[39m" |& tee outputFile
+				echo "\n \e[42m[SUCCESS] for $runname \e[39m" |& tee outputFile
 			else
 				echo -e "\n\n\e[33m[WARNING]: $runname was already done! \e[39m\n"
 			fi
