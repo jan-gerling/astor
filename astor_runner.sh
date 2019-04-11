@@ -47,7 +47,6 @@ for currenttest in $tests; do
 			outputFile=$resultsDir"/"$runname".txt"
 			
 			# check if this test was already run with the current configuration
-			echo -e "$outputFile"
 			if  [ ! -f "$outputFile" ] || [ grep -Fxq "[SUCCESS] for $runname" "$outputFile"]; then
 				echo -e "\n\n\e[35m [RUN] $runname \e[39m\n"
 			
