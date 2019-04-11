@@ -57,15 +57,16 @@ for currenttest in $tests; do
 				echo -e "[\e[35mRUN\e[39m] $runname" |& tee -a "$runSummary"
 			
 				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -maxtime $maxTime -stopfirst true |& tee "$outputFile"
-				sed -i "[DONE]" "$outputFile"
+				echo "[DONE]" >> "$outputFile"
 				echo -e "[\e[32mDONE\e[39m]: $runname is finished!" |& tee -a "$runSummary"
 			else
 				echo -e "[\e[33mSKIP\e[39m]: $runname was already done!" |& tee -a "$runSummary"
 			fi	
 
+            summaryInfo=$(cat "$outputFile" | awk '/----SUMMARY_EXECUTION---/,0')
 			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
 				echo -e "[\e[32mSUCCESS\e[39m]: $runname found a fix in $runTime seconds!\n" |& tee -a "$runSummary"
-				summaryInfo=$(grep -A "----SUMMARY_EXECUTION---" "$outputFile")
+				summaryInfo=$(cat "$outputFile" | awk '/----SUMMARY_EXECUTION---/,0')
 				echo -e "$summaryInfo" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "Exception" "$outputFile" ; then				
 				echo -e "[\e[31m[EXCEPTION\e[39m]: $runname had an exception: $exceptionInfo\n" |& tee -a "$runSummary"
