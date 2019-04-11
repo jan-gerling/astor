@@ -50,7 +50,7 @@ for currenttest in $tests; do
 			runname="$currenttest-$mode-$scope"
 			outputFile="$resultsDir/$runname.txt"
 			successString="Found Solution"
-			timeString="Time Total(s)"
+			summaryString="----SUMMARY_EXECUTION---"
 			
 			# check if this test was already run with the current configuration
 			if  [ ! -f "$outputFile" ] || ! grep -q "[DONE]" "$outputFile" ; then
@@ -63,16 +63,15 @@ for currenttest in $tests; do
 				echo -e "[\e[33mSKIP\e[39m]: $runname was already done!" |& tee -a "$runSummary"
 			fi	
 
-            summaryInfo=$(cat "$outputFile" | awk '/----SUMMARY_EXECUTION---/,0')
 			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
 				echo -e "[\e[32mSUCCESS\e[39m]: $runname found a fix in $runTime seconds!" |& tee -a "$runSummary"=
-				awk '/----SUMMARY_EXECUTION---/,0' "$outputFile" |& tee -a "$runSummary"
+				awk '/$summaryString/,0' "$outputFile" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "Exception" "$outputFile" ; then				
 				echo -e "[\e[31m[EXCEPTION\e[39m]: $runname had an exception: $exceptionInfo" |& tee -a "$runSummary"
-				 awk '/Exception/,0' "$outputFile" |& tee -a "$runSummary"
-			elif [ -f "$outputFile" ] && grep -q "$timeString" "$outputFile" ; then
+				awk '/Exception/,0' "$outputFile" |& tee -a "$runSummary"
+			elif [ -f "$outputFile" ] && grep -q "$summaryString" "$outputFile" ; then
 				echo -e "[\e[33m[WARNING\e[39m]: $runname did not find a fix in $runTime seconds!" |& tee -a "$runSummary"
-				awk '/----SUMMARY_EXECUTION---/,0' "$outputFile" |& tee -a "$runSummary"	 		
+				awk '/$summaryString/,0' "$outputFile" |& tee -a "$runSummary"	 		
 			else 
 				echo -e "[\e[31mFAILURE\e[39m]: $runname did not finish properly!" |& tee -a "$runSummary"
 			fi
