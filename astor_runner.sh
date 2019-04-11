@@ -34,7 +34,7 @@ for currenttest in $tests; do
 	
 	#compile and current build test case
 	cd $fullPath
-	mvn clean compile test |& tee $resultsDir$currenttest"-build-output.txt"
+	mvn clean compile test |& tee "$resultsDir/$currenttest-build-output.txt"
 	cd $2
 	mvn dependency:build-classpath -B | egrep -v "(^\[INFO\]|^\[WARNING\])" | tee /tmp/astor-classpath.txt
 	
@@ -45,7 +45,9 @@ for currenttest in $tests; do
 		for scope in ${scopes[@]}; do	
 			runname=$currenttest"-"$mode"-"$scope
 			outputFile=$resultsDir"/"$runname".txt"
+			
 			# check if this test was already run with the current configuration
+			echo -e "$outputFile"
 			if  [ ! -f "$outputFile" ] || [ grep -Fxq "[SUCCESS] for $runname" "$outputFile"]; then
 				echo -e "\n\n\e[35m [RUN] $runname \e[39m\n"
 			
