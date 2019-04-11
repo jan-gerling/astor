@@ -63,6 +63,7 @@ for currenttest in $tests; do
 			fi	
 			
 			runTime=$(grep -oP '(?<=Time Total(s): ).*' "$outputFile")
+			echo -e "runTime"
 			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
 				echo -e "\e[32m[SUCCESS]: $runname found a fix in $runTime seconds! \e[39m\n" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "Exception" "$outputFile" ; then
