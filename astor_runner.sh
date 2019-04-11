@@ -62,7 +62,7 @@ for currenttest in $tests; do
 				echo -e "\e[33m[SKIP]: $runname was already done! \e[39m" |& tee -a "$runSummary"
 			fi	
 			
-			runTime=$(grep awk -F "Time Total(s): " "$outputFile")
+			runTime=$(awk -F "Time Total(s): " "$outputFile")
 			echo -e "$runTime"
 			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
 				echo -e "\e[32m[SUCCESS]: $runname found a fix in $runTime seconds! \e[39m\n" |& tee -a "$runSummary"
