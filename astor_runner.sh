@@ -65,17 +65,19 @@ for currenttest in $tests; do
 
             summaryInfo=$(cat "$outputFile" | awk '/----SUMMARY_EXECUTION---/,0')
 			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
-				echo -e "[\e[32mSUCCESS\e[39m]: $runname found a fix in $runTime seconds!\n" |& tee -a "$runSummary"=
+				echo -e "[\e[32mSUCCESS\e[39m]: $runname found a fix in $runTime seconds!" |& tee -a "$runSummary"=
 				awk '/----SUMMARY_EXECUTION---/,0' "$outputFile" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "Exception" "$outputFile" ; then				
-				echo -e "[\e[31m[EXCEPTION\e[39m]: $runname had an exception: $exceptionInfo\n" |& tee -a "$runSummary"
-				 awk '/"Exception"/,0' "$outputFile" |& tee -a "$runSummary"
+				echo -e "[\e[31m[EXCEPTION\e[39m]: $runname had an exception: $exceptionInfo" |& tee -a "$runSummary"
+				 awk '/Exception/,0' "$outputFile" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "$timeString" "$outputFile" ; then
-				echo -e "[\e[33m[WARNING\e[39m]: $runname did not find a fix in $runTime seconds!\n" |& tee -a "$runSummary"
+				echo -e "[\e[33m[WARNING\e[39m]: $runname did not find a fix in $runTime seconds!" |& tee -a "$runSummary"
 				awk '/----SUMMARY_EXECUTION---/,0' "$outputFile" |& tee -a "$runSummary"	 		
 			else 
-				echo -e "[\e[31mFAILURE\e[39m]: $runname did not finish properly!\n" |& tee -a "$runSummary"
+				echo -e "[\e[31mFAILURE\e[39m]: $runname did not finish properly!" |& tee -a "$runSummary"
 			fi
+			
+			echo -e "\n" |& tee -a "$runSummary"
 		done	
 	done
     echo -e "- - - - - - - - END - - - - - - - -\n"
