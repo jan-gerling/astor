@@ -14,14 +14,18 @@ junitPath="./examples/libs/junit-4.4.jar"
 jvmPath="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin"
 tests=$(ls $1)
 
+date=$(date '+%d-%m-%Y-%H-%M-%S');
+runSummary=$resultsDir"/summary-"$date".txt"
+
+echo -e "[INFO] start run at $date" |& tee "$runSummary"
 #create results dir if necessary
 if [ ! -d $resultsDir ]; then
 	mkdir $resultsDir $resultsDir/success
-	echo -e "[INFO] created $resultsDir to store results"
+	echo -e "[INFO] created $resultsDir to store results" |& tee -a "$runSummary"
 fi
 
 #build astor
-echo -e "\n\n\e[35m[BUILD] astor in cd $2 \e[39m\n"
+echo -e "\e[35m[BUILD] astor in $2 \e[39m" |& tee -a "$runSummary"
 cd $2
 mvn clean compile
 
@@ -29,8 +33,8 @@ mvn clean compile
 for currenttest in $tests; do
 	fullPath=$1$currenttest/
 
-	echo -e "\e[32m\n\n\n\n* * * * * * * * New * * * * * * * *"
-	echo -e "\e[39mFILE:" $fullPath "\n"
+	echo -e "\e[32m\n* * * * * * * * New * * * * * * * *"
+	echo -e "\e[39m[FILE] $fullPath \n"
 	
 	#compile and current build test case
 	cd $fullPath
@@ -45,21 +49,27 @@ for currenttest in $tests; do
 		for scope in ${scopes[@]}; do	
 			runname="$currenttest-$mode-$scope"
 			outputFile="$resultsDir/$runname.txt"
+			successString="Found Solution"
 			
 			# check if this test was already run with the current configuration
-			if  [ ! -f "$outputFile" ] || [ grep -Fxq "[SUCCESS] for $runname" "$outputFile"]; then
-				echo -e "\n\n\e[35m[RUN] $runname \e[39m\n"
+			if  [ ! -f "$outputFile" ] || grep -q "[DONE]" "$outputFile" ; then
+				echo -e "\e[35m[RUN] $runname \e[39m" |& tee -a "$runSummary"
 			
 				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -maxtime $maxTime -stopfirst true |& tee "$outputFile"
+				echo -e "\e[32m[DONE]: $runname is finished! \e[39m" |& tee -a "$runSummary"
 			else
-				echo -e "\n\n\e[33m[WARNING]: $runname was already done! \e[39m \n"
+				echo -e "\e[33m[SKIP]: $runname was already done! \e[39m" |& tee -a "$runSummary"
 			fi
 			
-			if  [ -f "$outputFile"] && [ ! -f "$resultsDir/success/$runname.txt"] && [ grep -Fxq "-Found Solution" "$outputFile"]; then
-					echo -e "\n\n\e[32m[SUCCESS]: $runname found a fix! \e[39m \n"
-					cp "$outputFile" "$resultsDir/success"
+			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
+				echo -e "\e[32m[SUCCESS]: $runname found a fix! \e[39m\n" |& tee -a "$runSummary"
+			elif [ -f "$outputFile" ] && grep -q "Exception" "$outputFile" ; then
+				exceptionInfo=$(grep "Exception" "$outputFile")
+				echo -e "\e[31m[Exception]: $runname had an exception: $exceptionInfo \e[39m\n" |& tee -a "$runSummary"
+			elif [ -f "$outputFile" ] ; then
+				echo -e "\e[33m[WARNING]: $runname did not find a fix! \e[39m\n" |& tee -a "$runSummary"
 			else 
-					echo -e "\n\n\e[33m[WARNING]: $runname did not find a fix! \e[39m \n"
+				echo -e "\e[31m[FAILURE]: $runname did not finish properly! \e[39m\n" |& tee -a "$runSummary"
 			fi
 		done	
 	done
