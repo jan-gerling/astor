@@ -43,8 +43,8 @@ for currenttest in $tests; do
 		
 		# iterate over all of the three scopes
 		for scope in ${scopes[@]}; do	
-			runname=$currenttest"-"$mode"-"$scope
-			outputFile=$resultsDir"/"$runname".txt"
+			runname="$currenttest-$mode-$scope"
+			outputFile="$resultsDir/$runname".txt"
 			
 			# check if this test was already run with the current configuration
 			if  [ ! -f "$outputFile" ] || [ grep -Fxq "[SUCCESS] for $runname" "$outputFile"]; then
@@ -55,7 +55,7 @@ for currenttest in $tests; do
 				echo -e "\n\n\e[33m[WARNING]: $runname was already done! \e[39m \n"
 			fi
 			
-			if  [-f "$outputFile"] && [ grep -Fxq "-Found Solution" "$outputFile"]; then
+			if  [ -f "$outputFile"] && [ ! -f "$resultsDir/success/$runname.txt"] && [ grep -Fxq "-Found Solution" "$outputFile"]; then
 					echo -e "\n\n\e[32m[SUCCESS]: $runname found a fix! \e[39m \n"
 					cp "$outputFile" "$resultsDir/success"
 			else 
