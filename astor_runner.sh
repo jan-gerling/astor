@@ -53,7 +53,7 @@ for currenttest in $tests; do
 			timeString="Time Total(s)"
 			
 			# check if this test was already run with the current configuration
-			if  [ ! -f "$outputFile" ] || grep -q "[DONE]" "$outputFile" ; then
+			if  [ ! -f "$outputFile" ] || ! grep -q "[DONE]" "$outputFile" ; then
 				echo -e "[\e[35mRUN\e[39m] $runname" |& tee -a "$runSummary"
 			
 				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -maxtime $maxTime -stopfirst true |& tee "$outputFile"
@@ -65,15 +65,15 @@ for currenttest in $tests; do
 
 			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
 				echo -e "[\e[32mSUCCESS\e[39m]: $runname found a fix in $runTime seconds!\n" |& tee -a "$runSummary"
-				summaryInfo=$(cat "$outputFile" | sed -n -e '/----SUMMARY_EXECUTION---/,$')
+				summaryInfo=grep -A1 "----SUMMARY_EXECUTION---" "$outputFile"
 				echo -e "$summaryInfo" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "Exception" "$outputFile" ; then				
 				echo -e "[\e[31m[EXCEPTION\e[39m]: $runname had an exception: $exceptionInfo\n" |& tee -a "$runSummary"
-				exceptionInfo=$(cat "$outputFile" | sed -n -e '/Exception/,$')
+				exceptionInfo=grep -A1 "Exception" "$outputFile"
 				echo -e "$exceptionInfo" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "$timeString" "$outputFile" ; then
 				echo -e "[\e[33m[WARNING\e[39m]: $runname did not find a fix in $runTime seconds!\n" |& tee -a "$runSummary"
-				summaryInfo=$(cat "$outputFile" | sed -n -e '/----SUMMARY_EXECUTION---/,$')
+				summaryInfo=grep -A1 "----SUMMARY_EXECUTION---" "$outputFile"
 				echo -e "$summaryInfo" |& tee -a "$runSummary"	 		
 			else 
 				echo -e "[\e[31mFAILURE\e[39m]: $runname did not finish properly!\n" |& tee -a "$runSummary"
