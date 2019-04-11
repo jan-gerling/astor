@@ -69,7 +69,7 @@ for currenttest in $tests; do
 			elif [ -f "$outputFile" ] && grep -q "Exception" "$outputFile" ; then				
 				echo -e "[\e[31m[EXCEPTION\e[39m]: $runname had an exception: $exceptionInfo" |& tee -a "$runSummary"
 				awk '/Exception/,0' "$outputFile" |& tee -a "$runSummary"
-			elif [ -f "$outputFile" ] && grep -q "$summaryString" "$outputFile" ; then
+			elif [ -f "$outputFile" ] && grep -q "SUMMARY_EXECUTION" "$outputFile" ; then
 				echo -e "[\e[33m[WARNING\e[39m]: $runname did not find a fix in $runTime seconds!" |& tee -a "$runSummary"
 				awk '/$summaryString/,0' "$outputFile" |& tee -a "$runSummary"	 		
 			else 
