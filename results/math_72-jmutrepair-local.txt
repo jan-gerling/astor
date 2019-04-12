@@ -1,674 +1,155 @@
-2019-04-12 04:18:14,570 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jmutrepair  -scope  local  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan_gerling/astor/defect4j_tests/math_72/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.1  -maxtime  100  -stopfirst  true]
-2019-04-12 04:18:39,217 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_72//bin//default from 231 classes with test cases
-2019-04-12 04:18:39,222 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.1
-2019-04-12 04:19:03,974 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_72//bin//default]
-2019-04-12 04:23:42,637 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.analysis.solvers.BrentSolverTest#testRootEndpoints
-2019-04-12 04:23:42,644 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2140, fails: 1, GZoltar suspicious 16670
-2019-04-12 04:23:43,081 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 19 with susp > 0.1, we consider: 19
-2019-04-12 04:23:43,415 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_72//src//default, compliance level: 8
-2019-04-12 04:27:29,377 INFO main - 
----- Initial suspicious size: 19
-2019-04-12 04:27:30,234 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D 0.0, lineNumber=115, susp=1.0]
-2019-04-12 04:27:30,393 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D 0.0, lineNumber=116, susp=1.0]
-2019-04-12 04:27:30,564 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D 0.0, lineNumber=184, susp=1.0]
-2019-04-12 04:27:30,774 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D 0.0, lineNumber=185, susp=1.0]
-2019-04-12 04:27:30,899 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D 0.0, lineNumber=102, susp=0.5773502691896258]
-2019-04-12 04:27:31,058 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D 0.0, lineNumber=103, susp=0.5773502691896258]
-2019-04-12 04:27:31,165 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D 0.0, lineNumber=106, susp=0.5773502691896258]
-2019-04-12 04:27:31,414 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D 0.0, lineNumber=113, susp=0.5773502691896258]
-2019-04-12 04:27:31,832 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{verifySequence(DDD)V 0.0, lineNumber=230, susp=0.4082482904638631]
-2019-04-12 04:27:31,835 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{isSequence(DDD)Z 0.0, lineNumber=196, susp=0.2672612419124244]
-2019-04-12 04:27:31,938 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{getAbsoluteAccuracy()D 0.0, lineNumber=83, susp=0.17149858514250882]
-2019-04-12 04:27:32,037 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.analysis.SinFunction, methodName=org.apache.commons.math.analysis.SinFunction{value(D)D 0.0, lineNumber=37, susp=0.16666666666666666]
-2019-04-12 04:27:32,037 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.SinFunction, methodName=org.apache.commons.math.analysis.SinFunction{value(D)D 0.0, lineNumber=37, susp=0.16666666666666666]
-2019-04-12 04:27:32,043 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=247, susp=0.10540925533894598]
-2019-04-12 04:27:32,145 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=248, susp=0.10540925533894598]
-2019-04-12 04:27:32,241 INFO main - Total suspicious from FL: 19,  5
-2019-04-12 04:27:32,241 INFO main - Total ModPoint created: 5
-2019-04-12 04:27:32,241 INFO main - Creating program variant #1, [Variant id: 1, #gens: 5, #ops: 0, parent:-]
-2019-04-12 04:28:48,954 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-We accept : org.apache.commons.math.ArgumentOutsideDomainExceptionTest
-We accept : org.apache.commons.math.ConvergenceExceptionTest
-We accept : org.apache.commons.math.DuplicateSampleAbscissaExceptionTest
-We accept : org.apache.commons.math.FunctionEvaluationExceptionTest
-We accept : org.apache.commons.math.MathConfigurationExceptionTest
-We accept : org.apache.commons.math.MathExceptionTest
-We accept : org.apache.commons.math.MaxIterationsExceededExceptionTest
-We accept : org.apache.commons.math.analysis.BinaryFunctionTest
-We accept : org.apache.commons.math.analysis.ComposableFunctionTest
-We accept : org.apache.commons.math.analysis.integration.LegendreGaussIntegratorTest
-We accept : org.apache.commons.math.analysis.integration.RombergIntegratorTest
-We accept : org.apache.commons.math.analysis.integration.SimpsonIntegratorTest
-We accept : org.apache.commons.math.analysis.integration.TrapezoidIntegratorTest
-We accept : org.apache.commons.math.analysis.interpolation.DividedDifferenceInterpolatorTest
-We accept : org.apache.commons.math.analysis.interpolation.LoessInterpolatorTest
-We accept : org.apache.commons.math.analysis.interpolation.MicrosphereInterpolatorTest
-We accept : org.apache.commons.math.analysis.interpolation.NevilleInterpolatorTest
-We accept : org.apache.commons.math.analysis.interpolation.SplineInterpolatorTest
-We accept : org.apache.commons.math.analysis.polynomials.PolynomialFunctionLagrangeFormTest
-We accept : org.apache.commons.math.analysis.polynomials.PolynomialFunctionNewtonFormTest
-We accept : org.apache.commons.math.analysis.polynomials.PolynomialFunctionTest
-We accept : org.apache.commons.math.analysis.polynomials.PolynomialSplineFunctionTest
-We accept : org.apache.commons.math.analysis.polynomials.PolynomialsUtilsTest
-We accept : org.apache.commons.math.analysis.solvers.BisectionSolverTest
-We accept : org.apache.commons.math.analysis.solvers.BrentSolverTest
-We accept : org.apache.commons.math.analysis.solvers.LaguerreSolverTest
-We accept : org.apache.commons.math.analysis.solvers.MullerSolverTest
-We accept : org.apache.commons.math.analysis.solvers.NewtonSolverTest
-We accept : org.apache.commons.math.analysis.solvers.RiddersSolverTest
-We accept : org.apache.commons.math.analysis.solvers.UnivariateRealSolverFactoryImplTest
-We accept : org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtilsTest
-We accept : org.apache.commons.math.complex.ComplexFieldTest
-We accept : org.apache.commons.math.complex.ComplexFormatTest
-We accept : org.apache.commons.math.complex.ComplexTest
-We accept : org.apache.commons.math.complex.ComplexUtilsTest
-We accept : org.apache.commons.math.complex.FrenchComplexFormatTest
-We accept : org.apache.commons.math.distribution.BetaDistributionTest
-We accept : org.apache.commons.math.distribution.BinomialDistributionTest
-We accept : org.apache.commons.math.distribution.CauchyDistributionTest
-We accept : org.apache.commons.math.distribution.ChiSquareDistributionTest
-We accept : org.apache.commons.math.distribution.ExponentialDistributionTest
-We accept : org.apache.commons.math.distribution.FDistributionTest
-We accept : org.apache.commons.math.distribution.GammaDistributionTest
-We accept : org.apache.commons.math.distribution.HypergeometricDistributionTest
-We accept : org.apache.commons.math.distribution.NormalDistributionTest
-We accept : org.apache.commons.math.distribution.PascalDistributionTest
-We accept : org.apache.commons.math.distribution.PoissonDistributionTest
-We accept : org.apache.commons.math.distribution.TDistributionTest
-We accept : org.apache.commons.math.distribution.WeibullDistributionTest
-We accept : org.apache.commons.math.distribution.ZipfDistributionTest
-We accept : org.apache.commons.math.estimation.EstimatedParameterTest
-We accept : org.apache.commons.math.estimation.GaussNewtonEstimatorTest
-We accept : org.apache.commons.math.estimation.LevenbergMarquardtEstimatorTest
-We accept : org.apache.commons.math.estimation.MinpackTest
-We accept : org.apache.commons.math.estimation.WeightedMeasurementTest
-We accept : org.apache.commons.math.fraction.BigFractionFieldTest
-We accept : org.apache.commons.math.fraction.BigFractionFormatTest
-We accept : org.apache.commons.math.fraction.BigFractionTest
-We accept : org.apache.commons.math.fraction.FractionFieldTest
-We accept : org.apache.commons.math.fraction.FractionFormatTest
-We accept : org.apache.commons.math.fraction.FractionTest
-We accept : org.apache.commons.math.genetics.BinaryChromosomeTest
-We accept : org.apache.commons.math.genetics.BinaryMutationTest
-We accept : org.apache.commons.math.genetics.ChromosomeTest
-We accept : org.apache.commons.math.genetics.ElitisticListPopulationTest
-We accept : org.apache.commons.math.genetics.FitnessCachingTest
-We accept : org.apache.commons.math.genetics.FixedGenerationCountTest
-We accept : org.apache.commons.math.genetics.GeneticAlgorithmTestBinary
-We accept : org.apache.commons.math.genetics.GeneticAlgorithmTestPermutations
-We accept : org.apache.commons.math.genetics.ListPopulationTest
-We accept : org.apache.commons.math.genetics.OnePointCrossoverTest
-We accept : org.apache.commons.math.genetics.RandomKeyMutationTest
-We accept : org.apache.commons.math.genetics.RandomKeyTest
-We accept : org.apache.commons.math.genetics.TournamentSelectionTest
-We accept : org.apache.commons.math.geometry.FrenchVector3DFormatTest
-We accept : org.apache.commons.math.geometry.RotationOrderTest
-We accept : org.apache.commons.math.geometry.RotationTest
-We accept : org.apache.commons.math.geometry.Vector3DFormatTest
-We accept : org.apache.commons.math.geometry.Vector3DTest
-We accept : org.apache.commons.math.linear.AbstractRealVectorTest
-We accept : org.apache.commons.math.linear.Array2DRowRealMatrixTest
-We accept : org.apache.commons.math.linear.ArrayFieldVectorTest
-We accept : org.apache.commons.math.linear.ArrayRealVectorTest
-We accept : org.apache.commons.math.linear.BiDiagonalTransformerTest
-We accept : org.apache.commons.math.linear.BigMatrixImplTest
-We accept : org.apache.commons.math.linear.BlockFieldMatrixTest
-We accept : org.apache.commons.math.linear.BlockRealMatrixTest
-We accept : org.apache.commons.math.linear.CholeskyDecompositionImplTest
-We accept : org.apache.commons.math.linear.CholeskySolverTest
-We accept : org.apache.commons.math.linear.EigenDecompositionImplTest
-We accept : org.apache.commons.math.linear.EigenSolverTest
-We accept : org.apache.commons.math.linear.FieldLUDecompositionImplTest
-We accept : org.apache.commons.math.linear.FieldMatrixImplTest
-We accept : org.apache.commons.math.linear.FrenchRealVectorFormatTest
-We accept : org.apache.commons.math.linear.InvalidMatrixExceptionTest
-We accept : org.apache.commons.math.linear.LUDecompositionImplTest
-We accept : org.apache.commons.math.linear.LUSolverTest
-We accept : org.apache.commons.math.linear.MatrixIndexExceptionTest
-We accept : org.apache.commons.math.linear.MatrixUtilsTest
-We accept : org.apache.commons.math.linear.QRDecompositionImplTest
-We accept : org.apache.commons.math.linear.QRSolverTest
-We accept : org.apache.commons.math.linear.RealMatrixImplTest
-We accept : org.apache.commons.math.linear.RealVectorFormatTest
-We accept : org.apache.commons.math.linear.SingularValueDecompositionImplTest
-We accept : org.apache.commons.math.linear.SingularValueSolverTest
-We accept : org.apache.commons.math.linear.SparseFieldMatrixTest
-We accept : org.apache.commons.math.linear.SparseFieldVectorTest
-We accept : org.apache.commons.math.linear.SparseRealMatrixTest
-We accept : org.apache.commons.math.linear.SparseRealVectorTest
-We accept : org.apache.commons.math.linear.TriDiagonalTransformerTest
-We accept : org.apache.commons.math.ode.ContinuousOutputModelTest
-We accept : org.apache.commons.math.ode.FirstOrderConverterTest
-We accept : org.apache.commons.math.ode.events.EventStateTest
-We accept : org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaStepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.DormandPrince54IntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.DormandPrince54StepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.DormandPrince853StepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.EulerIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.EulerStepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.GillIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.GillStepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.HighamHall54IntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.HighamHall54StepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.MidpointIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.MidpointStepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.ThreeEighthesIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.ThreeEighthesStepInterpolatorTest
-We accept : org.apache.commons.math.ode.sampling.DummyStepInterpolatorTest
-We accept : org.apache.commons.math.ode.sampling.NordsieckStepInterpolatorTest
-We accept : org.apache.commons.math.ode.sampling.StepNormalizerTest
-We accept : org.apache.commons.math.optimization.MultiStartDifferentiableMultivariateRealOptimizerTest
-We accept : org.apache.commons.math.optimization.MultiStartDifferentiableMultivariateVectorialOptimizerTest
-We accept : org.apache.commons.math.optimization.MultiStartMultivariateRealOptimizerTest
-We accept : org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest
-We accept : org.apache.commons.math.optimization.direct.MultiDirectionalTest
-We accept : org.apache.commons.math.optimization.direct.NelderMeadTest
-We accept : org.apache.commons.math.optimization.fitting.CurveFitterTest
-We accept : org.apache.commons.math.optimization.fitting.HarmonicFitterTest
-We accept : org.apache.commons.math.optimization.fitting.PolynomialFitterTest
-We accept : org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest
-We accept : org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest
-We accept : org.apache.commons.math.optimization.general.MinpackTest
-We accept : org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest
-We accept : org.apache.commons.math.optimization.linear.SimplexSolverTest
-We accept : org.apache.commons.math.optimization.linear.SimplexTableauTest
-We accept : org.apache.commons.math.optimization.univariate.BrentMinimizerTest
-We accept : org.apache.commons.math.random.AbstractRandomGeneratorTest
-We accept : org.apache.commons.math.random.CorrelatedRandomVectorGeneratorTest
-We accept : org.apache.commons.math.random.EmpiricalDistributionTest
-We accept : org.apache.commons.math.random.GaussianRandomGeneratorTest
-We accept : org.apache.commons.math.random.MersenneTwisterTest
-We accept : org.apache.commons.math.random.RandomAdaptorTest
-We accept : org.apache.commons.math.random.RandomDataTest
-We accept : org.apache.commons.math.random.UncorrelatedRandomVectorGeneratorTest
-We accept : org.apache.commons.math.random.UniformRandomGeneratorTest
-We accept : org.apache.commons.math.random.ValueServerTest
-We accept : org.apache.commons.math.special.BetaTest
-We accept : org.apache.commons.math.special.ErfTest
-We accept : org.apache.commons.math.special.GammaTest
-We accept : org.apache.commons.math.stat.CertifiedDataTest
-We accept : org.apache.commons.math.stat.FrequencyTest
-We accept : org.apache.commons.math.stat.StatUtilsTest
-We accept : org.apache.commons.math.stat.clustering.EuclideanIntegerPointTest
-We accept : org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest
-We accept : org.apache.commons.math.stat.correlation.CovarianceTest
-We accept : org.apache.commons.math.stat.correlation.PearsonsCorrelationTest
-We accept : org.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest
-We accept : org.apache.commons.math.stat.data.LewTest
-We accept : org.apache.commons.math.stat.data.LotteryTest
-We accept : org.apache.commons.math.stat.descriptive.AbstractUnivariateStatisticTest
-We accept : org.apache.commons.math.stat.descriptive.AggregateSummaryStatisticsTest
-We accept : org.apache.commons.math.stat.descriptive.DescriptiveStatisticsTest
-We accept : org.apache.commons.math.stat.descriptive.InteractionTest
-We accept : org.apache.commons.math.stat.descriptive.ListUnivariateImplTest
-We accept : org.apache.commons.math.stat.descriptive.MixedListUnivariateImplTest
-We accept : org.apache.commons.math.stat.descriptive.MultivariateSummaryStatisticsTest
-We accept : org.apache.commons.math.stat.descriptive.StatisticalSummaryValuesTest
-We accept : org.apache.commons.math.stat.descriptive.SummaryStatisticsTest
-We accept : org.apache.commons.math.stat.descriptive.SynchronizedDescriptiveStatisticsTest
-We accept : org.apache.commons.math.stat.descriptive.SynchronizedMultivariateSummaryStatisticsTest
-We accept : org.apache.commons.math.stat.descriptive.SynchronizedSummaryStatisticsTest
-We accept : org.apache.commons.math.stat.descriptive.moment.FirstMomentTest
-We accept : org.apache.commons.math.stat.descriptive.moment.FourthMomentTest
-We accept : org.apache.commons.math.stat.descriptive.moment.GeometricMeanTest
-We accept : org.apache.commons.math.stat.descriptive.moment.KurtosisTest
-We accept : org.apache.commons.math.stat.descriptive.moment.MeanTest
-We accept : org.apache.commons.math.stat.descriptive.moment.SecondMomentTest
-We accept : org.apache.commons.math.stat.descriptive.moment.SemiVarianceTest
-We accept : org.apache.commons.math.stat.descriptive.moment.SkewnessTest
-We accept : org.apache.commons.math.stat.descriptive.moment.StandardDeviationTest
-We accept : org.apache.commons.math.stat.descriptive.moment.ThirdMomentTest
-We accept : org.apache.commons.math.stat.descriptive.moment.VarianceTest
-We accept : org.apache.commons.math.stat.descriptive.moment.VectorialCovarianceTest
-We accept : org.apache.commons.math.stat.descriptive.moment.VectorialMeanTest
-We accept : org.apache.commons.math.stat.descriptive.rank.MaxTest
-We accept : org.apache.commons.math.stat.descriptive.rank.MedianTest
-We accept : org.apache.commons.math.stat.descriptive.rank.MinTest
-We accept : org.apache.commons.math.stat.descriptive.rank.PercentileTest
-We accept : org.apache.commons.math.stat.descriptive.summary.ProductTest
-We accept : org.apache.commons.math.stat.descriptive.summary.SumLogTest
-We accept : org.apache.commons.math.stat.descriptive.summary.SumSqTest
-We accept : org.apache.commons.math.stat.descriptive.summary.SumTest
-We accept : org.apache.commons.math.stat.inference.ChiSquareFactoryTest
-We accept : org.apache.commons.math.stat.inference.ChiSquareTestTest
-We accept : org.apache.commons.math.stat.inference.OneWayAnovaTest
-We accept : org.apache.commons.math.stat.inference.TTestFactoryTest
-We accept : org.apache.commons.math.stat.inference.TTestTest
-We accept : org.apache.commons.math.stat.inference.TestUtilsTest
-We accept : org.apache.commons.math.stat.ranking.NaturalRankingTest
-We accept : org.apache.commons.math.stat.regression.GLSMultipleLinearRegressionTest
-We accept : org.apache.commons.math.stat.regression.OLSMultipleLinearRegressionTest
-We accept : org.apache.commons.math.stat.regression.SimpleRegressionTest
-We accept : org.apache.commons.math.transform.FastCosineTransformerTest
-We accept : org.apache.commons.math.transform.FastFourierTransformerTest
-We accept : org.apache.commons.math.transform.FastHadamardTransformerTest
-We accept : org.apache.commons.math.transform.FastSineTransformerTest
-We accept : org.apache.commons.math.util.BigRealFieldTest
-We accept : org.apache.commons.math.util.BigRealTest
-We accept : org.apache.commons.math.util.ContinuedFractionTest
-We accept : org.apache.commons.math.util.DefaultTransformerTest
-We accept : org.apache.commons.math.util.MathUtilsTest
-We accept : org.apache.commons.math.util.OpenIntToDoubleHashMapTest
-We accept : org.apache.commons.math.util.OpenIntToFieldTest
-We accept : org.apache.commons.math.util.ResizableDoubleArrayTest
-We accept : org.apache.commons.math.util.TransformerMapTest
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000e3880000, 228589568, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 228589568 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30380.log
- 
- error: 
-2019-04-12 04:28:48,955 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
-2019-04-12 04:28:48,955 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
-2019-04-12 04:28:49,004 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
-2019-04-12 04:28:49,004 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
-2019-04-12 04:28:49,005 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.1
-2019-04-12 04:28:49,006 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
-2019-04-12 04:28:49,006 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
-2019-04-12 04:28:49,006 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
-2019-04-12 04:28:49,006 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
-2019-04-12 04:28:49,008 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
-2019-04-12 04:28:49,008 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
-2019-04-12 04:28:49,008 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
-2019-04-12 04:28:49,008 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
-2019-04-12 04:28:49,009 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
-2019-04-12 04:28:49,009 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
-2019-04-12 04:28:49,009 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jmutrepair
-2019-04-12 04:28:49,009 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
-2019-04-12 04:28:49,009 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
-2019-04-12 04:28:49,009 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
-2019-04-12 04:28:49,009 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
-2019-04-12 04:28:49,009 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
-2019-04-12 04:28:49,010 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
-2019-04-12 04:28:49,010 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
-2019-04-12 04:28:49,010 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
-2019-04-12 04:28:49,010 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
-2019-04-12 04:28:49,010 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
-2019-04-12 04:28:49,010 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
-2019-04-12 04:28:49,010 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
-2019-04-12 04:28:49,010 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /home/jan_gerling/astor/defect4j_tests/math_72/
-2019-04-12 04:28:49,011 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
-2019-04-12 04:28:49,011 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
-2019-04-12 04:28:49,011 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
-2019-04-12 04:28:49,011 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
-2019-04-12 04:28:49,016 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
-2019-04-12 04:28:49,017 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
-2019-04-12 04:28:49,017 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
-2019-04-12 04:28:49,017 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
-2019-04-12 04:28:49,017 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
-2019-04-12 04:28:49,017 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
-2019-04-12 04:28:49,017 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
-2019-04-12 04:28:49,017 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
-2019-04-12 04:28:49,018 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
-2019-04-12 04:28:49,018 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
-2019-04-12 04:28:49,018 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
-2019-04-12 04:28:49,018 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
-2019-04-12 04:28:49,018 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
-2019-04-12 04:28:49,018 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
-2019-04-12 04:28:49,018 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
-2019-04-12 04:28:49,019 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
-2019-04-12 04:28:49,019 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
-2019-04-12 04:28:49,019 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
-2019-04-12 04:28:49,019 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= local
-2019-04-12 04:28:49,019 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
-2019-04-12 04:28:49,019 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
-2019-04-12 04:28:49,019 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
-2019-04-12 04:28:49,020 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
-2019-04-12 04:28:49,020 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
-2019-04-12 04:28:49,020 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
-2019-04-12 04:28:49,020 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
-2019-04-12 04:28:49,020 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
-2019-04-12 04:28:49,020 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
-2019-04-12 04:28:49,020 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
-2019-04-12 04:28:49,020 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
-2019-04-12 04:28:49,021 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
-2019-04-12 04:28:49,021 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
-2019-04-12 04:28:49,021 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
-2019-04-12 04:28:49,021 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
-2019-04-12 04:28:49,021 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
-2019-04-12 04:28:49,021 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
-2019-04-12 04:28:49,021 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
-2019-04-12 04:28:49,021 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
-2019-04-12 04:28:49,252 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
-2019-04-12 04:28:49,254 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yInit[...] ` ---> `(java.lang.Math.abs(yInit[...]` at pos -1 of parent `-`
-2019-04-12 04:29:09,206 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30409.log
- 
- error: 
-2019-04-12 04:29:09,207 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
-2019-04-12 04:29:09,208 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yInit[...] ` ---> `(java.lang.Math.abs(yInit[...]` at pos -1 of parent `-`
-2019-04-12 04:29:11,583 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30412.log
- 
- error: 
-2019-04-12 04:29:11,583 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
-2019-04-12 04:29:11,583 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yInit[...] ` ---> `(java.lang.Math.abs(yInit[...]` at pos -1 of parent `-`
-2019-04-12 04:29:13,706 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30415.log
- 
- error: 
-2019-04-12 04:29:13,706 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
-2019-04-12 04:29:13,706 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yInit[...] ` ---> `(java.lang.Math.abs(yInit[...]` at pos -1 of parent `-`
-2019-04-12 04:29:15,738 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30428.log
- 
- error: 
-2019-04-12 04:29:15,738 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
-2019-04-12 04:29:15,738 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yInit[...] ` ---> `(java.lang.Math.abs(yInit[...]` at pos -1 of parent `-`
-2019-04-12 04:29:17,394 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30431.log
- 
- error: 
-2019-04-12 04:29:17,394 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
-2019-04-12 04:29:17,395 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yInit[...] ` ---> `!((java.lang.Math.abs(yIn[...]` at pos -1 of parent `-`
-2019-04-12 04:29:19,198 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30434.log
- 
- error: 
-2019-04-12 04:29:19,199 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
-2019-04-12 04:29:19,199 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:20,880 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30437.log
- 
- error: 
-2019-04-12 04:29:20,880 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
-2019-04-12 04:29:20,881 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:22,394 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30440.log
- 
- error: 
-2019-04-12 04:29:22,394 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
-2019-04-12 04:29:22,394 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:23,938 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30443.log
- 
- error: 
-2019-04-12 04:29:23,938 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
-2019-04-12 04:29:23,938 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:25,362 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30446.log
- 
- error: 
-2019-04-12 04:29:25,362 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
-2019-04-12 04:29:25,363 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:26,642 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30449.log
- 
- error: 
-2019-04-12 04:29:26,642 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
-2019-04-12 04:29:26,642 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `!((java.lang.Math.abs(yMi[...]` at pos -1 of parent `-`
-2019-04-12 04:29:28,002 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30453.log
- 
- error: 
-2019-04-12 04:29:28,003 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
-2019-04-12 04:29:28,003 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:29,526 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30456.log
- 
- error: 
-2019-04-12 04:29:29,526 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
-2019-04-12 04:29:29,526 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:30,810 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30459.log
- 
- error: 
-2019-04-12 04:29:30,810 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
-2019-04-12 04:29:30,810 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:32,186 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30462.log
- 
- error: 
-2019-04-12 04:29:32,186 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
-2019-04-12 04:29:32,186 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:33,425 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30465.log
- 
- error: 
-2019-04-12 04:29:33,426 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
-2019-04-12 04:29:33,426 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:34,598 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30468.log
- 
- error: 
-2019-04-12 04:29:34,598 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
-2019-04-12 04:29:34,598 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `!((java.lang.Math.abs(yMi[...]` at pos -1 of parent `-`
-2019-04-12 04:29:35,934 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30471.log
- 
- error: 
-2019-04-12 04:29:35,936 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
-2019-04-12 04:29:35,936 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:37,133 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30474.log
- 
- error: 
-2019-04-12 04:29:37,134 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
-2019-04-12 04:29:37,134 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:38,253 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30477.log
- 
- error: 
-2019-04-12 04:29:38,254 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
-2019-04-12 04:29:38,254 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:39,353 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30480.log
- 
- error: 
-2019-04-12 04:29:39,354 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
-2019-04-12 04:29:39,354 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:40,489 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30483.log
- 
- error: 
-2019-04-12 04:29:40,490 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
-2019-04-12 04:29:40,490 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
-2019-04-12 04:29:41,705 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30486.log
- 
- error: 
-2019-04-12 04:29:41,706 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
-2019-04-12 04:29:41,706 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `!((java.lang.Math.abs(yMa[...]` at pos -1 of parent `-`
-2019-04-12 04:29:42,869 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30489.log
- 
- error: 
-2019-04-12 04:29:42,870 INFO main - mod_point ModificPoint=UnivariateRealSolverImpl line: 225, el: CtIfImpl
-2019-04-12 04:29:42,870 INFO main - -->op: IfExpresionMutOp: `!(isSequence(lower, initi[...] ` ---> `isSequence(lower, initial[...]` at pos -1 of parent `-`
-2019-04-12 04:29:43,818 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000080000000, 301989888, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 301989888 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid30492.log
- 
- error: 
-2019-04-12 04:29:43,818 INFO main - 
+<<<<<<< HEAD
+2019-04-12 18:39:21,953 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jmutrepair  -scope  local  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan/astor/defect4j_tests/math_72/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-12 18:39:22,793 INFO main - -Executing Gzoltar classpath: /home/jan/astor/./outputMutation/AstorMain-math_72//bin//default from 231 classes with test cases
+2019-04-12 18:39:22,795 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-12 18:39:23,697 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan/astor/./examples/libs/junit-4.4.jar, /home/jan/astor/./outputMutation/AstorMain-math_72//bin//default]
+2019-04-12 18:39:36,887 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.analysis.solvers.BrentSolverTest#testRootEndpoints
+2019-04-12 18:39:36,893 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2140, fails: 1, GZoltar suspicious 16669
+2019-04-12 18:39:36,907 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 12 with susp > 0.5, we consider: 12
+2019-04-12 18:39:36,916 INFO main - building model: /home/jan/astor/./outputMutation/AstorMain-math_72//src//default, compliance level: 8
+2019-04-12 18:39:45,266 INFO main - 
+---- Initial suspicious size: 12
+2019-04-12 18:39:45,298 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D 0.0, lineNumber=115, susp=1.0]
+2019-04-12 18:39:45,306 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D 0.0, lineNumber=116, susp=1.0]
+2019-04-12 18:39:45,313 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D 0.0, lineNumber=184, susp=1.0]
+2019-04-12 18:39:45,319 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D 0.0, lineNumber=185, susp=1.0]
+2019-04-12 18:39:45,323 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D 0.0, lineNumber=102, susp=0.5773502691896258]
+2019-04-12 18:39:45,328 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D 0.0, lineNumber=103, susp=0.5773502691896258]
+2019-04-12 18:39:45,332 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D 0.0, lineNumber=106, susp=0.5773502691896258]
+2019-04-12 18:39:45,342 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D 0.0, lineNumber=113, susp=0.5773502691896258]
+2019-04-12 18:39:45,354 INFO main - Total suspicious from FL: 12,  4
+2019-04-12 18:39:45,354 INFO main - Total ModPoint created: 4
+2019-04-12 18:39:45,354 INFO main - Creating program variant #1, [Variant id: 1, #gens: 4, #ops: 0, parent:-]
+2019-04-12 18:39:52,844 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 18:39:52,844 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-12 18:39:52,844 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-12 18:39:52,844 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-12 18:39:52,844 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-12 18:39:52,844 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-12 18:39:52,844 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-12 18:39:52,844 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-12 18:39:52,844 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-12 18:39:52,845 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-12 18:39:52,845 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-12 18:39:52,845 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-12 18:39:52,845 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-12 18:39:52,845 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-12 18:39:52,845 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan/astor/./outputMutation
+2019-04-12 18:39:52,845 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jmutrepair
+2019-04-12 18:39:52,845 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-12 18:39:52,845 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-12 18:39:52,845 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-12 18:39:52,845 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-12 18:39:52,845 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-12 18:39:52,845 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-12 18:39:52,845 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-12 18:39:52,846 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-12 18:39:52,846 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-12 18:39:52,846 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-12 18:39:52,846 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-12 18:39:52,846 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-12 18:39:52,846 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /home/jan/astor/defect4j_tests/math_72/
+2019-04-12 18:39:52,846 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-12 18:39:52,846 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-12 18:39:52,846 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 18:39:52,846 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-12 18:39:52,846 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-12 18:39:52,846 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-12 18:39:52,846 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-12 18:39:52,846 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-12 18:39:52,847 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= local
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-12 18:39:52,848 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-12 18:39:52,849 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-12 18:39:52,849 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-12 18:39:52,849 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-12 18:39:52,849 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 18:39:52,851 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
+2019-04-12 18:39:52,851 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yInit[...] ` ---> `(java.lang.Math.abs(yInit[...]` at pos -1 of parent `-`
+2019-04-12 18:39:53,694 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
+2019-04-12 18:39:53,694 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yInit[...] ` ---> `(java.lang.Math.abs(yInit[...]` at pos -1 of parent `-`
+2019-04-12 18:39:54,005 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
+2019-04-12 18:39:54,005 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yInit[...] ` ---> `(java.lang.Math.abs(yInit[...]` at pos -1 of parent `-`
+2019-04-12 18:39:54,270 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
+2019-04-12 18:39:54,270 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yInit[...] ` ---> `(java.lang.Math.abs(yInit[...]` at pos -1 of parent `-`
+2019-04-12 18:39:54,533 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
+2019-04-12 18:39:54,534 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yInit[...] ` ---> `(java.lang.Math.abs(yInit[...]` at pos -1 of parent `-`
+2019-04-12 18:39:54,832 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
+2019-04-12 18:39:54,833 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yInit[...] ` ---> `!((java.lang.Math.abs(yIn[...]` at pos -1 of parent `-`
+2019-04-12 18:39:55,124 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
+2019-04-12 18:39:55,124 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:55,392 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
+2019-04-12 18:39:55,393 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:55,690 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
+2019-04-12 18:39:55,690 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:55,960 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
+2019-04-12 18:39:55,960 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:56,230 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
+2019-04-12 18:39:56,230 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:56,482 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
+2019-04-12 18:39:56,482 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `!((java.lang.Math.abs(yMi[...]` at pos -1 of parent `-`
+2019-04-12 18:39:56,740 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
+2019-04-12 18:39:56,741 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:56,989 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
+2019-04-12 18:39:56,990 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:57,233 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
+2019-04-12 18:39:57,234 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:57,461 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
+2019-04-12 18:39:57,462 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:57,689 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
+2019-04-12 18:39:57,690 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `(java.lang.Math.abs(yMin)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:57,905 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
+2019-04-12 18:39:57,906 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMin)[...] ` ---> `!((java.lang.Math.abs(yMi[...]` at pos -1 of parent `-`
+2019-04-12 18:39:58,145 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
+2019-04-12 18:39:58,146 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:58,375 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
+2019-04-12 18:39:58,375 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:58,576 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
+2019-04-12 18:39:58,576 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:59,126 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
+2019-04-12 18:39:59,126 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:59,372 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
+2019-04-12 18:39:59,372 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `(java.lang.Math.abs(yMax)[...]` at pos -1 of parent `-`
+2019-04-12 18:39:59,613 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
+2019-04-12 18:39:59,614 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(yMax)[...] ` ---> `!((java.lang.Math.abs(yMa[...]` at pos -1 of parent `-`
+2019-04-12 18:39:59,885 INFO main - 
 ----SUMMARY_EXECUTION---
-2019-04-12 04:29:43,818 INFO main - 
+2019-04-12 18:39:59,885 INFO main - 
 successful_ing_attempts (0): []
-2019-04-12 04:29:43,819 INFO main - 
-failing_ing_attempts (25): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-2019-04-12 04:29:43,819 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 688.956
+2019-04-12 18:39:59,885 INFO main - 
+failing_ing_attempts (24): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 18:39:59,885 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 37.923
 [DONE]
+=======
+2019-04-12 17:49:16,282 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jmutrepair  -scope  local  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests/math_72/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-12 17:49:38,195 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_72//bin//default from 231 classes with test cases
+2019-04-12 17:49:38,283 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-12 17:49:58,740 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_72//bin//default]
+>>>>>>> 80a4a6ec... added results for math 70, 71 and 72

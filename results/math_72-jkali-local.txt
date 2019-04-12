@@ -1,391 +1,132 @@
-2019-04-12 04:56:20,170 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jkali  -scope  local  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan_gerling/astor/defect4j_tests/math_72/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.1  -maxtime  100  -stopfirst  true]
-2019-04-12 04:56:48,741 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_72//bin//default from 231 classes with test cases
-2019-04-12 04:56:48,745 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.1
-2019-04-12 04:57:11,095 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_72//bin//default]
-2019-04-12 05:01:56,854 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.analysis.solvers.BrentSolverTest#testRootEndpoints
-2019-04-12 05:01:56,985 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2140, fails: 1, GZoltar suspicious 16670
-2019-04-12 05:01:57,296 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 19 with susp > 0.1, we consider: 19
-2019-04-12 05:01:57,614 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_72//src//default, compliance level: 8
-2019-04-12 05:05:25,047 INFO main - 
----- Initial suspicious size: 19
-2019-04-12 05:05:27,531 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{verifySequence(DDD)V 0.0, lineNumber=230, susp=0.4082482904638631]
-2019-04-12 05:05:27,686 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.analysis.SinFunction, methodName=org.apache.commons.math.analysis.SinFunction{value(D)D 0.0, lineNumber=37, susp=0.16666666666666666]
-2019-04-12 05:05:27,692 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.SinFunction, methodName=org.apache.commons.math.analysis.SinFunction{value(D)D 0.0, lineNumber=37, susp=0.16666666666666666]
-2019-04-12 05:05:27,942 INFO main - Total suspicious from FL: 19,  17
-2019-04-12 05:05:27,943 INFO main - Total ModPoint created: 17
-2019-04-12 05:05:27,943 INFO main - Creating program variant #1, [Variant id: 1, #gens: 17, #ops: 0, parent:-]
-2019-04-12 05:06:40,866 ERROR main - Error reading the validation process
- output: 
-America/Los_Angeles
-We accept : org.apache.commons.math.ArgumentOutsideDomainExceptionTest
-We accept : org.apache.commons.math.ConvergenceExceptionTest
-We accept : org.apache.commons.math.DuplicateSampleAbscissaExceptionTest
-We accept : org.apache.commons.math.FunctionEvaluationExceptionTest
-We accept : org.apache.commons.math.MathConfigurationExceptionTest
-We accept : org.apache.commons.math.MathExceptionTest
-We accept : org.apache.commons.math.MaxIterationsExceededExceptionTest
-We accept : org.apache.commons.math.analysis.BinaryFunctionTest
-We accept : org.apache.commons.math.analysis.ComposableFunctionTest
-We accept : org.apache.commons.math.analysis.integration.LegendreGaussIntegratorTest
-We accept : org.apache.commons.math.analysis.integration.RombergIntegratorTest
-We accept : org.apache.commons.math.analysis.integration.SimpsonIntegratorTest
-We accept : org.apache.commons.math.analysis.integration.TrapezoidIntegratorTest
-We accept : org.apache.commons.math.analysis.interpolation.DividedDifferenceInterpolatorTest
-We accept : org.apache.commons.math.analysis.interpolation.LoessInterpolatorTest
-We accept : org.apache.commons.math.analysis.interpolation.MicrosphereInterpolatorTest
-We accept : org.apache.commons.math.analysis.interpolation.NevilleInterpolatorTest
-We accept : org.apache.commons.math.analysis.interpolation.SplineInterpolatorTest
-We accept : org.apache.commons.math.analysis.polynomials.PolynomialFunctionLagrangeFormTest
-We accept : org.apache.commons.math.analysis.polynomials.PolynomialFunctionNewtonFormTest
-We accept : org.apache.commons.math.analysis.polynomials.PolynomialFunctionTest
-We accept : org.apache.commons.math.analysis.polynomials.PolynomialSplineFunctionTest
-We accept : org.apache.commons.math.analysis.polynomials.PolynomialsUtilsTest
-We accept : org.apache.commons.math.analysis.solvers.BisectionSolverTest
-We accept : org.apache.commons.math.analysis.solvers.BrentSolverTest
-We accept : org.apache.commons.math.analysis.solvers.LaguerreSolverTest
-We accept : org.apache.commons.math.analysis.solvers.MullerSolverTest
-We accept : org.apache.commons.math.analysis.solvers.NewtonSolverTest
-We accept : org.apache.commons.math.analysis.solvers.RiddersSolverTest
-We accept : org.apache.commons.math.analysis.solvers.UnivariateRealSolverFactoryImplTest
-We accept : org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtilsTest
-We accept : org.apache.commons.math.complex.ComplexFieldTest
-We accept : org.apache.commons.math.complex.ComplexFormatTest
-We accept : org.apache.commons.math.complex.ComplexTest
-We accept : org.apache.commons.math.complex.ComplexUtilsTest
-We accept : org.apache.commons.math.complex.FrenchComplexFormatTest
-We accept : org.apache.commons.math.distribution.BetaDistributionTest
-We accept : org.apache.commons.math.distribution.BinomialDistributionTest
-We accept : org.apache.commons.math.distribution.CauchyDistributionTest
-We accept : org.apache.commons.math.distribution.ChiSquareDistributionTest
-We accept : org.apache.commons.math.distribution.ExponentialDistributionTest
-We accept : org.apache.commons.math.distribution.FDistributionTest
-We accept : org.apache.commons.math.distribution.GammaDistributionTest
-We accept : org.apache.commons.math.distribution.HypergeometricDistributionTest
-We accept : org.apache.commons.math.distribution.NormalDistributionTest
-We accept : org.apache.commons.math.distribution.PascalDistributionTest
-We accept : org.apache.commons.math.distribution.PoissonDistributionTest
-We accept : org.apache.commons.math.distribution.TDistributionTest
-We accept : org.apache.commons.math.distribution.WeibullDistributionTest
-We accept : org.apache.commons.math.distribution.ZipfDistributionTest
-We accept : org.apache.commons.math.estimation.EstimatedParameterTest
-We accept : org.apache.commons.math.estimation.GaussNewtonEstimatorTest
-We accept : org.apache.commons.math.estimation.LevenbergMarquardtEstimatorTest
-We accept : org.apache.commons.math.estimation.MinpackTest
-We accept : org.apache.commons.math.estimation.WeightedMeasurementTest
-We accept : org.apache.commons.math.fraction.BigFractionFieldTest
-We accept : org.apache.commons.math.fraction.BigFractionFormatTest
-We accept : org.apache.commons.math.fraction.BigFractionTest
-We accept : org.apache.commons.math.fraction.FractionFieldTest
-We accept : org.apache.commons.math.fraction.FractionFormatTest
-We accept : org.apache.commons.math.fraction.FractionTest
-We accept : org.apache.commons.math.genetics.BinaryChromosomeTest
-We accept : org.apache.commons.math.genetics.BinaryMutationTest
-We accept : org.apache.commons.math.genetics.ChromosomeTest
-We accept : org.apache.commons.math.genetics.ElitisticListPopulationTest
-We accept : org.apache.commons.math.genetics.FitnessCachingTest
-We accept : org.apache.commons.math.genetics.FixedGenerationCountTest
-We accept : org.apache.commons.math.genetics.GeneticAlgorithmTestBinary
-We accept : org.apache.commons.math.genetics.GeneticAlgorithmTestPermutations
-We accept : org.apache.commons.math.genetics.ListPopulationTest
-We accept : org.apache.commons.math.genetics.OnePointCrossoverTest
-We accept : org.apache.commons.math.genetics.RandomKeyMutationTest
-We accept : org.apache.commons.math.genetics.RandomKeyTest
-We accept : org.apache.commons.math.genetics.TournamentSelectionTest
-We accept : org.apache.commons.math.geometry.FrenchVector3DFormatTest
-We accept : org.apache.commons.math.geometry.RotationOrderTest
-We accept : org.apache.commons.math.geometry.RotationTest
-We accept : org.apache.commons.math.geometry.Vector3DFormatTest
-We accept : org.apache.commons.math.geometry.Vector3DTest
-We accept : org.apache.commons.math.linear.AbstractRealVectorTest
-We accept : org.apache.commons.math.linear.Array2DRowRealMatrixTest
-We accept : org.apache.commons.math.linear.ArrayFieldVectorTest
-We accept : org.apache.commons.math.linear.ArrayRealVectorTest
-We accept : org.apache.commons.math.linear.BiDiagonalTransformerTest
-We accept : org.apache.commons.math.linear.BigMatrixImplTest
-We accept : org.apache.commons.math.linear.BlockFieldMatrixTest
-We accept : org.apache.commons.math.linear.BlockRealMatrixTest
-We accept : org.apache.commons.math.linear.CholeskyDecompositionImplTest
-We accept : org.apache.commons.math.linear.CholeskySolverTest
-We accept : org.apache.commons.math.linear.EigenDecompositionImplTest
-We accept : org.apache.commons.math.linear.EigenSolverTest
-We accept : org.apache.commons.math.linear.FieldLUDecompositionImplTest
-We accept : org.apache.commons.math.linear.FieldMatrixImplTest
-We accept : org.apache.commons.math.linear.FrenchRealVectorFormatTest
-We accept : org.apache.commons.math.linear.InvalidMatrixExceptionTest
-We accept : org.apache.commons.math.linear.LUDecompositionImplTest
-We accept : org.apache.commons.math.linear.LUSolverTest
-We accept : org.apache.commons.math.linear.MatrixIndexExceptionTest
-We accept : org.apache.commons.math.linear.MatrixUtilsTest
-We accept : org.apache.commons.math.linear.QRDecompositionImplTest
-We accept : org.apache.commons.math.linear.QRSolverTest
-We accept : org.apache.commons.math.linear.RealMatrixImplTest
-We accept : org.apache.commons.math.linear.RealVectorFormatTest
-We accept : org.apache.commons.math.linear.SingularValueDecompositionImplTest
-We accept : org.apache.commons.math.linear.SingularValueSolverTest
-We accept : org.apache.commons.math.linear.SparseFieldMatrixTest
-We accept : org.apache.commons.math.linear.SparseFieldVectorTest
-We accept : org.apache.commons.math.linear.SparseRealMatrixTest
-We accept : org.apache.commons.math.linear.SparseRealVectorTest
-We accept : org.apache.commons.math.linear.TriDiagonalTransformerTest
-We accept : org.apache.commons.math.ode.ContinuousOutputModelTest
-We accept : org.apache.commons.math.ode.FirstOrderConverterTest
-We accept : org.apache.commons.math.ode.events.EventStateTest
-We accept : org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaStepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.DormandPrince54IntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.DormandPrince54StepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.DormandPrince853StepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.EulerIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.EulerStepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.GillIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.GillStepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.HighamHall54IntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.HighamHall54StepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.MidpointIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.MidpointStepInterpolatorTest
-We accept : org.apache.commons.math.ode.nonstiff.ThreeEighthesIntegratorTest
-We accept : org.apache.commons.math.ode.nonstiff.ThreeEighthesStepInterpolatorTest
-We accept : org.apache.commons.math.ode.sampling.DummyStepInterpolatorTest
-We accept : org.apache.commons.math.ode.sampling.NordsieckStepInterpolatorTest
-We accept : org.apache.commons.math.ode.sampling.StepNormalizerTest
-We accept : org.apache.commons.math.optimization.MultiStartDifferentiableMultivariateRealOptimizerTest
-We accept : org.apache.commons.math.optimization.MultiStartDifferentiableMultivariateVectorialOptimizerTest
-We accept : org.apache.commons.math.optimization.MultiStartMultivariateRealOptimizerTest
-We accept : org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest
-We accept : org.apache.commons.math.optimization.direct.MultiDirectionalTest
-We accept : org.apache.commons.math.optimization.direct.NelderMeadTest
-We accept : org.apache.commons.math.optimization.fitting.CurveFitterTest
-We accept : org.apache.commons.math.optimization.fitting.HarmonicFitterTest
-We accept : org.apache.commons.math.optimization.fitting.PolynomialFitterTest
-We accept : org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest
-We accept : org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest
-We accept : org.apache.commons.math.optimization.general.MinpackTest
-We accept : org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest
-We accept : org.apache.commons.math.optimization.linear.SimplexSolverTest
-We accept : org.apache.commons.math.optimization.linear.SimplexTableauTest
-We accept : org.apache.commons.math.optimization.univariate.BrentMinimizerTest
-We accept : org.apache.commons.math.random.AbstractRandomGeneratorTest
-We accept : org.apache.commons.math.random.CorrelatedRandomVectorGeneratorTest
-We accept : org.apache.commons.math.random.EmpiricalDistributionTest
-We accept : org.apache.commons.math.random.GaussianRandomGeneratorTest
-We accept : org.apache.commons.math.random.MersenneTwisterTest
-We accept : org.apache.commons.math.random.RandomAdaptorTest
-We accept : org.apache.commons.math.random.RandomDataTest
-We accept : org.apache.commons.math.random.UncorrelatedRandomVectorGeneratorTest
-We accept : org.apache.commons.math.random.UniformRandomGeneratorTest
-We accept : org.apache.commons.math.random.ValueServerTest
-We accept : org.apache.commons.math.special.BetaTest
-We accept : org.apache.commons.math.special.ErfTest
-We accept : org.apache.commons.math.special.GammaTest
-We accept : org.apache.commons.math.stat.CertifiedDataTest
-We accept : org.apache.commons.math.stat.FrequencyTest
-We accept : org.apache.commons.math.stat.StatUtilsTest
-We accept : org.apache.commons.math.stat.clustering.EuclideanIntegerPointTest
-We accept : org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest
-We accept : org.apache.commons.math.stat.correlation.CovarianceTest
-We accept : org.apache.commons.math.stat.correlation.PearsonsCorrelationTest
-We accept : org.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest
-We accept : org.apache.commons.math.stat.data.LewTest
-We accept : org.apache.commons.math.stat.data.LotteryTest
-We accept : org.apache.commons.math.stat.descriptive.AbstractUnivariateStatisticTest
-We accept : org.apache.commons.math.stat.descriptive.AggregateSummaryStatisticsTest
-We accept : org.apache.commons.math.stat.descriptive.DescriptiveStatisticsTest
-We accept : org.apache.commons.math.stat.descriptive.InteractionTest
-We accept : org.apache.commons.math.stat.descriptive.ListUnivariateImplTest
-We accept : org.apache.commons.math.stat.descriptive.MixedListUnivariateImplTest
-We accept : org.apache.commons.math.stat.descriptive.MultivariateSummaryStatisticsTest
-We accept : org.apache.commons.math.stat.descriptive.StatisticalSummaryValuesTest
-We accept : org.apache.commons.math.stat.descriptive.SummaryStatisticsTest
-We accept : org.apache.commons.math.stat.descriptive.SynchronizedDescriptiveStatisticsTest
-We accept : org.apache.commons.math.stat.descriptive.SynchronizedMultivariateSummaryStatisticsTest
-We accept : org.apache.commons.math.stat.descriptive.SynchronizedSummaryStatisticsTest
-We accept : org.apache.commons.math.stat.descriptive.moment.FirstMomentTest
-We accept : org.apache.commons.math.stat.descriptive.moment.FourthMomentTest
-We accept : org.apache.commons.math.stat.descriptive.moment.GeometricMeanTest
-We accept : org.apache.commons.math.stat.descriptive.moment.KurtosisTest
-We accept : org.apache.commons.math.stat.descriptive.moment.MeanTest
-We accept : org.apache.commons.math.stat.descriptive.moment.SecondMomentTest
-We accept : org.apache.commons.math.stat.descriptive.moment.SemiVarianceTest
-We accept : org.apache.commons.math.stat.descriptive.moment.SkewnessTest
-We accept : org.apache.commons.math.stat.descriptive.moment.StandardDeviationTest
-We accept : org.apache.commons.math.stat.descriptive.moment.ThirdMomentTest
-We accept : org.apache.commons.math.stat.descriptive.moment.VarianceTest
-We accept : org.apache.commons.math.stat.descriptive.moment.VectorialCovarianceTest
-We accept : org.apache.commons.math.stat.descriptive.moment.VectorialMeanTest
-We accept : org.apache.commons.math.stat.descriptive.rank.MaxTest
-We accept : org.apache.commons.math.stat.descriptive.rank.MedianTest
-We accept : org.apache.commons.math.stat.descriptive.rank.MinTest
-We accept : org.apache.commons.math.stat.descriptive.rank.PercentileTest
-We accept : org.apache.commons.math.stat.descriptive.summary.ProductTest
-We accept : org.apache.commons.math.stat.descriptive.summary.SumLogTest
-We accept : org.apache.commons.math.stat.descriptive.summary.SumSqTest
-We accept : org.apache.commons.math.stat.descriptive.summary.SumTest
-We accept : org.apache.commons.math.stat.inference.ChiSquareFactoryTest
-We accept : org.apache.commons.math.stat.inference.ChiSquareTestTest
-We accept : org.apache.commons.math.stat.inference.OneWayAnovaTest
-We accept : org.apache.commons.math.stat.inference.TTestFactoryTest
-We accept : org.apache.commons.math.stat.inference.TTestTest
-We accept : org.apache.commons.math.stat.inference.TestUtilsTest
-We accept : org.apache.commons.math.stat.ranking.NaturalRankingTest
-We accept : org.apache.commons.math.stat.regression.GLSMultipleLinearRegressionTest
-We accept : org.apache.commons.math.stat.regression.OLSMultipleLinearRegressionTest
-We accept : org.apache.commons.math.stat.regression.SimpleRegressionTest
-We accept : org.apache.commons.math.transform.FastCosineTransformerTest
-We accept : org.apache.commons.math.transform.FastFourierTransformerTest
-We accept : org.apache.commons.math.transform.FastHadamardTransformerTest
-We accept : org.apache.commons.math.transform.FastSineTransformerTest
-We accept : org.apache.commons.math.util.BigRealFieldTest
-We accept : org.apache.commons.math.util.BigRealTest
-We accept : org.apache.commons.math.util.ContinuedFractionTest
-We accept : org.apache.commons.math.util.DefaultTransformerTest
-We accept : org.apache.commons.math.util.MathUtilsTest
-We accept : org.apache.commons.math.util.OpenIntToDoubleHashMapTest
-We accept : org.apache.commons.math.util.OpenIntToFieldTest
-We accept : org.apache.commons.math.util.ResizableDoubleArrayTest
-We accept : org.apache.commons.math.util.TransformerMapTest
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000e3880000, 228589568, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 228589568 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/defect4j_tests/math_72/hs_err_pid32127.log
- 
- error: 
-2019-04-12 05:06:40,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
-2019-04-12 05:06:40,868 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
-2019-04-12 05:06:40,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
-2019-04-12 05:06:40,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
-2019-04-12 05:06:40,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.1
-2019-04-12 05:06:40,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
-2019-04-12 05:06:40,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
-2019-04-12 05:06:40,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
-2019-04-12 05:06:40,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
-2019-04-12 05:06:40,898 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
-2019-04-12 05:06:40,898 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
-2019-04-12 05:06:40,898 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
-2019-04-12 05:06:40,898 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
-2019-04-12 05:06:40,899 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
-2019-04-12 05:06:40,899 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
-2019-04-12 05:06:40,899 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jkali
-2019-04-12 05:06:40,900 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
-2019-04-12 05:06:40,900 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
-2019-04-12 05:06:40,900 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
-2019-04-12 05:06:40,906 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
-2019-04-12 05:06:40,906 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
-2019-04-12 05:06:40,906 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
-2019-04-12 05:06:40,906 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
-2019-04-12 05:06:40,907 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
-2019-04-12 05:06:40,907 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
-2019-04-12 05:06:40,907 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
-2019-04-12 05:06:40,907 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
-2019-04-12 05:06:40,907 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
-2019-04-12 05:06:40,907 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /home/jan_gerling/astor/defect4j_tests/math_72/
-2019-04-12 05:06:40,907 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
-2019-04-12 05:06:40,912 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
-2019-04-12 05:06:40,913 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
-2019-04-12 05:06:40,913 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
-2019-04-12 05:06:40,913 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
-2019-04-12 05:06:40,913 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
-2019-04-12 05:06:40,913 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
-2019-04-12 05:06:40,913 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
-2019-04-12 05:06:40,913 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
-2019-04-12 05:06:40,914 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
-2019-04-12 05:06:40,914 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
-2019-04-12 05:06:40,914 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
-2019-04-12 05:06:40,914 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
-2019-04-12 05:06:40,914 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
-2019-04-12 05:06:40,914 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
-2019-04-12 05:06:40,914 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
-2019-04-12 05:06:40,914 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
-2019-04-12 05:06:40,915 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
-2019-04-12 05:06:40,915 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
-2019-04-12 05:06:40,915 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
-2019-04-12 05:06:40,915 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
-2019-04-12 05:06:40,915 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
-2019-04-12 05:06:40,915 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= local
-2019-04-12 05:06:40,915 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
-2019-04-12 05:06:40,915 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
-2019-04-12 05:06:40,916 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
-2019-04-12 05:06:40,916 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
-2019-04-12 05:06:40,916 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
-2019-04-12 05:06:40,916 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
-2019-04-12 05:06:40,916 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
-2019-04-12 05:06:40,916 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
-2019-04-12 05:06:40,916 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
-2019-04-12 05:06:40,916 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
-2019-04-12 05:06:40,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
-2019-04-12 05:06:40,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
-2019-04-12 05:06:40,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
-2019-04-12 05:06:40,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
-2019-04-12 05:06:40,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
-2019-04-12 05:06:40,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
-2019-04-12 05:06:40,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
-2019-04-12 05:06:40,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
-2019-04-12 05:06:40,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
-2019-04-12 05:06:41,066 INFO main - mod_point ModificPoint=BrentSolver line: 115, el: CtInvocationImpl
-2019-04-12 05:06:41,118 INFO main - -->op: RemoveOp: `setResult(yMin, 0) ` ---> `-` at pos 0 of parent `{ 	setResult(yMin, 0); 	r[...]`
-2019-04-12 05:07:04,451 INFO main - mod_point ModificPoint=BrentSolver line: 116, el: CtReturnImpl
-2019-04-12 05:07:04,452 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 1 of parent `{ 	setResult(yMin, 0); 	r[...]`
-2019-04-12 05:07:10,847 INFO main - mod_point ModificPoint=BrentSolver line: 184, el: CtInvocationImpl
-2019-04-12 05:07:10,847 INFO main - -->op: RemoveOp: `setResult(max, 0) ` ---> `-` at pos 0 of parent `{ 	setResult(max, 0); 	re[...]`
-2019-04-12 05:07:16,778 INFO main - mod_point ModificPoint=BrentSolver line: 185, el: CtAssignmentImpl
-2019-04-12 05:07:16,778 INFO main - -->op: RemoveOp: `ret = max ` ---> `-` at pos 1 of parent `{ 	setResult(max, 0); 	re[...]`
-2019-04-12 05:07:22,536 INFO main - mod_point ModificPoint=BrentSolver line: 102, el: CtInvocationImpl
-2019-04-12 05:07:22,537 INFO main - -->op: RemoveOp: `clearResult() ` ---> `-` at pos 0 of parent `{ 	clearResult(); 	verify[...]`
-2019-04-12 05:07:28,038 INFO main - mod_point ModificPoint=BrentSolver line: 103, el: CtInvocationImpl
-2019-04-12 05:07:28,038 INFO main - -->op: RemoveOp: `verifySequence(min, initi[...] ` ---> `-` at pos 1 of parent `{ 	clearResult(); 	verify[...]`
-2019-04-12 05:07:33,514 INFO main - mod_point ModificPoint=BrentSolver line: 106, el: CtLocalVariableImpl
-2019-04-12 05:07:33,515 INFO main - -->op: RemoveOp: `double yInitial = f.value[...] ` ---> `-` at pos 2 of parent `{ 	clearResult(); 	verify[...]`
-2019-04-12 05:07:35,096 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
-2019-04-12 05:07:35,173 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (true) { 	setResult(in[...]` at pos 3 of parent `{ 	clearResult(); 	verify[...]`
-2019-04-12 05:07:41,410 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
-2019-04-12 05:07:41,410 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (false) { 	setResult(i[...]` at pos 3 of parent `{ 	clearResult(); 	verify[...]`
-2019-04-12 05:07:47,133 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
-2019-04-12 05:07:47,133 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(y[...] ` ---> `-` at pos 3 of parent `{ 	clearResult(); 	verify[...]`
-2019-04-12 05:07:52,710 INFO main - mod_point ModificPoint=BrentSolver line: 113, el: CtLocalVariableImpl
-2019-04-12 05:07:52,710 INFO main - -->op: RemoveOp: `double yMin = f.value(min[...] ` ---> `-` at pos 4 of parent `{ 	clearResult(); 	verify[...]`
-2019-04-12 05:07:53,779 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
-2019-04-12 05:07:53,780 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (true) { 	setResult(yM[...]` at pos 5 of parent `{ 	clearResult(); 	verify[...]`
-2019-04-12 05:07:59,454 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
-2019-04-12 05:07:59,454 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (false) { 	setResult(y[...]` at pos 5 of parent `{ 	clearResult(); 	verify[...]`
-2019-04-12 05:08:05,006 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
-2019-04-12 05:08:05,006 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(y[...] ` ---> `-` at pos 5 of parent `{ 	clearResult(); 	verify[...]`
-2019-04-12 05:08:10,576 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
-2019-04-12 05:08:10,576 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (true) { 	setResult(mi[...]` at pos 0 of parent `{ 	if ((java.lang.Math.ab[...]`
-2019-04-12 05:08:16,222 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
-2019-04-12 05:08:16,222 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (false) { 	setResult(m[...]` at pos 0 of parent `{ 	if ((java.lang.Math.ab[...]`
-2019-04-12 05:08:21,621 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
-2019-04-12 05:08:21,622 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(y[...] ` ---> `-` at pos 0 of parent `{ 	if ((java.lang.Math.ab[...]`
-2019-04-12 05:08:27,094 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
-2019-04-12 05:08:27,095 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (true) { 	setResult(ma[...]` at pos 0 of parent ` 	if ((java.lang.Math.abs[...]`
-2019-04-12 05:08:32,263 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
-2019-04-12 05:08:32,264 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (false) { 	setResult(m[...]` at pos 0 of parent ` 	if ((java.lang.Math.abs[...]`
-2019-04-12 05:08:38,098 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
-2019-04-12 05:08:38,098 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(y[...] ` ---> `-` at pos 0 of parent ` 	if ((java.lang.Math.abs[...]`
-2019-04-12 05:08:43,490 INFO main - mod_point ModificPoint=UnivariateRealSolverImpl line: 225, el: CtIfImpl
-2019-04-12 05:08:43,490 INFO main - -->op: ReplaceIfBooleanOp: `if (!(isSequence(lower, i[...] ` ---> `if (true) { 	throw org.ap[...]` at pos 0 of parent `{ 	if (!(isSequence(lower[...]`
-2019-04-12 05:08:49,505 INFO main - mod_point ModificPoint=UnivariateRealSolverImpl line: 225, el: CtIfImpl
-2019-04-12 05:08:49,505 INFO main - -->op: ReplaceIfBooleanOp: `if (!(isSequence(lower, i[...] ` ---> `if (false) { 	throw org.a[...]` at pos 0 of parent `{ 	if (!(isSequence(lower[...]`
-2019-04-12 05:08:54,690 INFO main - mod_point ModificPoint=UnivariateRealSolverImpl line: 225, el: CtIfImpl
-2019-04-12 05:08:54,690 INFO main - -->op: RemoveOp: `if (!(isSequence(lower, i[...] ` ---> `-` at pos 0 of parent `{ 	if (!(isSequence(lower[...]`
-2019-04-12 05:08:59,778 INFO main - mod_point ModificPoint=UnivariateRealSolverImpl line: 196, el: CtReturnImpl
-2019-04-12 05:08:59,778 INFO main - -->op: RemoveOp: `return (start < mid) && ([...] ` ---> `-` at pos 0 of parent `{ 	return (start < mid) &[...]`
-2019-04-12 05:09:00,251 INFO main - mod_point ModificPoint=ConvergingAlgorithmImpl line: 83, el: CtReturnImpl
-2019-04-12 05:09:00,353 INFO main - -->op: RemoveOp: `return absoluteAccuracy ` ---> `-` at pos 0 of parent `{ 	return absoluteAccurac[...]`
-2019-04-12 05:09:01,161 INFO main - mod_point ModificPoint=BrentSolver line: 247, el: CtInvocationImpl
-2019-04-12 05:09:01,161 INFO main - -->op: RemoveOp: `setResult(x1, i) ` ---> `-` at pos 0 of parent `{ 	setResult(x1, i); 	ret[...]`
-2019-04-12 05:09:06,432 INFO main - mod_point ModificPoint=BrentSolver line: 248, el: CtReturnImpl
-2019-04-12 05:09:06,432 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 1 of parent `{ 	setResult(x1, i); 	ret[...]`
-2019-04-12 05:09:11,342 INFO main - 
+2019-04-12 18:41:18,553 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jkali  -scope  local  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan/astor/defect4j_tests/math_72/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-12 18:41:19,467 INFO main - -Executing Gzoltar classpath: /home/jan/astor/./outputMutation/AstorMain-math_72//bin//default from 231 classes with test cases
+2019-04-12 18:41:19,471 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-12 18:41:20,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan/astor/./examples/libs/junit-4.4.jar, /home/jan/astor/./outputMutation/AstorMain-math_72//bin//default]
+2019-04-12 18:41:32,490 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.analysis.solvers.BrentSolverTest#testRootEndpoints
+2019-04-12 18:41:32,495 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2140, fails: 1, GZoltar suspicious 16669
+2019-04-12 18:41:32,509 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 12 with susp > 0.5, we consider: 12
+2019-04-12 18:41:32,517 INFO main - building model: /home/jan/astor/./outputMutation/AstorMain-math_72//src//default, compliance level: 8
+2019-04-12 18:41:42,183 INFO main - 
+---- Initial suspicious size: 12
+2019-04-12 18:41:42,290 INFO main - Total suspicious from FL: 12,  12
+2019-04-12 18:41:42,290 INFO main - Total ModPoint created: 12
+2019-04-12 18:41:42,290 INFO main - Creating program variant #1, [Variant id: 1, #gens: 12, #ops: 0, parent:-]
+2019-04-12 18:41:50,123 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 18:41:50,123 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-12 18:41:50,123 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-12 18:41:50,123 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan/astor/./outputMutation
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jkali
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /home/jan/astor/defect4j_tests/math_72/
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= local
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-12 18:41:50,129 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-12 18:41:50,129 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-12 18:41:50,129 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-12 18:41:50,129 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 18:41:50,130 INFO main - mod_point ModificPoint=BrentSolver line: 115, el: CtInvocationImpl
+2019-04-12 18:41:50,131 INFO main - -->op: RemoveOp: `setResult(yMin, 0) ` ---> `-` at pos 0 of parent `{ 	setResult(yMin, 0); 	r[...]`
+2019-04-12 18:41:50,839 INFO main - mod_point ModificPoint=BrentSolver line: 116, el: CtReturnImpl
+2019-04-12 18:41:50,839 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 1 of parent `{ 	setResult(yMin, 0); 	r[...]`
+2019-04-12 18:41:51,169 INFO main - mod_point ModificPoint=BrentSolver line: 184, el: CtInvocationImpl
+2019-04-12 18:41:51,170 INFO main - -->op: RemoveOp: `setResult(max, 0) ` ---> `-` at pos 0 of parent `{ 	setResult(max, 0); 	re[...]`
+2019-04-12 18:41:51,482 INFO main - mod_point ModificPoint=BrentSolver line: 185, el: CtAssignmentImpl
+2019-04-12 18:41:51,482 INFO main - -->op: RemoveOp: `ret = max ` ---> `-` at pos 1 of parent `{ 	setResult(max, 0); 	re[...]`
+2019-04-12 18:41:51,739 INFO main - mod_point ModificPoint=BrentSolver line: 102, el: CtInvocationImpl
+2019-04-12 18:41:51,740 INFO main - -->op: RemoveOp: `clearResult() ` ---> `-` at pos 0 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:51,984 INFO main - mod_point ModificPoint=BrentSolver line: 103, el: CtInvocationImpl
+2019-04-12 18:41:51,984 INFO main - -->op: RemoveOp: `verifySequence(min, initi[...] ` ---> `-` at pos 1 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:52,233 INFO main - mod_point ModificPoint=BrentSolver line: 106, el: CtLocalVariableImpl
+2019-04-12 18:41:52,234 INFO main - -->op: RemoveOp: `double yInitial = f.value[...] ` ---> `-` at pos 2 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:52,295 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
+2019-04-12 18:41:52,296 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (true) { 	setResult(in[...]` at pos 3 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:52,524 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
+2019-04-12 18:41:52,524 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (false) { 	setResult(i[...]` at pos 3 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:52,856 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
+2019-04-12 18:41:52,857 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(y[...] ` ---> `-` at pos 3 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:53,147 INFO main - mod_point ModificPoint=BrentSolver line: 113, el: CtLocalVariableImpl
+2019-04-12 18:41:53,147 INFO main - -->op: RemoveOp: `double yMin = f.value(min[...] ` ---> `-` at pos 4 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:53,194 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
+2019-04-12 18:41:53,195 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (true) { 	setResult(yM[...]` at pos 5 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:53,442 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
+2019-04-12 18:41:53,443 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (false) { 	setResult(y[...]` at pos 5 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:53,697 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
+2019-04-12 18:41:53,697 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(y[...] ` ---> `-` at pos 5 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:53,910 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
+2019-04-12 18:41:53,911 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (true) { 	setResult(mi[...]` at pos 0 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 18:41:54,157 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
+2019-04-12 18:41:54,158 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (false) { 	setResult(m[...]` at pos 0 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 18:41:54,405 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
+2019-04-12 18:41:54,405 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(y[...] ` ---> `-` at pos 0 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 18:41:54,606 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
+2019-04-12 18:41:54,607 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (true) { 	setResult(ma[...]` at pos 0 of parent ` 	if ((java.lang.Math.abs[...]`
+2019-04-12 18:41:54,851 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
+2019-04-12 18:41:54,851 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (false) { 	setResult(m[...]` at pos 0 of parent ` 	if ((java.lang.Math.abs[...]`
+2019-04-12 18:41:55,085 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
+2019-04-12 18:41:55,085 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(y[...] ` ---> `-` at pos 0 of parent ` 	if ((java.lang.Math.abs[...]`
+2019-04-12 18:41:55,289 INFO main - 
 ----SUMMARY_EXECUTION---
-2019-04-12 05:09:11,342 INFO main - 
+2019-04-12 18:41:55,290 INFO main - 
 successful_ing_attempts (0): []
-2019-04-12 05:09:11,342 INFO main - 
-failing_ing_attempts (27): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-2019-04-12 05:09:11,342 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 770.883
+2019-04-12 18:41:55,290 INFO main - 
+failing_ing_attempts (20): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 18:41:55,290 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 36.728
 [DONE]
