@@ -47,9 +47,6 @@ git clone https://github.com/jan-gerling/astor.git
 cd astor
 git checkout reproduce
 git pull
-
-mvn clean
-mvn compile
 ```
 
 
