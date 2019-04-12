@@ -18,7 +18,7 @@ Just install all the necessary tools.
 
 ```console
 sudo apt-get update
-sudo apt-get install git vim software-properties-common maven debian-archive-keyring default-jdk
+sudo apt-get install git vim software-properties-common maven debian-archive-keyring openjdk-8-jdk
 ```
 
 
