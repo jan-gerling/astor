@@ -51,6 +51,7 @@ for currenttest in $tests; do
 			outputFile="$resultsDir/$runname.txt"
 			successString="Found Solution"
 			summaryString="----SUMMARY_EXECUTION---"
+			exceptionString="Exception in thread"
 			
 			# check if this test was already run with the current configuration
 			if  [ ! -f "$outputFile" ] || ! grep -q "[DONE]" "$outputFile" ; then
@@ -64,11 +65,11 @@ for currenttest in $tests; do
 			fi	
 
 			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
-				echo -e "[\e[32mSUCCESS\e[39m]: $runname found a fix in $runTime seconds!" |& tee -a "$runSummary"=
+				echo -e "[\e[32mSUCCESS\e[39m]: $runname found a fix in $runTime seconds!" |& tee -a "$runSummary"
 				awk '/$summaryString/,0' "$outputFile" |& tee -a "$runSummary"
-			elif [ -f "$outputFile" ] && grep -q "Exception" "$outputFile" ; then				
+			elif [ -f "$outputFile" ] && grep -q "$exceptionString" "$outputFile" ; then				
 				echo -e "[\e[31m[EXCEPTION\e[39m]: $runname had an exception: $exceptionInfo" |& tee -a "$runSummary"
-				awk '/Exception/,0' "$outputFile" |& tee -a "$runSummary"
+				awk '/$exceptionString/,0' "$outputFile" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "SUMMARY_EXECUTION" "$outputFile" ; then
 				echo -e "[\e[33m[WARNING\e[39m]: $runname did not find a fix in $runTime seconds!" |& tee -a "$runSummary"
 				awk '/$summaryString/,0' "$outputFile" |& tee -a "$runSummary"	 		
