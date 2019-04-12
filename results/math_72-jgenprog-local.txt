@@ -1,8 +1,0 @@
-2019-04-12 05:35:38,842 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jgenprog  -scope  local  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan_gerling/astor/defect4j_tests/math_72/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.1  -maxtime  100  -stopfirst  true]
-2019-04-12 05:36:11,413 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_72//bin//default from 231 classes with test cases
-2019-04-12 05:36:11,414 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.1
-2019-04-12 05:36:32,542 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_72//bin//default]
-2019-04-12 05:41:09,009 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.analysis.solvers.BrentSolverTest#testRootEndpoints
-2019-04-12 05:41:09,113 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2140, fails: 1, GZoltar suspicious 16669
-2019-04-12 05:41:09,427 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 19 with susp > 0.1, we consider: 19
-2019-04-12 05:41:09,744 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_72//src//default, compliance level: 8
