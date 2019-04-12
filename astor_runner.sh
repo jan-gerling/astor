@@ -6,7 +6,7 @@ resultsDir=$2results
 modes=(jmutrepair jkali jgenprog)
 scopes=(local package global)
 seedValue=10
-treshold=0.5
+treshold=0.1
 maxTime=100
 #local path to your junit executable
 junitPath="./examples/libs/junit-4.4.jar"
