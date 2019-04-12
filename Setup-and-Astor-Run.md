@@ -57,7 +57,7 @@ For convenience I wrote this bash script iterating over all folder in the given 
 
 ```console
 chmod u+x astor_runner.sh
-./astor_runner.sh defect4j_tests/ ~/astor/
+./astor_runner.sh ~/astor/defect4j_tests/ ~/astor/
 ```
 
 ### Results:
