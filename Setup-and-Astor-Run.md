@@ -6,8 +6,8 @@ To run Astor for our final setup follow this guideline.
 
 ### VM Creation:
 
-- **8vCPUs** - *because Astor does only require a fraction of the available resources*
-- **52GB Memory** - *this should be enough*
+- **7vCPUs** - *because Astor does only require a fraction of the available resources*
+- **39GB Memory** - *this should be enough*
 - **Debian 9 Stretch**
 
 
@@ -59,3 +59,8 @@ For convenience I wrote this bash script iterating over all folder in the given 
 chmod u+x astor_runner.sh
 ./astor_runner.sh defect4j_tests/ ~/astor/
 ```
+
+### Results:
+A summary of the results containing an execution summary and state can be found in results/summary-*date*.txt
+Detailed output for each execution can be found in /results.
+
