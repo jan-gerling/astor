@@ -28,12 +28,13 @@ sudo apt-get install git vim software-properties-common maven debian-archive-key
 Install both JRE/JDK 8 and 7, because Astor needs JRE 8 and defect4j needs 7 (find the source for this again).
 
 ```console
+sudo apt-get install default-jdk
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8B48AD6246925553
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7638D0442B90D010
 sudo add-apt-repository 'deb http://httpredir.debian.org/debian experimental main'
 sudo add-apt-repository 'deb http://httpredir.debian.org/debian sid main'
 sudo apt-get update
-sudo apt-get install default-jdk openjdk-7-jdk
+sudo apt-get install openjdk-7-jdk
 ```
 
 
