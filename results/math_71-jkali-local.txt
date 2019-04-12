@@ -1,0 +1,1143 @@
+2019-04-12 01:08:39,990 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jkali  -scope  local  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan_gerling/astor/defect4j_tests/math_71/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.1  -maxtime  100  -stopfirst  true]
+2019-04-12 01:09:03,888 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//bin//default from 234 classes with test cases
+2019-04-12 01:09:03,963 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.1
+2019-04-12 01:09:20,676 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//bin//default]
+2019-04-12 01:14:18,374 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testMissedEndEvent
+2019-04-12 01:14:18,376 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testMissedEndEvent
+2019-04-12 01:14:18,478 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2169, fails: 2, GZoltar suspicious 17015
+2019-04-12 01:14:19,021 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 315 with susp > 0.1, we consider: 315
+2019-04-12 01:14:19,317 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//src//default, compliance level: 8
+2019-04-12 01:16:59,019 INFO main - 
+---- Initial suspicious size: 315
+2019-04-12 01:16:59,572 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=231, susp=1.0]
+2019-04-12 01:17:00,507 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{setInitialStepSize(D)V 0.0, lineNumber=155, susp=0.5]
+2019-04-12 01:17:00,777 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.DummyStepInterpolator, methodName=org.apache.commons.math.ode.sampling.DummyStepInterpolator{computeInterpolatedStateAndDerivatives(DD)V 0.0, lineNumber=109, susp=0.2672612419124244]
+2019-04-12 01:17:03,995 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{access$000(Lorg/apache/commons/math/ode/events/EventState;)Lorg/apache/commons/math/ode/events/EventHandler; 0.0, lineNumber=42, susp=0.1466471150213533]
+2019-04-12 01:17:04,182 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=143, susp=0.14509525002200233]
+2019-04-12 01:17:04,419 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=168, susp=0.14509525002200233]
+2019-04-12 01:17:04,516 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=204, susp=0.14509525002200233]
+2019-04-12 01:17:04,590 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stop()Z 0.0, lineNumber=219, susp=0.14509525002200233]
+2019-04-12 01:17:04,593 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{reset(D[D)Z 0.0, lineNumber=240, susp=0.14509525002200233]
+2019-04-12 01:17:05,246 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{reinitializeBegin(D[D)V 0.0, lineNumber=154, susp=0.14433756729740646]
+2019-04-12 01:17:06,741 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{stepAccepted(D[D)V 0.0, lineNumber=308, susp=0.14433756729740646]
+2019-04-12 01:17:07,153 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{addEndTimeChecker(DDLorg/apache/commons/math/ode/events/CombinedEventsManager;)Lorg/apache/commons/math/ode/events/CombinedEventsManager; 0.0, lineNumber=242, susp=0.1421338109037403]
+2019-04-12 01:17:09,030 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{addEventHandler(Lorg/apache/commons/math/ode/events/EventHandler;DDI)V 0.0, lineNumber=73, susp=0.14071950894605836]
+2019-04-12 01:17:09,158 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=207, susp=0.14002800840280097]
+2019-04-12 01:17:09,159 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=208, susp=0.14002800840280097]
+2019-04-12 01:17:09,393 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{setMaximalIterationCount(I)V 0.0, lineNumber=94, susp=0.14002800840280097]
+2019-04-12 01:17:09,556 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{computeDerivatives(D[D[D)V 0.0, lineNumber=183, susp=0.13608276348795434]
+2019-04-12 01:17:09,631 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{setEquations(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;)V 0.0, lineNumber=168, susp=0.13545709229571928]
+2019-04-12 01:17:10,007 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{sanityChecks(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)V 0.0, lineNumber=218, susp=0.13483997249264842]
+2019-04-12 01:17:10,480 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{shift()V 0.0, lineNumber=212, susp=0.13018891098082389]
+2019-04-12 01:17:10,698 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{storeTime(D)V 0.0, lineNumber=226, susp=0.13018891098082389]
+2019-04-12 01:17:10,783 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{setInterpolatedTime(D)V 0.0, lineNumber=247, susp=0.13018891098082389]
+2019-04-12 01:17:10,789 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{setAbsoluteAccuracy(D)V 0.0, lineNumber=79, susp=0.13018891098082389]
+2019-04-12 01:17:11,557 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=317, susp=0.12649110640673517]
+2019-04-12 01:17:11,710 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{setMaxEvaluations(I)V 0.0, lineNumber=144, susp=0.1259881576697424]
+2019-04-12 01:17:11,794 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{resetEvaluations()V 0.0, lineNumber=160, susp=0.1259881576697424]
+2019-04-12 01:17:11,973 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=283, susp=0.1259881576697424]
+2019-04-12 01:17:12,191 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=289, susp=0.1259881576697424]
+2019-04-12 01:17:12,546 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=347, susp=0.1259881576697424]
+2019-04-12 01:17:13,940 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{clearResult()V 0.0, lineNumber=167, susp=0.1203858530857692]
+2019-04-12 01:17:14,369 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{setResult(DI)V 0.0, lineNumber=144, susp=0.11547005383792514]
+2019-04-12 01:17:14,647 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=305, susp=0.11470786693528087]
+2019-04-12 01:17:14,856 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{verifyInterval(DD)V 0.0, lineNumber=213, susp=0.11396057645963795]
+2019-04-12 01:17:15,362 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=353, susp=0.11180339887498948]
+2019-04-12 01:17:15,638 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=360, susp=0.11180339887498948]
+2019-04-12 01:17:17,573 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=185, susp=0.10783277320343841]
+2019-04-12 01:17:18,025 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=213, susp=0.10783277320343841]
+2019-04-12 01:17:18,878 INFO main - Total suspicious from FL: 315,  278
+2019-04-12 01:17:18,892 INFO main - Total ModPoint created: 278
+2019-04-12 01:17:18,893 INFO main - Creating program variant #1, [Variant id: 1, #gens: 278, #ops: 0, parent:-]
+2019-04-12 01:20:56,298 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 01:20:56,298 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-12 01:20:56,299 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-12 01:20:56,299 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-12 01:20:56,299 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.1
+2019-04-12 01:20:56,305 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-12 01:20:56,305 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-12 01:20:56,306 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-12 01:20:56,306 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-12 01:20:56,306 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-12 01:20:56,306 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-12 01:20:56,306 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-12 01:20:56,306 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-12 01:20:56,306 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-12 01:20:56,307 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-12 01:20:56,307 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jkali
+2019-04-12 01:20:56,307 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-12 01:20:56,307 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-12 01:20:56,308 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-12 01:20:56,308 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-12 01:20:56,308 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-12 01:20:56,308 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-12 01:20:56,308 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-12 01:20:56,308 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-12 01:20:56,308 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-12 01:20:56,308 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-12 01:20:56,308 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-12 01:20:56,309 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-12 01:20:56,309 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /home/jan_gerling/astor/defect4j_tests/math_71/
+2019-04-12 01:20:56,309 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-12 01:20:56,309 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-12 01:20:56,309 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 01:20:56,309 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-12 01:20:56,309 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-12 01:20:56,309 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-12 01:20:56,309 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-12 01:20:56,309 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-12 01:20:56,310 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-12 01:20:56,310 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-12 01:20:56,310 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 01:20:56,310 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-12 01:20:56,310 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-12 01:20:56,310 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-12 01:20:56,310 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-12 01:20:56,310 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-12 01:20:56,310 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-12 01:20:56,310 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-12 01:20:56,311 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-12 01:20:56,311 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-12 01:20:56,311 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-12 01:20:56,311 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-12 01:20:56,311 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= local
+2019-04-12 01:20:56,311 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-12 01:20:56,311 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-12 01:20:56,311 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-12 01:20:56,311 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-12 01:20:56,311 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-12 01:20:56,312 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-12 01:20:56,312 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-12 01:20:56,312 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-12 01:20:56,312 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-12 01:20:56,312 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-12 01:20:56,312 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-12 01:20:56,312 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-12 01:20:56,312 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-12 01:20:56,312 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-12 01:20:56,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-12 01:20:56,361 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-12 01:20:56,361 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-12 01:20:56,361 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-12 01:20:56,369 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 01:20:56,370 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 180, el: CtAssignmentImpl
+2019-04-12 01:20:56,371 INFO main - -->op: RemoveOp: `loop = false ` ---> `-` at pos 0 of parent `{ 	loop = false; }`
+2019-04-12 01:23:15,711 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:23:15,712 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 300, el: CtAssignmentImpl
+2019-04-12 01:23:15,713 INFO main - -->op: RemoveOp: `loop = false ` ---> `-` at pos 0 of parent `{ 	loop = false; }`
+2019-04-12 01:25:20,963 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:25:20,965 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 01:25:20,965 INFO main - -->op: ReplaceIfBooleanOp: `if ((initialStepSize < (m[...] ` ---> `if (true) { 	initialStep [...]` at pos 0 of parent `{ 	if ((initialStepSize <[...]`
+2019-04-12 01:25:31,858 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 01:25:31,858 INFO main - -->op: ReplaceIfBooleanOp: `if ((initialStepSize < (m[...] ` ---> `if (false) { 	initialStep[...]` at pos 0 of parent `{ 	if ((initialStepSize <[...]`
+2019-04-12 01:25:41,918 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 01:25:41,918 INFO main - -->op: RemoveOp: `if ((initialStepSize < (m[...] ` ---> `-` at pos 0 of parent `{ 	if ((initialStepSize <[...]`
+2019-04-12 01:25:51,638 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 153, el: CtAssignmentImpl
+2019-04-12 01:25:51,638 INFO main - -->op: RemoveOp: `initialStep = initialStep[...] ` ---> `-` at pos 0 of parent `{ 	initialStep = initialS[...]`
+2019-04-12 01:26:00,714 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 211, el: CtReturnImpl
+2019-04-12 01:26:00,714 INFO main - -->op: RemoveOp: `return forward ? initialS[...] ` ---> `-` at pos 0 of parent `{ 	return forward ? initi[...]`
+2019-04-12 01:26:09,333 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 292, el: CtAssignmentImpl
+2019-04-12 01:26:09,333 INFO main - -->op: RemoveOp: `filteredH = maxStep ` ---> `-` at pos 0 of parent `{ 	filteredH = maxStep; }`
+2019-04-12 01:26:18,034 INFO main - mod_point ModificPoint=DummyStepInterpolator line: 107, el: CtInvocationImpl
+2019-04-12 01:26:18,034 INFO main - -->op: RemoveOp: `java.lang.System.arraycop[...] ` ---> `-` at pos 0 of parent `{ 	java.lang.System.array[...]`
+2019-04-12 01:26:27,094 INFO main - mod_point ModificPoint=DummyStepInterpolator line: 108, el: CtInvocationImpl
+2019-04-12 01:26:27,094 INFO main - -->op: RemoveOp: `java.lang.System.arraycop[...] ` ---> `-` at pos 1 of parent `{ 	java.lang.System.array[...]`
+2019-04-12 01:26:36,042 INFO main - mod_point ModificPoint=BrentSolver line: 335, el: CtAssignmentImpl
+2019-04-12 01:26:36,042 INFO main - -->op: RemoveOp: `x1 = x1 + (0.5 * toleranc[...] ` ---> `-` at pos 0 of parent `{ 	x1 = x1 + (0.5 * toler[...]`
+2019-04-12 01:26:45,318 INFO main - mod_point ModificPoint=CombinedEventsManager line: 109, el: CtReturnImpl
+2019-04-12 01:26:45,318 INFO main - -->op: RemoveOp: `return states.isEmpty() ` ---> `-` at pos 0 of parent `{ 	return states.isEmpty([...]`
+2019-04-12 01:26:47,547 INFO main - mod_point ModificPoint=AbstractIntegrator line: 128, el: CtReturnImpl
+2019-04-12 01:26:47,553 INFO main - -->op: RemoveOp: `return false ` ---> `-` at pos 1 of parent `{ 	for (org.apache.common[...]`
+2019-04-12 01:26:49,858 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 123, el: CtAssignmentImpl
+2019-04-12 01:26:49,858 INFO main - -->op: RemoveOp: `interpolator = new org.ap[...] ` ---> `-` at pos 0 of parent `{ 	interpolator = new org[...]`
+2019-04-12 01:26:52,151 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 217, el: CtAssignmentImpl
+2019-04-12 01:26:52,245 INFO main - -->op: RemoveOp: `interpolator = new org.ap[...] ` ---> `-` at pos 0 of parent `{ 	interpolator = new org[...]`
+2019-04-12 01:26:54,710 INFO main - mod_point ModificPoint=EventState line: 334, el: CtIfImpl
+2019-04-12 01:26:54,711 INFO main - -->op: ReplaceIfBooleanOp: `if ((nextAction) == (org.[...] ` ---> `if (true) { 	handler.rese[...]` at pos 1 of parent `{ 	if (!(pendingEvent)) {[...]`
+2019-04-12 01:27:03,472 INFO main - mod_point ModificPoint=EventState line: 334, el: CtIfImpl
+2019-04-12 01:27:03,472 INFO main - -->op: ReplaceIfBooleanOp: `if ((nextAction) == (org.[...] ` ---> `if (false) { 	handler.res[...]` at pos 1 of parent `{ 	if (!(pendingEvent)) {[...]`
+2019-04-12 01:27:12,382 INFO main - mod_point ModificPoint=EventState line: 334, el: CtIfImpl
+2019-04-12 01:27:12,382 INFO main - -->op: RemoveOp: `if ((nextAction) == (org.[...] ` ---> `-` at pos 1 of parent `{ 	if (!(pendingEvent)) {[...]`
+2019-04-12 01:27:21,802 INFO main - mod_point ModificPoint=EventState line: 337, el: CtAssignmentImpl
+2019-04-12 01:27:21,802 INFO main - -->op: RemoveOp: `pendingEvent = false ` ---> `-` at pos 2 of parent `{ 	if (!(pendingEvent)) {[...]`
+2019-04-12 01:27:30,390 INFO main - mod_point ModificPoint=EventState line: 338, el: CtAssignmentImpl
+2019-04-12 01:27:30,390 INFO main - -->op: RemoveOp: `pendingEventTime = java.l[...] ` ---> `-` at pos 3 of parent `{ 	if (!(pendingEvent)) {[...]`
+2019-04-12 01:27:38,478 INFO main - mod_point ModificPoint=EventState line: 340, el: CtReturnImpl
+2019-04-12 01:27:38,478 INFO main - -->op: RemoveOp: `return ((nextAction) == ([...] ` ---> `-` at pos 4 of parent `{ 	if (!(pendingEvent)) {[...]`
+2019-04-12 01:27:40,235 INFO main - mod_point ModificPoint=AbstractIntegrator line: 262, el: CtReturnImpl
+2019-04-12 01:27:40,235 INFO main - -->op: RemoveOp: `return org.apache.commons[...] ` ---> `-` at pos 0 of parent `{ 	return org.apache.comm[...]`
+2019-04-12 01:27:42,091 INFO main - mod_point ModificPoint=CombinedEventsManager line: 217, el: CtReturnImpl
+2019-04-12 01:27:42,091 INFO main - -->op: RemoveOp: `return true ` ---> `-` at pos 0 of parent `{ 	return true; }`
+2019-04-12 01:29:44,447 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:29:44,448 INFO main - mod_point ModificPoint=CombinedEventsManager line: 153, el: CtIfImpl
+2019-04-12 01:29:44,448 INFO main - -->op: ReplaceIfBooleanOp: `if ((first) == null) { 	f[...] ` ---> `if (true) { 	first = stat[...]` at pos 0 of parent `{ 	if ((first) == null) {[...]`
+2019-04-12 01:29:52,734 INFO main - mod_point ModificPoint=CombinedEventsManager line: 153, el: CtIfImpl
+2019-04-12 01:29:52,734 INFO main - -->op: ReplaceIfBooleanOp: `if ((first) == null) { 	f[...] ` ---> `if (false) { 	first = sta[...]` at pos 0 of parent `{ 	if ((first) == null) {[...]`
+2019-04-12 01:29:59,386 INFO main - mod_point ModificPoint=CombinedEventsManager line: 153, el: CtIfImpl
+2019-04-12 01:29:59,386 INFO main - -->op: RemoveOp: `if ((first) == null) { 	f[...] ` ---> `-` at pos 0 of parent `{ 	if ((first) == null) {[...]`
+2019-04-12 01:30:07,810 INFO main - mod_point ModificPoint=CombinedEventsManager line: 154, el: CtAssignmentImpl
+2019-04-12 01:30:07,810 INFO main - -->op: RemoveOp: `first = state ` ---> `-` at pos 0 of parent `{ 	first = state; }`
+2019-04-12 01:30:16,056 INFO main - mod_point ModificPoint=CombinedEventsManager line: 187, el: CtReturnImpl
+2019-04-12 01:30:16,056 INFO main - -->op: RemoveOp: `return (first) == null ? [...] ` ---> `-` at pos 0 of parent `{ 	return (first) == null[...]`
+2019-04-12 01:30:17,666 INFO main - mod_point ModificPoint=BrentSolver line: 336, el: CtIfImpl
+2019-04-12 01:30:17,667 INFO main - -->op: ReplaceIfBooleanOp: `if (dx <= 0.0) { 	x1 = x1[...] ` ---> `if (true) { 	x1 = x1 - (0[...]` at pos 0 of parent ` 	if (dx <= 0.0) { 		x1 =[...]`
+2019-04-12 01:30:25,857 INFO main - mod_point ModificPoint=BrentSolver line: 336, el: CtIfImpl
+2019-04-12 01:30:25,858 INFO main - -->op: ReplaceIfBooleanOp: `if (dx <= 0.0) { 	x1 = x1[...] ` ---> `if (false) { 	x1 = x1 - ([...]` at pos 0 of parent ` 	if (dx <= 0.0) { 		x1 =[...]`
+2019-04-12 01:30:33,152 INFO main - mod_point ModificPoint=BrentSolver line: 336, el: CtIfImpl
+2019-04-12 01:30:33,152 INFO main - -->op: RemoveOp: `if (dx <= 0.0) { 	x1 = x1[...] ` ---> `-` at pos 0 of parent ` 	if (dx <= 0.0) { 		x1 =[...]`
+2019-04-12 01:30:40,866 INFO main - mod_point ModificPoint=BrentSolver line: 337, el: CtAssignmentImpl
+2019-04-12 01:30:40,866 INFO main - -->op: RemoveOp: `x1 = x1 - (0.5 * toleranc[...] ` ---> `-` at pos 0 of parent `{ 	x1 = x1 - (0.5 * toler[...]`
+2019-04-12 01:30:48,360 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
+2019-04-12 01:30:48,361 INFO main - -->op: ReplaceIfBooleanOp: `if (((java.lang.Math.abs([...] ` ---> `if (true) { 	ta = tb; 	ga[...]` at pos 7 of parent `{ 	if ((ga * gb) > 0) { 	[...]`
+2019-04-12 01:32:50,279 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:32:50,280 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
+2019-04-12 01:32:50,281 INFO main - -->op: ReplaceIfBooleanOp: `if (((java.lang.Math.abs([...] ` ---> `if (false) { 	ta = tb; 	g[...]` at pos 7 of parent `{ 	if ((ga * gb) > 0) { 	[...]`
+2019-04-12 01:32:59,082 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
+2019-04-12 01:32:59,082 INFO main - -->op: RemoveOp: `if (((java.lang.Math.abs([...] ` ---> `-` at pos 7 of parent `{ 	if ((ga * gb) > 0) { 	[...]`
+2019-04-12 01:35:01,097 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:35:01,098 INFO main - mod_point ModificPoint=EventState line: 235, el: CtIfImpl
+2019-04-12 01:35:01,098 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Double.isN[...] ` ---> `if (true) { 	pendingEvent[...]` at pos 0 of parent ` 	if ((java.lang.Double.i[...]`
+2019-04-12 01:35:09,098 INFO main - mod_point ModificPoint=EventState line: 235, el: CtIfImpl
+2019-04-12 01:35:09,098 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Double.isN[...] ` ---> `if (false) { 	pendingEven[...]` at pos 0 of parent ` 	if ((java.lang.Double.i[...]`
+2019-04-12 01:37:11,146 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:37:11,147 INFO main - mod_point ModificPoint=EventState line: 235, el: CtIfImpl
+2019-04-12 01:37:11,147 INFO main - -->op: RemoveOp: `if ((java.lang.Double.isN[...] ` ---> `-` at pos 0 of parent ` 	if ((java.lang.Double.i[...]`
+2019-04-12 01:39:13,110 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:39:13,111 INFO main - mod_point ModificPoint=EventState line: 237, el: CtAssignmentImpl
+2019-04-12 01:39:13,111 INFO main - -->op: RemoveOp: `pendingEventTime = root ` ---> `-` at pos 0 of parent `{ 	pendingEventTime = roo[...]`
+2019-04-12 01:41:15,046 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:41:15,047 INFO main - mod_point ModificPoint=EventState line: 238, el: CtIfImpl
+2019-04-12 01:41:15,048 INFO main - -->op: ReplaceIfBooleanOp: `if ((pendingEvent) && ((j[...] ` ---> `if (true) { 	return false[...]` at pos 1 of parent `{ 	pendingEventTime = roo[...]`
+2019-04-12 01:43:17,164 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:43:17,165 INFO main - mod_point ModificPoint=EventState line: 238, el: CtIfImpl
+2019-04-12 01:43:17,165 INFO main - -->op: ReplaceIfBooleanOp: `if ((pendingEvent) && ((j[...] ` ---> `if (false) { 	return fals[...]` at pos 1 of parent `{ 	pendingEventTime = roo[...]`
+2019-04-12 01:45:19,164 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:45:19,170 INFO main - mod_point ModificPoint=EventState line: 238, el: CtIfImpl
+2019-04-12 01:45:19,173 INFO main - -->op: RemoveOp: `if ((pendingEvent) && ((j[...] ` ---> `-` at pos 1 of parent `{ 	pendingEventTime = roo[...]`
+2019-04-12 01:47:21,695 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:47:21,695 INFO main - mod_point ModificPoint=EventState line: 247, el: CtAssignmentImpl
+2019-04-12 01:47:21,695 INFO main - -->op: RemoveOp: `pendingEvent = true ` ---> `-` at pos 2 of parent `{ 	pendingEventTime = roo[...]`
+2019-04-12 01:49:23,809 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:49:23,809 INFO main - mod_point ModificPoint=EventState line: 248, el: CtReturnImpl
+2019-04-12 01:49:23,810 INFO main - -->op: RemoveOp: `return true ` ---> `-` at pos 3 of parent `{ 	pendingEventTime = roo[...]`
+2019-04-12 01:51:25,803 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:51:25,803 INFO main - mod_point ModificPoint=EventState line: 282, el: CtReturnImpl
+2019-04-12 01:51:25,803 INFO main - -->op: RemoveOp: `return pendingEventTime ` ---> `-` at pos 0 of parent `{ 	return pendingEventTim[...]`
+2019-04-12 01:51:27,463 INFO main - mod_point ModificPoint=EventState line: 301, el: CtAssignmentImpl
+2019-04-12 01:51:27,463 INFO main - -->op: RemoveOp: `previousEventTime = t ` ---> `-` at pos 0 of parent `{ 	previousEventTime = t;[...]`
+2019-04-12 01:51:36,374 INFO main - mod_point ModificPoint=EventState line: 302, el: CtAssignmentImpl
+2019-04-12 01:51:36,374 INFO main - -->op: RemoveOp: `g0Positive = increasing ` ---> `-` at pos 1 of parent `{ 	previousEventTime = t;[...]`
+2019-04-12 01:51:44,764 INFO main - mod_point ModificPoint=EventState line: 303, el: CtAssignmentImpl
+2019-04-12 01:51:44,764 INFO main - -->op: RemoveOp: `nextAction = handler.even[...] ` ---> `-` at pos 2 of parent `{ 	previousEventTime = t;[...]`
+2019-04-12 01:53:46,749 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:53:46,750 INFO main - mod_point ModificPoint=EventState line: 217, el: CtInvocationImpl
+2019-04-12 01:53:46,750 INFO main - -->op: RemoveOp: `interpolator.setInterpola[...] ` ---> `-` at pos 0 of parent `{ 	interpolator.setInterp[...]`
+2019-04-12 01:53:47,549 INFO main - mod_point ModificPoint=EventState line: 218, el: CtReturnImpl
+2019-04-12 01:53:47,550 INFO main - -->op: RemoveOp: `return handler.g(t, inter[...] ` ---> `-` at pos 1 of parent `{ 	interpolator.setInterp[...]`
+2019-04-12 01:53:48,564 INFO main - mod_point ModificPoint=AbstractIntegrator line: 267, el: CtReturnImpl
+2019-04-12 01:53:48,577 INFO main - -->op: RemoveOp: `return t - (endTime) ` ---> `-` at pos 0 of parent `{ 	return t - (endTime); [...]`
+2019-04-12 01:53:50,278 INFO main - mod_point ModificPoint=EventState line: 191, el: CtIfImpl
+2019-04-12 01:53:50,279 INFO main - -->op: ReplaceIfBooleanOp: `if ((ga * gb) > 0) { 	fin[...] ` ---> `if (true) { 	final double[...]` at pos 0 of parent `{ 	if ((ga * gb) > 0) { 	[...]`
+2019-04-12 01:53:59,259 INFO main - mod_point ModificPoint=EventState line: 191, el: CtIfImpl
+2019-04-12 01:53:59,260 INFO main - -->op: ReplaceIfBooleanOp: `if ((ga * gb) > 0) { 	fin[...] ` ---> `if (false) { 	final doubl[...]` at pos 0 of parent `{ 	if ((ga * gb) > 0) { 	[...]`
+2019-04-12 01:54:08,062 INFO main - mod_point ModificPoint=EventState line: 191, el: CtIfImpl
+2019-04-12 01:54:08,062 INFO main - -->op: RemoveOp: `if ((ga * gb) > 0) { 	fin[...] ` ---> `-` at pos 0 of parent `{ 	if ((ga * gb) > 0) { 	[...]`
+2019-04-12 01:54:16,542 INFO main - mod_point ModificPoint=EventState line: 212, el: CtAssignmentImpl
+2019-04-12 01:54:16,542 INFO main - -->op: RemoveOp: `increasing = gb >= ga ` ---> `-` at pos 1 of parent `{ 	if ((ga * gb) > 0) { 	[...]`
+2019-04-12 01:54:25,202 INFO main - mod_point ModificPoint=EventState line: 214, el: CtLocalVariableImpl
+2019-04-12 01:54:25,202 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 2 of parent `{ 	if ((ga * gb) > 0) { 	[...]`
+2019-04-12 01:54:27,234 INFO main - mod_point ModificPoint=EventState line: 226, el: CtLocalVariableImpl
+2019-04-12 01:54:27,235 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 3 of parent `{ 	if ((ga * gb) > 0) { 	[...]`
+2019-04-12 01:54:29,367 INFO main - mod_point ModificPoint=EventState line: 227, el: CtInvocationImpl
+2019-04-12 01:54:29,368 INFO main - -->op: RemoveOp: `solver.setAbsoluteAccurac[...] ` ---> `-` at pos 4 of parent `{ 	if ((ga * gb) > 0) { 	[...]`
+2019-04-12 01:54:49,306 INFO main - mod_point ModificPoint=EventState line: 228, el: CtInvocationImpl
+2019-04-12 01:54:49,306 INFO main - -->op: RemoveOp: `solver.setMaximalIteratio[...] ` ---> `-` at pos 5 of parent `{ 	if ((ga * gb) > 0) { 	[...]`
+2019-04-12 01:54:57,918 INFO main - mod_point ModificPoint=EventState line: 229, el: CtLocalVariableImpl
+2019-04-12 01:54:57,918 INFO main - -->op: RemoveOp: `final double root = (ta <[...] ` ---> `-` at pos 6 of parent `{ 	if ((ga * gb) > 0) { 	[...]`
+2019-04-12 01:54:59,559 INFO main - mod_point ModificPoint=CombinedEventsManager line: 135, el: CtIfImpl
+2019-04-12 01:54:59,560 INFO main - -->op: ReplaceIfBooleanOp: `if (!(initialized)) { 	fi[...] ` ---> `if (true) { 	final double[...]` at pos 2 of parent `{ 	first = null; 	if (sta[...]`
+2019-04-12 01:55:09,422 INFO main - mod_point ModificPoint=CombinedEventsManager line: 135, el: CtIfImpl
+2019-04-12 01:55:09,422 INFO main - -->op: ReplaceIfBooleanOp: `if (!(initialized)) { 	fi[...] ` ---> `if (false) { 	final doubl[...]` at pos 2 of parent `{ 	first = null; 	if (sta[...]`
+2019-04-12 01:57:11,626 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:57:11,626 INFO main - mod_point ModificPoint=CombinedEventsManager line: 135, el: CtIfImpl
+2019-04-12 01:57:11,627 INFO main - -->op: RemoveOp: `if (!(initialized)) { 	fi[...] ` ---> `-` at pos 2 of parent `{ 	first = null; 	if (sta[...]`
+2019-04-12 01:59:14,211 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 01:59:14,211 INFO main - mod_point ModificPoint=CombinedEventsManager line: 138, el: CtLocalVariableImpl
+2019-04-12 01:59:14,212 INFO main - -->op: RemoveOp: `final double t0 = interpo[...] ` ---> `-` at pos 0 of parent `{ 	final double t0 = inte[...]`
+2019-04-12 01:59:16,499 INFO main - mod_point ModificPoint=CombinedEventsManager line: 139, el: CtInvocationImpl
+2019-04-12 01:59:16,499 INFO main - -->op: RemoveOp: `interpolator.setInterpola[...] ` ---> `-` at pos 1 of parent `{ 	final double t0 = inte[...]`
+2019-04-12 01:59:26,546 INFO main - mod_point ModificPoint=CombinedEventsManager line: 140, el: CtLocalVariableImpl
+2019-04-12 01:59:26,546 INFO main - -->op: RemoveOp: `final double[] y = interp[...] ` ---> `-` at pos 2 of parent `{ 	final double t0 = inte[...]`
+2019-04-12 01:59:28,368 INFO main - mod_point ModificPoint=CombinedEventsManager line: 141, el: CtForEachImpl
+2019-04-12 01:59:28,377 INFO main - -->op: RemoveOp: `for (org.apache.commons.m[...] ` ---> `-` at pos 3 of parent `{ 	final double t0 = inte[...]`
+2019-04-12 02:01:31,261 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:01:31,262 INFO main - mod_point ModificPoint=CombinedEventsManager line: 142, el: CtInvocationImpl
+2019-04-12 02:01:31,262 INFO main - -->op: RemoveOp: `state.reinitializeBegin(t[...] ` ---> `-` at pos 0 of parent `{ 	state.reinitializeBegi[...]`
+2019-04-12 02:03:33,729 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:03:33,729 INFO main - mod_point ModificPoint=CombinedEventsManager line: 145, el: CtAssignmentImpl
+2019-04-12 02:03:33,730 INFO main - -->op: RemoveOp: `initialized = true ` ---> `-` at pos 4 of parent `{ 	final double t0 = inte[...]`
+2019-04-12 02:03:43,670 INFO main - mod_point ModificPoint=CombinedEventsManager line: 150, el: CtForEachImpl
+2019-04-12 02:03:43,670 INFO main - -->op: RemoveOp: `for (org.apache.commons.m[...] ` ---> `-` at pos 3 of parent `{ 	first = null; 	if (sta[...]`
+2019-04-12 02:03:45,154 INFO main - mod_point ModificPoint=CombinedEventsManager line: 152, el: CtIfImpl
+2019-04-12 02:03:45,155 INFO main - -->op: ReplaceIfBooleanOp: `if (state.evaluateStep(in[...] ` ---> `if (true) 	if ((first) ==[...]` at pos 0 of parent `{ 	if (state.evaluateStep[...]`
+2019-04-12 02:03:46,925 INFO main - mod_point ModificPoint=CombinedEventsManager line: 152, el: CtIfImpl
+2019-04-12 02:03:46,925 INFO main - -->op: ReplaceIfBooleanOp: `if (state.evaluateStep(in[...] ` ---> `if (false) 	if ((first) =[...]` at pos 0 of parent `{ 	if (state.evaluateStep[...]`
+2019-04-12 02:03:48,598 INFO main - mod_point ModificPoint=CombinedEventsManager line: 152, el: CtIfImpl
+2019-04-12 02:03:48,598 INFO main - -->op: RemoveOp: `if (state.evaluateStep(in[...] ` ---> `-` at pos 0 of parent `{ 	if (state.evaluateStep[...]`
+2019-04-12 02:03:50,235 INFO main - mod_point ModificPoint=CombinedEventsManager line: 170, el: CtReturnImpl
+2019-04-12 02:03:50,301 INFO main - -->op: RemoveOp: `return (first) != null ` ---> `-` at pos 4 of parent `{ 	first = null; 	if (sta[...]`
+2019-04-12 02:03:51,918 INFO main - mod_point ModificPoint=CombinedEventsManager line: 203, el: CtInvocationImpl
+2019-04-12 02:03:51,919 INFO main - -->op: RemoveOp: `state.stepAccepted(t, y) ` ---> `-` at pos 0 of parent `{ 	state.stepAccepted(t, [...]`
+2019-04-12 02:03:53,604 INFO main - mod_point ModificPoint=CombinedEventsManager line: 216, el: CtIfImpl
+2019-04-12 02:03:53,605 INFO main - -->op: ReplaceIfBooleanOp: `if (state.stop()) 	return[...] ` ---> `if (true) 	return true; ` at pos 0 of parent `{ 	if (state.stop()) 		re[...]`
+2019-04-12 02:03:59,906 INFO main - mod_point ModificPoint=CombinedEventsManager line: 216, el: CtIfImpl
+2019-04-12 02:03:59,906 INFO main - -->op: ReplaceIfBooleanOp: `if (state.stop()) 	return[...] ` ---> `if (false) 	return true; ` at pos 0 of parent `{ 	if (state.stop()) 		re[...]`
+2019-04-12 02:06:01,737 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:06:01,738 INFO main - mod_point ModificPoint=CombinedEventsManager line: 216, el: CtIfImpl
+2019-04-12 02:06:01,738 INFO main - -->op: RemoveOp: `if (state.stop()) 	return[...] ` ---> `-` at pos 0 of parent `{ 	if (state.stop()) 		re[...]`
+2019-04-12 02:08:03,680 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:08:03,680 INFO main - mod_point ModificPoint=CombinedEventsManager line: 237, el: CtIfImpl
+2019-04-12 02:08:03,681 INFO main - -->op: ReplaceIfBooleanOp: `if (state.reset(t, y)) { [...] ` ---> `if (true) { 	resetDerivat[...]` at pos 0 of parent `{ 	if (state.reset(t, y))[...]`
+2019-04-12 02:08:05,272 INFO main - mod_point ModificPoint=CombinedEventsManager line: 237, el: CtIfImpl
+2019-04-12 02:08:05,272 INFO main - -->op: ReplaceIfBooleanOp: `if (state.reset(t, y)) { [...] ` ---> `if (false) { 	resetDeriva[...]` at pos 0 of parent `{ 	if (state.reset(t, y))[...]`
+2019-04-12 02:08:06,982 INFO main - mod_point ModificPoint=CombinedEventsManager line: 237, el: CtIfImpl
+2019-04-12 02:08:06,982 INFO main - -->op: RemoveOp: `if (state.reset(t, y)) { [...] ` ---> `-` at pos 0 of parent `{ 	if (state.reset(t, y))[...]`
+2019-04-12 02:08:08,708 INFO main - mod_point ModificPoint=EventState line: 253, el: CtAssignmentImpl
+2019-04-12 02:08:08,709 INFO main - -->op: RemoveOp: `ta = tb ` ---> `-` at pos 0 of parent `{ 	ta = tb; 	ga = gb; }`
+2019-04-12 02:08:17,997 INFO main - mod_point ModificPoint=EventState line: 254, el: CtAssignmentImpl
+2019-04-12 02:08:17,998 INFO main - -->op: RemoveOp: `ga = gb ` ---> `-` at pos 1 of parent `{ 	ta = tb; 	ga = gb; }`
+2019-04-12 02:08:26,576 INFO main - mod_point ModificPoint=EventState line: 260, el: CtAssignmentImpl
+2019-04-12 02:08:26,577 INFO main - -->op: RemoveOp: `pendingEvent = false ` ---> `-` at pos 8 of parent `{ 	forward = interpolator[...]`
+2019-04-12 02:08:35,262 INFO main - mod_point ModificPoint=EventState line: 261, el: CtAssignmentImpl
+2019-04-12 02:08:35,262 INFO main - -->op: RemoveOp: `pendingEventTime = java.l[...] ` ---> `-` at pos 9 of parent `{ 	forward = interpolator[...]`
+2019-04-12 02:08:43,781 INFO main - mod_point ModificPoint=EventState line: 262, el: CtReturnImpl
+2019-04-12 02:08:43,782 INFO main - -->op: RemoveOp: `return false ` ---> `-` at pos 10 of parent `{ 	forward = interpolator[...]`
+2019-04-12 02:08:45,147 INFO main - mod_point ModificPoint=EventState line: 305, el: CtAssignmentImpl
+2019-04-12 02:08:45,147 INFO main - -->op: RemoveOp: `g0Positive = (g0) >= 0 ` ---> `-` at pos 0 of parent `{ 	g0Positive = (g0) >= 0[...]`
+2019-04-12 02:08:54,102 INFO main - mod_point ModificPoint=EventState line: 306, el: CtAssignmentImpl
+2019-04-12 02:08:54,102 INFO main - -->op: RemoveOp: `nextAction = org.apache.c[...] ` ---> `-` at pos 1 of parent `{ 	g0Positive = (g0) >= 0[...]`
+2019-04-12 02:09:02,738 INFO main - mod_point ModificPoint=EventState line: 315, el: CtReturnImpl
+2019-04-12 02:09:02,738 INFO main - -->op: RemoveOp: `return (nextAction) == (o[...] ` ---> `-` at pos 0 of parent `{ 	return (nextAction) ==[...]`
+2019-04-12 02:09:04,147 INFO main - mod_point ModificPoint=EventState line: 330, el: CtIfImpl
+2019-04-12 02:09:04,148 INFO main - -->op: ReplaceIfBooleanOp: `if (!(pendingEvent)) { 	r[...] ` ---> `if (true) { 	return false[...]` at pos 0 of parent `{ 	if (!(pendingEvent)) {[...]`
+2019-04-12 02:09:13,373 INFO main - mod_point ModificPoint=EventState line: 330, el: CtIfImpl
+2019-04-12 02:09:13,373 INFO main - -->op: ReplaceIfBooleanOp: `if (!(pendingEvent)) { 	r[...] ` ---> `if (false) { 	return fals[...]` at pos 0 of parent `{ 	if (!(pendingEvent)) {[...]`
+2019-04-12 02:09:22,001 INFO main - mod_point ModificPoint=EventState line: 330, el: CtIfImpl
+2019-04-12 02:09:22,002 INFO main - -->op: RemoveOp: `if (!(pendingEvent)) { 	r[...] ` ---> `-` at pos 0 of parent `{ 	if (!(pendingEvent)) {[...]`
+2019-04-12 02:09:30,605 INFO main - mod_point ModificPoint=EventState line: 331, el: CtReturnImpl
+2019-04-12 02:09:30,606 INFO main - -->op: RemoveOp: `return false ` ---> `-` at pos 0 of parent `{ 	return false; }`
+2019-04-12 02:09:39,434 INFO main - mod_point ModificPoint=EventState line: 151, el: CtAssignmentImpl
+2019-04-12 02:09:39,434 INFO main - -->op: RemoveOp: `t0 = tStart ` ---> `-` at pos 0 of parent `{ 	t0 = tStart; 	g0 = han[...]`
+2019-04-12 02:11:41,077 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:11:41,077 INFO main - mod_point ModificPoint=EventState line: 152, el: CtAssignmentImpl
+2019-04-12 02:11:41,078 INFO main - -->op: RemoveOp: `g0 = handler.g(tStart, yS[...] ` ---> `-` at pos 1 of parent `{ 	t0 = tStart; 	g0 = han[...]`
+2019-04-12 02:11:50,578 INFO main - mod_point ModificPoint=EventState line: 153, el: CtAssignmentImpl
+2019-04-12 02:11:50,578 INFO main - -->op: RemoveOp: `g0Positive = (g0) >= 0 ` ---> `-` at pos 2 of parent `{ 	t0 = tStart; 	g0 = han[...]`
+2019-04-12 02:13:52,490 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:13:52,491 INFO main - mod_point ModificPoint=EventState line: 172, el: CtAssignmentImpl
+2019-04-12 02:13:52,492 INFO main - -->op: RemoveOp: `forward = interpolator.is[...] ` ---> `-` at pos 0 of parent `{ 	forward = interpolator[...]`
+2019-04-12 02:14:01,245 INFO main - mod_point ModificPoint=EventState line: 173, el: CtLocalVariableImpl
+2019-04-12 02:14:01,246 INFO main - -->op: RemoveOp: `final double t1 = interpo[...] ` ---> `-` at pos 1 of parent `{ 	forward = interpolator[...]`
+2019-04-12 02:14:02,699 INFO main - mod_point ModificPoint=EventState line: 174, el: CtLocalVariableImpl
+2019-04-12 02:14:02,700 INFO main - -->op: RemoveOp: `final int n = java.lang.M[...] ` ---> `-` at pos 2 of parent `{ 	forward = interpolator[...]`
+2019-04-12 02:14:04,365 INFO main - mod_point ModificPoint=EventState line: 175, el: CtLocalVariableImpl
+2019-04-12 02:14:04,366 INFO main - -->op: RemoveOp: `final double h = (t1 - (t[...] ` ---> `-` at pos 3 of parent `{ 	forward = interpolator[...]`
+2019-04-12 02:14:05,895 INFO main - mod_point ModificPoint=EventState line: 177, el: CtLocalVariableImpl
+2019-04-12 02:14:05,949 INFO main - -->op: RemoveOp: `double ta = t0 ` ---> `-` at pos 4 of parent `{ 	forward = interpolator[...]`
+2019-04-12 02:14:07,713 INFO main - mod_point ModificPoint=EventState line: 178, el: CtLocalVariableImpl
+2019-04-12 02:14:07,744 INFO main - -->op: RemoveOp: `double ga = g0 ` ---> `-` at pos 5 of parent `{ 	forward = interpolator[...]`
+2019-04-12 02:14:09,356 INFO main - mod_point ModificPoint=EventState line: 179, el: CtLocalVariableImpl
+2019-04-12 02:14:09,457 INFO main - -->op: RemoveOp: `double tb = (t0) + (inter[...] ` ---> `-` at pos 6 of parent `{ 	forward = interpolator[...]`
+2019-04-12 02:14:11,089 INFO main - mod_point ModificPoint=EventState line: 180, el: CtForImpl
+2019-04-12 02:14:11,091 INFO main - -->op: RemoveOp: `for (int i = 0; i < n; ++[...] ` ---> `-` at pos 7 of parent `{ 	forward = interpolator[...]`
+2019-04-12 02:14:12,713 INFO main - mod_point ModificPoint=EventState line: 183, el: CtOperatorAssignmentImpl
+2019-04-12 02:14:12,714 INFO main - -->op: RemoveOp: `tb += h ` ---> `-` at pos 0 of parent `{ 	tb += h; 	interpolator[...]`
+2019-04-12 02:16:14,662 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:16:14,663 INFO main - mod_point ModificPoint=EventState line: 184, el: CtInvocationImpl
+2019-04-12 02:16:14,664 INFO main - -->op: RemoveOp: `interpolator.setInterpola[...] ` ---> `-` at pos 1 of parent `{ 	tb += h; 	interpolator[...]`
+2019-04-12 02:16:23,358 INFO main - mod_point ModificPoint=EventState line: 185, el: CtLocalVariableImpl
+2019-04-12 02:16:23,358 INFO main - -->op: RemoveOp: `final double gb = handler[...] ` ---> `-` at pos 2 of parent `{ 	tb += h; 	interpolator[...]`
+2019-04-12 02:16:24,815 INFO main - mod_point ModificPoint=EventState line: 188, el: CtIfImpl
+2019-04-12 02:16:24,906 INFO main - -->op: ReplaceIfBooleanOp: `if ((g0Positive) ^ (gb >=[...] ` ---> `if (true) { 	if ((ga * gb[...]` at pos 3 of parent `{ 	tb += h; 	interpolator[...]`
+2019-04-12 02:16:31,286 INFO main - mod_point ModificPoint=EventState line: 188, el: CtIfImpl
+2019-04-12 02:16:31,287 INFO main - -->op: ReplaceIfBooleanOp: `if ((g0Positive) ^ (gb >=[...] ` ---> `if (false) { 	if ((ga * g[...]` at pos 3 of parent `{ 	tb += h; 	interpolator[...]`
+2019-04-12 02:18:33,021 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:18:33,021 INFO main - mod_point ModificPoint=EventState line: 188, el: CtIfImpl
+2019-04-12 02:18:33,023 INFO main - -->op: RemoveOp: `if ((g0Positive) ^ (gb >=[...] ` ---> `-` at pos 3 of parent `{ 	tb += h; 	interpolator[...]`
+2019-04-12 02:18:34,421 INFO main - mod_point ModificPoint=EventState line: 296, el: CtAssignmentImpl
+2019-04-12 02:18:34,525 INFO main - -->op: RemoveOp: `t0 = t ` ---> `-` at pos 0 of parent `{ 	t0 = t; 	g0 = handler.[...]`
+2019-04-12 02:18:44,470 INFO main - mod_point ModificPoint=EventState line: 297, el: CtAssignmentImpl
+2019-04-12 02:18:44,470 INFO main - -->op: RemoveOp: `g0 = handler.g(t, y) ` ---> `-` at pos 1 of parent `{ 	t0 = t; 	g0 = handler.[...]`
+2019-04-12 02:18:54,138 INFO main - mod_point ModificPoint=EventState line: 299, el: CtIfImpl
+2019-04-12 02:18:54,138 INFO main - -->op: ReplaceIfBooleanOp: `if (pendingEvent) { 	prev[...] ` ---> `if (true) { 	previousEven[...]` at pos 2 of parent `{ 	t0 = t; 	g0 = handler.[...]`
+2019-04-12 02:18:59,934 INFO main - mod_point ModificPoint=EventState line: 299, el: CtIfImpl
+2019-04-12 02:18:59,934 INFO main - -->op: ReplaceIfBooleanOp: `if (pendingEvent) { 	prev[...] ` ---> `if (false) { 	previousEve[...]` at pos 2 of parent `{ 	t0 = t; 	g0 = handler.[...]`
+2019-04-12 02:21:01,542 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:21:01,543 INFO main - mod_point ModificPoint=EventState line: 299, el: CtIfImpl
+2019-04-12 02:21:01,543 INFO main - -->op: RemoveOp: `if (pendingEvent) { 	prev[...] ` ---> `-` at pos 2 of parent `{ 	t0 = t; 	g0 = handler.[...]`
+2019-04-12 02:21:09,734 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 251, el: CtReturnImpl
+2019-04-12 02:21:09,734 INFO main - -->op: RemoveOp: `return forward ` ---> `-` at pos 0 of parent `{ 	return forward; }`
+2019-04-12 02:21:11,422 INFO main - mod_point ModificPoint=AbstractIntegrator line: 233, el: CtLocalVariableImpl
+2019-04-12 02:21:11,528 INFO main - -->op: RemoveOp: `org.apache.commons.math.o[...] ` ---> `-` at pos 0 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-12 02:21:13,125 INFO main - mod_point ModificPoint=AbstractIntegrator line: 234, el: CtForEachImpl
+2019-04-12 02:21:13,127 INFO main - -->op: RemoveOp: `for (final org.apache.com[...] ` ---> `-` at pos 1 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-12 02:21:23,030 INFO main - mod_point ModificPoint=AbstractIntegrator line: 240, el: CtInvocationImpl
+2019-04-12 02:21:23,036 INFO main - -->op: RemoveOp: `newManager.addEventHandle[...] ` ---> `-` at pos 2 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-12 02:23:24,855 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:23:24,855 INFO main - mod_point ModificPoint=AbstractIntegrator line: 244, el: CtReturnImpl
+2019-04-12 02:23:24,857 INFO main - -->op: RemoveOp: `return newManager ` ---> `-` at pos 3 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-12 02:23:26,235 INFO main - mod_point ModificPoint=CombinedEventsManager line: 102, el: CtReturnImpl
+2019-04-12 02:23:26,235 INFO main - -->op: RemoveOp: `return states ` ---> `-` at pos 0 of parent `{ 	return states; }`
+2019-04-12 02:23:27,873 INFO main - mod_point ModificPoint=BrentSolver line: 285, el: CtInvocationImpl
+2019-04-12 02:23:27,874 INFO main - -->op: RemoveOp: `setResult(x1, i) ` ---> `-` at pos 0 of parent `{ 	setResult(x1, i); 	ret[...]`
+2019-04-12 02:25:29,997 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:25:29,997 INFO main - mod_point ModificPoint=BrentSolver line: 286, el: CtReturnImpl
+2019-04-12 02:25:29,997 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 1 of parent `{ 	setResult(x1, i); 	ret[...]`
+2019-04-12 02:25:39,265 INFO main - mod_point ModificPoint=BrentSolver line: 334, el: CtIfImpl
+2019-04-12 02:25:39,265 INFO main - -->op: ReplaceIfBooleanOp: `if (dx > 0.0) 	x1 = x1 + [...] ` ---> `if (true) 	x1 = x1 + (0.5[...]` at pos 0 of parent ` 	if (dx > 0.0) 		x1 = x1[...]`
+2019-04-12 02:27:02,368 ERROR main - Error reading the validation process
+ output: 
+America/Los_Angeles
+We accept : org.apache.commons.math.ArgumentOutsideDomainExceptionTest
+We accept : org.apache.commons.math.ConvergenceExceptionTest
+We accept : org.apache.commons.math.DuplicateSampleAbscissaExceptionTest
+We accept : org.apache.commons.math.FunctionEvaluationExceptionTest
+We accept : org.apache.commons.math.MathConfigurationExceptionTest
+We accept : org.apache.commons.math.MathExceptionTest
+We accept : org.apache.commons.math.MaxIterationsExceededExceptionTest
+We accept : org.apache.commons.math.analysis.BinaryFunctionTest
+We accept : org.apache.commons.math.analysis.ComposableFunctionTest
+We accept : org.apache.commons.math.analysis.integration.LegendreGaussIntegratorTest
+We accept : org.apache.commons.math.analysis.integration.RombergIntegratorTest
+We accept : org.apache.commons.math.analysis.integration.SimpsonIntegratorTest
+We accept : org.apache.commons.math.analysis.integration.TrapezoidIntegratorTest
+We accept : org.apache.commons.math.analysis.interpolation.BicubicSplineInterpolatingFunctionTest
+We accept : org.apache.commons.math.analysis.interpolation.DividedDifferenceInterpolatorTest
+We accept : org.apache.commons.math.analysis.interpolation.LoessInterpolatorTest
+We accept : org.apache.commons.math.analysis.interpolation.MicrosphereInterpolatorTest
+We accept : org.apache.commons.math.analysis.interpolation.NevilleInterpolatorTest
+We accept : org.apache.commons.math.analysis.interpolation.SmoothingBicubicSplineInterpolatorTest
+We accept : org.apache.commons.math.analysis.interpolation.SplineInterpolatorTest
+We accept : org.apache.commons.math.analysis.polynomials.PolynomialFunctionLagrangeFormTest
+We accept : org.apache.commons.math.analysis.polynomials.PolynomialFunctionNewtonFormTest
+We accept : org.apache.commons.math.analysis.polynomials.PolynomialFunctionTest
+We accept : org.apache.commons.math.analysis.polynomials.PolynomialSplineFunctionTest
+We accept : org.apache.commons.math.analysis.polynomials.PolynomialsUtilsTest
+We accept : org.apache.commons.math.analysis.solvers.BisectionSolverTest
+We accept : org.apache.commons.math.analysis.solvers.BrentSolverTest
+We accept : org.apache.commons.math.analysis.solvers.LaguerreSolverTest
+We accept : org.apache.commons.math.analysis.solvers.MullerSolverTest
+We accept : org.apache.commons.math.analysis.solvers.NewtonSolverTest
+We accept : org.apache.commons.math.analysis.solvers.RiddersSolverTest
+We accept : org.apache.commons.math.analysis.solvers.UnivariateRealSolverFactoryImplTest
+We accept : org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtilsTest
+We accept : org.apache.commons.math.complex.ComplexFieldTest
+We accept : org.apache.commons.math.complex.ComplexFormatTest
+We accept : org.apache.commons.math.complex.ComplexTest
+We accept : org.apache.commons.math.complex.ComplexUtilsTest
+We accept : org.apache.commons.math.complex.FrenchComplexFormatTest
+We accept : org.apache.commons.math.distribution.BetaDistributionTest
+We accept : org.apache.commons.math.distribution.BinomialDistributionTest
+We accept : org.apache.commons.math.distribution.CauchyDistributionTest
+We accept : org.apache.commons.math.distribution.ChiSquareDistributionTest
+We accept : org.apache.commons.math.distribution.ExponentialDistributionTest
+We accept : org.apache.commons.math.distribution.FDistributionTest
+We accept : org.apache.commons.math.distribution.GammaDistributionTest
+We accept : org.apache.commons.math.distribution.HypergeometricDistributionTest
+We accept : org.apache.commons.math.distribution.NormalDistributionTest
+We accept : org.apache.commons.math.distribution.PascalDistributionTest
+We accept : org.apache.commons.math.distribution.PoissonDistributionTest
+We accept : org.apache.commons.math.distribution.TDistributionTest
+We accept : org.apache.commons.math.distribution.WeibullDistributionTest
+We accept : org.apache.commons.math.distribution.ZipfDistributionTest
+We accept : org.apache.commons.math.estimation.EstimatedParameterTest
+We accept : org.apache.commons.math.estimation.GaussNewtonEstimatorTest
+We accept : org.apache.commons.math.estimation.LevenbergMarquardtEstimatorTest
+We accept : org.apache.commons.math.estimation.MinpackTest
+We accept : org.apache.commons.math.estimation.WeightedMeasurementTest
+We accept : org.apache.commons.math.fraction.BigFractionFieldTest
+We accept : org.apache.commons.math.fraction.BigFractionFormatTest
+We accept : org.apache.commons.math.fraction.BigFractionTest
+We accept : org.apache.commons.math.fraction.FractionFieldTest
+We accept : org.apache.commons.math.fraction.FractionFormatTest
+We accept : org.apache.commons.math.fraction.FractionTest
+We accept : org.apache.commons.math.genetics.BinaryChromosomeTest
+We accept : org.apache.commons.math.genetics.BinaryMutationTest
+We accept : org.apache.commons.math.genetics.ChromosomeTest
+We accept : org.apache.commons.math.genetics.ElitisticListPopulationTest
+We accept : org.apache.commons.math.genetics.FitnessCachingTest
+We accept : org.apache.commons.math.genetics.FixedGenerationCountTest
+We accept : org.apache.commons.math.genetics.GeneticAlgorithmTestBinary
+We accept : org.apache.commons.math.genetics.GeneticAlgorithmTestPermutations
+We accept : org.apache.commons.math.genetics.ListPopulationTest
+We accept : org.apache.commons.math.genetics.OnePointCrossoverTest
+We accept : org.apache.commons.math.genetics.RandomKeyMutationTest
+We accept : org.apache.commons.math.genetics.RandomKeyTest
+We accept : org.apache.commons.math.genetics.TournamentSelectionTest
+We accept : org.apache.commons.math.geometry.FrenchVector3DFormatTest
+We accept : org.apache.commons.math.geometry.RotationOrderTest
+We accept : org.apache.commons.math.geometry.RotationTest
+We accept : org.apache.commons.math.geometry.Vector3DFormatTest
+We accept : org.apache.commons.math.geometry.Vector3DTest
+We accept : org.apache.commons.math.linear.AbstractRealVectorTest
+We accept : org.apache.commons.math.linear.Array2DRowRealMatrixTest
+We accept : org.apache.commons.math.linear.ArrayFieldVectorTest
+We accept : org.apache.commons.math.linear.ArrayRealVectorTest
+We accept : org.apache.commons.math.linear.BiDiagonalTransformerTest
+We accept : org.apache.commons.math.linear.BigMatrixImplTest
+We accept : org.apache.commons.math.linear.BlockFieldMatrixTest
+We accept : org.apache.commons.math.linear.BlockRealMatrixTest
+We accept : org.apache.commons.math.linear.CholeskyDecompositionImplTest
+We accept : org.apache.commons.math.linear.CholeskySolverTest
+We accept : org.apache.commons.math.linear.EigenDecompositionImplTest
+We accept : org.apache.commons.math.linear.EigenSolverTest
+We accept : org.apache.commons.math.linear.FieldLUDecompositionImplTest
+We accept : org.apache.commons.math.linear.FieldMatrixImplTest
+We accept : org.apache.commons.math.linear.FrenchRealVectorFormatTest
+We accept : org.apache.commons.math.linear.InvalidMatrixExceptionTest
+We accept : org.apache.commons.math.linear.LUDecompositionImplTest
+We accept : org.apache.commons.math.linear.LUSolverTest
+We accept : org.apache.commons.math.linear.MatrixIndexExceptionTest
+We accept : org.apache.commons.math.linear.MatrixUtilsTest
+We accept : org.apache.commons.math.linear.QRDecompositionImplTest
+We accept : org.apache.commons.math.linear.QRSolverTest
+We accept : org.apache.commons.math.linear.RealMatrixImplTest
+We accept : org.apache.commons.math.linear.RealVectorFormatTest
+We accept : org.apache.commons.math.linear.SingularValueDecompositionImplTest
+We accept : org.apache.commons.math.linear.SingularValueSolverTest
+We accept : org.apache.commons.math.linear.SparseFieldMatrixTest
+We accept : org.apache.commons.math.linear.SparseFieldVectorTest
+We accept : org.apache.commons.math.linear.SparseRealMatrixTest
+We accept : org.apache.commons.math.linear.SparseRealVectorTest
+We accept : org.apache.commons.math.linear.TriDiagonalTransformerTest
+We accept : org.apache.commons.math.ode.ContinuousOutputModelTest
+We accept : org.apache.commons.math.ode.FirstOrderConverterTest
+We accept : org.apache.commons.math.ode.events.EventStateTest
+We accept : org.apache.commons.math.ode.jacobians.FirstOrderIntegratorWithJacobiansTest
+We accept : org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest
+We accept : org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest
+We accept : org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest
+We accept : org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaStepInterpolatorTest
+We accept : org.apache.commons.math.ode.nonstiff.DormandPrince54IntegratorTest
+We accept : org.apache.commons.math.ode.nonstiff.DormandPrince54StepInterpolatorTest
+We accept : org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest
+We accept : org.apache.commons.math.ode.nonstiff.DormandPrince853StepInterpolatorTest
+We accept : org.apache.commons.math.ode.nonstiff.EulerIntegratorTest
+We accept : org.apache.commons.math.ode.nonstiff.EulerStepInterpolatorTest
+We accept : org.apache.commons.math.ode.nonstiff.GillIntegratorTest
+We accept : org.apache.commons.math.ode.nonstiff.GillStepInterpolatorTest
+We accept : org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegratorTest
+We accept : org.apache.commons.math.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest
+We accept : org.apache.commons.math.ode.nonstiff.HighamHall54IntegratorTest
+We accept : org.apache.commons.math.ode.nonstiff.HighamHall54StepInterpolatorTest
+We accept : org.apache.commons.math.ode.nonstiff.MidpointIntegratorTest
+We accept : org.apache.commons.math.ode.nonstiff.MidpointStepInterpolatorTest
+We accept : org.apache.commons.math.ode.nonstiff.ThreeEighthesIntegratorTest
+We accept : org.apache.commons.math.ode.nonstiff.ThreeEighthesStepInterpolatorTest
+We accept : org.apache.commons.math.ode.sampling.DummyStepInterpolatorTest
+We accept : org.apache.commons.math.ode.sampling.NordsieckStepInterpolatorTest
+We accept : org.apache.commons.math.ode.sampling.StepNormalizerTest
+We accept : org.apache.commons.math.optimization.MultiStartDifferentiableMultivariateRealOptimizerTest
+We accept : org.apache.commons.math.optimization.MultiStartDifferentiableMultivariateVectorialOptimizerTest
+We accept : org.apache.commons.math.optimization.MultiStartMultivariateRealOptimizerTest
+We accept : org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest
+We accept : org.apache.commons.math.optimization.direct.MultiDirectionalTest
+We accept : org.apache.commons.math.optimization.direct.NelderMeadTest
+We accept : org.apache.commons.math.optimization.fitting.CurveFitterTest
+We accept : org.apache.commons.math.optimization.fitting.HarmonicFitterTest
+We accept : org.apache.commons.math.optimization.fitting.PolynomialFitterTest
+We accept : org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest
+We accept : org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest
+We accept : org.apache.commons.math.optimization.general.MinpackTest
+We accept : org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest
+We accept : org.apache.commons.math.optimization.linear.SimplexSolverTest
+We accept : org.apache.commons.math.optimization.linear.SimplexTableauTest
+We accept : org.apache.commons.math.optimization.univariate.BrentMinimizerTest
+We accept : org.apache.commons.math.random.AbstractRandomGeneratorTest
+We accept : org.apache.commons.math.random.CorrelatedRandomVectorGeneratorTest
+We accept : org.apache.commons.math.random.EmpiricalDistributionTest
+We accept : org.apache.commons.math.random.GaussianRandomGeneratorTest
+We accept : org.apache.commons.math.random.MersenneTwisterTest
+We accept : org.apache.commons.math.random.RandomAdaptorTest
+We accept : org.apache.commons.math.random.RandomDataTest
+We accept : org.apache.commons.math.random.UncorrelatedRandomVectorGeneratorTest
+We accept : org.apache.commons.math.random.UniformRandomGeneratorTest
+We accept : org.apache.commons.math.random.ValueServerTest
+We accept : org.apache.commons.math.special.BetaTest
+We accept : org.apache.commons.math.special.ErfTest
+We accept : org.apache.commons.math.special.GammaTest
+We accept : org.apache.commons.math.stat.CertifiedDataTest
+We accept : org.apache.commons.math.stat.FrequencyTest
+We accept : org.apache.commons.math.stat.StatUtilsTest
+We accept : org.apache.commons.math.stat.clustering.EuclideanIntegerPointTest
+We accept : org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest
+We accept : org.apache.commons.math.stat.correlation.CovarianceTest
+We accept : org.apache.commons.math.stat.correlation.PearsonsCorrelationTest
+We accept : org.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest
+We accept : org.apache.commons.math.stat.data.LewTest
+We accept : org.apache.commons.math.stat.data.LotteryTest
+We accept : org.apache.commons.math.stat.descriptive.AbstractUnivariateStatisticTest
+We accept : org.apache.commons.math.stat.descriptive.AggregateSummaryStatisticsTest
+We accept : org.apache.commons.math.stat.descriptive.DescriptiveStatisticsTest
+We accept : org.apache.commons.math.stat.descriptive.InteractionTest
+We accept : org.apache.commons.math.stat.descriptive.ListUnivariateImplTest
+We accept : org.apache.commons.math.stat.descriptive.MixedListUnivariateImplTest
+We accept : org.apache.commons.math.stat.descriptive.MultivariateSummaryStatisticsTest
+We accept : org.apache.commons.math.stat.descriptive.StatisticalSummaryValuesTest
+We accept : org.apache.commons.math.stat.descriptive.SummaryStatisticsTest
+We accept : org.apache.commons.math.stat.descriptive.SynchronizedDescriptiveStatisticsTest
+We accept : org.apache.commons.math.stat.descriptive.SynchronizedMultivariateSummaryStatisticsTest
+We accept : org.apache.commons.math.stat.descriptive.SynchronizedSummaryStatisticsTest
+We accept : org.apache.commons.math.stat.descriptive.moment.FirstMomentTest
+We accept : org.apache.commons.math.stat.descriptive.moment.FourthMomentTest
+We accept : org.apache.commons.math.stat.descriptive.moment.GeometricMeanTest
+We accept : org.apache.commons.math.stat.descriptive.moment.KurtosisTest
+We accept : org.apache.commons.math.stat.descriptive.moment.MeanTest
+We accept : org.apache.commons.math.stat.descriptive.moment.SecondMomentTest
+We accept : org.apache.commons.math.stat.descriptive.moment.SemiVarianceTest
+We accept : org.apache.commons.math.stat.descriptive.moment.SkewnessTest
+We accept : org.apache.commons.math.stat.descriptive.moment.StandardDeviationTest
+We accept : org.apache.commons.math.stat.descriptive.moment.ThirdMomentTest
+We accept : org.apache.commons.math.stat.descriptive.moment.VarianceTest
+We accept : org.apache.commons.math.stat.descriptive.moment.VectorialCovarianceTest
+We accept : org.apache.commons.math.stat.descriptive.moment.VectorialMeanTest
+We accept : org.apache.commons.math.stat.descriptive.rank.MaxTest
+We accept : org.apache.commons.math.stat.descriptive.rank.MedianTest
+We accept : org.apache.commons.math.stat.descriptive.rank.MinTest
+We accept : org.apache.commons.math.stat.descriptive.rank.PercentileTest
+We accept : org.apache.commons.math.stat.descriptive.summary.ProductTest
+We accept : org.apache.commons.math.stat.descriptive.summary.SumLogTest
+We accept : org.apache.commons.math.stat.descriptive.summary.SumSqTest
+We accept : org.apache.commons.math.stat.descriptive.summary.SumTest
+We accept : org.apache.commons.math.stat.inference.ChiSquareFactoryTest
+We accept : org.apache.commons.math.stat.inference.ChiSquareTestTest
+We accept : org.apache.commons.math.stat.inference.OneWayAnovaTest
+We accept : org.apache.commons.math.stat.inference.TTestFactoryTest
+We accept : org.apache.commons.math.stat.inference.TTestTest
+We accept : org.apache.commons.math.stat.inference.TestUtilsTest
+We accept : org.apache.commons.math.stat.ranking.NaturalRankingTest
+We accept : org.apache.commons.math.stat.regression.GLSMultipleLinearRegressionTest
+We accept : org.apache.commons.math.stat.regression.OLSMultipleLinearRegressionTest
+We accept : org.apache.commons.math.stat.regression.SimpleRegressionTest
+We accept : org.apache.commons.math.transform.FastCosineTransformerTest
+We accept : org.apache.commons.math.transform.FastFourierTransformerTest
+We accept : org.apache.commons.math.transform.FastHadamardTransformerTest
+We accept : org.apache.commons.math.transform.FastSineTransformerTest
+We accept : org.apache.commons.math.util.BigRealFieldTest
+We accept : org.apache.commons.math.util.BigRealTest
+We accept : org.apache.commons.math.util.ContinuedFractionTest
+We accept : org.apache.commons.math.util.DefaultTransformerTest
+We accept : org.apache.commons.math.util.MathUtilsTest
+We accept : org.apache.commons.math.util.OpenIntToDoubleHashMapTest
+We accept : org.apache.commons.math.util.OpenIntToFieldTest
+We accept : org.apache.commons.math.util.ResizableDoubleArrayTest
+We accept : org.apache.commons.math.util.TransformerMapTest
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000e3880000, 228589568, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 228589568 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/jan_gerling/astor/defect4j_tests/math_71/hs_err_pid26960.log
+ 
+ error: 
+2019-04-12 02:27:02,369 INFO main - mod_point ModificPoint=BrentSolver line: 334, el: CtIfImpl
+2019-04-12 02:27:02,372 INFO main - -->op: ReplaceIfBooleanOp: `if (dx > 0.0) 	x1 = x1 + [...] ` ---> `if (false) 	x1 = x1 + (0.[...]` at pos 0 of parent ` 	if (dx > 0.0) 		x1 = x1[...]`
+2019-04-12 02:27:13,142 INFO main - mod_point ModificPoint=BrentSolver line: 334, el: CtIfImpl
+2019-04-12 02:27:13,142 INFO main - -->op: RemoveOp: `if (dx > 0.0) 	x1 = x1 + [...] ` ---> `-` at pos 0 of parent ` 	if (dx > 0.0) 		x1 = x1[...]`
+2019-04-12 02:27:21,574 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 249, el: CtLocalVariableImpl
+2019-04-12 02:27:21,574 INFO main - -->op: RemoveOp: `double error1 = 0 ` ---> `-` at pos 0 of parent `{ 	double error1 = 0; 	do[...]`
+2019-04-12 02:27:23,234 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 250, el: CtLocalVariableImpl
+2019-04-12 02:27:23,236 INFO main - -->op: RemoveOp: `double error2 = 0 ` ---> `-` at pos 1 of parent `{ 	double error1 = 0; 	do[...]`
+2019-04-12 02:27:25,147 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 252, el: CtForImpl
+2019-04-12 02:27:25,148 INFO main - -->op: RemoveOp: `for (int j = 0; j < (y0.l[...] ` ---> `-` at pos 2 of parent `{ 	double error1 = 0; 	do[...]`
+2019-04-12 02:27:34,361 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 253, el: CtLocalVariableImpl
+2019-04-12 02:27:34,362 INFO main - -->op: RemoveOp: `final double errSum1 = (([...] ` ---> `-` at pos 0 of parent `{ 	final double errSum1 =[...]`
+2019-04-12 02:27:36,064 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 257, el: CtLocalVariableImpl
+2019-04-12 02:27:36,065 INFO main - -->op: RemoveOp: `final double errSum2 = (([...] ` ---> `-` at pos 1 of parent `{ 	final double errSum1 =[...]`
+2019-04-12 02:27:37,933 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 262, el: CtLocalVariableImpl
+2019-04-12 02:27:37,934 INFO main - -->op: RemoveOp: `final double yScale = jav[...] ` ---> `-` at pos 2 of parent `{ 	final double errSum1 =[...]`
+2019-04-12 02:27:39,766 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 263, el: CtLocalVariableImpl
+2019-04-12 02:27:39,767 INFO main - -->op: RemoveOp: `final double tol = ((vecA[...] ` ---> `-` at pos 3 of parent `{ 	final double errSum1 =[...]`
+2019-04-12 02:27:41,494 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 266, el: CtLocalVariableImpl
+2019-04-12 02:27:41,617 INFO main - -->op: RemoveOp: `final double ratio1 = err[...] ` ---> `-` at pos 4 of parent `{ 	final double errSum1 =[...]`
+2019-04-12 02:27:43,403 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 267, el: CtOperatorAssignmentImpl
+2019-04-12 02:27:43,404 INFO main - -->op: RemoveOp: `error1 += ratio1 * ratio1 ` ---> `-` at pos 5 of parent `{ 	final double errSum1 =[...]`
+2019-04-12 02:27:53,069 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 268, el: CtLocalVariableImpl
+2019-04-12 02:27:53,070 INFO main - -->op: RemoveOp: `final double ratio2 = err[...] ` ---> `-` at pos 6 of parent `{ 	final double errSum1 =[...]`
+2019-04-12 02:27:54,677 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 269, el: CtOperatorAssignmentImpl
+2019-04-12 02:27:54,678 INFO main - -->op: RemoveOp: `error2 += ratio2 * ratio2 ` ---> `-` at pos 7 of parent `{ 	final double errSum1 =[...]`
+2019-04-12 02:28:04,097 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 272, el: CtLocalVariableImpl
+2019-04-12 02:28:04,098 INFO main - -->op: RemoveOp: `double den = error1 + (0.[...] ` ---> `-` at pos 3 of parent `{ 	double error1 = 0; 	do[...]`
+2019-04-12 02:28:05,654 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 273, el: CtIfImpl
+2019-04-12 02:28:05,655 INFO main - -->op: ReplaceIfBooleanOp: `if (den <= 0.0) { 	den = [...] ` ---> `if (true) { 	den = 1.0; }` at pos 4 of parent `{ 	double error1 = 0; 	do[...]`
+2019-04-12 02:28:14,941 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 273, el: CtIfImpl
+2019-04-12 02:28:14,942 INFO main - -->op: ReplaceIfBooleanOp: `if (den <= 0.0) { 	den = [...] ` ---> `if (false) { 	den = 1.0; [...]` at pos 4 of parent `{ 	double error1 = 0; 	do[...]`
+2019-04-12 02:30:16,570 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:30:16,571 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 273, el: CtIfImpl
+2019-04-12 02:30:16,572 INFO main - -->op: RemoveOp: `if (den <= 0.0) { 	den = [...] ` ---> `-` at pos 4 of parent `{ 	double error1 = 0; 	do[...]`
+2019-04-12 02:32:18,355 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:32:18,355 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 277, el: CtReturnImpl
+2019-04-12 02:32:18,356 INFO main - -->op: RemoveOp: `return ((java.lang.Math.a[...] ` ---> `-` at pos 5 of parent `{ 	double error1 = 0; 	do[...]`
+2019-04-12 02:32:19,908 INFO main - mod_point ModificPoint=CombinedEventsManager line: 71, el: CtInvocationImpl
+2019-04-12 02:32:19,993 INFO main - -->op: RemoveOp: `states.add(new org.apache[...] ` ---> `-` at pos 0 of parent `{ 	states.add(new org.apa[...]`
+2019-04-12 02:34:21,782 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:34:21,783 INFO main - mod_point ModificPoint=CombinedEventsManager line: 127, el: CtAssignmentImpl
+2019-04-12 02:34:21,783 INFO main - -->op: RemoveOp: `first = null ` ---> `-` at pos 0 of parent `{ 	first = null; 	if (sta[...]`
+2019-04-12 02:36:23,549 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:36:23,550 INFO main - mod_point ModificPoint=CombinedEventsManager line: 128, el: CtIfImpl
+2019-04-12 02:36:23,550 INFO main - -->op: ReplaceIfBooleanOp: `if (states.isEmpty()) { 	[...] ` ---> `if (true) { 	return false[...]` at pos 1 of parent `{ 	first = null; 	if (sta[...]`
+2019-04-12 02:38:25,306 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 02:38:25,307 INFO main - mod_point ModificPoint=CombinedEventsManager line: 128, el: CtIfImpl
+2019-04-12 02:38:25,307 INFO main - -->op: ReplaceIfBooleanOp: `if (states.isEmpty()) { 	[...] ` ---> `if (false) { 	return fals[...]` at pos 1 of parent `{ 	first = null; 	if (sta[...]`
+2019-04-12 02:38:34,833 INFO main - mod_point ModificPoint=CombinedEventsManager line: 128, el: CtIfImpl
+2019-04-12 02:38:34,834 INFO main - -->op: RemoveOp: `if (states.isEmpty()) { 	[...] ` ---> `-` at pos 1 of parent `{ 	first = null; 	if (sta[...]`
+2019-04-12 02:38:44,286 INFO main - mod_point ModificPoint=CombinedEventsManager line: 202, el: CtForEachImpl
+2019-04-12 02:38:44,286 INFO main - -->op: RemoveOp: `for (org.apache.commons.m[...] ` ---> `-` at pos 0 of parent `{ 	for (org.apache.common[...]`
+2019-04-12 02:38:45,672 INFO main - mod_point ModificPoint=CombinedEventsManager line: 215, el: CtForEachImpl
+2019-04-12 02:38:45,765 INFO main - -->op: RemoveOp: `for (org.apache.commons.m[...] ` ---> `-` at pos 0 of parent `{ 	for (org.apache.common[...]`
+2019-04-12 02:38:46,524 INFO main - mod_point ModificPoint=CombinedEventsManager line: 220, el: CtReturnImpl
+2019-04-12 02:38:46,589 INFO main - -->op: RemoveOp: `return false ` ---> `-` at pos 1 of parent `{ 	for (org.apache.common[...]`
+2019-04-12 02:38:47,397 INFO main - mod_point ModificPoint=CombinedEventsManager line: 235, el: CtLocalVariableImpl
+2019-04-12 02:38:47,398 INFO main - -->op: RemoveOp: `boolean resetDerivatives [...] ` ---> `-` at pos 0 of parent `{ 	boolean resetDerivativ[...]`
+2019-04-12 02:38:48,119 INFO main - mod_point ModificPoint=CombinedEventsManager line: 236, el: CtForEachImpl
+2019-04-12 02:38:48,119 INFO main - -->op: RemoveOp: `for (org.apache.commons.m[...] ` ---> `-` at pos 1 of parent `{ 	boolean resetDerivativ[...]`
+2019-04-12 02:38:48,848 INFO main - mod_point ModificPoint=CombinedEventsManager line: 241, el: CtReturnImpl
+2019-04-12 02:38:48,937 INFO main - -->op: RemoveOp: `return resetDerivatives ` ---> `-` at pos 2 of parent `{ 	boolean resetDerivativ[...]`
+2019-04-12 02:38:49,603 INFO main - mod_point ModificPoint=ConvergingAlgorithmImpl line: 93, el: CtAssignmentImpl
+2019-04-12 02:38:49,604 INFO main - -->op: RemoveOp: `maximalIterationCount = c[...] ` ---> `-` at pos 0 of parent `{ 	maximalIterationCount [...]`
+2019-04-12 02:38:50,308 INFO main - mod_point ModificPoint=BrentSolver line: 314, el: CtAssignmentImpl
+2019-04-12 02:38:50,481 INFO main - -->op: RemoveOp: `p = -p ` ---> `-` at pos 0 of parent `{ 	p = -p; }`
+2019-04-12 02:38:51,164 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 230, el: CtReturnImpl
+2019-04-12 02:38:51,321 INFO main - -->op: RemoveOp: `return previousTime ` ---> `-` at pos 0 of parent `{ 	return previousTime; }`
+2019-04-12 02:38:51,985 INFO main - mod_point ModificPoint=BrentSolver line: 312, el: CtAssignmentImpl
+2019-04-12 02:38:52,097 INFO main - -->op: RemoveOp: `p1 = -p1 ` ---> `-` at pos 0 of parent `{ 	p1 = -p1; }`
+2019-04-12 02:38:52,731 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 235, el: CtReturnImpl
+2019-04-12 02:38:52,885 INFO main - -->op: RemoveOp: `return currentTime ` ---> `-` at pos 0 of parent `{ 	return currentTime; }`
+2019-04-12 02:38:53,580 INFO main - mod_point ModificPoint=AbstractIntegrator line: 167, el: CtAssignmentImpl
+2019-04-12 02:38:53,585 INFO main - -->op: RemoveOp: `this.equations = equation[...] ` ---> `-` at pos 0 of parent `{ 	this.equations = equat[...]`
+2019-04-12 02:38:54,382 INFO main - mod_point ModificPoint=AbstractIntegrator line: 179, el: CtIfImpl
+2019-04-12 02:38:54,383 INFO main - -->op: ReplaceIfBooleanOp: `if ((++(evaluations)) > ([...] ` ---> `if (true) { 	throw new or[...]` at pos 0 of parent `{ 	if ((++(evaluations)) [...]`
+2019-04-12 02:38:55,154 INFO main - mod_point ModificPoint=AbstractIntegrator line: 179, el: CtIfImpl
+2019-04-12 02:38:55,154 INFO main - -->op: ReplaceIfBooleanOp: `if ((++(evaluations)) > ([...] ` ---> `if (false) { 	throw new o[...]` at pos 0 of parent `{ 	if ((++(evaluations)) [...]`
+2019-04-12 02:38:55,925 INFO main - mod_point ModificPoint=AbstractIntegrator line: 179, el: CtIfImpl
+2019-04-12 02:38:55,926 INFO main - -->op: RemoveOp: `if ((++(evaluations)) > ([...] ` ---> `-` at pos 0 of parent `{ 	if ((++(evaluations)) [...]`
+2019-04-12 02:38:56,625 INFO main - mod_point ModificPoint=AbstractIntegrator line: 182, el: CtInvocationImpl
+2019-04-12 02:38:56,729 INFO main - -->op: RemoveOp: `equations.computeDerivati[...] ` ---> `-` at pos 1 of parent `{ 	if ((++(evaluations)) [...]`
+2019-04-12 02:38:57,465 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 272, el: CtIfImpl
+2019-04-12 02:38:57,466 INFO main - -->op: ReplaceIfBooleanOp: `if (dirtyState) { 	final [...] ` ---> `if (true) { 	final double[...]` at pos 0 of parent `{ 	if (dirtyState) { 		fi[...]`
+2019-04-12 02:38:58,197 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 272, el: CtIfImpl
+2019-04-12 02:38:58,198 INFO main - -->op: ReplaceIfBooleanOp: `if (dirtyState) { 	final [...] ` ---> `if (false) { 	final doubl[...]` at pos 0 of parent `{ 	if (dirtyState) { 		fi[...]`
+2019-04-12 02:38:58,926 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 272, el: CtIfImpl
+2019-04-12 02:38:58,927 INFO main - -->op: RemoveOp: `if (dirtyState) { 	final [...] ` ---> `-` at pos 0 of parent `{ 	if (dirtyState) { 		fi[...]`
+2019-04-12 02:38:59,717 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 273, el: CtLocalVariableImpl
+2019-04-12 02:38:59,718 INFO main - -->op: RemoveOp: `final double oneMinusThet[...] ` ---> `-` at pos 0 of parent `{ 	final double oneMinusT[...]`
+2019-04-12 02:39:00,506 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 274, el: CtLocalVariableImpl
+2019-04-12 02:39:00,507 INFO main - -->op: RemoveOp: `final double theta = ((h)[...] ` ---> `-` at pos 1 of parent `{ 	final double oneMinusT[...]`
+2019-04-12 02:39:01,233 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 275, el: CtInvocationImpl
+2019-04-12 02:39:01,237 INFO main - -->op: RemoveOp: `computeInterpolatedStateA[...] ` ---> `-` at pos 2 of parent `{ 	final double oneMinusT[...]`
+2019-04-12 02:39:02,006 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 276, el: CtAssignmentImpl
+2019-04-12 02:39:02,007 INFO main - -->op: RemoveOp: `dirtyState = false ` ---> `-` at pos 3 of parent `{ 	final double oneMinusT[...]`
+2019-04-12 02:39:02,635 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 279, el: CtReturnImpl
+2019-04-12 02:39:02,781 INFO main - -->op: RemoveOp: `return interpolatedState ` ---> `-` at pos 1 of parent `{ 	if (dirtyState) { 		fi[...]`
+2019-04-12 02:39:03,498 INFO main - mod_point ModificPoint=AbstractIntegrator line: 123, el: CtForEachImpl
+2019-04-12 02:39:03,581 INFO main - -->op: RemoveOp: `for (org.apache.commons.m[...] ` ---> `-` at pos 0 of parent `{ 	for (org.apache.common[...]`
+2019-04-12 02:39:04,302 INFO main - mod_point ModificPoint=BrentSolver line: 341, el: CtAssignmentImpl
+2019-04-12 02:39:04,303 INFO main - -->op: RemoveOp: `x2 = x0 ` ---> `-` at pos 0 of parent `{ 	x2 = x0; 	y2 = y0; 	de[...]`
+2019-04-12 02:39:05,028 INFO main - mod_point ModificPoint=BrentSolver line: 342, el: CtAssignmentImpl
+2019-04-12 02:39:05,129 INFO main - -->op: RemoveOp: `y2 = y0 ` ---> `-` at pos 1 of parent `{ 	x2 = x0; 	y2 = y0; 	de[...]`
+2019-04-12 02:39:05,803 INFO main - mod_point ModificPoint=BrentSolver line: 343, el: CtAssignmentImpl
+2019-04-12 02:39:05,803 INFO main - -->op: RemoveOp: `delta = x1 - x0 ` ---> `-` at pos 2 of parent `{ 	x2 = x0; 	y2 = y0; 	de[...]`
+2019-04-12 02:39:06,512 INFO main - mod_point ModificPoint=BrentSolver line: 344, el: CtAssignmentImpl
+2019-04-12 02:39:06,645 INFO main - -->op: RemoveOp: `oldDelta = delta ` ---> `-` at pos 3 of parent `{ 	x2 = x0; 	y2 = y0; 	de[...]`
+2019-04-12 02:39:07,390 INFO main - mod_point ModificPoint=AbstractIntegrator line: 205, el: CtIfImpl
+2019-04-12 02:39:07,391 INFO main - -->op: ReplaceIfBooleanOp: `if ((ode.getDimension()) [...] ` ---> `if (true) { 	throw new or[...]` at pos 1 of parent `{ 	if ((ode.getDimension([...]`
+2019-04-12 02:39:08,108 INFO main - mod_point ModificPoint=AbstractIntegrator line: 205, el: CtIfImpl
+2019-04-12 02:39:08,160 INFO main - -->op: ReplaceIfBooleanOp: `if ((ode.getDimension()) [...] ` ---> `if (false) { 	throw new o[...]` at pos 1 of parent `{ 	if ((ode.getDimension([...]`
+2019-04-12 02:39:08,871 INFO main - mod_point ModificPoint=AbstractIntegrator line: 205, el: CtIfImpl
+2019-04-12 02:39:08,872 INFO main - -->op: RemoveOp: `if ((ode.getDimension()) [...] ` ---> `-` at pos 1 of parent `{ 	if ((ode.getDimension([...]`
+2019-04-12 02:39:09,600 INFO main - mod_point ModificPoint=AbstractIntegrator line: 212, el: CtIfImpl
+2019-04-12 02:39:09,685 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(([...] ` ---> `if (true) { 	throw new or[...]` at pos 2 of parent `{ 	if ((ode.getDimension([...]`
+2019-04-12 02:39:10,458 INFO main - mod_point ModificPoint=AbstractIntegrator line: 212, el: CtIfImpl
+2019-04-12 02:39:10,459 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(([...] ` ---> `if (false) { 	throw new o[...]` at pos 2 of parent `{ 	if ((ode.getDimension([...]`
+2019-04-12 02:39:11,132 INFO main - mod_point ModificPoint=AbstractIntegrator line: 212, el: CtIfImpl
+2019-04-12 02:39:11,229 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(([...] ` ---> `-` at pos 2 of parent `{ 	if ((ode.getDimension([...]`
+2019-04-12 02:39:11,939 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 152, el: CtOperatorAssignmentImpl
+2019-04-12 02:39:11,940 INFO main - -->op: RemoveOp: `sum += (a[(k - 1)][l]) * [...] ` ---> `-` at pos 0 of parent `{ 	sum += (a[(k - 1)][l])[...]`
+2019-04-12 02:39:12,704 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 241, el: CtReturnImpl
+2019-04-12 02:39:12,781 INFO main - -->op: RemoveOp: `return 8 ` ---> `-` at pos 0 of parent `{ 	return 8; }`
+2019-04-12 02:39:13,545 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 211, el: CtAssignmentImpl
+2019-04-12 02:39:13,545 INFO main - -->op: RemoveOp: `previousTime = currentTim[...] ` ---> `-` at pos 0 of parent `{ 	previousTime = current[...]`
+2019-04-12 02:39:14,242 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 219, el: CtAssignmentImpl
+2019-04-12 02:39:14,242 INFO main - -->op: RemoveOp: `currentTime = t ` ---> `-` at pos 0 of parent `{ 	currentTime = t; 	h = [...]`
+2019-04-12 02:39:14,904 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 220, el: CtAssignmentImpl
+2019-04-12 02:39:15,041 INFO main - -->op: RemoveOp: `h = (currentTime) - (prev[...] ` ---> `-` at pos 1 of parent `{ 	currentTime = t; 	h = [...]`
+2019-04-12 02:39:15,793 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 221, el: CtInvocationImpl
+2019-04-12 02:39:15,795 INFO main - -->op: RemoveOp: `setInterpolatedTime(t) ` ---> `-` at pos 2 of parent `{ 	currentTime = t; 	h = [...]`
+2019-04-12 02:39:16,460 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 224, el: CtAssignmentImpl
+2019-04-12 02:39:16,473 INFO main - -->op: RemoveOp: `finalized = false ` ---> `-` at pos 3 of parent `{ 	currentTime = t; 	h = [...]`
+2019-04-12 02:39:17,257 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 245, el: CtAssignmentImpl
+2019-04-12 02:39:17,258 INFO main - -->op: RemoveOp: `interpolatedTime = time ` ---> `-` at pos 0 of parent `{ 	interpolatedTime = tim[...]`
+2019-04-12 02:39:18,006 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 246, el: CtAssignmentImpl
+2019-04-12 02:39:18,007 INFO main - -->op: RemoveOp: `dirtyState = true ` ---> `-` at pos 1 of parent `{ 	interpolatedTime = tim[...]`
+2019-04-12 02:39:18,771 INFO main - mod_point ModificPoint=ConvergingAlgorithmImpl line: 78, el: CtAssignmentImpl
+2019-04-12 02:39:18,771 INFO main - -->op: RemoveOp: `absoluteAccuracy = accura[...] ` ---> `-` at pos 0 of parent `{ 	absoluteAccuracy = acc[...]`
+2019-04-12 02:39:19,546 INFO main - mod_point ModificPoint=AbstractIntegrator line: 198, el: CtIfImpl
+2019-04-12 02:39:19,546 INFO main - -->op: ReplaceIfBooleanOp: `if ((ode.getDimension()) [...] ` ---> `if (true) { 	throw new or[...]` at pos 0 of parent `{ 	if ((ode.getDimension([...]`
+2019-04-12 02:39:20,268 INFO main - mod_point ModificPoint=AbstractIntegrator line: 198, el: CtIfImpl
+2019-04-12 02:39:20,269 INFO main - -->op: ReplaceIfBooleanOp: `if ((ode.getDimension()) [...] ` ---> `if (false) { 	throw new o[...]` at pos 0 of parent `{ 	if ((ode.getDimension([...]`
+2019-04-12 02:39:20,951 INFO main - mod_point ModificPoint=AbstractIntegrator line: 198, el: CtIfImpl
+2019-04-12 02:39:20,952 INFO main - -->op: RemoveOp: `if ((ode.getDimension()) [...] ` ---> `-` at pos 0 of parent `{ 	if ((ode.getDimension([...]`
+2019-04-12 02:39:21,662 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 335, el: CtInvocationImpl
+2019-04-12 02:39:21,663 INFO main - -->op: RemoveOp: `java.lang.System.arraycop[...] ` ---> `-` at pos 0 of parent `{ 	java.lang.System.array[...]`
+2019-04-12 02:39:22,375 INFO main - mod_point ModificPoint=BrentSolver line: 267, el: CtAssignmentImpl
+2019-04-12 02:39:22,437 INFO main - -->op: RemoveOp: `x0 = x1 ` ---> `-` at pos 0 of parent `{ 	x0 = x1; 	x1 = x2; 	x2[...]`
+2019-04-12 02:39:23,104 INFO main - mod_point ModificPoint=BrentSolver line: 268, el: CtAssignmentImpl
+2019-04-12 02:39:23,181 INFO main - -->op: RemoveOp: `x1 = x2 ` ---> `-` at pos 1 of parent `{ 	x0 = x1; 	x1 = x2; 	x2[...]`
+2019-04-12 02:39:23,840 INFO main - mod_point ModificPoint=BrentSolver line: 269, el: CtAssignmentImpl
+2019-04-12 02:39:23,845 INFO main - -->op: RemoveOp: `x2 = x0 ` ---> `-` at pos 2 of parent `{ 	x0 = x1; 	x1 = x2; 	x2[...]`
+2019-04-12 02:39:24,511 INFO main - mod_point ModificPoint=BrentSolver line: 270, el: CtAssignmentImpl
+2019-04-12 02:39:24,613 INFO main - -->op: RemoveOp: `y0 = y1 ` ---> `-` at pos 3 of parent `{ 	x0 = x1; 	x1 = x2; 	x2[...]`
+2019-04-12 02:39:25,263 INFO main - mod_point ModificPoint=BrentSolver line: 271, el: CtAssignmentImpl
+2019-04-12 02:39:25,263 INFO main - -->op: RemoveOp: `y1 = y2 ` ---> `-` at pos 4 of parent `{ 	x0 = x1; 	x1 = x2; 	x2[...]`
+2019-04-12 02:39:25,990 INFO main - mod_point ModificPoint=BrentSolver line: 272, el: CtAssignmentImpl
+2019-04-12 02:39:25,991 INFO main - -->op: RemoveOp: `y2 = y0 ` ---> `-` at pos 5 of parent `{ 	x0 = x1; 	x1 = x2; 	x2[...]`
+2019-04-12 02:39:26,712 INFO main - mod_point ModificPoint=BrentSolver line: 294, el: CtLocalVariableImpl
+2019-04-12 02:39:26,793 INFO main - -->op: RemoveOp: `double r3 = y1 / y0 ` ---> `-` at pos 0 of parent `{ 	double r3 = y1 / y0; 	[...]`
+2019-04-12 02:39:27,384 INFO main - mod_point ModificPoint=BrentSolver line: 300, el: CtIfImpl
+2019-04-12 02:39:27,549 INFO main - -->op: ReplaceIfBooleanOp: `if (x0 == x2) { 	p = dx *[...] ` ---> `if (true) { 	p = dx * r3;[...]` at pos 3 of parent `{ 	double r3 = y1 / y0; 	[...]`
+2019-04-12 02:39:28,196 INFO main - mod_point ModificPoint=BrentSolver line: 300, el: CtIfImpl
+2019-04-12 02:39:28,201 INFO main - -->op: ReplaceIfBooleanOp: `if (x0 == x2) { 	p = dx *[...] ` ---> `if (false) { 	p = dx * r3[...]` at pos 3 of parent `{ 	double r3 = y1 / y0; 	[...]`
+2019-04-12 02:39:29,017 INFO main - mod_point ModificPoint=BrentSolver line: 300, el: CtIfImpl
+2019-04-12 02:39:29,018 INFO main - -->op: RemoveOp: `if (x0 == x2) { 	p = dx *[...] ` ---> `-` at pos 3 of parent `{ 	double r3 = y1 / y0; 	[...]`
+2019-04-12 02:39:29,797 INFO main - mod_point ModificPoint=BrentSolver line: 302, el: CtAssignmentImpl
+2019-04-12 02:39:29,797 INFO main - -->op: RemoveOp: `p = dx * r3 ` ---> `-` at pos 0 of parent `{ 	p = dx * r3; 	p1 = 1.0[...]`
+2019-04-12 02:39:30,502 INFO main - mod_point ModificPoint=BrentSolver line: 303, el: CtAssignmentImpl
+2019-04-12 02:39:30,502 INFO main - -->op: RemoveOp: `p1 = 1.0 - r3 ` ---> `-` at pos 1 of parent `{ 	p = dx * r3; 	p1 = 1.0[...]`
+2019-04-12 02:39:31,246 INFO main - mod_point ModificPoint=BrentSolver line: 311, el: CtIfImpl
+2019-04-12 02:39:31,246 INFO main - -->op: ReplaceIfBooleanOp: `if (p > 0.0) 	p1 = -p1; e[...] ` ---> `if (true) 	p1 = -p1; else[...]` at pos 4 of parent `{ 	double r3 = y1 / y0; 	[...]`
+2019-04-12 02:39:31,967 INFO main - mod_point ModificPoint=BrentSolver line: 311, el: CtIfImpl
+2019-04-12 02:39:31,967 INFO main - -->op: ReplaceIfBooleanOp: `if (p > 0.0) 	p1 = -p1; e[...] ` ---> `if (false) 	p1 = -p1; els[...]` at pos 4 of parent `{ 	double r3 = y1 / y0; 	[...]`
+2019-04-12 02:39:32,656 INFO main - mod_point ModificPoint=BrentSolver line: 311, el: CtIfImpl
+2019-04-12 02:39:32,656 INFO main - -->op: RemoveOp: `if (p > 0.0) 	p1 = -p1; e[...] ` ---> `-` at pos 4 of parent `{ 	double r3 = y1 / y0; 	[...]`
+2019-04-12 02:39:33,391 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
+2019-04-12 02:39:33,391 INFO main - -->op: ReplaceIfBooleanOp: `if (((2.0 * p) >= (((1.5 [...] ` ---> `if (true) { 	delta = 0.5 [...]` at pos 5 of parent `{ 	double r3 = y1 / y0; 	[...]`
+2019-04-12 02:39:34,110 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
+2019-04-12 02:39:34,110 INFO main - -->op: ReplaceIfBooleanOp: `if (((2.0 * p) >= (((1.5 [...] ` ---> `if (false) { 	delta = 0.5[...]` at pos 5 of parent `{ 	double r3 = y1 / y0; 	[...]`
+2019-04-12 02:39:34,897 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
+2019-04-12 02:39:34,897 INFO main - -->op: RemoveOp: `if (((2.0 * p) >= (((1.5 [...] ` ---> `-` at pos 5 of parent `{ 	double r3 = y1 / y0; 	[...]`
+2019-04-12 02:39:35,591 INFO main - mod_point ModificPoint=BrentSolver line: 324, el: CtAssignmentImpl
+2019-04-12 02:39:35,591 INFO main - -->op: RemoveOp: `oldDelta = delta ` ---> `-` at pos 0 of parent `{ 	oldDelta = delta; 	del[...]`
+2019-04-12 02:39:36,339 INFO main - mod_point ModificPoint=BrentSolver line: 325, el: CtAssignmentImpl
+2019-04-12 02:39:36,339 INFO main - -->op: RemoveOp: `delta = p / p1 ` ---> `-` at pos 1 of parent `{ 	oldDelta = delta; 	del[...]`
+2019-04-12 02:39:37,066 INFO main - mod_point ModificPoint=AbstractIntegrator line: 143, el: CtAssignmentImpl
+2019-04-12 02:39:37,067 INFO main - -->op: RemoveOp: `this.maxEvaluations = (ma[...] ` ---> `-` at pos 0 of parent `{ 	this.maxEvaluations = [...]`
+2019-04-12 02:39:37,770 INFO main - mod_point ModificPoint=AbstractIntegrator line: 159, el: CtAssignmentImpl
+2019-04-12 02:39:37,770 INFO main - -->op: RemoveOp: `evaluations = 0 ` ---> `-` at pos 0 of parent `{ 	evaluations = 0; }`
+2019-04-12 02:39:38,436 INFO main - mod_point ModificPoint=BrentSolver line: 281, el: CtLocalVariableImpl
+2019-04-12 02:39:38,525 INFO main - -->op: RemoveOp: `double dx = x2 - x1 ` ---> `-` at pos 2 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:39,162 INFO main - mod_point ModificPoint=BrentSolver line: 282, el: CtLocalVariableImpl
+2019-04-12 02:39:39,273 INFO main - -->op: RemoveOp: `double tolerance = java.l[...] ` ---> `-` at pos 3 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:39,938 INFO main - mod_point ModificPoint=BrentSolver line: 284, el: CtIfImpl
+2019-04-12 02:39:40,029 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(d[...] ` ---> `if (true) { 	setResult(x1[...]` at pos 4 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:40,680 INFO main - mod_point ModificPoint=BrentSolver line: 284, el: CtIfImpl
+2019-04-12 02:39:40,768 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(d[...] ` ---> `if (false) { 	setResult(x[...]` at pos 4 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:41,428 INFO main - mod_point ModificPoint=BrentSolver line: 284, el: CtIfImpl
+2019-04-12 02:39:41,441 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(d[...] ` ---> `-` at pos 4 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:42,160 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
+2019-04-12 02:39:42,165 INFO main - -->op: ReplaceIfBooleanOp: `if (((java.lang.Math.abs([...] ` ---> `if (true) { 	delta = 0.5 [...]` at pos 5 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:42,912 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
+2019-04-12 02:39:43,009 INFO main - -->op: ReplaceIfBooleanOp: `if (((java.lang.Math.abs([...] ` ---> `if (false) { 	delta = 0.5[...]` at pos 5 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:43,740 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
+2019-04-12 02:39:43,741 INFO main - -->op: RemoveOp: `if (((java.lang.Math.abs([...] ` ---> `-` at pos 5 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:44,563 INFO main - mod_point ModificPoint=BrentSolver line: 329, el: CtAssignmentImpl
+2019-04-12 02:39:44,563 INFO main - -->op: RemoveOp: `x0 = x1 ` ---> `-` at pos 6 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:45,204 INFO main - mod_point ModificPoint=BrentSolver line: 330, el: CtAssignmentImpl
+2019-04-12 02:39:45,213 INFO main - -->op: RemoveOp: `y0 = y1 ` ---> `-` at pos 7 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:45,963 INFO main - mod_point ModificPoint=BrentSolver line: 332, el: CtIfImpl
+2019-04-12 02:39:45,964 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(d[...] ` ---> `if (true) { 	x1 = x1 + de[...]` at pos 8 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:46,710 INFO main - mod_point ModificPoint=BrentSolver line: 332, el: CtIfImpl
+2019-04-12 02:39:46,711 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(d[...] ` ---> `if (false) { 	x1 = x1 + d[...]` at pos 8 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:47,428 INFO main - mod_point ModificPoint=BrentSolver line: 332, el: CtIfImpl
+2019-04-12 02:39:47,493 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(d[...] ` ---> `-` at pos 8 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:48,199 INFO main - mod_point ModificPoint=BrentSolver line: 339, el: CtAssignmentImpl
+2019-04-12 02:39:48,200 INFO main - -->op: RemoveOp: `y1 = f.value(x1) ` ---> `-` at pos 9 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:48,996 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
+2019-04-12 02:39:49,013 INFO main - -->op: ReplaceIfBooleanOp: `if ((y1 > 0) == (y2 > 0))[...] ` ---> `if (true) { 	x2 = x0; 	y2[...]` at pos 10 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:49,759 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
+2019-04-12 02:39:49,760 INFO main - -->op: ReplaceIfBooleanOp: `if ((y1 > 0) == (y2 > 0))[...] ` ---> `if (false) { 	x2 = x0; 	y[...]` at pos 10 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:50,521 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
+2019-04-12 02:39:50,521 INFO main - -->op: RemoveOp: `if ((y1 > 0) == (y2 > 0))[...] ` ---> `-` at pos 10 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:51,092 INFO main - mod_point ModificPoint=BrentSolver line: 346, el: CtUnaryOperatorImpl
+2019-04-12 02:39:51,249 INFO main - -->op: RemoveOp: `i++ ` ---> `-` at pos 11 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:51,916 INFO main - mod_point ModificPoint=BrentSolver line: 224, el: CtAssignmentImpl
+2019-04-12 02:39:51,916 INFO main - -->op: RemoveOp: `ret = solve(f, min, yMin,[...] ` ---> `-` at pos 0 of parent `{ 	ret = solve(f, min, yM[...]`
+2019-04-12 02:39:52,718 INFO main - mod_point ModificPoint=BrentSolver line: 234, el: CtReturnImpl
+2019-04-12 02:39:52,719 INFO main - -->op: RemoveOp: `return ret ` ---> `-` at pos 7 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 02:39:53,370 INFO main - mod_point ModificPoint=BrentSolver line: 260, el: CtLocalVariableImpl
+2019-04-12 02:39:53,521 INFO main - -->op: RemoveOp: `double delta = x1 - x0 ` ---> `-` at pos 0 of parent `{ 	double delta = x1 - x0[...]`
+2019-04-12 02:39:54,209 INFO main - mod_point ModificPoint=BrentSolver line: 261, el: CtLocalVariableImpl
+2019-04-12 02:39:54,210 INFO main - -->op: RemoveOp: `double oldDelta = delta ` ---> `-` at pos 1 of parent `{ 	double delta = x1 - x0[...]`
+2019-04-12 02:39:54,908 INFO main - mod_point ModificPoint=BrentSolver line: 263, el: CtLocalVariableImpl
+2019-04-12 02:39:54,908 INFO main - -->op: RemoveOp: `int i = 0 ` ---> `-` at pos 2 of parent `{ 	double delta = x1 - x0[...]`
+2019-04-12 02:39:55,682 INFO main - mod_point ModificPoint=BrentSolver line: 264, el: CtWhileImpl
+2019-04-12 02:39:55,683 INFO main - -->op: RemoveOp: `while (i < (maximalIterat[...] ` ---> `-` at pos 3 of parent `{ 	double delta = x1 - x0[...]`
+2019-04-12 02:39:56,379 INFO main - mod_point ModificPoint=BrentSolver line: 265, el: CtIfImpl
+2019-04-12 02:39:56,381 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (true) { 	x0 = x1; 	x1[...]` at pos 0 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:57,083 INFO main - mod_point ModificPoint=BrentSolver line: 265, el: CtIfImpl
+2019-04-12 02:39:57,084 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (false) { 	x0 = x1; 	x[...]` at pos 0 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:57,696 INFO main - mod_point ModificPoint=BrentSolver line: 265, el: CtIfImpl
+2019-04-12 02:39:57,877 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(y[...] ` ---> `-` at pos 0 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:58,593 INFO main - mod_point ModificPoint=BrentSolver line: 274, el: CtIfImpl
+2019-04-12 02:39:58,594 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (true) { 	setResult(x1[...]` at pos 1 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:39:59,333 INFO main - mod_point ModificPoint=BrentSolver line: 274, el: CtIfImpl
+2019-04-12 02:39:59,334 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (false) { 	setResult(x[...]` at pos 1 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:40:00,098 INFO main - mod_point ModificPoint=BrentSolver line: 274, el: CtIfImpl
+2019-04-12 02:40:00,098 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(y[...] ` ---> `-` at pos 1 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 02:40:00,707 INFO main - mod_point ModificPoint=BrentSolver line: 222, el: CtIfImpl
+2019-04-12 02:40:00,845 INFO main - -->op: ReplaceIfBooleanOp: `if (sign < 0) 	ret = solv[...] ` ---> `if (true) 	ret = solve(f,[...]` at pos 0 of parent ` 	if (sign < 0) 		ret = s[...]`
+2019-04-12 02:40:01,388 INFO main - mod_point ModificPoint=BrentSolver line: 222, el: CtIfImpl
+2019-04-12 02:40:01,561 INFO main - -->op: ReplaceIfBooleanOp: `if (sign < 0) 	ret = solv[...] ` ---> `if (false) 	ret = solve(f[...]` at pos 0 of parent ` 	if (sign < 0) 		ret = s[...]`
+2019-04-12 02:40:02,254 INFO main - mod_point ModificPoint=BrentSolver line: 222, el: CtIfImpl
+2019-04-12 02:40:02,254 INFO main - -->op: RemoveOp: `if (sign < 0) 	ret = solv[...] ` ---> `-` at pos 0 of parent ` 	if (sign < 0) 		ret = s[...]`
+2019-04-12 02:40:02,896 INFO main - mod_point ModificPoint=BrentSolver line: 199, el: CtInvocationImpl
+2019-04-12 02:40:02,997 INFO main - -->op: RemoveOp: `clearResult() ` ---> `-` at pos 0 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 02:40:03,678 INFO main - mod_point ModificPoint=BrentSolver line: 200, el: CtInvocationImpl
+2019-04-12 02:40:03,679 INFO main - -->op: RemoveOp: `verifyInterval(min, max) ` ---> `-` at pos 1 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 02:40:04,326 INFO main - mod_point ModificPoint=BrentSolver line: 202, el: CtLocalVariableImpl
+2019-04-12 02:40:04,333 INFO main - -->op: RemoveOp: `double ret = java.lang.Do[...] ` ---> `-` at pos 2 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 02:40:05,055 INFO main - mod_point ModificPoint=BrentSolver line: 204, el: CtLocalVariableImpl
+2019-04-12 02:40:05,056 INFO main - -->op: RemoveOp: `double yMin = f.value(min[...] ` ---> `-` at pos 3 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 02:40:05,806 INFO main - mod_point ModificPoint=BrentSolver line: 205, el: CtLocalVariableImpl
+2019-04-12 02:40:05,807 INFO main - -->op: RemoveOp: `double yMax = f.value(max[...] ` ---> `-` at pos 4 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 02:40:06,511 INFO main - mod_point ModificPoint=BrentSolver line: 208, el: CtLocalVariableImpl
+2019-04-12 02:40:06,512 INFO main - -->op: RemoveOp: `double sign = yMin * yMax ` ---> `-` at pos 5 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 02:40:07,330 INFO main - mod_point ModificPoint=BrentSolver line: 209, el: CtIfImpl
+2019-04-12 02:40:07,331 INFO main - -->op: ReplaceIfBooleanOp: `if (sign > 0) { 	if ((jav[...] ` ---> `if (true) { 	if ((java.la[...]` at pos 6 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 02:40:08,011 INFO main - mod_point ModificPoint=BrentSolver line: 209, el: CtIfImpl
+2019-04-12 02:40:08,012 INFO main - -->op: ReplaceIfBooleanOp: `if (sign > 0) { 	if ((jav[...] ` ---> `if (false) { 	if ((java.l[...]` at pos 6 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 02:40:08,767 INFO main - mod_point ModificPoint=BrentSolver line: 209, el: CtIfImpl
+2019-04-12 02:40:08,767 INFO main - -->op: RemoveOp: `if (sign > 0) { 	if ((jav[...] ` ---> `-` at pos 6 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 02:40:09,493 INFO main - mod_point ModificPoint=UnivariateRealSolverImpl line: 165, el: CtAssignmentImpl
+2019-04-12 02:40:09,493 INFO main - -->op: RemoveOp: `this.iterationCount = 0 ` ---> `-` at pos 0 of parent `{ 	this.iterationCount = [...]`
+2019-04-12 02:40:10,170 INFO main - mod_point ModificPoint=UnivariateRealSolverImpl line: 166, el: CtAssignmentImpl
+2019-04-12 02:40:10,170 INFO main - -->op: RemoveOp: `this.resultComputed = fal[...] ` ---> `-` at pos 1 of parent `{ 	this.iterationCount = [...]`
+2019-04-12 02:40:10,918 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 149, el: CtForImpl
+2019-04-12 02:40:10,918 INFO main - -->op: RemoveOp: `for (int j = 0; j < (y0.l[...] ` ---> `-` at pos 0 of parent `{ 	for (int j = 0; j < (y[...]`
+2019-04-12 02:40:11,503 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 150, el: CtLocalVariableImpl
+2019-04-12 02:40:11,661 INFO main - -->op: RemoveOp: `double sum = (a[(k - 1)][[...] ` ---> `-` at pos 0 of parent `{ 	double sum = (a[(k - 1[...]`
+2019-04-12 02:40:12,346 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 151, el: CtForImpl
+2019-04-12 02:40:12,346 INFO main - -->op: RemoveOp: `for (int l = 1; l < k; ++[...] ` ---> `-` at pos 1 of parent `{ 	double sum = (a[(k - 1[...]`
+2019-04-12 02:40:13,029 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 154, el: CtAssignmentImpl
+2019-04-12 02:40:13,033 INFO main - -->op: RemoveOp: `yTmp[j] = (y[j]) + ((step[...] ` ---> `-` at pos 2 of parent `{ 	double sum = (a[(k - 1[...]`
+2019-04-12 02:40:13,804 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 157, el: CtInvocationImpl
+2019-04-12 02:40:13,853 INFO main - -->op: RemoveOp: `computeDerivatives(((step[...] ` ---> `-` at pos 1 of parent `{ 	for (int j = 0; j < (y[...]`
+2019-04-12 02:40:14,557 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 165, el: CtOperatorAssignmentImpl
+2019-04-12 02:40:14,558 INFO main - -->op: RemoveOp: `sum += (b[l]) * (yDotK[l][...] ` ---> `-` at pos 0 of parent `{ 	sum += (b[l]) * (yDotK[...]`
+2019-04-12 02:40:15,248 INFO main - mod_point ModificPoint=UnivariateRealSolverImpl line: 141, el: CtAssignmentImpl
+2019-04-12 02:40:15,248 INFO main - -->op: RemoveOp: `this.result = newResult ` ---> `-` at pos 0 of parent `{ 	this.result = newResul[...]`
+2019-04-12 02:40:16,002 INFO main - mod_point ModificPoint=UnivariateRealSolverImpl line: 142, el: CtAssignmentImpl
+2019-04-12 02:40:16,002 INFO main - -->op: RemoveOp: `this.iterationCount = ite[...] ` ---> `-` at pos 1 of parent `{ 	this.result = newResul[...]`
+2019-04-12 02:40:16,611 INFO main - mod_point ModificPoint=UnivariateRealSolverImpl line: 143, el: CtAssignmentImpl
+2019-04-12 02:40:16,761 INFO main - -->op: RemoveOp: `this.resultComputed = tru[...] ` ---> `-` at pos 2 of parent `{ 	this.result = newResul[...]`
+2019-04-12 02:40:17,447 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 293, el: CtLocalVariableImpl
+2019-04-12 02:40:17,447 INFO main - -->op: RemoveOp: `final double dt = (manage[...] ` ---> `-` at pos 0 of parent `{ 	final double dt = (man[...]`
+2019-04-12 02:40:18,193 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 294, el: CtIfImpl
+2019-04-12 02:40:18,193 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(d[...] ` ---> `if (true) 	loop = false; [...]` at pos 1 of parent `{ 	final double dt = (man[...]`
+2019-04-12 02:40:18,886 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 294, el: CtIfImpl
+2019-04-12 02:40:18,886 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(d[...] ` ---> `if (false) 	loop = false;[...]` at pos 1 of parent `{ 	final double dt = (man[...]`
+2019-04-12 02:40:19,583 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 294, el: CtIfImpl
+2019-04-12 02:40:19,583 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(d[...] ` ---> `-` at pos 1 of parent `{ 	final double dt = (man[...]`
+2019-04-12 02:40:20,331 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 303, el: CtAssignmentImpl
+2019-04-12 02:40:20,331 INFO main - -->op: RemoveOp: `hNew = dt ` ---> `-` at pos 0 of parent `{ 	hNew = dt; }`
+2019-04-12 02:40:21,051 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 362, el: CtLocalVariableImpl
+2019-04-12 02:40:21,052 INFO main - -->op: RemoveOp: `final double stopTime = s[...] ` ---> `-` at pos 18 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:21,778 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 363, el: CtInvocationImpl
+2019-04-12 02:40:21,779 INFO main - -->op: RemoveOp: `resetInternalState() ` ---> `-` at pos 19 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:22,518 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 364, el: CtReturnImpl
+2019-04-12 02:40:22,519 INFO main - -->op: RemoveOp: `return stopTime ` ---> `-` at pos 20 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:23,212 INFO main - mod_point ModificPoint=UnivariateRealSolverImpl line: 208, el: CtIfImpl
+2019-04-12 02:40:23,301 INFO main - -->op: ReplaceIfBooleanOp: `if (lower >= upper) { 	th[...] ` ---> `if (true) { 	throw org.ap[...]` at pos 0 of parent `{ 	if (lower >= upper) { [...]`
+2019-04-12 02:40:23,931 INFO main - mod_point ModificPoint=UnivariateRealSolverImpl line: 208, el: CtIfImpl
+2019-04-12 02:40:23,932 INFO main - -->op: ReplaceIfBooleanOp: `if (lower >= upper) { 	th[...] ` ---> `if (false) { 	throw org.a[...]` at pos 0 of parent `{ 	if (lower >= upper) { [...]`
+2019-04-12 02:40:24,695 INFO main - mod_point ModificPoint=UnivariateRealSolverImpl line: 208, el: CtIfImpl
+2019-04-12 02:40:24,695 INFO main - -->op: RemoveOp: `if (lower >= upper) { 	th[...] ` ---> `-` at pos 0 of parent `{ 	if (lower >= upper) { [...]`
+2019-04-12 02:40:25,411 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 331, el: CtAssignmentImpl
+2019-04-12 02:40:25,412 INFO main - -->op: RemoveOp: `stepStart = nextStep ` ---> `-` at pos 9 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:40:26,138 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 333, el: CtIfImpl
+2019-04-12 02:40:26,139 INFO main - -->op: ReplaceIfBooleanOp: `if (fsal) 	java.lang.Syst[...] ` ---> `if (true) 	java.lang.Syst[...]` at pos 10 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:40:26,897 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 333, el: CtIfImpl
+2019-04-12 02:40:26,898 INFO main - -->op: ReplaceIfBooleanOp: `if (fsal) 	java.lang.Syst[...] ` ---> `if (false) 	java.lang.Sys[...]` at pos 10 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:40:27,514 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 333, el: CtIfImpl
+2019-04-12 02:40:27,633 INFO main - -->op: RemoveOp: `if (fsal) 	java.lang.Syst[...] ` ---> `-` at pos 10 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:40:28,326 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 338, el: CtIfImpl
+2019-04-12 02:40:28,327 INFO main - -->op: ReplaceIfBooleanOp: `if ((manager.reset(stepSt[...] ` ---> `if (true) { 	computeDeriv[...]` at pos 11 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:40:29,142 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 338, el: CtIfImpl
+2019-04-12 02:40:29,143 INFO main - -->op: ReplaceIfBooleanOp: `if ((manager.reset(stepSt[...] ` ---> `if (false) { 	computeDeri[...]` at pos 11 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:40:29,878 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 338, el: CtIfImpl
+2019-04-12 02:40:29,879 INFO main - -->op: RemoveOp: `if ((manager.reset(stepSt[...] ` ---> `-` at pos 11 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:40:30,487 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 344, el: CtIfImpl
+2019-04-12 02:40:30,650 INFO main - -->op: ReplaceIfBooleanOp: `if (!lastStep) { 	stepSiz[...] ` ---> `if (true) { 	stepSize = f[...]` at pos 12 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:40:31,308 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 344, el: CtIfImpl
+2019-04-12 02:40:31,373 INFO main - -->op: ReplaceIfBooleanOp: `if (!lastStep) { 	stepSiz[...] ` ---> `if (false) { 	stepSize = [...]` at pos 12 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:40:32,036 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 344, el: CtIfImpl
+2019-04-12 02:40:32,101 INFO main - -->op: RemoveOp: `if (!lastStep) { 	stepSiz[...] ` ---> `-` at pos 12 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:40:32,802 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 348, el: CtAssignmentImpl
+2019-04-12 02:40:32,802 INFO main - -->op: RemoveOp: `stepSize = filterStep(ste[...] ` ---> `-` at pos 0 of parent `{ 	stepSize = filterStep([...]`
+2019-04-12 02:40:33,483 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 351, el: CtLocalVariableImpl
+2019-04-12 02:40:33,483 INFO main - -->op: RemoveOp: `final double factor = jav[...] ` ---> `-` at pos 1 of parent `{ 	stepSize = filterStep([...]`
+2019-04-12 02:40:34,237 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 354, el: CtLocalVariableImpl
+2019-04-12 02:40:34,237 INFO main - -->op: RemoveOp: `final double scaledH = (s[...] ` ---> `-` at pos 2 of parent `{ 	stepSize = filterStep([...]`
+2019-04-12 02:40:34,945 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 355, el: CtLocalVariableImpl
+2019-04-12 02:40:34,945 INFO main - -->op: RemoveOp: `final double nextT = (ste[...] ` ---> `-` at pos 3 of parent `{ 	stepSize = filterStep([...]`
+2019-04-12 02:40:35,598 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 356, el: CtLocalVariableImpl
+2019-04-12 02:40:35,599 INFO main - -->op: RemoveOp: `final boolean nextIsLast [...] ` ---> `-` at pos 4 of parent `{ 	stepSize = filterStep([...]`
+2019-04-12 02:40:36,232 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 357, el: CtAssignmentImpl
+2019-04-12 02:40:36,409 INFO main - -->op: RemoveOp: `hNew = filterStep(scaledH[...] ` ---> `-` at pos 5 of parent `{ 	stepSize = filterStep([...]`
+2019-04-12 02:40:37,051 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 101, el: CtInvocationImpl
+2019-04-12 02:40:37,052 INFO main - -->op: RemoveOp: `setEquations(equations) ` ---> `-` at pos 1 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:37,698 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 102, el: CtInvocationImpl
+2019-04-12 02:40:37,825 INFO main - -->op: RemoveOp: `resetEvaluations() ` ---> `-` at pos 2 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:38,534 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 103, el: CtLocalVariableImpl
+2019-04-12 02:40:38,535 INFO main - -->op: RemoveOp: `final boolean forward = t[...] ` ---> `-` at pos 3 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:39,272 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 106, el: CtLocalVariableImpl
+2019-04-12 02:40:39,274 INFO main - -->op: RemoveOp: `final int stages = (c.len[...] ` ---> `-` at pos 4 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:39,911 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 107, el: CtIfImpl
+2019-04-12 02:40:39,912 INFO main - -->op: ReplaceIfBooleanOp: `if (y != y0) { 	java.lang[...] ` ---> `if (true) { 	java.lang.Sy[...]` at pos 5 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:40,654 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 107, el: CtIfImpl
+2019-04-12 02:40:40,655 INFO main - -->op: ReplaceIfBooleanOp: `if (y != y0) { 	java.lang[...] ` ---> `if (false) { 	java.lang.S[...]` at pos 5 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:41,395 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 107, el: CtIfImpl
+2019-04-12 02:40:41,396 INFO main - -->op: RemoveOp: `if (y != y0) { 	java.lang[...] ` ---> `-` at pos 5 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:42,048 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 108, el: CtInvocationImpl
+2019-04-12 02:40:42,149 INFO main - -->op: RemoveOp: `java.lang.System.arraycop[...] ` ---> `-` at pos 0 of parent `{ 	java.lang.System.array[...]`
+2019-04-12 02:40:42,866 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 110, el: CtLocalVariableImpl
+2019-04-12 02:40:42,867 INFO main - -->op: RemoveOp: `final double[][] yDotK = [...] ` ---> `-` at pos 6 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:43,611 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 111, el: CtForImpl
+2019-04-12 02:40:43,612 INFO main - -->op: RemoveOp: `for (int i = 0; i < stage[...] ` ---> `-` at pos 7 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:44,367 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 112, el: CtAssignmentImpl
+2019-04-12 02:40:44,367 INFO main - -->op: RemoveOp: `yDotK[i] = new double[y0.[...] ` ---> `-` at pos 0 of parent `{ 	yDotK[i] = new double[[...]`
+2019-04-12 02:40:45,016 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 114, el: CtLocalVariableImpl
+2019-04-12 02:40:45,117 INFO main - -->op: RemoveOp: `final double[] yTmp = new[...] ` ---> `-` at pos 8 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:45,786 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 118, el: CtIfImpl
+2019-04-12 02:40:45,788 INFO main - -->op: ReplaceIfBooleanOp: `if ((requiresDenseOutput([...] ` ---> `if (true) { 	final org.ap[...]` at pos 10 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:46,519 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 118, el: CtIfImpl
+2019-04-12 02:40:46,520 INFO main - -->op: ReplaceIfBooleanOp: `if ((requiresDenseOutput([...] ` ---> `if (false) { 	final org.a[...]` at pos 10 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:47,172 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 118, el: CtIfImpl
+2019-04-12 02:40:47,185 INFO main - -->op: RemoveOp: `if ((requiresDenseOutput([...] ` ---> `-` at pos 10 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:47,940 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 125, el: CtInvocationImpl
+2019-04-12 02:40:47,941 INFO main - -->op: RemoveOp: `interpolator.storeTime(t0[...] ` ---> `-` at pos 11 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:48,717 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 128, el: CtAssignmentImpl
+2019-04-12 02:40:48,718 INFO main - -->op: RemoveOp: `stepStart = t0 ` ---> `-` at pos 12 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:49,453 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 129, el: CtAssignmentImpl
+2019-04-12 02:40:49,454 INFO main - -->op: RemoveOp: `stepSize = (forward) ? st[...] ` ---> `-` at pos 13 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:50,139 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 130, el: CtForEachImpl
+2019-04-12 02:40:50,140 INFO main - -->op: RemoveOp: `for (org.apache.commons.m[...] ` ---> `-` at pos 14 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:50,812 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 133, el: CtLocalVariableImpl
+2019-04-12 02:40:50,821 INFO main - -->op: RemoveOp: `org.apache.commons.math.o[...] ` ---> `-` at pos 15 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:51,567 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 134, el: CtLocalVariableImpl
+2019-04-12 02:40:51,568 INFO main - -->op: RemoveOp: `boolean lastStep = false ` ---> `-` at pos 16 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:52,264 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 137, el: CtWhileImpl
+2019-04-12 02:40:52,358 INFO main - -->op: RemoveOp: `while (!lastStep) { 	inte[...] ` ---> `-` at pos 17 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:40:53,026 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 139, el: CtInvocationImpl
+2019-04-12 02:40:53,027 INFO main - -->op: RemoveOp: `interpolator.shift() ` ---> `-` at pos 0 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:40:53,628 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 141, el: CtForImpl
+2019-04-12 02:40:53,801 INFO main - -->op: RemoveOp: `for (boolean loop = true;[...] ` ---> `-` at pos 1 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:40:54,483 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 144, el: CtInvocationImpl
+2019-04-12 02:40:54,545 INFO main - -->op: RemoveOp: `computeDerivatives(stepSt[...] ` ---> `-` at pos 0 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 02:40:55,187 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 147, el: CtForImpl
+2019-04-12 02:40:55,187 INFO main - -->op: RemoveOp: `for (int k = 1; k < stage[...] ` ---> `-` at pos 1 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 02:40:55,856 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 162, el: CtForImpl
+2019-04-12 02:40:55,941 INFO main - -->op: RemoveOp: `for (int j = 0; j < (y0.l[...] ` ---> `-` at pos 2 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 02:40:56,582 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 163, el: CtLocalVariableImpl
+2019-04-12 02:40:56,583 INFO main - -->op: RemoveOp: `double sum = (b[0]) * (yD[...] ` ---> `-` at pos 0 of parent `{ 	double sum = (b[0]) * [...]`
+2019-04-12 02:40:57,244 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 164, el: CtForImpl
+2019-04-12 02:40:57,261 INFO main - -->op: RemoveOp: `for (int l = 1; l < stage[...] ` ---> `-` at pos 1 of parent `{ 	double sum = (b[0]) * [...]`
+2019-04-12 02:40:57,986 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 167, el: CtAssignmentImpl
+2019-04-12 02:40:57,987 INFO main - -->op: RemoveOp: `yTmp[j] = (y[j]) + ((step[...] ` ---> `-` at pos 2 of parent `{ 	double sum = (b[0]) * [...]`
+2019-04-12 02:40:58,552 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 171, el: CtInvocationImpl
+2019-04-12 02:40:58,685 INFO main - -->op: RemoveOp: `interpolator.storeTime((([...] ` ---> `-` at pos 3 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 02:40:59,350 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 172, el: CtIfImpl
+2019-04-12 02:40:59,350 INFO main - -->op: ReplaceIfBooleanOp: `if (manager.evaluateStep([...] ` ---> `if (true) { 	final double[...]` at pos 4 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 02:41:00,106 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 172, el: CtIfImpl
+2019-04-12 02:41:00,106 INFO main - -->op: ReplaceIfBooleanOp: `if (manager.evaluateStep([...] ` ---> `if (false) { 	final doubl[...]` at pos 4 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 02:41:00,716 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 172, el: CtIfImpl
+2019-04-12 02:41:00,733 INFO main - -->op: RemoveOp: `if (manager.evaluateStep([...] ` ---> `-` at pos 4 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 02:41:01,461 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 173, el: CtLocalVariableImpl
+2019-04-12 02:41:01,462 INFO main - -->op: RemoveOp: `final double dt = (manage[...] ` ---> `-` at pos 0 of parent `{ 	final double dt = (man[...]`
+2019-04-12 02:41:02,108 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 174, el: CtIfImpl
+2019-04-12 02:41:02,177 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(d[...] ` ---> `if (true) 	loop = false; [...]` at pos 1 of parent `{ 	final double dt = (man[...]`
+2019-04-12 02:41:02,870 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 174, el: CtIfImpl
+2019-04-12 02:41:02,870 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(d[...] ` ---> `if (false) 	loop = false;[...]` at pos 1 of parent `{ 	final double dt = (man[...]`
+2019-04-12 02:41:03,581 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 174, el: CtIfImpl
+2019-04-12 02:41:03,582 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(d[...] ` ---> `-` at pos 1 of parent `{ 	final double dt = (man[...]`
+2019-04-12 02:41:04,147 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 183, el: CtAssignmentImpl
+2019-04-12 02:41:04,313 INFO main - -->op: RemoveOp: `stepSize = dt ` ---> `-` at pos 0 of parent `{ 	stepSize = dt; }`
+2019-04-12 02:41:04,959 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 186, el: CtAssignmentImpl
+2019-04-12 02:41:04,959 INFO main - -->op: RemoveOp: `loop = false ` ---> `-` at pos 0 of parent `{ 	loop = false; }`
+2019-04-12 02:41:05,709 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 192, el: CtLocalVariableImpl
+2019-04-12 02:41:05,710 INFO main - -->op: RemoveOp: `final double nextStep = ([...] ` ---> `-` at pos 2 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:06,425 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 193, el: CtInvocationImpl
+2019-04-12 02:41:06,425 INFO main - -->op: RemoveOp: `java.lang.System.arraycop[...] ` ---> `-` at pos 3 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:07,127 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 194, el: CtInvocationImpl
+2019-04-12 02:41:07,128 INFO main - -->op: RemoveOp: `manager.stepAccepted(next[...] ` ---> `-` at pos 4 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:07,896 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 195, el: CtAssignmentImpl
+2019-04-12 02:41:07,897 INFO main - -->op: RemoveOp: `lastStep = manager.stop() ` ---> `-` at pos 5 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:08,613 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 198, el: CtInvocationImpl
+2019-04-12 02:41:08,613 INFO main - -->op: RemoveOp: `interpolator.storeTime(ne[...] ` ---> `-` at pos 6 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:09,325 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 199, el: CtForEachImpl
+2019-04-12 02:41:09,325 INFO main - -->op: RemoveOp: `for (org.apache.commons.m[...] ` ---> `-` at pos 7 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:10,038 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 202, el: CtAssignmentImpl
+2019-04-12 02:41:10,039 INFO main - -->op: RemoveOp: `stepStart = nextStep ` ---> `-` at pos 8 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:10,763 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 204, el: CtIfImpl
+2019-04-12 02:41:10,763 INFO main - -->op: ReplaceIfBooleanOp: `if ((manager.reset(stepSt[...] ` ---> `if (true) { 	computeDeriv[...]` at pos 9 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:11,491 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 204, el: CtIfImpl
+2019-04-12 02:41:11,492 INFO main - -->op: ReplaceIfBooleanOp: `if ((manager.reset(stepSt[...] ` ---> `if (false) { 	computeDeri[...]` at pos 9 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:12,215 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 204, el: CtIfImpl
+2019-04-12 02:41:12,215 INFO main - -->op: RemoveOp: `if ((manager.reset(stepSt[...] ` ---> `-` at pos 9 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:12,953 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 211, el: CtAssignmentImpl
+2019-04-12 02:41:12,954 INFO main - -->op: RemoveOp: `stepSize = (forward) ? st[...] ` ---> `-` at pos 10 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:13,595 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 215, el: CtLocalVariableImpl
+2019-04-12 02:41:13,596 INFO main - -->op: RemoveOp: `final double stopTime = s[...] ` ---> `-` at pos 18 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:41:14,365 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 216, el: CtAssignmentImpl
+2019-04-12 02:41:14,366 INFO main - -->op: RemoveOp: `stepStart = java.lang.Dou[...] ` ---> `-` at pos 19 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:41:15,078 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 217, el: CtAssignmentImpl
+2019-04-12 02:41:15,079 INFO main - -->op: RemoveOp: `stepSize = java.lang.Doub[...] ` ---> `-` at pos 20 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:41:15,837 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 218, el: CtReturnImpl
+2019-04-12 02:41:15,838 INFO main - -->op: RemoveOp: `return stopTime ` ---> `-` at pos 21 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:41:16,515 INFO main - mod_point ModificPoint=RungeKuttaIntegrator line: 100, el: CtInvocationImpl
+2019-04-12 02:41:16,516 INFO main - -->op: RemoveOp: `sanityChecks(equations, t[...] ` ---> `-` at pos 0 of parent `{ 	sanityChecks(equations[...]`
+2019-04-12 02:41:17,255 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 247, el: CtForImpl
+2019-04-12 02:41:17,255 INFO main - -->op: RemoveOp: `for (int i = 0; i < (scal[...] ` ---> `-` at pos 0 of parent `{ 	for (int i = 0; i < (s[...]`
+2019-04-12 02:41:18,006 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 248, el: CtAssignmentImpl
+2019-04-12 02:41:18,006 INFO main - -->op: RemoveOp: `scale[i] = (scalAbsoluteT[...] ` ---> `-` at pos 0 of parent `{ 	scale[i] = (scalAbsolu[...]`
+2019-04-12 02:41:18,725 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 205, el: CtInvocationImpl
+2019-04-12 02:41:18,725 INFO main - -->op: RemoveOp: `java.lang.System.arraycop[...] ` ---> `-` at pos 0 of parent `{ 	java.lang.System.array[...]`
+2019-04-12 02:41:19,352 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 291, el: CtInvocationImpl
+2019-04-12 02:41:19,421 INFO main - -->op: RemoveOp: `interpolator.storeTime((([...] ` ---> `-` at pos 0 of parent `{ 	interpolator.storeTime[...]`
+2019-04-12 02:41:20,083 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 292, el: CtIfImpl
+2019-04-12 02:41:20,084 INFO main - -->op: ReplaceIfBooleanOp: `if (manager.evaluateStep([...] ` ---> `if (true) { 	final double[...]` at pos 1 of parent `{ 	interpolator.storeTime[...]`
+2019-04-12 02:41:20,811 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 292, el: CtIfImpl
+2019-04-12 02:41:20,811 INFO main - -->op: ReplaceIfBooleanOp: `if (manager.evaluateStep([...] ` ---> `if (false) { 	final doubl[...]` at pos 1 of parent `{ 	interpolator.storeTime[...]`
+2019-04-12 02:41:21,522 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 292, el: CtIfImpl
+2019-04-12 02:41:21,523 INFO main - -->op: RemoveOp: `if (manager.evaluateStep([...] ` ---> `-` at pos 1 of parent `{ 	interpolator.storeTime[...]`
+2019-04-12 02:41:22,164 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 307, el: CtAssignmentImpl
+2019-04-12 02:41:22,257 INFO main - -->op: RemoveOp: `loop = false ` ---> `-` at pos 0 of parent `{ 	loop = false; }`
+2019-04-12 02:41:22,918 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 321, el: CtLocalVariableImpl
+2019-04-12 02:41:22,919 INFO main - -->op: RemoveOp: `final double nextStep = ([...] ` ---> `-` at pos 3 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:23,600 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 322, el: CtInvocationImpl
+2019-04-12 02:41:23,694 INFO main - -->op: RemoveOp: `java.lang.System.arraycop[...] ` ---> `-` at pos 4 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:24,356 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 323, el: CtInvocationImpl
+2019-04-12 02:41:24,365 INFO main - -->op: RemoveOp: `manager.stepAccepted(next[...] ` ---> `-` at pos 5 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:25,134 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 324, el: CtAssignmentImpl
+2019-04-12 02:41:25,135 INFO main - -->op: RemoveOp: `lastStep = manager.stop() ` ---> `-` at pos 6 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:25,764 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 327, el: CtInvocationImpl
+2019-04-12 02:41:25,853 INFO main - -->op: RemoveOp: `interpolator.storeTime(ne[...] ` ---> `-` at pos 7 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:26,508 INFO main - mod_point ModificPoint=EmbeddedRungeKuttaIntegrator line: 328, el: CtForEachImpl
+2019-04-12 02:41:26,517 INFO main - -->op: RemoveOp: `for (org.apache.commons.m[...] ` ---> `-` at pos 8 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 02:41:27,254 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-12 02:41:27,255 INFO main - 
+successful_ing_attempts (0): []
+2019-04-12 02:41:27,255 INFO main - 
+failing_ing_attempts (368): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 02:41:27,255 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 5567.056
+[DONE]
