@@ -27,7 +27,8 @@ fi
 #build astor
 echo -e "[\e[35mBUILD\e[39m] astor in $2" |& tee -a "$runSummary"
 cd $2
-mvn clean compile
+mvn clean 
+mvn compile
 
 # iterate over all tests given in the directory
 for currenttest in $tests; do
