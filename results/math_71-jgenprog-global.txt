@@ -1,138 +1,1578 @@
-2019-04-12 03:57:00,686 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jgenprog  -scope  global  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan_gerling/astor/defect4j_tests/math_71/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.1  -maxtime  100  -stopfirst  true]
-2019-04-12 03:57:35,973 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//bin//default from 234 classes with test cases
-2019-04-12 03:57:35,973 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.1
-2019-04-12 03:58:00,574 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//bin//default]
-2019-04-12 04:04:12,369 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testMissedEndEvent
-2019-04-12 04:04:12,371 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testMissedEndEvent
-2019-04-12 04:04:12,376 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2169, fails: 2, GZoltar suspicious 17015
-2019-04-12 04:04:13,137 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 315 with susp > 0.1, we consider: 315
-2019-04-12 04:04:13,446 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//src//default, compliance level: 8
-2019-04-12 04:08:08,675 INFO main - 
----- Initial suspicious size: 315
-2019-04-12 04:08:09,304 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=231, susp=1.0]
-2019-04-12 04:08:10,541 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{setInitialStepSize(D)V 0.0, lineNumber=155, susp=0.5]
-2019-04-12 04:08:11,013 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.DummyStepInterpolator, methodName=org.apache.commons.math.ode.sampling.DummyStepInterpolator{computeInterpolatedStateAndDerivatives(DD)V 0.0, lineNumber=109, susp=0.2672612419124244]
-2019-04-12 04:08:15,034 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{access$000(Lorg/apache/commons/math/ode/events/EventState;)Lorg/apache/commons/math/ode/events/EventHandler; 0.0, lineNumber=42, susp=0.1466471150213533]
-2019-04-12 04:08:15,409 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=143, susp=0.14509525002200233]
-2019-04-12 04:08:15,586 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=168, susp=0.14509525002200233]
-2019-04-12 04:08:15,704 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=204, susp=0.14509525002200233]
-2019-04-12 04:08:15,796 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stop()Z 0.0, lineNumber=219, susp=0.14509525002200233]
-2019-04-12 04:08:15,814 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{reset(D[D)Z 0.0, lineNumber=240, susp=0.14509525002200233]
-2019-04-12 04:08:16,606 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{reinitializeBegin(D[D)V 0.0, lineNumber=154, susp=0.14433756729740646]
-2019-04-12 04:08:18,403 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{stepAccepted(D[D)V 0.0, lineNumber=308, susp=0.14433756729740646]
-2019-04-12 04:08:18,856 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{addEndTimeChecker(DDLorg/apache/commons/math/ode/events/CombinedEventsManager;)Lorg/apache/commons/math/ode/events/CombinedEventsManager; 0.0, lineNumber=242, susp=0.1421338109037403]
-2019-04-12 04:08:21,044 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{addEventHandler(Lorg/apache/commons/math/ode/events/EventHandler;DDI)V 0.0, lineNumber=73, susp=0.14071950894605836]
-2019-04-12 04:08:21,207 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=207, susp=0.14002800840280097]
-2019-04-12 04:08:21,208 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=208, susp=0.14002800840280097]
-2019-04-12 04:08:21,480 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{setMaximalIterationCount(I)V 0.0, lineNumber=94, susp=0.14002800840280097]
-2019-04-12 04:08:21,769 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{computeDerivatives(D[D[D)V 0.0, lineNumber=183, susp=0.13608276348795434]
-2019-04-12 04:08:21,772 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{setEquations(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;)V 0.0, lineNumber=168, susp=0.13545709229571928]
-2019-04-12 04:08:22,124 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{sanityChecks(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)V 0.0, lineNumber=218, susp=0.13483997249264842]
-2019-04-12 04:08:22,699 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{shift()V 0.0, lineNumber=212, susp=0.13018891098082389]
-2019-04-12 04:08:22,867 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{storeTime(D)V 0.0, lineNumber=226, susp=0.13018891098082389]
-2019-04-12 04:08:22,870 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{setInterpolatedTime(D)V 0.0, lineNumber=247, susp=0.13018891098082389]
-2019-04-12 04:08:23,005 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{setAbsoluteAccuracy(D)V 0.0, lineNumber=79, susp=0.13018891098082389]
-2019-04-12 04:08:23,775 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=317, susp=0.12649110640673517]
-2019-04-12 04:08:23,969 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{setMaxEvaluations(I)V 0.0, lineNumber=144, susp=0.1259881576697424]
-2019-04-12 04:08:23,978 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{resetEvaluations()V 0.0, lineNumber=160, susp=0.1259881576697424]
-2019-04-12 04:08:24,174 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=283, susp=0.1259881576697424]
-2019-04-12 04:08:24,471 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=289, susp=0.1259881576697424]
-2019-04-12 04:08:24,843 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=347, susp=0.1259881576697424]
-2019-04-12 04:08:26,497 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{clearResult()V 0.0, lineNumber=167, susp=0.1203858530857692]
-2019-04-12 04:08:26,830 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{setResult(DI)V 0.0, lineNumber=144, susp=0.11547005383792514]
-2019-04-12 04:08:27,197 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=305, susp=0.11470786693528087]
-2019-04-12 04:08:27,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{verifyInterval(DD)V 0.0, lineNumber=213, susp=0.11396057645963795]
-2019-04-12 04:08:27,950 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=353, susp=0.11180339887498948]
-2019-04-12 04:08:28,192 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=360, susp=0.11180339887498948]
-2019-04-12 04:08:30,513 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=185, susp=0.10783277320343841]
-2019-04-12 04:08:30,978 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=213, susp=0.10783277320343841]
-2019-04-12 04:08:32,005 INFO main - Total suspicious from FL: 315,  278
-2019-04-12 04:08:32,005 INFO main - Total ModPoint created: 278
-2019-04-12 04:08:32,005 INFO main - Creating program variant #1, [Variant id: 1, #gens: 278, #ops: 0, parent:-]
-2019-04-12 04:08:32,087 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=231, susp=1.0]
-2019-04-12 04:08:32,559 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{setInitialStepSize(D)V 0.0, lineNumber=155, susp=0.5]
-2019-04-12 04:08:32,755 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.DummyStepInterpolator, methodName=org.apache.commons.math.ode.sampling.DummyStepInterpolator{computeInterpolatedStateAndDerivatives(DD)V 0.0, lineNumber=109, susp=0.2672612419124244]
-2019-04-12 04:08:35,573 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{access$000(Lorg/apache/commons/math/ode/events/EventState;)Lorg/apache/commons/math/ode/events/EventHandler; 0.0, lineNumber=42, susp=0.1466471150213533]
-2019-04-12 04:08:35,861 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=143, susp=0.14509525002200233]
-2019-04-12 04:08:36,054 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=168, susp=0.14509525002200233]
-2019-04-12 04:08:36,057 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=204, susp=0.14509525002200233]
-2019-04-12 04:08:36,110 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stop()Z 0.0, lineNumber=219, susp=0.14509525002200233]
-2019-04-12 04:08:36,230 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{reset(D[D)Z 0.0, lineNumber=240, susp=0.14509525002200233]
-2019-04-12 04:08:36,695 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{reinitializeBegin(D[D)V 0.0, lineNumber=154, susp=0.14433756729740646]
-2019-04-12 04:08:38,351 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{stepAccepted(D[D)V 0.0, lineNumber=308, susp=0.14433756729740646]
-2019-04-12 04:08:38,793 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{addEndTimeChecker(DDLorg/apache/commons/math/ode/events/CombinedEventsManager;)Lorg/apache/commons/math/ode/events/CombinedEventsManager; 0.0, lineNumber=242, susp=0.1421338109037403]
-2019-04-12 04:08:40,566 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{addEventHandler(Lorg/apache/commons/math/ode/events/EventHandler;DDI)V 0.0, lineNumber=73, susp=0.14071950894605836]
-2019-04-12 04:08:40,570 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=207, susp=0.14002800840280097]
-2019-04-12 04:08:40,622 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=208, susp=0.14002800840280097]
-2019-04-12 04:08:40,814 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{setMaximalIterationCount(I)V 0.0, lineNumber=94, susp=0.14002800840280097]
-2019-04-12 04:08:41,020 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{computeDerivatives(D[D[D)V 0.0, lineNumber=183, susp=0.13608276348795434]
-2019-04-12 04:08:41,042 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{setEquations(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;)V 0.0, lineNumber=168, susp=0.13545709229571928]
-2019-04-12 04:08:41,443 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{sanityChecks(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)V 0.0, lineNumber=218, susp=0.13483997249264842]
-2019-04-12 04:08:41,985 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{shift()V 0.0, lineNumber=212, susp=0.13018891098082389]
-2019-04-12 04:08:42,084 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{storeTime(D)V 0.0, lineNumber=226, susp=0.13018891098082389]
-2019-04-12 04:08:42,104 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{setInterpolatedTime(D)V 0.0, lineNumber=247, susp=0.13018891098082389]
-2019-04-12 04:08:42,274 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{setAbsoluteAccuracy(D)V 0.0, lineNumber=79, susp=0.13018891098082389]
-2019-04-12 04:08:42,938 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=317, susp=0.12649110640673517]
-2019-04-12 04:08:42,943 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{setMaxEvaluations(I)V 0.0, lineNumber=144, susp=0.1259881576697424]
-2019-04-12 04:08:43,078 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{resetEvaluations()V 0.0, lineNumber=160, susp=0.1259881576697424]
-2019-04-12 04:08:43,084 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=283, susp=0.1259881576697424]
-2019-04-12 04:08:43,443 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=289, susp=0.1259881576697424]
-2019-04-12 04:08:43,740 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=347, susp=0.1259881576697424]
-2019-04-12 04:08:45,307 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{clearResult()V 0.0, lineNumber=167, susp=0.1203858530857692]
-2019-04-12 04:08:45,720 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{setResult(DI)V 0.0, lineNumber=144, susp=0.11547005383792514]
-2019-04-12 04:08:46,010 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=305, susp=0.11470786693528087]
-2019-04-12 04:08:46,235 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{verifyInterval(DD)V 0.0, lineNumber=213, susp=0.11396057645963795]
-2019-04-12 04:08:46,710 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=353, susp=0.11180339887498948]
-2019-04-12 04:08:46,997 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=360, susp=0.11180339887498948]
-2019-04-12 04:08:48,994 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=185, susp=0.10783277320343841]
-2019-04-12 04:08:49,468 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=213, susp=0.10783277320343841]
-2019-04-12 04:08:50,473 INFO main - Total suspicious from FL: 315,  278
-2019-04-12 04:08:50,474 INFO main - Total ModPoint created: 278
-2019-04-12 04:08:50,474 INFO main - Creating program variant #2, [Variant id: 2, #gens: 278, #ops: 0, parent:-]
-2019-04-12 04:08:50,479 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=231, susp=1.0]
-2019-04-12 04:08:51,022 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{setInitialStepSize(D)V 0.0, lineNumber=155, susp=0.5]
-2019-04-12 04:08:51,113 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.DummyStepInterpolator, methodName=org.apache.commons.math.ode.sampling.DummyStepInterpolator{computeInterpolatedStateAndDerivatives(DD)V 0.0, lineNumber=109, susp=0.2672612419124244]
-2019-04-12 04:08:53,920 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{access$000(Lorg/apache/commons/math/ode/events/EventState;)Lorg/apache/commons/math/ode/events/EventHandler; 0.0, lineNumber=42, susp=0.1466471150213533]
-2019-04-12 04:08:54,117 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=143, susp=0.14509525002200233]
-2019-04-12 04:08:54,320 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=168, susp=0.14509525002200233]
-2019-04-12 04:08:54,327 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=204, susp=0.14509525002200233]
-2019-04-12 04:08:54,474 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stop()Z 0.0, lineNumber=219, susp=0.14509525002200233]
-2019-04-12 04:08:54,476 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{reset(D[D)Z 0.0, lineNumber=240, susp=0.14509525002200233]
-2019-04-12 04:08:54,960 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{reinitializeBegin(D[D)V 0.0, lineNumber=154, susp=0.14433756729740646]
-2019-04-12 04:08:56,476 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{stepAccepted(D[D)V 0.0, lineNumber=308, susp=0.14433756729740646]
-2019-04-12 04:08:56,885 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{addEndTimeChecker(DDLorg/apache/commons/math/ode/events/CombinedEventsManager;)Lorg/apache/commons/math/ode/events/CombinedEventsManager; 0.0, lineNumber=242, susp=0.1421338109037403]
-2019-04-12 04:08:58,442 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{addEventHandler(Lorg/apache/commons/math/ode/events/EventHandler;DDI)V 0.0, lineNumber=73, susp=0.14071950894605836]
-2019-04-12 04:08:58,446 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=207, susp=0.14002800840280097]
-2019-04-12 04:08:58,573 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=208, susp=0.14002800840280097]
-2019-04-12 04:08:58,668 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{setMaximalIterationCount(I)V 0.0, lineNumber=94, susp=0.14002800840280097]
-2019-04-12 04:08:58,855 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{computeDerivatives(D[D[D)V 0.0, lineNumber=183, susp=0.13608276348795434]
-2019-04-12 04:08:58,857 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{setEquations(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;)V 0.0, lineNumber=168, susp=0.13545709229571928]
-2019-04-12 04:08:59,237 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{sanityChecks(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)V 0.0, lineNumber=218, susp=0.13483997249264842]
-2019-04-12 04:08:59,623 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{shift()V 0.0, lineNumber=212, susp=0.13018891098082389]
-2019-04-12 04:08:59,817 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{storeTime(D)V 0.0, lineNumber=226, susp=0.13018891098082389]
-2019-04-12 04:08:59,820 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{setInterpolatedTime(D)V 0.0, lineNumber=247, susp=0.13018891098082389]
-2019-04-12 04:08:59,838 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{setAbsoluteAccuracy(D)V 0.0, lineNumber=79, susp=0.13018891098082389]
-2019-04-12 04:09:00,524 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=317, susp=0.12649110640673517]
-2019-04-12 04:09:00,714 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{setMaxEvaluations(I)V 0.0, lineNumber=144, susp=0.1259881576697424]
-2019-04-12 04:09:00,716 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{resetEvaluations()V 0.0, lineNumber=160, susp=0.1259881576697424]
-2019-04-12 04:09:00,890 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=283, susp=0.1259881576697424]
-2019-04-12 04:09:01,072 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=289, susp=0.1259881576697424]
-2019-04-12 04:09:01,437 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=347, susp=0.1259881576697424]
-2019-04-12 04:09:02,782 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{clearResult()V 0.0, lineNumber=167, susp=0.1203858530857692]
-2019-04-12 04:09:03,261 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{setResult(DI)V 0.0, lineNumber=144, susp=0.11547005383792514]
-2019-04-12 04:09:03,460 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=305, susp=0.11470786693528087]
-2019-04-12 04:09:03,648 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{verifyInterval(DD)V 0.0, lineNumber=213, susp=0.11396057645963795]
-2019-04-12 04:09:04,189 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=353, susp=0.11180339887498948]
-2019-04-12 04:09:04,376 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=360, susp=0.11180339887498948]
-2019-04-12 04:09:06,550 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=185, susp=0.10783277320343841]
-2019-04-12 04:09:06,948 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=213, susp=0.10783277320343841]
-2019-04-12 04:09:07,905 INFO main - Total suspicious from FL: 315,  278
-2019-04-12 04:09:07,907 INFO main - Total ModPoint created: 278
-2019-04-12 04:09:07,907 INFO main - Creating program variant #3, [Variant id: 3, #gens: 278, #ops: 0, parent:-]
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x000000075af00000, 362807296, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 362807296 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/jan_gerling/astor/hs_err_pid29792.log
+2019-04-12 15:07:34,334 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jgenprog  -scope  global  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests/math_71/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-12 15:08:00,250 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//bin//default from 234 classes with test cases
+2019-04-12 15:08:00,251 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-12 15:08:16,230 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//bin//default]
+2019-04-12 15:12:35,947 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testMissedEndEvent
+2019-04-12 15:12:36,051 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testMissedEndEvent
+2019-04-12 15:12:36,116 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2169, fails: 2, GZoltar suspicious 17016
+2019-04-12 15:12:36,326 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 7 with susp > 0.5, we consider: 7
+2019-04-12 15:12:36,595 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//src//default, compliance level: 8
+2019-04-12 15:14:56,023 INFO main - 
+---- Initial suspicious size: 7
+2019-04-12 15:14:56,419 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=231, susp=1.0]
+2019-04-12 15:14:57,209 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{setInitialStepSize(D)V 0.0, lineNumber=155, susp=0.5]
+2019-04-12 15:14:57,292 INFO main - Total suspicious from FL: 7,  5
+2019-04-12 15:14:57,293 INFO main - Total ModPoint created: 5
+2019-04-12 15:14:57,293 INFO main - Creating program variant #1, [Variant id: 1, #gens: 5, #ops: 0, parent:-]
+2019-04-12 15:14:57,523 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=231, susp=1.0]
+2019-04-12 15:14:58,153 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{setInitialStepSize(D)V 0.0, lineNumber=155, susp=0.5]
+2019-04-12 15:14:58,221 INFO main - Total suspicious from FL: 7,  5
+2019-04-12 15:14:58,222 INFO main - Total ModPoint created: 5
+2019-04-12 15:14:58,222 INFO main - Creating program variant #2, [Variant id: 2, #gens: 5, #ops: 0, parent:-]
+2019-04-12 15:14:58,324 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=231, susp=1.0]
+2019-04-12 15:14:58,887 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{setInitialStepSize(D)V 0.0, lineNumber=155, susp=0.5]
+2019-04-12 15:14:59,004 INFO main - Total suspicious from FL: 7,  5
+2019-04-12 15:14:59,004 INFO main - Total ModPoint created: 5
+2019-04-12 15:14:59,004 INFO main - Creating program variant #3, [Variant id: 3, #gens: 5, #ops: 0, parent:-]
+2019-04-12 15:57:46,040 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 15:57:46,105 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-12 15:57:46,106 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-12 15:57:46,107 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-12 15:57:46,107 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-12 15:57:46,107 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-12 15:57:46,107 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-12 15:57:46,108 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-12 15:57:46,108 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-12 15:57:46,108 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-12 15:57:46,108 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-12 15:57:46,108 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-12 15:57:46,117 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-12 15:57:46,117 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-12 15:57:46,117 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-12 15:57:46,117 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jgenprog
+2019-04-12 15:57:46,117 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-12 15:57:46,117 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-12 15:57:46,117 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-12 15:57:46,117 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= defect4j_tests/math_71/
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-12 15:57:46,118 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-12 15:57:46,190 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 15:57:46,191 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-12 15:57:46,191 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-12 15:57:46,191 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= global
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 3
+2019-04-12 15:57:46,192 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-12 15:57:46,193 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-12 15:57:46,193 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-12 15:57:46,193 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-12 15:57:46,193 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-12 15:57:46,193 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-12 15:57:46,193 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-12 15:57:46,193 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-12 15:57:46,197 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-12 15:57:46,197 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-12 15:57:46,197 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 15:57:46,197 INFO main - 
+----Starting Solution Search
+2019-04-12 15:58:33,252 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-12 15:58:33,252 ERROR main - Undo Error: original: 
+public abstract class AdaptiveStepsizeIntegrator extends org.apache.commons.math.ode.AbstractIntegrator {
+	protected final double scalAbsoluteTolerance;
+
+	protected final double scalRelativeTolerance;
+
+	protected final double[] vecAbsoluteTolerance;
+
+	protected final double[] vecRelativeTolerance;
+
+	private double initialStep;
+
+	private final double minStep;
+
+	private final double maxStep;
+
+	public AdaptiveStepsizeIntegrator(final java.lang.String name, final double minStep, final double maxStep, final double scalAbsoluteTolerance, final double scalRelativeTolerance) {
+		super(name);
+		this.minStep = java.lang.Math.abs(minStep);
+		this.maxStep = java.lang.Math.abs(maxStep);
+		this.initialStep = -1.0;
+		this.scalAbsoluteTolerance = scalAbsoluteTolerance;
+		this.scalRelativeTolerance = scalRelativeTolerance;
+		this.vecAbsoluteTolerance = null;
+		this.vecRelativeTolerance = null;
+		resetInternalState();
+	}
+
+	public AdaptiveStepsizeIntegrator(final java.lang.String name, final double minStep, final double maxStep, final double[] vecAbsoluteTolerance, final double[] vecRelativeTolerance) {
+		super(name);
+		this.minStep = minStep;
+		this.maxStep = maxStep;
+		this.initialStep = -1.0;
+		this.scalAbsoluteTolerance = 0;
+		this.scalRelativeTolerance = 0;
+		this.vecAbsoluteTolerance = vecAbsoluteTolerance.clone();
+		this.vecRelativeTolerance = vecRelativeTolerance.clone();
+		resetInternalState();
+	}
+
+	public void setInitialStepSize(final double initialStepSize) {
+		if ((initialStepSize < (minStep)) || (initialStepSize > (maxStep))) {
+			initialStep = -1.0;
+		}else {
+			initialStep = initialStepSize;
+		}
+	}
+
+	@java.lang.Override
+	protected void sanityChecks(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.IntegratorException {
+		super.sanityChecks(equations, t0, y0, t, y);
+		if (((vecAbsoluteTolerance) != null) && ((vecAbsoluteTolerance.length) != (y0.length))) {
+			throw new org.apache.commons.math.ode.IntegratorException(("dimensions mismatch: state vector has dimension {0}," + " absolute tolerance vector has dimension {1}"), y0.length, vecAbsoluteTolerance.length);
+		}
+		if (((vecRelativeTolerance) != null) && ((vecRelativeTolerance.length) != (y0.length))) {
+			throw new org.apache.commons.math.ode.IntegratorException(("dimensions mismatch: state vector has dimension {0}," + " relative tolerance vector has dimension {1}"), y0.length, vecRelativeTolerance.length);
+		}
+	}
+
+	public double initializeStep(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final boolean forward, final int order, final double[] scale, final double t0, final double[] y0, final double[] yDot0, final double[] y1, final double[] yDot1) throws org.apache.commons.math.ode.DerivativeException {
+		if ((initialStep) > 0) {
+			return forward ? initialStep : -(initialStep);
+		}
+		double ratio;
+		double yOnScale2 = 0;
+		double yDotOnScale2 = 0;
+		for (int j = 0; j < (y0.length); ++j) {
+			ratio = (y0[j]) / (scale[j]);
+			yOnScale2 += ratio * ratio;
+			ratio = (yDot0[j]) / (scale[j]);
+			yDotOnScale2 += ratio * ratio;
+		}
+		double h = ((yOnScale2 < 1.0E-10) || (yDotOnScale2 < 1.0E-10)) ? 1.0E-6 : 0.01 * (java.lang.Math.sqrt((yOnScale2 / yDotOnScale2)));
+		if (!forward) {
+			h = -h;
+		}
+		for (int j = 0; j < (y0.length); ++j) {
+			y1[j] = (y0[j]) + (h * (yDot0[j]));
+		}
+		computeDerivatives((t0 + h), y1, yDot1);
+		double yDDotOnScale = 0;
+		for (int j = 0; j < (y0.length); ++j) {
+			ratio = ((yDot1[j]) - (yDot0[j])) / (scale[j]);
+			yDDotOnScale += ratio * ratio;
+		}
+		yDDotOnScale = (java.lang.Math.sqrt(yDDotOnScale)) / h;
+		final double maxInv2 = java.lang.Math.max(java.lang.Math.sqrt(yDotOnScale2), yDDotOnScale);
+		final double h1 = (maxInv2 < 1.0E-15) ? java.lang.Math.max(1.0E-6, (0.001 * (java.lang.Math.abs(h)))) : java.lang.Math.pow((0.01 / maxInv2), (1.0 / order));
+		h = java.lang.Math.min((100.0 * (java.lang.Math.abs(h))), h1);
+		h = java.lang.Math.max(h, (1.0E-12 * (java.lang.Math.abs(t0))));
+		if (h < (getMinStep())) {
+			h = getMinStep();
+		}
+		if (h > (getMaxStep())) {
+			h = getMaxStep();
+		}
+		if (!forward) {
+			h = -h;
+		}
+		return h;
+	}
+
+	protected double filterStep(final double h, final boolean forward, final boolean acceptSmall) throws org.apache.commons.math.ode.IntegratorException {
+		double filteredH = h;
+		if ((java.lang.Math.abs(h)) < (minStep)) {
+			if (acceptSmall) {
+				filteredH = (forward) ? minStep : -(minStep);
+			}else {
+				throw new org.apache.commons.math.ode.IntegratorException("minimal step size ({0,number,0.00E00}) reached, integration needs {1,number,0.00E00}", minStep, java.lang.Math.abs(h));
+			}
+		}
+		if (filteredH > (maxStep)) {
+			filteredH = maxStep;
+		}else
+			if (filteredH < (-(maxStep))) {
+				filteredH = -(maxStep);
+			}
+		
+		return filteredH;
+	}
+
+	public abstract double integrate(org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, double t0, double[] y0, double t, double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException;
+
+	@java.lang.Override
+	public double getCurrentStepStart() {
+		return stepStart;
+	}
+
+	protected void resetInternalState() {
+		stepStart = java.lang.Double.NaN;
+		stepSize = java.lang.Math.sqrt(((minStep) * (maxStep)));
+	}
+
+	public double getMinStep() {
+		return minStep;
+	}
+
+	public double getMaxStep() {
+		return maxStep;
+	}
+}
+2019-04-12 15:58:33,254 ERROR main - Undo Error: modified: 
+public abstract class AdaptiveStepsizeIntegrator extends org.apache.commons.math.ode.AbstractIntegrator {
+	protected final double scalAbsoluteTolerance;
+
+	protected final double scalRelativeTolerance;
+
+	protected final double[] vecAbsoluteTolerance;
+
+	protected final double[] vecRelativeTolerance;
+
+	private double initialStep;
+
+	private final double minStep;
+
+	private final double maxStep;
+
+	public AdaptiveStepsizeIntegrator(final java.lang.String name, final double minStep, final double maxStep, final double scalAbsoluteTolerance, final double scalRelativeTolerance) {
+		super(name);
+		this.minStep = java.lang.Math.abs(minStep);
+		this.maxStep = java.lang.Math.abs(maxStep);
+		this.initialStep = -1.0;
+		this.scalAbsoluteTolerance = scalAbsoluteTolerance;
+		this.scalRelativeTolerance = scalRelativeTolerance;
+		this.vecAbsoluteTolerance = null;
+		this.vecRelativeTolerance = null;
+		resetInternalState();
+	}
+
+	public AdaptiveStepsizeIntegrator(final java.lang.String name, final double minStep, final double maxStep, final double[] vecAbsoluteTolerance, final double[] vecRelativeTolerance) {
+		super(name);
+		this.minStep = minStep;
+		this.maxStep = maxStep;
+		this.initialStep = -1.0;
+		this.scalAbsoluteTolerance = 0;
+		this.scalRelativeTolerance = 0;
+		this.vecAbsoluteTolerance = vecAbsoluteTolerance.clone();
+		this.vecRelativeTolerance = vecRelativeTolerance.clone();
+		resetInternalState();
+	}
+
+	public void setInitialStepSize(final double initialStepSize) {
+		if ((initialStepSize < (minStep)) || (initialStepSize > (maxStep))) {
+			initialStep = -1.0;
+		}else
+			initialStep = initialStepSize;
+		
+	}
+
+	@java.lang.Override
+	protected void sanityChecks(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.IntegratorException {
+		super.sanityChecks(equations, t0, y0, t, y);
+		if (((vecAbsoluteTolerance) != null) && ((vecAbsoluteTolerance.length) != (y0.length))) {
+			throw new org.apache.commons.math.ode.IntegratorException(("dimensions mismatch: state vector has dimension {0}," + " absolute tolerance vector has dimension {1}"), y0.length, vecAbsoluteTolerance.length);
+		}
+		if (((vecRelativeTolerance) != null) && ((vecRelativeTolerance.length) != (y0.length))) {
+			throw new org.apache.commons.math.ode.IntegratorException(("dimensions mismatch: state vector has dimension {0}," + " relative tolerance vector has dimension {1}"), y0.length, vecRelativeTolerance.length);
+		}
+	}
+
+	public double initializeStep(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final boolean forward, final int order, final double[] scale, final double t0, final double[] y0, final double[] yDot0, final double[] y1, final double[] yDot1) throws org.apache.commons.math.ode.DerivativeException {
+		if ((initialStep) > 0) {
+			return forward ? initialStep : -(initialStep);
+		}
+		double ratio;
+		double yOnScale2 = 0;
+		double yDotOnScale2 = 0;
+		for (int j = 0; j < (y0.length); ++j) {
+			ratio = (y0[j]) / (scale[j]);
+			yOnScale2 += ratio * ratio;
+			ratio = (yDot0[j]) / (scale[j]);
+			yDotOnScale2 += ratio * ratio;
+		}
+		double h = ((yOnScale2 < 1.0E-10) || (yDotOnScale2 < 1.0E-10)) ? 1.0E-6 : 0.01 * (java.lang.Math.sqrt((yOnScale2 / yDotOnScale2)));
+		if (!forward) {
+			h = -h;
+		}
+		for (int j = 0; j < (y0.length); ++j) {
+			y1[j] = (y0[j]) + (h * (yDot0[j]));
+		}
+		computeDerivatives((t0 + h), y1, yDot1);
+		double yDDotOnScale = 0;
+		for (int j = 0; j < (y0.length); ++j) {
+			ratio = ((yDot1[j]) - (yDot0[j])) / (scale[j]);
+			yDDotOnScale += ratio * ratio;
+		}
+		yDDotOnScale = (java.lang.Math.sqrt(yDDotOnScale)) / h;
+		final double maxInv2 = java.lang.Math.max(java.lang.Math.sqrt(yDotOnScale2), yDDotOnScale);
+		final double h1 = (maxInv2 < 1.0E-15) ? java.lang.Math.max(1.0E-6, (0.001 * (java.lang.Math.abs(h)))) : java.lang.Math.pow((0.01 / maxInv2), (1.0 / order));
+		h = java.lang.Math.min((100.0 * (java.lang.Math.abs(h))), h1);
+		h = java.lang.Math.max(h, (1.0E-12 * (java.lang.Math.abs(t0))));
+		if (h < (getMinStep())) {
+			h = getMinStep();
+		}
+		if (h > (getMaxStep())) {
+			h = getMaxStep();
+		}
+		if (!forward) {
+			h = -h;
+		}
+		return h;
+	}
+
+	protected double filterStep(final double h, final boolean forward, final boolean acceptSmall) throws org.apache.commons.math.ode.IntegratorException {
+		double filteredH = h;
+		if ((java.lang.Math.abs(h)) < (minStep)) {
+			if (acceptSmall) {
+				filteredH = (forward) ? minStep : -(minStep);
+			}else {
+				throw new org.apache.commons.math.ode.IntegratorException("minimal step size ({0,number,0.00E00}) reached, integration needs {1,number,0.00E00}", minStep, java.lang.Math.abs(h));
+			}
+		}
+		if (filteredH > (maxStep)) {
+			filteredH = maxStep;
+		}else
+			if (filteredH < (-(maxStep))) {
+				filteredH = -(maxStep);
+			}
+		
+		return filteredH;
+	}
+
+	public abstract double integrate(org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, double t0, double[] y0, double t, double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException;
+
+	@java.lang.Override
+	public double getCurrentStepStart() {
+		return stepStart;
+	}
+
+	protected void resetInternalState() {
+		stepStart = java.lang.Double.NaN;
+		stepSize = java.lang.Math.sqrt(((minStep) * (maxStep)));
+	}
+
+	public double getMinStep() {
+		return minStep;
+	}
+
+	public double getMaxStep() {
+		return maxStep;
+	}
+}
+2019-04-12 16:00:56,494 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:01:04,409 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-12 16:01:04,409 ERROR main - Undo Error: original: 
+public abstract class AdaptiveStepsizeIntegrator extends org.apache.commons.math.ode.AbstractIntegrator {
+	protected final double scalAbsoluteTolerance;
+
+	protected final double scalRelativeTolerance;
+
+	protected final double[] vecAbsoluteTolerance;
+
+	protected final double[] vecRelativeTolerance;
+
+	private double initialStep;
+
+	private final double minStep;
+
+	private final double maxStep;
+
+	public AdaptiveStepsizeIntegrator(final java.lang.String name, final double minStep, final double maxStep, final double scalAbsoluteTolerance, final double scalRelativeTolerance) {
+		super(name);
+		this.minStep = java.lang.Math.abs(minStep);
+		this.maxStep = java.lang.Math.abs(maxStep);
+		this.initialStep = -1.0;
+		this.scalAbsoluteTolerance = scalAbsoluteTolerance;
+		this.scalRelativeTolerance = scalRelativeTolerance;
+		this.vecAbsoluteTolerance = null;
+		this.vecRelativeTolerance = null;
+		resetInternalState();
+	}
+
+	public AdaptiveStepsizeIntegrator(final java.lang.String name, final double minStep, final double maxStep, final double[] vecAbsoluteTolerance, final double[] vecRelativeTolerance) {
+		super(name);
+		this.minStep = minStep;
+		this.maxStep = maxStep;
+		this.initialStep = -1.0;
+		this.scalAbsoluteTolerance = 0;
+		this.scalRelativeTolerance = 0;
+		this.vecAbsoluteTolerance = vecAbsoluteTolerance.clone();
+		this.vecRelativeTolerance = vecRelativeTolerance.clone();
+		resetInternalState();
+	}
+
+	public void setInitialStepSize(final double initialStepSize) {
+		if ((initialStepSize < (minStep)) || (initialStepSize > (maxStep))) {
+			initialStep = -1.0;
+		}else {
+			initialStep = initialStepSize;
+		}
+	}
+
+	@java.lang.Override
+	protected void sanityChecks(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.IntegratorException {
+		super.sanityChecks(equations, t0, y0, t, y);
+		if (((vecAbsoluteTolerance) != null) && ((vecAbsoluteTolerance.length) != (y0.length))) {
+			throw new org.apache.commons.math.ode.IntegratorException(("dimensions mismatch: state vector has dimension {0}," + " absolute tolerance vector has dimension {1}"), y0.length, vecAbsoluteTolerance.length);
+		}
+		if (((vecRelativeTolerance) != null) && ((vecRelativeTolerance.length) != (y0.length))) {
+			throw new org.apache.commons.math.ode.IntegratorException(("dimensions mismatch: state vector has dimension {0}," + " relative tolerance vector has dimension {1}"), y0.length, vecRelativeTolerance.length);
+		}
+	}
+
+	public double initializeStep(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final boolean forward, final int order, final double[] scale, final double t0, final double[] y0, final double[] yDot0, final double[] y1, final double[] yDot1) throws org.apache.commons.math.ode.DerivativeException {
+		if ((initialStep) > 0) {
+			return forward ? initialStep : -(initialStep);
+		}
+		double ratio;
+		double yOnScale2 = 0;
+		double yDotOnScale2 = 0;
+		for (int j = 0; j < (y0.length); ++j) {
+			ratio = (y0[j]) / (scale[j]);
+			yOnScale2 += ratio * ratio;
+			ratio = (yDot0[j]) / (scale[j]);
+			yDotOnScale2 += ratio * ratio;
+		}
+		double h = ((yOnScale2 < 1.0E-10) || (yDotOnScale2 < 1.0E-10)) ? 1.0E-6 : 0.01 * (java.lang.Math.sqrt((yOnScale2 / yDotOnScale2)));
+		if (!forward) {
+			h = -h;
+		}
+		for (int j = 0; j < (y0.length); ++j) {
+			y1[j] = (y0[j]) + (h * (yDot0[j]));
+		}
+		computeDerivatives((t0 + h), y1, yDot1);
+		double yDDotOnScale = 0;
+		for (int j = 0; j < (y0.length); ++j) {
+			ratio = ((yDot1[j]) - (yDot0[j])) / (scale[j]);
+			yDDotOnScale += ratio * ratio;
+		}
+		yDDotOnScale = (java.lang.Math.sqrt(yDDotOnScale)) / h;
+		final double maxInv2 = java.lang.Math.max(java.lang.Math.sqrt(yDotOnScale2), yDDotOnScale);
+		final double h1 = (maxInv2 < 1.0E-15) ? java.lang.Math.max(1.0E-6, (0.001 * (java.lang.Math.abs(h)))) : java.lang.Math.pow((0.01 / maxInv2), (1.0 / order));
+		h = java.lang.Math.min((100.0 * (java.lang.Math.abs(h))), h1);
+		h = java.lang.Math.max(h, (1.0E-12 * (java.lang.Math.abs(t0))));
+		if (h < (getMinStep())) {
+			h = getMinStep();
+		}
+		if (h > (getMaxStep())) {
+			h = getMaxStep();
+		}
+		if (!forward) {
+			h = -h;
+		}
+		return h;
+	}
+
+	protected double filterStep(final double h, final boolean forward, final boolean acceptSmall) throws org.apache.commons.math.ode.IntegratorException {
+		double filteredH = h;
+		if ((java.lang.Math.abs(h)) < (minStep)) {
+			if (acceptSmall) {
+				filteredH = (forward) ? minStep : -(minStep);
+			}else {
+				throw new org.apache.commons.math.ode.IntegratorException("minimal step size ({0,number,0.00E00}) reached, integration needs {1,number,0.00E00}", minStep, java.lang.Math.abs(h));
+			}
+		}
+		if (filteredH > (maxStep)) {
+			filteredH = maxStep;
+		}else
+			if (filteredH < (-(maxStep))) {
+				filteredH = -(maxStep);
+			}
+		
+		return filteredH;
+	}
+
+	public abstract double integrate(org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, double t0, double[] y0, double t, double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException;
+
+	@java.lang.Override
+	public double getCurrentStepStart() {
+		return stepStart;
+	}
+
+	protected void resetInternalState() {
+		stepStart = java.lang.Double.NaN;
+		stepSize = java.lang.Math.sqrt(((minStep) * (maxStep)));
+	}
+
+	public double getMinStep() {
+		return minStep;
+	}
+
+	public double getMaxStep() {
+		return maxStep;
+	}
+}
+2019-04-12 16:01:04,410 ERROR main - Undo Error: modified: 
+public abstract class AdaptiveStepsizeIntegrator extends org.apache.commons.math.ode.AbstractIntegrator {
+	protected final double scalAbsoluteTolerance;
+
+	protected final double scalRelativeTolerance;
+
+	protected final double[] vecAbsoluteTolerance;
+
+	protected final double[] vecRelativeTolerance;
+
+	private double initialStep;
+
+	private final double minStep;
+
+	private final double maxStep;
+
+	public AdaptiveStepsizeIntegrator(final java.lang.String name, final double minStep, final double maxStep, final double scalAbsoluteTolerance, final double scalRelativeTolerance) {
+		super(name);
+		this.minStep = java.lang.Math.abs(minStep);
+		this.maxStep = java.lang.Math.abs(maxStep);
+		this.initialStep = -1.0;
+		this.scalAbsoluteTolerance = scalAbsoluteTolerance;
+		this.scalRelativeTolerance = scalRelativeTolerance;
+		this.vecAbsoluteTolerance = null;
+		this.vecRelativeTolerance = null;
+		resetInternalState();
+	}
+
+	public AdaptiveStepsizeIntegrator(final java.lang.String name, final double minStep, final double maxStep, final double[] vecAbsoluteTolerance, final double[] vecRelativeTolerance) {
+		super(name);
+		this.minStep = minStep;
+		this.maxStep = maxStep;
+		this.initialStep = -1.0;
+		this.scalAbsoluteTolerance = 0;
+		this.scalRelativeTolerance = 0;
+		this.vecAbsoluteTolerance = vecAbsoluteTolerance.clone();
+		this.vecRelativeTolerance = vecRelativeTolerance.clone();
+		resetInternalState();
+	}
+
+	public void setInitialStepSize(final double initialStepSize) {
+		if ((initialStepSize < (minStep)) || (initialStepSize > (maxStep))) {
+			initialStep = -1.0;
+		}else
+			initialStep = initialStepSize;
+		
+	}
+
+	@java.lang.Override
+	protected void sanityChecks(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.IntegratorException {
+		super.sanityChecks(equations, t0, y0, t, y);
+		if (((vecAbsoluteTolerance) != null) && ((vecAbsoluteTolerance.length) != (y0.length))) {
+			throw new org.apache.commons.math.ode.IntegratorException(("dimensions mismatch: state vector has dimension {0}," + " absolute tolerance vector has dimension {1}"), y0.length, vecAbsoluteTolerance.length);
+		}
+		if (((vecRelativeTolerance) != null) && ((vecRelativeTolerance.length) != (y0.length))) {
+			throw new org.apache.commons.math.ode.IntegratorException(("dimensions mismatch: state vector has dimension {0}," + " relative tolerance vector has dimension {1}"), y0.length, vecRelativeTolerance.length);
+		}
+	}
+
+	public double initializeStep(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final boolean forward, final int order, final double[] scale, final double t0, final double[] y0, final double[] yDot0, final double[] y1, final double[] yDot1) throws org.apache.commons.math.ode.DerivativeException {
+		if ((initialStep) > 0) {
+			return forward ? initialStep : -(initialStep);
+		}
+		double ratio;
+		double yOnScale2 = 0;
+		double yDotOnScale2 = 0;
+		for (int j = 0; j < (y0.length); ++j) {
+			ratio = (y0[j]) / (scale[j]);
+			yOnScale2 += ratio * ratio;
+			ratio = (yDot0[j]) / (scale[j]);
+			yDotOnScale2 += ratio * ratio;
+		}
+		double h = ((yOnScale2 < 1.0E-10) || (yDotOnScale2 < 1.0E-10)) ? 1.0E-6 : 0.01 * (java.lang.Math.sqrt((yOnScale2 / yDotOnScale2)));
+		if (!forward) {
+			h = -h;
+		}
+		for (int j = 0; j < (y0.length); ++j) {
+			y1[j] = (y0[j]) + (h * (yDot0[j]));
+		}
+		computeDerivatives((t0 + h), y1, yDot1);
+		double yDDotOnScale = 0;
+		for (int j = 0; j < (y0.length); ++j) {
+			ratio = ((yDot1[j]) - (yDot0[j])) / (scale[j]);
+			yDDotOnScale += ratio * ratio;
+		}
+		yDDotOnScale = (java.lang.Math.sqrt(yDDotOnScale)) / h;
+		final double maxInv2 = java.lang.Math.max(java.lang.Math.sqrt(yDotOnScale2), yDDotOnScale);
+		final double h1 = (maxInv2 < 1.0E-15) ? java.lang.Math.max(1.0E-6, (0.001 * (java.lang.Math.abs(h)))) : java.lang.Math.pow((0.01 / maxInv2), (1.0 / order));
+		h = java.lang.Math.min((100.0 * (java.lang.Math.abs(h))), h1);
+		h = java.lang.Math.max(h, (1.0E-12 * (java.lang.Math.abs(t0))));
+		if (h < (getMinStep())) {
+			h = getMinStep();
+		}
+		if (h > (getMaxStep())) {
+			h = getMaxStep();
+		}
+		if (!forward) {
+			h = -h;
+		}
+		return h;
+	}
+
+	protected double filterStep(final double h, final boolean forward, final boolean acceptSmall) throws org.apache.commons.math.ode.IntegratorException {
+		double filteredH = h;
+		if ((java.lang.Math.abs(h)) < (minStep)) {
+			if (acceptSmall) {
+				filteredH = (forward) ? minStep : -(minStep);
+			}else {
+				throw new org.apache.commons.math.ode.IntegratorException("minimal step size ({0,number,0.00E00}) reached, integration needs {1,number,0.00E00}", minStep, java.lang.Math.abs(h));
+			}
+		}
+		if (filteredH > (maxStep)) {
+			filteredH = maxStep;
+		}else
+			if (filteredH < (-(maxStep))) {
+				filteredH = -(maxStep);
+			}
+		
+		return filteredH;
+	}
+
+	public abstract double integrate(org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, double t0, double[] y0, double t, double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException;
+
+	@java.lang.Override
+	public double getCurrentStepStart() {
+		return stepStart;
+	}
+
+	protected void resetInternalState() {
+		stepStart = java.lang.Double.NaN;
+		stepSize = java.lang.Math.sqrt(((minStep) * (maxStep)));
+	}
+
+	public double getMinStep() {
+		return minStep;
+	}
+
+	public double getMaxStep() {
+		return maxStep;
+	}
+}
+2019-04-12 16:03:52,444 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:03:52,448 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-12 16:03:52,448 ERROR main - Undo Error: original: 
+public abstract class EmbeddedRungeKuttaIntegrator extends org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator {
+	private final boolean fsal;
+
+	private final double[] c;
+
+	private final double[][] a;
+
+	private final double[] b;
+
+	private final org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator prototype;
+
+	private final double exp;
+
+	private double safety;
+
+	private double minReduction;
+
+	private double maxGrowth;
+
+	protected EmbeddedRungeKuttaIntegrator(final java.lang.String name, final boolean fsal, final double[] c, final double[][] a, final double[] b, final org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator prototype, final double minStep, final double maxStep, final double scalAbsoluteTolerance, final double scalRelativeTolerance) {
+		super(name, minStep, maxStep, scalAbsoluteTolerance, scalRelativeTolerance);
+		this.fsal = fsal;
+		this.c = c;
+		this.a = a;
+		this.b = b;
+		this.prototype = prototype;
+		exp = (-1.0) / (getOrder());
+		setSafety(0.9);
+		setMinReduction(0.2);
+		setMaxGrowth(10.0);
+	}
+
+	protected EmbeddedRungeKuttaIntegrator(final java.lang.String name, final boolean fsal, final double[] c, final double[][] a, final double[] b, final org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator prototype, final double minStep, final double maxStep, final double[] vecAbsoluteTolerance, final double[] vecRelativeTolerance) {
+		super(name, minStep, maxStep, vecAbsoluteTolerance, vecRelativeTolerance);
+		this.fsal = fsal;
+		this.c = c;
+		this.a = a;
+		this.b = b;
+		this.prototype = prototype;
+		exp = (-1.0) / (getOrder());
+		setSafety(0.9);
+		setMinReduction(0.2);
+		setMaxGrowth(10.0);
+	}
+
+	public abstract int getOrder();
+
+	public double getSafety() {
+		return safety;
+	}
+
+	public void setSafety(final double safety) {
+		this.safety = safety;
+	}
+
+	@java.lang.Override
+	public double integrate(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException {
+		sanityChecks(equations, t0, y0, t, y);
+		setEquations(equations);
+		resetEvaluations();
+		final boolean forward = t > t0;
+		final int stages = (c.length) + 1;
+		if (y != y0) {
+			java.lang.System.arraycopy(y0, 0, y, 0, y0.length);
+		}
+		final double[][] yDotK = new double[stages][y0.length];
+		final double[] yTmp = new double[y0.length];
+		org.apache.commons.math.ode.sampling.AbstractStepInterpolator interpolator;
+		if ((requiresDenseOutput()) || (!(eventsHandlersManager.isEmpty()))) {
+			final org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator rki = ((org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator) (prototype.copy()));
+			rki.reinitialize(this, yTmp, yDotK, forward);
+			interpolator = rki;
+		}else {
+			interpolator = new org.apache.commons.math.ode.sampling.DummyStepInterpolator(yTmp, yDotK[(stages - 1)], forward);
+		}
+		interpolator.storeTime(t0);
+		stepStart = t0;
+		double hNew = 0;
+		boolean firstTime = true;
+		for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+			handler.reset();
+		}
+		org.apache.commons.math.ode.events.CombinedEventsManager manager = addEndTimeChecker(t0, t, eventsHandlersManager);
+		boolean lastStep = false;
+		while (!lastStep) {
+			interpolator.shift();
+			double error = 0;
+			for (boolean loop = true; loop;) {
+				if (firstTime || (!(fsal))) {
+					computeDerivatives(stepStart, y, yDotK[0]);
+				}
+				if (firstTime) {
+					final double[] scale = new double[y0.length];
+					if ((vecAbsoluteTolerance) == null) {
+						for (int i = 0; i < (scale.length); ++i) {
+							scale[i] = (scalAbsoluteTolerance) + ((scalRelativeTolerance) * (java.lang.Math.abs(y[i])));
+						}
+					}else {
+						for (int i = 0; i < (scale.length); ++i) {
+							scale[i] = (vecAbsoluteTolerance[i]) + ((vecRelativeTolerance[i]) * (java.lang.Math.abs(y[i])));
+						}
+					}
+					hNew = initializeStep(equations, forward, getOrder(), scale, stepStart, y, yDotK[0], yTmp, yDotK[1]);
+					firstTime = false;
+				}
+				stepSize = hNew;
+				for (int k = 1; k < stages; ++k) {
+					for (int j = 0; j < (y0.length); ++j) {
+						double sum = (a[(k - 1)][0]) * (yDotK[0][j]);
+						for (int l = 1; l < k; ++l) {
+							sum += (a[(k - 1)][l]) * (yDotK[l][j]);
+						}
+						yTmp[j] = (y[j]) + ((stepSize) * sum);
+					}
+					computeDerivatives(((stepStart) + ((c[(k - 1)]) * (stepSize))), yTmp, yDotK[k]);
+				}
+				for (int j = 0; j < (y0.length); ++j) {
+					double sum = (b[0]) * (yDotK[0][j]);
+					for (int l = 1; l < stages; ++l) {
+						sum += (b[l]) * (yDotK[l][j]);
+					}
+					yTmp[j] = (y[j]) + ((stepSize) * sum);
+				}
+				error = estimateError(yDotK, y, yTmp, stepSize);
+				if (error <= 1.0) {
+					interpolator.storeTime(((stepStart) + (stepSize)));
+					if (manager.evaluateStep(interpolator)) {
+						final double dt = (manager.getEventTime()) - (stepStart);
+						if ((java.lang.Math.abs(dt)) <= (java.lang.Math.ulp(stepStart))) {
+							loop = false;
+						}else {
+							hNew = dt;
+						}
+					}else {
+						loop = false;
+					}
+				}else {
+					final double factor = java.lang.Math.min(maxGrowth, java.lang.Math.max(minReduction, ((safety) * (java.lang.Math.pow(error, exp)))));
+					hNew = filterStep(((stepSize) * factor), forward, false);
+				}
+			}
+			final double nextStep = (stepStart) + (stepSize);
+			java.lang.System.arraycopy(yTmp, 0, y, 0, y0.length);
+			manager.stepAccepted(nextStep, y);
+			lastStep = manager.stop();
+			interpolator.storeTime(nextStep);
+			for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+				handler.handleStep(interpolator, lastStep);
+			}
+			stepStart = nextStep;
+			if (fsal) {
+				java.lang.System.arraycopy(yDotK[(stages - 1)], 0, yDotK[0], 0, y0.length);
+			}
+			if ((manager.reset(stepStart, y)) && (!lastStep)) {
+				computeDerivatives(stepStart, y, yDotK[0]);
+			}
+			if (!lastStep) {
+				stepSize = filterStep(stepSize, forward, true);
+				final double factor = java.lang.Math.min(maxGrowth, java.lang.Math.max(minReduction, ((safety) * (java.lang.Math.pow(error, exp)))));
+				final double scaledH = (stepSize) * factor;
+				final double nextT = (stepStart) + scaledH;
+				final boolean nextIsLast = (forward) ? nextT >= t : nextT <= t;
+				hNew = filterStep(scaledH, forward, nextIsLast);
+			}
+		} 
+		final double stopTime = stepStart;
+		resetInternalState();
+		return stopTime;
+	}
+
+	public double getMinReduction() {
+		return minReduction;
+	}
+
+	public void setMinReduction(final double minReduction) {
+		this.minReduction = minReduction;
+	}
+
+	public double getMaxGrowth() {
+		return maxGrowth;
+	}
+
+	public void setMaxGrowth(final double maxGrowth) {
+		this.maxGrowth = maxGrowth;
+	}
+
+	protected abstract double estimateError(double[][] yDotK, double[] y0, double[] y1, double h);
+}
+2019-04-12 16:03:52,454 ERROR main - Undo Error: modified: 
+public abstract class EmbeddedRungeKuttaIntegrator extends org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator {
+	private final boolean fsal;
+
+	private final double[] c;
+
+	private final double[][] a;
+
+	private final double[] b;
+
+	private final org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator prototype;
+
+	private final double exp;
+
+	private double safety;
+
+	private double minReduction;
+
+	private double maxGrowth;
+
+	protected EmbeddedRungeKuttaIntegrator(final java.lang.String name, final boolean fsal, final double[] c, final double[][] a, final double[] b, final org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator prototype, final double minStep, final double maxStep, final double scalAbsoluteTolerance, final double scalRelativeTolerance) {
+		super(name, minStep, maxStep, scalAbsoluteTolerance, scalRelativeTolerance);
+		this.fsal = fsal;
+		this.c = c;
+		this.a = a;
+		this.b = b;
+		this.prototype = prototype;
+		exp = (-1.0) / (getOrder());
+		setSafety(0.9);
+		setMinReduction(0.2);
+		setMaxGrowth(10.0);
+	}
+
+	protected EmbeddedRungeKuttaIntegrator(final java.lang.String name, final boolean fsal, final double[] c, final double[][] a, final double[] b, final org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator prototype, final double minStep, final double maxStep, final double[] vecAbsoluteTolerance, final double[] vecRelativeTolerance) {
+		super(name, minStep, maxStep, vecAbsoluteTolerance, vecRelativeTolerance);
+		this.fsal = fsal;
+		this.c = c;
+		this.a = a;
+		this.b = b;
+		this.prototype = prototype;
+		exp = (-1.0) / (getOrder());
+		setSafety(0.9);
+		setMinReduction(0.2);
+		setMaxGrowth(10.0);
+	}
+
+	public abstract int getOrder();
+
+	public double getSafety() {
+		return safety;
+	}
+
+	public void setSafety(final double safety) {
+		this.safety = safety;
+	}
+
+	@java.lang.Override
+	public double integrate(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException {
+		sanityChecks(equations, t0, y0, t, y);
+		setEquations(equations);
+		resetEvaluations();
+		final boolean forward = t > t0;
+		final int stages = (c.length) + 1;
+		if (y != y0) {
+			java.lang.System.arraycopy(y0, 0, y, 0, y0.length);
+		}
+		final double[][] yDotK = new double[stages][y0.length];
+		final double[] yTmp = new double[y0.length];
+		org.apache.commons.math.ode.sampling.AbstractStepInterpolator interpolator;
+		if ((requiresDenseOutput()) || (!(eventsHandlersManager.isEmpty()))) {
+			final org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator rki = ((org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator) (prototype.copy()));
+			rki.reinitialize(this, yTmp, yDotK, forward);
+			interpolator = rki;
+		}else {
+			interpolator = new org.apache.commons.math.ode.sampling.DummyStepInterpolator(yTmp, yDotK[(stages - 1)], forward);
+		}
+		interpolator.storeTime(t0);
+		stepStart = t0;
+		double hNew = 0;
+		boolean firstTime = true;
+		for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+			handler.reset();
+		}
+		org.apache.commons.math.ode.events.CombinedEventsManager manager = addEndTimeChecker(t0, t, eventsHandlersManager);
+		boolean lastStep = false;
+		while (!lastStep) {
+			interpolator.shift();
+			double error = 0;
+			for (boolean loop = true; loop;) {
+				if (firstTime || (!(fsal))) {
+					computeDerivatives(stepStart, y, yDotK[0]);
+				}
+				if (firstTime) {
+					final double[] scale = new double[y0.length];
+					if ((vecAbsoluteTolerance) == null) {
+						for (int i = 0; i < (scale.length); ++i) {
+							scale[i] = (scalAbsoluteTolerance) + ((scalRelativeTolerance) * (java.lang.Math.abs(y[i])));
+						}
+					}else {
+						for (int i = 0; i < (scale.length); ++i) {
+							scale[i] = (vecAbsoluteTolerance[i]) + ((vecRelativeTolerance[i]) * (java.lang.Math.abs(y[i])));
+						}
+					}
+					hNew = initializeStep(equations, forward, getOrder(), scale, stepStart, y, yDotK[0], yTmp, yDotK[1]);
+					firstTime = false;
+				}
+				stepSize = hNew;
+				for (int k = 1; k < stages; ++k) {
+					for (int j = 0; j < (y0.length); ++j) {
+						double sum = (a[(k - 1)][0]) * (yDotK[0][j]);
+						for (int l = 1; l < k; ++l) {
+							sum += (a[(k - 1)][l]) * (yDotK[l][j]);
+						}
+						yTmp[j] = (y[j]) + ((stepSize) * sum);
+					}
+					computeDerivatives(((stepStart) + ((c[(k - 1)]) * (stepSize))), yTmp, yDotK[k]);
+				}
+				for (int j = 0; j < (y0.length); ++j) {
+					double sum = (b[0]) * (yDotK[0][j]);
+					for (int l = 1; l < stages; ++l) {
+						sum += (b[l]) * (yDotK[l][j]);
+					}
+					yTmp[j] = (y[j]) + ((stepSize) * sum);
+				}
+				error = estimateError(yDotK, y, yTmp, stepSize);
+				if (error <= 1.0) {
+					interpolator.storeTime(((stepStart) + (stepSize)));
+					if (manager.evaluateStep(interpolator)) {
+						final double dt = (manager.getEventTime()) - (stepStart);
+						if ((java.lang.Math.abs(dt)) <= (java.lang.Math.ulp(stepStart)))
+							loop = false;
+						else {
+							hNew = dt;
+						}
+					}else {
+						loop = false;
+					}
+				}else {
+					final double factor = java.lang.Math.min(maxGrowth, java.lang.Math.max(minReduction, ((safety) * (java.lang.Math.pow(error, exp)))));
+					hNew = filterStep(((stepSize) * factor), forward, false);
+				}
+			}
+			final double nextStep = (stepStart) + (stepSize);
+			java.lang.System.arraycopy(yTmp, 0, y, 0, y0.length);
+			manager.stepAccepted(nextStep, y);
+			lastStep = manager.stop();
+			interpolator.storeTime(nextStep);
+			for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+				handler.handleStep(interpolator, lastStep);
+			}
+			stepStart = nextStep;
+			if (fsal) {
+				java.lang.System.arraycopy(yDotK[(stages - 1)], 0, yDotK[0], 0, y0.length);
+			}
+			if ((manager.reset(stepStart, y)) && (!lastStep)) {
+				computeDerivatives(stepStart, y, yDotK[0]);
+			}
+			if (!lastStep) {
+				stepSize = filterStep(stepSize, forward, true);
+				final double factor = java.lang.Math.min(maxGrowth, java.lang.Math.max(minReduction, ((safety) * (java.lang.Math.pow(error, exp)))));
+				final double scaledH = (stepSize) * factor;
+				final double nextT = (stepStart) + scaledH;
+				final boolean nextIsLast = (forward) ? nextT >= t : nextT <= t;
+				hNew = filterStep(scaledH, forward, nextIsLast);
+			}
+		} 
+		final double stopTime = stepStart;
+		resetInternalState();
+		return stopTime;
+	}
+
+	public double getMinReduction() {
+		return minReduction;
+	}
+
+	public void setMinReduction(final double minReduction) {
+		this.minReduction = minReduction;
+	}
+
+	public double getMaxGrowth() {
+		return maxGrowth;
+	}
+
+	public void setMaxGrowth(final double maxGrowth) {
+		this.maxGrowth = maxGrowth;
+	}
+
+	protected abstract double estimateError(double[][] yDotK, double[] y0, double[] y1, double h);
+}
+2019-04-12 16:04:03,355 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-12 16:04:03,355 ERROR main - Undo Error: original: 
+public abstract class RungeKuttaIntegrator extends org.apache.commons.math.ode.AbstractIntegrator {
+	private final double[] c;
+
+	private final double[][] a;
+
+	private final double[] b;
+
+	private final org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator prototype;
+
+	private final double step;
+
+	protected RungeKuttaIntegrator(final java.lang.String name, final double[] c, final double[][] a, final double[] b, final org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator prototype, final double step) {
+		super(name);
+		this.c = c;
+		this.a = a;
+		this.b = b;
+		this.prototype = prototype;
+		this.step = java.lang.Math.abs(step);
+	}
+
+	public double integrate(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException {
+		sanityChecks(equations, t0, y0, t, y);
+		setEquations(equations);
+		resetEvaluations();
+		final boolean forward = t > t0;
+		final int stages = (c.length) + 1;
+		if (y != y0) {
+			java.lang.System.arraycopy(y0, 0, y, 0, y0.length);
+		}
+		final double[][] yDotK = new double[stages][];
+		for (int i = 0; i < stages; ++i) {
+			yDotK[i] = new double[y0.length];
+		}
+		final double[] yTmp = new double[y0.length];
+		org.apache.commons.math.ode.sampling.AbstractStepInterpolator interpolator;
+		if ((requiresDenseOutput()) || (!(eventsHandlersManager.isEmpty()))) {
+			final org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator rki = ((org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator) (prototype.copy()));
+			rki.reinitialize(this, yTmp, yDotK, forward);
+			interpolator = rki;
+		}else {
+			interpolator = new org.apache.commons.math.ode.sampling.DummyStepInterpolator(yTmp, yDotK[(stages - 1)], forward);
+		}
+		interpolator.storeTime(t0);
+		stepStart = t0;
+		stepSize = (forward) ? step : -(step);
+		for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+			handler.reset();
+		}
+		org.apache.commons.math.ode.events.CombinedEventsManager manager = addEndTimeChecker(t0, t, eventsHandlersManager);
+		boolean lastStep = false;
+		while (!lastStep) {
+			interpolator.shift();
+			for (boolean loop = true; loop;) {
+				computeDerivatives(stepStart, y, yDotK[0]);
+				for (int k = 1; k < stages; ++k) {
+					for (int j = 0; j < (y0.length); ++j) {
+						double sum = (a[(k - 1)][0]) * (yDotK[0][j]);
+						for (int l = 1; l < k; ++l) {
+							sum += (a[(k - 1)][l]) * (yDotK[l][j]);
+						}
+						yTmp[j] = (y[j]) + ((stepSize) * sum);
+					}
+					computeDerivatives(((stepStart) + ((c[(k - 1)]) * (stepSize))), yTmp, yDotK[k]);
+				}
+				for (int j = 0; j < (y0.length); ++j) {
+					double sum = (b[0]) * (yDotK[0][j]);
+					for (int l = 1; l < stages; ++l) {
+						sum += (b[l]) * (yDotK[l][j]);
+					}
+					yTmp[j] = (y[j]) + ((stepSize) * sum);
+				}
+				interpolator.storeTime(((stepStart) + (stepSize)));
+				if (manager.evaluateStep(interpolator)) {
+					final double dt = (manager.getEventTime()) - (stepStart);
+					if ((java.lang.Math.abs(dt)) <= (java.lang.Math.ulp(stepStart))) {
+						loop = false;
+					}else {
+						stepSize = dt;
+					}
+				}else {
+					loop = false;
+				}
+			}
+			final double nextStep = (stepStart) + (stepSize);
+			java.lang.System.arraycopy(yTmp, 0, y, 0, y0.length);
+			manager.stepAccepted(nextStep, y);
+			lastStep = manager.stop();
+			interpolator.storeTime(nextStep);
+			for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+				handler.handleStep(interpolator, lastStep);
+			}
+			stepStart = nextStep;
+			if ((manager.reset(stepStart, y)) && (!lastStep)) {
+				computeDerivatives(stepStart, y, yDotK[0]);
+			}
+			stepSize = (forward) ? step : -(step);
+		} 
+		final double stopTime = stepStart;
+		stepStart = java.lang.Double.NaN;
+		stepSize = java.lang.Double.NaN;
+		return stopTime;
+	}
+}
+2019-04-12 16:04:03,356 ERROR main - Undo Error: modified: 
+public abstract class RungeKuttaIntegrator extends org.apache.commons.math.ode.AbstractIntegrator {
+	private final double[] c;
+
+	private final double[][] a;
+
+	private final double[] b;
+
+	private final org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator prototype;
+
+	private final double step;
+
+	protected RungeKuttaIntegrator(final java.lang.String name, final double[] c, final double[][] a, final double[] b, final org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator prototype, final double step) {
+		super(name);
+		this.c = c;
+		this.a = a;
+		this.b = b;
+		this.prototype = prototype;
+		this.step = java.lang.Math.abs(step);
+	}
+
+	public double integrate(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException {
+		sanityChecks(equations, t0, y0, t, y);
+		setEquations(equations);
+		resetEvaluations();
+		final boolean forward = t > t0;
+		final int stages = (c.length) + 1;
+		if (y != y0) {
+			java.lang.System.arraycopy(y0, 0, y, 0, y0.length);
+		}
+		final double[][] yDotK = new double[stages][];
+		for (int i = 0; i < stages; ++i) {
+			yDotK[i] = new double[y0.length];
+		}
+		final double[] yTmp = new double[y0.length];
+		org.apache.commons.math.ode.sampling.AbstractStepInterpolator interpolator;
+		if ((requiresDenseOutput()) || (!(eventsHandlersManager.isEmpty()))) {
+			final org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator rki = ((org.apache.commons.math.ode.nonstiff.RungeKuttaStepInterpolator) (prototype.copy()));
+			rki.reinitialize(this, yTmp, yDotK, forward);
+			interpolator = rki;
+		}else {
+			interpolator = new org.apache.commons.math.ode.sampling.DummyStepInterpolator(yTmp, yDotK[(stages - 1)], forward);
+		}
+		interpolator.storeTime(t0);
+		stepStart = t0;
+		stepSize = (forward) ? step : -(step);
+		for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+			handler.reset();
+		}
+		org.apache.commons.math.ode.events.CombinedEventsManager manager = addEndTimeChecker(t0, t, eventsHandlersManager);
+		boolean lastStep = false;
+		while (!lastStep) {
+			interpolator.shift();
+			for (boolean loop = true; loop;) {
+				computeDerivatives(stepStart, y, yDotK[0]);
+				for (int k = 1; k < stages; ++k) {
+					for (int j = 0; j < (y0.length); ++j) {
+						double sum = (a[(k - 1)][0]) * (yDotK[0][j]);
+						for (int l = 1; l < k; ++l) {
+							sum += (a[(k - 1)][l]) * (yDotK[l][j]);
+						}
+						yTmp[j] = (y[j]) + ((stepSize) * sum);
+					}
+					computeDerivatives(((stepStart) + ((c[(k - 1)]) * (stepSize))), yTmp, yDotK[k]);
+				}
+				for (int j = 0; j < (y0.length); ++j) {
+					double sum = (b[0]) * (yDotK[0][j]);
+					for (int l = 1; l < stages; ++l) {
+						sum += (b[l]) * (yDotK[l][j]);
+					}
+					yTmp[j] = (y[j]) + ((stepSize) * sum);
+				}
+				interpolator.storeTime(((stepStart) + (stepSize)));
+				if (manager.evaluateStep(interpolator)) {
+					final double dt = (manager.getEventTime()) - (stepStart);
+					if ((java.lang.Math.abs(dt)) <= (java.lang.Math.ulp(stepStart)))
+						loop = false;
+					else {
+						stepSize = dt;
+					}
+				}else {
+					loop = false;
+				}
+			}
+			final double nextStep = (stepStart) + (stepSize);
+			java.lang.System.arraycopy(yTmp, 0, y, 0, y0.length);
+			manager.stepAccepted(nextStep, y);
+			lastStep = manager.stop();
+			interpolator.storeTime(nextStep);
+			for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+				handler.handleStep(interpolator, lastStep);
+			}
+			stepStart = nextStep;
+			if ((manager.reset(stepStart, y)) && (!lastStep)) {
+				computeDerivatives(stepStart, y, yDotK[0]);
+			}
+			stepSize = (forward) ? step : -(step);
+		} 
+		final double stopTime = stepStart;
+		stepStart = java.lang.Double.NaN;
+		stepSize = java.lang.Double.NaN;
+		return stopTime;
+	}
+}
+2019-04-12 16:06:04,823 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:06:14,516 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-12 16:06:14,516 ERROR main - Undo Error: original: 
+public abstract class AdaptiveStepsizeIntegrator extends org.apache.commons.math.ode.AbstractIntegrator {
+	protected final double scalAbsoluteTolerance;
+
+	protected final double scalRelativeTolerance;
+
+	protected final double[] vecAbsoluteTolerance;
+
+	protected final double[] vecRelativeTolerance;
+
+	private double initialStep;
+
+	private final double minStep;
+
+	private final double maxStep;
+
+	public AdaptiveStepsizeIntegrator(final java.lang.String name, final double minStep, final double maxStep, final double scalAbsoluteTolerance, final double scalRelativeTolerance) {
+		super(name);
+		this.minStep = java.lang.Math.abs(minStep);
+		this.maxStep = java.lang.Math.abs(maxStep);
+		this.initialStep = -1.0;
+		this.scalAbsoluteTolerance = scalAbsoluteTolerance;
+		this.scalRelativeTolerance = scalRelativeTolerance;
+		this.vecAbsoluteTolerance = null;
+		this.vecRelativeTolerance = null;
+		resetInternalState();
+	}
+
+	public AdaptiveStepsizeIntegrator(final java.lang.String name, final double minStep, final double maxStep, final double[] vecAbsoluteTolerance, final double[] vecRelativeTolerance) {
+		super(name);
+		this.minStep = minStep;
+		this.maxStep = maxStep;
+		this.initialStep = -1.0;
+		this.scalAbsoluteTolerance = 0;
+		this.scalRelativeTolerance = 0;
+		this.vecAbsoluteTolerance = vecAbsoluteTolerance.clone();
+		this.vecRelativeTolerance = vecRelativeTolerance.clone();
+		resetInternalState();
+	}
+
+	public void setInitialStepSize(final double initialStepSize) {
+		if ((initialStepSize < (minStep)) || (initialStepSize > (maxStep))) {
+			initialStep = -1.0;
+		}else
+			initialStep = initialStepSize;
+		
+	}
+
+	@java.lang.Override
+	protected void sanityChecks(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.IntegratorException {
+		super.sanityChecks(equations, t0, y0, t, y);
+		if (((vecAbsoluteTolerance) != null) && ((vecAbsoluteTolerance.length) != (y0.length))) {
+			throw new org.apache.commons.math.ode.IntegratorException(("dimensions mismatch: state vector has dimension {0}," + " absolute tolerance vector has dimension {1}"), y0.length, vecAbsoluteTolerance.length);
+		}
+		if (((vecRelativeTolerance) != null) && ((vecRelativeTolerance.length) != (y0.length))) {
+			throw new org.apache.commons.math.ode.IntegratorException(("dimensions mismatch: state vector has dimension {0}," + " relative tolerance vector has dimension {1}"), y0.length, vecRelativeTolerance.length);
+		}
+	}
+
+	public double initializeStep(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final boolean forward, final int order, final double[] scale, final double t0, final double[] y0, final double[] yDot0, final double[] y1, final double[] yDot1) throws org.apache.commons.math.ode.DerivativeException {
+		if ((initialStep) > 0) {
+			return forward ? initialStep : -(initialStep);
+		}
+		double ratio;
+		double yOnScale2 = 0;
+		double yDotOnScale2 = 0;
+		for (int j = 0; j < (y0.length); ++j) {
+			ratio = (y0[j]) / (scale[j]);
+			yOnScale2 += ratio * ratio;
+			ratio = (yDot0[j]) / (scale[j]);
+			yDotOnScale2 += ratio * ratio;
+		}
+		double h = ((yOnScale2 < 1.0E-10) || (yDotOnScale2 < 1.0E-10)) ? 1.0E-6 : 0.01 * (java.lang.Math.sqrt((yOnScale2 / yDotOnScale2)));
+		if (!forward) {
+			h = -h;
+		}
+		for (int j = 0; j < (y0.length); ++j) {
+			y1[j] = (y0[j]) + (h * (yDot0[j]));
+		}
+		computeDerivatives((t0 + h), y1, yDot1);
+		double yDDotOnScale = 0;
+		for (int j = 0; j < (y0.length); ++j) {
+			ratio = ((yDot1[j]) - (yDot0[j])) / (scale[j]);
+			yDDotOnScale += ratio * ratio;
+		}
+		yDDotOnScale = (java.lang.Math.sqrt(yDDotOnScale)) / h;
+		final double maxInv2 = java.lang.Math.max(java.lang.Math.sqrt(yDotOnScale2), yDDotOnScale);
+		final double h1 = (maxInv2 < 1.0E-15) ? java.lang.Math.max(1.0E-6, (0.001 * (java.lang.Math.abs(h)))) : java.lang.Math.pow((0.01 / maxInv2), (1.0 / order));
+		h = java.lang.Math.min((100.0 * (java.lang.Math.abs(h))), h1);
+		h = java.lang.Math.max(h, (1.0E-12 * (java.lang.Math.abs(t0))));
+		if (h < (getMinStep())) {
+			h = getMinStep();
+		}
+		if (h > (getMaxStep())) {
+			h = getMaxStep();
+		}
+		if (!forward) {
+			h = -h;
+		}
+		return h;
+	}
+
+	protected double filterStep(final double h, final boolean forward, final boolean acceptSmall) throws org.apache.commons.math.ode.IntegratorException {
+		double filteredH = h;
+		if ((java.lang.Math.abs(h)) < (minStep)) {
+			if (acceptSmall) {
+				filteredH = (forward) ? minStep : -(minStep);
+			}else {
+				throw new org.apache.commons.math.ode.IntegratorException("minimal step size ({0,number,0.00E00}) reached, integration needs {1,number,0.00E00}", minStep, java.lang.Math.abs(h));
+			}
+		}
+		if (filteredH > (maxStep)) {
+			filteredH = maxStep;
+		}else
+			if (filteredH < (-(maxStep))) {
+				filteredH = -(maxStep);
+			}
+		
+		return filteredH;
+	}
+
+	public abstract double integrate(org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, double t0, double[] y0, double t, double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException;
+
+	@java.lang.Override
+	public double getCurrentStepStart() {
+		return stepStart;
+	}
+
+	protected void resetInternalState() {
+		stepStart = java.lang.Double.NaN;
+		stepSize = java.lang.Math.sqrt(((minStep) * (maxStep)));
+	}
+
+	public double getMinStep() {
+		return minStep;
+	}
+
+	public double getMaxStep() {
+		return maxStep;
+	}
+}
+2019-04-12 16:06:14,517 ERROR main - Undo Error: modified: 
+public abstract class AdaptiveStepsizeIntegrator extends org.apache.commons.math.ode.AbstractIntegrator {
+	protected final double scalAbsoluteTolerance;
+
+	protected final double scalRelativeTolerance;
+
+	protected final double[] vecAbsoluteTolerance;
+
+	protected final double[] vecRelativeTolerance;
+
+	private double initialStep;
+
+	private final double minStep;
+
+	private final double maxStep;
+
+	public AdaptiveStepsizeIntegrator(final java.lang.String name, final double minStep, final double maxStep, final double scalAbsoluteTolerance, final double scalRelativeTolerance) {
+		super(name);
+		this.minStep = java.lang.Math.abs(minStep);
+		this.maxStep = java.lang.Math.abs(maxStep);
+		this.initialStep = -1.0;
+		this.scalAbsoluteTolerance = scalAbsoluteTolerance;
+		this.scalRelativeTolerance = scalRelativeTolerance;
+		this.vecAbsoluteTolerance = null;
+		this.vecRelativeTolerance = null;
+		resetInternalState();
+	}
+
+	public AdaptiveStepsizeIntegrator(final java.lang.String name, final double minStep, final double maxStep, final double[] vecAbsoluteTolerance, final double[] vecRelativeTolerance) {
+		super(name);
+		this.minStep = minStep;
+		this.maxStep = maxStep;
+		this.initialStep = -1.0;
+		this.scalAbsoluteTolerance = 0;
+		this.scalRelativeTolerance = 0;
+		this.vecAbsoluteTolerance = vecAbsoluteTolerance.clone();
+		this.vecRelativeTolerance = vecRelativeTolerance.clone();
+		resetInternalState();
+	}
+
+	public void setInitialStepSize(final double initialStepSize) {
+		if ((initialStepSize < (minStep)) || (initialStepSize > (maxStep))) {
+			initialStep = -1.0;
+		}else
+			initialStep = initialStepSize;
+		
+	}
+
+	@java.lang.Override
+	protected void sanityChecks(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.IntegratorException {
+		super.sanityChecks(equations, t0, y0, t, y);
+		if (((vecAbsoluteTolerance) != null) && ((vecAbsoluteTolerance.length) != (y0.length))) {
+			throw new org.apache.commons.math.ode.IntegratorException(("dimensions mismatch: state vector has dimension {0}," + " absolute tolerance vector has dimension {1}"), y0.length, vecAbsoluteTolerance.length);
+		}
+		if (((vecRelativeTolerance) != null) && ((vecRelativeTolerance.length) != (y0.length))) {
+			throw new org.apache.commons.math.ode.IntegratorException(("dimensions mismatch: state vector has dimension {0}," + " relative tolerance vector has dimension {1}"), y0.length, vecRelativeTolerance.length);
+		}
+	}
+
+	public double initializeStep(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final boolean forward, final int order, final double[] scale, final double t0, final double[] y0, final double[] yDot0, final double[] y1, final double[] yDot1) throws org.apache.commons.math.ode.DerivativeException {
+		if ((initialStep) > 0)
+			return forward ? initialStep : -(initialStep);
+		
+		double ratio;
+		double yOnScale2 = 0;
+		double yDotOnScale2 = 0;
+		for (int j = 0; j < (y0.length); ++j) {
+			ratio = (y0[j]) / (scale[j]);
+			yOnScale2 += ratio * ratio;
+			ratio = (yDot0[j]) / (scale[j]);
+			yDotOnScale2 += ratio * ratio;
+		}
+		double h = ((yOnScale2 < 1.0E-10) || (yDotOnScale2 < 1.0E-10)) ? 1.0E-6 : 0.01 * (java.lang.Math.sqrt((yOnScale2 / yDotOnScale2)));
+		if (!forward) {
+			h = -h;
+		}
+		for (int j = 0; j < (y0.length); ++j) {
+			y1[j] = (y0[j]) + (h * (yDot0[j]));
+		}
+		computeDerivatives((t0 + h), y1, yDot1);
+		double yDDotOnScale = 0;
+		for (int j = 0; j < (y0.length); ++j) {
+			ratio = ((yDot1[j]) - (yDot0[j])) / (scale[j]);
+			yDDotOnScale += ratio * ratio;
+		}
+		yDDotOnScale = (java.lang.Math.sqrt(yDDotOnScale)) / h;
+		final double maxInv2 = java.lang.Math.max(java.lang.Math.sqrt(yDotOnScale2), yDDotOnScale);
+		final double h1 = (maxInv2 < 1.0E-15) ? java.lang.Math.max(1.0E-6, (0.001 * (java.lang.Math.abs(h)))) : java.lang.Math.pow((0.01 / maxInv2), (1.0 / order));
+		h = java.lang.Math.min((100.0 * (java.lang.Math.abs(h))), h1);
+		h = java.lang.Math.max(h, (1.0E-12 * (java.lang.Math.abs(t0))));
+		if (h < (getMinStep())) {
+			h = getMinStep();
+		}
+		if (h > (getMaxStep())) {
+			h = getMaxStep();
+		}
+		if (!forward) {
+			h = -h;
+		}
+		return h;
+	}
+
+	protected double filterStep(final double h, final boolean forward, final boolean acceptSmall) throws org.apache.commons.math.ode.IntegratorException {
+		double filteredH = h;
+		if ((java.lang.Math.abs(h)) < (minStep)) {
+			if (acceptSmall) {
+				filteredH = (forward) ? minStep : -(minStep);
+			}else {
+				throw new org.apache.commons.math.ode.IntegratorException("minimal step size ({0,number,0.00E00}) reached, integration needs {1,number,0.00E00}", minStep, java.lang.Math.abs(h));
+			}
+		}
+		if (filteredH > (maxStep)) {
+			filteredH = maxStep;
+		}else
+			if (filteredH < (-(maxStep))) {
+				filteredH = -(maxStep);
+			}
+		
+		return filteredH;
+	}
+
+	public abstract double integrate(org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, double t0, double[] y0, double t, double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException;
+
+	@java.lang.Override
+	public double getCurrentStepStart() {
+		return stepStart;
+	}
+
+	protected void resetInternalState() {
+		stepStart = java.lang.Double.NaN;
+		stepSize = java.lang.Math.sqrt(((minStep) * (maxStep)));
+	}
+
+	public double getMinStep() {
+		return minStep;
+	}
+
+	public double getMaxStep() {
+		return maxStep;
+	}
+}
+2019-04-12 16:08:32,146 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:11:28,275 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:14:01,550 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:16:05,396 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:18:34,907 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:20:51,644 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:25:03,067 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:27:11,743 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:29:37,811 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:35:07,587 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:38:15,120 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:44:52,589 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:49:15,429 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:52:07,255 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:55:53,537 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 16:58:28,259 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 17:00:29,418 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 17:03:40,529 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 17:05:41,714 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 17:11:16,690 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 17:13:58,427 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 17:16:32,635 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 17:20:12,527 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 17:23:37,291 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 17:29:19,591 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 17:35:09,245 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 17:37:21,358 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 17:39:52,183 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 17:40:17,358 INFO main - 
+ No more time for operating
+2019-04-12 17:40:17,359 INFO main - Time Repair Loop (s): 6151.162
+2019-04-12 17:40:17,359 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-12 17:40:17,359 INFO main - 
+successful_ing_attempts (0): []
+2019-04-12 17:40:17,359 INFO main - 
+failing_ing_attempts (207): [82, 10, 57, 0, 22, 0, 11, 6, 0, 15, 0, 3, 0, 0, 6, 0, 0, 142, 0, 0, 4, 1, 0, 14, 7, 3, 0, 0, 0, 12, 48, 0, 61, 5, 6, 9, 93, 0, 1, 6, 0, 2, 0, 0, 0, 16, 0, 3, 5, 7, 0, 26, 0, 16, 15, 154, 96, 13, 7, 67, 1, 0, 3, 102, 3, 0, 8, 0, 9, 4, 5, 8, 93, 8, 251, 52, 7, 3, 29, 2, 0, 1, 1, 0, 15, 1, 0, 19, 0, 2, 21, 2, 2, 5, 56, 1, 53, 1, 0, 14, 8, 11, 7, 4, 3, 2, 14, 0, 4, 0, 150, 1, 11, 0, 16, 9, 1, 8, 0, 0, 0, 2, 5, 0, 22, 0, 0, 5, 1, 0, 2, 0, 3, 64, 0, 15, 113, 5, 5, 0, 18, 0, 2, 0, 0, 0, 3, 1, 2, 0, 0, 1, 97, 43, 0, 13, 9, 21, 5, 6, 0, 4, 2, 1, 5, 12, 0, 6, 15, 16, 15, 0, 6, 9, 1, 24, 170, 11, 1, 2, 0, 4, 8, 85, 19, 65, 9, 12, 5, 10, 18, 12, 45, 3, 0, 1, 23, 0, 7, 0, 0, 4, 6, 5, 0, 8, 11]
+2019-04-12 17:40:17,359 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 9162.849
 [DONE]

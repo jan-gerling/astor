@@ -1,0 +1,129 @@
+[INFO] created /home/jan_gerling/astor/results to store results
+[[35mBUILD[39m] astor in /home/jan_gerling/astor/
+[[35mRUN[39m] math_70-jmutrepair-local
+[[32mDONE[39m]: math_70-jmutrepair-local is finished!
+[[31m[EXCEPTION[39m]: math_70-jmutrepair-local had an exception: 
+Exception in thread "main" java.lang.IllegalStateException: Variant without any modification point. It must have at least one.
+	at fr.inria.astor.approaches.jgenprog.JGenProg.initializePopulation(JGenProg.java:183)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.initPopulation(JGenProg.java:73)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.createInitialPopulation(JGenProg.java:50)
+	at fr.inria.main.evolution.AstorMain.createEngine(AstorMain.java:215)
+	at fr.inria.main.evolution.AstorMain.run(AstorMain.java:498)
+	at fr.inria.main.evolution.AstorMain.execute(AstorMain.java:571)
+	at fr.inria.main.evolution.AstorMain.main(AstorMain.java:550)
+[DONE]
+
+
+[[35mRUN[39m] math_70-jmutrepair-package
+[[32mDONE[39m]: math_70-jmutrepair-package is finished!
+[[31m[EXCEPTION[39m]: math_70-jmutrepair-package had an exception: 
+Exception in thread "main" java.lang.IllegalStateException: Variant without any modification point. It must have at least one.
+	at fr.inria.astor.approaches.jgenprog.JGenProg.initializePopulation(JGenProg.java:183)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.initPopulation(JGenProg.java:73)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.createInitialPopulation(JGenProg.java:50)
+	at fr.inria.main.evolution.AstorMain.createEngine(AstorMain.java:215)
+	at fr.inria.main.evolution.AstorMain.run(AstorMain.java:498)
+	at fr.inria.main.evolution.AstorMain.execute(AstorMain.java:571)
+	at fr.inria.main.evolution.AstorMain.main(AstorMain.java:550)
+[DONE]
+
+
+[[35mRUN[39m] math_70-jmutrepair-global
+[[32mDONE[39m]: math_70-jmutrepair-global is finished!
+[[31m[EXCEPTION[39m]: math_70-jmutrepair-global had an exception: 
+Exception in thread "main" java.lang.IllegalStateException: Variant without any modification point. It must have at least one.
+	at fr.inria.astor.approaches.jgenprog.JGenProg.initializePopulation(JGenProg.java:183)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.initPopulation(JGenProg.java:73)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.createInitialPopulation(JGenProg.java:50)
+	at fr.inria.main.evolution.AstorMain.createEngine(AstorMain.java:215)
+	at fr.inria.main.evolution.AstorMain.run(AstorMain.java:498)
+	at fr.inria.main.evolution.AstorMain.execute(AstorMain.java:571)
+	at fr.inria.main.evolution.AstorMain.main(AstorMain.java:550)
+[DONE]
+
+
+[[35mRUN[39m] math_70-jkali-local
+[[32mDONE[39m]: math_70-jkali-local is finished!
+[[33m[WARNING[39m]: math_70-jkali-local did not find a fix!
+
+
+[[35mRUN[39m] math_70-jkali-package
+[[32mDONE[39m]: math_70-jkali-package is finished!
+[[33m[WARNING[39m]: math_70-jkali-package did not find a fix!
+
+
+[[35mRUN[39m] math_70-jkali-global
+[[32mDONE[39m]: math_70-jkali-global is finished!
+[[33m[WARNING[39m]: math_70-jkali-global did not find a fix!
+
+
+[[35mRUN[39m] math_70-jgenprog-local
+[[32mDONE[39m]: math_70-jgenprog-local is finished!
+[[32mSUCCESS[39m]: math_70-jgenprog-local found a fix!
+
+
+[[35mRUN[39m] math_70-jgenprog-package
+[[32mDONE[39m]: math_70-jgenprog-package is finished!
+[[32mSUCCESS[39m]: math_70-jgenprog-package found a fix!
+
+
+[[35mRUN[39m] math_70-jgenprog-global
+[[32mDONE[39m]: math_70-jgenprog-global is finished!
+[[32mSUCCESS[39m]: math_70-jgenprog-global found a fix!
+
+
+[[35mRUN[39m] math_71-jmutrepair-local
+[[32mDONE[39m]: math_71-jmutrepair-local is finished!
+[[31m[EXCEPTION[39m]: math_71-jmutrepair-local had an exception: 
+Exception in thread "main" java.lang.IllegalStateException: Variant without any modification point. It must have at least one.
+	at fr.inria.astor.approaches.jgenprog.JGenProg.initializePopulation(JGenProg.java:183)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.initPopulation(JGenProg.java:73)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.createInitialPopulation(JGenProg.java:50)
+	at fr.inria.main.evolution.AstorMain.createEngine(AstorMain.java:215)
+	at fr.inria.main.evolution.AstorMain.run(AstorMain.java:498)
+	at fr.inria.main.evolution.AstorMain.execute(AstorMain.java:571)
+	at fr.inria.main.evolution.AstorMain.main(AstorMain.java:550)
+[DONE]
+
+
+[[35mRUN[39m] math_71-jmutrepair-package
+[[32mDONE[39m]: math_71-jmutrepair-package is finished!
+[[33m[WARNING[39m]: math_71-jmutrepair-package did not find a fix!
+
+
+[[35mRUN[39m] math_71-jmutrepair-global
+[[32mDONE[39m]: math_71-jmutrepair-global is finished!
+[[33m[WARNING[39m]: math_71-jmutrepair-global did not find a fix!
+
+
+[[35mRUN[39m] math_71-jkali-local
+[[32mDONE[39m]: math_71-jkali-local is finished!
+[[33m[WARNING[39m]: math_71-jkali-local did not find a fix!
+
+
+[[35mRUN[39m] math_71-jkali-package
+[[32mDONE[39m]: math_71-jkali-package is finished!
+[[33m[WARNING[39m]: math_71-jkali-package did not find a fix!
+
+
+[[35mRUN[39m] math_71-jkali-global
+[[32mDONE[39m]: math_71-jkali-global is finished!
+[[33m[WARNING[39m]: math_71-jkali-global did not find a fix!
+
+
+[[35mRUN[39m] math_71-jgenprog-local
+[[32mDONE[39m]: math_71-jgenprog-local is finished!
+[[33m[WARNING[39m]: math_71-jgenprog-local did not find a fix!
+
+
+[[35mRUN[39m] math_71-jgenprog-package
+[[32mDONE[39m]: math_71-jgenprog-package is finished!
+[[33m[WARNING[39m]: math_71-jgenprog-package did not find a fix!
+
+
+[[35mRUN[39m] math_71-jgenprog-global
+[[32mDONE[39m]: math_71-jgenprog-global is finished!
+[[33m[WARNING[39m]: math_71-jgenprog-global did not find a fix!
+
+
+[[35mRUN[39m] math_72-jmutrepair-local

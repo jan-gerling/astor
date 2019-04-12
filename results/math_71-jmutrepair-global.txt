@@ -1,789 +1,127 @@
-2019-04-11 23:19:42,510 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jmutrepair  -scope  global  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan_gerling/astor/defect4j_tests/math_71/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.1  -maxtime  100  -stopfirst  true]
-2019-04-11 23:19:59,027 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//bin//default from 234 classes with test cases
-2019-04-11 23:19:59,063 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.1
-2019-04-11 23:20:09,798 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//bin//default]
-2019-04-11 23:23:13,518 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testMissedEndEvent
-2019-04-11 23:23:13,542 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testMissedEndEvent
-2019-04-11 23:23:13,554 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2169, fails: 2, GZoltar suspicious 17017
-2019-04-11 23:23:13,930 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 315 with susp > 0.1, we consider: 315
-2019-04-11 23:23:14,117 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//src//default, compliance level: 8
-2019-04-11 23:25:00,755 INFO main - 
----- Initial suspicious size: 315
-2019-04-11 23:25:01,143 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=231, susp=1.0]
-2019-04-11 23:25:01,313 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=180, susp=0.7071067811865475]
-2019-04-11 23:25:01,469 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=300, susp=0.7071067811865475]
-2019-04-11 23:25:01,673 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{setInitialStepSize(D)V 0.0, lineNumber=153, susp=0.5]
-2019-04-11 23:25:01,678 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{setInitialStepSize(D)V 0.0, lineNumber=155, susp=0.5]
-2019-04-11 23:25:01,759 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{initializeStep(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;ZI[DD[D[D[D[D)D 0.0, lineNumber=211, susp=0.5]
-2019-04-11 23:25:01,833 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{filterStep(DZZ)D 0.0, lineNumber=292, susp=0.31622776601683794]
-2019-04-11 23:25:01,889 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.DummyStepInterpolator, methodName=org.apache.commons.math.ode.sampling.DummyStepInterpolator{computeInterpolatedStateAndDerivatives(DD)V 0.0, lineNumber=107, susp=0.2672612419124244]
-2019-04-11 23:25:01,955 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.DummyStepInterpolator, methodName=org.apache.commons.math.ode.sampling.DummyStepInterpolator{computeInterpolatedStateAndDerivatives(DD)V 0.0, lineNumber=108, susp=0.2672612419124244]
-2019-04-11 23:25:01,957 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.DummyStepInterpolator, methodName=org.apache.commons.math.ode.sampling.DummyStepInterpolator{computeInterpolatedStateAndDerivatives(DD)V 0.0, lineNumber=109, susp=0.2672612419124244]
-2019-04-11 23:25:02,039 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=335, susp=0.23249527748763857]
-2019-04-11 23:25:02,182 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{isEmpty()Z 0.0, lineNumber=109, susp=0.22645540682891913]
-2019-04-11 23:25:02,257 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{requiresDenseOutput()Z 0.0, lineNumber=128, susp=0.22645540682891913]
-2019-04-11 23:25:02,294 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=123, susp=0.20412414523193154]
-2019-04-11 23:25:02,384 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=217, susp=0.20412414523193154]
-2019-04-11 23:25:02,484 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{reset(D[D)Z 0.0, lineNumber=337, susp=0.15523010514126656]
-2019-04-11 23:25:02,581 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{reset(D[D)Z 0.0, lineNumber=338, susp=0.15523010514126656]
-2019-04-11 23:25:02,590 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{reset(D[D)Z 0.0, lineNumber=340, susp=0.15523010514126656]
-2019-04-11 23:25:02,683 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator$EndTimeChecker, methodName=org.apache.commons.math.ode.AbstractIntegrator$EndTimeChecker{eventOccurred(D[DZ)I 0.0, lineNumber=262, susp=0.15339299776947407]
-2019-04-11 23:25:02,686 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stop()Z 0.0, lineNumber=217, susp=0.14907119849998599]
-2019-04-11 23:25:02,750 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=154, susp=0.14824986333222023]
-2019-04-11 23:25:02,877 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{getEventTime()D 0.0, lineNumber=187, susp=0.14824986333222023]
-2019-04-11 23:25:02,981 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=337, susp=0.14824986333222023]
-2019-04-11 23:25:03,184 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=237, susp=0.14744195615489714]
-2019-04-11 23:25:03,283 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=247, susp=0.14744195615489714]
-2019-04-11 23:25:03,406 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=248, susp=0.14744195615489714]
-2019-04-11 23:25:03,469 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{getEventTime()D 0.0, lineNumber=282, susp=0.14744195615489714]
-2019-04-11 23:25:03,480 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{stepAccepted(D[D)V 0.0, lineNumber=301, susp=0.14744195615489714]
-2019-04-11 23:25:03,578 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{stepAccepted(D[D)V 0.0, lineNumber=302, susp=0.14744195615489714]
-2019-04-11 23:25:03,624 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{stepAccepted(D[D)V 0.0, lineNumber=303, susp=0.14744195615489714]
-2019-04-11 23:25:03,628 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState$1, methodName=org.apache.commons.math.ode.events.EventState$1{value(D)D 0.0, lineNumber=217, susp=0.1466471150213533]
-2019-04-11 23:25:03,769 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState$1, methodName=org.apache.commons.math.ode.events.EventState$1{value(D)D 0.0, lineNumber=218, susp=0.1466471150213533]
-2019-04-11 23:25:03,818 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator$EndTimeChecker, methodName=org.apache.commons.math.ode.AbstractIntegrator$EndTimeChecker{g(D[D)D 0.0, lineNumber=267, susp=0.1466471150213533]
-2019-04-11 23:25:03,913 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=212, susp=0.1466471150213533]
-2019-04-11 23:25:04,010 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=214, susp=0.1466471150213533]
-2019-04-11 23:25:04,016 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=226, susp=0.1466471150213533]
-2019-04-11 23:25:04,130 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=227, susp=0.1466471150213533]
-2019-04-11 23:25:04,135 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=228, susp=0.1466471150213533]
-2019-04-11 23:25:04,271 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=229, susp=0.1466471150213533]
-2019-04-11 23:25:04,367 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{access$000(Lorg/apache/commons/math/ode/events/EventState;)Lorg/apache/commons/math/ode/events/EventHandler; 0.0, lineNumber=42, susp=0.1466471150213533]
-2019-04-11 23:25:04,450 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=138, susp=0.14509525002200233]
-2019-04-11 23:25:04,459 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=139, susp=0.14509525002200233]
-2019-04-11 23:25:04,528 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=140, susp=0.14509525002200233]
-2019-04-11 23:25:04,560 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=141, susp=0.14509525002200233]
-2019-04-11 23:25:04,600 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=142, susp=0.14509525002200233]
-2019-04-11 23:25:04,610 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=143, susp=0.14509525002200233]
-2019-04-11 23:25:04,668 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=145, susp=0.14509525002200233]
-2019-04-11 23:25:04,732 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=150, susp=0.14509525002200233]
-2019-04-11 23:25:04,814 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=168, susp=0.14509525002200233]
-2019-04-11 23:25:04,878 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=170, susp=0.14509525002200233]
-2019-04-11 23:25:04,882 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=203, susp=0.14509525002200233]
-2019-04-11 23:25:04,919 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=204, susp=0.14509525002200233]
-2019-04-11 23:25:04,938 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stop()Z 0.0, lineNumber=219, susp=0.14509525002200233]
-2019-04-11 23:25:05,037 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{reset(D[D)Z 0.0, lineNumber=240, susp=0.14509525002200233]
-2019-04-11 23:25:05,119 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=253, susp=0.14509525002200233]
-2019-04-11 23:25:05,178 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=254, susp=0.14509525002200233]
-2019-04-11 23:25:05,249 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=260, susp=0.14509525002200233]
-2019-04-11 23:25:05,255 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=261, susp=0.14509525002200233]
-2019-04-11 23:25:05,346 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=262, susp=0.14509525002200233]
-2019-04-11 23:25:05,453 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{stepAccepted(D[D)V 0.0, lineNumber=305, susp=0.14509525002200233]
-2019-04-11 23:25:05,494 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{stepAccepted(D[D)V 0.0, lineNumber=306, susp=0.14509525002200233]
-2019-04-11 23:25:05,499 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{stop()Z 0.0, lineNumber=315, susp=0.14509525002200233]
-2019-04-11 23:25:05,662 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{reset(D[D)Z 0.0, lineNumber=331, susp=0.14509525002200233]
-2019-04-11 23:25:05,710 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{reinitializeBegin(D[D)V 0.0, lineNumber=151, susp=0.14433756729740646]
-2019-04-11 23:25:05,782 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{reinitializeBegin(D[D)V 0.0, lineNumber=152, susp=0.14433756729740646]
-2019-04-11 23:25:05,798 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{reinitializeBegin(D[D)V 0.0, lineNumber=153, susp=0.14433756729740646]
-2019-04-11 23:25:05,851 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{reinitializeBegin(D[D)V 0.0, lineNumber=154, susp=0.14433756729740646]
-2019-04-11 23:25:05,934 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=172, susp=0.14433756729740646]
-2019-04-11 23:25:05,983 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=173, susp=0.14433756729740646]
-2019-04-11 23:25:06,073 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=174, susp=0.14433756729740646]
-2019-04-11 23:25:06,104 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=175, susp=0.14433756729740646]
-2019-04-11 23:25:06,193 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=177, susp=0.14433756729740646]
-2019-04-11 23:25:06,238 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=178, susp=0.14433756729740646]
-2019-04-11 23:25:06,243 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=179, susp=0.14433756729740646]
-2019-04-11 23:25:06,397 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=180, susp=0.14433756729740646]
-2019-04-11 23:25:06,498 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=183, susp=0.14433756729740646]
-2019-04-11 23:25:06,555 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=184, susp=0.14433756729740646]
-2019-04-11 23:25:06,616 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=185, susp=0.14433756729740646]
-2019-04-11 23:25:06,797 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{stepAccepted(D[D)V 0.0, lineNumber=296, susp=0.14433756729740646]
-2019-04-11 23:25:06,846 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{stepAccepted(D[D)V 0.0, lineNumber=297, susp=0.14433756729740646]
-2019-04-11 23:25:06,934 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{stepAccepted(D[D)V 0.0, lineNumber=308, susp=0.14433756729740646]
-2019-04-11 23:25:07,036 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{isForward()Z 0.0, lineNumber=251, susp=0.14285714285714285]
-2019-04-11 23:25:07,105 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{addEndTimeChecker(DDLorg/apache/commons/math/ode/events/CombinedEventsManager;)Lorg/apache/commons/math/ode/events/CombinedEventsManager; 0.0, lineNumber=233, susp=0.1421338109037403]
-2019-04-11 23:25:07,149 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{addEndTimeChecker(DDLorg/apache/commons/math/ode/events/CombinedEventsManager;)Lorg/apache/commons/math/ode/events/CombinedEventsManager; 0.0, lineNumber=234, susp=0.1421338109037403]
-2019-04-11 23:25:07,212 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{addEndTimeChecker(DDLorg/apache/commons/math/ode/events/CombinedEventsManager;)Lorg/apache/commons/math/ode/events/CombinedEventsManager; 0.0, lineNumber=240, susp=0.1421338109037403]
-2019-04-11 23:25:07,216 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{addEndTimeChecker(DDLorg/apache/commons/math/ode/events/CombinedEventsManager;)Lorg/apache/commons/math/ode/events/CombinedEventsManager; 0.0, lineNumber=242, susp=0.1421338109037403]
-2019-04-11 23:25:07,300 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{addEndTimeChecker(DDLorg/apache/commons/math/ode/events/CombinedEventsManager;)Lorg/apache/commons/math/ode/events/CombinedEventsManager; 0.0, lineNumber=244, susp=0.1421338109037403]
-2019-04-11 23:25:07,314 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{getEventsStates()Ljava/util/Collection; 0.0, lineNumber=102, susp=0.1421338109037403]
-2019-04-11 23:25:07,415 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=285, susp=0.1421338109037403]
-2019-04-11 23:25:07,420 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=286, susp=0.1421338109037403]
-2019-04-11 23:25:07,706 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator, methodName=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator{estimateError([[D[D[DD)D 0.0, lineNumber=249, susp=0.1414213562373095]
-2019-04-11 23:25:07,846 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator, methodName=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator{estimateError([[D[D[DD)D 0.0, lineNumber=250, susp=0.1414213562373095]
-2019-04-11 23:25:07,935 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator, methodName=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator{estimateError([[D[D[DD)D 0.0, lineNumber=252, susp=0.1414213562373095]
-2019-04-11 23:25:08,107 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator, methodName=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator{estimateError([[D[D[DD)D 0.0, lineNumber=253, susp=0.1414213562373095]
-2019-04-11 23:25:08,200 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator, methodName=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator{estimateError([[D[D[DD)D 0.0, lineNumber=257, susp=0.1414213562373095]
-2019-04-11 23:25:08,327 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator, methodName=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator{estimateError([[D[D[DD)D 0.0, lineNumber=262, susp=0.1414213562373095]
-2019-04-11 23:25:08,493 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator, methodName=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator{estimateError([[D[D[DD)D 0.0, lineNumber=263, susp=0.1414213562373095]
-2019-04-11 23:25:08,551 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator, methodName=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator{estimateError([[D[D[DD)D 0.0, lineNumber=266, susp=0.1414213562373095]
-2019-04-11 23:25:08,663 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator, methodName=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator{estimateError([[D[D[DD)D 0.0, lineNumber=267, susp=0.1414213562373095]
-2019-04-11 23:25:08,775 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator, methodName=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator{estimateError([[D[D[DD)D 0.0, lineNumber=268, susp=0.1414213562373095]
-2019-04-11 23:25:08,937 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator, methodName=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator{estimateError([[D[D[DD)D 0.0, lineNumber=269, susp=0.1414213562373095]
-2019-04-11 23:25:09,026 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator, methodName=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator{estimateError([[D[D[DD)D 0.0, lineNumber=272, susp=0.1414213562373095]
-2019-04-11 23:25:09,219 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator, methodName=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator{estimateError([[D[D[DD)D 0.0, lineNumber=277, susp=0.1414213562373095]
-2019-04-11 23:25:09,222 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{addEventHandler(Lorg/apache/commons/math/ode/events/EventHandler;DDI)V 0.0, lineNumber=71, susp=0.14071950894605836]
-2019-04-11 23:25:09,283 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{addEventHandler(Lorg/apache/commons/math/ode/events/EventHandler;DDI)V 0.0, lineNumber=73, susp=0.14071950894605836]
-2019-04-11 23:25:09,287 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=127, susp=0.14071950894605836]
-2019-04-11 23:25:09,381 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=202, susp=0.14002800840280097]
-2019-04-11 23:25:09,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=207, susp=0.14002800840280097]
-2019-04-11 23:25:09,384 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stepAccepted(D[D)V 0.0, lineNumber=208, susp=0.14002800840280097]
-2019-04-11 23:25:09,431 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stop()Z 0.0, lineNumber=215, susp=0.14002800840280097]
-2019-04-11 23:25:09,434 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{stop()Z 0.0, lineNumber=220, susp=0.14002800840280097]
-2019-04-11 23:25:09,487 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{reset(D[D)Z 0.0, lineNumber=235, susp=0.14002800840280097]
-2019-04-11 23:25:09,489 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{reset(D[D)Z 0.0, lineNumber=236, susp=0.14002800840280097]
-2019-04-11 23:25:09,539 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.CombinedEventsManager, methodName=org.apache.commons.math.ode.events.CombinedEventsManager{reset(D[D)Z 0.0, lineNumber=241, susp=0.14002800840280097]
-2019-04-11 23:25:09,591 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{setMaximalIterationCount(I)V 0.0, lineNumber=93, susp=0.14002800840280097]
-2019-04-11 23:25:09,594 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{setMaximalIterationCount(I)V 0.0, lineNumber=94, susp=0.14002800840280097]
-2019-04-11 23:25:09,605 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=314, susp=0.14002800840280097]
-2019-04-11 23:25:09,675 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{getPreviousTime()D 0.0, lineNumber=230, susp=0.1386750490563073]
-2019-04-11 23:25:09,680 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=312, susp=0.1386750490563073]
-2019-04-11 23:25:09,747 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{getCurrentTime()D 0.0, lineNumber=235, susp=0.13801311186847084]
-2019-04-11 23:25:09,748 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{computeDerivatives(D[D[D)V 0.0, lineNumber=183, susp=0.13608276348795434]
-2019-04-11 23:25:09,758 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{setEquations(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;)V 0.0, lineNumber=167, susp=0.13545709229571928]
-2019-04-11 23:25:09,805 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{setEquations(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;)V 0.0, lineNumber=168, susp=0.13545709229571928]
-2019-04-11 23:25:09,861 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{computeDerivatives(D[D[D)V 0.0, lineNumber=182, susp=0.13545709229571928]
-2019-04-11 23:25:09,866 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{getInterpolatedState()[D 0.0, lineNumber=273, susp=0.13545709229571928]
-2019-04-11 23:25:09,951 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{getInterpolatedState()[D 0.0, lineNumber=274, susp=0.13545709229571928]
-2019-04-11 23:25:09,953 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{getInterpolatedState()[D 0.0, lineNumber=275, susp=0.13545709229571928]
-2019-04-11 23:25:09,956 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{getInterpolatedState()[D 0.0, lineNumber=276, susp=0.13545709229571928]
-2019-04-11 23:25:10,027 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{getInterpolatedState()[D 0.0, lineNumber=279, susp=0.13545709229571928]
-2019-04-11 23:25:10,028 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{sanityChecks(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)V 0.0, lineNumber=218, susp=0.13483997249264842]
-2019-04-11 23:25:10,039 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{requiresDenseOutput()Z 0.0, lineNumber=123, susp=0.13423121104280486]
-2019-04-11 23:25:10,095 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=341, susp=0.13423121104280486]
-2019-04-11 23:25:10,098 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=342, susp=0.13423121104280486]
-2019-04-11 23:25:10,155 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=343, susp=0.13423121104280486]
-2019-04-11 23:25:10,160 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=344, susp=0.13423121104280486]
-2019-04-11 23:25:10,263 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=152, susp=0.13130643285972254]
-2019-04-11 23:25:10,268 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator, methodName=org.apache.commons.math.ode.nonstiff.DormandPrince853Integrator{getOrder()I 0.0, lineNumber=241, susp=0.13130643285972254]
-2019-04-11 23:25:10,355 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{shift()V 0.0, lineNumber=211, susp=0.13018891098082389]
-2019-04-11 23:25:10,356 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{shift()V 0.0, lineNumber=212, susp=0.13018891098082389]
-2019-04-11 23:25:10,382 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{storeTime(D)V 0.0, lineNumber=219, susp=0.13018891098082389]
-2019-04-11 23:25:10,390 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{storeTime(D)V 0.0, lineNumber=220, susp=0.13018891098082389]
-2019-04-11 23:25:10,447 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{storeTime(D)V 0.0, lineNumber=221, susp=0.13018891098082389]
-2019-04-11 23:25:10,449 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{storeTime(D)V 0.0, lineNumber=224, susp=0.13018891098082389]
-2019-04-11 23:25:10,461 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{storeTime(D)V 0.0, lineNumber=226, susp=0.13018891098082389]
-2019-04-11 23:25:10,482 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{setInterpolatedTime(D)V 0.0, lineNumber=245, susp=0.13018891098082389]
-2019-04-11 23:25:10,594 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{setInterpolatedTime(D)V 0.0, lineNumber=246, susp=0.13018891098082389]
-2019-04-11 23:25:10,598 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.sampling.AbstractStepInterpolator, methodName=org.apache.commons.math.ode.sampling.AbstractStepInterpolator{setInterpolatedTime(D)V 0.0, lineNumber=247, susp=0.13018891098082389]
-2019-04-11 23:25:10,599 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{setAbsoluteAccuracy(D)V 0.0, lineNumber=78, susp=0.13018891098082389]
-2019-04-11 23:25:10,649 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ConvergingAlgorithmImpl, methodName=org.apache.commons.math.ConvergingAlgorithmImpl{setAbsoluteAccuracy(D)V 0.0, lineNumber=79, susp=0.13018891098082389]
-2019-04-11 23:25:10,701 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=335, susp=0.1270001270001905]
-2019-04-11 23:25:10,704 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=267, susp=0.12649110640673517]
-2019-04-11 23:25:10,706 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=268, susp=0.12649110640673517]
-2019-04-11 23:25:10,771 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=269, susp=0.12649110640673517]
-2019-04-11 23:25:10,773 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=270, susp=0.12649110640673517]
-2019-04-11 23:25:10,827 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=271, susp=0.12649110640673517]
-2019-04-11 23:25:10,829 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=272, susp=0.12649110640673517]
-2019-04-11 23:25:10,883 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=294, susp=0.12649110640673517]
-2019-04-11 23:25:10,887 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=302, susp=0.12649110640673517]
-2019-04-11 23:25:10,975 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=303, susp=0.12649110640673517]
-2019-04-11 23:25:11,062 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=317, susp=0.12649110640673517]
-2019-04-11 23:25:11,065 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=324, susp=0.12649110640673517]
-2019-04-11 23:25:11,075 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=325, susp=0.12649110640673517]
-2019-04-11 23:25:11,137 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{setMaxEvaluations(I)V 0.0, lineNumber=143, susp=0.1259881576697424]
-2019-04-11 23:25:11,138 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{setMaxEvaluations(I)V 0.0, lineNumber=144, susp=0.1259881576697424]
-2019-04-11 23:25:11,142 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{resetEvaluations()V 0.0, lineNumber=159, susp=0.1259881576697424]
-2019-04-11 23:25:11,196 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.AbstractIntegrator, methodName=org.apache.commons.math.ode.AbstractIntegrator{resetEvaluations()V 0.0, lineNumber=160, susp=0.1259881576697424]
-2019-04-11 23:25:11,198 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=281, susp=0.1259881576697424]
-2019-04-11 23:25:11,239 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=282, susp=0.1259881576697424]
-2019-04-11 23:25:11,241 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=283, susp=0.1259881576697424]
-2019-04-11 23:25:11,353 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=289, susp=0.1259881576697424]
-2019-04-11 23:25:11,403 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=329, susp=0.1259881576697424]
-2019-04-11 23:25:11,405 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=330, susp=0.1259881576697424]
-2019-04-11 23:25:11,509 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=339, susp=0.1259881576697424]
-2019-04-11 23:25:11,524 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=346, susp=0.1259881576697424]
-2019-04-11 23:25:11,594 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=347, susp=0.1259881576697424]
-2019-04-11 23:25:11,596 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D 0.0, lineNumber=224, susp=0.12451456127293807]
-2019-04-11 23:25:11,640 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D 0.0, lineNumber=234, susp=0.12451456127293807]
-2019-04-11 23:25:11,649 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=260, susp=0.12451456127293807]
-2019-04-11 23:25:11,702 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=261, susp=0.12451456127293807]
-2019-04-11 23:25:11,704 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=263, susp=0.12451456127293807]
-2019-04-11 23:25:11,797 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D 0.0, lineNumber=264, susp=0.12451456127293807]
-2019-04-11 23:25:11,898 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D 0.0, lineNumber=199, susp=0.12309149097933272]
-2019-04-11 23:25:11,900 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D 0.0, lineNumber=200, susp=0.12309149097933272]
-2019-04-11 23:25:11,926 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D 0.0, lineNumber=202, susp=0.12309149097933272]
-2019-04-11 23:25:11,928 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D 0.0, lineNumber=204, susp=0.12309149097933272]
-2019-04-11 23:25:11,975 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D 0.0, lineNumber=205, susp=0.12309149097933272]
-2019-04-11 23:25:11,978 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.BrentSolver, methodName=org.apache.commons.math.analysis.solvers.BrentSolver{solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D 0.0, lineNumber=208, susp=0.12309149097933272]
-2019-04-11 23:25:12,071 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{clearResult()V 0.0, lineNumber=165, susp=0.1203858530857692]
-2019-04-11 23:25:12,073 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{clearResult()V 0.0, lineNumber=166, susp=0.1203858530857692]
-2019-04-11 23:25:12,118 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{clearResult()V 0.0, lineNumber=167, susp=0.1203858530857692]
-2019-04-11 23:25:12,120 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=149, susp=0.11785113019775793]
-2019-04-11 23:25:12,162 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=150, susp=0.11785113019775793]
-2019-04-11 23:25:12,165 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=151, susp=0.11785113019775793]
-2019-04-11 23:25:12,224 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=154, susp=0.11785113019775793]
-2019-04-11 23:25:12,227 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=157, susp=0.11785113019775793]
-2019-04-11 23:25:12,283 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=165, susp=0.11785113019775793]
-2019-04-11 23:25:12,284 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{setResult(DI)V 0.0, lineNumber=141, susp=0.11547005383792514]
-2019-04-11 23:25:12,334 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{setResult(DI)V 0.0, lineNumber=142, susp=0.11547005383792514]
-2019-04-11 23:25:12,336 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{setResult(DI)V 0.0, lineNumber=143, susp=0.11547005383792514]
-2019-04-11 23:25:12,337 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{setResult(DI)V 0.0, lineNumber=144, susp=0.11547005383792514]
-2019-04-11 23:25:12,399 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=293, susp=0.11470786693528087]
-2019-04-11 23:25:12,404 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=303, susp=0.11470786693528087]
-2019-04-11 23:25:12,500 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=305, susp=0.11470786693528087]
-2019-04-11 23:25:12,502 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=362, susp=0.11470786693528087]
-2019-04-11 23:25:12,555 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=363, susp=0.11470786693528087]
-2019-04-11 23:25:12,558 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=364, susp=0.11470786693528087]
-2019-04-11 23:25:12,639 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl{verifyInterval(DD)V 0.0, lineNumber=213, susp=0.11396057645963795]
-2019-04-11 23:25:12,642 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=331, susp=0.11180339887498948]
-2019-04-11 23:25:12,812 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=348, susp=0.11180339887498948]
-2019-04-11 23:25:12,815 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=351, susp=0.11180339887498948]
-2019-04-11 23:25:12,883 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=353, susp=0.11180339887498948]
-2019-04-11 23:25:12,895 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=354, susp=0.11180339887498948]
-2019-04-11 23:25:12,951 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=355, susp=0.11180339887498948]
-2019-04-11 23:25:12,995 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=356, susp=0.11180339887498948]
-2019-04-11 23:25:13,000 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=357, susp=0.11180339887498948]
-2019-04-11 23:25:13,062 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=360, susp=0.11180339887498948]
-2019-04-11 23:25:13,073 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=101, susp=0.10783277320343841]
-2019-04-11 23:25:13,083 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=102, susp=0.10783277320343841]
-2019-04-11 23:25:13,141 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=103, susp=0.10783277320343841]
-2019-04-11 23:25:13,143 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=106, susp=0.10783277320343841]
-2019-04-11 23:25:13,196 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=108, susp=0.10783277320343841]
-2019-04-11 23:25:13,243 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=110, susp=0.10783277320343841]
-2019-04-11 23:25:13,244 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=111, susp=0.10783277320343841]
-2019-04-11 23:25:13,286 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=112, susp=0.10783277320343841]
-2019-04-11 23:25:13,297 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=114, susp=0.10783277320343841]
-2019-04-11 23:25:13,304 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=125, susp=0.10783277320343841]
-2019-04-11 23:25:13,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=128, susp=0.10783277320343841]
-2019-04-11 23:25:13,441 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=129, susp=0.10783277320343841]
-2019-04-11 23:25:13,443 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=130, susp=0.10783277320343841]
-2019-04-11 23:25:13,445 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=133, susp=0.10783277320343841]
-2019-04-11 23:25:13,492 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=134, susp=0.10783277320343841]
-2019-04-11 23:25:13,495 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=137, susp=0.10783277320343841]
-2019-04-11 23:25:13,579 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=139, susp=0.10783277320343841]
-2019-04-11 23:25:13,582 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=141, susp=0.10783277320343841]
-2019-04-11 23:25:13,647 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=144, susp=0.10783277320343841]
-2019-04-11 23:25:13,651 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=147, susp=0.10783277320343841]
-2019-04-11 23:25:13,699 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=162, susp=0.10783277320343841]
-2019-04-11 23:25:13,702 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=163, susp=0.10783277320343841]
-2019-04-11 23:25:13,779 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=164, susp=0.10783277320343841]
-2019-04-11 23:25:13,782 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=167, susp=0.10783277320343841]
-2019-04-11 23:25:13,835 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=171, susp=0.10783277320343841]
-2019-04-11 23:25:13,840 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=173, susp=0.10783277320343841]
-2019-04-11 23:25:13,969 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=183, susp=0.10783277320343841]
-2019-04-11 23:25:13,971 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=185, susp=0.10783277320343841]
-2019-04-11 23:25:13,973 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=186, susp=0.10783277320343841]
-2019-04-11 23:25:14,030 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=192, susp=0.10783277320343841]
-2019-04-11 23:25:14,032 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=193, susp=0.10783277320343841]
-2019-04-11 23:25:14,034 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=194, susp=0.10783277320343841]
-2019-04-11 23:25:14,103 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=195, susp=0.10783277320343841]
-2019-04-11 23:25:14,106 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=198, susp=0.10783277320343841]
-2019-04-11 23:25:14,171 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=199, susp=0.10783277320343841]
-2019-04-11 23:25:14,173 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=202, susp=0.10783277320343841]
-2019-04-11 23:25:14,273 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=211, susp=0.10783277320343841]
-2019-04-11 23:25:14,274 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=213, susp=0.10783277320343841]
-2019-04-11 23:25:14,309 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=215, susp=0.10783277320343841]
-2019-04-11 23:25:14,313 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=216, susp=0.10783277320343841]
-2019-04-11 23:25:14,315 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=217, susp=0.10783277320343841]
-2019-04-11 23:25:14,371 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=218, susp=0.10783277320343841]
-2019-04-11 23:25:14,373 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=100, susp=0.10206207261596577]
-2019-04-11 23:25:14,423 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=247, susp=0.10101525445522107]
-2019-04-11 23:25:14,426 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=248, susp=0.10101525445522107]
-2019-04-11 23:25:14,511 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=205, susp=0.1]
-2019-04-11 23:25:14,515 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=291, susp=0.1]
-2019-04-11 23:25:14,634 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=307, susp=0.1]
-2019-04-11 23:25:14,664 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=321, susp=0.1]
-2019-04-11 23:25:14,667 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=322, susp=0.1]
-2019-04-11 23:25:14,675 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=323, susp=0.1]
-2019-04-11 23:25:14,751 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=324, susp=0.1]
-2019-04-11 23:25:14,759 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=327, susp=0.1]
-2019-04-11 23:25:14,811 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=328, susp=0.1]
-2019-04-11 23:25:14,812 INFO main - Total suspicious from FL: 315,  45
-2019-04-11 23:25:14,812 INFO main - Total ModPoint created: 45
-2019-04-11 23:25:14,812 INFO main - Creating program variant #1, [Variant id: 1, #gens: 45, #ops: 0, parent:-]
-2019-04-11 23:27:31,140 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
-2019-04-11 23:27:31,141 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
-2019-04-11 23:27:31,141 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
-2019-04-11 23:27:31,142 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
-2019-04-11 23:27:31,142 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.1
-2019-04-11 23:27:31,142 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
-2019-04-11 23:27:31,142 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
-2019-04-11 23:27:31,142 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
-2019-04-11 23:27:31,142 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
-2019-04-11 23:27:31,143 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
-2019-04-11 23:27:31,153 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
-2019-04-11 23:27:31,153 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
-2019-04-11 23:27:31,153 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
-2019-04-11 23:27:31,153 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
-2019-04-11 23:27:31,153 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
-2019-04-11 23:27:31,153 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jmutrepair
-2019-04-11 23:27:31,153 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
-2019-04-11 23:27:31,153 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
-2019-04-11 23:27:31,153 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
-2019-04-11 23:27:31,159 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
-2019-04-11 23:27:31,159 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
-2019-04-11 23:27:31,159 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
-2019-04-11 23:27:31,159 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
-2019-04-11 23:27:31,159 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
-2019-04-11 23:27:31,160 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
-2019-04-11 23:27:31,160 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
-2019-04-11 23:27:31,160 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
-2019-04-11 23:27:31,160 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
-2019-04-11 23:27:31,160 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /home/jan_gerling/astor/defect4j_tests/math_71/
-2019-04-11 23:27:31,160 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
-2019-04-11 23:27:31,160 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
-2019-04-11 23:27:31,160 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
-2019-04-11 23:27:31,160 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
-2019-04-11 23:27:31,160 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
-2019-04-11 23:27:31,161 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
-2019-04-11 23:27:31,161 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
-2019-04-11 23:27:31,161 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
-2019-04-11 23:27:31,161 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
-2019-04-11 23:27:31,161 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
-2019-04-11 23:27:31,161 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
-2019-04-11 23:27:31,161 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
-2019-04-11 23:27:31,161 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
-2019-04-11 23:27:31,161 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
-2019-04-11 23:27:31,161 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
-2019-04-11 23:27:31,161 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
-2019-04-11 23:27:31,162 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
-2019-04-11 23:27:31,162 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
-2019-04-11 23:27:31,162 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
-2019-04-11 23:27:31,162 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
-2019-04-11 23:27:31,162 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
-2019-04-11 23:27:31,162 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
-2019-04-11 23:27:31,162 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= global
-2019-04-11 23:27:31,162 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
-2019-04-11 23:27:31,162 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
-2019-04-11 23:27:31,162 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
-2019-04-11 23:27:31,162 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
-2019-04-11 23:27:31,163 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
-2019-04-11 23:27:31,163 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
-2019-04-11 23:27:31,163 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
-2019-04-11 23:27:31,163 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
-2019-04-11 23:27:31,163 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
-2019-04-11 23:27:31,163 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
-2019-04-11 23:27:31,163 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
-2019-04-11 23:27:31,163 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
-2019-04-11 23:27:31,163 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
-2019-04-11 23:27:31,163 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
-2019-04-11 23:27:31,163 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
-2019-04-11 23:27:31,164 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
-2019-04-11 23:27:31,164 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
-2019-04-11 23:27:31,164 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
-2019-04-11 23:27:31,164 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
-2019-04-11 23:27:31,229 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
-2019-04-11 23:27:31,230 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize < (minSt[...]` at pos -1 of parent `-`
-2019-04-11 23:27:47,066 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
-2019-04-11 23:27:47,067 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize == (minS[...]` at pos -1 of parent `-`
-2019-04-11 23:27:54,251 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
-2019-04-11 23:27:54,251 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize != (minS[...]` at pos -1 of parent `-`
-2019-04-11 23:28:00,753 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
-2019-04-11 23:28:00,754 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize >= (minS[...]` at pos -1 of parent `-`
-2019-04-11 23:28:06,814 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
-2019-04-11 23:28:06,814 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize > (minSt[...]` at pos -1 of parent `-`
-2019-04-11 23:28:12,594 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
-2019-04-11 23:28:12,594 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize <= (minS[...]` at pos -1 of parent `-`
-2019-04-11 23:28:18,310 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
-2019-04-11 23:28:18,310 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(!(initialStepSize < (min[...]` at pos -1 of parent `-`
-2019-04-11 23:28:23,678 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
-2019-04-11 23:28:23,678 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize < (minSt[...]` at pos -1 of parent `-`
-2019-04-11 23:28:29,258 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
-2019-04-11 23:28:29,258 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize < (minSt[...]` at pos -1 of parent `-`
-2019-04-11 23:28:34,782 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
-2019-04-11 23:28:34,782 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize < (minSt[...]` at pos -1 of parent `-`
-2019-04-11 23:28:40,094 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
-2019-04-11 23:28:40,094 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize < (minSt[...]` at pos -1 of parent `-`
-2019-04-11 23:28:45,328 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
-2019-04-11 23:28:45,328 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize < (minSt[...]` at pos -1 of parent `-`
-2019-04-11 23:28:50,714 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
-2019-04-11 23:28:50,714 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize < (minSt[...]` at pos -1 of parent `-`
-2019-04-11 23:28:56,210 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
-2019-04-11 23:28:56,210 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `!((initialStepSize < (min[...]` at pos -1 of parent `-`
-2019-04-11 23:29:01,662 INFO main - mod_point ModificPoint=EventState line: 334, el: CtIfImpl
-2019-04-11 23:29:01,662 INFO main - -->op: IfExpresionMutOp: `(nextAction) == (org.apac[...] ` ---> `(nextAction) != (org.apac[...]` at pos -1 of parent `-`
-2019-04-11 23:29:07,430 INFO main - mod_point ModificPoint=EventState line: 334, el: CtIfImpl
-2019-04-11 23:29:07,430 INFO main - -->op: IfExpresionMutOp: `(nextAction) == (org.apac[...] ` ---> `(nextAction) >= (org.apac[...]` at pos -1 of parent `-`
-2019-04-11 23:29:12,909 INFO main - mod_point ModificPoint=EventState line: 334, el: CtIfImpl
-2019-04-11 23:29:12,910 INFO main - -->op: IfExpresionMutOp: `(nextAction) == (org.apac[...] ` ---> `(nextAction) > (org.apach[...]` at pos -1 of parent `-`
-2019-04-11 23:29:18,818 INFO main - mod_point ModificPoint=EventState line: 334, el: CtIfImpl
-2019-04-11 23:29:18,818 INFO main - -->op: IfExpresionMutOp: `(nextAction) == (org.apac[...] ` ---> `(nextAction) <= (org.apac[...]` at pos -1 of parent `-`
-2019-04-11 23:29:24,093 INFO main - mod_point ModificPoint=EventState line: 334, el: CtIfImpl
-2019-04-11 23:29:24,093 INFO main - -->op: IfExpresionMutOp: `(nextAction) == (org.apac[...] ` ---> `(nextAction) < (org.apach[...]` at pos -1 of parent `-`
-2019-04-11 23:29:29,138 INFO main - mod_point ModificPoint=EventState line: 334, el: CtIfImpl
-2019-04-11 23:29:29,138 INFO main - -->op: IfExpresionMutOp: `(nextAction) == (org.apac[...] ` ---> `!((nextAction) == (org.ap[...]` at pos -1 of parent `-`
-2019-04-11 23:29:34,414 INFO main - mod_point ModificPoint=CombinedEventsManager line: 153, el: CtIfImpl
-2019-04-11 23:29:34,414 INFO main - -->op: IfExpresionMutOp: `(first) == null ` ---> `(first) != null` at pos -1 of parent `-`
-2019-04-11 23:29:38,446 INFO main - mod_point ModificPoint=CombinedEventsManager line: 153, el: CtIfImpl
-2019-04-11 23:29:38,446 INFO main - -->op: IfExpresionMutOp: `(first) == null ` ---> `(first) >= null` at pos -1 of parent `-`
-2019-04-11 23:29:39,599 INFO main - mod_point ModificPoint=CombinedEventsManager line: 153, el: CtIfImpl
-2019-04-11 23:29:39,599 INFO main - -->op: IfExpresionMutOp: `(first) == null ` ---> `(first) > null` at pos -1 of parent `-`
-2019-04-11 23:29:40,647 INFO main - mod_point ModificPoint=CombinedEventsManager line: 153, el: CtIfImpl
-2019-04-11 23:29:40,648 INFO main - -->op: IfExpresionMutOp: `(first) == null ` ---> `(first) <= null` at pos -1 of parent `-`
-2019-04-11 23:29:41,726 INFO main - mod_point ModificPoint=CombinedEventsManager line: 153, el: CtIfImpl
-2019-04-11 23:29:41,728 INFO main - -->op: IfExpresionMutOp: `(first) == null ` ---> `(first) < null` at pos -1 of parent `-`
-2019-04-11 23:29:42,798 INFO main - mod_point ModificPoint=CombinedEventsManager line: 153, el: CtIfImpl
-2019-04-11 23:29:42,798 INFO main - -->op: IfExpresionMutOp: `(first) == null ` ---> `!((first) == null)` at pos -1 of parent `-`
-2019-04-11 23:29:47,406 INFO main - mod_point ModificPoint=BrentSolver line: 336, el: CtIfImpl
-2019-04-11 23:29:47,406 INFO main - -->op: IfExpresionMutOp: `dx <= 0.0 ` ---> `dx == 0.0` at pos -1 of parent `-`
-2019-04-11 23:29:51,822 INFO main - mod_point ModificPoint=BrentSolver line: 336, el: CtIfImpl
-2019-04-11 23:29:51,822 INFO main - -->op: IfExpresionMutOp: `dx <= 0.0 ` ---> `dx != 0.0` at pos -1 of parent `-`
-2019-04-11 23:29:56,817 INFO main - mod_point ModificPoint=BrentSolver line: 336, el: CtIfImpl
-2019-04-11 23:29:56,817 INFO main - -->op: IfExpresionMutOp: `dx <= 0.0 ` ---> `dx >= 0.0` at pos -1 of parent `-`
-2019-04-11 23:30:01,432 INFO main - mod_point ModificPoint=BrentSolver line: 336, el: CtIfImpl
-2019-04-11 23:30:01,432 INFO main - -->op: IfExpresionMutOp: `dx <= 0.0 ` ---> `dx > 0.0` at pos -1 of parent `-`
-2019-04-11 23:30:06,430 INFO main - mod_point ModificPoint=BrentSolver line: 336, el: CtIfImpl
-2019-04-11 23:30:06,430 INFO main - -->op: IfExpresionMutOp: `dx <= 0.0 ` ---> `dx < 0.0` at pos -1 of parent `-`
-2019-04-11 23:30:11,877 INFO main - mod_point ModificPoint=BrentSolver line: 336, el: CtIfImpl
-2019-04-11 23:30:11,878 INFO main - -->op: IfExpresionMutOp: `dx <= 0.0 ` ---> `!(dx <= 0.0)` at pos -1 of parent `-`
-2019-04-11 23:30:16,346 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
-2019-04-11 23:30:16,346 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs((roo[...] ` ---> `((java.lang.Math.abs((roo[...]` at pos -1 of parent `-`
-2019-04-11 23:30:21,625 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
-2019-04-11 23:30:21,626 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs((roo[...] ` ---> `((java.lang.Math.abs((roo[...]` at pos -1 of parent `-`
-2019-04-11 23:30:26,890 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
-2019-04-11 23:30:26,890 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs((roo[...] ` ---> `((java.lang.Math.abs((roo[...]` at pos -1 of parent `-`
-2019-04-11 23:30:31,945 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
-2019-04-11 23:30:31,946 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs((roo[...] ` ---> `((java.lang.Math.abs((roo[...]` at pos -1 of parent `-`
-2019-04-11 23:30:36,970 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
-2019-04-11 23:30:36,970 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs((roo[...] ` ---> `((java.lang.Math.abs((roo[...]` at pos -1 of parent `-`
-2019-04-11 23:30:42,166 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
-2019-04-11 23:30:42,166 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs((roo[...] ` ---> `(!((java.lang.Math.abs((r[...]` at pos -1 of parent `-`
-2019-04-11 23:30:47,278 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
-2019-04-11 23:30:47,278 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs((roo[...] ` ---> `((java.lang.Math.abs((roo[...]` at pos -1 of parent `-`
-2019-04-11 23:30:52,473 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
-2019-04-11 23:30:52,474 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs((roo[...] ` ---> `((java.lang.Math.abs((roo[...]` at pos -1 of parent `-`
-2019-04-11 23:32:53,575 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-11 23:32:53,575 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
-2019-04-11 23:32:53,575 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs((roo[...] ` ---> `((java.lang.Math.abs((roo[...]` at pos -1 of parent `-`
-2019-04-11 23:32:58,458 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
-2019-04-11 23:32:58,458 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs((roo[...] ` ---> `((java.lang.Math.abs((roo[...]` at pos -1 of parent `-`
-2019-04-11 23:33:03,230 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
-2019-04-11 23:33:03,230 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs((roo[...] ` ---> `((java.lang.Math.abs((roo[...]` at pos -1 of parent `-`
-2019-04-11 23:33:08,342 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
-2019-04-11 23:33:08,342 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs((roo[...] ` ---> `((java.lang.Math.abs((roo[...]` at pos -1 of parent `-`
-2019-04-11 23:35:09,390 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-11 23:35:09,391 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
-2019-04-11 23:35:09,391 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs((roo[...] ` ---> `((java.lang.Math.abs((roo[...]` at pos -1 of parent `-`
-2019-04-11 23:37:10,553 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-11 23:37:10,554 INFO main - mod_point ModificPoint=EventState line: 230, el: CtIfImpl
-2019-04-11 23:37:10,554 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs((roo[...] ` ---> `!(((java.lang.Math.abs((r[...]` at pos -1 of parent `-`
-2019-04-11 23:39:11,802 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-11 23:39:11,803 INFO main - mod_point ModificPoint=EventState line: 235, el: CtIfImpl
-2019-04-11 23:39:11,804 INFO main - -->op: IfExpresionMutOp: `(java.lang.Double.isNaN(p[...] ` ---> `(java.lang.Double.isNaN(p[...]` at pos -1 of parent `-`
-2019-04-11 23:41:13,005 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-11 23:41:13,005 INFO main - mod_point ModificPoint=EventState line: 235, el: CtIfImpl
-2019-04-11 23:41:13,006 INFO main - -->op: IfExpresionMutOp: `(java.lang.Double.isNaN(p[...] ` ---> `(!(java.lang.Double.isNaN[...]` at pos -1 of parent `-`
-2019-04-11 23:43:14,229 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-11 23:43:14,230 INFO main - mod_point ModificPoint=EventState line: 235, el: CtIfImpl
-2019-04-11 23:43:14,230 INFO main - -->op: IfExpresionMutOp: `(java.lang.Double.isNaN(p[...] ` ---> `(java.lang.Double.isNaN(p[...]` at pos -1 of parent `-`
-2019-04-11 23:43:20,134 INFO main - mod_point ModificPoint=EventState line: 235, el: CtIfImpl
-2019-04-11 23:43:20,134 INFO main - -->op: IfExpresionMutOp: `(java.lang.Double.isNaN(p[...] ` ---> `(java.lang.Double.isNaN(p[...]` at pos -1 of parent `-`
-2019-04-11 23:43:25,866 INFO main - mod_point ModificPoint=EventState line: 235, el: CtIfImpl
-2019-04-11 23:43:25,866 INFO main - -->op: IfExpresionMutOp: `(java.lang.Double.isNaN(p[...] ` ---> `(java.lang.Double.isNaN(p[...]` at pos -1 of parent `-`
-2019-04-11 23:43:31,790 INFO main - mod_point ModificPoint=EventState line: 235, el: CtIfImpl
-2019-04-11 23:43:31,790 INFO main - -->op: IfExpresionMutOp: `(java.lang.Double.isNaN(p[...] ` ---> `(java.lang.Double.isNaN(p[...]` at pos -1 of parent `-`
-2019-04-11 23:43:37,214 INFO main - mod_point ModificPoint=EventState line: 235, el: CtIfImpl
-2019-04-11 23:43:37,214 INFO main - -->op: IfExpresionMutOp: `(java.lang.Double.isNaN(p[...] ` ---> `(java.lang.Double.isNaN(p[...]` at pos -1 of parent `-`
-2019-04-11 23:43:42,682 INFO main - mod_point ModificPoint=EventState line: 235, el: CtIfImpl
-2019-04-11 23:43:42,683 INFO main - -->op: IfExpresionMutOp: `(java.lang.Double.isNaN(p[...] ` ---> `(java.lang.Double.isNaN(p[...]` at pos -1 of parent `-`
-2019-04-11 23:43:48,278 INFO main - mod_point ModificPoint=EventState line: 235, el: CtIfImpl
-2019-04-11 23:43:48,279 INFO main - -->op: IfExpresionMutOp: `(java.lang.Double.isNaN(p[...] ` ---> `!((java.lang.Double.isNaN[...]` at pos -1 of parent `-`
-2019-04-11 23:45:49,506 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-11 23:45:49,507 INFO main - mod_point ModificPoint=EventState line: 238, el: CtIfImpl
-2019-04-11 23:45:49,507 INFO main - -->op: IfExpresionMutOp: `(pendingEvent) && ((java.[...] ` ---> `(!(pendingEvent)) && ((ja[...]` at pos -1 of parent `-`
-2019-04-11 23:47:50,778 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-11 23:47:50,779 INFO main - mod_point ModificPoint=EventState line: 238, el: CtIfImpl
-2019-04-11 23:47:50,779 INFO main - -->op: IfExpresionMutOp: `(pendingEvent) && ((java.[...] ` ---> `(pendingEvent) && ((java.[...]` at pos -1 of parent `-`
-2019-04-11 23:49:51,913 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-11 23:49:51,913 INFO main - mod_point ModificPoint=EventState line: 238, el: CtIfImpl
-2019-04-11 23:49:51,914 INFO main - -->op: IfExpresionMutOp: `(pendingEvent) && ((java.[...] ` ---> `(pendingEvent) && ((java.[...]` at pos -1 of parent `-`
-2019-04-11 23:49:57,605 INFO main - mod_point ModificPoint=EventState line: 238, el: CtIfImpl
-2019-04-11 23:49:57,606 INFO main - -->op: IfExpresionMutOp: `(pendingEvent) && ((java.[...] ` ---> `(pendingEvent) && ((java.[...]` at pos -1 of parent `-`
-2019-04-11 23:51:58,990 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-11 23:51:58,991 INFO main - mod_point ModificPoint=EventState line: 238, el: CtIfImpl
-2019-04-11 23:51:58,991 INFO main - -->op: IfExpresionMutOp: `(pendingEvent) && ((java.[...] ` ---> `(pendingEvent) && ((java.[...]` at pos -1 of parent `-`
-2019-04-11 23:54:00,489 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-11 23:54:00,489 INFO main - mod_point ModificPoint=EventState line: 238, el: CtIfImpl
-2019-04-11 23:54:00,489 INFO main - -->op: IfExpresionMutOp: `(pendingEvent) && ((java.[...] ` ---> `(pendingEvent) && ((java.[...]` at pos -1 of parent `-`
-2019-04-11 23:54:06,141 INFO main - mod_point ModificPoint=EventState line: 238, el: CtIfImpl
-2019-04-11 23:54:06,141 INFO main - -->op: IfExpresionMutOp: `(pendingEvent) && ((java.[...] ` ---> `(pendingEvent) && (!((jav[...]` at pos -1 of parent `-`
-2019-04-11 23:56:07,653 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-11 23:56:07,654 INFO main - mod_point ModificPoint=EventState line: 238, el: CtIfImpl
-2019-04-11 23:56:07,654 INFO main - -->op: IfExpresionMutOp: `(pendingEvent) && ((java.[...] ` ---> `(pendingEvent) || ((java.[...]` at pos -1 of parent `-`
-2019-04-11 23:58:09,261 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-11 23:58:09,261 INFO main - mod_point ModificPoint=EventState line: 238, el: CtIfImpl
-2019-04-11 23:58:09,262 INFO main - -->op: IfExpresionMutOp: `(pendingEvent) && ((java.[...] ` ---> `!((pendingEvent) && ((jav[...]` at pos -1 of parent `-`
-2019-04-12 00:00:10,979 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:00:10,979 INFO main - mod_point ModificPoint=EventState line: 191, el: CtIfImpl
-2019-04-12 00:00:10,980 INFO main - -->op: IfExpresionMutOp: `(ga * gb) > 0 ` ---> `(ga * gb) == 0` at pos -1 of parent `-`
-2019-04-12 00:00:17,500 INFO main - mod_point ModificPoint=EventState line: 191, el: CtIfImpl
-2019-04-12 00:00:17,500 INFO main - -->op: IfExpresionMutOp: `(ga * gb) > 0 ` ---> `(ga * gb) != 0` at pos -1 of parent `-`
-2019-04-12 00:00:23,817 INFO main - mod_point ModificPoint=EventState line: 191, el: CtIfImpl
-2019-04-12 00:00:23,818 INFO main - -->op: IfExpresionMutOp: `(ga * gb) > 0 ` ---> `(ga * gb) >= 0` at pos -1 of parent `-`
-2019-04-12 00:00:30,014 INFO main - mod_point ModificPoint=EventState line: 191, el: CtIfImpl
-2019-04-12 00:00:30,015 INFO main - -->op: IfExpresionMutOp: `(ga * gb) > 0 ` ---> `(ga * gb) <= 0` at pos -1 of parent `-`
-2019-04-12 00:00:35,962 INFO main - mod_point ModificPoint=EventState line: 191, el: CtIfImpl
-2019-04-12 00:00:35,962 INFO main - -->op: IfExpresionMutOp: `(ga * gb) > 0 ` ---> `(ga * gb) < 0` at pos -1 of parent `-`
-2019-04-12 00:00:41,670 INFO main - mod_point ModificPoint=EventState line: 191, el: CtIfImpl
-2019-04-12 00:00:41,670 INFO main - -->op: IfExpresionMutOp: `(ga * gb) > 0 ` ---> `!((ga * gb) > 0)` at pos -1 of parent `-`
-2019-04-12 00:00:47,613 INFO main - mod_point ModificPoint=CombinedEventsManager line: 135, el: CtIfImpl
-2019-04-12 00:00:47,614 INFO main - -->op: IfExpresionMutOp: `!(initialized) ` ---> `initialized` at pos -1 of parent `-`
-2019-04-12 00:02:48,823 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:02:48,823 INFO main - mod_point ModificPoint=CombinedEventsManager line: 152, el: CtIfImpl
-2019-04-12 00:02:48,823 INFO main - -->op: IfExpresionMutOp: `state.evaluateStep(interp[...] ` ---> `!(state.evaluateStep(inte[...]` at pos -1 of parent `-`
-2019-04-12 00:04:50,071 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:04:50,072 INFO main - mod_point ModificPoint=CombinedEventsManager line: 216, el: CtIfImpl
-2019-04-12 00:04:50,072 INFO main - -->op: IfExpresionMutOp: `state.stop() ` ---> `!(state.stop())` at pos -1 of parent `-`
-2019-04-12 00:04:54,142 INFO main - mod_point ModificPoint=CombinedEventsManager line: 237, el: CtIfImpl
-2019-04-12 00:04:54,142 INFO main - -->op: IfExpresionMutOp: `state.reset(t, y) ` ---> `!(state.reset(t, y))` at pos -1 of parent `-`
-2019-04-12 00:04:59,986 INFO main - mod_point ModificPoint=EventState line: 330, el: CtIfImpl
-2019-04-12 00:04:59,986 INFO main - -->op: IfExpresionMutOp: `!(pendingEvent) ` ---> `pendingEvent` at pos -1 of parent `-`
-2019-04-12 00:05:05,994 INFO main - mod_point ModificPoint=EventState line: 188, el: CtIfImpl
-2019-04-12 00:05:05,994 INFO main - -->op: IfExpresionMutOp: `(g0Positive) ^ (gb >= 0) ` ---> `!((g0Positive) ^ (gb >= 0[...]` at pos -1 of parent `-`
-2019-04-12 00:05:09,798 INFO main - mod_point ModificPoint=EventState line: 299, el: CtIfImpl
-2019-04-12 00:05:09,798 INFO main - -->op: IfExpresionMutOp: `pendingEvent ` ---> `!(pendingEvent)` at pos -1 of parent `-`
-2019-04-12 00:05:13,618 INFO main - mod_point ModificPoint=BrentSolver line: 334, el: CtIfImpl
-2019-04-12 00:05:13,618 INFO main - -->op: IfExpresionMutOp: `dx > 0.0 ` ---> `dx == 0.0` at pos -1 of parent `-`
-2019-04-12 00:05:19,337 INFO main - mod_point ModificPoint=BrentSolver line: 334, el: CtIfImpl
-2019-04-12 00:05:19,338 INFO main - -->op: IfExpresionMutOp: `dx > 0.0 ` ---> `dx != 0.0` at pos -1 of parent `-`
-2019-04-12 00:08:23,889 INFO main - mod_point ModificPoint=BrentSolver line: 334, el: CtIfImpl
-2019-04-12 00:08:23,889 INFO main - -->op: IfExpresionMutOp: `dx > 0.0 ` ---> `dx >= 0.0` at pos -1 of parent `-`
-2019-04-12 00:08:30,226 INFO main - mod_point ModificPoint=BrentSolver line: 334, el: CtIfImpl
-2019-04-12 00:08:30,226 INFO main - -->op: IfExpresionMutOp: `dx > 0.0 ` ---> `dx <= 0.0` at pos -1 of parent `-`
-2019-04-12 00:08:36,265 INFO main - mod_point ModificPoint=BrentSolver line: 334, el: CtIfImpl
-2019-04-12 00:08:36,266 INFO main - -->op: IfExpresionMutOp: `dx > 0.0 ` ---> `dx < 0.0` at pos -1 of parent `-`
-2019-04-12 00:08:42,265 INFO main - mod_point ModificPoint=BrentSolver line: 334, el: CtIfImpl
-2019-04-12 00:08:42,266 INFO main - -->op: IfExpresionMutOp: `dx > 0.0 ` ---> `!(dx > 0.0)` at pos -1 of parent `-`
-2019-04-12 00:08:48,338 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 273, el: CtIfImpl
-2019-04-12 00:08:48,338 INFO main - -->op: IfExpresionMutOp: `den <= 0.0 ` ---> `den == 0.0` at pos -1 of parent `-`
-2019-04-12 00:08:54,153 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 273, el: CtIfImpl
-2019-04-12 00:08:54,154 INFO main - -->op: IfExpresionMutOp: `den <= 0.0 ` ---> `den != 0.0` at pos -1 of parent `-`
-2019-04-12 00:10:55,322 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:10:55,323 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 273, el: CtIfImpl
-2019-04-12 00:10:55,323 INFO main - -->op: IfExpresionMutOp: `den <= 0.0 ` ---> `den >= 0.0` at pos -1 of parent `-`
-2019-04-12 00:11:01,522 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 273, el: CtIfImpl
-2019-04-12 00:11:01,522 INFO main - -->op: IfExpresionMutOp: `den <= 0.0 ` ---> `den > 0.0` at pos -1 of parent `-`
-2019-04-12 00:13:02,743 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:13:02,743 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 273, el: CtIfImpl
-2019-04-12 00:13:02,743 INFO main - -->op: IfExpresionMutOp: `den <= 0.0 ` ---> `den < 0.0` at pos -1 of parent `-`
-2019-04-12 00:15:04,013 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:15:04,014 INFO main - mod_point ModificPoint=DormandPrince853Integrator line: 273, el: CtIfImpl
-2019-04-12 00:15:04,014 INFO main - -->op: IfExpresionMutOp: `den <= 0.0 ` ---> `!(den <= 0.0)` at pos -1 of parent `-`
-2019-04-12 00:17:05,206 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:17:05,207 INFO main - mod_point ModificPoint=CombinedEventsManager line: 128, el: CtIfImpl
-2019-04-12 00:17:05,207 INFO main - -->op: IfExpresionMutOp: `states.isEmpty() ` ---> `!(states.isEmpty())` at pos -1 of parent `-`
-2019-04-12 00:19:06,522 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:19:06,523 INFO main - mod_point ModificPoint=AbstractIntegrator line: 179, el: CtIfImpl
-2019-04-12 00:19:06,523 INFO main - -->op: IfExpresionMutOp: `(++(evaluations)) > (maxE[...] ` ---> `(++(evaluations)) == (max[...]` at pos -1 of parent `-`
-2019-04-12 00:19:12,729 INFO main - mod_point ModificPoint=AbstractIntegrator line: 179, el: CtIfImpl
-2019-04-12 00:19:12,730 INFO main - -->op: IfExpresionMutOp: `(++(evaluations)) > (maxE[...] ` ---> `(++(evaluations)) != (max[...]` at pos -1 of parent `-`
-2019-04-12 00:19:16,953 INFO main - mod_point ModificPoint=AbstractIntegrator line: 179, el: CtIfImpl
-2019-04-12 00:19:16,954 INFO main - -->op: IfExpresionMutOp: `(++(evaluations)) > (maxE[...] ` ---> `(++(evaluations)) >= (max[...]` at pos -1 of parent `-`
-2019-04-12 00:19:22,965 INFO main - mod_point ModificPoint=AbstractIntegrator line: 179, el: CtIfImpl
-2019-04-12 00:19:22,966 INFO main - -->op: IfExpresionMutOp: `(++(evaluations)) > (maxE[...] ` ---> `(++(evaluations)) <= (max[...]` at pos -1 of parent `-`
-2019-04-12 00:19:27,330 INFO main - mod_point ModificPoint=AbstractIntegrator line: 179, el: CtIfImpl
-2019-04-12 00:19:27,330 INFO main - -->op: IfExpresionMutOp: `(++(evaluations)) > (maxE[...] ` ---> `(++(evaluations)) < (maxE[...]` at pos -1 of parent `-`
-2019-04-12 00:19:31,822 INFO main - mod_point ModificPoint=AbstractIntegrator line: 179, el: CtIfImpl
-2019-04-12 00:19:31,822 INFO main - -->op: IfExpresionMutOp: `(++(evaluations)) > (maxE[...] ` ---> `!((++(evaluations)) > (ma[...]` at pos -1 of parent `-`
-2019-04-12 00:19:36,197 INFO main - mod_point ModificPoint=AbstractStepInterpolator line: 272, el: CtIfImpl
-2019-04-12 00:19:36,197 INFO main - -->op: IfExpresionMutOp: `dirtyState ` ---> `!(dirtyState)` at pos -1 of parent `-`
-2019-04-12 00:19:41,568 INFO main - mod_point ModificPoint=AbstractIntegrator line: 205, el: CtIfImpl
-2019-04-12 00:19:41,569 INFO main - -->op: IfExpresionMutOp: `(ode.getDimension()) != ([...] ` ---> `(ode.getDimension()) == ([...]` at pos -1 of parent `-`
-2019-04-12 00:19:46,081 INFO main - mod_point ModificPoint=AbstractIntegrator line: 205, el: CtIfImpl
-2019-04-12 00:19:46,082 INFO main - -->op: IfExpresionMutOp: `(ode.getDimension()) != ([...] ` ---> `(ode.getDimension()) >= ([...]` at pos -1 of parent `-`
-2019-04-12 00:19:50,390 INFO main - mod_point ModificPoint=AbstractIntegrator line: 205, el: CtIfImpl
-2019-04-12 00:19:50,390 INFO main - -->op: IfExpresionMutOp: `(ode.getDimension()) != ([...] ` ---> `(ode.getDimension()) > (y[...]` at pos -1 of parent `-`
-2019-04-12 00:19:56,925 INFO main - mod_point ModificPoint=AbstractIntegrator line: 205, el: CtIfImpl
-2019-04-12 00:19:56,926 INFO main - -->op: IfExpresionMutOp: `(ode.getDimension()) != ([...] ` ---> `(ode.getDimension()) <= ([...]` at pos -1 of parent `-`
-2019-04-12 00:20:01,226 INFO main - mod_point ModificPoint=AbstractIntegrator line: 205, el: CtIfImpl
-2019-04-12 00:20:01,226 INFO main - -->op: IfExpresionMutOp: `(ode.getDimension()) != ([...] ` ---> `(ode.getDimension()) < (y[...]` at pos -1 of parent `-`
-2019-04-12 00:20:07,562 INFO main - mod_point ModificPoint=AbstractIntegrator line: 205, el: CtIfImpl
-2019-04-12 00:20:07,562 INFO main - -->op: IfExpresionMutOp: `(ode.getDimension()) != ([...] ` ---> `!((ode.getDimension()) !=[...]` at pos -1 of parent `-`
-2019-04-12 00:20:12,158 INFO main - mod_point ModificPoint=AbstractIntegrator line: 212, el: CtIfImpl
-2019-04-12 00:20:12,158 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs((t - [...] ` ---> `(java.lang.Math.abs((t - [...]` at pos -1 of parent `-`
-2019-04-12 00:20:18,605 INFO main - mod_point ModificPoint=AbstractIntegrator line: 212, el: CtIfImpl
-2019-04-12 00:20:18,606 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs((t - [...] ` ---> `(java.lang.Math.abs((t - [...]` at pos -1 of parent `-`
-2019-04-12 00:20:23,217 INFO main - mod_point ModificPoint=AbstractIntegrator line: 212, el: CtIfImpl
-2019-04-12 00:20:23,218 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs((t - [...] ` ---> `(java.lang.Math.abs((t - [...]` at pos -1 of parent `-`
-2019-04-12 00:20:27,679 INFO main - mod_point ModificPoint=AbstractIntegrator line: 212, el: CtIfImpl
-2019-04-12 00:20:27,680 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs((t - [...] ` ---> `(java.lang.Math.abs((t - [...]` at pos -1 of parent `-`
-2019-04-12 00:20:32,190 INFO main - mod_point ModificPoint=AbstractIntegrator line: 212, el: CtIfImpl
-2019-04-12 00:20:32,190 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs((t - [...] ` ---> `(java.lang.Math.abs((t - [...]` at pos -1 of parent `-`
-2019-04-12 00:20:38,201 INFO main - mod_point ModificPoint=AbstractIntegrator line: 212, el: CtIfImpl
-2019-04-12 00:20:38,201 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs((t - [...] ` ---> `!((java.lang.Math.abs((t [...]` at pos -1 of parent `-`
-2019-04-12 00:20:42,662 INFO main - mod_point ModificPoint=AbstractIntegrator line: 198, el: CtIfImpl
-2019-04-12 00:20:42,662 INFO main - -->op: IfExpresionMutOp: `(ode.getDimension()) != ([...] ` ---> `(ode.getDimension()) == ([...]` at pos -1 of parent `-`
-2019-04-12 00:20:47,041 INFO main - mod_point ModificPoint=AbstractIntegrator line: 198, el: CtIfImpl
-2019-04-12 00:20:47,042 INFO main - -->op: IfExpresionMutOp: `(ode.getDimension()) != ([...] ` ---> `(ode.getDimension()) >= ([...]` at pos -1 of parent `-`
-2019-04-12 00:20:51,377 INFO main - mod_point ModificPoint=AbstractIntegrator line: 198, el: CtIfImpl
-2019-04-12 00:20:51,378 INFO main - -->op: IfExpresionMutOp: `(ode.getDimension()) != ([...] ` ---> `(ode.getDimension()) > (y[...]` at pos -1 of parent `-`
-2019-04-12 00:20:57,650 INFO main - mod_point ModificPoint=AbstractIntegrator line: 198, el: CtIfImpl
-2019-04-12 00:20:57,650 INFO main - -->op: IfExpresionMutOp: `(ode.getDimension()) != ([...] ` ---> `(ode.getDimension()) <= ([...]` at pos -1 of parent `-`
-2019-04-12 00:21:02,022 INFO main - mod_point ModificPoint=AbstractIntegrator line: 198, el: CtIfImpl
-2019-04-12 00:21:02,022 INFO main - -->op: IfExpresionMutOp: `(ode.getDimension()) != ([...] ` ---> `(ode.getDimension()) < (y[...]` at pos -1 of parent `-`
-2019-04-12 00:21:08,317 INFO main - mod_point ModificPoint=AbstractIntegrator line: 198, el: CtIfImpl
-2019-04-12 00:21:08,318 INFO main - -->op: IfExpresionMutOp: `(ode.getDimension()) != ([...] ` ---> `!((ode.getDimension()) !=[...]` at pos -1 of parent `-`
-2019-04-12 00:21:12,710 INFO main - mod_point ModificPoint=BrentSolver line: 300, el: CtIfImpl
-2019-04-12 00:21:12,710 INFO main - -->op: IfExpresionMutOp: `x0 == x2 ` ---> `x0 != x2` at pos -1 of parent `-`
-2019-04-12 00:21:18,914 INFO main - mod_point ModificPoint=BrentSolver line: 300, el: CtIfImpl
-2019-04-12 00:21:18,914 INFO main - -->op: IfExpresionMutOp: `x0 == x2 ` ---> `x0 >= x2` at pos -1 of parent `-`
-2019-04-12 00:21:25,281 INFO main - mod_point ModificPoint=BrentSolver line: 300, el: CtIfImpl
-2019-04-12 00:21:25,282 INFO main - -->op: IfExpresionMutOp: `x0 == x2 ` ---> `x0 > x2` at pos -1 of parent `-`
-2019-04-12 00:21:31,703 INFO main - mod_point ModificPoint=BrentSolver line: 300, el: CtIfImpl
-2019-04-12 00:21:31,704 INFO main - -->op: IfExpresionMutOp: `x0 == x2 ` ---> `x0 <= x2` at pos -1 of parent `-`
-2019-04-12 00:21:37,854 INFO main - mod_point ModificPoint=BrentSolver line: 300, el: CtIfImpl
-2019-04-12 00:21:37,854 INFO main - -->op: IfExpresionMutOp: `x0 == x2 ` ---> `x0 < x2` at pos -1 of parent `-`
-2019-04-12 00:21:45,157 INFO main - mod_point ModificPoint=BrentSolver line: 300, el: CtIfImpl
-2019-04-12 00:21:45,158 INFO main - -->op: IfExpresionMutOp: `x0 == x2 ` ---> `!(x0 == x2)` at pos -1 of parent `-`
-2019-04-12 00:21:51,392 INFO main - mod_point ModificPoint=BrentSolver line: 311, el: CtIfImpl
-2019-04-12 00:21:51,392 INFO main - -->op: IfExpresionMutOp: `p > 0.0 ` ---> `p == 0.0` at pos -1 of parent `-`
-2019-04-12 00:21:57,793 INFO main - mod_point ModificPoint=BrentSolver line: 311, el: CtIfImpl
-2019-04-12 00:21:57,794 INFO main - -->op: IfExpresionMutOp: `p > 0.0 ` ---> `p != 0.0` at pos -1 of parent `-`
-2019-04-12 00:22:03,993 INFO main - mod_point ModificPoint=BrentSolver line: 311, el: CtIfImpl
-2019-04-12 00:22:03,994 INFO main - -->op: IfExpresionMutOp: `p > 0.0 ` ---> `p >= 0.0` at pos -1 of parent `-`
-2019-04-12 00:22:10,157 INFO main - mod_point ModificPoint=BrentSolver line: 311, el: CtIfImpl
-2019-04-12 00:22:10,158 INFO main - -->op: IfExpresionMutOp: `p > 0.0 ` ---> `p <= 0.0` at pos -1 of parent `-`
-2019-04-12 00:22:16,468 INFO main - mod_point ModificPoint=BrentSolver line: 311, el: CtIfImpl
-2019-04-12 00:22:16,469 INFO main - -->op: IfExpresionMutOp: `p > 0.0 ` ---> `p < 0.0` at pos -1 of parent `-`
-2019-04-12 00:22:22,654 INFO main - mod_point ModificPoint=BrentSolver line: 311, el: CtIfImpl
-2019-04-12 00:22:22,654 INFO main - -->op: IfExpresionMutOp: `p > 0.0 ` ---> `!(p > 0.0)` at pos -1 of parent `-`
-2019-04-12 00:22:29,374 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
-2019-04-12 00:22:29,374 INFO main - -->op: IfExpresionMutOp: `((2.0 * p) >= (((1.5 * dx[...] ` ---> `((2.0 * p) >= (((1.5 * dx[...]` at pos -1 of parent `-`
-2019-04-12 00:22:35,634 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
-2019-04-12 00:22:35,635 INFO main - -->op: IfExpresionMutOp: `((2.0 * p) >= (((1.5 * dx[...] ` ---> `((2.0 * p) == (((1.5 * dx[...]` at pos -1 of parent `-`
-2019-04-12 00:22:41,845 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
-2019-04-12 00:22:41,846 INFO main - -->op: IfExpresionMutOp: `((2.0 * p) >= (((1.5 * dx[...] ` ---> `((2.0 * p) != (((1.5 * dx[...]` at pos -1 of parent `-`
-2019-04-12 00:22:48,142 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
-2019-04-12 00:22:48,142 INFO main - -->op: IfExpresionMutOp: `((2.0 * p) >= (((1.5 * dx[...] ` ---> `((2.0 * p) > (((1.5 * dx)[...]` at pos -1 of parent `-`
-2019-04-12 00:22:54,469 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
-2019-04-12 00:22:54,470 INFO main - -->op: IfExpresionMutOp: `((2.0 * p) >= (((1.5 * dx[...] ` ---> `((2.0 * p) <= (((1.5 * dx[...]` at pos -1 of parent `-`
-2019-04-12 00:23:00,893 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
-2019-04-12 00:23:00,894 INFO main - -->op: IfExpresionMutOp: `((2.0 * p) >= (((1.5 * dx[...] ` ---> `((2.0 * p) < (((1.5 * dx)[...]` at pos -1 of parent `-`
-2019-04-12 00:23:07,334 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
-2019-04-12 00:23:07,334 INFO main - -->op: IfExpresionMutOp: `((2.0 * p) >= (((1.5 * dx[...] ` ---> `(!((2.0 * p) >= (((1.5 * [...]` at pos -1 of parent `-`
-2019-04-12 00:23:13,525 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
-2019-04-12 00:23:13,526 INFO main - -->op: IfExpresionMutOp: `((2.0 * p) >= (((1.5 * dx[...] ` ---> `((2.0 * p) >= (((1.5 * dx[...]` at pos -1 of parent `-`
-2019-04-12 00:23:19,677 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
-2019-04-12 00:23:19,678 INFO main - -->op: IfExpresionMutOp: `((2.0 * p) >= (((1.5 * dx[...] ` ---> `((2.0 * p) >= (((1.5 * dx[...]` at pos -1 of parent `-`
-2019-04-12 00:23:26,138 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
-2019-04-12 00:23:26,138 INFO main - -->op: IfExpresionMutOp: `((2.0 * p) >= (((1.5 * dx[...] ` ---> `((2.0 * p) >= (((1.5 * dx[...]` at pos -1 of parent `-`
-2019-04-12 00:23:32,329 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
-2019-04-12 00:23:32,330 INFO main - -->op: IfExpresionMutOp: `((2.0 * p) >= (((1.5 * dx[...] ` ---> `((2.0 * p) >= (((1.5 * dx[...]` at pos -1 of parent `-`
-2019-04-12 00:23:38,593 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
-2019-04-12 00:23:38,594 INFO main - -->op: IfExpresionMutOp: `((2.0 * p) >= (((1.5 * dx[...] ` ---> `((2.0 * p) >= (((1.5 * dx[...]` at pos -1 of parent `-`
-2019-04-12 00:23:44,749 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
-2019-04-12 00:23:44,750 INFO main - -->op: IfExpresionMutOp: `((2.0 * p) >= (((1.5 * dx[...] ` ---> `((2.0 * p) >= (((1.5 * dx[...]` at pos -1 of parent `-`
-2019-04-12 00:23:50,889 INFO main - mod_point ModificPoint=BrentSolver line: 316, el: CtIfImpl
-2019-04-12 00:23:50,890 INFO main - -->op: IfExpresionMutOp: `((2.0 * p) >= (((1.5 * dx[...] ` ---> `!(((2.0 * p) >= (((1.5 * [...]` at pos -1 of parent `-`
-2019-04-12 00:23:56,921 INFO main - mod_point ModificPoint=BrentSolver line: 284, el: CtIfImpl
-2019-04-12 00:23:56,922 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(dx)) [...] ` ---> `(java.lang.Math.abs(dx)) [...]` at pos -1 of parent `-`
-2019-04-12 00:24:02,745 INFO main - mod_point ModificPoint=BrentSolver line: 284, el: CtIfImpl
-2019-04-12 00:24:02,746 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(dx)) [...] ` ---> `(java.lang.Math.abs(dx)) [...]` at pos -1 of parent `-`
-2019-04-12 00:26:03,890 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:26:03,891 INFO main - mod_point ModificPoint=BrentSolver line: 284, el: CtIfImpl
-2019-04-12 00:26:03,891 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(dx)) [...] ` ---> `(java.lang.Math.abs(dx)) [...]` at pos -1 of parent `-`
-2019-04-12 00:28:05,058 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:28:05,059 INFO main - mod_point ModificPoint=BrentSolver line: 284, el: CtIfImpl
-2019-04-12 00:28:05,059 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(dx)) [...] ` ---> `(java.lang.Math.abs(dx)) [...]` at pos -1 of parent `-`
-2019-04-12 00:30:06,274 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:30:06,275 INFO main - mod_point ModificPoint=BrentSolver line: 284, el: CtIfImpl
-2019-04-12 00:30:06,275 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(dx)) [...] ` ---> `(java.lang.Math.abs(dx)) [...]` at pos -1 of parent `-`
-2019-04-12 00:30:12,913 INFO main - mod_point ModificPoint=BrentSolver line: 284, el: CtIfImpl
-2019-04-12 00:30:12,914 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(dx)) [...] ` ---> `!((java.lang.Math.abs(dx)[...]` at pos -1 of parent `-`
-2019-04-12 00:32:14,086 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:32:14,087 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
-2019-04-12 00:32:14,087 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs(oldD[...] ` ---> `((java.lang.Math.abs(oldD[...]` at pos -1 of parent `-`
-2019-04-12 00:32:20,933 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
-2019-04-12 00:32:20,934 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs(oldD[...] ` ---> `((java.lang.Math.abs(oldD[...]` at pos -1 of parent `-`
-2019-04-12 00:32:27,390 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
-2019-04-12 00:32:27,390 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs(oldD[...] ` ---> `((java.lang.Math.abs(oldD[...]` at pos -1 of parent `-`
-2019-04-12 00:32:33,805 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
-2019-04-12 00:32:33,806 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs(oldD[...] ` ---> `((java.lang.Math.abs(oldD[...]` at pos -1 of parent `-`
-2019-04-12 00:32:40,725 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
-2019-04-12 00:32:40,725 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs(oldD[...] ` ---> `((java.lang.Math.abs(oldD[...]` at pos -1 of parent `-`
-2019-04-12 00:32:47,222 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
-2019-04-12 00:32:47,222 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs(oldD[...] ` ---> `((java.lang.Math.abs(oldD[...]` at pos -1 of parent `-`
-2019-04-12 00:32:53,783 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
-2019-04-12 00:32:53,783 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs(oldD[...] ` ---> `(!((java.lang.Math.abs(ol[...]` at pos -1 of parent `-`
-2019-04-12 00:33:00,138 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
-2019-04-12 00:33:00,138 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs(oldD[...] ` ---> `((java.lang.Math.abs(oldD[...]` at pos -1 of parent `-`
-2019-04-12 00:33:06,605 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
-2019-04-12 00:33:06,606 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs(oldD[...] ` ---> `((java.lang.Math.abs(oldD[...]` at pos -1 of parent `-`
-2019-04-12 00:33:13,645 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
-2019-04-12 00:33:13,646 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs(oldD[...] ` ---> `((java.lang.Math.abs(oldD[...]` at pos -1 of parent `-`
-2019-04-12 00:33:20,062 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
-2019-04-12 00:33:20,062 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs(oldD[...] ` ---> `((java.lang.Math.abs(oldD[...]` at pos -1 of parent `-`
-2019-04-12 00:33:26,689 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
-2019-04-12 00:33:26,690 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs(oldD[...] ` ---> `((java.lang.Math.abs(oldD[...]` at pos -1 of parent `-`
-2019-04-12 00:33:33,197 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
-2019-04-12 00:33:33,198 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs(oldD[...] ` ---> `((java.lang.Math.abs(oldD[...]` at pos -1 of parent `-`
-2019-04-12 00:33:39,958 INFO main - mod_point ModificPoint=BrentSolver line: 288, el: CtIfImpl
-2019-04-12 00:33:39,958 INFO main - -->op: IfExpresionMutOp: `((java.lang.Math.abs(oldD[...] ` ---> `!(((java.lang.Math.abs(ol[...]` at pos -1 of parent `-`
-2019-04-12 00:33:46,758 INFO main - mod_point ModificPoint=BrentSolver line: 332, el: CtIfImpl
-2019-04-12 00:33:46,758 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(delta[...] ` ---> `(java.lang.Math.abs(delta[...]` at pos -1 of parent `-`
-2019-04-12 00:33:53,656 INFO main - mod_point ModificPoint=BrentSolver line: 332, el: CtIfImpl
-2019-04-12 00:33:53,656 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(delta[...] ` ---> `(java.lang.Math.abs(delta[...]` at pos -1 of parent `-`
-2019-04-12 00:36:59,005 INFO main - mod_point ModificPoint=BrentSolver line: 332, el: CtIfImpl
-2019-04-12 00:36:59,007 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(delta[...] ` ---> `(java.lang.Math.abs(delta[...]` at pos -1 of parent `-`
-2019-04-12 00:37:05,649 INFO main - mod_point ModificPoint=BrentSolver line: 332, el: CtIfImpl
-2019-04-12 00:37:05,649 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(delta[...] ` ---> `(java.lang.Math.abs(delta[...]` at pos -1 of parent `-`
-2019-04-12 00:37:12,391 INFO main - mod_point ModificPoint=BrentSolver line: 332, el: CtIfImpl
-2019-04-12 00:37:12,391 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(delta[...] ` ---> `(java.lang.Math.abs(delta[...]` at pos -1 of parent `-`
-2019-04-12 00:37:19,141 INFO main - mod_point ModificPoint=BrentSolver line: 332, el: CtIfImpl
-2019-04-12 00:37:19,142 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(delta[...] ` ---> `!((java.lang.Math.abs(del[...]` at pos -1 of parent `-`
-2019-04-12 00:37:25,606 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:37:25,606 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 == 0) == (y2 > 0)` at pos -1 of parent `-`
-2019-04-12 00:39:26,850 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:39:26,851 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:39:26,851 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 != 0) == (y2 > 0)` at pos -1 of parent `-`
-2019-04-12 00:41:28,209 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:41:28,210 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:41:28,210 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 >= 0) == (y2 > 0)` at pos -1 of parent `-`
-2019-04-12 00:41:34,701 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:41:34,702 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 <= 0) == (y2 > 0)` at pos -1 of parent `-`
-2019-04-12 00:43:35,878 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:43:35,879 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:43:35,879 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 < 0) == (y2 > 0)` at pos -1 of parent `-`
-2019-04-12 00:45:37,104 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:45:37,110 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:45:37,112 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(!(y1 > 0)) == (y2 > 0)` at pos -1 of parent `-`
-2019-04-12 00:47:38,718 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:47:38,719 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:47:38,719 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 > 0) == (y2 == 0)` at pos -1 of parent `-`
-2019-04-12 00:49:40,057 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:49:40,057 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:49:40,057 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 > 0) == (y2 != 0)` at pos -1 of parent `-`
-2019-04-12 00:51:41,358 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:51:41,359 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:51:41,359 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 > 0) == (y2 >= 0)` at pos -1 of parent `-`
-2019-04-12 00:51:48,686 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:51:48,686 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 > 0) == (y2 <= 0)` at pos -1 of parent `-`
-2019-04-12 00:53:49,956 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:53:49,957 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:53:49,957 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 > 0) == (y2 < 0)` at pos -1 of parent `-`
-2019-04-12 00:55:51,250 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:55:51,251 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:55:51,251 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 > 0) == (!(y2 > 0))` at pos -1 of parent `-`
-2019-04-12 00:57:52,581 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:57:52,581 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:57:52,581 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 > 0) != (y2 > 0)` at pos -1 of parent `-`
-2019-04-12 00:59:53,961 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 00:59:53,961 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:59:53,961 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 > 0) >= (y2 > 0)` at pos -1 of parent `-`
-2019-04-12 00:59:55,210 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:59:55,210 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 > 0) > (y2 > 0)` at pos -1 of parent `-`
-2019-04-12 00:59:56,560 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:59:56,560 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 > 0) <= (y2 > 0)` at pos -1 of parent `-`
-2019-04-12 00:59:57,844 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:59:57,873 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `(y1 > 0) < (y2 > 0)` at pos -1 of parent `-`
-2019-04-12 00:59:59,201 INFO main - mod_point ModificPoint=BrentSolver line: 340, el: CtIfImpl
-2019-04-12 00:59:59,201 INFO main - -->op: IfExpresionMutOp: `(y1 > 0) == (y2 > 0) ` ---> `!((y1 > 0) == (y2 > 0))` at pos -1 of parent `-`
-2019-04-12 01:02:00,594 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 01:02:00,595 INFO main - mod_point ModificPoint=BrentSolver line: 265, el: CtIfImpl
-2019-04-12 01:02:00,595 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(y2)) [...] ` ---> `(java.lang.Math.abs(y2)) [...]` at pos -1 of parent `-`
-2019-04-12 01:02:07,969 INFO main - mod_point ModificPoint=BrentSolver line: 265, el: CtIfImpl
-2019-04-12 01:02:07,970 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(y2)) [...] ` ---> `(java.lang.Math.abs(y2)) [...]` at pos -1 of parent `-`
-2019-04-12 01:05:56,504 INFO main - mod_point ModificPoint=BrentSolver line: 265, el: CtIfImpl
-2019-04-12 01:05:56,506 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(y2)) [...] ` ---> `(java.lang.Math.abs(y2)) [...]` at pos -1 of parent `-`
-2019-04-12 01:06:03,677 INFO main - mod_point ModificPoint=BrentSolver line: 265, el: CtIfImpl
-2019-04-12 01:06:03,678 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(y2)) [...] ` ---> `(java.lang.Math.abs(y2)) [...]` at pos -1 of parent `-`
-2019-04-12 01:06:10,957 INFO main - mod_point ModificPoint=BrentSolver line: 265, el: CtIfImpl
-2019-04-12 01:06:10,958 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(y2)) [...] ` ---> `(java.lang.Math.abs(y2)) [...]` at pos -1 of parent `-`
-2019-04-12 01:06:17,902 INFO main - mod_point ModificPoint=BrentSolver line: 265, el: CtIfImpl
-2019-04-12 01:06:17,902 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(y2)) [...] ` ---> `!((java.lang.Math.abs(y2)[...]` at pos -1 of parent `-`
-2019-04-12 01:06:25,186 INFO main - mod_point ModificPoint=BrentSolver line: 274, el: CtIfImpl
-2019-04-12 01:06:25,186 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(y1)) [...] ` ---> `(java.lang.Math.abs(y1)) [...]` at pos -1 of parent `-`
-2019-04-12 01:06:32,738 INFO main - mod_point ModificPoint=BrentSolver line: 274, el: CtIfImpl
-2019-04-12 01:06:32,738 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(y1)) [...] ` ---> `(java.lang.Math.abs(y1)) [...]` at pos -1 of parent `-`
-2019-04-12 01:08:34,022 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
-2019-04-12 01:08:34,023 INFO main - 
- No more time for operating
-2019-04-12 01:08:34,023 INFO main - 
+2019-04-12 11:20:52,140 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jmutrepair  -scope  global  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests/math_71/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-12 11:20:52,881 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//bin//default from 234 classes with test cases
+2019-04-12 11:20:52,882 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-12 11:20:53,556 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//bin//default]
+2019-04-12 11:21:05,169 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testMissedEndEvent
+2019-04-12 11:21:05,170 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testMissedEndEvent
+2019-04-12 11:21:05,175 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2169, fails: 2, GZoltar suspicious 17017
+2019-04-12 11:21:05,185 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 7 with susp > 0.5, we consider: 7
+2019-04-12 11:21:05,194 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//src//default, compliance level: 8
+2019-04-12 11:21:11,012 INFO main - 
+---- Initial suspicious size: 7
+2019-04-12 11:21:11,044 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=231, susp=1.0]
+2019-04-12 11:21:11,051 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=180, susp=0.7071067811865475]
+2019-04-12 11:21:11,061 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=300, susp=0.7071067811865475]
+2019-04-12 11:21:11,071 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{setInitialStepSize(D)V 0.0, lineNumber=153, susp=0.5]
+2019-04-12 11:21:11,073 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{setInitialStepSize(D)V 0.0, lineNumber=155, susp=0.5]
+2019-04-12 11:21:11,077 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator{initializeStep(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;ZI[DD[D[D[D[D)D 0.0, lineNumber=211, susp=0.5]
+2019-04-12 11:21:11,077 INFO main - Total suspicious from FL: 7,  1
+2019-04-12 11:21:11,077 INFO main - Total ModPoint created: 1
+2019-04-12 11:21:11,077 INFO main - Creating program variant #1, [Variant id: 1, #gens: 1, #ops: 0, parent:-]
+2019-04-12 11:21:19,620 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 11:21:19,620 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-12 11:21:19,620 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-12 11:21:19,620 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-12 11:21:19,620 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-12 11:21:19,620 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-12 11:21:19,620 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-12 11:21:19,620 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jmutrepair
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-12 11:21:19,621 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= defect4j_tests/math_71/
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-12 11:21:19,622 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= global
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-12 11:21:19,623 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-12 11:21:19,624 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-12 11:21:19,624 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-12 11:21:19,624 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-12 11:21:19,624 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-12 11:21:19,624 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-12 11:21:19,624 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-12 11:21:19,624 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-12 11:21:19,624 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-12 11:21:19,624 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-12 11:21:19,624 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-12 11:21:19,624 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 11:21:19,628 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 11:21:19,628 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize < (minSt[...]` at pos -1 of parent `-`
+2019-04-12 11:21:20,477 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 11:21:20,478 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize == (minS[...]` at pos -1 of parent `-`
+2019-04-12 11:21:20,864 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 11:21:20,865 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize != (minS[...]` at pos -1 of parent `-`
+2019-04-12 11:21:21,238 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 11:21:21,238 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize >= (minS[...]` at pos -1 of parent `-`
+2019-04-12 11:21:21,583 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 11:21:21,584 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize > (minSt[...]` at pos -1 of parent `-`
+2019-04-12 11:21:21,952 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 11:21:21,952 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize <= (minS[...]` at pos -1 of parent `-`
+2019-04-12 11:21:22,338 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 11:21:22,339 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(!(initialStepSize < (min[...]` at pos -1 of parent `-`
+2019-04-12 11:21:22,662 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 11:21:22,662 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize < (minSt[...]` at pos -1 of parent `-`
+2019-04-12 11:21:23,026 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 11:21:23,026 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize < (minSt[...]` at pos -1 of parent `-`
+2019-04-12 11:21:23,341 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 11:21:23,341 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize < (minSt[...]` at pos -1 of parent `-`
+2019-04-12 11:21:23,699 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 11:21:23,699 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize < (minSt[...]` at pos -1 of parent `-`
+2019-04-12 11:21:24,070 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 11:21:24,070 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize < (minSt[...]` at pos -1 of parent `-`
+2019-04-12 11:21:24,412 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 11:21:24,413 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `(initialStepSize < (minSt[...]` at pos -1 of parent `-`
+2019-04-12 11:21:24,729 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 150, el: CtIfImpl
+2019-04-12 11:21:24,730 INFO main - -->op: IfExpresionMutOp: `(initialStepSize < (minSt[...] ` ---> `!((initialStepSize < (min[...]` at pos -1 of parent `-`
+2019-04-12 11:21:25,108 INFO main - 
 ----SUMMARY_EXECUTION---
-2019-04-12 01:08:34,023 INFO main - 
+2019-04-12 11:21:25,108 INFO main - 
 successful_ing_attempts (0): []
-2019-04-12 01:08:34,023 INFO main - 
-failing_ing_attempts (193): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-2019-04-12 01:08:34,023 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6531.416
+2019-04-12 11:21:25,108 INFO main - 
+failing_ing_attempts (14): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 11:21:25,108 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 32.96
 [DONE]

@@ -18,7 +18,7 @@ Just install all the necessary tools.
 
 ```console
 sudo apt-get update
-sudo apt-get install git vim software-properties-common maven debian-archive-keyring default-jdk
+sudo apt-get install git vim software-properties-common maven debian-archive-keyring openjdk-8-jdk
 ```
 
 
@@ -57,7 +57,7 @@ For convenience I wrote this bash script iterating over all folder in the given 
 
 ```console
 chmod u+x astor_runner.sh
-./astor_runner.sh defect4j_tests/ ~/astor/
+./astor_runner.sh ~/astor/defect4j_tests/ ~/astor/
 ```
 
 ### Results:
