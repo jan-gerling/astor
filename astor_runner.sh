@@ -6,7 +6,7 @@ resultsDir=$2results
 modes=(jmutrepair jkali jgenprog)
 scopes=(local package global)
 seedValue=10
-treshold=0.1
+treshold=0.5
 maxTime=100
 #local path to your junit executable
 junitPath="./examples/libs/junit-4.4.jar"
@@ -69,7 +69,7 @@ for currenttest in $tests; do
 				awk '/$summaryString/,0' "$outputFile" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "$exceptionString" "$outputFile" ; then				
 				echo -e "[\e[31m[EXCEPTION\e[39m]: $runname had an exception: $exceptionInfo" |& tee -a "$runSummary"
-				awk '/$exceptionString/,0' "$outputFile" |& tee -a "$runSummary"
+				awk '/Exception in thread "main"/,0' "$outputFile" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "SUMMARY_EXECUTION" "$outputFile" ; then
 				echo -e "[\e[33m[WARNING\e[39m]: $runname did not find a fix in $runTime seconds!" |& tee -a "$runSummary"
 				awk '/$summaryString/,0' "$outputFile" |& tee -a "$runSummary"	 		
