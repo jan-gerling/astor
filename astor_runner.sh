@@ -33,14 +33,25 @@ mvn compile
 # iterate over all tests given in the directory
 for currenttest in $tests; do
 	fullPath=$1$currenttest/
-
 	echo -e "\e[32m\n* * * * * * * * New * * * * * * * *"
 	echo -e "[\e[39mFILE\e[39m] $fullPath \n"
 	
 	#compile and current build test case
+	buildOutputFile="$resultsDir/$currenttest-build-output.txt"
+	testErrorString="Tests in error"
+	
 	cd $fullPath
-	mvn clean compile test |& tee "$resultsDir/$currenttest-build-output.txt"
+	mvn clean compile test &> tee "$buildOutputFile"
 	cd $2
+	
+	#analyze build output
+	if  [ -f "$buildOutputFile" ] && grep -q "$testErrorString" "$buildOutputFile" ; then
+		echo -e "[\e[32mInfo\e[39m]: $currenttest failed to build with test error:" |& tee -a "$runSummary"
+		awk '/$testErrorString/,{c=1}' "$buildOutputFile" |& tee -a "$runSummary"		
+	else 
+		echo -e "[\e[31mFAILURE\e[39m]: $currenttest was not build properly with a failing test!" |& tee -a "$runSummary"
+	fi	
+	
 	mvn dependency:build-classpath -B | egrep -v "(^\[INFO\]|^\[WARNING\])" | tee /tmp/astor-classpath.txt
 	
 	# iterate over all of the three modes
