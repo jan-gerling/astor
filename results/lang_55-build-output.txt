@@ -1,0 +1,274 @@
+[INFO] Scanning for projects...
+Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/1/commons-parent-1.pom
+3/8 KB   5/8 KB   8/8 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/1/commons-parent-1.pom (8 KB at 13.6 KB/sec)
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for commons-lang:commons-lang:jar:2.3-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.apache.commons:commons-parent:1, /home/jan_gerling/.m2/repository/org/apache/commons/commons-parent/1/commons-parent-1.pom, line 83, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 382, column 17
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:1, /home/jan_gerling/.m2/repository/org/apache/commons/commons-parent/1/commons-parent-1.pom, line 90, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Lang 2.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.2/maven-compiler-plugin-3.2.pom
+3/12 KB   5/12 KB   8/12 KB   11/12 KB   12/12 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.2/maven-compiler-plugin-3.2.pom (12 KB at 271.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.2/maven-compiler-plugin-3.2.jar
+3/45 KB    5/45 KB   8/45 KB   11/45 KB   13/45 KB   16/45 KB   19/45 KB   21/45 KB   24/45 KB   27/45 KB   29/45 KB   32/45 KB   36/45 KB   40/45 KB   44/45 KB   45/45 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.2/maven-compiler-plugin-3.2.jar (45 KB at 923.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.17/maven-surefire-plugin-2.17.pom
+4/5 KB     5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.17/maven-surefire-plugin-2.17.pom (5 KB at 143.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.17/surefire-2.17.pom
+3/17 KB   5/17 KB   8/17 KB   11/17 KB   13/17 KB   16/17 KB   17/17 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.17/surefire-2.17.pom (17 KB at 482.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.17/maven-surefire-plugin-2.17.jar
+3/34 KB    5/34 KB   8/34 KB   11/34 KB   13/34 KB   16/34 KB   19/34 KB   21/34 KB   24/34 KB   27/34 KB   29/34 KB   32/34 KB   34/34 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.17/maven-surefire-plugin-2.17.jar (34 KB at 835.7 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ commons-lang ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (default) @ commons-lang ---
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.11/maven-plugin-api-2.0.11.pom
+2/2 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.11/maven-plugin-api-2.0.11.pom (2 KB at 43.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.11/maven-2.0.11.pom
+3/22 KB   5/22 KB   8/22 KB   11/22 KB   13/22 KB   16/22 KB   19/22 KB   21/22 KB   22/22 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.11/maven-2.0.11.pom (22 KB at 592.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/12/maven-parent-12.pom
+3/22 KB    5/22 KB   8/22 KB   11/22 KB   13/22 KB   16/22 KB   19/22 KB   21/22 KB   22/22 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/12/maven-parent-12.pom (22 KB at 167.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.11/maven-project-2.0.11.pom
+3/3 KB     3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.11/maven-project-2.0.11.pom (3 KB at 82.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.11/maven-settings-2.0.11.pom
+3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.11/maven-settings-2.0.11.pom (3 KB at 14.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.11/maven-model-2.0.11.pom
+3/4 KB   4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.11/maven-model-2.0.11.pom (4 KB at 99.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.11/maven-profile-2.0.11.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.11/maven-profile-2.0.11.pom (2 KB at 60.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.11/maven-artifact-manager-2.0.11.pom
+3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.11/maven-artifact-manager-2.0.11.pom (3 KB at 77.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.11/maven-repository-metadata-2.0.11.pom
+3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.11/maven-repository-metadata-2.0.11.pom (3 KB at 68.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.11/maven-artifact-2.0.11.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.11/maven-artifact-2.0.11.pom (2 KB at 46.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.11/maven-plugin-registry-2.0.11.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.11/maven-plugin-registry-2.0.11.pom (2 KB at 60.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.pom
+3/10 KB   5/10 KB   8/10 KB   10/10 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.pom (10 KB at 292.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant-parent/1.8.2/ant-parent-1.8.2.pom
+3/5 KB     5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant-parent/1.8.2/ant-parent-1.8.2.pom (5 KB at 143.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.pom
+3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.pom (3 KB at 73.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.11/maven-plugin-api-2.0.11.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.11/maven-project-2.0.11.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.11/maven-settings-2.0.11.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.11/maven-profile-2.0.11.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.11/maven-model-2.0.11.jar
+3/13 KB   5/13 KB   8/13 KB   11/13 KB   13/13 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.11/maven-plugin-api-2.0.11.jar (13 KB at 283.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.11/maven-artifact-manager-2.0.11.jar
+3/37 KB    3/51 KB   3/37 KB   3/51 KB   5/37 KB   5/51 KB   5/37 KB   5/51 KB   8/37 KB   5/51 KB   11/37 KB   8/51 KB   11/37 KB   8/51 KB   13/37 KB   11/51 KB   13/37 KB   11/51 KB   13/37 KB   3/95 KB   13/51 KB   13/37 KB   3/95 KB   13/51 KB   13/37 KB   5/95 KB   13/51 KB   13/37 KB   8/95 KB   13/51 KB   13/37 KB   11/95 KB   13/51 KB   13/37 KB   11/95 KB   3/121 KB   13/51 KB   13/37 KB   13/95 KB   3/121 KB   13/51 KB   13/37 KB   13/95 KB   5/121 KB   13/51 KB   13/37 KB   13/95 KB   8/121 KB   13/51 KB   13/37 KB   13/95 KB   11/121 KB   13/51 KB   13/37 KB   13/95 KB   13/121 KB   16/51 KB   13/37 KB   13/95 KB   13/121 KB   16/51 KB   13/37 KB   13/95 KB   3/58 KB   13/121 KB   19/51 KB   13/37 KB   13/95 KB   3/58 KB   13/121 KB   19/51 KB   13/37 KB   13/95 KB   5/58 KB   13/121 KB   21/51 KB   13/37 KB   13/95 KB   5/58 KB   13/121 KB   21/51 KB   13/37 KB   13/95 KB   8/58 KB   13/121 KB   24/51 KB   13/37 KB   13/95 KB   8/58 KB   13/121 KB   27/51 KB   13/37 KB   13/95 KB   8/58 KB   13/121 KB   27/51 KB   16/37 KB   13/95 KB   11/58 KB   13/121 KB   27/51 KB   16/37 KB   13/95 KB   11/58 KB   13/121 KB   29/51 KB   16/37 KB   13/95 KB   11/58 KB   13/121 KB   29/51 KB   16/37 KB   13/95 KB   13/58 KB   13/121 KB   29/51 KB   19/37 KB   13/95 KB   13/58 KB   13/121 KB   32/51 KB   19/37 KB   13/95 KB   13/58 KB   13/121 KB   32/51 KB   21/37 KB   13/95 KB   13/58 KB   13/121 KB   32/51 KB   21/37 KB   13/95 KB   16/58 KB   13/121 KB   32/51 KB   21/37 KB   16/95 KB   16/58 KB   13/121 KB   32/51 KB   24/37 KB   16/95 KB   16/58 KB   13/121 KB   32/51 KB   24/37 KB   16/95 KB   19/58 KB   13/121 KB   32/51 KB   24/37 KB   19/95 KB   19/58 KB   13/121 KB   32/51 KB   27/37 KB   19/95 KB   19/58 KB   13/121 KB   32/51 KB   27/37 KB   21/95 KB   21/58 KB   13/121 KB   32/51 KB   27/37 KB   21/95 KB   21/58 KB   13/121 KB   32/51 KB   29/37 KB   21/95 KB   21/58 KB   13/121 KB   32/51 KB   29/37 KB   24/95 KB   21/58 KB   13/121 KB   32/51 KB   29/37 KB   24/95 KB   24/58 KB   13/121 KB   32/51 KB   32/37 KB   24/95 KB   24/58 KB   16/121 KB   32/51 KB   32/37 KB   24/95 KB   24/58 KB   16/121 KB   32/51 KB   32/37 KB   27/95 KB   24/58 KB   16/121 KB   32/51 KB   32/37 KB   27/95 KB   27/58 KB   16/121 KB   32/51 KB   32/37 KB   27/95 KB   27/58 KB   19/121 KB   32/51 KB   35/37 KB   27/95 KB   27/58 KB   19/121 KB   32/51 KB   35/37 KB   29/95 KB   27/58 KB   19/121 KB   32/51 KB   37/37 KB   29/95 KB   27/58 KB   19/121 KB   32/51 KB   37/37 KB   29/95 KB   29/58 KB   21/121 KB   32/51 KB   37/37 KB   29/95 KB   29/58 KB   21/121 KB   32/51 KB   37/37 KB   32/95 KB   29/58 KB   21/121 KB   32/51 KB   37/37 KB   32/95 KB   32/58 KB   24/121 KB   32/51 KB   37/37 KB   32/95 KB   32/58 KB   24/121 KB   32/51 KB   37/37 KB   32/95 KB   32/58 KB   27/121 KB   32/51 KB   37/37 KB   32/95 KB   32/58 KB   29/121 KB   32/51 KB   37/37 KB   32/95 KB   32/58 KB   32/121 KB   32/51 KB   37/37 KB   32/95 KB   36/58 KB   32/121 KB   32/51 KB   37/37 KB   32/95 KB   40/58 KB   32/121 KB   32/51 KB   37/37 KB   32/95 KB   44/58 KB   32/121 KB   32/51 KB   37/37 KB   32/95 KB   48/58 KB   32/121 KB   32/51 KB   37/37 KB   32/95 KB   52/58 KB   32/121 KB   32/51 KB   37/37 KB   32/95 KB   56/58 KB   32/121 KB   32/51 KB   37/37 KB   32/95 KB   58/58 KB   32/121 KB   36/51 KB   37/37 KB   32/95 KB   58/58 KB   32/121 KB   40/51 KB   37/37 KB   32/95 KB   58/58 KB   32/121 KB   44/51 KB   37/37 KB   32/95 KB   58/58 KB   32/121 KB   48/51 KB   37/37 KB   32/95 KB   58/58 KB   32/121 KB   51/51 KB   37/37 KB   32/95 KB   58/58 KB   32/121 KB   51/51 KB   37/37 KB   36/95 KB   58/58 KB   32/121 KB   51/51 KB   37/37 KB   40/95 KB   58/58 KB   32/121 KB   51/51 KB   37/37 KB   44/95 KB   58/58 KB   32/121 KB   51/51 KB   37/37 KB   48/95 KB   58/58 KB   32/121 KB   51/51 KB   37/37 KB   52/95 KB   58/58 KB   32/121 KB   51/51 KB   37/37 KB   56/95 KB   58/58 KB   32/121 KB   51/51 KB   37/37 KB   60/95 KB   58/58 KB   32/121 KB   51/51 KB   37/37 KB   64/95 KB   58/58 KB   32/121 KB   51/51 KB   37/37 KB   64/95 KB   58/58 KB   36/121 KB   51/51 KB   37/37 KB   64/95 KB   58/58 KB   40/121 KB   51/51 KB   37/37 KB   64/95 KB   58/58 KB   44/121 KB   51/51 KB   37/37 KB   64/95 KB   58/58 KB   48/121 KB   51/51 KB   37/37 KB   68/95 KB   58/58 KB   48/121 KB   51/51 KB   37/37 KB   72/95 KB   58/58 KB   48/121 KB   51/51 KB   37/37 KB   76/95 KB   58/58 KB   48/121 KB   51/51 KB   37/37 KB   80/95 KB   58/58 KB   48/121 KB   51/51 KB   37/37 KB   80/95 KB   58/58 KB   52/121 KB   51/51 KB   37/37 KB   80/95 KB   58/58 KB   56/121 KB   51/51 KB   37/37 KB   80/95 KB   58/58 KB   60/121 KB   51/51 KB   37/37 KB   84/95 KB   58/58 KB   60/121 KB   51/51 KB   37/37 KB   84/95 KB   58/58 KB   64/121 KB   51/51 KB   37/37 KB   88/95 KB   58/58 KB   64/121 KB   51/51 KB   37/37 KB   92/95 KB   58/58 KB   64/121 KB   51/51 KB   37/37 KB   95/95 KB   58/58 KB   64/121 KB   51/51 KB   37/37 KB   95/95 KB   58/58 KB   68/121 KB   51/51 KB   37/37 KB   95/95 KB   58/58 KB   72/121 KB   51/51 KB   37/37 KB   95/95 KB   58/58 KB   76/121 KB   51/51 KB   37/37 KB   95/95 KB   58/58 KB   80/121 KB                                                           Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.11/maven-profile-2.0.11.jar (37 KB at 453.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.11/maven-repository-metadata-2.0.11.jar
+                                                        Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.11/maven-artifact-manager-2.0.11.jar (58 KB at 664.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.11/maven-plugin-registry-2.0.11.jar
+51/51 KB   95/95 KB   84/121 KB                         51/51 KB   95/95 KB   88/121 KB   51/51 KB   95/95 KB   92/121 KB   51/51 KB   95/95 KB   96/121 KB                                     Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.11/maven-settings-2.0.11.jar (51 KB at 557.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.jar
+95/95 KB   100/121 KB             95/95 KB   104/121 KB   95/95 KB   108/121 KB   95/95 KB   112/121 KB   95/95 KB   116/121 KB   95/95 KB   120/121 KB   95/95 KB   121/121 KB                           Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.11/maven-model-2.0.11.jar (95 KB at 1037.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.11/maven-artifact-2.0.11.jar
+3/26 KB   121/121 KB    5/26 KB   121/121 KB   8/26 KB   121/121 KB   11/26 KB   121/121 KB   13/26 KB   121/121 KB   16/26 KB   121/121 KB   19/26 KB   121/121 KB   21/26 KB   121/121 KB   24/26 KB   121/121 KB   26/26 KB   121/121 KB   26/26 KB   4/30 KB   121/121 KB   26/26 KB   4/30 KB   121/121 KB   4/35 KB   26/26 KB   8/30 KB   121/121 KB   4/35 KB   26/26 KB   12/30 KB   121/121 KB   4/35 KB   26/26 KB   12/30 KB   121/121 KB   8/35 KB   26/26 KB   16/30 KB   121/121 KB   8/35 KB   26/26 KB   16/30 KB   121/121 KB   12/35 KB   26/26 KB   16/30 KB   121/121 KB   16/35 KB   26/26 KB   20/30 KB   121/121 KB   16/35 KB   26/26 KB   24/30 KB   121/121 KB   16/35 KB   26/26 KB   24/30 KB   121/121 KB   20/35 KB   26/26 KB   28/30 KB   121/121 KB   20/35 KB                                                 26/26 KB   30/30 KB   20/35 KB                26/26 KB   30/30 KB   24/35 KB   26/26 KB   30/30 KB   28/35 KB   Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.11/maven-project-2.0.11.jar (121 KB at 1137.5 KB/sec)
+26/26 KB   30/30 KB   32/35 KB   Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.jar
+26/26 KB   30/30 KB   35/35 KB   4/88 KB   26/26 KB   30/30 KB   35/35 KB   8/88 KB   26/26 KB   30/30 KB   35/35 KB   12/88 KB   26/26 KB   30/30 KB   35/35 KB   16/88 KB   26/26 KB   30/30 KB   35/35 KB   20/88 KB   26/26 KB   30/30 KB   35/35 KB   24/88 KB   26/26 KB   30/30 KB   35/35 KB   28/88 KB   26/26 KB   30/30 KB   35/35 KB   32/88 KB   26/26 KB   30/30 KB   35/35 KB   36/88 KB   26/26 KB   30/30 KB   35/35 KB   40/88 KB   26/26 KB   30/30 KB   35/35 KB   44/88 KB   26/26 KB   30/30 KB   35/35 KB   48/88 KB   26/26 KB   30/30 KB   35/35 KB   52/88 KB   26/26 KB   30/30 KB   35/35 KB   56/88 KB   26/26 KB   30/30 KB   35/35 KB   60/88 KB   26/26 KB   30/30 KB   35/35 KB   64/88 KB   26/26 KB   30/30 KB   35/35 KB   68/88 KB   26/26 KB   30/30 KB   35/35 KB   72/88 KB   26/26 KB   30/30 KB   35/35 KB   76/88 KB   26/26 KB   30/30 KB   35/35 KB   80/88 KB   26/26 KB   30/30 KB   35/35 KB   84/88 KB   26/26 KB   30/30 KB   35/35 KB   88/88 KB   26/26 KB   30/30 KB   35/35 KB                                               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.11/maven-repository-metadata-2.0.11.jar (26 KB at 217.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.jar
+                                            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.jar (35 KB at 288.7 KB/sec)
+                                            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.11/maven-plugin-registry-2.0.11.jar (30 KB at 245.3 KB/sec)
+                                            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.11/maven-artifact-2.0.11.jar (88 KB at 667.5 KB/sec)
+3/13 KB                                     5/13 KB   8/13 KB   11/13 KB   13/13 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.jar (13 KB at 80.2 KB/sec)
+4/1889 KB   8/1889 KB   12/1889 KB   16/1889 KB   20/1889 KB   24/1889 KB   28/1889 KB   32/1889 KB   36/1889 KB   40/1889 KB   44/1889 KB   48/1889 KB   52/1889 KB   56/1889 KB   60/1889 KB   64/1889 KB   68/1889 KB   72/1889 KB   76/1889 KB   80/1889 KB   84/1889 KB   88/1889 KB   92/1889 KB   96/1889 KB   100/1889 KB   104/1889 KB   108/1889 KB   112/1889 KB   116/1889 KB   120/1889 KB   124/1889 KB   128/1889 KB   132/1889 KB   136/1889 KB   140/1889 KB   144/1889 KB   148/1889 KB   152/1889 KB   156/1889 KB   160/1889 KB   164/1889 KB   168/1889 KB   172/1889 KB   176/1889 KB   180/1889 KB   184/1889 KB   188/1889 KB   192/1889 KB   196/1889 KB   200/1889 KB   204/1889 KB   208/1889 KB   212/1889 KB   216/1889 KB   220/1889 KB   224/1889 KB   228/1889 KB   232/1889 KB   236/1889 KB   240/1889 KB   244/1889 KB   248/1889 KB   252/1889 KB   256/1889 KB   260/1889 KB   264/1889 KB   268/1889 KB   272/1889 KB   276/1889 KB   280/1889 KB   284/1889 KB   288/1889 KB   292/1889 KB   296/1889 KB   300/1889 KB   304/1889 KB   308/1889 KB   312/1889 KB   316/1889 KB   320/1889 KB   324/1889 KB   328/1889 KB   332/1889 KB   336/1889 KB   340/1889 KB   344/1889 KB   348/1889 KB   352/1889 KB   356/1889 KB   360/1889 KB   364/1889 KB   368/1889 KB   372/1889 KB   376/1889 KB   380/1889 KB   384/1889 KB   388/1889 KB   392/1889 KB   396/1889 KB   400/1889 KB   404/1889 KB   408/1889 KB   412/1889 KB   416/1889 KB   420/1889 KB   424/1889 KB   428/1889 KB   432/1889 KB   436/1889 KB   440/1889 KB   444/1889 KB   448/1889 KB   452/1889 KB   456/1889 KB   460/1889 KB   464/1889 KB   468/1889 KB   472/1889 KB   476/1889 KB   480/1889 KB   484/1889 KB   488/1889 KB   492/1889 KB   496/1889 KB   500/1889 KB   504/1889 KB   508/1889 KB   512/1889 KB   516/1889 KB   520/1889 KB   524/1889 KB   528/1889 KB   532/1889 KB   536/1889 KB   540/1889 KB   544/1889 KB   548/1889 KB   552/1889 KB   556/1889 KB   560/1889 KB   564/1889 KB   568/1889 KB   572/1889 KB   576/1889 KB   580/1889 KB   584/1889 KB   588/1889 KB   592/1889 KB   596/1889 KB   600/1889 KB   604/1889 KB   608/1889 KB   612/1889 KB   616/1889 KB   620/1889 KB   624/1889 KB   628/1889 KB   632/1889 KB   636/1889 KB   640/1889 KB   644/1889 KB   648/1889 KB   652/1889 KB   656/1889 KB   660/1889 KB   664/1889 KB   668/1889 KB   672/1889 KB   676/1889 KB   680/1889 KB   684/1889 KB   688/1889 KB   692/1889 KB   696/1889 KB   700/1889 KB   704/1889 KB   708/1889 KB   712/1889 KB   716/1889 KB   720/1889 KB   724/1889 KB   728/1889 KB   732/1889 KB   736/1889 KB   740/1889 KB   744/1889 KB   748/1889 KB   752/1889 KB   756/1889 KB   760/1889 KB   764/1889 KB   768/1889 KB   772/1889 KB   776/1889 KB   780/1889 KB   784/1889 KB   788/1889 KB   792/1889 KB   796/1889 KB   800/1889 KB   804/1889 KB   808/1889 KB   812/1889 KB   816/1889 KB   820/1889 KB   824/1889 KB   828/1889 KB   832/1889 KB   836/1889 KB   840/1889 KB   844/1889 KB   848/1889 KB   852/1889 KB   856/1889 KB   860/1889 KB   864/1889 KB   868/1889 KB   872/1889 KB   876/1889 KB   880/1889 KB   884/1889 KB   888/1889 KB   892/1889 KB   896/1889 KB   900/1889 KB   904/1889 KB   908/1889 KB   912/1889 KB   916/1889 KB   920/1889 KB   924/1889 KB   928/1889 KB   932/1889 KB   936/1889 KB   940/1889 KB   944/1889 KB   948/1889 KB   952/1889 KB   956/1889 KB   960/1889 KB   964/1889 KB   968/1889 KB   972/1889 KB   976/1889 KB   980/1889 KB   984/1889 KB   988/1889 KB   992/1889 KB   996/1889 KB   1000/1889 KB   1004/1889 KB   1008/1889 KB   1012/1889 KB   1016/1889 KB   1020/1889 KB   1024/1889 KB   1028/1889 KB   1032/1889 KB   1036/1889 KB   1040/1889 KB   1044/1889 KB   1048/1889 KB   1052/1889 KB   1056/1889 KB   1060/1889 KB   1064/1889 KB   1068/1889 KB   1072/1889 KB   1076/1889 KB   1080/1889 KB   1084/1889 KB   1088/1889 KB   1092/1889 KB   1096/1889 KB   1100/1889 KB   1104/1889 KB   1108/1889 KB   1112/1889 KB   1116/1889 KB   1120/1889 KB   1124/1889 KB   1128/1889 KB   1132/1889 KB   1136/1889 KB   1140/1889 KB   1142/1889 KB   1146/1889 KB   1150/1889 KB   1154/1889 KB   1158/1889 KB   1162/1889 KB   1166/1889 KB   1170/1889 KB   1174/1889 KB   1178/1889 KB   1182/1889 KB   1186/1889 KB   1190/1889 KB   1194/1889 KB   1198/1889 KB   1202/1889 KB   1206/1889 KB   1210/1889 KB   1214/1889 KB   1218/1889 KB   1222/1889 KB   1226/1889 KB   1230/1889 KB   1234/1889 KB   1238/1889 KB   1242/1889 KB   1246/1889 KB   1250/1889 KB   1254/1889 KB   1258/1889 KB   1262/1889 KB   1266/1889 KB   1270/1889 KB   1274/1889 KB   1278/1889 KB   1282/1889 KB   1286/1889 KB   1290/1889 KB   1294/1889 KB   1298/1889 KB   1302/1889 KB   1306/1889 KB   1310/1889 KB   1314/1889 KB   1318/1889 KB   1322/1889 KB   1326/1889 KB   1330/1889 KB   1334/1889 KB   1338/1889 KB   1342/1889 KB   1346/1889 KB   1350/1889 KB   1354/1889 KB   1358/1889 KB   1362/1889 KB   1366/1889 KB   1370/1889 KB   1374/1889 KB   1378/1889 KB   1382/1889 KB   1386/1889 KB   1390/1889 KB   1394/1889 KB   1398/1889 KB   1402/1889 KB   1406/1889 KB   1410/1889 KB   1414/1889 KB   1418/1889 KB   1422/1889 KB   1426/1889 KB   1430/1889 KB   1434/1889 KB   1438/1889 KB   1442/1889 KB   1446/1889 KB   1450/1889 KB   1454/1889 KB   1458/1889 KB   1462/1889 KB   1466/1889 KB   1470/1889 KB   1474/1889 KB   1478/1889 KB   1482/1889 KB   1486/1889 KB   1490/1889 KB   1494/1889 KB   1498/1889 KB   1502/1889 KB   1506/1889 KB   1510/1889 KB   1514/1889 KB   1518/1889 KB   1522/1889 KB   1526/1889 KB   1530/1889 KB   1534/1889 KB   1538/1889 KB   1542/1889 KB   1546/1889 KB   1550/1889 KB   1554/1889 KB   1558/1889 KB   1562/1889 KB   1566/1889 KB   1570/1889 KB   1574/1889 KB   1578/1889 KB   1582/1889 KB   1586/1889 KB   1590/1889 KB   1594/1889 KB   1598/1889 KB   1602/1889 KB   1606/1889 KB   1610/1889 KB   1614/1889 KB   1618/1889 KB   1622/1889 KB   1626/1889 KB   1630/1889 KB   1634/1889 KB   1638/1889 KB   1642/1889 KB   1646/1889 KB   1650/1889 KB   1654/1889 KB   1658/1889 KB   1662/1889 KB   1666/1889 KB   1670/1889 KB   1674/1889 KB   1678/1889 KB   1682/1889 KB   1686/1889 KB   1690/1889 KB   1694/1889 KB   1698/1889 KB   1702/1889 KB   1706/1889 KB   1710/1889 KB   1714/1889 KB   1718/1889 KB   1722/1889 KB   1726/1889 KB   1730/1889 KB   1734/1889 KB   1738/1889 KB   1742/1889 KB   1746/1889 KB   1750/1889 KB   1754/1889 KB   1758/1889 KB   1762/1889 KB   1766/1889 KB   1770/1889 KB   1774/1889 KB   1778/1889 KB   1782/1889 KB   1786/1889 KB   1790/1889 KB   1794/1889 KB   1798/1889 KB   1802/1889 KB   1806/1889 KB   1810/1889 KB   1814/1889 KB   1818/1889 KB   1822/1889 KB   1826/1889 KB   1830/1889 KB   1834/1889 KB   1838/1889 KB   1842/1889 KB   1846/1889 KB   1850/1889 KB   1854/1889 KB   1858/1889 KB   1862/1889 KB   1866/1889 KB   1870/1889 KB   1874/1889 KB   1878/1889 KB   1882/1889 KB   1886/1889 KB   1889/1889 KB                  Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.jar (1889 KB at 3975.6 KB/sec)
+[WARNING] Parameter tasks is deprecated, use target instead
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/jan_gerling/astor/test02/lang_55/target/classes/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-lang ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ commons-lang ---
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.4/plexus-compiler-api-2.4.pom
+865/865 B                  Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.4/plexus-compiler-api-2.4.pom (865 B at 27.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.4/plexus-compiler-2.4.pom
+3/6 KB      5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.4/plexus-compiler-2.4.pom (6 KB at 161.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.4/plexus-compiler-manager-2.4.pom
+690/690 B               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.4/plexus-compiler-manager-2.4.pom (690 B at 21.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.4/plexus-compiler-javac-2.4.pom
+769/769 B               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.4/plexus-compiler-javac-2.4.pom (769 B at 24.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.4/plexus-compilers-2.4.pom
+2/2 KB               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.4/plexus-compilers-2.4.pom (2 KB at 40.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.4/plexus-compiler-api-2.4.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.4/plexus-compiler-manager-2.4.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.4/plexus-compiler-javac-2.4.jar
+3/25 KB   5/25 KB   8/25 KB   11/25 KB   13/25 KB   16/25 KB   19/25 KB   21/25 KB   24/25 KB   25/25 KB   3/5 KB   25/25 KB   5/5 KB   25/25 KB   3/19 KB   5/5 KB   25/25 KB   5/19 KB   5/5 KB   25/25 KB   8/19 KB   5/5 KB   25/25 KB   11/19 KB   5/5 KB   25/25 KB   13/19 KB   5/5 KB   25/25 KB   16/19 KB   5/5 KB   25/25 KB   19/19 KB   5/5 KB   25/25 KB   19/19 KB   5/5 KB   25/25 KB                                  Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.4/plexus-compiler-api-2.4.jar (25 KB at 728.3 KB/sec)
+                               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.4/plexus-compiler-manager-2.4.jar (5 KB at 131.1 KB/sec)
+                               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.4/plexus-compiler-javac-2.4.jar (19 KB at 471.7 KB/sec)
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 77 source files to /home/jan_gerling/astor/test02/lang_55/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/enum/EnumUtils.java:[17,33] as of release 5, 'enum' is a keyword, and may not be used as an identifier
+  (use -source 1.4 or lower to use 'enum' as an identifier)
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[64,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[69,28] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[87,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[88,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[89,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[90,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[91,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[92,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[93,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[94,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[95,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[96,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[97,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[98,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[99,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[100,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[101,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[102,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[103,28] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[104,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[105,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[106,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[107,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[108,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[109,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[111,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[112,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[113,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[114,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[115,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[116,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[117,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[118,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[119,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[120,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[121,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[122,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[123,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[124,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[125,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[126,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[127,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[128,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[129,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[130,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[131,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[132,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[133,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[134,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[135,28] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[136,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[137,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[138,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[139,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[140,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[141,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[143,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[144,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[145,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[146,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[147,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[148,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[149,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[150,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/enum/ValuedEnum.java:[17,33] as of release 5, 'enum' is a keyword, and may not be used as an identifier
+  (use -source 1.4 or lower to use 'enum' as an identifier)
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/enum/Enum.java:[17,33] as of release 5, 'enum' is a keyword, and may not be used as an identifier
+  (use -source 1.4 or lower to use 'enum' as an identifier)
+[INFO] 67 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.024 s
+[INFO] Finished at: 2019-04-13T19:14:19+00:00
+[INFO] Final Memory: 16M/470M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.2:compile (default-compile) on project commons-lang: Compilation failure: Compilation failure:
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/enum/EnumUtils.java:[17,33] as of release 5, 'enum' is a keyword, and may not be used as an identifier
+[ERROR] (use -source 1.4 or lower to use 'enum' as an identifier)
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[64,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[69,28] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[87,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[88,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[89,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[90,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[91,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[92,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[93,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[94,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[95,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[96,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[97,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[98,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[99,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[100,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[101,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[102,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[103,28] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[104,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[105,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[106,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[107,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[108,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[109,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[111,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[112,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[113,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[114,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[115,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[116,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[117,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[118,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[119,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[120,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[121,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[122,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[123,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[124,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[125,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[126,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[127,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[128,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[129,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[130,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[131,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[132,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[133,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[134,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[135,28] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[136,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[137,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[138,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[139,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[140,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[141,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[143,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[144,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[145,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[146,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[147,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[148,31] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[149,30] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/Entities.java:[150,29] unmappable character for encoding UTF8
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/enum/ValuedEnum.java:[17,33] as of release 5, 'enum' is a keyword, and may not be used as an identifier
+[ERROR] (use -source 1.4 or lower to use 'enum' as an identifier)
+[ERROR] /home/jan_gerling/astor/test02/lang_55/src/java/org/apache/commons/lang/enum/Enum.java:[17,33] as of release 5, 'enum' is a keyword, and may not be used as an identifier
+[ERROR] (use -source 1.4 or lower to use 'enum' as an identifier)
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
