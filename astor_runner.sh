@@ -34,7 +34,7 @@ mvn compile
 for currenttest in $tests; do
 	fullPath=$1$currenttest/
 	echo -e "\e[32m\n* * * * * * * * New * * * * * * * *"
-	echo -e "[\e[39mFILE\e[39m] $fullPath \n"
+	echo -e "[\e[34mFILE\e[39m] $fullPath \n"
 	
 	#compile and current build test case
 	buildOutputFile="$resultsDir/$currenttest-build-output.txt"
@@ -46,8 +46,8 @@ for currenttest in $tests; do
 	
 	#analyze build output
 	if  [ -f "$buildOutputFile" ] && grep -q "$testErrorString" "$buildOutputFile" ; then
-		echo -e "[\e[32mInfo\e[39m]: $currenttest failed to build with test error:" |& tee -a "$runSummary"
-		awk '/$testErrorString/,{c=1}' "$buildOutputFile" |& tee -a "$runSummary"		
+		echo -e "[\e[34mInfo\e[39m]: $currenttest failed to build with test error:" |& tee -a "$runSummary"
+		awk '/$testErrorString/,/Tests run:/' "$buildOutputFile" |& tee -a "$runSummary"
 	else 
 		echo -e "[\e[31mFAILURE\e[39m]: $currenttest was not build properly with a failing test!" |& tee -a "$runSummary"
 	fi	
@@ -67,13 +67,13 @@ for currenttest in $tests; do
 			
 			# check if this test was already run with the current configuration
 			if  [ ! -f "$outputFile" ] || ! grep -q "[DONE]" "$outputFile" ; then
-				echo -e "[\e[35mRUN\e[39m] $runname" |& tee -a "$runSummary"
+				echo -e "[\e[34mRUN\e[39m] $runname" |& tee -a "$runSummary"
 			
 				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -maxtime $maxTime -stopfirst true &> "$outputFile"
 				echo "[DONE]" >> "$outputFile"
-				echo -e "[\e[32mDONE\e[39m]: $runname is finished!" |& tee -a "$runSummary"
+				echo -e "[\e[34mDONE\e[39m]: $runname is finished!" |& tee -a "$runSummary"
 			else
-				echo -e "[\e[33mSKIP\e[39m]: $runname was already done!" |& tee -a "$runSummary"
+				echo -e "[\e[34mSKIP\e[39m]: $runname was already done!" |& tee -a "$runSummary"
 			fi	
 
 			# quickly analyse the output for the summary
