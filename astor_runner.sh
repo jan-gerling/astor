@@ -43,7 +43,7 @@ for currenttest in $tests; do
 	testErrorEndString="Tests run:"
 
 	cd $fullPath
-	mvn clean compile test |& tee "$buildOutputFile"
+	mvn clean compile test &> "$buildOutputFile"
 	cd $2
 	
 	#analyze build output
