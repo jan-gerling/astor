@@ -1,0 +1,163 @@
+2019-04-13 17:25:03,454 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jgenprog  -scope  global  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests/time_03/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-13 17:25:04,194 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-time_03//bin//default from 132 classes with test cases
+2019-04-13 17:25:04,194 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-13 17:25:04,834 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-time_03//bin//default]
+2019-04-13 17:25:23,313 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatter#testZoneShortNameNearTransition
+2019-04-13 17:25:23,313 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatter#testZoneNameNearTransition
+2019-04-13 17:25:23,314 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatter#testZoneShortNameNearTransition
+2019-04-13 17:25:23,314 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatter#testZoneNameNearTransition
+2019-04-13 17:25:23,314 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormat#testFormat_zoneText
+2019-04-13 17:25:23,314 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormat#testFormat_zoneLongText
+2019-04-13 17:25:23,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_fullDateTime
+2019-04-13 17:25:23,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_mediumLongDateTime
+2019-04-13 17:25:23,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_fullTime
+2019-04-13 17:25:23,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_shortLongDateTime
+2019-04-13 17:25:23,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_longTime
+2019-04-13 17:25:23,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_mediumFullDateTime
+2019-04-13 17:25:23,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_shortFullDateTime
+2019-04-13 17:25:23,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_longDateTime
+2019-04-13 17:25:23,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseLongName
+2019-04-13 17:25:23,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortNameWithAutoLookup
+2019-04-13 17:25:23,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseLongNameWithLookup
+2019-04-13 17:25:23,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortNameWithLookup
+2019-04-13 17:25:23,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortName
+2019-04-13 17:25:23,316 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testLocalDateTime
+2019-04-13 17:25:23,316 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMutablePeriod
+2019-04-13 17:25:23,316 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testDateTime
+2019-04-13 17:25:23,316 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testTimeZone
+2019-04-13 17:25:23,316 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testDuration
+2019-04-13 17:25:23,316 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testHours
+2019-04-13 17:25:23,317 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testWeeks
+2019-04-13 17:25:23,317 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testYears
+2019-04-13 17:25:23,317 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testDays
+2019-04-13 17:25:23,317 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMonthDay_leapDay
+2019-04-13 17:25:23,317 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testLocalDate
+2019-04-13 17:25:23,317 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testLocalTime
+2019-04-13 17:25:23,317 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testYearMonth
+2019-04-13 17:25:23,317 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMonthDay
+2019-04-13 17:25:23,317 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMinutes
+2019-04-13 17:25:23,317 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMonths
+2019-04-13 17:25:23,317 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testSeconds
+2019-04-13 17:25:23,317 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testPeriod
+2019-04-13 17:25:23,317 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMutableDateTime
+2019-04-13 17:25:23,317 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testDateMidnight
+2019-04-13 17:25:23,318 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAddYears_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,318 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAddDays_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,318 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAddWeeks_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,318 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAdd_DurationFieldType_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,318 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAddMonths_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,320 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestDateTimeZone#testGetName_berlin
+2019-04-13 17:25:23,320 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestDateTimeZone#testGetShortName
+2019-04-13 17:25:23,320 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestDateTimeZone#testGetName
+2019-04-13 17:25:23,320 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestDateTimeZone#testGetShortName_berlin
+2019-04-13 17:25:23,320 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testLocalDateTime
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMutablePeriod
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testDateTime
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testTimeZone
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testDuration
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testHours
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testWeeks
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testYears
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testDays
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMonthDay_leapDay
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testLocalDate
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testLocalTime
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testYearMonth
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMonthDay
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMinutes
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMonths
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testSeconds
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testPeriod
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMutableDateTime
+2019-04-13 17:25:23,321 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testDateMidnight
+2019-04-13 17:25:23,322 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatter#testZoneShortNameNearTransition
+2019-04-13 17:25:23,322 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatter#testZoneNameNearTransition
+2019-04-13 17:25:23,322 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormat#testFormat_zoneText
+2019-04-13 17:25:23,322 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormat#testFormat_zoneLongText
+2019-04-13 17:25:23,322 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_fullDateTime
+2019-04-13 17:25:23,322 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_mediumLongDateTime
+2019-04-13 17:25:23,322 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_fullTime
+2019-04-13 17:25:23,322 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_shortLongDateTime
+2019-04-13 17:25:23,322 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_longTime
+2019-04-13 17:25:23,323 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_mediumFullDateTime
+2019-04-13 17:25:23,323 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_shortFullDateTime
+2019-04-13 17:25:23,323 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_longDateTime
+2019-04-13 17:25:23,323 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseLongName
+2019-04-13 17:25:23,323 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortNameWithAutoLookup
+2019-04-13 17:25:23,323 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseLongNameWithLookup
+2019-04-13 17:25:23,323 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortNameWithLookup
+2019-04-13 17:25:23,323 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortName
+2019-04-13 17:25:23,323 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAddYears_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,323 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAddDays_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,323 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAddWeeks_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,323 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAdd_DurationFieldType_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,323 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAddMonths_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,324 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseLongName
+2019-04-13 17:25:23,325 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortNameWithAutoLookup
+2019-04-13 17:25:23,325 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseLongNameWithLookup
+2019-04-13 17:25:23,325 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortNameWithLookup
+2019-04-13 17:25:23,325 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortName
+2019-04-13 17:25:23,325 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAddYears_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,325 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAddDays_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,325 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAddWeeks_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,325 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAdd_DurationFieldType_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,325 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestMutableDateTime_Adds#testAddMonths_int_dstOverlapWinter_addZero
+2019-04-13 17:25:23,327 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestDateTimeZone#testGetName_berlin
+2019-04-13 17:25:23,327 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestDateTimeZone#testGetShortName
+2019-04-13 17:25:23,327 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestDateTimeZone#testGetName
+2019-04-13 17:25:23,327 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestDateTimeZone#testGetShortName_berlin
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testLocalDateTime
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMutablePeriod
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testDateTime
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testTimeZone
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testDuration
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testHours
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testWeeks
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testYears
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testDays
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMonthDay_leapDay
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testLocalDate
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testLocalTime
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testYearMonth
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMonthDay
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMinutes
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMonths
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testSeconds
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testPeriod
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testMutableDateTime
+2019-04-13 17:25:23,328 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestStringConvert#testDateMidnight
+2019-04-13 17:25:23,329 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_fullDateTime
+2019-04-13 17:25:23,329 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_mediumLongDateTime
+2019-04-13 17:25:23,329 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_fullTime
+2019-04-13 17:25:23,329 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_shortLongDateTime
+2019-04-13 17:25:23,329 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_longTime
+2019-04-13 17:25:23,329 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_mediumFullDateTime
+2019-04-13 17:25:23,329 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_shortFullDateTime
+2019-04-13 17:25:23,329 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormatStyle#testForStyle_longDateTime
+2019-04-13 17:25:23,329 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormat#testFormat_zoneText
+2019-04-13 17:25:23,329 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.format.TestDateTimeFormat#testFormat_zoneLongText
+2019-04-13 17:25:23,330 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestDateTimeZone#testGetName_berlin
+2019-04-13 17:25:23,330 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestDateTimeZone#testGetShortName
+2019-04-13 17:25:23,331 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestDateTimeZone#testGetName
+2019-04-13 17:25:23,331 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.joda.time.TestDateTimeZone#testGetShortName_berlin
+2019-04-13 17:25:23,333 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:12118, fails: 138, GZoltar suspicious 11131
+2019-04-13 17:25:23,343 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 23 with susp > 0.5, we consider: 23
+2019-04-13 17:25:23,351 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-time_03//src//default, compliance level: 8
+2019-04-13 17:25:26,887 ERROR main - Problem compiling the model with compliance level 8
+2019-04-13 17:25:26,887 ERROR main - The import org.joda.convert cannot be resolved at /home/jan_gerling/astor/outputMutation/AstorMain-time_03/src/default/org/joda/time/base/AbstractDuration.java:18
+2019-04-13 17:25:26,888 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-time_03//src//default, compliance level: 4
+Exception in thread "main" spoon.compiler.ModelBuildingException: Syntax error, annotations are only available if source level is 1.5 or greater at /home/jan_gerling/astor/outputMutation/AstorMain-time_03/src/default/org/joda/time/base/AbstractDuration.java:187
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.report(JDTBasedSpoonCompiler.java:579)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.reportProblems(JDTBasedSpoonCompiler.java:560)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:121)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:89)
+	at fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:73)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.initModel(JGenProg.java:132)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.initPopulation(JGenProg.java:70)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.createInitialPopulation(JGenProg.java:50)
+	at fr.inria.main.evolution.AstorMain.createEngine(AstorMain.java:215)
+	at fr.inria.main.evolution.AstorMain.run(AstorMain.java:494)
+	at fr.inria.main.evolution.AstorMain.execute(AstorMain.java:571)
+	at fr.inria.main.evolution.AstorMain.main(AstorMain.java:550)
+[DONE]

@@ -1,0 +1,333 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Joda-Time 2.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+3/4 KB   4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom (4 KB at 3.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar
+3/25 KB   5/25 KB   8/25 KB   11/25 KB   13/25 KB   16/25 KB   19/25 KB   21/25 KB   24/25 KB   25/25 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar (25 KB at 522.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.pom
+3/10 KB    5/10 KB   8/10 KB   10/10 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.pom (10 KB at 293.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.jar
+3/42 KB    5/42 KB   8/42 KB   11/42 KB   13/42 KB   16/42 KB   19/42 KB   21/42 KB   24/42 KB   27/42 KB   29/42 KB   32/42 KB   36/42 KB   40/42 KB   42/42 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.jar (42 KB at 873.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2.1/exec-maven-plugin-1.2.1.pom
+4/8 KB     8/8 KB   8/8 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2.1/exec-maven-plugin-1.2.1.pom (8 KB at 214.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/28/mojo-parent-28.pom
+4/26 KB   8/26 KB   12/26 KB   16/26 KB   20/26 KB   24/26 KB   26/26 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/28/mojo-parent-28.pom (26 KB at 697.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom
+4/5 KB     5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom (5 KB at 114.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2.1/exec-maven-plugin-1.2.1.jar
+3/37 KB   5/37 KB   8/37 KB   11/37 KB   13/37 KB   16/37 KB   19/37 KB   21/37 KB   24/37 KB   27/37 KB   29/37 KB   32/37 KB   35/37 KB   37/37 KB   37/37 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2.1/exec-maven-plugin-1.2.1.jar (37 KB at 947.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.15/maven-surefire-plugin-2.15.pom
+3/6 KB     5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.15/maven-surefire-plugin-2.15.pom (6 KB at 172.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.15/surefire-2.15.pom
+3/19 KB   5/19 KB   8/19 KB   11/19 KB   13/19 KB   16/19 KB   19/19 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.15/surefire-2.15.pom (19 KB at 518.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.15/maven-surefire-plugin-2.15.jar
+3/32 KB    5/32 KB   8/32 KB   11/32 KB   13/32 KB   16/32 KB   19/32 KB   21/32 KB   24/32 KB   27/32 KB   29/32 KB   32/32 KB   32/32 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.15/maven-surefire-plugin-2.15.jar (32 KB at 900.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/joda/joda-convert/1.2/joda-convert-1.2.pom
+3/11 KB    5/11 KB   8/11 KB   11/11 KB   11/11 KB              Downloaded: https://repo.maven.apache.org/maven2/org/joda/joda-convert/1.2/joda-convert-1.2.pom (11 KB at 314.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/joda/joda-convert/1.2/joda-convert-1.2.jar
+3/38 KB    5/38 KB   8/38 KB   11/38 KB   13/38 KB   16/38 KB   19/38 KB   21/38 KB   24/38 KB   27/38 KB   29/38 KB   32/38 KB   35/38 KB   37/38 KB   38/38 KB              Downloaded: https://repo.maven.apache.org/maven2/org/joda/joda-convert/1.2/joda-convert-1.2.jar (38 KB at 1073.1 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ joda-time ---
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom
+3/4 KB     4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom (4 KB at 116.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+3/221 KB   5/221 KB   8/221 KB   11/221 KB   13/221 KB   16/221 KB   19/221 KB   21/221 KB   24/221 KB   27/221 KB   29/221 KB   32/221 KB   36/221 KB   40/221 KB   44/221 KB   48/221 KB   52/221 KB   56/221 KB   60/221 KB   64/221 KB   68/221 KB   72/221 KB   76/221 KB   80/221 KB   84/221 KB   88/221 KB   92/221 KB   96/221 KB   100/221 KB   104/221 KB   108/221 KB   112/221 KB   116/221 KB   120/221 KB   124/221 KB   128/221 KB   132/221 KB   136/221 KB   140/221 KB   144/221 KB   148/221 KB   152/221 KB   156/221 KB   160/221 KB   164/221 KB   168/221 KB   172/221 KB   176/221 KB   180/221 KB   184/221 KB   188/221 KB   192/221 KB   196/221 KB   200/221 KB   204/221 KB   208/221 KB   212/221 KB   216/221 KB   220/221 KB   221/221 KB                Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar (221 KB at 3806.4 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ joda-time ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ joda-time ---
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom
+4/5 KB       5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom (5 KB at 140.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.pom
+865/865 B               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.pom (865 B at 28.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.2/plexus-compiler-2.2.pom
+3/4 KB      4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.2/plexus-compiler-2.2.pom (4 KB at 117.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom
+3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom (3 KB at 99.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.pom
+690/690 B               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.pom (690 B at 22.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.pom
+769/769 B               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.pom (769 B at 25.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.2/plexus-compilers-2.2.pom
+2/2 KB               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.2/plexus-compilers-2.2.pom (2 KB at 39.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.jar
+3/19 KB   5/19 KB   8/19 KB   11/19 KB   13/19 KB   16/19 KB   19/19 KB   19/19 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.jar (19 KB at 529.3 KB/sec)
+3/14 KB    3/5 KB   3/14 KB   5/5 KB   3/14 KB   5/5 KB   5/14 KB   3/25 KB   5/5 KB   5/14 KB   3/25 KB   5/5 KB   8/14 KB   3/25 KB   5/5 KB   11/14 KB   5/25 KB   5/5 KB   11/14 KB   5/25 KB   5/5 KB   13/14 KB   8/25 KB   5/5 KB   13/14 KB   11/25 KB   5/5 KB   13/14 KB   13/25 KB   5/5 KB   13/14 KB   13/25 KB   5/5 KB   14/14 KB   16/25 KB   5/5 KB   14/14 KB   19/25 KB   5/5 KB   14/14 KB   21/25 KB   5/5 KB   14/14 KB   24/25 KB   5/5 KB   14/14 KB   25/25 KB   5/5 KB   14/14 KB                                  Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.jar (5 KB at 63.6 KB/sec)
+                               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar (14 KB at 155.5 KB/sec)
+                               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.jar (25 KB at 287.1 KB/sec)
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 157 source files to /home/jan_gerling/astor/defect4j_tests/time_01/target/classes
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default) > validate @ joda-time >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default) < validate @ joda-time <<<
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default) @ joda-time ---
+Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.1/commons-exec-1.1.pom
+3/11 KB                        5/11 KB   8/11 KB   11/11 KB   11/11 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.1/commons-exec-1.1.pom (11 KB at 288.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.1/commons-exec-1.1.jar
+3/52 KB    5/52 KB   8/52 KB   11/52 KB   13/52 KB   16/52 KB   19/52 KB   21/52 KB   24/52 KB   27/52 KB   29/52 KB   32/52 KB   36/52 KB   40/52 KB   44/52 KB   48/52 KB   52/52 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.1/commons-exec-1.1.jar (52 KB at 884.7 KB/sec)
+Writing zoneinfo files
+Writing ZoneInfoMap
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ joda-time ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ joda-time ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default) > validate @ joda-time >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default) < validate @ joda-time <<<
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default) @ joda-time ---
+Writing zoneinfo files
+Writing ZoneInfoMap
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ joda-time ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 32 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ joda-time ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 155 source files to /home/jan_gerling/astor/defect4j_tests/time_01/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ joda-time ---
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.15/maven-surefire-common-2.15.pom
+3/6 KB     5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.15/maven-surefire-common-2.15.pom (6 KB at 175.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.pom (2 KB at 52.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.2/maven-plugin-tools-3.2.pom
+3/17 KB   5/17 KB   8/17 KB   11/17 KB   13/17 KB   16/17 KB   17/17 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.2/maven-plugin-tools-3.2.pom (17 KB at 520.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.15/surefire-api-2.15.pom
+3/3 KB     3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.15/surefire-api-2.15.pom (3 KB at 74.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.15/surefire-booter-2.15.pom
+3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.15/surefire-booter-2.15.pom (3 KB at 89.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom
+3/17 KB   5/17 KB   8/17 KB   11/17 KB   13/17 KB   16/17 KB   17/17 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom (17 KB at 510.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.15/maven-surefire-common-2.15.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.15/surefire-booter-2.15.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.15/surefire-api-2.15.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.jar
+3/255 KB   5/255 KB   8/255 KB   11/255 KB   13/255 KB   3/309 KB   13/255 KB   3/309 KB   16/255 KB   3/309 KB   16/255 KB   3/39 KB   3/309 KB   19/255 KB   3/39 KB   3/309 KB   19/255 KB   5/39 KB   5/309 KB   19/255 KB   5/39 KB   5/309 KB   21/255 KB   5/39 KB   5/309 KB   21/255 KB   8/39 KB   8/309 KB   21/255 KB   8/39 KB   8/309 KB   24/255 KB   8/39 KB   8/309 KB   24/255 KB   11/39 KB   8/309 KB   27/255 KB   11/39 KB   11/309 KB   27/255 KB   11/39 KB   11/309 KB   27/255 KB   13/39 KB   11/309 KB   29/255 KB   13/39 KB   13/309 KB   29/255 KB   13/39 KB   13/309 KB   29/255 KB   16/39 KB   13/309 KB   32/255 KB   16/39 KB   13/309 KB   32/255 KB   19/39 KB   13/309 KB   32/255 KB   21/39 KB   13/309 KB   32/255 KB   24/39 KB   13/309 KB   36/255 KB   24/39 KB   13/309 KB   36/255 KB   27/39 KB   13/309 KB   40/255 KB   27/39 KB   13/309 KB   44/255 KB   27/39 KB   13/309 KB   48/255 KB   27/39 KB   3/149 KB   13/309 KB   48/255 KB   27/39 KB   5/149 KB   13/309 KB   48/255 KB   27/39 KB   8/149 KB   13/309 KB   48/255 KB   27/39 KB   11/149 KB   13/309 KB   48/255 KB   27/39 KB   13/149 KB   13/309 KB   48/255 KB   27/39 KB   16/149 KB   13/309 KB   48/255 KB   27/39 KB   19/149 KB   13/309 KB   48/255 KB   27/39 KB   21/149 KB   13/309 KB   48/255 KB   27/39 KB   24/149 KB   13/309 KB   48/255 KB   27/39 KB   27/149 KB   13/309 KB   48/255 KB   27/39 KB   29/149 KB   13/309 KB   48/255 KB   27/39 KB   32/149 KB   13/309 KB   48/255 KB   27/39 KB   36/149 KB   13/309 KB   48/255 KB   27/39 KB   40/149 KB   13/309 KB   48/255 KB   27/39 KB   44/149 KB   13/309 KB   48/255 KB   27/39 KB   48/149 KB   13/309 KB   48/255 KB   27/39 KB   52/149 KB   13/309 KB   48/255 KB   27/39 KB   56/149 KB   13/309 KB   48/255 KB   27/39 KB   60/149 KB   13/309 KB   48/255 KB   27/39 KB   64/149 KB   13/309 KB   48/255 KB   27/39 KB   68/149 KB   13/309 KB   48/255 KB   27/39 KB   72/149 KB   13/309 KB   48/255 KB   27/39 KB   76/149 KB   13/309 KB   48/255 KB   27/39 KB   80/149 KB   13/309 KB   48/255 KB   27/39 KB   80/149 KB   13/309 KB   52/255 KB   27/39 KB   84/149 KB   13/309 KB   52/255 KB   27/39 KB   88/149 KB   13/309 KB   52/255 KB   27/39 KB   88/149 KB   13/309 KB   56/255 KB   27/39 KB   92/149 KB   13/309 KB   56/255 KB   27/39 KB   92/149 KB   13/309 KB   60/255 KB   27/39 KB   96/149 KB   13/309 KB   60/255 KB   27/39 KB   96/149 KB   13/309 KB   64/255 KB   27/39 KB   96/149 KB   16/309 KB   64/255 KB   27/39 KB   100/149 KB   16/309 KB   64/255 KB   27/39 KB   104/149 KB   16/309 KB   64/255 KB   27/39 KB   104/149 KB   16/309 KB   68/255 KB   27/39 KB   104/149 KB   16/309 KB   68/255 KB   29/39 KB   108/149 KB   16/309 KB   68/255 KB   29/39 KB   108/149 KB   19/309 KB   68/255 KB   29/39 KB   108/149 KB   19/309 KB   72/255 KB   29/39 KB   112/149 KB   19/309 KB   72/255 KB   29/39 KB   112/149 KB   19/309 KB   76/255 KB   29/39 KB   112/149 KB   19/309 KB   76/255 KB   32/39 KB   112/149 KB   21/309 KB   76/255 KB   32/39 KB   112/149 KB   21/309 KB   80/255 KB   32/39 KB   112/149 KB   21/309 KB   80/255 KB   35/39 KB   112/149 KB   24/309 KB   80/255 KB   35/39 KB   112/149 KB   24/309 KB   80/255 KB   37/39 KB   112/149 KB   27/309 KB   80/255 KB   37/39 KB   112/149 KB   27/309 KB   80/255 KB   39/39 KB   116/149 KB   27/309 KB   80/255 KB   39/39 KB   120/149 KB   27/309 KB   80/255 KB   39/39 KB   124/149 KB   27/309 KB   80/255 KB   39/39 KB   124/149 KB   29/309 KB   80/255 KB   39/39 KB   124/149 KB   29/309 KB   84/255 KB   39/39 KB   128/149 KB   29/309 KB   84/255 KB   39/39 KB   128/149 KB   29/309 KB   88/255 KB   39/39 KB   128/149 KB   29/309 KB   92/255 KB   39/39 KB   128/149 KB   32/309 KB   92/255 KB   39/39 KB   128/149 KB   32/309 KB   96/255 KB   39/39 KB   132/149 KB   32/309 KB   96/255 KB   39/39 KB   136/149 KB   32/309 KB   96/255 KB   39/39 KB   136/149 KB   32/309 KB   100/255 KB   39/39 KB   140/149 KB   32/309 KB   100/255 KB   39/39 KB   140/149 KB   32/309 KB   104/255 KB   39/39 KB   144/149 KB   32/309 KB   104/255 KB   39/39 KB   144/149 KB   32/309 KB   108/255 KB   39/39 KB   144/149 KB   32/309 KB   112/255 KB   39/39 KB   148/149 KB   32/309 KB   112/255 KB   39/39 KB   149/149 KB   32/309 KB   112/255 KB   39/39 KB   149/149 KB   32/309 KB   116/255 KB   39/39 KB   149/149 KB   32/309 KB   120/255 KB   39/39 KB   149/149 KB   32/309 KB   124/255 KB   39/39 KB   149/149 KB   32/309 KB   128/255 KB   39/39 KB   149/149 KB   32/309 KB   132/255 KB   39/39 KB   149/149 KB   32/309 KB   136/255 KB   39/39 KB   149/149 KB   32/309 KB   140/255 KB   39/39 KB   149/149 KB   32/309 KB   144/255 KB   39/39 KB   149/149 KB   32/309 KB   148/255 KB   39/39 KB   149/149 KB   32/309 KB   152/255 KB   39/39 KB   149/149 KB   32/309 KB   156/255 KB   39/39 KB   149/149 KB   32/309 KB   160/255 KB   39/39 KB   149/149 KB   32/309 KB   164/255 KB   39/39 KB   149/149 KB   32/309 KB   168/255 KB   39/39 KB   149/149 KB   32/309 KB   172/255 KB   39/39 KB   149/149 KB   32/309 KB   176/255 KB   39/39 KB   149/149 KB   32/309 KB   180/255 KB   39/39 KB   149/149 KB   32/309 KB   184/255 KB   39/39 KB   149/149 KB   32/309 KB   188/255 KB   39/39 KB   149/149 KB   32/309 KB   192/255 KB   39/39 KB   149/149 KB   32/309 KB   196/255 KB   39/39 KB   149/149 KB   32/309 KB   200/255 KB   39/39 KB   149/149 KB   32/309 KB   204/255 KB   39/39 KB   149/149 KB   32/309 KB   208/255 KB   39/39 KB   149/149 KB   36/309 KB   208/255 KB   39/39 KB   149/149 KB   40/309 KB   208/255 KB   39/39 KB   149/149 KB   44/309 KB   208/255 KB   39/39 KB   149/149 KB   48/309 KB   208/255 KB   39/39 KB   149/149 KB   48/309 KB   212/255 KB   39/39 KB   149/149 KB   48/309 KB   216/255 KB   39/39 KB   149/149 KB   48/309 KB   220/255 KB   39/39 KB   149/149 KB   48/309 KB   224/255 KB   39/39 KB   149/149 KB   52/309 KB   224/255 KB   39/39 KB   149/149 KB   56/309 KB   224/255 KB   39/39 KB   149/149 KB   60/309 KB   224/255 KB   39/39 KB   149/149 KB   60/309 KB   228/255 KB   39/39 KB   149/149 KB   64/309 KB   228/255 KB   39/39 KB   149/149 KB   64/309 KB   232/255 KB   39/39 KB   149/149 KB   64/309 KB   236/255 KB   39/39 KB   149/149 KB   64/309 KB   240/255 KB   39/39 KB   149/149 KB   68/309 KB   240/255 KB   39/39 KB   149/149 KB   72/309 KB   240/255 KB   39/39 KB   149/149 KB   76/309 KB   240/255 KB   39/39 KB   149/149 KB   80/309 KB   240/255 KB   39/39 KB   149/149 KB   80/309 KB   244/255 KB   39/39 KB   149/149 KB   80/309 KB   248/255 KB   39/39 KB   149/149 KB   80/309 KB   252/255 KB   39/39 KB   149/149 KB   80/309 KB   255/255 KB   39/39 KB                                                    Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.15/surefire-booter-2.15.jar (39 KB at 730.5 KB/sec)
+                                                 Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.15/surefire-api-2.15.jar (149 KB at 2802.5 KB/sec)
+80/309 KB   3/15 KB   255/255 KB                 80/309 KB   5/15 KB   255/255 KB   80/309 KB   8/15 KB   255/255 KB   80/309 KB   11/15 KB   255/255 KB   80/309 KB   13/15 KB   255/255 KB   84/309 KB   13/15 KB   255/255 KB   88/309 KB   13/15 KB   255/255 KB   92/309 KB   13/15 KB   255/255 KB   96/309 KB   13/15 KB   255/255 KB   100/309 KB   13/15 KB   255/255 KB   104/309 KB   13/15 KB   255/255 KB   108/309 KB   13/15 KB   255/255 KB   112/309 KB   13/15 KB   255/255 KB   116/309 KB   13/15 KB   255/255 KB   120/309 KB   13/15 KB   255/255 KB   124/309 KB   13/15 KB   255/255 KB   128/309 KB   13/15 KB   255/255 KB   132/309 KB   13/15 KB   255/255 KB   136/309 KB   13/15 KB   255/255 KB   140/309 KB   13/15 KB   255/255 KB   144/309 KB   13/15 KB   255/255 KB   148/309 KB   13/15 KB   255/255 KB   152/309 KB   13/15 KB   255/255 KB   156/309 KB   13/15 KB   255/255 KB   160/309 KB   13/15 KB   255/255 KB   164/309 KB   13/15 KB   255/255 KB   168/309 KB   13/15 KB   255/255 KB   172/309 KB   13/15 KB   255/255 KB   176/309 KB   13/15 KB   255/255 KB   180/309 KB   13/15 KB   255/255 KB   184/309 KB   13/15 KB   255/255 KB   188/309 KB   13/15 KB   255/255 KB   192/309 KB   13/15 KB   255/255 KB                                        Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.15/maven-surefire-common-2.15.jar (255 KB at 3914.5 KB/sec)
+192/309 KB   15/15 KB                196/309 KB   15/15 KB   200/309 KB   15/15 KB   204/309 KB   15/15 KB   208/309 KB   15/15 KB   212/309 KB   15/15 KB   216/309 KB   15/15 KB   220/309 KB   15/15 KB   224/309 KB   15/15 KB   228/309 KB   15/15 KB   232/309 KB   15/15 KB   236/309 KB   15/15 KB   240/309 KB   15/15 KB   244/309 KB   15/15 KB   248/309 KB   15/15 KB   252/309 KB   15/15 KB   256/309 KB   15/15 KB   260/309 KB   15/15 KB   264/309 KB   15/15 KB   268/309 KB   15/15 KB   272/309 KB   15/15 KB   276/309 KB   15/15 KB   280/309 KB   15/15 KB   284/309 KB   15/15 KB   288/309 KB   15/15 KB   292/309 KB   15/15 KB   296/309 KB   15/15 KB   300/309 KB   15/15 KB   304/309 KB   15/15 KB   308/309 KB   15/15 KB   309/309 KB   15/15 KB                           Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.jar (15 KB at 177.4 KB/sec)
+                        Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar (309 KB at 3316.2 KB/sec)
+[INFO] Surefire report directory: /home/jan_gerling/astor/defect4j_tests/time_01/target/surefire-reports
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.15/surefire-junit3-2.15.pom
+2/2 KB                           Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.15/surefire-junit3-2.15.pom (2 KB at 47.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.15/surefire-providers-2.15.pom
+3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.15/surefire-providers-2.15.pom (3 KB at 72.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.15/surefire-junit3-2.15.jar
+3/25 KB   5/25 KB   8/25 KB   11/25 KB   13/25 KB   16/25 KB   19/25 KB   21/25 KB   24/25 KB   25/25 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.15/surefire-junit3-2.15.jar (25 KB at 712.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.joda.time.TestAllPackages
+
+TestBuddhistChronology.testCalendar
+
+TestCopticChronology.testCalendar
+
+TestEthiopicChronology.testCalendar
+
+TestIslamicChronology.testCalendar
+
+Testing Gregorian chronology over 1000 iterations
+100% complete (i=1000)
+
+Testing Julian chronology over 1000 iterations
+100% complete (i=1000)
+Writing zoneinfo files
+Writing ZoneInfoMap
+Tests run: 4043, Failures: 22, Errors: 0, Skipped: 0, Time elapsed: 3.507 sec <<< FAILURE! - in org.joda.time.TestAllPackages
+testConstructorEx7_TypeArray_intArray(org.joda.time.TestPartial_Constructors)  Time elapsed: 0.004 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.fail(Assert.java:53)
+	at org.joda.time.TestPartial_Constructors.testConstructorEx7_TypeArray_intArray(TestPartial_Constructors.java:284)
+
+testGetShortName(org.joda.time.TestDateTimeZone)  Time elapsed: 0.006 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[BST]> but was:<[+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDateTimeZone.testGetShortName(TestDateTimeZone.java:669)
+
+testGetShortName_berlin(org.joda.time.TestDateTimeZone)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[CET]> but was:<[+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDateTimeZone.testGetShortName_berlin(TestDateTimeZone.java:676)
+
+testGetName(org.joda.time.TestDateTimeZone)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[British Summer Time]> but was:<[+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDateTimeZone.testGetName(TestDateTimeZone.java:701)
+
+testGetName_berlin(org.joda.time.TestDateTimeZone)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[Central European Time]> but was:<[+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDateTimeZone.testGetName_berlin(TestDateTimeZone.java:708)
+
+testZoneNameNearTransition(org.joda.time.format.TestDateTimeFormatter)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...05-10-30 01:00:00.0 [Eastern Daylight Time]> but was:<...05-10-30 01:00:00.0 [-04:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatter.testZoneNameNearTransition(TestDateTimeFormatter.java:1003)
+
+testZoneShortNameNearTransition(org.joda.time.format.TestDateTimeFormatter)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...05-10-30 01:00:00.0 [EDT]> but was:<...05-10-30 01:00:00.0 [-04:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatter.testZoneShortNameNearTransition(TestDateTimeFormatter.java:1019)
+
+testFormat_zoneText(org.joda.time.format.TestDateTimeFormat)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: 2004-06-09T10:20:30.040Z expected:<[UTC]> but was:<[+00:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at org.joda.time.format.TestDateTimeFormat.testFormat_zoneText(TestDateTimeFormat.java:757)
+
+testFormat_zoneLongText(org.joda.time.format.TestDateTimeFormat)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: 2004-06-09T10:20:30.040Z expected:<[Coordinated Universal Time]> but was:<[+00:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at org.joda.time.format.TestDateTimeFormat.testFormat_zoneLongText(TestDateTimeFormat.java:769)
+
+testForStyle_longDateTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.007 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<... June 2004 10:20:30 [BST]> but was:<... June 2004 10:20:30 [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_longDateTime(TestDateTimeFormatStyle.java:255)
+
+testForStyle_fullTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<10:20:30 o'clock [BST]> but was:<10:20:30 o'clock [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_fullTime(TestDateTimeFormatStyle.java:282)
+
+testForStyle_fullDateTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...04 10:20:30 o'clock [BST]> but was:<...04 10:20:30 o'clock [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_fullDateTime(TestDateTimeFormatStyle.java:295)
+
+testForStyle_shortLongDateTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<09/06/04 10:20:30 [BST]> but was:<09/06/04 10:20:30 [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_shortLongDateTime(TestDateTimeFormatStyle.java:318)
+
+testForStyle_shortFullDateTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...04 10:20:30 o'clock [BST]> but was:<...04 10:20:30 o'clock [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_shortFullDateTime(TestDateTimeFormatStyle.java:329)
+
+testForStyle_mediumLongDateTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...9-Jun-2004 10:20:30 [BST]> but was:<...9-Jun-2004 10:20:30 [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_mediumLongDateTime(TestDateTimeFormatStyle.java:352)
+
+testForStyle_mediumFullDateTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...04 10:20:30 o'clock [BST]> but was:<...04 10:20:30 o'clock [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_mediumFullDateTime(TestDateTimeFormatStyle.java:363)
+
+testForStyle_longTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<10:20:30 [BST]> but was:<10:20:30 [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_longTime(TestDateTimeFormatStyle.java:242)
+
+test_printParseLongName(org.joda.time.format.TestDateTimeFormatterBuilder)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2011-01-04 12:30 [Greenwich Mean Time]> but was:<2011-01-04 12:30 [+00:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatterBuilder.test_printParseLongName(TestDateTimeFormatterBuilder.java:560)
+
+test_printParseLongNameWithLookup(org.joda.time.format.TestDateTimeFormatterBuilder)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2011-01-04 12:30 [Greenwich Mean Time]> but was:<2011-01-04 12:30 [+00:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatterBuilder.test_printParseLongNameWithLookup(TestDateTimeFormatterBuilder.java:581)
+
+test_printParseShortName(org.joda.time.format.TestDateTimeFormatterBuilder)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2011-01-04 12:30 [GMT]> but was:<2011-01-04 12:30 [+00:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatterBuilder.test_printParseShortName(TestDateTimeFormatterBuilder.java:486)
+
+test_printParseShortNameWithLookup(org.joda.time.format.TestDateTimeFormatterBuilder)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2011-01-04 12:30 [GMT]> but was:<2011-01-04 12:30 [+00:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatterBuilder.test_printParseShortNameWithLookup(TestDateTimeFormatterBuilder.java:507)
+
+test_printParseShortNameWithAutoLookup(org.joda.time.format.TestDateTimeFormatterBuilder)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2011-01-04 12:30 [EST]> but was:<2011-01-04 12:30 [-05:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatterBuilder.test_printParseShortNameWithAutoLookup(TestDateTimeFormatterBuilder.java:528)
+
+
+Results :
+
+Failed tests: 
+  org.joda.time.TestPartial_Constructors#testConstructorEx7_TypeArray_intArray AssertionFailedError
+  org.joda.time.TestDateTimeZone#testGetShortName ComparisonFailure expected:<[B...
+  org.joda.time.TestDateTimeZone#testGetShortName_berlin ComparisonFailure expec...
+  org.joda.time.TestDateTimeZone#testGetName ComparisonFailure expected:<[Britis...
+  org.joda.time.TestDateTimeZone#testGetName_berlin ComparisonFailure expected:<...
+  org.joda.time.format.TestDateTimeFormatter#testZoneNameNearTransition ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatter#testZoneShortNameNearTransition ComparisonFailure
+  org.joda.time.format.TestDateTimeFormat#testFormat_zoneText ComparisonFailure ...
+  org.joda.time.format.TestDateTimeFormat#testFormat_zoneLongText ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_longDateTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_fullTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_fullDateTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_shortLongDateTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_shortFullDateTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_mediumLongDateTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_mediumFullDateTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_longTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseLongName ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseLongNameWithLookup ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortName ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortNameWithLookup ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortNameWithAutoLookup ComparisonFailure
+
+Tests run: 4043, Failures: 22, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 17.323 s
+[INFO] Finished at: 2019-04-13T17:13:18+00:00
+[INFO] Final Memory: 14M/484M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.15:test (default-test) on project joda-time: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/jan_gerling/astor/defect4j_tests/time_01/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,322 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Joda time 2.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.13/maven-surefire-plugin-2.13.pom
+3/6 KB   5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.13/maven-surefire-plugin-2.13.pom (6 KB at 11.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.13/surefire-2.13.pom
+3/17 KB   5/17 KB   8/17 KB   11/17 KB   13/17 KB   16/17 KB   17/17 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.13/surefire-2.13.pom (17 KB at 362.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.13/maven-surefire-plugin-2.13.jar
+3/31 KB    5/31 KB   8/31 KB   11/31 KB   13/31 KB   16/31 KB   19/31 KB   21/31 KB   24/31 KB   27/31 KB   29/31 KB   31/31 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.13/maven-surefire-plugin-2.13.jar (31 KB at 654.8 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ joda-time ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ joda-time ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jan_gerling/astor/defect4j_tests/time_06/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 9 resources to .
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ joda-time ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 157 source files to /home/jan_gerling/astor/defect4j_tests/time_06/target/classes
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default) > validate @ joda-time >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default) < validate @ joda-time <<<
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default) @ joda-time ---
+Writing zoneinfo files
+Writing ZoneInfoMap
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ joda-time ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jan_gerling/astor/defect4j_tests/time_06/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 9 resources to .
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ joda-time ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 157 source files to /home/jan_gerling/astor/defect4j_tests/time_06/target/classes
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default) > validate @ joda-time >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default) < validate @ joda-time <<<
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default) @ joda-time ---
+Writing zoneinfo files
+Writing ZoneInfoMap
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ joda-time ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 32 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ joda-time ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 155 source files to /home/jan_gerling/astor/defect4j_tests/time_06/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ joda-time ---
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.13/maven-surefire-common-2.13.pom
+3/6 KB     5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.13/maven-surefire-common-2.13.pom (6 KB at 152.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.13/surefire-api-2.13.pom
+3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.13/surefire-api-2.13.pom (3 KB at 78.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.13/surefire-booter-2.13.pom
+3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.13/surefire-booter-2.13.pom (3 KB at 89.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.13/maven-surefire-common-2.13.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.13/surefire-booter-2.13.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.13/surefire-api-2.13.jar
+3/221 KB   5/221 KB   8/221 KB   11/221 KB   13/221 KB   16/221 KB   19/221 KB   21/221 KB   24/221 KB   27/221 KB   29/221 KB   32/221 KB   36/221 KB   40/221 KB   44/221 KB   48/221 KB   52/221 KB   56/221 KB   60/221 KB   64/221 KB   68/221 KB   72/221 KB   76/221 KB   80/221 KB   84/221 KB   88/221 KB   92/221 KB   96/221 KB   100/221 KB   104/221 KB   108/221 KB   112/221 KB   116/221 KB   120/221 KB   124/221 KB   128/221 KB   132/221 KB   136/221 KB   140/221 KB   144/221 KB   148/221 KB   152/221 KB   156/221 KB   160/221 KB   164/221 KB   168/221 KB   172/221 KB   176/221 KB   176/221 KB   3/35 KB   180/221 KB   3/35 KB   184/221 KB   3/35 KB   184/221 KB   5/35 KB   188/221 KB   5/35 KB   192/221 KB   5/35 KB   192/221 KB   8/35 KB   192/221 KB   11/35 KB   192/221 KB   3/152 KB   11/35 KB   192/221 KB   3/152 KB   13/35 KB   192/221 KB   5/152 KB   13/35 KB   196/221 KB   5/152 KB   13/35 KB   200/221 KB   5/152 KB   13/35 KB   200/221 KB   8/152 KB   13/35 KB   204/221 KB   8/152 KB   13/35 KB   208/221 KB   11/152 KB   13/35 KB   208/221 KB   11/152 KB   13/35 KB   208/221 KB   13/152 KB   13/35 KB   212/221 KB   13/152 KB   13/35 KB   216/221 KB   13/152 KB   13/35 KB   220/221 KB   13/152 KB   13/35 KB   221/221 KB   13/152 KB   13/35 KB   221/221 KB   13/152 KB   16/35 KB   221/221 KB   13/152 KB   19/35 KB   221/221 KB   13/152 KB   21/35 KB   221/221 KB   13/152 KB   24/35 KB   221/221 KB   13/152 KB   27/35 KB   221/221 KB   13/152 KB   29/35 KB   221/221 KB   13/152 KB   32/35 KB   221/221 KB   13/152 KB   35/35 KB   221/221 KB   13/152 KB   35/35 KB   221/221 KB   16/152 KB   35/35 KB   221/221 KB   19/152 KB   35/35 KB   221/221 KB   21/152 KB   35/35 KB   221/221 KB   24/152 KB   35/35 KB   221/221 KB   27/152 KB   35/35 KB                                       29/152 KB   35/35 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.13/maven-surefire-common-2.13.jar (221 KB at 3067.1 KB/sec)
+32/152 KB   35/35 KB                          Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.13/surefire-booter-2.13.jar (35 KB at 426.7 KB/sec)
+36/152 KB              40/152 KB   44/152 KB   48/152 KB   52/152 KB   56/152 KB   60/152 KB   64/152 KB   68/152 KB   72/152 KB   76/152 KB   80/152 KB   84/152 KB   88/152 KB   92/152 KB   96/152 KB   100/152 KB   104/152 KB   108/152 KB   112/152 KB   116/152 KB   120/152 KB   124/152 KB   128/152 KB   132/152 KB   136/152 KB   140/152 KB   144/152 KB   148/152 KB   152/152 KB   152/152 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.13/surefire-api-2.13.jar (152 KB at 1213.8 KB/sec)
+[INFO] Surefire report directory: /home/jan_gerling/astor/defect4j_tests/time_06/target/surefire-reports
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.13/surefire-junit3-2.13.pom
+2/2 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.13/surefire-junit3-2.13.pom (2 KB at 46.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.13/surefire-providers-2.13.pom
+3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.13/surefire-providers-2.13.pom (3 KB at 70.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.13/surefire-junit3-2.13.jar
+3/25 KB   5/25 KB   8/25 KB   11/25 KB   13/25 KB   16/25 KB   19/25 KB   21/25 KB   24/25 KB   25/25 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.13/surefire-junit3-2.13.jar (25 KB at 607.5 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.joda.time.TestAllPackages
+
+TestBuddhistChronology.testCalendar
+
+TestCopticChronology.testCalendar
+
+TestEthiopicChronology.testCalendar
+
+TestIslamicChronology.testCalendar
+
+Testing Gregorian chronology over 1000 iterations
+100% complete (i=1000)
+
+Testing Julian chronology over 1000 iterations
+100% complete (i=1000)
+Writing zoneinfo files
+Writing ZoneInfoMap
+Tests run: 4000, Failures: 24, Errors: 2, Skipped: 0, Time elapsed: 3.376 sec <<< FAILURE!
+testGetName(org.joda.time.TestDateTimeZone)  Time elapsed: 0.008 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[British Summer Time]> but was:<[+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDateTimeZone.testGetName(TestDateTimeZone.java:709)
+
+testGetName_berlin(org.joda.time.TestDateTimeZone)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[Central European Time]> but was:<[+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDateTimeZone.testGetName_berlin(TestDateTimeZone.java:716)
+
+testGetShortName(org.joda.time.TestDateTimeZone)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[BST]> but was:<[+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDateTimeZone.testGetShortName(TestDateTimeZone.java:677)
+
+testGetShortName_berlin(org.joda.time.TestDateTimeZone)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[CET]> but was:<[+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDateTimeZone.testGetShortName_berlin(TestDateTimeZone.java:684)
+
+test_plusYears_positiveToZero_crossCutover(org.joda.time.chrono.TestGJDate)  Time elapsed: 0.001 sec  <<< ERROR!
+org.joda.time.IllegalFieldValueException: Value 0 for year is not supported
+	at org.joda.time.chrono.JulianChronology.adjustYearForSet(JulianChronology.java:81)
+	at org.joda.time.chrono.JulianChronology.getDateMidnightMillis(JulianChronology.java:207)
+	at org.joda.time.chrono.BasicChronology.getDateTimeMillis(BasicChronology.java:159)
+	at org.joda.time.chrono.JulianChronology.getDateTimeMillis(JulianChronology.java:50)
+	at org.joda.time.chrono.GJChronology.convertByYear(GJChronology.java:85)
+	at org.joda.time.chrono.GJChronology.gregorianToJulianByYear(GJChronology.java:588)
+	at org.joda.time.chrono.GJChronology$CutoverField.gregorianToJulian(GJChronology.java:924)
+	at org.joda.time.chrono.GJChronology$ImpreciseCutoverField.add(GJChronology.java:979)
+	at org.joda.time.chrono.GJChronology$LinkedDurationField.add(GJChronology.java:1099)
+	at org.joda.time.LocalDate.plusYears(LocalDate.java:1205)
+	at org.joda.time.chrono.TestGJDate.test_plusYears_positiveToZero_crossCutover(TestGJDate.java:99)
+
+test_plusYears_positiveToNegative_crossCutover(org.joda.time.chrono.TestGJDate)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<-0002-06-30> but was:<-0001-06-30>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.chrono.TestGJDate.test_plusYears_positiveToNegative_crossCutover(TestGJDate.java:105)
+
+test_plusWeekyears_positiveToZero_crossCutover(org.joda.time.chrono.TestGJDate)  Time elapsed: 0.001 sec  <<< ERROR!
+org.joda.time.IllegalFieldValueException: Value 0 for year is not supported
+	at org.joda.time.field.SkipDateTimeField.set(SkipDateTimeField.java:92)
+	at org.joda.time.chrono.GJChronology.convertByWeekyear(GJChronology.java:96)
+	at org.joda.time.chrono.GJChronology.gregorianToJulianByWeekyear(GJChronology.java:596)
+	at org.joda.time.chrono.GJChronology$CutoverField.gregorianToJulian(GJChronology.java:922)
+	at org.joda.time.chrono.GJChronology$ImpreciseCutoverField.add(GJChronology.java:979)
+	at org.joda.time.LocalDate$Property.addToCopy(LocalDate.java:1965)
+	at org.joda.time.chrono.TestGJDate.test_plusWeekyears_positiveToZero_crossCutover(TestGJDate.java:118)
+
+test_plusWeekyears_positiveToNegative_crossCutover(org.joda.time.chrono.TestGJDate)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<-0002-06-30> but was:<-0001-06-28>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.chrono.TestGJDate.test_plusWeekyears_positiveToNegative_crossCutover(TestGJDate.java:124)
+
+test_cutoverPreZero(org.joda.time.chrono.TestGJDate)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.fail(Assert.java:53)
+	at org.joda.time.chrono.TestGJDate.test_cutoverPreZero(TestGJDate.java:132)
+
+testZoneNameNearTransition(org.joda.time.format.TestDateTimeFormatter)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...05-10-30 01:00:00.0 [Eastern Daylight Time]> but was:<...05-10-30 01:00:00.0 [-04:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatter.testZoneNameNearTransition(TestDateTimeFormatter.java:1003)
+
+testZoneShortNameNearTransition(org.joda.time.format.TestDateTimeFormatter)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...05-10-30 01:00:00.0 [EDT]> but was:<...05-10-30 01:00:00.0 [-04:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatter.testZoneShortNameNearTransition(TestDateTimeFormatter.java:1019)
+
+testFormat_zoneText(org.joda.time.format.TestDateTimeFormat)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: 2004-06-09T10:20:30.040Z expected:<[UTC]> but was:<[+00:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at org.joda.time.format.TestDateTimeFormat.testFormat_zoneText(TestDateTimeFormat.java:757)
+
+testFormat_zoneLongText(org.joda.time.format.TestDateTimeFormat)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: 2004-06-09T10:20:30.040Z expected:<[Coordinated Universal Time]> but was:<[+00:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at org.joda.time.format.TestDateTimeFormat.testFormat_zoneLongText(TestDateTimeFormat.java:769)
+
+testForStyle_longTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<10:20:30 [BST]> but was:<10:20:30 [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_longTime(TestDateTimeFormatStyle.java:242)
+
+testForStyle_longDateTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<... June 2004 10:20:30 [BST]> but was:<... June 2004 10:20:30 [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_longDateTime(TestDateTimeFormatStyle.java:255)
+
+testForStyle_fullTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<10:20:30 o'clock [BST]> but was:<10:20:30 o'clock [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_fullTime(TestDateTimeFormatStyle.java:282)
+
+testForStyle_fullDateTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...04 10:20:30 o'clock [BST]> but was:<...04 10:20:30 o'clock [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_fullDateTime(TestDateTimeFormatStyle.java:295)
+
+testForStyle_shortLongDateTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<09/06/04 10:20:30 [BST]> but was:<09/06/04 10:20:30 [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_shortLongDateTime(TestDateTimeFormatStyle.java:318)
+
+testForStyle_shortFullDateTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...04 10:20:30 o'clock [BST]> but was:<...04 10:20:30 o'clock [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_shortFullDateTime(TestDateTimeFormatStyle.java:329)
+
+testForStyle_mediumLongDateTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...9-Jun-2004 10:20:30 [BST]> but was:<...9-Jun-2004 10:20:30 [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_mediumLongDateTime(TestDateTimeFormatStyle.java:352)
+
+testForStyle_mediumFullDateTime(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...04 10:20:30 o'clock [BST]> but was:<...04 10:20:30 o'clock [+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_mediumFullDateTime(TestDateTimeFormatStyle.java:363)
+
+test_printParseShortName(org.joda.time.format.TestDateTimeFormatterBuilder)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2011-01-04 12:30 [GMT]> but was:<2011-01-04 12:30 [+00:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatterBuilder.test_printParseShortName(TestDateTimeFormatterBuilder.java:486)
+
+test_printParseShortNameWithLookup(org.joda.time.format.TestDateTimeFormatterBuilder)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2011-01-04 12:30 [GMT]> but was:<2011-01-04 12:30 [+00:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatterBuilder.test_printParseShortNameWithLookup(TestDateTimeFormatterBuilder.java:507)
+
+test_printParseShortNameWithAutoLookup(org.joda.time.format.TestDateTimeFormatterBuilder)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2011-01-04 12:30 [EST]> but was:<2011-01-04 12:30 [-05:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatterBuilder.test_printParseShortNameWithAutoLookup(TestDateTimeFormatterBuilder.java:528)
+
+test_printParseLongName(org.joda.time.format.TestDateTimeFormatterBuilder)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2011-01-04 12:30 [Greenwich Mean Time]> but was:<2011-01-04 12:30 [+00:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatterBuilder.test_printParseLongName(TestDateTimeFormatterBuilder.java:560)
+
+test_printParseLongNameWithLookup(org.joda.time.format.TestDateTimeFormatterBuilder)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2011-01-04 12:30 [Greenwich Mean Time]> but was:<2011-01-04 12:30 [+00:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestDateTimeFormatterBuilder.test_printParseLongNameWithLookup(TestDateTimeFormatterBuilder.java:581)
+
+
+Results :
+
+Failed tests: 
+  org.joda.time.TestDateTimeZone#testGetName ComparisonFailure expected:<[Britis...
+  org.joda.time.TestDateTimeZone#testGetName_berlin ComparisonFailure expected:<...
+  org.joda.time.TestDateTimeZone#testGetShortName ComparisonFailure expected:<[B...
+  org.joda.time.TestDateTimeZone#testGetShortName_berlin ComparisonFailure expec...
+  org.joda.time.chrono.TestGJDate#test_plusYears_positiveToNegative_crossCutover AssertionFailedError
+  org.joda.time.chrono.TestGJDate#test_plusWeekyears_positiveToNegative_crossCutover AssertionFailedError
+  org.joda.time.chrono.TestGJDate#test_cutoverPreZero AssertionFailedError
+  org.joda.time.format.TestDateTimeFormatter#testZoneNameNearTransition ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatter#testZoneShortNameNearTransition ComparisonFailure
+  org.joda.time.format.TestDateTimeFormat#testFormat_zoneText ComparisonFailure ...
+  org.joda.time.format.TestDateTimeFormat#testFormat_zoneLongText ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_longTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_longDateTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_fullTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_fullDateTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_shortLongDateTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_shortFullDateTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_mediumLongDateTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatStyle#testForStyle_mediumFullDateTime ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortName ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortNameWithLookup ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseShortNameWithAutoLookup ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseLongName ComparisonFailure
+  org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseLongNameWithLookup ComparisonFailure
+
+Tests in error: 
+  org.joda.time.chrono.TestGJDate#test_plusYears_positiveToZero_crossCutover IllegalFieldValueException
+  org.joda.time.chrono.TestGJDate#test_plusWeekyears_positiveToZero_crossCutover IllegalFieldValueException
+
+Tests run: 4000, Failures: 24, Errors: 2, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 16.606 s
+[INFO] Finished at: 2019-04-13T17:34:11+00:00
+[INFO] Final Memory: 14M/468M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.13:test (default-test) on project joda-time: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/jan_gerling/astor/defect4j_tests/time_06/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
