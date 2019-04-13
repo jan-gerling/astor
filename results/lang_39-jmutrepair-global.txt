@@ -1,0 +1,455 @@
+2019-04-13 18:52:24,060 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin  -mode  jmutrepair  -scope  global  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  test02/lang_39/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-13 18:52:24,437 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-lang_39//bin//default from 84 classes with test cases
+2019-04-13 18:52:24,439 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-13 18:52:25,124 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-lang_39//bin//default]
+2019-04-13 18:52:33,618 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.StringUtilsTest#testReplace_StringStringArrayStringArray
+2019-04-13 18:52:33,625 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:1618, fails: 1, GZoltar suspicious 8013
+2019-04-13 18:52:33,634 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 53 with susp > 0.5, we consider: 53
+2019-04-13 18:52:33,643 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-lang_39//src//default, compliance level: 8
+2019-04-13 18:52:38,201 INFO main - 
+---- Initial suspicious size: 53
+2019-04-13 18:52:38,281 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String; 0.0, lineNumber=3502, susp=1.0]
+2019-04-13 18:52:38,298 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3648, susp=1.0]
+2019-04-13 18:52:38,313 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3730, susp=1.0]
+2019-04-13 18:52:38,341 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3615, susp=0.7071067811865475]
+2019-04-13 18:52:38,368 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3623, susp=0.7071067811865475]
+2019-04-13 18:52:38,380 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3624, susp=0.7071067811865475]
+2019-04-13 18:52:38,403 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3635, susp=0.7071067811865475]
+2019-04-13 18:52:38,414 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3638, susp=0.7071067811865475]
+2019-04-13 18:52:38,426 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3639, susp=0.7071067811865475]
+2019-04-13 18:52:38,438 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3640, susp=0.7071067811865475]
+2019-04-13 18:52:38,451 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3644, susp=0.7071067811865475]
+2019-04-13 18:52:38,474 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3646, susp=0.7071067811865475]
+2019-04-13 18:52:38,486 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3650, susp=0.7071067811865475]
+2019-04-13 18:52:38,509 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3654, susp=0.7071067811865475]
+2019-04-13 18:52:38,531 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3657, susp=0.7071067811865475]
+2019-04-13 18:52:38,543 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3658, susp=0.7071067811865475]
+2019-04-13 18:52:38,567 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3666, susp=0.7071067811865475]
+2019-04-13 18:52:38,593 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3669, susp=0.7071067811865475]
+2019-04-13 18:52:38,603 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3672, susp=0.7071067811865475]
+2019-04-13 18:52:38,613 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3675, susp=0.7071067811865475]
+2019-04-13 18:52:38,620 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3679, susp=0.7071067811865475]
+2019-04-13 18:52:38,632 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3685, susp=0.7071067811865475]
+2019-04-13 18:52:38,638 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3687, susp=0.7071067811865475]
+2019-04-13 18:52:38,644 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3689, susp=0.7071067811865475]
+2019-04-13 18:52:38,649 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3691, susp=0.7071067811865475]
+2019-04-13 18:52:38,654 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3692, susp=0.7071067811865475]
+2019-04-13 18:52:38,658 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3694, susp=0.7071067811865475]
+2019-04-13 18:52:38,663 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3696, susp=0.7071067811865475]
+2019-04-13 18:52:38,668 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3698, susp=0.7071067811865475]
+2019-04-13 18:52:38,673 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3699, susp=0.7071067811865475]
+2019-04-13 18:52:38,678 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3700, susp=0.7071067811865475]
+2019-04-13 18:52:38,684 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3703, susp=0.7071067811865475]
+2019-04-13 18:52:38,694 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3705, susp=0.7071067811865475]
+2019-04-13 18:52:38,698 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3709, susp=0.7071067811865475]
+2019-04-13 18:52:38,708 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3713, susp=0.7071067811865475]
+2019-04-13 18:52:38,717 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3716, susp=0.7071067811865475]
+2019-04-13 18:52:38,722 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3717, susp=0.7071067811865475]
+2019-04-13 18:52:38,727 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3724, susp=0.7071067811865475]
+2019-04-13 18:52:38,732 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3725, susp=0.7071067811865475]
+2019-04-13 18:52:38,736 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3726, susp=0.7071067811865475]
+2019-04-13 18:52:38,741 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.StringUtils, methodName=org.apache.commons.lang3.StringUtils{replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String; 0.0, lineNumber=3728, susp=0.7071067811865475]
+2019-04-13 18:52:38,746 INFO main - Total suspicious from FL: 53,  12
+2019-04-13 18:52:38,746 INFO main - Total ModPoint created: 12
+2019-04-13 18:52:38,746 INFO main - Creating program variant #1, [Variant id: 1, #gens: 12, #ops: 0, parent:-]
+2019-04-13 18:52:46,791 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-13 18:52:46,791 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jmutrepair
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-13 18:52:46,792 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= test02/lang_39/
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-13 18:52:46,793 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= global
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-13 18:52:46,794 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-13 18:52:46,795 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-13 18:52:46,795 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-13 18:52:46,795 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-13 18:52:46,795 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-13 18:52:46,795 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-13 18:52:46,795 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-13 18:52:46,807 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:46,807 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:47,730 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:47,731 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:48,112 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:48,112 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:48,446 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:48,447 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:48,815 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:48,816 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) && ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:49,113 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:49,113 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text != null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:49,419 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:49,420 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text >= null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:49,536 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:49,536 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text > null) || ((te[...]` at pos -1 of parent `-`
+2019-04-13 18:52:49,652 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:49,653 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text <= null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:49,795 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:49,795 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text < null) || ((te[...]` at pos -1 of parent `-`
+2019-04-13 18:52:49,956 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:49,956 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((!(text == null)) || [...]` at pos -1 of parent `-`
+2019-04-13 18:52:50,232 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:50,232 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:50,521 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:50,521 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:50,794 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:50,794 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:51,065 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:51,065 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:51,337 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:51,337 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:51,605 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:51,606 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || (!([...]` at pos -1 of parent `-`
+2019-04-13 18:52:51,894 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:51,894 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `((((!((text == null) || ([...]` at pos -1 of parent `-`
+2019-04-13 18:52:52,160 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:52,161 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:52,436 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:52,436 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:52,524 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:52,524 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:52,606 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:52,606 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:52,695 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:52,695 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:52,770 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:52,770 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:53,033 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:53,033 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((!(((text == null) || ([...]` at pos -1 of parent `-`
+2019-04-13 18:52:53,332 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:53,332 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:53,618 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:53,619 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:53,882 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:53,883 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:54,136 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:54,136 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:54,388 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:54,388 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:54,651 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:54,651 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:54,915 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:54,915 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `((!((((text == null) || ([...]` at pos -1 of parent `-`
+2019-04-13 18:52:55,201 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:55,201 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:55,479 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:55,479 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:55,552 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:55,552 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:55,624 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:55,625 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:55,730 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:55,730 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:55,834 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:55,835 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:56,094 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:56,094 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(!(((((text == null) || ([...]` at pos -1 of parent `-`
+2019-04-13 18:52:56,379 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:56,380 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:56,629 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:56,629 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:56,878 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:56,879 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:57,121 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:57,121 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:57,377 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:57,377 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:57,618 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:57,618 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `(((((text == null) || ((t[...]` at pos -1 of parent `-`
+2019-04-13 18:52:57,864 INFO main - mod_point ModificPoint=StringUtils line: 3612, el: CtIfImpl
+2019-04-13 18:52:57,864 INFO main - -->op: IfExpresionMutOp: `(((((text == null) || ((t[...] ` ---> `!((((((text == null) || ([...]` at pos -1 of parent `-`
+2019-04-13 18:52:58,117 INFO main - mod_point ModificPoint=StringUtils line: 3619, el: CtIfImpl
+2019-04-13 18:52:58,117 INFO main - -->op: IfExpresionMutOp: `timeToLive < 0 ` ---> `timeToLive == 0` at pos -1 of parent `-`
+2019-04-13 18:52:58,373 INFO main - mod_point ModificPoint=StringUtils line: 3619, el: CtIfImpl
+2019-04-13 18:52:58,373 INFO main - -->op: IfExpresionMutOp: `timeToLive < 0 ` ---> `timeToLive != 0` at pos -1 of parent `-`
+2019-04-13 18:52:58,641 INFO main - mod_point ModificPoint=StringUtils line: 3619, el: CtIfImpl
+2019-04-13 18:52:58,642 INFO main - -->op: IfExpresionMutOp: `timeToLive < 0 ` ---> `timeToLive >= 0` at pos -1 of parent `-`
+2019-04-13 18:52:58,939 INFO main - mod_point ModificPoint=StringUtils line: 3619, el: CtIfImpl
+2019-04-13 18:52:58,939 INFO main - -->op: IfExpresionMutOp: `timeToLive < 0 ` ---> `timeToLive > 0` at pos -1 of parent `-`
+2019-04-13 18:52:59,189 INFO main - mod_point ModificPoint=StringUtils line: 3619, el: CtIfImpl
+2019-04-13 18:52:59,189 INFO main - -->op: IfExpresionMutOp: `timeToLive < 0 ` ---> `timeToLive <= 0` at pos -1 of parent `-`
+2019-04-13 18:52:59,452 INFO main - mod_point ModificPoint=StringUtils line: 3619, el: CtIfImpl
+2019-04-13 18:52:59,453 INFO main - -->op: IfExpresionMutOp: `timeToLive < 0 ` ---> `!(timeToLive < 0)` at pos -1 of parent `-`
+2019-04-13 18:52:59,714 INFO main - mod_point ModificPoint=StringUtils line: 3627, el: CtIfImpl
+2019-04-13 18:52:59,715 INFO main - -->op: IfExpresionMutOp: `searchLength != replaceme[...] ` ---> `searchLength == replaceme[...]` at pos -1 of parent `-`
+2019-04-13 18:52:59,966 INFO main - mod_point ModificPoint=StringUtils line: 3627, el: CtIfImpl
+2019-04-13 18:52:59,966 INFO main - -->op: IfExpresionMutOp: `searchLength != replaceme[...] ` ---> `searchLength >= replaceme[...]` at pos -1 of parent `-`
+2019-04-13 18:53:00,219 INFO main - mod_point ModificPoint=StringUtils line: 3627, el: CtIfImpl
+2019-04-13 18:53:00,219 INFO main - -->op: IfExpresionMutOp: `searchLength != replaceme[...] ` ---> `searchLength > replacemen[...]` at pos -1 of parent `-`
+2019-04-13 18:53:00,490 INFO main - mod_point ModificPoint=StringUtils line: 3627, el: CtIfImpl
+2019-04-13 18:53:00,490 INFO main - -->op: IfExpresionMutOp: `searchLength != replaceme[...] ` ---> `searchLength <= replaceme[...]` at pos -1 of parent `-`
+2019-04-13 18:53:00,744 INFO main - mod_point ModificPoint=StringUtils line: 3627, el: CtIfImpl
+2019-04-13 18:53:00,744 INFO main - -->op: IfExpresionMutOp: `searchLength != replaceme[...] ` ---> `searchLength < replacemen[...]` at pos -1 of parent `-`
+2019-04-13 18:53:00,988 INFO main - mod_point ModificPoint=StringUtils line: 3627, el: CtIfImpl
+2019-04-13 18:53:00,988 INFO main - -->op: IfExpresionMutOp: `searchLength != replaceme[...] ` ---> `!(searchLength != replace[...]` at pos -1 of parent `-`
+2019-04-13 18:53:01,242 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:01,242 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:01,493 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:01,493 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:01,737 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:01,737 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:01,999 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:02,000 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((!(noMoreMatchesForRepl[...]` at pos -1 of parent `-`
+2019-04-13 18:53:02,266 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:02,267 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:02,510 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:02,510 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:02,580 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:02,581 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:02,648 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:02,648 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:02,720 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:02,720 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:02,787 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:02,787 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:03,031 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:03,032 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `((!((noMoreMatchesForRepl[...]` at pos -1 of parent `-`
+2019-04-13 18:53:03,286 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:03,287 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:03,544 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:03,545 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:03,790 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:03,790 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:04,043 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:04,043 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:04,288 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:04,288 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:04,541 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:04,542 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:04,813 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:04,813 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(!(((noMoreMatchesForRepl[...]` at pos -1 of parent `-`
+2019-04-13 18:53:05,087 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:05,087 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:05,413 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:05,413 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:05,481 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:05,482 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:05,550 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:05,551 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:05,618 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:05,619 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:05,685 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:05,685 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:05,926 INFO main - mod_point ModificPoint=StringUtils line: 3645, el: CtIfImpl
+2019-04-13 18:53:05,926 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `!((((noMoreMatchesForRepl[...]` at pos -1 of parent `-`
+2019-04-13 18:53:06,170 INFO main - mod_point ModificPoint=StringUtils line: 3653, el: CtIfImpl
+2019-04-13 18:53:06,170 INFO main - -->op: IfExpresionMutOp: `tempIndex == (-1) ` ---> `tempIndex != (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:06,412 INFO main - mod_point ModificPoint=StringUtils line: 3653, el: CtIfImpl
+2019-04-13 18:53:06,412 INFO main - -->op: IfExpresionMutOp: `tempIndex == (-1) ` ---> `tempIndex >= (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:06,650 INFO main - mod_point ModificPoint=StringUtils line: 3653, el: CtIfImpl
+2019-04-13 18:53:06,650 INFO main - -->op: IfExpresionMutOp: `tempIndex == (-1) ` ---> `tempIndex > (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:06,891 INFO main - mod_point ModificPoint=StringUtils line: 3653, el: CtIfImpl
+2019-04-13 18:53:06,892 INFO main - -->op: IfExpresionMutOp: `tempIndex == (-1) ` ---> `tempIndex <= (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:07,132 INFO main - mod_point ModificPoint=StringUtils line: 3653, el: CtIfImpl
+2019-04-13 18:53:07,132 INFO main - -->op: IfExpresionMutOp: `tempIndex == (-1) ` ---> `tempIndex < (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:07,394 INFO main - mod_point ModificPoint=StringUtils line: 3653, el: CtIfImpl
+2019-04-13 18:53:07,395 INFO main - -->op: IfExpresionMutOp: `tempIndex == (-1) ` ---> `!(tempIndex == (-1))` at pos -1 of parent `-`
+2019-04-13 18:53:07,638 INFO main - mod_point ModificPoint=StringUtils line: 3656, el: CtIfImpl
+2019-04-13 18:53:07,638 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex == (-1)) && (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:07,885 INFO main - mod_point ModificPoint=StringUtils line: 3656, el: CtIfImpl
+2019-04-13 18:53:07,885 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex != (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:08,130 INFO main - mod_point ModificPoint=StringUtils line: 3656, el: CtIfImpl
+2019-04-13 18:53:08,130 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex >= (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:08,376 INFO main - mod_point ModificPoint=StringUtils line: 3656, el: CtIfImpl
+2019-04-13 18:53:08,376 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex > (-1)) || (te[...]` at pos -1 of parent `-`
+2019-04-13 18:53:08,655 INFO main - mod_point ModificPoint=StringUtils line: 3656, el: CtIfImpl
+2019-04-13 18:53:08,655 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex <= (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:08,895 INFO main - mod_point ModificPoint=StringUtils line: 3656, el: CtIfImpl
+2019-04-13 18:53:08,895 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex < (-1)) || (te[...]` at pos -1 of parent `-`
+2019-04-13 18:53:09,137 INFO main - mod_point ModificPoint=StringUtils line: 3656, el: CtIfImpl
+2019-04-13 18:53:09,138 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(!(textIndex == (-1))) ||[...]` at pos -1 of parent `-`
+2019-04-13 18:53:09,382 INFO main - mod_point ModificPoint=StringUtils line: 3656, el: CtIfImpl
+2019-04-13 18:53:09,383 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex == (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:09,626 INFO main - mod_point ModificPoint=StringUtils line: 3656, el: CtIfImpl
+2019-04-13 18:53:09,626 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex == (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:09,883 INFO main - mod_point ModificPoint=StringUtils line: 3656, el: CtIfImpl
+2019-04-13 18:53:09,883 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex == (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:10,139 INFO main - mod_point ModificPoint=StringUtils line: 3656, el: CtIfImpl
+2019-04-13 18:53:10,139 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex == (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:10,381 INFO main - mod_point ModificPoint=StringUtils line: 3656, el: CtIfImpl
+2019-04-13 18:53:10,381 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex == (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:10,626 INFO main - mod_point ModificPoint=StringUtils line: 3656, el: CtIfImpl
+2019-04-13 18:53:10,626 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex == (-1)) || (![...]` at pos -1 of parent `-`
+2019-04-13 18:53:10,879 INFO main - mod_point ModificPoint=StringUtils line: 3656, el: CtIfImpl
+2019-04-13 18:53:10,879 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `!((textIndex == (-1)) || [...]` at pos -1 of parent `-`
+2019-04-13 18:53:11,121 INFO main - mod_point ModificPoint=StringUtils line: 3665, el: CtIfImpl
+2019-04-13 18:53:11,121 INFO main - -->op: IfExpresionMutOp: `textIndex == (-1) ` ---> `textIndex != (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:11,364 INFO main - mod_point ModificPoint=StringUtils line: 3665, el: CtIfImpl
+2019-04-13 18:53:11,364 INFO main - -->op: IfExpresionMutOp: `textIndex == (-1) ` ---> `textIndex >= (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:11,614 INFO main - mod_point ModificPoint=StringUtils line: 3665, el: CtIfImpl
+2019-04-13 18:53:11,615 INFO main - -->op: IfExpresionMutOp: `textIndex == (-1) ` ---> `textIndex > (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:11,859 INFO main - mod_point ModificPoint=StringUtils line: 3665, el: CtIfImpl
+2019-04-13 18:53:11,860 INFO main - -->op: IfExpresionMutOp: `textIndex == (-1) ` ---> `textIndex <= (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:12,103 INFO main - mod_point ModificPoint=StringUtils line: 3665, el: CtIfImpl
+2019-04-13 18:53:12,103 INFO main - -->op: IfExpresionMutOp: `textIndex == (-1) ` ---> `textIndex < (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:12,348 INFO main - mod_point ModificPoint=StringUtils line: 3665, el: CtIfImpl
+2019-04-13 18:53:12,348 INFO main - -->op: IfExpresionMutOp: `textIndex == (-1) ` ---> `!(textIndex == (-1))` at pos -1 of parent `-`
+2019-04-13 18:53:12,622 INFO main - mod_point ModificPoint=StringUtils line: 3680, el: CtIfImpl
+2019-04-13 18:53:12,622 INFO main - -->op: IfExpresionMutOp: `greater > 0 ` ---> `greater == 0` at pos -1 of parent `-`
+2019-04-13 18:53:12,938 INFO main - mod_point ModificPoint=StringUtils line: 3680, el: CtIfImpl
+2019-04-13 18:53:12,938 INFO main - -->op: IfExpresionMutOp: `greater > 0 ` ---> `greater != 0` at pos -1 of parent `-`
+2019-04-13 18:53:13,256 INFO main - mod_point ModificPoint=StringUtils line: 3680, el: CtIfImpl
+2019-04-13 18:53:13,256 INFO main - -->op: IfExpresionMutOp: `greater > 0 ` ---> `greater >= 0` at pos -1 of parent `-`
+2019-04-13 18:53:13,559 INFO main - mod_point ModificPoint=StringUtils line: 3680, el: CtIfImpl
+2019-04-13 18:53:13,559 INFO main - -->op: IfExpresionMutOp: `greater > 0 ` ---> `greater <= 0` at pos -1 of parent `-`
+2019-04-13 18:53:13,870 INFO main - mod_point ModificPoint=StringUtils line: 3680, el: CtIfImpl
+2019-04-13 18:53:13,871 INFO main - -->op: IfExpresionMutOp: `greater > 0 ` ---> `greater < 0` at pos -1 of parent `-`
+2019-04-13 18:53:14,111 INFO main - mod_point ModificPoint=StringUtils line: 3680, el: CtIfImpl
+2019-04-13 18:53:14,111 INFO main - -->op: IfExpresionMutOp: `greater > 0 ` ---> `!(greater > 0)` at pos -1 of parent `-`
+2019-04-13 18:53:14,371 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:14,371 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:14,616 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:14,617 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:14,851 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:14,852 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:15,100 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:15,100 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((!(noMoreMatchesForRepl[...]` at pos -1 of parent `-`
+2019-04-13 18:53:15,342 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:15,342 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:15,577 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:15,578 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:15,644 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:15,644 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:15,709 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:15,710 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:15,776 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:15,776 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:15,843 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:15,843 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:16,082 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:16,083 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `((!((noMoreMatchesForRepl[...]` at pos -1 of parent `-`
+2019-04-13 18:53:16,318 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:16,318 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:16,556 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:16,556 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:16,800 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:16,801 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:17,037 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:17,037 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:17,274 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:17,274 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:17,514 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:17,514 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:17,756 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:17,756 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(!(((noMoreMatchesForRepl[...]` at pos -1 of parent `-`
+2019-04-13 18:53:18,060 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:18,060 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:18,302 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:18,302 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:18,370 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:18,370 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:18,440 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:18,440 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:18,507 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:18,508 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:18,576 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:18,576 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `(((noMoreMatchesForReplIn[...]` at pos -1 of parent `-`
+2019-04-13 18:53:18,812 INFO main - mod_point ModificPoint=StringUtils line: 3704, el: CtIfImpl
+2019-04-13 18:53:18,812 INFO main - -->op: IfExpresionMutOp: `(((noMoreMatchesForReplIn[...] ` ---> `!((((noMoreMatchesForRepl[...]` at pos -1 of parent `-`
+2019-04-13 18:53:19,048 INFO main - mod_point ModificPoint=StringUtils line: 3712, el: CtIfImpl
+2019-04-13 18:53:19,048 INFO main - -->op: IfExpresionMutOp: `tempIndex == (-1) ` ---> `tempIndex != (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:19,283 INFO main - mod_point ModificPoint=StringUtils line: 3712, el: CtIfImpl
+2019-04-13 18:53:19,283 INFO main - -->op: IfExpresionMutOp: `tempIndex == (-1) ` ---> `tempIndex >= (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:19,522 INFO main - mod_point ModificPoint=StringUtils line: 3712, el: CtIfImpl
+2019-04-13 18:53:19,522 INFO main - -->op: IfExpresionMutOp: `tempIndex == (-1) ` ---> `tempIndex > (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:19,765 INFO main - mod_point ModificPoint=StringUtils line: 3712, el: CtIfImpl
+2019-04-13 18:53:19,765 INFO main - -->op: IfExpresionMutOp: `tempIndex == (-1) ` ---> `tempIndex <= (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:20,002 INFO main - mod_point ModificPoint=StringUtils line: 3712, el: CtIfImpl
+2019-04-13 18:53:20,002 INFO main - -->op: IfExpresionMutOp: `tempIndex == (-1) ` ---> `tempIndex < (-1)` at pos -1 of parent `-`
+2019-04-13 18:53:20,243 INFO main - mod_point ModificPoint=StringUtils line: 3712, el: CtIfImpl
+2019-04-13 18:53:20,243 INFO main - -->op: IfExpresionMutOp: `tempIndex == (-1) ` ---> `!(tempIndex == (-1))` at pos -1 of parent `-`
+2019-04-13 18:53:20,481 INFO main - mod_point ModificPoint=StringUtils line: 3715, el: CtIfImpl
+2019-04-13 18:53:20,481 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex == (-1)) && (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:20,715 INFO main - mod_point ModificPoint=StringUtils line: 3715, el: CtIfImpl
+2019-04-13 18:53:20,715 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex != (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:20,952 INFO main - mod_point ModificPoint=StringUtils line: 3715, el: CtIfImpl
+2019-04-13 18:53:20,952 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex >= (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:21,189 INFO main - mod_point ModificPoint=StringUtils line: 3715, el: CtIfImpl
+2019-04-13 18:53:21,189 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex > (-1)) || (te[...]` at pos -1 of parent `-`
+2019-04-13 18:53:21,427 INFO main - mod_point ModificPoint=StringUtils line: 3715, el: CtIfImpl
+2019-04-13 18:53:21,428 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex <= (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:21,670 INFO main - mod_point ModificPoint=StringUtils line: 3715, el: CtIfImpl
+2019-04-13 18:53:21,670 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex < (-1)) || (te[...]` at pos -1 of parent `-`
+2019-04-13 18:53:21,918 INFO main - mod_point ModificPoint=StringUtils line: 3715, el: CtIfImpl
+2019-04-13 18:53:21,918 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(!(textIndex == (-1))) ||[...]` at pos -1 of parent `-`
+2019-04-13 18:53:22,201 INFO main - mod_point ModificPoint=StringUtils line: 3715, el: CtIfImpl
+2019-04-13 18:53:22,201 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex == (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:22,509 INFO main - mod_point ModificPoint=StringUtils line: 3715, el: CtIfImpl
+2019-04-13 18:53:22,510 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex == (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:22,814 INFO main - mod_point ModificPoint=StringUtils line: 3715, el: CtIfImpl
+2019-04-13 18:53:22,814 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex == (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:23,149 INFO main - mod_point ModificPoint=StringUtils line: 3715, el: CtIfImpl
+2019-04-13 18:53:23,150 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex == (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:23,398 INFO main - mod_point ModificPoint=StringUtils line: 3715, el: CtIfImpl
+2019-04-13 18:53:23,399 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex == (-1)) || (t[...]` at pos -1 of parent `-`
+2019-04-13 18:53:23,648 INFO main - mod_point ModificPoint=StringUtils line: 3715, el: CtIfImpl
+2019-04-13 18:53:23,648 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `(textIndex == (-1)) || (![...]` at pos -1 of parent `-`
+2019-04-13 18:53:23,885 INFO main - mod_point ModificPoint=StringUtils line: 3715, el: CtIfImpl
+2019-04-13 18:53:23,886 INFO main - -->op: IfExpresionMutOp: `(textIndex == (-1)) || (t[...] ` ---> `!((textIndex == (-1)) || [...]` at pos -1 of parent `-`
+2019-04-13 18:53:24,126 INFO main - mod_point ModificPoint=StringUtils line: 3729, el: CtIfImpl
+2019-04-13 18:53:24,126 INFO main - -->op: IfExpresionMutOp: `!repeat ` ---> `repeat` at pos -1 of parent `-`
+2019-04-13 18:53:24,365 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-13 18:53:24,365 INFO main - 
+successful_ing_attempts (0): []
+2019-04-13 18:53:24,365 INFO main - 
+failing_ing_attempts (161): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-13 18:53:24,365 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 60.298
+[DONE]

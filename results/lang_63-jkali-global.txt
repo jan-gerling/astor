@@ -1,0 +1,179 @@
+2019-04-13 19:18:06,095 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin  -mode  jkali  -scope  global  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  test02/lang_63/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-13 19:18:06,531 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-lang_63//bin//default from 88 classes with test cases
+2019-04-13 19:18:06,533 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-13 19:18:07,194 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-lang_63//bin//default]
+2019-04-13 19:18:19,850 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang.LocaleUtilsTest#testCountriesByLanguage
+2019-04-13 19:18:19,853 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang.time.DurationFormatUtilsTest#testJiraLang281
+2019-04-13 19:18:19,856 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:1671, fails: 2, GZoltar suspicious 8485
+2019-04-13 19:18:19,864 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 35 with susp > 0.5, we consider: 35
+2019-04-13 19:18:19,873 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-lang_63//src//default, compliance level: 8
+2019-04-13 19:18:22,847 ERROR main - Problem compiling the model with compliance level 8
+2019-04-13 19:18:22,847 ERROR main - Syntax error on token "enum", Identifier expected at /home/jan_gerling/astor/outputMutation/AstorMain-lang_63/src/default/org/apache/commons/lang/enum/Enum.java:17
+2019-04-13 19:18:22,847 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-lang_63//src//default, compliance level: 4
+2019-04-13 19:18:26,557 INFO main - 
+---- Initial suspicious size: 35
+2019-04-13 19:18:26,607 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang.LocaleUtils, methodName=org.apache.commons.lang.LocaleUtils{countriesByLanguage(Ljava/lang/String;)Ljava/util/List; 0.0, lineNumber=277, susp=0.7071067811865475]
+2019-04-13 19:18:26,609 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang.LocaleUtils, methodName=org.apache.commons.lang.LocaleUtils{countriesByLanguage(Ljava/lang/String;)Ljava/util/List; 0.0, lineNumber=278, susp=0.7071067811865475]
+2019-04-13 19:18:26,616 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang.LocaleUtils, methodName=org.apache.commons.lang.LocaleUtils{countriesByLanguage(Ljava/lang/String;)Ljava/util/List; 0.0, lineNumber=283, susp=0.7071067811865475]
+2019-04-13 19:18:26,721 INFO main - Total suspicious from FL: 35,  32
+2019-04-13 19:18:26,721 INFO main - Total ModPoint created: 32
+2019-04-13 19:18:26,721 INFO main - Creating program variant #1, [Variant id: 1, #gens: 32, #ops: 0, parent:-]
+2019-04-13 19:18:37,487 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-13 19:18:37,487 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-13 19:18:37,487 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jkali
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-13 19:18:37,488 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= test02/lang_63/
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-13 19:18:37,489 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= global
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-13 19:18:37,490 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-13 19:18:37,491 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-13 19:18:37,491 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-13 19:18:37,491 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-13 19:18:37,491 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-13 19:18:37,492 INFO main - mod_point ModificPoint=LocaleUtils line: 269, el: CtLocalVariableImpl
+2019-04-13 19:18:37,493 INFO main - -->op: RemoveOp: `java.util.List countries [...] ` ---> `-` at pos 0 of parent `{ 	java.util.List countri[...]`
+2019-04-13 19:18:38,197 INFO main - mod_point ModificPoint=LocaleUtils line: 270, el: CtIfImpl
+2019-04-13 19:18:38,198 INFO main - -->op: ReplaceIfBooleanOp: `if (countries == null) { [...] ` ---> `if (true) { 	if (language[...]` at pos 1 of parent `{ 	java.util.List countri[...]`
+2019-04-13 19:18:38,552 INFO main - mod_point ModificPoint=LocaleUtils line: 270, el: CtIfImpl
+2019-04-13 19:18:38,552 INFO main - -->op: ReplaceIfBooleanOp: `if (countries == null) { [...] ` ---> `if (false) { 	if (languag[...]` at pos 1 of parent `{ 	java.util.List countri[...]`
+2019-04-13 19:18:38,881 INFO main - mod_point ModificPoint=LocaleUtils line: 270, el: CtIfImpl
+2019-04-13 19:18:38,882 INFO main - -->op: RemoveOp: `if (countries == null) { [...] ` ---> `-` at pos 1 of parent `{ 	java.util.List countri[...]`
+2019-04-13 19:18:39,168 INFO main - mod_point ModificPoint=LocaleUtils line: 271, el: CtIfImpl
+2019-04-13 19:18:39,169 INFO main - -->op: ReplaceIfBooleanOp: `if (languageCode != null)[...] ` ---> `if (true) { 	countries = [...]` at pos 0 of parent `{ 	if (languageCode != nu[...]`
+2019-04-13 19:18:39,462 INFO main - mod_point ModificPoint=LocaleUtils line: 271, el: CtIfImpl
+2019-04-13 19:18:39,463 INFO main - -->op: ReplaceIfBooleanOp: `if (languageCode != null)[...] ` ---> `if (false) { 	countries =[...]` at pos 0 of parent `{ 	if (languageCode != nu[...]`
+2019-04-13 19:18:39,762 INFO main - mod_point ModificPoint=LocaleUtils line: 271, el: CtIfImpl
+2019-04-13 19:18:39,763 INFO main - -->op: RemoveOp: `if (languageCode != null)[...] ` ---> `-` at pos 0 of parent `{ 	if (languageCode != nu[...]`
+2019-04-13 19:18:40,056 INFO main - mod_point ModificPoint=LocaleUtils line: 272, el: CtAssignmentImpl
+2019-04-13 19:18:40,057 INFO main - -->op: RemoveOp: `countries = new java.util[...] ` ---> `-` at pos 0 of parent `{ 	countries = new java.u[...]`
+2019-04-13 19:18:40,347 INFO main - mod_point ModificPoint=LocaleUtils line: 273, el: CtLocalVariableImpl
+2019-04-13 19:18:40,347 INFO main - -->op: RemoveOp: `java.util.List locales = [...] ` ---> `-` at pos 1 of parent `{ 	countries = new java.u[...]`
+2019-04-13 19:18:40,484 INFO main - mod_point ModificPoint=LocaleUtils line: 274, el: CtForImpl
+2019-04-13 19:18:40,485 INFO main - -->op: RemoveOp: `for (int i = 0; i < (loca[...] ` ---> `-` at pos 2 of parent `{ 	countries = new java.u[...]`
+2019-04-13 19:18:40,753 INFO main - mod_point ModificPoint=LocaleUtils line: 275, el: CtLocalVariableImpl
+2019-04-13 19:18:40,754 INFO main - -->op: RemoveOp: `java.util.Locale locale =[...] ` ---> `-` at pos 0 of parent `{ 	java.util.Locale local[...]`
+2019-04-13 19:18:40,871 INFO main - mod_point ModificPoint=LocaleUtils line: 276, el: CtIfImpl
+2019-04-13 19:18:40,871 INFO main - -->op: ReplaceIfBooleanOp: `if (((languageCode.equals[...] ` ---> `if (true) { 	countries.ad[...]` at pos 1 of parent `{ 	java.util.Locale local[...]`
+2019-04-13 19:18:41,122 INFO main - mod_point ModificPoint=LocaleUtils line: 276, el: CtIfImpl
+2019-04-13 19:18:41,123 INFO main - -->op: ReplaceIfBooleanOp: `if (((languageCode.equals[...] ` ---> `if (false) { 	countries.a[...]` at pos 1 of parent `{ 	java.util.Locale local[...]`
+2019-04-13 19:18:41,395 INFO main - mod_point ModificPoint=LocaleUtils line: 276, el: CtIfImpl
+2019-04-13 19:18:41,396 INFO main - -->op: RemoveOp: `if (((languageCode.equals[...] ` ---> `-` at pos 1 of parent `{ 	java.util.Locale local[...]`
+2019-04-13 19:18:41,465 INFO main - mod_point ModificPoint=LocaleUtils line: 279, el: CtInvocationImpl
+2019-04-13 19:18:41,465 INFO main - -->op: RemoveOp: `countries.add(locale) ` ---> `-` at pos 0 of parent `{ 	countries.add(locale);[...]`
+2019-04-13 19:18:41,702 INFO main - mod_point ModificPoint=LocaleUtils line: 282, el: CtAssignmentImpl
+2019-04-13 19:18:41,702 INFO main - -->op: RemoveOp: `countries = java.util.Col[...] ` ---> `-` at pos 3 of parent `{ 	countries = new java.u[...]`
+2019-04-13 19:18:41,968 INFO main - mod_point ModificPoint=LocaleUtils line: 284, el: CtAssignmentImpl
+2019-04-13 19:18:41,968 INFO main - -->op: RemoveOp: `countries = java.util.Col[...] ` ---> `-` at pos 0 of parent `{ 	countries = java.util.[...]`
+2019-04-13 19:18:42,260 INFO main - mod_point ModificPoint=LocaleUtils line: 286, el: CtInvocationImpl
+2019-04-13 19:18:42,261 INFO main - -->op: RemoveOp: `org.apache.commons.lang.L[...] ` ---> `-` at pos 1 of parent `{ 	if (languageCode != nu[...]`
+2019-04-13 19:18:42,505 INFO main - mod_point ModificPoint=LocaleUtils line: 288, el: CtReturnImpl
+2019-04-13 19:18:42,506 INFO main - -->op: RemoveOp: `return countries ` ---> `-` at pos 2 of parent `{ 	java.util.List countri[...]`
+2019-04-13 19:18:42,596 INFO main - mod_point ModificPoint=DurationFormatUtils line: 306, el: CtOperatorAssignmentImpl
+2019-04-13 19:18:42,596 INFO main - -->op: RemoveOp: `days += 31 ` ---> `-` at pos 0 of parent `{ 	days += 31; 	months -=[...]`
+2019-04-13 19:18:42,818 INFO main - mod_point ModificPoint=DurationFormatUtils line: 307, el: CtOperatorAssignmentImpl
+2019-04-13 19:18:42,818 INFO main - -->op: RemoveOp: `months -= 1 ` ---> `-` at pos 1 of parent `{ 	days += 31; 	months -=[...]`
+2019-04-13 19:18:43,069 INFO main - mod_point ModificPoint=DurationFormatUtils line: 310, el: CtOperatorAssignmentImpl
+2019-04-13 19:18:43,069 INFO main - -->op: RemoveOp: `months += 12 ` ---> `-` at pos 0 of parent `{ 	months += 12; 	years -[...]`
+2019-04-13 19:18:43,310 INFO main - mod_point ModificPoint=DurationFormatUtils line: 311, el: CtOperatorAssignmentImpl
+2019-04-13 19:18:43,310 INFO main - -->op: RemoveOp: `years -= 1 ` ---> `-` at pos 1 of parent `{ 	months += 12; 	years -[...]`
+2019-04-13 19:18:43,539 INFO main - mod_point ModificPoint=DurationFormatUtils line: 445, el: CtLocalVariableImpl
+2019-04-13 19:18:43,539 INFO main - -->op: RemoveOp: `int newdiff = startValue [...] ` ---> `-` at pos 0 of parent `{ 	int newdiff = startVal[...]`
+2019-04-13 19:18:43,622 INFO main - mod_point ModificPoint=DurationFormatUtils line: 446, el: CtInvocationImpl
+2019-04-13 19:18:43,622 INFO main - -->op: RemoveOp: `end.add(field, newdiff) ` ---> `-` at pos 1 of parent `{ 	int newdiff = startVal[...]`
+2019-04-13 19:18:43,852 INFO main - mod_point ModificPoint=DurationFormatUtils line: 447, el: CtReturnImpl
+2019-04-13 19:18:43,852 INFO main - -->op: RemoveOp: `return newdiff ` ---> `-` at pos 2 of parent `{ 	int newdiff = startVal[...]`
+2019-04-13 19:18:43,935 INFO main - mod_point ModificPoint=DurationFormatUtils line: 247, el: CtReturnImpl
+2019-04-13 19:18:43,935 INFO main - -->op: RemoveOp: `return org.apache.commons[...] ` ---> `-` at pos 0 of parent `{ 	return org.apache.comm[...]`
+2019-04-13 19:18:44,022 INFO main - mod_point ModificPoint=DurationFormatUtils line: 327, el: CtIfImpl
+2019-04-13 19:18:44,028 INFO main - -->op: ReplaceIfBooleanOp: `if (org.apache.commons.la[...] ` ---> `if (true) { 	months += 12[...]` at pos 0 of parent `{ 	if (org.apache.commons[...]`
+2019-04-13 19:18:44,274 INFO main - mod_point ModificPoint=DurationFormatUtils line: 327, el: CtIfImpl
+2019-04-13 19:18:44,277 INFO main - -->op: ReplaceIfBooleanOp: `if (org.apache.commons.la[...] ` ---> `if (false) { 	months += 1[...]` at pos 0 of parent `{ 	if (org.apache.commons[...]`
+2019-04-13 19:18:44,519 INFO main - mod_point ModificPoint=DurationFormatUtils line: 327, el: CtIfImpl
+2019-04-13 19:18:44,522 INFO main - -->op: RemoveOp: `if (org.apache.commons.la[...] ` ---> `-` at pos 0 of parent `{ 	if (org.apache.commons[...]`
+2019-04-13 19:18:44,757 INFO main - mod_point ModificPoint=DurationFormatUtils line: 328, el: CtOperatorAssignmentImpl
+2019-04-13 19:18:44,757 INFO main - -->op: RemoveOp: `months += 12 * years ` ---> `-` at pos 0 of parent `{ 	months += 12 * years; [...]`
+2019-04-13 19:18:44,985 INFO main - mod_point ModificPoint=DurationFormatUtils line: 329, el: CtAssignmentImpl
+2019-04-13 19:18:44,985 INFO main - -->op: RemoveOp: `years = 0 ` ---> `-` at pos 1 of parent `{ 	months += 12 * years; [...]`
+2019-04-13 19:18:45,229 INFO main - mod_point ModificPoint=DurationFormatUtils line: 341, el: CtOperatorAssignmentImpl
+2019-04-13 19:18:45,230 INFO main - -->op: RemoveOp: `hours += 24 * days ` ---> `-` at pos 0 of parent `{ 	hours += 24 * days; 	d[...]`
+2019-04-13 19:18:45,477 INFO main - mod_point ModificPoint=DurationFormatUtils line: 342, el: CtAssignmentImpl
+2019-04-13 19:18:45,477 INFO main - -->op: RemoveOp: `days = 0 ` ---> `-` at pos 1 of parent `{ 	hours += 24 * days; 	d[...]`
+2019-04-13 19:18:45,720 INFO main - mod_point ModificPoint=DurationFormatUtils line: 345, el: CtOperatorAssignmentImpl
+2019-04-13 19:18:45,721 INFO main - -->op: RemoveOp: `minutes += 60 * hours ` ---> `-` at pos 0 of parent `{ 	minutes += 60 * hours;[...]`
+2019-04-13 19:18:45,963 INFO main - mod_point ModificPoint=DurationFormatUtils line: 346, el: CtAssignmentImpl
+2019-04-13 19:18:45,963 INFO main - -->op: RemoveOp: `hours = 0 ` ---> `-` at pos 1 of parent `{ 	minutes += 60 * hours;[...]`
+2019-04-13 19:18:46,206 INFO main - mod_point ModificPoint=DurationFormatUtils line: 349, el: CtOperatorAssignmentImpl
+2019-04-13 19:18:46,206 INFO main - -->op: RemoveOp: `seconds += 60 * minutes ` ---> `-` at pos 0 of parent `{ 	seconds += 60 * minute[...]`
+2019-04-13 19:18:46,454 INFO main - mod_point ModificPoint=DurationFormatUtils line: 350, el: CtAssignmentImpl
+2019-04-13 19:18:46,454 INFO main - -->op: RemoveOp: `minutes = 0 ` ---> `-` at pos 1 of parent `{ 	seconds += 60 * minute[...]`
+2019-04-13 19:18:46,705 INFO main - mod_point ModificPoint=DurationFormatUtils line: 353, el: CtOperatorAssignmentImpl
+2019-04-13 19:18:46,705 INFO main - -->op: RemoveOp: `milliseconds += 1000 * se[...] ` ---> `-` at pos 0 of parent `{ 	milliseconds += 1000 *[...]`
+2019-04-13 19:18:46,921 INFO main - mod_point ModificPoint=DurationFormatUtils line: 354, el: CtAssignmentImpl
+2019-04-13 19:18:46,921 INFO main - -->op: RemoveOp: `seconds = 0 ` ---> `-` at pos 1 of parent `{ 	milliseconds += 1000 *[...]`
+2019-04-13 19:18:47,148 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-13 19:18:47,148 INFO main - 
+successful_ing_attempts (0): []
+2019-04-13 19:18:47,148 INFO main - 
+failing_ing_attempts (40): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-13 19:18:47,149 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 41.046
+[DONE]
