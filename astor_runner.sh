@@ -77,7 +77,7 @@ for currenttest in $tests; do
 				echo "[DONE]" >> "$outputFile"
 				echo -e "[\e[34mDONE\e[39m]: $runname is finished!" |& tee -a "$runSummary"
 			else
-				echo -e "[\e[34mSKIP\e[39m]: $runname was already done!" |& tee -a "$runSummary"
+				echo -e "[\e[35mSKIP\e[39m]: $runname was already done!" |& tee -a "$runSummary"
 			fi	
 
 			# quickly analyse the output for the summary
