@@ -4,7 +4,7 @@
 
 resultsDir=$2results
 modes=(jmutrepair jkali jgenprog)
-scopes=(local package global)
+scopes=(package)
 seedValue=10
 treshold=0.5
 maxTime=100

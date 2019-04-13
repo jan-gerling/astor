@@ -1,0 +1,1099 @@
+2019-04-13 07:28:34,826 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jgenprog  -scope  local  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests/math_74/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-13 07:28:35,778 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_74//bin//default from 230 classes with test cases
+2019-04-13 07:28:35,779 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-13 07:28:36,467 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_74//bin//default]
+2019-04-13 07:28:45,248 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#polynomial
+2019-04-13 07:28:45,253 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2131, fails: 1, GZoltar suspicious 17278
+2019-04-13 07:28:45,269 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 84 with susp > 0.5, we consider: 84
+2019-04-13 07:28:45,281 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_74//src//default, compliance level: 8
+2019-04-13 07:28:51,963 INFO main - 
+---- Initial suspicious size: 84
+2019-04-13 07:28:52,057 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=299, susp=0.5773502691896258]
+2019-04-13 07:28:52,099 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector{start(IIIIII)V 0.0, lineNumber=401, susp=0.5]
+2019-04-13 07:28:52,123 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector{visit(IID)V 0.0, lineNumber=411, susp=0.5]
+2019-04-13 07:28:52,373 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=307, susp=0.5]
+2019-04-13 07:28:52,375 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=314, susp=0.5]
+2019-04-13 07:28:52,392 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=327, susp=0.5]
+2019-04-13 07:28:52,414 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=354, susp=0.5]
+2019-04-13 07:28:52,414 INFO main - Total suspicious from FL: 84,  77
+2019-04-13 07:28:52,414 INFO main - Total ModPoint created: 77
+2019-04-13 07:28:52,414 INFO main - Creating program variant #1, [Variant id: 1, #gens: 77, #ops: 0, parent:-]
+2019-04-13 07:28:52,434 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=299, susp=0.5773502691896258]
+2019-04-13 07:28:52,452 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector{start(IIIIII)V 0.0, lineNumber=401, susp=0.5]
+2019-04-13 07:28:52,468 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector{visit(IID)V 0.0, lineNumber=411, susp=0.5]
+2019-04-13 07:28:52,636 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=307, susp=0.5]
+2019-04-13 07:28:52,637 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=314, susp=0.5]
+2019-04-13 07:28:52,648 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=327, susp=0.5]
+2019-04-13 07:28:52,665 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=354, susp=0.5]
+2019-04-13 07:28:52,665 INFO main - Total suspicious from FL: 84,  77
+2019-04-13 07:28:52,665 INFO main - Total ModPoint created: 77
+2019-04-13 07:28:52,665 INFO main - Creating program variant #2, [Variant id: 2, #gens: 77, #ops: 0, parent:-]
+2019-04-13 07:28:52,680 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=299, susp=0.5773502691896258]
+2019-04-13 07:28:52,695 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector{start(IIIIII)V 0.0, lineNumber=401, susp=0.5]
+2019-04-13 07:28:52,708 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector{visit(IID)V 0.0, lineNumber=411, susp=0.5]
+2019-04-13 07:28:52,859 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=307, susp=0.5]
+2019-04-13 07:28:52,859 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=314, susp=0.5]
+2019-04-13 07:28:52,869 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=327, susp=0.5]
+2019-04-13 07:28:52,883 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=354, susp=0.5]
+2019-04-13 07:28:52,883 INFO main - Total suspicious from FL: 84,  77
+2019-04-13 07:28:52,883 INFO main - Total ModPoint created: 77
+2019-04-13 07:28:52,884 INFO main - Creating program variant #3, [Variant id: 3, #gens: 77, #ops: 0, parent:-]
+2019-04-13 07:28:58,357 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-13 07:28:58,357 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jgenprog
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-13 07:28:58,358 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= defect4j_tests/math_74/
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-13 07:28:58,359 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= local
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 3
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-13 07:28:58,360 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-13 07:28:58,361 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-13 07:28:58,361 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-13 07:28:58,361 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-13 07:28:58,361 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-13 07:28:58,361 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-13 07:28:58,361 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-13 07:28:58,361 INFO main - 
+----Starting Solution Search
+2019-04-13 07:30:59,272 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 07:32:59,412 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 07:35:01,974 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 07:37:02,120 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 07:39:06,038 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 07:41:09,100 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 07:43:12,502 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 07:46:24,670 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 07:46:24,677 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-13 07:46:24,678 ERROR main - Undo Error: original: 
+public class AdamsMoultonIntegrator extends org.apache.commons.math.ode.nonstiff.AdamsIntegrator {
+	public AdamsMoultonIntegrator(final int nSteps, final double minStep, final double maxStep, final double scalAbsoluteTolerance, final double scalRelativeTolerance) throws java.lang.IllegalArgumentException {
+		super("Adams-Moulton", nSteps, (nSteps + 1), minStep, maxStep, scalAbsoluteTolerance, scalRelativeTolerance);
+	}
+
+	public AdamsMoultonIntegrator(final int nSteps, final double minStep, final double maxStep, final double[] vecAbsoluteTolerance, final double[] vecRelativeTolerance) throws java.lang.IllegalArgumentException {
+		super("Adams-Moulton", nSteps, (nSteps + 1), minStep, maxStep, vecAbsoluteTolerance, vecRelativeTolerance);
+	}
+
+	@java.lang.Override
+	public double integrate(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException {
+		final int n = y0.length;
+		sanityChecks(equations, t0, y0, t, y);
+		setEquations(equations);
+		resetEvaluations();
+		final boolean forward = t > t0;
+		if (y != y0) {
+			java.lang.System.arraycopy(y0, 0, y, 0, n);
+		}
+		final double[] yDot = new double[y0.length];
+		final double[] yTmp = new double[y0.length];
+		final org.apache.commons.math.ode.sampling.NordsieckStepInterpolator interpolator = new org.apache.commons.math.ode.sampling.NordsieckStepInterpolator();
+		interpolator.reinitialize(y, forward);
+		final org.apache.commons.math.ode.sampling.NordsieckStepInterpolator interpolatorTmp = new org.apache.commons.math.ode.sampling.NordsieckStepInterpolator();
+		interpolatorTmp.reinitialize(yTmp, forward);
+		for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+			handler.reset();
+		}
+		org.apache.commons.math.ode.events.CombinedEventsManager manager = addEndTimeChecker(t0, t, eventsHandlersManager);
+		start(t0, y, t);
+		interpolator.reinitialize(stepStart, stepSize, scaled, nordsieck);
+		interpolator.storeTime(stepStart);
+		double hNew = stepSize;
+		interpolator.rescale(hNew);
+		boolean lastStep = false;
+		while (!lastStep) {
+			interpolator.shift();
+			double error = 0;
+			for (boolean loop = true; loop;) {
+				stepSize = hNew;
+				final double stepEnd = (stepStart) + (stepSize);
+				interpolator.setInterpolatedTime(stepEnd);
+				java.lang.System.arraycopy(interpolator.getInterpolatedState(), 0, yTmp, 0, y0.length);
+				computeDerivatives(stepEnd, yTmp, yDot);
+				final double[] predictedScaled = new double[y0.length];
+				for (int j = 0; j < (y0.length); ++j) {
+					predictedScaled[j] = (stepSize) * (yDot[j]);
+				}
+				final org.apache.commons.math.linear.Array2DRowRealMatrix nordsieckTmp = updateHighOrderDerivativesPhase1(nordsieck);
+				updateHighOrderDerivativesPhase2(scaled, predictedScaled, nordsieckTmp);
+				error = nordsieckTmp.walkInOptimizedOrder(new org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator.Corrector(y, predictedScaled, yTmp));
+				if (error <= 1.0) {
+					computeDerivatives(stepEnd, yTmp, yDot);
+					final double[] correctedScaled = new double[y0.length];
+					for (int j = 0; j < (y0.length); ++j) {
+						correctedScaled[j] = (stepSize) * (yDot[j]);
+					}
+					updateHighOrderDerivativesPhase2(predictedScaled, correctedScaled, nordsieckTmp);
+					interpolatorTmp.reinitialize(stepEnd, stepSize, correctedScaled, nordsieckTmp);
+					interpolatorTmp.storeTime(stepStart);
+					interpolatorTmp.shift();
+					interpolatorTmp.storeTime(stepEnd);
+					if (manager.evaluateStep(interpolatorTmp)) {
+						final double dt = (manager.getEventTime()) - (stepStart);
+						if ((java.lang.Math.abs(dt)) <= (java.lang.Math.ulp(stepStart))) {
+							loop = false;
+						}else {
+							hNew = dt;
+							interpolator.rescale(hNew);
+						}
+					}else {
+						scaled = correctedScaled;
+						nordsieck = nordsieckTmp;
+						interpolator.reinitialize(stepEnd, stepSize, scaled, nordsieck);
+						loop = false;
+					}
+				}else {
+					final double factor = computeStepGrowShrinkFactor(error);
+					hNew = filterStep(((stepSize) * factor), forward, false);
+					interpolator.rescale(hNew);
+				}
+			}
+			final double nextStep = (stepStart) + (stepSize);
+			java.lang.System.arraycopy(yTmp, 0, y, 0, n);
+			interpolator.storeTime(nextStep);
+			manager.stepAccepted(nextStep, y);
+			lastStep = manager.stop();
+			for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+				interpolator.setInterpolatedTime(nextStep);
+				handler.handleStep(interpolator, lastStep);
+			}
+			stepStart = nextStep;
+			if ((!lastStep) && (manager.reset(stepStart, y))) {
+				start(stepStart, y, t);
+				interpolator.reinitialize(stepStart, stepSize, scaled, nordsieck);
+			}
+			if (!lastStep) {
+				stepSize = filterStep(stepSize, forward, true);
+				final double factor = computeStepGrowShrinkFactor(error);
+				final double scaledH = (stepSize) * factor;
+				final double nextT = (stepStart) + scaledH;
+				final boolean nextIsLast = (forward) ? nextT >= t : nextT <= t;
+				hNew = filterStep(scaledH, forward, nextIsLast);
+				interpolator.rescale(hNew);
+			}
+		} 
+		final double stopTime = stepStart;
+		stepStart = java.lang.Double.NaN;
+		stepSize = java.lang.Double.NaN;
+		return stopTime;
+	}
+
+	private class Corrector implements org.apache.commons.math.linear.RealMatrixPreservingVisitor {
+		private final double[] previous;
+
+		private final double[] scaled;
+
+		private final double[] before;
+
+		private final double[] after;
+
+		public Corrector(final double[] previous, final double[] scaled, final double[] state) {
+			this.previous = previous;
+			this.scaled = scaled;
+			this.after = state;
+			this.before = state.clone();
+		}
+
+		public void start(int rows, int columns, int startRow, int endRow, int startColumn, int endColumn) {
+			java.util.Arrays.fill(after, 0.0);
+		}
+
+		public void visit(int row, int column, double value) throws org.apache.commons.math.linear.MatrixVisitorException {
+			if ((row & 1) == 0) {
+				after[column] -= value;
+			}else {
+				after[column] += value;
+			}
+		}
+
+		public double end() {
+			double error = 0;
+			for (int i = 0; i < (after.length); ++i) {
+				after[i] += (previous[i]) + (scaled[i]);
+				final double yScale = java.lang.Math.max(java.lang.Math.abs(previous[i]), java.lang.Math.abs(after[i]));
+				final double tol = ((vecAbsoluteTolerance) == null) ? (scalAbsoluteTolerance) + ((scalRelativeTolerance) * yScale) : (vecAbsoluteTolerance[i]) + ((vecRelativeTolerance[i]) * yScale);
+				final double ratio = ((after[i]) - (before[i])) / tol;
+				error += ratio * ratio;
+			}
+			return java.lang.Math.sqrt((error / (after.length)));
+		}
+	}
+}
+2019-04-13 07:46:24,687 ERROR main - Undo Error: modified: 
+public class AdamsMoultonIntegrator extends org.apache.commons.math.ode.nonstiff.AdamsIntegrator {
+	public AdamsMoultonIntegrator(final int nSteps, final double minStep, final double maxStep, final double scalAbsoluteTolerance, final double scalRelativeTolerance) throws java.lang.IllegalArgumentException {
+		super("Adams-Moulton", nSteps, (nSteps + 1), minStep, maxStep, scalAbsoluteTolerance, scalRelativeTolerance);
+	}
+
+	public AdamsMoultonIntegrator(final int nSteps, final double minStep, final double maxStep, final double[] vecAbsoluteTolerance, final double[] vecRelativeTolerance) throws java.lang.IllegalArgumentException {
+		super("Adams-Moulton", nSteps, (nSteps + 1), minStep, maxStep, vecAbsoluteTolerance, vecRelativeTolerance);
+	}
+
+	@java.lang.Override
+	public double integrate(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException {
+		final int n = y0.length;
+		sanityChecks(equations, t0, y0, t, y);
+		setEquations(equations);
+		resetEvaluations();
+		final boolean forward = t > t0;
+		if (y != y0) {
+			java.lang.System.arraycopy(y0, 0, y, 0, n);
+		}
+		final double[] yDot = new double[y0.length];
+		final double[] yTmp = new double[y0.length];
+		final org.apache.commons.math.ode.sampling.NordsieckStepInterpolator interpolator = new org.apache.commons.math.ode.sampling.NordsieckStepInterpolator();
+		interpolator.reinitialize(y, forward);
+		final org.apache.commons.math.ode.sampling.NordsieckStepInterpolator interpolatorTmp = new org.apache.commons.math.ode.sampling.NordsieckStepInterpolator();
+		interpolatorTmp.reinitialize(yTmp, forward);
+		for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+			handler.reset();
+		}
+		org.apache.commons.math.ode.events.CombinedEventsManager manager = addEndTimeChecker(t0, t, eventsHandlersManager);
+		start(t0, y, t);
+		interpolator.reinitialize(stepStart, stepSize, scaled, nordsieck);
+		interpolator.storeTime(stepStart);
+		double hNew = stepSize;
+		interpolator.rescale(hNew);
+		boolean lastStep = false;
+		while (!lastStep) {
+			interpolator.shift();
+			double error = 0;
+			for (boolean loop = true; loop;) {
+				stepSize = hNew;
+				final double stepEnd = (stepStart) + (stepSize);
+				interpolator.setInterpolatedTime(stepEnd);
+				java.lang.System.arraycopy(interpolator.getInterpolatedState(), 0, yTmp, 0, y0.length);
+				computeDerivatives(stepEnd, yTmp, yDot);
+				final double[] predictedScaled = new double[y0.length];
+				for (int j = 0; j < (y0.length); ++j)
+					predictedScaled[j] = (stepSize) * (yDot[j]);
+				
+				final org.apache.commons.math.linear.Array2DRowRealMatrix nordsieckTmp = updateHighOrderDerivativesPhase1(nordsieck);
+				updateHighOrderDerivativesPhase2(scaled, predictedScaled, nordsieckTmp);
+				error = nordsieckTmp.walkInOptimizedOrder(new org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator.Corrector(y, predictedScaled, yTmp));
+				if (error <= 1.0) {
+					computeDerivatives(stepEnd, yTmp, yDot);
+					final double[] correctedScaled = new double[y0.length];
+					for (int j = 0; j < (y0.length); ++j) {
+						correctedScaled[j] = (stepSize) * (yDot[j]);
+					}
+					updateHighOrderDerivativesPhase2(predictedScaled, correctedScaled, nordsieckTmp);
+					interpolatorTmp.reinitialize(stepEnd, stepSize, correctedScaled, nordsieckTmp);
+					interpolatorTmp.storeTime(stepStart);
+					interpolatorTmp.shift();
+					interpolatorTmp.storeTime(stepEnd);
+					if (manager.evaluateStep(interpolatorTmp)) {
+						final double dt = (manager.getEventTime()) - (stepStart);
+						if ((java.lang.Math.abs(dt)) <= (java.lang.Math.ulp(stepStart))) {
+							loop = false;
+						}else {
+							hNew = dt;
+							interpolator.rescale(hNew);
+						}
+					}else {
+						scaled = correctedScaled;
+						nordsieck = nordsieckTmp;
+						interpolator.reinitialize(stepEnd, stepSize, scaled, nordsieck);
+						loop = false;
+					}
+				}else {
+					final double factor = computeStepGrowShrinkFactor(error);
+					hNew = filterStep(((stepSize) * factor), forward, false);
+					interpolator.rescale(hNew);
+				}
+			}
+			final double nextStep = (stepStart) + (stepSize);
+			java.lang.System.arraycopy(yTmp, 0, y, 0, n);
+			interpolator.storeTime(nextStep);
+			manager.stepAccepted(nextStep, y);
+			lastStep = manager.stop();
+			for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+				interpolator.setInterpolatedTime(nextStep);
+				handler.handleStep(interpolator, lastStep);
+			}
+			stepStart = nextStep;
+			if ((!lastStep) && (manager.reset(stepStart, y))) {
+				start(stepStart, y, t);
+				interpolator.reinitialize(stepStart, stepSize, scaled, nordsieck);
+			}
+			if (!lastStep) {
+				stepSize = filterStep(stepSize, forward, true);
+				final double factor = computeStepGrowShrinkFactor(error);
+				final double scaledH = (stepSize) * factor;
+				final double nextT = (stepStart) + scaledH;
+				final boolean nextIsLast = (forward) ? nextT >= t : nextT <= t;
+				hNew = filterStep(scaledH, forward, nextIsLast);
+				interpolator.rescale(hNew);
+			}
+		} 
+		final double stopTime = stepStart;
+		stepStart = java.lang.Double.NaN;
+		stepSize = java.lang.Double.NaN;
+		return stopTime;
+	}
+
+	private class Corrector implements org.apache.commons.math.linear.RealMatrixPreservingVisitor {
+		private final double[] previous;
+
+		private final double[] scaled;
+
+		private final double[] before;
+
+		private final double[] after;
+
+		public Corrector(final double[] previous, final double[] scaled, final double[] state) {
+			this.previous = previous;
+			this.scaled = scaled;
+			this.after = state;
+			this.before = state.clone();
+		}
+
+		public void start(int rows, int columns, int startRow, int endRow, int startColumn, int endColumn) {
+			java.util.Arrays.fill(after, 0.0);
+		}
+
+		public void visit(int row, int column, double value) throws org.apache.commons.math.linear.MatrixVisitorException {
+			if ((row & 1) == 0) {
+				after[column] -= value;
+			}else {
+				after[column] += value;
+			}
+		}
+
+		public double end() {
+			double error = 0;
+			for (int i = 0; i < (after.length); ++i) {
+				after[i] += (previous[i]) + (scaled[i]);
+				final double yScale = java.lang.Math.max(java.lang.Math.abs(previous[i]), java.lang.Math.abs(after[i]));
+				final double tol = ((vecAbsoluteTolerance) == null) ? (scalAbsoluteTolerance) + ((scalRelativeTolerance) * yScale) : (vecAbsoluteTolerance[i]) + ((vecRelativeTolerance[i]) * yScale);
+				final double ratio = ((after[i]) - (before[i])) / tol;
+				error += ratio * ratio;
+			}
+			return java.lang.Math.sqrt((error / (after.length)));
+		}
+	}
+}
+2019-04-13 07:48:26,250 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 07:48:32,519 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-13 07:48:32,519 ERROR main - Undo Error: original: 
+public class AdamsMoultonIntegrator extends org.apache.commons.math.ode.nonstiff.AdamsIntegrator {
+	public AdamsMoultonIntegrator(final int nSteps, final double minStep, final double maxStep, final double scalAbsoluteTolerance, final double scalRelativeTolerance) throws java.lang.IllegalArgumentException {
+		super("Adams-Moulton", nSteps, (nSteps + 1), minStep, maxStep, scalAbsoluteTolerance, scalRelativeTolerance);
+	}
+
+	public AdamsMoultonIntegrator(final int nSteps, final double minStep, final double maxStep, final double[] vecAbsoluteTolerance, final double[] vecRelativeTolerance) throws java.lang.IllegalArgumentException {
+		super("Adams-Moulton", nSteps, (nSteps + 1), minStep, maxStep, vecAbsoluteTolerance, vecRelativeTolerance);
+	}
+
+	@java.lang.Override
+	public double integrate(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException {
+		final int n = y0.length;
+		sanityChecks(equations, t0, y0, t, y);
+		setEquations(equations);
+		resetEvaluations();
+		final boolean forward = t > t0;
+		if (y != y0) {
+			java.lang.System.arraycopy(y0, 0, y, 0, n);
+		}
+		final double[] yDot = new double[y0.length];
+		final double[] yTmp = new double[y0.length];
+		final org.apache.commons.math.ode.sampling.NordsieckStepInterpolator interpolator = new org.apache.commons.math.ode.sampling.NordsieckStepInterpolator();
+		interpolator.reinitialize(y, forward);
+		final org.apache.commons.math.ode.sampling.NordsieckStepInterpolator interpolatorTmp = new org.apache.commons.math.ode.sampling.NordsieckStepInterpolator();
+		interpolatorTmp.reinitialize(yTmp, forward);
+		for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+			handler.reset();
+		}
+		org.apache.commons.math.ode.events.CombinedEventsManager manager = addEndTimeChecker(t0, t, eventsHandlersManager);
+		start(t0, y, t);
+		interpolator.reinitialize(stepStart, stepSize, scaled, nordsieck);
+		interpolator.storeTime(stepStart);
+		double hNew = stepSize;
+		interpolator.rescale(hNew);
+		boolean lastStep = false;
+		while (!lastStep) {
+			interpolator.shift();
+			double error = 0;
+			for (boolean loop = true; loop;) {
+				stepSize = hNew;
+				final double stepEnd = (stepStart) + (stepSize);
+				interpolator.setInterpolatedTime(stepEnd);
+				java.lang.System.arraycopy(interpolator.getInterpolatedState(), 0, yTmp, 0, y0.length);
+				computeDerivatives(stepEnd, yTmp, yDot);
+				final double[] predictedScaled = new double[y0.length];
+				for (int j = 0; j < (y0.length); ++j)
+					predictedScaled[j] = (stepSize) * (yDot[j]);
+				
+				final org.apache.commons.math.linear.Array2DRowRealMatrix nordsieckTmp = updateHighOrderDerivativesPhase1(nordsieck);
+				updateHighOrderDerivativesPhase2(scaled, predictedScaled, nordsieckTmp);
+				error = nordsieckTmp.walkInOptimizedOrder(new org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator.Corrector(y, predictedScaled, yTmp));
+				if (error <= 1.0) {
+					computeDerivatives(stepEnd, yTmp, yDot);
+					final double[] correctedScaled = new double[y0.length];
+					for (int j = 0; j < (y0.length); ++j) {
+						correctedScaled[j] = (stepSize) * (yDot[j]);
+					}
+					updateHighOrderDerivativesPhase2(predictedScaled, correctedScaled, nordsieckTmp);
+					interpolatorTmp.reinitialize(stepEnd, stepSize, correctedScaled, nordsieckTmp);
+					interpolatorTmp.storeTime(stepStart);
+					interpolatorTmp.shift();
+					interpolatorTmp.storeTime(stepEnd);
+					if (manager.evaluateStep(interpolatorTmp)) {
+						final double dt = (manager.getEventTime()) - (stepStart);
+						if ((java.lang.Math.abs(dt)) <= (java.lang.Math.ulp(stepStart))) {
+							loop = false;
+						}else {
+							hNew = dt;
+							interpolator.rescale(hNew);
+						}
+					}else {
+						scaled = correctedScaled;
+						nordsieck = nordsieckTmp;
+						interpolator.reinitialize(stepEnd, stepSize, scaled, nordsieck);
+						loop = false;
+					}
+				}else {
+					final double factor = computeStepGrowShrinkFactor(error);
+					hNew = filterStep(((stepSize) * factor), forward, false);
+					interpolator.rescale(hNew);
+				}
+			}
+			final double nextStep = (stepStart) + (stepSize);
+			java.lang.System.arraycopy(yTmp, 0, y, 0, n);
+			interpolator.storeTime(nextStep);
+			manager.stepAccepted(nextStep, y);
+			lastStep = manager.stop();
+			for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+				interpolator.setInterpolatedTime(nextStep);
+				handler.handleStep(interpolator, lastStep);
+			}
+			stepStart = nextStep;
+			if ((!lastStep) && (manager.reset(stepStart, y))) {
+				start(stepStart, y, t);
+				interpolator.reinitialize(stepStart, stepSize, scaled, nordsieck);
+			}
+			if (!lastStep) {
+				stepSize = filterStep(stepSize, forward, true);
+				final double factor = computeStepGrowShrinkFactor(error);
+				final double scaledH = (stepSize) * factor;
+				final double nextT = (stepStart) + scaledH;
+				final boolean nextIsLast = (forward) ? nextT >= t : nextT <= t;
+				hNew = filterStep(scaledH, forward, nextIsLast);
+				interpolator.rescale(hNew);
+			}
+		} 
+		final double stopTime = stepStart;
+		stepStart = java.lang.Double.NaN;
+		stepSize = java.lang.Double.NaN;
+		return stopTime;
+	}
+
+	private class Corrector implements org.apache.commons.math.linear.RealMatrixPreservingVisitor {
+		private final double[] previous;
+
+		private final double[] scaled;
+
+		private final double[] before;
+
+		private final double[] after;
+
+		public Corrector(final double[] previous, final double[] scaled, final double[] state) {
+			this.previous = previous;
+			this.scaled = scaled;
+			this.after = state;
+			this.before = state.clone();
+		}
+
+		public void start(int rows, int columns, int startRow, int endRow, int startColumn, int endColumn) {
+			java.util.Arrays.fill(after, 0.0);
+		}
+
+		public void visit(int row, int column, double value) throws org.apache.commons.math.linear.MatrixVisitorException {
+			if ((row & 1) == 0) {
+				after[column] -= value;
+			}else {
+				after[column] += value;
+			}
+		}
+
+		public double end() {
+			double error = 0;
+			for (int i = 0; i < (after.length); ++i) {
+				after[i] += (previous[i]) + (scaled[i]);
+				final double yScale = java.lang.Math.max(java.lang.Math.abs(previous[i]), java.lang.Math.abs(after[i]));
+				final double tol = ((vecAbsoluteTolerance) == null) ? (scalAbsoluteTolerance) + ((scalRelativeTolerance) * yScale) : (vecAbsoluteTolerance[i]) + ((vecRelativeTolerance[i]) * yScale);
+				final double ratio = ((after[i]) - (before[i])) / tol;
+				error += ratio * ratio;
+			}
+			return java.lang.Math.sqrt((error / (after.length)));
+		}
+	}
+}
+2019-04-13 07:48:32,523 ERROR main - Undo Error: modified: 
+public class AdamsMoultonIntegrator extends org.apache.commons.math.ode.nonstiff.AdamsIntegrator {
+	public AdamsMoultonIntegrator(final int nSteps, final double minStep, final double maxStep, final double scalAbsoluteTolerance, final double scalRelativeTolerance) throws java.lang.IllegalArgumentException {
+		super("Adams-Moulton", nSteps, (nSteps + 1), minStep, maxStep, scalAbsoluteTolerance, scalRelativeTolerance);
+	}
+
+	public AdamsMoultonIntegrator(final int nSteps, final double minStep, final double maxStep, final double[] vecAbsoluteTolerance, final double[] vecRelativeTolerance) throws java.lang.IllegalArgumentException {
+		super("Adams-Moulton", nSteps, (nSteps + 1), minStep, maxStep, vecAbsoluteTolerance, vecRelativeTolerance);
+	}
+
+	@java.lang.Override
+	public double integrate(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException {
+		final int n = y0.length;
+		sanityChecks(equations, t0, y0, t, y);
+		setEquations(equations);
+		resetEvaluations();
+		final boolean forward = t > t0;
+		if (y != y0) {
+			java.lang.System.arraycopy(y0, 0, y, 0, n);
+		}
+		final double[] yDot = new double[y0.length];
+		final double[] yTmp = new double[y0.length];
+		final org.apache.commons.math.ode.sampling.NordsieckStepInterpolator interpolator = new org.apache.commons.math.ode.sampling.NordsieckStepInterpolator();
+		interpolator.reinitialize(y, forward);
+		final org.apache.commons.math.ode.sampling.NordsieckStepInterpolator interpolatorTmp = new org.apache.commons.math.ode.sampling.NordsieckStepInterpolator();
+		interpolatorTmp.reinitialize(yTmp, forward);
+		for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+			handler.reset();
+		}
+		org.apache.commons.math.ode.events.CombinedEventsManager manager = addEndTimeChecker(t0, t, eventsHandlersManager);
+		start(t0, y, t);
+		interpolator.reinitialize(stepStart, stepSize, scaled, nordsieck);
+		interpolator.storeTime(stepStart);
+		double hNew = stepSize;
+		interpolator.rescale(hNew);
+		boolean lastStep = false;
+		while (!lastStep) {
+			interpolator.shift();
+			double error = 0;
+			for (boolean loop = true; loop;) {
+				stepSize = hNew;
+				final double stepEnd = (stepStart) + (stepSize);
+				interpolator.setInterpolatedTime(stepEnd);
+				java.lang.System.arraycopy(interpolator.getInterpolatedState(), 0, yTmp, 0, y0.length);
+				computeDerivatives(stepEnd, yTmp, yDot);
+				final double[] predictedScaled = new double[y0.length];
+				for (int j = 0; j < (y0.length); ++j)
+					predictedScaled[j] = (stepSize) * (yDot[j]);
+				
+				final org.apache.commons.math.linear.Array2DRowRealMatrix nordsieckTmp = updateHighOrderDerivativesPhase1(nordsieck);
+				updateHighOrderDerivativesPhase2(scaled, predictedScaled, nordsieckTmp);
+				error = nordsieckTmp.walkInOptimizedOrder(new org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator.Corrector(y, predictedScaled, yTmp));
+				if (error <= 1.0) {
+					computeDerivatives(stepEnd, yTmp, yDot);
+					final double[] correctedScaled = new double[y0.length];
+					for (int j = 0; j < (y0.length); ++j)
+						correctedScaled[j] = (stepSize) * (yDot[j]);
+					
+					updateHighOrderDerivativesPhase2(predictedScaled, correctedScaled, nordsieckTmp);
+					interpolatorTmp.reinitialize(stepEnd, stepSize, correctedScaled, nordsieckTmp);
+					interpolatorTmp.storeTime(stepStart);
+					interpolatorTmp.shift();
+					interpolatorTmp.storeTime(stepEnd);
+					if (manager.evaluateStep(interpolatorTmp)) {
+						final double dt = (manager.getEventTime()) - (stepStart);
+						if ((java.lang.Math.abs(dt)) <= (java.lang.Math.ulp(stepStart))) {
+							loop = false;
+						}else {
+							hNew = dt;
+							interpolator.rescale(hNew);
+						}
+					}else {
+						scaled = correctedScaled;
+						nordsieck = nordsieckTmp;
+						interpolator.reinitialize(stepEnd, stepSize, scaled, nordsieck);
+						loop = false;
+					}
+				}else {
+					final double factor = computeStepGrowShrinkFactor(error);
+					hNew = filterStep(((stepSize) * factor), forward, false);
+					interpolator.rescale(hNew);
+				}
+			}
+			final double nextStep = (stepStart) + (stepSize);
+			java.lang.System.arraycopy(yTmp, 0, y, 0, n);
+			interpolator.storeTime(nextStep);
+			manager.stepAccepted(nextStep, y);
+			lastStep = manager.stop();
+			for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+				interpolator.setInterpolatedTime(nextStep);
+				handler.handleStep(interpolator, lastStep);
+			}
+			stepStart = nextStep;
+			if ((!lastStep) && (manager.reset(stepStart, y))) {
+				start(stepStart, y, t);
+				interpolator.reinitialize(stepStart, stepSize, scaled, nordsieck);
+			}
+			if (!lastStep) {
+				stepSize = filterStep(stepSize, forward, true);
+				final double factor = computeStepGrowShrinkFactor(error);
+				final double scaledH = (stepSize) * factor;
+				final double nextT = (stepStart) + scaledH;
+				final boolean nextIsLast = (forward) ? nextT >= t : nextT <= t;
+				hNew = filterStep(scaledH, forward, nextIsLast);
+				interpolator.rescale(hNew);
+			}
+		} 
+		final double stopTime = stepStart;
+		stepStart = java.lang.Double.NaN;
+		stepSize = java.lang.Double.NaN;
+		return stopTime;
+	}
+
+	private class Corrector implements org.apache.commons.math.linear.RealMatrixPreservingVisitor {
+		private final double[] previous;
+
+		private final double[] scaled;
+
+		private final double[] before;
+
+		private final double[] after;
+
+		public Corrector(final double[] previous, final double[] scaled, final double[] state) {
+			this.previous = previous;
+			this.scaled = scaled;
+			this.after = state;
+			this.before = state.clone();
+		}
+
+		public void start(int rows, int columns, int startRow, int endRow, int startColumn, int endColumn) {
+			java.util.Arrays.fill(after, 0.0);
+		}
+
+		public void visit(int row, int column, double value) throws org.apache.commons.math.linear.MatrixVisitorException {
+			if ((row & 1) == 0) {
+				after[column] -= value;
+			}else {
+				after[column] += value;
+			}
+		}
+
+		public double end() {
+			double error = 0;
+			for (int i = 0; i < (after.length); ++i) {
+				after[i] += (previous[i]) + (scaled[i]);
+				final double yScale = java.lang.Math.max(java.lang.Math.abs(previous[i]), java.lang.Math.abs(after[i]));
+				final double tol = ((vecAbsoluteTolerance) == null) ? (scalAbsoluteTolerance) + ((scalRelativeTolerance) * yScale) : (vecAbsoluteTolerance[i]) + ((vecRelativeTolerance[i]) * yScale);
+				final double ratio = ((after[i]) - (before[i])) / tol;
+				error += ratio * ratio;
+			}
+			return java.lang.Math.sqrt((error / (after.length)));
+		}
+	}
+}
+2019-04-13 07:50:32,930 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 07:52:41,767 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 07:56:26,582 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 07:58:30,390 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:00:30,574 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:02:36,594 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:04:38,571 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:06:40,682 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:08:44,842 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:10:51,658 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:12:51,863 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:14:53,846 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:16:56,486 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:19:02,402 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:21:03,661 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:23:09,658 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:25:16,503 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:27:26,902 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:29:33,558 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:31:33,959 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:33:38,810 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:35:44,514 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:37:47,854 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:39:50,924 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:41:51,466 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:41:51,470 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-13 08:41:51,470 ERROR main - Undo Error: original: 
+public class AdamsMoultonIntegrator extends org.apache.commons.math.ode.nonstiff.AdamsIntegrator {
+	public AdamsMoultonIntegrator(final int nSteps, final double minStep, final double maxStep, final double scalAbsoluteTolerance, final double scalRelativeTolerance) throws java.lang.IllegalArgumentException {
+		super("Adams-Moulton", nSteps, (nSteps + 1), minStep, maxStep, scalAbsoluteTolerance, scalRelativeTolerance);
+	}
+
+	public AdamsMoultonIntegrator(final int nSteps, final double minStep, final double maxStep, final double[] vecAbsoluteTolerance, final double[] vecRelativeTolerance) throws java.lang.IllegalArgumentException {
+		super("Adams-Moulton", nSteps, (nSteps + 1), minStep, maxStep, vecAbsoluteTolerance, vecRelativeTolerance);
+	}
+
+	@java.lang.Override
+	public double integrate(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException {
+		final int n = y0.length;
+		sanityChecks(equations, t0, y0, t, y);
+		setEquations(equations);
+		resetEvaluations();
+		final boolean forward = t > t0;
+		if (y != y0) {
+			java.lang.System.arraycopy(y0, 0, y, 0, n);
+		}
+		final double[] yDot = new double[y0.length];
+		final double[] yTmp = new double[y0.length];
+		final org.apache.commons.math.ode.sampling.NordsieckStepInterpolator interpolator = new org.apache.commons.math.ode.sampling.NordsieckStepInterpolator();
+		interpolator.reinitialize(y, forward);
+		final org.apache.commons.math.ode.sampling.NordsieckStepInterpolator interpolatorTmp = new org.apache.commons.math.ode.sampling.NordsieckStepInterpolator();
+		interpolatorTmp.reinitialize(yTmp, forward);
+		for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+			handler.reset();
+		}
+		org.apache.commons.math.ode.events.CombinedEventsManager manager = addEndTimeChecker(t0, t, eventsHandlersManager);
+		start(t0, y, t);
+		interpolator.reinitialize(stepStart, stepSize, scaled, nordsieck);
+		interpolator.storeTime(stepStart);
+		double hNew = stepSize;
+		interpolator.rescale(hNew);
+		boolean lastStep = false;
+		while (!lastStep) {
+			interpolator.shift();
+			double error = 0;
+			for (boolean loop = true; loop;) {
+				stepSize = hNew;
+				final double stepEnd = (stepStart) + (stepSize);
+				interpolator.setInterpolatedTime(stepEnd);
+				java.lang.System.arraycopy(interpolator.getInterpolatedState(), 0, yTmp, 0, y0.length);
+				computeDerivatives(stepEnd, yTmp, yDot);
+				final double[] predictedScaled = new double[y0.length];
+				for (int j = 0; j < (y0.length); ++j)
+					predictedScaled[j] = (stepSize) * (yDot[j]);
+				
+				final org.apache.commons.math.linear.Array2DRowRealMatrix nordsieckTmp = updateHighOrderDerivativesPhase1(nordsieck);
+				updateHighOrderDerivativesPhase2(scaled, predictedScaled, nordsieckTmp);
+				error = nordsieckTmp.walkInOptimizedOrder(new org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator.Corrector(y, predictedScaled, yTmp));
+				if (error <= 1.0) {
+					computeDerivatives(stepEnd, yTmp, yDot);
+					final double[] correctedScaled = new double[y0.length];
+					for (int j = 0; j < (y0.length); ++j)
+						correctedScaled[j] = (stepSize) * (yDot[j]);
+					
+					updateHighOrderDerivativesPhase2(predictedScaled, correctedScaled, nordsieckTmp);
+					interpolatorTmp.reinitialize(stepEnd, stepSize, correctedScaled, nordsieckTmp);
+					interpolatorTmp.storeTime(stepStart);
+					interpolatorTmp.shift();
+					interpolatorTmp.storeTime(stepEnd);
+					if (manager.evaluateStep(interpolatorTmp)) {
+						final double dt = (manager.getEventTime()) - (stepStart);
+						if ((java.lang.Math.abs(dt)) <= (java.lang.Math.ulp(stepStart))) {
+							loop = false;
+						}else {
+							hNew = dt;
+							interpolator.rescale(hNew);
+						}
+					}else {
+						scaled = correctedScaled;
+						nordsieck = nordsieckTmp;
+						interpolator.reinitialize(stepEnd, stepSize, scaled, nordsieck);
+						loop = false;
+					}
+				}else {
+					final double factor = computeStepGrowShrinkFactor(error);
+					hNew = filterStep(((stepSize) * factor), forward, false);
+					interpolator.rescale(hNew);
+				}
+			}
+			final double nextStep = (stepStart) + (stepSize);
+			java.lang.System.arraycopy(yTmp, 0, y, 0, n);
+			interpolator.storeTime(nextStep);
+			manager.stepAccepted(nextStep, y);
+			lastStep = manager.stop();
+			for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+				interpolator.setInterpolatedTime(nextStep);
+				handler.handleStep(interpolator, lastStep);
+			}
+			stepStart = nextStep;
+			if ((!lastStep) && (manager.reset(stepStart, y))) {
+				start(stepStart, y, t);
+				interpolator.reinitialize(stepStart, stepSize, scaled, nordsieck);
+			}
+			if (!lastStep) {
+				stepSize = filterStep(stepSize, forward, true);
+				final double factor = computeStepGrowShrinkFactor(error);
+				final double scaledH = (stepSize) * factor;
+				final double nextT = (stepStart) + scaledH;
+				final boolean nextIsLast = (forward) ? nextT >= t : nextT <= t;
+				hNew = filterStep(scaledH, forward, nextIsLast);
+				interpolator.rescale(hNew);
+			}
+		} 
+		final double stopTime = stepStart;
+		stepStart = java.lang.Double.NaN;
+		stepSize = java.lang.Double.NaN;
+		return stopTime;
+	}
+
+	private class Corrector implements org.apache.commons.math.linear.RealMatrixPreservingVisitor {
+		private final double[] previous;
+
+		private final double[] scaled;
+
+		private final double[] before;
+
+		private final double[] after;
+
+		public Corrector(final double[] previous, final double[] scaled, final double[] state) {
+			this.previous = previous;
+			this.scaled = scaled;
+			this.after = state;
+			this.before = state.clone();
+		}
+
+		public void start(int rows, int columns, int startRow, int endRow, int startColumn, int endColumn) {
+			java.util.Arrays.fill(after, 0.0);
+		}
+
+		public void visit(int row, int column, double value) throws org.apache.commons.math.linear.MatrixVisitorException {
+			if ((row & 1) == 0) {
+				after[column] -= value;
+			}else {
+				after[column] += value;
+			}
+		}
+
+		public double end() {
+			double error = 0;
+			for (int i = 0; i < (after.length); ++i) {
+				after[i] += (previous[i]) + (scaled[i]);
+				final double yScale = java.lang.Math.max(java.lang.Math.abs(previous[i]), java.lang.Math.abs(after[i]));
+				final double tol = ((vecAbsoluteTolerance) == null) ? (scalAbsoluteTolerance) + ((scalRelativeTolerance) * yScale) : (vecAbsoluteTolerance[i]) + ((vecRelativeTolerance[i]) * yScale);
+				final double ratio = ((after[i]) - (before[i])) / tol;
+				error += ratio * ratio;
+			}
+			return java.lang.Math.sqrt((error / (after.length)));
+		}
+	}
+}
+2019-04-13 08:41:51,473 ERROR main - Undo Error: modified: 
+public class AdamsMoultonIntegrator extends org.apache.commons.math.ode.nonstiff.AdamsIntegrator {
+	public AdamsMoultonIntegrator(final int nSteps, final double minStep, final double maxStep, final double scalAbsoluteTolerance, final double scalRelativeTolerance) throws java.lang.IllegalArgumentException {
+		super("Adams-Moulton", nSteps, (nSteps + 1), minStep, maxStep, scalAbsoluteTolerance, scalRelativeTolerance);
+	}
+
+	public AdamsMoultonIntegrator(final int nSteps, final double minStep, final double maxStep, final double[] vecAbsoluteTolerance, final double[] vecRelativeTolerance) throws java.lang.IllegalArgumentException {
+		super("Adams-Moulton", nSteps, (nSteps + 1), minStep, maxStep, vecAbsoluteTolerance, vecRelativeTolerance);
+	}
+
+	@java.lang.Override
+	public double integrate(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final double t0, final double[] y0, final double t, final double[] y) throws org.apache.commons.math.ode.DerivativeException, org.apache.commons.math.ode.IntegratorException {
+		final int n = y0.length;
+		sanityChecks(equations, t0, y0, t, y);
+		setEquations(equations);
+		resetEvaluations();
+		final boolean forward = t > t0;
+		if (y != y0) {
+			java.lang.System.arraycopy(y0, 0, y, 0, n);
+		}
+		final double[] yDot = new double[y0.length];
+		final double[] yTmp = new double[y0.length];
+		final org.apache.commons.math.ode.sampling.NordsieckStepInterpolator interpolator = new org.apache.commons.math.ode.sampling.NordsieckStepInterpolator();
+		interpolator.reinitialize(y, forward);
+		final org.apache.commons.math.ode.sampling.NordsieckStepInterpolator interpolatorTmp = new org.apache.commons.math.ode.sampling.NordsieckStepInterpolator();
+		interpolatorTmp.reinitialize(yTmp, forward);
+		for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+			handler.reset();
+		}
+		org.apache.commons.math.ode.events.CombinedEventsManager manager = addEndTimeChecker(t0, t, eventsHandlersManager);
+		start(t0, y, t);
+		interpolator.reinitialize(stepStart, stepSize, scaled, nordsieck);
+		interpolator.storeTime(stepStart);
+		double hNew = stepSize;
+		interpolator.rescale(hNew);
+		boolean lastStep = false;
+		while (!lastStep) {
+			interpolator.shift();
+			double error = 0;
+			for (boolean loop = true; loop;) {
+				stepSize = hNew;
+				final double stepEnd = (stepStart) + (stepSize);
+				interpolator.setInterpolatedTime(stepEnd);
+				java.lang.System.arraycopy(interpolator.getInterpolatedState(), 0, yTmp, 0, y0.length);
+				computeDerivatives(stepEnd, yTmp, yDot);
+				final double[] predictedScaled = new double[y0.length];
+				for (int j = 0; j < (y0.length); ++j)
+					predictedScaled[j] = (stepSize) * (yDot[j]);
+				
+				final org.apache.commons.math.linear.Array2DRowRealMatrix nordsieckTmp = updateHighOrderDerivativesPhase1(nordsieck);
+				updateHighOrderDerivativesPhase2(scaled, predictedScaled, nordsieckTmp);
+				error = nordsieckTmp.walkInOptimizedOrder(new org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator.Corrector(y, predictedScaled, yTmp));
+				if (error <= 1.0) {
+					computeDerivatives(stepEnd, yTmp, yDot);
+					final double[] correctedScaled = new double[y0.length];
+					for (int j = 0; j < (y0.length); ++j)
+						correctedScaled[j] = (stepSize) * (yDot[j]);
+					
+					updateHighOrderDerivativesPhase2(predictedScaled, correctedScaled, nordsieckTmp);
+					interpolatorTmp.reinitialize(stepEnd, stepSize, correctedScaled, nordsieckTmp);
+					interpolatorTmp.storeTime(stepStart);
+					interpolatorTmp.shift();
+					interpolatorTmp.storeTime(stepEnd);
+					if (manager.evaluateStep(interpolatorTmp)) {
+						final double dt = (manager.getEventTime()) - (stepStart);
+						if ((java.lang.Math.abs(dt)) <= (java.lang.Math.ulp(stepStart))) {
+							loop = false;
+						}else {
+							hNew = dt;
+							interpolator.rescale(hNew);
+						}
+					}else {
+						scaled = correctedScaled;
+						nordsieck = nordsieckTmp;
+						interpolator.reinitialize(stepEnd, stepSize, scaled, nordsieck);
+						loop = false;
+					}
+				}else {
+					final double factor = computeStepGrowShrinkFactor(error);
+					hNew = filterStep(((stepSize) * factor), forward, false);
+					interpolator.rescale(hNew);
+				}
+			}
+			final double nextStep = (stepStart) + (stepSize);
+			java.lang.System.arraycopy(yTmp, 0, y, 0, n);
+			interpolator.storeTime(nextStep);
+			manager.stepAccepted(nextStep, y);
+			lastStep = manager.stop();
+			for (org.apache.commons.math.ode.sampling.StepHandler handler : stepHandlers) {
+				interpolator.setInterpolatedTime(nextStep);
+				handler.handleStep(interpolator, lastStep);
+			}
+			stepStart = nextStep;
+			if ((!lastStep) && (manager.reset(stepStart, y))) {
+				start(stepStart, y, t);
+				interpolator.reinitialize(stepStart, stepSize, scaled, nordsieck);
+			}
+			if (!lastStep) {
+				stepSize = filterStep(stepSize, forward, true);
+				final double factor = computeStepGrowShrinkFactor(error);
+				final double scaledH = (stepSize) * factor;
+				final double nextT = (stepStart) + scaledH;
+				final boolean nextIsLast = (forward) ? nextT >= t : nextT <= t;
+				hNew = filterStep(scaledH, forward, nextIsLast);
+				interpolator.rescale(hNew);
+			}
+		} 
+		final double stopTime = stepStart;
+		stepStart = java.lang.Double.NaN;
+		stepSize = java.lang.Double.NaN;
+		return stopTime;
+	}
+
+	private class Corrector implements org.apache.commons.math.linear.RealMatrixPreservingVisitor {
+		private final double[] previous;
+
+		private final double[] scaled;
+
+		private final double[] before;
+
+		private final double[] after;
+
+		public Corrector(final double[] previous, final double[] scaled, final double[] state) {
+			this.previous = previous;
+			this.scaled = scaled;
+			this.after = state;
+			this.before = state.clone();
+		}
+
+		public void start(int rows, int columns, int startRow, int endRow, int startColumn, int endColumn) {
+			java.util.Arrays.fill(after, 0.0);
+		}
+
+		public void visit(int row, int column, double value) throws org.apache.commons.math.linear.MatrixVisitorException {
+			if ((row & 1) == 0)
+				after[column] -= value;
+			else {
+				after[column] += value;
+			}
+		}
+
+		public double end() {
+			double error = 0;
+			for (int i = 0; i < (after.length); ++i) {
+				after[i] += (previous[i]) + (scaled[i]);
+				final double yScale = java.lang.Math.max(java.lang.Math.abs(previous[i]), java.lang.Math.abs(after[i]));
+				final double tol = ((vecAbsoluteTolerance) == null) ? (scalAbsoluteTolerance) + ((scalRelativeTolerance) * yScale) : (vecAbsoluteTolerance[i]) + ((vecRelativeTolerance[i]) * yScale);
+				final double ratio = ((after[i]) - (before[i])) / tol;
+				error += ratio * ratio;
+			}
+			return java.lang.Math.sqrt((error / (after.length)));
+		}
+	}
+}
+2019-04-13 08:43:51,779 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:45:52,120 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:47:53,618 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:49:57,070 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:52:00,562 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:54:07,526 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:56:23,131 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 08:58:23,459 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 09:00:36,234 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 09:02:36,746 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 09:04:44,667 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 09:06:45,003 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 09:08:46,274 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 09:10:47,015 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-13 09:10:47,312 INFO main - 
+ No more time for operating
+2019-04-13 09:10:47,312 INFO main - Time Repair Loop (s): 6108.951
+2019-04-13 09:10:47,360 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-13 09:10:47,360 INFO main - 
+successful_ing_attempts (0): []
+2019-04-13 09:10:47,369 INFO main - 
+failing_ing_attempts (183): [2, 1, 2, 0, 4, 0, 1, 2, 0, 2, 1, 0, 1, 0, 1, 2, 4, 1, 1, 2, 0, 0, 1, 2, 6, 4, 1, 0, 0, 0, 2, 0, 3, 1, 0, 2, 1, 0, 0, 2, 1, 0, 3, 1, 3, 2, 1, 1, 0, 0, 2, 0, 2, 1, 1, 1, 1, 2, 0, 3, 1, 0, 1, 1, 3, 2, 3, 0, 0, 2, 5, 1, 1, 0, 1, 0, 1, 0, 2, 2, 1, 1, 1, 1, 1, 1, 0, 2, 3, 0, 1, 1, 2, 1, 1, 2, 1, 0, 1, 1, 3, 2, 3, 3, 1, 4, 2, 2, 8, 1, 1, 0, 1, 0, 0, 0, 0, 3, 1, 1, 0, 0, 2, 0, 1, 1, 0, 0, 1, 6, 1, 0, 0, 1, 2, 1, 8, 1, 2, 0, 1, 0, 1, 2, 3, 5, 1, 1, 0, 3, 1, 1, 0, 3, 1, 1, 0, 0, 3, 2, 1, 0, 0, 1, 0, 0, 2, 0, 0, 1, 0, 2, 3, 1, 2, 0, 1, 0, 0, 1, 0, 0, 1]
+2019-04-13 09:10:47,370 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6132.537
+[DONE]

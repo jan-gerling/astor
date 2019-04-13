@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [[1;34mINFO[m] Scanning for projects...
 [[1;33mWARNING[m] 
 [[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.commons:commons-math:jar:2.1-SNAPSHOT
@@ -75,6 +76,9 @@ Progress (1): 2.2/12 kBProgress (1): 5.0/12 kBProgress (1): 7.7/12 kBProgress
 [INFO] Scanning for projects...
 Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/12/commons-parent-12.pom
 3/27 KB   5/27 KB   8/27 KB   11/27 KB   13/27 KB   16/27 KB   19/27 KB   21/27 KB   24/27 KB   27/27 KB   27/27 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/12/commons-parent-12.pom (27 KB at 2.9 KB/sec)
+=======
+[INFO] Scanning for projects...
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for org.apache.commons:commons-math:jar:2.1-SNAPSHOT
 [WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:12, /home/jan_gerling/.m2/repository/org/apache/commons/commons-parent/12/commons-parent-12.pom, line 266, column 15
@@ -88,6 +92,7 @@ Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-par
 [INFO] ------------------------------------------------------------------------
 [INFO] Building Commons Math 2.1-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
+<<<<<<< HEAD
 Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.3/maven-clean-plugin-2.3.pom
 3/5 KB     5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.3/maven-clean-plugin-2.3.pom (5 KB at 24.4 KB/sec)
 Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.3/maven-clean-plugin-2.3.jar
@@ -108,6 +113,8 @@ Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/sure
 3/8 KB   5/8 KB   8/8 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.4.3/surefire-2.4.3.pom (8 KB at 30.8 KB/sec)
 Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.4.3/maven-surefire-plugin-2.4.3.jar
 3/23 KB   5/23 KB   8/23 KB   11/23 KB   13/23 KB   16/23 KB   19/23 KB   21/23 KB   23/23 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.4.3/maven-surefire-plugin-2.4.3.jar (23 KB at 79.7 KB/sec)
+=======
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 [INFO] 
 [INFO] --- maven-clean-plugin:2.3:clean (default-clean) @ commons-math ---
 [INFO] 
@@ -123,6 +130,7 @@ Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven
 [INFO] Copying 2 resources to META-INF
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.0.2:compile (default-compile) @ commons-math ---
+<<<<<<< HEAD
 Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.pom
 624/624 B               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.pom (624 B at 6.3 KB/sec)
 Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/1.5.3/plexus-compiler-1.5.3.pom
@@ -145,6 +153,8 @@ Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-com
 32/160 KB   5/14 KB   36/191 KB              36/160 KB   5/14 KB   40/191 KB   36/160 KB   5/14 KB   44/191 KB   36/160 KB   5/14 KB   48/191 KB   36/160 KB   5/14 KB   52/191 KB   36/160 KB   5/14 KB   56/191 KB   36/160 KB   5/14 KB   60/191 KB   36/160 KB   5/14 KB   64/191 KB   36/160 KB   5/14 KB   68/191 KB   36/160 KB   5/14 KB   72/191 KB   36/160 KB   5/14 KB   76/191 KB   36/160 KB   5/14 KB   80/191 KB   36/160 KB   5/14 KB   84/191 KB   36/160 KB   5/14 KB   84/191 KB   36/160 KB   8/14 KB   84/191 KB   36/160 KB   11/14 KB   84/191 KB   36/160 KB   13/14 KB   84/191 KB   36/160 KB   5/14 KB   36/191 KB    40/160 KB   13/14 KB   84/191 KB   44/160 KB   13/14 KB   84/191 KB   48/160 KB   13/14 KB   84/191 KB   52/160 KB   13/14 KB   84/191 KB   56/160 KB   13/14 KB   84/191 KB   60/160 KB   13/14 KB   84/191 KB   64/160 KB   13/14 KB   84/191 KB   68/160 KB   13/14 KB   84/191 KB   72/160 KB   13/14 KB   84/191 KB   76/160 KB   13/14 KB   84/191 KB   80/160 KB   13/14 KB   84/191 KB   84/160 KB   13/14 KB   84/191 KB   88/160 KB   13/14 KB   84/191 KB   92/160 KB   13/14 KB   84/191 KB   96/160 KB   13/14 KB   84/191 KB   100/160 KB   13/14 KB   84/191 KB   104/160 KB   13/14 KB   84/191 KB   108/160 KB   13/14 KB   84/191 KB   112/160 KB   13/14 KB   84/191 KB   116/160 KB   13/14 KB   84/191 KB   120/160 KB   13/14 KB   84/191 KB   124/160 KB   14/14 KB   84/191 KB   128/160 KB   14/14 KB   84/191 KB   120/160 KB   14/14 KB   84/191 KB   132/160 KB   14/14 KB   84/191 KB   136/160 KB   14/14 KB   84/191 KB   140/160 KB   14/14 KB   84/191 KB   144/160 KB   14/14 KB   84/191 KB   148/160 KB   14/14 KB   84/191 KB                                       Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar (14 KB at 31.8 KB/sec)
 148/160 KB   14/14 KB   88/191 KB   148/160 KB   92/191 KB              148/160 KB   96/191 KB   148/160 KB   100/191 KB   148/160 KB   104/191 KB   148/160 KB   108/191 KB   148/160 KB   112/191 KB   148/160 KB   116/191 KB   148/160 KB   120/191 KB   148/160 KB   124/191 KB   148/160 KB   128/191 KB   148/160 KB   132/191 KB   148/160 KB   136/191 KB   148/160 KB   140/191 KB   148/160 KB   144/191 KB   148/160 KB   148/191 KB   148/160 KB   152/191 KB   148/160 KB   156/191 KB   148/160 KB   160/191 KB   148/160 KB   164/191 KB   152/160 KB   164/191 KB   156/160 KB   164/191 KB   160/160 KB   164/191 KB   160/160 KB   164/191 KB   160/160 KB   168/191 KB   160/160 KB   172/191 KB   160/160 KB   176/191 KB   160/160 KB   180/191 KB   160/160 KB   184/191 KB   160/160 KB   188/191 KB   160/160 KB   191/191 KB                             Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar (160 KB at 213.0 KB/sec)
                           Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar (191 KB at 277.4 KB/sec)
+=======
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 [INFO] Compiling 399 source files to /home/jan_gerling/astor/defect4j_tests/math_72/target/classes
 [INFO] 
 [INFO] --- maven-antrun-plugin:1.3:run (javadoc.resources) @ commons-math ---
@@ -159,10 +169,13 @@ Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-com
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-bundle-plugin:1.4.0:manifest (bundle-manifest) @ commons-math ---
+<<<<<<< HEAD
 Downloading: https://repo.maven.apache.org/maven2/biz/aQute/bndlib/0.0.238/bndlib-0.0.238.pom
 864/864 B                             Downloaded: https://repo.maven.apache.org/maven2/biz/aQute/bndlib/0.0.238/bndlib-0.0.238.pom (864 B at 6.4 KB/sec)
 Downloading: https://repo.maven.apache.org/maven2/biz/aQute/bndlib/0.0.238/bndlib-0.0.238.jar
 3/154 KB    5/154 KB   8/154 KB   11/154 KB   13/154 KB   16/154 KB   19/154 KB   21/154 KB   24/154 KB   27/154 KB   29/154 KB   32/154 KB   36/154 KB   40/154 KB   44/154 KB   48/154 KB   52/154 KB   56/154 KB   60/154 KB   64/154 KB   68/154 KB   72/154 KB   76/154 KB   80/154 KB   84/154 KB   88/154 KB   92/154 KB   96/154 KB   100/154 KB   104/154 KB   108/154 KB   112/154 KB   116/154 KB   120/154 KB   124/154 KB   128/154 KB   132/154 KB   136/154 KB   140/154 KB   144/154 KB   148/154 KB   152/154 KB   154/154 KB                Downloaded: https://repo.maven.apache.org/maven2/biz/aQute/bndlib/0.0.238/bndlib-0.0.238.jar (154 KB at 315.2 KB/sec)
+=======
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-math ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -172,6 +185,7 @@ Downloading: https://repo.maven.apache.org/maven2/biz/aQute/bndlib/0.0.238/bndli
 [INFO] Compiling 263 source files to /home/jan_gerling/astor/defect4j_tests/math_72/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.4.3:test (default-test) @ commons-math ---
+<<<<<<< HEAD
 Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.4.3/surefire-booter-2.4.3.pom
 2/2 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.4.3/surefire-booter-2.4.3.pom (2 KB at 11.6 KB/sec)
 Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.4.3/surefire-api-2.4.3.pom
@@ -188,72 +202,82 @@ Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/sure
 3/12 KB   5/12 KB   8/12 KB   11/12 KB   12/12 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.4.3/surefire-junit4-2.4.3.jar (12 KB at 262.4 KB/sec)
 [INFO] Surefire report directory: /home/jan_gerling/astor/defect4j_tests/math_72/target/surefire-reports
 >>>>>>> 80a4a6ec... added results for math 70, 71 and 72
+=======
+[INFO] Surefire report directory: /home/jan_gerling/astor/defect4j_tests/math_72/target/surefire-reports
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.apache.commons.math.stat.data.LotteryTest
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
 Running org.apache.commons.math.ode.sampling.StepNormalizerTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 Running org.apache.commons.math.linear.FieldMatrixImplTest
-Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 sec
+Running org.apache.commons.math.ode.sampling.StepNormalizerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
 Running org.apache.commons.math.stat.descriptive.AggregateSummaryStatisticsTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running org.apache.commons.math.geometry.RotationOrderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.analysis.solvers.NewtonSolverTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.estimation.EstimatedParameterTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.linear.CholeskyDecompositionImplTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
 Running org.apache.commons.math.linear.Array2DRowRealMatrixTest
-Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
 Running org.apache.commons.math.linear.SparseRealMatrixTest
-Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
 Running org.apache.commons.math.util.OpenIntToFieldTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
 Running org.apache.commons.math.analysis.BinaryFunctionTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.optimization.fitting.PolynomialFitterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
 Running org.apache.commons.math.linear.ArrayRealVectorTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running org.apache.commons.math.distribution.HypergeometricDistributionTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.26 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.25 sec
 Running org.apache.commons.math.random.RandomAdaptorTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.222 sec
-Running org.apache.commons.math.ode.FirstOrderConverterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec
 Running org.apache.commons.math.stat.descriptive.SynchronizedSummaryStatisticsTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.apache.commons.math.ode.FirstOrderConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
 Running org.apache.commons.math.stat.inference.TestUtilsTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running org.apache.commons.math.stat.data.LewTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.distribution.GammaDistributionTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.stat.descriptive.rank.MedianTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
-Running org.apache.commons.math.ode.nonstiff.DormandPrince54StepInterpolatorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec
-Running org.apache.commons.math.distribution.ZipfDistributionTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.stat.CertifiedDataTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.commons.math.distribution.ZipfDistributionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.commons.math.ode.nonstiff.DormandPrince54StepInterpolatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
 Running org.apache.commons.math.ode.nonstiff.HighamHall54IntegratorTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
 Running org.apache.commons.math.complex.FrenchComplexFormatTest
-Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
 Running org.apache.commons.math.ode.nonstiff.MidpointStepInterpolatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
 Running org.apache.commons.math.analysis.polynomials.PolynomialsUtilsTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
 Running org.apache.commons.math.DuplicateSampleAbscissaExceptionTest
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 =======
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.661 sec
@@ -322,49 +346,58 @@ Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.638 sec
 >>>>>>> 80a4a6ec... added results for math 70, 71 and 72
 Running org.apache.commons.math.genetics.FixedGenerationCountTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 Running org.apache.commons.math.estimation.MinpackTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.29 sec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.911 sec
+Running org.apache.commons.math.genetics.FixedGenerationCountTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+=======
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 Running org.apache.commons.math.fraction.BigFractionFormatTest
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
-Running org.apache.commons.math.random.RandomDataTest
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running org.apache.commons.math.stat.descriptive.MixedListUnivariateImplTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.commons.math.random.RandomDataTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec
 Running org.apache.commons.math.distribution.FDistributionTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.FunctionEvaluationExceptionTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
-Running org.apache.commons.math.ode.sampling.NordsieckStepInterpolatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.stat.inference.TTestFactoryTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.commons.math.ode.sampling.NordsieckStepInterpolatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
 Running org.apache.commons.math.stat.descriptive.moment.SkewnessTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.special.GammaTest
 Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.ode.nonstiff.EulerStepInterpolatorTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
-Running org.apache.commons.math.ode.nonstiff.HighamHall54StepInterpolatorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
 Running org.apache.commons.math.analysis.integration.RombergIntegratorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.commons.math.ode.nonstiff.HighamHall54StepInterpolatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
 Running org.apache.commons.math.analysis.integration.LegendreGaussIntegratorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.stat.descriptive.SummaryStatisticsTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.ode.nonstiff.MidpointIntegratorTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
 Running org.apache.commons.math.stat.descriptive.moment.FirstMomentTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.descriptive.moment.StandardDeviationTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
-Running org.apache.commons.math.complex.ComplexTest
-Tests run: 98, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running org.apache.commons.math.distribution.BetaDistributionTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.apache.commons.math.complex.ComplexTest
+Tests run: 98, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 Running org.apache.commons.math.special.ErfTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 =======
@@ -414,10 +447,15 @@ Running org.apache.commons.math.special.BetaTest
 Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.ode.nonstiff.GillIntegratorTest
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.263 sec
+=======
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 Running org.apache.commons.math.random.EmpiricalDistributionTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec
 Running org.apache.commons.math.stat.descriptive.MultivariateSummaryStatisticsTest
+<<<<<<< HEAD
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
 =======
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.568 sec
@@ -426,21 +464,28 @@ Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.694 sec
 Running org.apache.commons.math.stat.descriptive.MultivariateSummaryStatisticsTest
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 sec
 >>>>>>> 80a4a6ec... added results for math 70, 71 and 72
+=======
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 Running org.apache.commons.math.stat.descriptive.StatisticalSummaryValuesTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.regression.OLSMultipleLinearRegressionTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running org.apache.commons.math.estimation.LevenbergMarquardtEstimatorTest
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec
+=======
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 Running org.apache.commons.math.fraction.BigFractionFieldTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.random.AbstractRandomGeneratorTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
 Running org.apache.commons.math.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
 Running org.apache.commons.math.genetics.GeneticAlgorithmTestBinary
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
 Running org.apache.commons.math.linear.BiDiagonalTransformerTest
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 =======
@@ -462,252 +507,255 @@ Running org.apache.commons.math.linear.LUDecompositionImplTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.random.ValueServerTest
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+=======
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 Running org.apache.commons.math.stat.descriptive.moment.MeanTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.util.BigRealFieldTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.linear.QRDecompositionImplTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec
 Running org.apache.commons.math.analysis.interpolation.NevilleInterpolatorTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.descriptive.moment.VarianceTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.genetics.OnePointCrossoverTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.ranking.NaturalRankingTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.optimization.linear.SimplexSolverTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 sec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec
 Running org.apache.commons.math.stat.descriptive.moment.FourthMomentTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
-Running org.apache.commons.math.ode.nonstiff.DormandPrince853StepInterpolatorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.linear.BlockRealMatrixTest
-Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 sec
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec
+Running org.apache.commons.math.ode.nonstiff.DormandPrince853StepInterpolatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
 Running org.apache.commons.math.random.MersenneTwisterTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
 Running org.apache.commons.math.genetics.RandomKeyTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.stat.descriptive.summary.ProductTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.fraction.FractionTest
-Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.analysis.ComposableFunctionTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.util.OpenIntToDoubleHashMapTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
 Running org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.ode.nonstiff.DormandPrince54IntegratorTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
 Running org.apache.commons.math.analysis.polynomials.PolynomialFunctionTest
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.genetics.ChromosomeTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.descriptive.moment.GeometricMeanTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.optimization.MultiStartDifferentiableMultivariateRealOptimizerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running org.apache.commons.math.random.CorrelatedRandomVectorGeneratorTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running org.apache.commons.math.geometry.Vector3DTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.descriptive.rank.MinTest
 Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.clustering.EuclideanIntegerPointTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.linear.FieldLUDecompositionImplTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.analysis.integration.TrapezoidIntegratorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.descriptive.moment.VectorialCovarianceTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.transform.FastHadamardTransformerTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.optimization.fitting.HarmonicFitterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 Running org.apache.commons.math.stat.correlation.PearsonsCorrelationTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.random.GaussianRandomGeneratorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.descriptive.moment.ThirdMomentTest
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
-Running org.apache.commons.math.fraction.BigFractionTest
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
 Running org.apache.commons.math.linear.FrenchRealVectorFormatTest
-Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.commons.math.fraction.BigFractionTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running org.apache.commons.math.optimization.fitting.CurveFitterTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.util.ContinuedFractionTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.util.TransformerMapTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.analysis.solvers.BisectionSolverTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.genetics.BinaryChromosomeTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
-Running org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaStepInterpolatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.linear.BlockFieldMatrixTest
-Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.52 sec
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.422 sec
+Running org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaStepInterpolatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
 Running org.apache.commons.math.linear.SingularValueDecompositionImplTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.distribution.TDistributionTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
 Running org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.426 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 sec
 Running org.apache.commons.math.linear.InvalidMatrixExceptionTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.distribution.BinomialDistributionTest
 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.linear.EigenSolverTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.inference.TTestTest
 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.analysis.polynomials.PolynomialFunctionNewtonFormTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.random.UniformRandomGeneratorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.stat.descriptive.rank.PercentileTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.ode.events.EventStateTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.analysis.solvers.RiddersSolverTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.stat.descriptive.moment.SemiVarianceTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.linear.ArrayFieldVectorTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.ode.ContinuousOutputModelTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
-Running org.apache.commons.math.random.UncorrelatedRandomVectorGeneratorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
-Running org.apache.commons.math.optimization.linear.SimplexTableauTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.commons.math.random.UncorrelatedRandomVectorGeneratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.commons.math.optimization.linear.SimplexTableauTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.ConvergenceExceptionTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
-Running org.apache.commons.math.complex.ComplexFormatTest
-Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.util.ResizableDoubleArrayTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.commons.math.complex.ComplexFormatTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.linear.RealMatrixImplTest
-Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
 Running org.apache.commons.math.stat.descriptive.summary.SumTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.commons.math.linear.SparseFieldVectorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.genetics.ElitisticListPopulationTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
-Running org.apache.commons.math.linear.SparseFieldVectorTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.stat.descriptive.summary.SumSqTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.linear.SparseRealVectorTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running org.apache.commons.math.analysis.interpolation.DividedDifferenceInterpolatorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.linear.EigenDecompositionImplTest
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.299 sec
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 sec
 Running org.apache.commons.math.analysis.interpolation.MicrosphereInterpolatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec
 Running org.apache.commons.math.analysis.integration.SimpsonIntegratorTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.analysis.polynomials.PolynomialSplineFunctionTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.genetics.GeneticAlgorithmTestPermutations
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec
 Running org.apache.commons.math.stat.descriptive.moment.KurtosisTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.transform.FastFourierTransformerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.stat.descriptive.moment.VectorialMeanTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.distribution.NormalDistributionTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.geometry.Vector3DFormatTest
-Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.distribution.PoissonDistributionTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
 Running org.apache.commons.math.analysis.polynomials.PolynomialFunctionLagrangeFormTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.genetics.TournamentSelectionTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.optimization.general.MinpackTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
 Running org.apache.commons.math.stat.descriptive.SynchronizedMultivariateSummaryStatisticsTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.linear.AbstractRealVectorTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 sec
 Running org.apache.commons.math.analysis.solvers.BrentSolverTest
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec <<< FAILURE!
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec <<< FAILURE!
 Running org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegratorTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
 Running org.apache.commons.math.stat.descriptive.AbstractUnivariateStatisticTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.estimation.WeightedMeasurementTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.apache.commons.math.stat.inference.ChiSquareTestTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.analysis.interpolation.LoessInterpolatorTest
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
 Running org.apache.commons.math.ode.nonstiff.ThreeEighthesStepInterpolatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
 Running org.apache.commons.math.linear.MatrixIndexExceptionTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
-Running org.apache.commons.math.genetics.BinaryMutationTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.fraction.FractionFormatTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.commons.math.genetics.BinaryMutationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.apache.commons.math.distribution.PascalDistributionTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
-Running org.apache.commons.math.complex.ComplexUtilsTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.util.MathUtilsTest
-Tests run: 57, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.413 sec
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.301 sec
+Running org.apache.commons.math.complex.ComplexUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.analysis.solvers.UnivariateRealSolverFactoryImplTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.commons.math.optimization.direct.MultiDirectionalTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
 Running org.apache.commons.math.genetics.FitnessCachingTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
-Running org.apache.commons.math.optimization.direct.MultiDirectionalTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
 Running org.apache.commons.math.stat.inference.ChiSquareFactoryTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.linear.BigMatrixImplTest
-Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 Running org.apache.commons.math.fraction.FractionFieldTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.stat.descriptive.InteractionTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.stat.correlation.CovarianceTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.optimization.univariate.BrentMinimizerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
-Running org.apache.commons.math.linear.QRSolverTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.linear.RealVectorFormatTest
-Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.commons.math.linear.QRSolverTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
 Running org.apache.commons.math.analysis.solvers.LaguerreSolverTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.linear.CholeskySolverTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.distribution.WeibullDistributionTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.StatUtilsTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.analysis.interpolation.SplineInterpolatorTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.analysis.solvers.MullerSolverTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.linear.TriDiagonalTransformerTest
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.distribution.ChiSquareDistributionTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
-Running org.apache.commons.math.transform.FastSineTransformerTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtilsTest
+<<<<<<< HEAD
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 =======
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.49 sec
@@ -958,84 +1006,94 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec
 Running org.apache.commons.math.transform.FastSineTransformerTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec
 >>>>>>> 80a4a6ec... added results for math 70, 71 and 72
+=======
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.commons.math.transform.FastSineTransformerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 Running org.apache.commons.math.stat.inference.OneWayAnovaTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.transform.FastCosineTransformerTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.ArgumentOutsideDomainExceptionTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+=======
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 Running org.apache.commons.math.ode.nonstiff.EulerIntegratorTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
 Running org.apache.commons.math.stat.descriptive.rank.MaxTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.complex.ComplexFieldTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.stat.descriptive.ListUnivariateImplTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
-Running org.apache.commons.math.MaxIterationsExceededExceptionTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.stat.descriptive.DescriptiveStatisticsTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.commons.math.MaxIterationsExceededExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.linear.MatrixUtilsTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
-Running org.apache.commons.math.optimization.direct.NelderMeadTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.optimization.MultiStartDifferentiableMultivariateVectorialOptimizerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.commons.math.optimization.direct.NelderMeadTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.geometry.RotationTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec
 Running org.apache.commons.math.ode.sampling.DummyStepInterpolatorTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.commons.math.linear.SingularValueSolverTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.genetics.RandomKeyMutationTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
-Running org.apache.commons.math.linear.SingularValueSolverTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.util.BigRealTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.distribution.ExponentialDistributionTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.stat.descriptive.SynchronizedDescriptiveStatisticsTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.geometry.FrenchVector3DFormatTest
-Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
-Running org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.stat.regression.SimpleRegressionTest
 Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
 Running org.apache.commons.math.optimization.MultiStartMultivariateRealOptimizerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.stat.regression.GLSMultipleLinearRegressionTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.ode.nonstiff.ThreeEighthesIntegratorTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
 Running org.apache.commons.math.ode.nonstiff.GillStepInterpolatorTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
 Running org.apache.commons.math.linear.LUSolverTest
 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running org.apache.commons.math.MathConfigurationExceptionTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.estimation.GaussNewtonEstimatorTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running org.apache.commons.math.genetics.ListPopulationTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.MathExceptionTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
-Running org.apache.commons.math.distribution.CauchyDistributionTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.commons.math.distribution.CauchyDistributionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.linear.SparseFieldMatrixTest
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.stat.descriptive.summary.SumLogTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.FrequencyTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.stat.descriptive.moment.SecondMomentTest
+<<<<<<< HEAD
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 =======
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.245 sec
@@ -1110,6 +1168,9 @@ Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec
 Running org.apache.commons.math.stat.descriptive.moment.SecondMomentTest
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
 >>>>>>> 80a4a6ec... added results for math 70, 71 and 72
+=======
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 
 Results :
 
@@ -1118,6 +1179,7 @@ Failed tests:
 
 Tests run: 2140, Failures: 1, Errors: 0, Skipped: 0
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;31mBUILD FAILURE[m
@@ -1143,6 +1205,14 @@ Tests run: 2140, Failures: 1, Errors: 0, Skipped: 0
 [INFO] Total time: 06:46 min
 [INFO] Finished at: 2019-04-12T17:47:50+00:00
 [INFO] Final Memory: 27M/719M
+=======
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.862 s
+[INFO] Finished at: 2019-04-13T07:27:59+00:00
+[INFO] Final Memory: 26M/702M
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.4.3:test (default-test) on project commons-math: There are test failures.
 [ERROR] 
@@ -1154,4 +1224,7 @@ Tests run: 2140, Failures: 1, Errors: 0, Skipped: 0
 [ERROR] 
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+<<<<<<< HEAD
 >>>>>>> 80a4a6ec... added results for math 70, 71 and 72
+=======
+>>>>>>> 32e1ed5e... added math 50 - 60, math 74 - 75, lang 25 - 30 and time 1 - 11

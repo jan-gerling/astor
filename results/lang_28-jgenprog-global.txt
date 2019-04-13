@@ -1,0 +1,1330 @@
+2019-04-14 19:56:09,433 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin  -javacompliancelevel  8  -mode  jgenprog  -scope  global  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests/lang_28/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-14 19:56:10,063 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-lang_28//bin//default from 90 classes with test cases
+2019-04-14 19:56:10,063 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-14 19:56:10,721 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-lang_28//bin//default]
+2019-04-14 19:56:20,649 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest#testSupplementaryUnescaping
+2019-04-14 19:56:20,650 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.ConcurrentUtilsTest#testInitialize
+2019-04-14 19:56:20,650 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.ConcurrentUtilsTest#testInitializeUnchecked
+2019-04-14 19:56:20,651 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.ConcurrentUtilsTest#testInitializeUncheckedEx
+2019-04-14 19:56:20,651 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.BasicThreadFactoryTest#testNewThreadNoDaemonFlag
+2019-04-14 19:56:20,651 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.BasicThreadFactoryTest#testNewThreadDaemonTrue
+2019-04-14 19:56:20,651 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.BasicThreadFactoryTest#testNewThreadNoPriority
+2019-04-14 19:56:20,651 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.BasicThreadFactoryTest#testNewThreadNoExHandler
+2019-04-14 19:56:20,651 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.BasicThreadFactoryTest#testNewThreadDaemonFalse
+2019-04-14 19:56:20,651 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.BasicThreadFactoryTest#testNewThreadNamingPattern
+2019-04-14 19:56:20,651 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.BasicThreadFactoryTest#testBuilderReset
+2019-04-14 19:56:20,651 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.BasicThreadFactoryTest#testNewThreadExHandler
+2019-04-14 19:56:20,651 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.BasicThreadFactoryTest#testNewThreadPriority
+2019-04-14 19:56:20,651 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.BasicThreadFactoryTest#testNewThreadNoNamingPattern
+2019-04-14 19:56:20,651 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.BasicThreadFactoryTest#testBuilderResetAfterBuild
+2019-04-14 19:56:20,652 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.TimedSemaphoreTest#testAcquireMultipleThreads
+2019-04-14 19:56:20,652 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.TimedSemaphoreTest#testGetAverageCallsPerPeriod
+2019-04-14 19:56:20,652 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.TimedSemaphoreTest#testInit
+2019-04-14 19:56:20,652 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.TimedSemaphoreTest#testShutdownSharedExecutorTask
+2019-04-14 19:56:20,652 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.TimedSemaphoreTest#testShutdownMultipleTimes
+2019-04-14 19:56:20,652 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.TimedSemaphoreTest#testAcquireNoLimit
+2019-04-14 19:56:20,652 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.TimedSemaphoreTest#testShutdownSharedExecutorNoTask
+2019-04-14 19:56:20,652 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.TimedSemaphoreTest#testAcquireLimit
+2019-04-14 19:56:20,652 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.lang3.concurrent.TimedSemaphoreTest#testGetAvailablePermits
+2019-04-14 19:56:20,654 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:1763, fails: 24, GZoltar suspicious 8421
+2019-04-14 19:56:20,688 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 1000 with susp > 0.5, we consider: 1000
+2019-04-14 19:56:20,697 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-lang_28//src//default, compliance level: 8
+2019-04-14 19:56:24,867 INFO main - 
+---- Initial suspicious size: 1000
+2019-04-14 19:56:24,879 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.text.translate.NumericEntityUnescaper, methodName=org.apache.commons.lang3.text.translate.NumericEntityUnescaper{translate(Ljava/lang/CharSequence;ILjava/io/Writer;)I 0.0, lineNumber=61, susp=0.11785113019775793]
+2019-04-14 19:56:24,916 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.text.translate.CharSequenceTranslator, methodName=org.apache.commons.lang3.text.translate.CharSequenceTranslator{translate(Ljava/lang/CharSequence;Ljava/io/Writer;)V 0.0, lineNumber=105, susp=0.039283710065919304]
+2019-04-14 19:56:25,089 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.SerializationUtils, methodName=org.apache.commons.lang3.SerializationUtils{serialize(Ljava/io/Serializable;Ljava/io/OutputStream;)V 0.0, lineNumber=120, susp=0.0]
+2019-04-14 19:56:25,089 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.SerializationUtils, methodName=org.apache.commons.lang3.SerializationUtils{serialize(Ljava/io/Serializable;Ljava/io/OutputStream;)V 0.0, lineNumber=122, susp=0.0]
+2019-04-14 19:56:25,101 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.SerializationUtils, methodName=org.apache.commons.lang3.SerializationUtils{deserialize(Ljava/io/InputStream;)Ljava/lang/Object; 0.0, lineNumber=176, susp=0.0]
+2019-04-14 19:56:25,119 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ObjectUtils, methodName=org.apache.commons.lang3.ObjectUtils{identityToString(Ljava/lang/StringBuffer;Ljava/lang/Object;)V 0.0, lineNumber=224, susp=0.0]
+2019-04-14 19:56:25,120 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ObjectUtils, methodName=org.apache.commons.lang3.ObjectUtils{identityToString(Ljava/lang/StringBuffer;Ljava/lang/Object;)V 0.0, lineNumber=225, susp=0.0]
+2019-04-14 19:56:25,121 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ObjectUtils, methodName=org.apache.commons.lang3.ObjectUtils{identityToString(Ljava/lang/StringBuffer;Ljava/lang/Object;)V 0.0, lineNumber=226, susp=0.0]
+2019-04-14 19:56:25,131 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ObjectUtils, methodName=org.apache.commons.lang3.ObjectUtils{clone(Ljava/lang/Object;)Ljava/lang/Object; 0.0, lineNumber=334, susp=0.0]
+2019-04-14 19:56:25,167 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toFloat(Ljava/lang/String;F)F 0.0, lineNumber=234, susp=0.0]
+2019-04-14 19:56:25,406 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=507, susp=0.0]
+2019-04-14 19:56:25,409 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=509, susp=0.0]
+2019-04-14 19:56:25,412 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=512, susp=0.0]
+2019-04-14 19:56:25,420 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=531, susp=0.0]
+2019-04-14 19:56:25,426 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=542, susp=0.0]
+2019-04-14 19:56:25,441 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=565, susp=0.0]
+2019-04-14 19:56:25,446 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=570, susp=0.0]
+2019-04-14 19:56:25,458 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=585, susp=0.0]
+2019-04-14 19:56:25,579 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toLong(Ljava/lang/String;J)J 0.0, lineNumber=182, susp=0.0]
+2019-04-14 19:56:25,586 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toInt(Ljava/lang/String;I)I 0.0, lineNumber=133, susp=0.0]
+2019-04-14 19:56:25,603 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toByte(Ljava/lang/String;B)B 0.0, lineNumber=336, susp=0.0]
+2019-04-14 19:56:25,728 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=518, susp=0.0]
+2019-04-14 19:56:25,730 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=545, susp=0.0]
+2019-04-14 19:56:25,732 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=550, susp=0.0]
+2019-04-14 19:56:25,998 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toDouble(Ljava/lang/String;D)D 0.0, lineNumber=286, susp=0.0]
+2019-04-14 19:56:26,011 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toShort(Ljava/lang/String;S)S 0.0, lineNumber=385, susp=0.0]
+2019-04-14 19:56:26,064 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.RandomStringUtils, methodName=org.apache.commons.lang3.RandomStringUtils{random(IIIZZ[CLjava/util/Random;)Ljava/lang/String; 0.0, lineNumber=283, susp=0.0]
+2019-04-14 19:56:26,070 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.RandomStringUtils, methodName=org.apache.commons.lang3.RandomStringUtils{random(IIIZZ[CLjava/util/Random;)Ljava/lang/String; 0.0, lineNumber=253, susp=0.0]
+2019-04-14 19:56:26,309 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=178, susp=0.0]
+2019-04-14 19:56:26,311 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=179, susp=0.0]
+2019-04-14 19:56:26,313 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=180, susp=0.0]
+2019-04-14 19:56:26,317 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=188, susp=0.0]
+2019-04-14 19:56:26,319 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=193, susp=0.0]
+2019-04-14 19:56:26,320 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=194, susp=0.0]
+2019-04-14 19:56:26,336 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{register(Ljava/lang/Object;)V 0.0, lineNumber=522, susp=0.0]
+2019-04-14 19:56:26,343 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{register(Ljava/lang/Object;)V 0.0, lineNumber=524, susp=0.0]
+2019-04-14 19:56:26,358 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{unregister(Ljava/lang/Object;)V 0.0, lineNumber=548, susp=0.0]
+2019-04-14 19:56:26,359 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{unregister(Ljava/lang/Object;)V 0.0, lineNumber=550, susp=0.0]
+2019-04-14 19:56:26,525 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.text.WordUtils, methodName=org.apache.commons.lang3.text.WordUtils{wrap(Ljava/lang/String;ILjava/lang/String;Z)Ljava/lang/String; 0.0, lineNumber=139, susp=0.0]
+2019-04-14 19:56:26,641 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{addAbbreviation(Ljava/lang/String;Ljava/lang/String;)V 0.0, lineNumber=118, susp=0.0]
+2019-04-14 19:56:26,820 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getClass(Ljava/lang/ClassLoader;Ljava/lang/String;Z)Ljava/lang/Class; 0.0, lineNumber=764, susp=0.0]
+2019-04-14 19:56:26,827 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getClass(Ljava/lang/ClassLoader;Ljava/lang/String;Z)Ljava/lang/Class; 0.0, lineNumber=771, susp=0.0]
+2019-04-14 19:56:26,864 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getAllSuperclasses(Ljava/lang/Class;)Ljava/util/List; 0.0, lineNumber=295, susp=0.0]
+2019-04-14 19:56:26,900 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getCanonicalName(Ljava/lang/String;)Ljava/lang/String; 0.0, lineNumber=1055, susp=0.0]
+2019-04-14 19:56:26,901 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getCanonicalName(Ljava/lang/String;)Ljava/lang/String; 0.0, lineNumber=1056, susp=0.0]
+2019-04-14 19:56:26,916 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=586, susp=0.0]
+2019-04-14 19:56:26,918 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=587, susp=0.0]
+2019-04-14 19:56:26,923 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=591, susp=0.0]
+2019-04-14 19:56:26,938 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=604, susp=0.0]
+2019-04-14 19:56:26,939 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=605, susp=0.0]
+2019-04-14 19:56:26,941 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=606, susp=0.0]
+2019-04-14 19:56:26,946 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=610, susp=0.0]
+2019-04-14 19:56:26,948 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=611, susp=0.0]
+2019-04-14 19:56:26,950 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=612, susp=0.0]
+2019-04-14 19:56:26,955 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=616, susp=0.0]
+2019-04-14 19:56:26,957 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=617, susp=0.0]
+2019-04-14 19:56:26,958 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=618, susp=0.0]
+2019-04-14 19:56:26,960 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=619, susp=0.0]
+2019-04-14 19:56:26,998 INFO main - Total suspicious from FL: 1000,  944
+2019-04-14 19:56:26,998 INFO main - Total ModPoint created: 944
+2019-04-14 19:56:26,998 INFO main - Creating program variant #1, [Variant id: 1, #gens: 944, #ops: 0, parent:-]
+2019-04-14 19:56:27,000 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.text.translate.NumericEntityUnescaper, methodName=org.apache.commons.lang3.text.translate.NumericEntityUnescaper{translate(Ljava/lang/CharSequence;ILjava/io/Writer;)I 0.0, lineNumber=61, susp=0.11785113019775793]
+2019-04-14 19:56:27,015 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.text.translate.CharSequenceTranslator, methodName=org.apache.commons.lang3.text.translate.CharSequenceTranslator{translate(Ljava/lang/CharSequence;Ljava/io/Writer;)V 0.0, lineNumber=105, susp=0.039283710065919304]
+2019-04-14 19:56:27,033 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.SerializationUtils, methodName=org.apache.commons.lang3.SerializationUtils{serialize(Ljava/io/Serializable;Ljava/io/OutputStream;)V 0.0, lineNumber=120, susp=0.0]
+2019-04-14 19:56:27,033 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.SerializationUtils, methodName=org.apache.commons.lang3.SerializationUtils{serialize(Ljava/io/Serializable;Ljava/io/OutputStream;)V 0.0, lineNumber=122, susp=0.0]
+2019-04-14 19:56:27,037 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.SerializationUtils, methodName=org.apache.commons.lang3.SerializationUtils{deserialize(Ljava/io/InputStream;)Ljava/lang/Object; 0.0, lineNumber=176, susp=0.0]
+2019-04-14 19:56:27,043 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ObjectUtils, methodName=org.apache.commons.lang3.ObjectUtils{identityToString(Ljava/lang/StringBuffer;Ljava/lang/Object;)V 0.0, lineNumber=224, susp=0.0]
+2019-04-14 19:56:27,043 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ObjectUtils, methodName=org.apache.commons.lang3.ObjectUtils{identityToString(Ljava/lang/StringBuffer;Ljava/lang/Object;)V 0.0, lineNumber=225, susp=0.0]
+2019-04-14 19:56:27,044 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ObjectUtils, methodName=org.apache.commons.lang3.ObjectUtils{identityToString(Ljava/lang/StringBuffer;Ljava/lang/Object;)V 0.0, lineNumber=226, susp=0.0]
+2019-04-14 19:56:27,050 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ObjectUtils, methodName=org.apache.commons.lang3.ObjectUtils{clone(Ljava/lang/Object;)Ljava/lang/Object; 0.0, lineNumber=334, susp=0.0]
+2019-04-14 19:56:27,067 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toFloat(Ljava/lang/String;F)F 0.0, lineNumber=234, susp=0.0]
+2019-04-14 19:56:27,280 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=507, susp=0.0]
+2019-04-14 19:56:27,283 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=509, susp=0.0]
+2019-04-14 19:56:27,286 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=512, susp=0.0]
+2019-04-14 19:56:27,292 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=531, susp=0.0]
+2019-04-14 19:56:27,298 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=542, susp=0.0]
+2019-04-14 19:56:27,310 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=565, susp=0.0]
+2019-04-14 19:56:27,313 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=570, susp=0.0]
+2019-04-14 19:56:27,321 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=585, susp=0.0]
+2019-04-14 19:56:27,405 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toLong(Ljava/lang/String;J)J 0.0, lineNumber=182, susp=0.0]
+2019-04-14 19:56:27,411 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toInt(Ljava/lang/String;I)I 0.0, lineNumber=133, susp=0.0]
+2019-04-14 19:56:27,427 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toByte(Ljava/lang/String;B)B 0.0, lineNumber=336, susp=0.0]
+2019-04-14 19:56:27,535 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=518, susp=0.0]
+2019-04-14 19:56:27,537 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=545, susp=0.0]
+2019-04-14 19:56:27,539 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=550, susp=0.0]
+2019-04-14 19:56:27,754 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toDouble(Ljava/lang/String;D)D 0.0, lineNumber=286, susp=0.0]
+2019-04-14 19:56:27,765 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toShort(Ljava/lang/String;S)S 0.0, lineNumber=385, susp=0.0]
+2019-04-14 19:56:27,806 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.RandomStringUtils, methodName=org.apache.commons.lang3.RandomStringUtils{random(IIIZZ[CLjava/util/Random;)Ljava/lang/String; 0.0, lineNumber=283, susp=0.0]
+2019-04-14 19:56:27,810 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.RandomStringUtils, methodName=org.apache.commons.lang3.RandomStringUtils{random(IIIZZ[CLjava/util/Random;)Ljava/lang/String; 0.0, lineNumber=253, susp=0.0]
+2019-04-14 19:56:27,956 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=178, susp=0.0]
+2019-04-14 19:56:27,957 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=179, susp=0.0]
+2019-04-14 19:56:27,958 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=180, susp=0.0]
+2019-04-14 19:56:27,961 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=188, susp=0.0]
+2019-04-14 19:56:27,962 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=193, susp=0.0]
+2019-04-14 19:56:27,963 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=194, susp=0.0]
+2019-04-14 19:56:27,973 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{register(Ljava/lang/Object;)V 0.0, lineNumber=522, susp=0.0]
+2019-04-14 19:56:27,975 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{register(Ljava/lang/Object;)V 0.0, lineNumber=524, susp=0.0]
+2019-04-14 19:56:27,983 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{unregister(Ljava/lang/Object;)V 0.0, lineNumber=548, susp=0.0]
+2019-04-14 19:56:27,984 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{unregister(Ljava/lang/Object;)V 0.0, lineNumber=550, susp=0.0]
+2019-04-14 19:56:28,101 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.text.WordUtils, methodName=org.apache.commons.lang3.text.WordUtils{wrap(Ljava/lang/String;ILjava/lang/String;Z)Ljava/lang/String; 0.0, lineNumber=139, susp=0.0]
+2019-04-14 19:56:28,187 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{addAbbreviation(Ljava/lang/String;Ljava/lang/String;)V 0.0, lineNumber=118, susp=0.0]
+2019-04-14 19:56:28,343 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getClass(Ljava/lang/ClassLoader;Ljava/lang/String;Z)Ljava/lang/Class; 0.0, lineNumber=764, susp=0.0]
+2019-04-14 19:56:28,352 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getClass(Ljava/lang/ClassLoader;Ljava/lang/String;Z)Ljava/lang/Class; 0.0, lineNumber=771, susp=0.0]
+2019-04-14 19:56:28,402 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getAllSuperclasses(Ljava/lang/Class;)Ljava/util/List; 0.0, lineNumber=295, susp=0.0]
+2019-04-14 19:56:28,450 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getCanonicalName(Ljava/lang/String;)Ljava/lang/String; 0.0, lineNumber=1055, susp=0.0]
+2019-04-14 19:56:28,452 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getCanonicalName(Ljava/lang/String;)Ljava/lang/String; 0.0, lineNumber=1056, susp=0.0]
+2019-04-14 19:56:28,474 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=586, susp=0.0]
+2019-04-14 19:56:28,476 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=587, susp=0.0]
+2019-04-14 19:56:28,483 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=591, susp=0.0]
+2019-04-14 19:56:28,502 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=604, susp=0.0]
+2019-04-14 19:56:28,504 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=605, susp=0.0]
+2019-04-14 19:56:28,506 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=606, susp=0.0]
+2019-04-14 19:56:28,513 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=610, susp=0.0]
+2019-04-14 19:56:28,515 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=611, susp=0.0]
+2019-04-14 19:56:28,518 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=612, susp=0.0]
+2019-04-14 19:56:28,525 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=616, susp=0.0]
+2019-04-14 19:56:28,528 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=617, susp=0.0]
+2019-04-14 19:56:28,530 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=618, susp=0.0]
+2019-04-14 19:56:28,532 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=619, susp=0.0]
+2019-04-14 19:56:28,584 INFO main - Total suspicious from FL: 1000,  944
+2019-04-14 19:56:28,585 INFO main - Total ModPoint created: 944
+2019-04-14 19:56:28,585 INFO main - Creating program variant #2, [Variant id: 2, #gens: 944, #ops: 0, parent:-]
+2019-04-14 19:56:28,586 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.text.translate.NumericEntityUnescaper, methodName=org.apache.commons.lang3.text.translate.NumericEntityUnescaper{translate(Ljava/lang/CharSequence;ILjava/io/Writer;)I 0.0, lineNumber=61, susp=0.11785113019775793]
+2019-04-14 19:56:28,605 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.text.translate.CharSequenceTranslator, methodName=org.apache.commons.lang3.text.translate.CharSequenceTranslator{translate(Ljava/lang/CharSequence;Ljava/io/Writer;)V 0.0, lineNumber=105, susp=0.039283710065919304]
+2019-04-14 19:56:28,629 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.SerializationUtils, methodName=org.apache.commons.lang3.SerializationUtils{serialize(Ljava/io/Serializable;Ljava/io/OutputStream;)V 0.0, lineNumber=120, susp=0.0]
+2019-04-14 19:56:28,629 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.SerializationUtils, methodName=org.apache.commons.lang3.SerializationUtils{serialize(Ljava/io/Serializable;Ljava/io/OutputStream;)V 0.0, lineNumber=122, susp=0.0]
+2019-04-14 19:56:28,635 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.SerializationUtils, methodName=org.apache.commons.lang3.SerializationUtils{deserialize(Ljava/io/InputStream;)Ljava/lang/Object; 0.0, lineNumber=176, susp=0.0]
+2019-04-14 19:56:28,643 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ObjectUtils, methodName=org.apache.commons.lang3.ObjectUtils{identityToString(Ljava/lang/StringBuffer;Ljava/lang/Object;)V 0.0, lineNumber=224, susp=0.0]
+2019-04-14 19:56:28,644 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ObjectUtils, methodName=org.apache.commons.lang3.ObjectUtils{identityToString(Ljava/lang/StringBuffer;Ljava/lang/Object;)V 0.0, lineNumber=225, susp=0.0]
+2019-04-14 19:56:28,644 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ObjectUtils, methodName=org.apache.commons.lang3.ObjectUtils{identityToString(Ljava/lang/StringBuffer;Ljava/lang/Object;)V 0.0, lineNumber=226, susp=0.0]
+2019-04-14 19:56:28,652 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ObjectUtils, methodName=org.apache.commons.lang3.ObjectUtils{clone(Ljava/lang/Object;)Ljava/lang/Object; 0.0, lineNumber=334, susp=0.0]
+2019-04-14 19:56:28,674 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toFloat(Ljava/lang/String;F)F 0.0, lineNumber=234, susp=0.0]
+2019-04-14 19:56:28,915 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=507, susp=0.0]
+2019-04-14 19:56:28,918 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=509, susp=0.0]
+2019-04-14 19:56:28,922 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=512, susp=0.0]
+2019-04-14 19:56:28,931 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=531, susp=0.0]
+2019-04-14 19:56:28,939 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=542, susp=0.0]
+2019-04-14 19:56:28,954 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=565, susp=0.0]
+2019-04-14 19:56:28,958 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=570, susp=0.0]
+2019-04-14 19:56:28,969 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=585, susp=0.0]
+2019-04-14 19:56:29,076 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toLong(Ljava/lang/String;J)J 0.0, lineNumber=182, susp=0.0]
+2019-04-14 19:56:29,084 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toInt(Ljava/lang/String;I)I 0.0, lineNumber=133, susp=0.0]
+2019-04-14 19:56:29,105 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toByte(Ljava/lang/String;B)B 0.0, lineNumber=336, susp=0.0]
+2019-04-14 19:56:29,249 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=518, susp=0.0]
+2019-04-14 19:56:29,251 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=545, susp=0.0]
+2019-04-14 19:56:29,253 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{createNumber(Ljava/lang/String;)Ljava/lang/Number; 0.0, lineNumber=550, susp=0.0]
+2019-04-14 19:56:29,536 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toDouble(Ljava/lang/String;D)D 0.0, lineNumber=286, susp=0.0]
+2019-04-14 19:56:29,561 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.math.NumberUtils, methodName=org.apache.commons.lang3.math.NumberUtils{toShort(Ljava/lang/String;S)S 0.0, lineNumber=385, susp=0.0]
+2019-04-14 19:56:29,606 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.RandomStringUtils, methodName=org.apache.commons.lang3.RandomStringUtils{random(IIIZZ[CLjava/util/Random;)Ljava/lang/String; 0.0, lineNumber=283, susp=0.0]
+2019-04-14 19:56:29,610 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.RandomStringUtils, methodName=org.apache.commons.lang3.RandomStringUtils{random(IIIZZ[CLjava/util/Random;)Ljava/lang/String; 0.0, lineNumber=253, susp=0.0]
+2019-04-14 19:56:29,763 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=178, susp=0.0]
+2019-04-14 19:56:29,764 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=179, susp=0.0]
+2019-04-14 19:56:29,765 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=180, susp=0.0]
+2019-04-14 19:56:29,768 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=188, susp=0.0]
+2019-04-14 19:56:29,769 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=193, susp=0.0]
+2019-04-14 19:56:29,770 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{reflectionAppend(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V 0.0, lineNumber=194, susp=0.0]
+2019-04-14 19:56:29,780 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{register(Ljava/lang/Object;)V 0.0, lineNumber=522, susp=0.0]
+2019-04-14 19:56:29,781 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{register(Ljava/lang/Object;)V 0.0, lineNumber=524, susp=0.0]
+2019-04-14 19:56:29,789 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{unregister(Ljava/lang/Object;)V 0.0, lineNumber=548, susp=0.0]
+2019-04-14 19:56:29,790 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.builder.HashCodeBuilder, methodName=org.apache.commons.lang3.builder.HashCodeBuilder{unregister(Ljava/lang/Object;)V 0.0, lineNumber=550, susp=0.0]
+2019-04-14 19:56:29,904 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.text.WordUtils, methodName=org.apache.commons.lang3.text.WordUtils{wrap(Ljava/lang/String;ILjava/lang/String;Z)Ljava/lang/String; 0.0, lineNumber=139, susp=0.0]
+2019-04-14 19:56:29,977 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{addAbbreviation(Ljava/lang/String;Ljava/lang/String;)V 0.0, lineNumber=118, susp=0.0]
+2019-04-14 19:56:30,101 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getClass(Ljava/lang/ClassLoader;Ljava/lang/String;Z)Ljava/lang/Class; 0.0, lineNumber=764, susp=0.0]
+2019-04-14 19:56:30,108 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getClass(Ljava/lang/ClassLoader;Ljava/lang/String;Z)Ljava/lang/Class; 0.0, lineNumber=771, susp=0.0]
+2019-04-14 19:56:30,142 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getAllSuperclasses(Ljava/lang/Class;)Ljava/util/List; 0.0, lineNumber=295, susp=0.0]
+2019-04-14 19:56:30,177 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getCanonicalName(Ljava/lang/String;)Ljava/lang/String; 0.0, lineNumber=1055, susp=0.0]
+2019-04-14 19:56:30,179 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{getCanonicalName(Ljava/lang/String;)Ljava/lang/String; 0.0, lineNumber=1056, susp=0.0]
+2019-04-14 19:56:30,193 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=586, susp=0.0]
+2019-04-14 19:56:30,195 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=587, susp=0.0]
+2019-04-14 19:56:30,199 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=591, susp=0.0]
+2019-04-14 19:56:30,213 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=604, susp=0.0]
+2019-04-14 19:56:30,215 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=605, susp=0.0]
+2019-04-14 19:56:30,217 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=606, susp=0.0]
+2019-04-14 19:56:30,222 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=610, susp=0.0]
+2019-04-14 19:56:30,224 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=611, susp=0.0]
+2019-04-14 19:56:30,225 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=612, susp=0.0]
+2019-04-14 19:56:30,231 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=616, susp=0.0]
+2019-04-14 19:56:30,232 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=617, susp=0.0]
+2019-04-14 19:56:30,234 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=618, susp=0.0]
+2019-04-14 19:56:30,236 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.lang3.ClassUtils, methodName=org.apache.commons.lang3.ClassUtils{isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z 0.0, lineNumber=619, susp=0.0]
+2019-04-14 19:56:30,278 INFO main - Total suspicious from FL: 1000,  944
+2019-04-14 19:56:30,278 INFO main - Total ModPoint created: 944
+2019-04-14 19:56:30,278 INFO main - Creating program variant #3, [Variant id: 3, #gens: 944, #ops: 0, parent:-]
+2019-04-14 19:57:16,919 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-14 19:57:16,919 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-14 19:57:16,919 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-14 19:57:16,919 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jgenprog
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= defect4j_tests/lang_28/
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-14 19:57:16,920 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= global
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 3
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-14 19:57:16,921 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-14 19:57:16,921 INFO main - 
+----Starting Solution Search
+2019-04-14 19:57:29,568 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-14 19:57:29,568 ERROR main - Undo Error: original: 
+public abstract class CharSequenceTranslator {
+	public abstract int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException;
+
+	public final java.lang.String translate(java.lang.CharSequence input) {
+		if (input == null) {
+			return null;
+		}
+		try {
+			java.io.StringWriter writer = new java.io.StringWriter(((input.length()) * 2));
+			translate(input, writer);
+			return writer.toString();
+		} catch (java.io.IOException ioe) {
+			throw new java.lang.RuntimeException(ioe);
+		}
+	}
+
+	public final void translate(java.lang.CharSequence input, java.io.Writer out) throws java.io.IOException {
+		if (out == null) {
+			throw new java.lang.IllegalArgumentException("The Writer must not be null");
+		}
+		if (input == null) {
+			return ;
+		}
+		int sz = java.lang.Character.codePointCount(input, 0, input.length());
+		for (int i = 0; i < sz; i++) {
+			int consumed = translate(input, i, out);
+			if (consumed == 0) {
+				out.write(java.lang.Character.toChars(java.lang.Character.codePointAt(input, i)));
+			}else {
+				for (int j = 0; j < consumed; j++) {
+					if (i < (sz - 2)) {
+						i += java.lang.Character.charCount(java.lang.Character.codePointAt(input, i));
+					}else {
+						i++;
+					}
+				}
+				i--;
+			}
+		}
+	}
+
+	public final org.apache.commons.lang3.text.translate.CharSequenceTranslator with(org.apache.commons.lang3.text.translate.CharSequenceTranslator... translators) {
+		org.apache.commons.lang3.text.translate.CharSequenceTranslator[] newArray = new org.apache.commons.lang3.text.translate.CharSequenceTranslator[(translators.length) + 1];
+		newArray[0] = this;
+		java.lang.System.arraycopy(translators, 0, newArray, 1, translators.length);
+		return new org.apache.commons.lang3.text.translate.AggregateTranslator(newArray);
+	}
+
+	public static java.lang.String hex(int codepoint) {
+		return java.lang.Integer.toHexString(codepoint).toUpperCase(java.util.Locale.ENGLISH);
+	}
+}
+2019-04-14 19:57:29,568 ERROR main - Undo Error: modified: 
+public abstract class CharSequenceTranslator {
+	public abstract int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException;
+
+	public final java.lang.String translate(java.lang.CharSequence input) {
+		if (input == null) {
+			return null;
+		}
+		try {
+			java.io.StringWriter writer = new java.io.StringWriter(((input.length()) * 2));
+			translate(input, writer);
+			return writer.toString();
+		} catch (java.io.IOException ioe) {
+			throw new java.lang.RuntimeException(ioe);
+		}
+	}
+
+	public final void translate(java.lang.CharSequence input, java.io.Writer out) throws java.io.IOException {
+		if (out == null) {
+			throw new java.lang.IllegalArgumentException("The Writer must not be null");
+		}
+		if (input == null) {
+			return ;
+		}
+		int sz = java.lang.Character.codePointCount(input, 0, input.length());
+		for (int i = 0; i < sz; i++) {
+			int consumed = translate(input, i, out);
+			if (consumed == 0) {
+				out.write(java.lang.Character.toChars(java.lang.Character.codePointAt(input, i)));
+			}else {
+				for (int j = 0; j < consumed; j++)
+					if (i < (sz - 2)) {
+						i += java.lang.Character.charCount(java.lang.Character.codePointAt(input, i));
+					}else {
+						i++;
+					}
+				
+				i--;
+			}
+		}
+	}
+
+	public final org.apache.commons.lang3.text.translate.CharSequenceTranslator with(org.apache.commons.lang3.text.translate.CharSequenceTranslator... translators) {
+		org.apache.commons.lang3.text.translate.CharSequenceTranslator[] newArray = new org.apache.commons.lang3.text.translate.CharSequenceTranslator[(translators.length) + 1];
+		newArray[0] = this;
+		java.lang.System.arraycopy(translators, 0, newArray, 1, translators.length);
+		return new org.apache.commons.lang3.text.translate.AggregateTranslator(newArray);
+	}
+
+	public static java.lang.String hex(int codepoint) {
+		return java.lang.Integer.toHexString(codepoint).toUpperCase(java.util.Locale.ENGLISH);
+	}
+}
+2019-04-14 19:57:30,354 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-14 19:57:30,354 ERROR main - Undo Error: original: 
+public class NumericEntityUnescaper extends org.apache.commons.lang3.text.translate.CharSequenceTranslator {
+	@java.lang.Override
+	public int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException {
+		if (((input.charAt(index)) == '&') && ((input.charAt((index + 1))) == '#')) {
+			int start = index + 2;
+			boolean isHex = false;
+			char firstChar = input.charAt(start);
+			if ((firstChar == 'x') || (firstChar == 'X')) {
+				start++;
+				isHex = true;
+			}
+			int end = start;
+			while ((input.charAt(end)) != ';') {
+				end++;
+			} 
+			int entityValue;
+			try {
+				if (isHex) {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 16);
+				}else {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 10);
+				}
+			} catch (java.lang.NumberFormatException nfe) {
+				return 0;
+			}
+			out.write(entityValue);
+			return ((2 + (end - start)) + (isHex ? 1 : 0)) + 1;
+		}
+		return 0;
+	}
+}
+2019-04-14 19:57:30,355 ERROR main - Undo Error: modified: 
+public class NumericEntityUnescaper extends org.apache.commons.lang3.text.translate.CharSequenceTranslator {
+	@java.lang.Override
+	public int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException {
+		if (((input.charAt(index)) == '&') && ((input.charAt((index + 1))) == '#')) {
+			int start = index + 2;
+			boolean isHex = false;
+			char firstChar = input.charAt(start);
+			if ((firstChar == 'x') || (firstChar == 'X')) {
+				start++;
+				isHex = true;
+			}
+			int end = start;
+			while ((input.charAt(end)) != ';')
+				end++;
+			
+			int entityValue;
+			try {
+				if (isHex) {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 16);
+				}else {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 10);
+				}
+			} catch (java.lang.NumberFormatException nfe) {
+				return 0;
+			}
+			out.write(entityValue);
+			return ((2 + (end - start)) + (isHex ? 1 : 0)) + 1;
+		}
+		return 0;
+	}
+}
+2019-04-14 19:57:43,133 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-14 19:57:43,133 ERROR main - Undo Error: original: 
+public class NumericEntityUnescaper extends org.apache.commons.lang3.text.translate.CharSequenceTranslator {
+	@java.lang.Override
+	public int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException {
+		if (((input.charAt(index)) == '&') && ((input.charAt((index + 1))) == '#')) {
+			int start = index + 2;
+			boolean isHex = false;
+			char firstChar = input.charAt(start);
+			if ((firstChar == 'x') || (firstChar == 'X')) {
+				start++;
+				isHex = true;
+			}
+			int end = start;
+			while ((input.charAt(end)) != ';') {
+				end++;
+			} 
+			int entityValue;
+			try {
+				if (isHex) {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 16);
+				}else {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 10);
+				}
+			} catch (java.lang.NumberFormatException nfe) {
+				return 0;
+			}
+			out.write(entityValue);
+			return ((2 + (end - start)) + (isHex ? 1 : 0)) + 1;
+		}
+		return 0;
+	}
+}
+2019-04-14 19:57:43,133 ERROR main - Undo Error: modified: 
+public class NumericEntityUnescaper extends org.apache.commons.lang3.text.translate.CharSequenceTranslator {
+	@java.lang.Override
+	public int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException {
+		if (((input.charAt(index)) == '&') && ((input.charAt((index + 1))) == '#')) {
+			int start = index + 2;
+			boolean isHex = false;
+			char firstChar = input.charAt(start);
+			if ((firstChar == 'x') || (firstChar == 'X')) {
+				start++;
+				isHex = true;
+			}
+			int end = start;
+			while ((input.charAt(end)) != ';')
+				end++;
+			
+			int entityValue;
+			try {
+				if (isHex) {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 16);
+				}else {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 10);
+				}
+			} catch (java.lang.NumberFormatException nfe) {
+				return 0;
+			}
+			out.write(entityValue);
+			return ((2 + (end - start)) + (isHex ? 1 : 0)) + 1;
+		}
+		return 0;
+	}
+}
+2019-04-14 19:57:57,582 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-14 19:57:57,583 ERROR main - Undo Error: original: 
+public class NumericEntityUnescaper extends org.apache.commons.lang3.text.translate.CharSequenceTranslator {
+	@java.lang.Override
+	public int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException {
+		if (((input.charAt(index)) == '&') && ((input.charAt((index + 1))) == '#')) {
+			int start = index + 2;
+			boolean isHex = false;
+			char firstChar = input.charAt(start);
+			if ((firstChar == 'x') || (firstChar == 'X')) {
+				start++;
+				isHex = true;
+			}
+			int end = start;
+			while ((input.charAt(end)) != ';')
+				end++;
+			
+			int entityValue;
+			try {
+				if (isHex) {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 16);
+				}else {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 10);
+				}
+			} catch (java.lang.NumberFormatException nfe) {
+				return 0;
+			}
+			out.write(entityValue);
+			return ((2 + (end - start)) + (isHex ? 1 : 0)) + 1;
+		}
+		return 0;
+	}
+}
+2019-04-14 19:57:57,583 ERROR main - Undo Error: modified: 
+public class NumericEntityUnescaper extends org.apache.commons.lang3.text.translate.CharSequenceTranslator {
+	@java.lang.Override
+	public int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException {
+		if (((input.charAt(index)) == '&') && ((input.charAt((index + 1))) == '#')) {
+			int start = index + 2;
+			boolean isHex = false;
+			char firstChar = input.charAt(start);
+			if ((firstChar == 'x') || (firstChar == 'X')) {
+				start++;
+				isHex = true;
+			}
+			int end = start;
+			while ((input.charAt(end)) != ';')
+				end++;
+			
+			int entityValue;
+			try 
+				if (isHex) {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 16);
+				}else {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 10);
+				}
+			 catch (java.lang.NumberFormatException nfe) {
+				return 0;
+			}
+			out.write(entityValue);
+			return ((2 + (end - start)) + (isHex ? 1 : 0)) + 1;
+		}
+		return 0;
+	}
+}
+2019-04-14 19:58:00,487 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-14 19:58:00,488 ERROR main - Undo Error: original: 
+public abstract class CharSequenceTranslator {
+	public abstract int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException;
+
+	public final java.lang.String translate(java.lang.CharSequence input) {
+		if (input == null) {
+			return null;
+		}
+		try {
+			java.io.StringWriter writer = new java.io.StringWriter(((input.length()) * 2));
+			translate(input, writer);
+			return writer.toString();
+		} catch (java.io.IOException ioe) {
+			throw new java.lang.RuntimeException(ioe);
+		}
+	}
+
+	public final void translate(java.lang.CharSequence input, java.io.Writer out) throws java.io.IOException {
+		if (out == null) {
+			throw new java.lang.IllegalArgumentException("The Writer must not be null");
+		}
+		if (input == null) {
+			return ;
+		}
+		int sz = java.lang.Character.codePointCount(input, 0, input.length());
+		for (int i = 0; i < sz; i++) {
+			int consumed = translate(input, i, out);
+			if (consumed == 0) {
+				out.write(java.lang.Character.toChars(java.lang.Character.codePointAt(input, i)));
+			}else {
+				for (int j = 0; j < consumed; j++)
+					if (i < (sz - 2)) {
+						i += java.lang.Character.charCount(java.lang.Character.codePointAt(input, i));
+					}else {
+						i++;
+					}
+				
+				i--;
+			}
+		}
+	}
+
+	public final org.apache.commons.lang3.text.translate.CharSequenceTranslator with(org.apache.commons.lang3.text.translate.CharSequenceTranslator... translators) {
+		org.apache.commons.lang3.text.translate.CharSequenceTranslator[] newArray = new org.apache.commons.lang3.text.translate.CharSequenceTranslator[(translators.length) + 1];
+		newArray[0] = this;
+		java.lang.System.arraycopy(translators, 0, newArray, 1, translators.length);
+		return new org.apache.commons.lang3.text.translate.AggregateTranslator(newArray);
+	}
+
+	public static java.lang.String hex(int codepoint) {
+		return java.lang.Integer.toHexString(codepoint).toUpperCase(java.util.Locale.ENGLISH);
+	}
+}
+2019-04-14 19:58:00,488 ERROR main - Undo Error: modified: 
+public abstract class CharSequenceTranslator {
+	public abstract int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException;
+
+	public final java.lang.String translate(java.lang.CharSequence input) {
+		if (input == null) {
+			return null;
+		}
+		try {
+			java.io.StringWriter writer = new java.io.StringWriter(((input.length()) * 2));
+			translate(input, writer);
+			return writer.toString();
+		} catch (java.io.IOException ioe) {
+			throw new java.lang.RuntimeException(ioe);
+		}
+	}
+
+	public final void translate(java.lang.CharSequence input, java.io.Writer out) throws java.io.IOException {
+		if (out == null) {
+			throw new java.lang.IllegalArgumentException("The Writer must not be null");
+		}
+		if (input == null) {
+			return ;
+		}
+		int sz = java.lang.Character.codePointCount(input, 0, input.length());
+		for (int i = 0; i < sz; i++) {
+			int consumed = translate(input, i, out);
+			if (consumed == 0) {
+				out.write(java.lang.Character.toChars(java.lang.Character.codePointAt(input, i)));
+			}else {
+				for (int j = 0; j < consumed; j++)
+					if (i < (sz - 2)) {
+						i += java.lang.Character.charCount(java.lang.Character.codePointAt(input, i));
+					}else
+						i++;
+					
+				
+				i--;
+			}
+		}
+	}
+
+	public final org.apache.commons.lang3.text.translate.CharSequenceTranslator with(org.apache.commons.lang3.text.translate.CharSequenceTranslator... translators) {
+		org.apache.commons.lang3.text.translate.CharSequenceTranslator[] newArray = new org.apache.commons.lang3.text.translate.CharSequenceTranslator[(translators.length) + 1];
+		newArray[0] = this;
+		java.lang.System.arraycopy(translators, 0, newArray, 1, translators.length);
+		return new org.apache.commons.lang3.text.translate.AggregateTranslator(newArray);
+	}
+
+	public static java.lang.String hex(int codepoint) {
+		return java.lang.Integer.toHexString(codepoint).toUpperCase(java.util.Locale.ENGLISH);
+	}
+}
+2019-04-14 19:58:32,725 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-14 19:58:32,726 ERROR main - Undo Error: original: 
+public class NumericEntityUnescaper extends org.apache.commons.lang3.text.translate.CharSequenceTranslator {
+	@java.lang.Override
+	public int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException {
+		if (((input.charAt(index)) == '&') && ((input.charAt((index + 1))) == '#')) {
+			int start = index + 2;
+			boolean isHex = false;
+			char firstChar = input.charAt(start);
+			if ((firstChar == 'x') || (firstChar == 'X')) {
+				start++;
+				isHex = true;
+			}
+			int end = start;
+			while ((input.charAt(end)) != ';')
+				end++;
+			
+			int entityValue;
+			try 
+				if (isHex) {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 16);
+				}else {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 10);
+				}
+			 catch (java.lang.NumberFormatException nfe) {
+				return 0;
+			}
+			out.write(entityValue);
+			return ((2 + (end - start)) + (isHex ? 1 : 0)) + 1;
+		}
+		return 0;
+	}
+}
+2019-04-14 19:58:32,726 ERROR main - Undo Error: modified: 
+public class NumericEntityUnescaper extends org.apache.commons.lang3.text.translate.CharSequenceTranslator {
+	@java.lang.Override
+	public int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException {
+		if (((input.charAt(index)) == '&') && ((input.charAt((index + 1))) == '#')) {
+			int start = index + 2;
+			boolean isHex = false;
+			char firstChar = input.charAt(start);
+			if ((firstChar == 'x') || (firstChar == 'X')) {
+				start++;
+				isHex = true;
+			}
+			int end = start;
+			while ((input.charAt(end)) != ';')
+				end++;
+			
+			int entityValue;
+			try 
+				if (isHex) {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 16);
+				}else
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 10);
+				
+			 catch (java.lang.NumberFormatException nfe) {
+				return 0;
+			}
+			out.write(entityValue);
+			return ((2 + (end - start)) + (isHex ? 1 : 0)) + 1;
+		}
+		return 0;
+	}
+}
+2019-04-14 19:59:22,432 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-14 19:59:22,432 ERROR main - Undo Error: original: 
+public abstract class CharSequenceTranslator {
+	public abstract int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException;
+
+	public final java.lang.String translate(java.lang.CharSequence input) {
+		if (input == null) {
+			return null;
+		}
+		try {
+			java.io.StringWriter writer = new java.io.StringWriter(((input.length()) * 2));
+			translate(input, writer);
+			return writer.toString();
+		} catch (java.io.IOException ioe) {
+			throw new java.lang.RuntimeException(ioe);
+		}
+	}
+
+	public final void translate(java.lang.CharSequence input, java.io.Writer out) throws java.io.IOException {
+		if (out == null) {
+			throw new java.lang.IllegalArgumentException("The Writer must not be null");
+		}
+		if (input == null) {
+			return ;
+		}
+		int sz = java.lang.Character.codePointCount(input, 0, input.length());
+		for (int i = 0; i < sz; i++) {
+			int consumed = translate(input, i, out);
+			if (consumed == 0) {
+				out.write(java.lang.Character.toChars(java.lang.Character.codePointAt(input, i)));
+			}else {
+				for (int j = 0; j < consumed; j++) {
+					if (i < (sz - 2)) {
+						i += java.lang.Character.charCount(java.lang.Character.codePointAt(input, i));
+					}else {
+						i++;
+					}
+				}
+				i--;
+			}
+		}
+	}
+
+	public final org.apache.commons.lang3.text.translate.CharSequenceTranslator with(org.apache.commons.lang3.text.translate.CharSequenceTranslator... translators) {
+		org.apache.commons.lang3.text.translate.CharSequenceTranslator[] newArray = new org.apache.commons.lang3.text.translate.CharSequenceTranslator[(translators.length) + 1];
+		newArray[0] = this;
+		java.lang.System.arraycopy(translators, 0, newArray, 1, translators.length);
+		return new org.apache.commons.lang3.text.translate.AggregateTranslator(newArray);
+	}
+
+	public static java.lang.String hex(int codepoint) {
+		return java.lang.Integer.toHexString(codepoint).toUpperCase(java.util.Locale.ENGLISH);
+	}
+}
+2019-04-14 19:59:22,433 ERROR main - Undo Error: modified: 
+public abstract class CharSequenceTranslator {
+	public abstract int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException;
+
+	public final java.lang.String translate(java.lang.CharSequence input) {
+		if (input == null) {
+			return null;
+		}
+		try {
+			java.io.StringWriter writer = new java.io.StringWriter(((input.length()) * 2));
+			translate(input, writer);
+			return writer.toString();
+		} catch (java.io.IOException ioe) {
+			throw new java.lang.RuntimeException(ioe);
+		}
+	}
+
+	public final void translate(java.lang.CharSequence input, java.io.Writer out) throws java.io.IOException {
+		if (out == null) {
+			throw new java.lang.IllegalArgumentException("The Writer must not be null");
+		}
+		if (input == null) {
+			return ;
+		}
+		int sz = java.lang.Character.codePointCount(input, 0, input.length());
+		for (int i = 0; i < sz; i++) {
+			int consumed = translate(input, i, out);
+			if (consumed == 0) {
+				out.write(java.lang.Character.toChars(java.lang.Character.codePointAt(input, i)));
+			}else {
+				for (int j = 0; j < consumed; j++)
+					if (i < (sz - 2)) {
+						i += java.lang.Character.charCount(java.lang.Character.codePointAt(input, i));
+					}else {
+						i++;
+					}
+				
+				i--;
+			}
+		}
+	}
+
+	public final org.apache.commons.lang3.text.translate.CharSequenceTranslator with(org.apache.commons.lang3.text.translate.CharSequenceTranslator... translators) {
+		org.apache.commons.lang3.text.translate.CharSequenceTranslator[] newArray = new org.apache.commons.lang3.text.translate.CharSequenceTranslator[(translators.length) + 1];
+		newArray[0] = this;
+		java.lang.System.arraycopy(translators, 0, newArray, 1, translators.length);
+		return new org.apache.commons.lang3.text.translate.AggregateTranslator(newArray);
+	}
+
+	public static java.lang.String hex(int codepoint) {
+		return java.lang.Integer.toHexString(codepoint).toUpperCase(java.util.Locale.ENGLISH);
+	}
+}
+2019-04-14 19:59:23,813 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-14 19:59:23,813 ERROR main - Undo Error: original: 
+public abstract class CharSequenceTranslator {
+	public abstract int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException;
+
+	public final java.lang.String translate(java.lang.CharSequence input) {
+		if (input == null) {
+			return null;
+		}
+		try {
+			java.io.StringWriter writer = new java.io.StringWriter(((input.length()) * 2));
+			translate(input, writer);
+			return writer.toString();
+		} catch (java.io.IOException ioe) {
+			throw new java.lang.RuntimeException(ioe);
+		}
+	}
+
+	public final void translate(java.lang.CharSequence input, java.io.Writer out) throws java.io.IOException {
+		if (out == null) {
+			throw new java.lang.IllegalArgumentException("The Writer must not be null");
+		}
+		if (input == null) {
+			return ;
+		}
+		int sz = java.lang.Character.codePointCount(input, 0, input.length());
+		for (int i = 0; i < sz; i++) {
+			int consumed = translate(input, i, out);
+			if (consumed == 0) {
+				out.write(java.lang.Character.toChars(java.lang.Character.codePointAt(input, i)));
+			}else {
+				for (int j = 0; j < consumed; j++)
+					if (i < (sz - 2)) {
+						i += java.lang.Character.charCount(java.lang.Character.codePointAt(input, i));
+					}else {
+						i++;
+					}
+				
+				i--;
+			}
+		}
+	}
+
+	public final org.apache.commons.lang3.text.translate.CharSequenceTranslator with(org.apache.commons.lang3.text.translate.CharSequenceTranslator... translators) {
+		org.apache.commons.lang3.text.translate.CharSequenceTranslator[] newArray = new org.apache.commons.lang3.text.translate.CharSequenceTranslator[(translators.length) + 1];
+		newArray[0] = this;
+		java.lang.System.arraycopy(translators, 0, newArray, 1, translators.length);
+		return new org.apache.commons.lang3.text.translate.AggregateTranslator(newArray);
+	}
+
+	public static java.lang.String hex(int codepoint) {
+		return java.lang.Integer.toHexString(codepoint).toUpperCase(java.util.Locale.ENGLISH);
+	}
+}
+2019-04-14 19:59:23,814 ERROR main - Undo Error: modified: 
+public abstract class CharSequenceTranslator {
+	public abstract int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException;
+
+	public final java.lang.String translate(java.lang.CharSequence input) {
+		if (input == null) {
+			return null;
+		}
+		try {
+			java.io.StringWriter writer = new java.io.StringWriter(((input.length()) * 2));
+			translate(input, writer);
+			return writer.toString();
+		} catch (java.io.IOException ioe) {
+			throw new java.lang.RuntimeException(ioe);
+		}
+	}
+
+	public final void translate(java.lang.CharSequence input, java.io.Writer out) throws java.io.IOException {
+		if (out == null) {
+			throw new java.lang.IllegalArgumentException("The Writer must not be null");
+		}
+		if (input == null) {
+			return ;
+		}
+		int sz = java.lang.Character.codePointCount(input, 0, input.length());
+		for (int i = 0; i < sz; i++) {
+			int consumed = translate(input, i, out);
+			if (consumed == 0) {
+				out.write(java.lang.Character.toChars(java.lang.Character.codePointAt(input, i)));
+			}else {
+				for (int j = 0; j < consumed; j++)
+					if (i < (sz - 2))
+						i += java.lang.Character.charCount(java.lang.Character.codePointAt(input, i));
+					else {
+						i++;
+					}
+				
+				i--;
+			}
+		}
+	}
+
+	public final org.apache.commons.lang3.text.translate.CharSequenceTranslator with(org.apache.commons.lang3.text.translate.CharSequenceTranslator... translators) {
+		org.apache.commons.lang3.text.translate.CharSequenceTranslator[] newArray = new org.apache.commons.lang3.text.translate.CharSequenceTranslator[(translators.length) + 1];
+		newArray[0] = this;
+		java.lang.System.arraycopy(translators, 0, newArray, 1, translators.length);
+		return new org.apache.commons.lang3.text.translate.AggregateTranslator(newArray);
+	}
+
+	public static java.lang.String hex(int codepoint) {
+		return java.lang.Integer.toHexString(codepoint).toUpperCase(java.util.Locale.ENGLISH);
+	}
+}
+2019-04-14 20:00:23,584 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-14 20:00:23,584 ERROR main - Undo Error: original: 
+public class NumericEntityUnescaper extends org.apache.commons.lang3.text.translate.CharSequenceTranslator {
+	@java.lang.Override
+	public int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException {
+		if (((input.charAt(index)) == '&') && ((input.charAt((index + 1))) == '#')) {
+			int start = index + 2;
+			boolean isHex = false;
+			char firstChar = input.charAt(start);
+			if ((firstChar == 'x') || (firstChar == 'X')) {
+				start++;
+				isHex = true;
+			}
+			int end = start;
+			while ((input.charAt(end)) != ';')
+				end++;
+			
+			int entityValue;
+			try {
+				if (isHex) {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 16);
+				}else {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 10);
+				}
+			} catch (java.lang.NumberFormatException nfe) {
+				return 0;
+			}
+			out.write(entityValue);
+			return ((2 + (end - start)) + (isHex ? 1 : 0)) + 1;
+		}
+		return 0;
+	}
+}
+2019-04-14 20:00:23,585 ERROR main - Undo Error: modified: 
+public class NumericEntityUnescaper extends org.apache.commons.lang3.text.translate.CharSequenceTranslator {
+	@java.lang.Override
+	public int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException {
+		if (((input.charAt(index)) == '&') && ((input.charAt((index + 1))) == '#')) {
+			int start = index + 2;
+			boolean isHex = false;
+			char firstChar = input.charAt(start);
+			if ((firstChar == 'x') || (firstChar == 'X')) {
+				start++;
+				isHex = true;
+			}
+			int end = start;
+			while ((input.charAt(end)) != ';')
+				end++;
+			
+			int entityValue;
+			try {
+				if (isHex) {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 16);
+				}else
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 10);
+				
+			} catch (java.lang.NumberFormatException nfe) {
+				return 0;
+			}
+			out.write(entityValue);
+			return ((2 + (end - start)) + (isHex ? 1 : 0)) + 1;
+		}
+		return 0;
+	}
+}
+2019-04-14 20:01:36,721 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-14 20:01:36,721 ERROR main - Undo Error: original: 
+public class NumericEntityUnescaper extends org.apache.commons.lang3.text.translate.CharSequenceTranslator {
+	@java.lang.Override
+	public int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException {
+		if (((input.charAt(index)) == '&') && ((input.charAt((index + 1))) == '#')) {
+			int start = index + 2;
+			boolean isHex = false;
+			char firstChar = input.charAt(start);
+			if ((firstChar == 'x') || (firstChar == 'X')) {
+				start++;
+				isHex = true;
+			}
+			int end = start;
+			while ((input.charAt(end)) != ';')
+				end++;
+			
+			int entityValue;
+			try {
+				if (isHex) {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 16);
+				}else
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 10);
+				
+			} catch (java.lang.NumberFormatException nfe) {
+				return 0;
+			}
+			out.write(entityValue);
+			return ((2 + (end - start)) + (isHex ? 1 : 0)) + 1;
+		}
+		return 0;
+	}
+}
+2019-04-14 20:01:36,721 ERROR main - Undo Error: modified: 
+public class NumericEntityUnescaper extends org.apache.commons.lang3.text.translate.CharSequenceTranslator {
+	@java.lang.Override
+	public int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException {
+		if (((input.charAt(index)) == '&') && ((input.charAt((index + 1))) == '#')) {
+			int start = index + 2;
+			boolean isHex = false;
+			char firstChar = input.charAt(start);
+			if ((firstChar == 'x') || (firstChar == 'X')) {
+				start++;
+				isHex = true;
+			}
+			int end = start;
+			while ((input.charAt(end)) != ';')
+				end++;
+			
+			int entityValue;
+			try 
+				if (isHex) {
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 16);
+				}else
+					entityValue = java.lang.Integer.parseInt(input.subSequence(start, end).toString(), 10);
+				
+			 catch (java.lang.NumberFormatException nfe) {
+				return 0;
+			}
+			out.write(entityValue);
+			return ((2 + (end - start)) + (isHex ? 1 : 0)) + 1;
+		}
+		return 0;
+	}
+}
+2019-04-14 20:01:54,949 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-14 20:01:54,949 ERROR main - Undo Error: original: 
+public abstract class CharSequenceTranslator {
+	public abstract int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException;
+
+	public final java.lang.String translate(java.lang.CharSequence input) {
+		if (input == null) {
+			return null;
+		}
+		try {
+			java.io.StringWriter writer = new java.io.StringWriter(((input.length()) * 2));
+			translate(input, writer);
+			return writer.toString();
+		} catch (java.io.IOException ioe) {
+			throw new java.lang.RuntimeException(ioe);
+		}
+	}
+
+	public final void translate(java.lang.CharSequence input, java.io.Writer out) throws java.io.IOException {
+		if (out == null) {
+			throw new java.lang.IllegalArgumentException("The Writer must not be null");
+		}
+		if (input == null) {
+			return ;
+		}
+		int sz = java.lang.Character.codePointCount(input, 0, input.length());
+		for (int i = 0; i < sz; i++) {
+			int consumed = translate(input, i, out);
+			if (consumed == 0) {
+				out.write(java.lang.Character.toChars(java.lang.Character.codePointAt(input, i)));
+			}else {
+				for (int j = 0; j < consumed; j++)
+					if (i < (sz - 2)) {
+						i += java.lang.Character.charCount(java.lang.Character.codePointAt(input, i));
+					}else
+						i++;
+					
+				
+				i--;
+			}
+		}
+	}
+
+	public final org.apache.commons.lang3.text.translate.CharSequenceTranslator with(org.apache.commons.lang3.text.translate.CharSequenceTranslator... translators) {
+		org.apache.commons.lang3.text.translate.CharSequenceTranslator[] newArray = new org.apache.commons.lang3.text.translate.CharSequenceTranslator[(translators.length) + 1];
+		newArray[0] = this;
+		java.lang.System.arraycopy(translators, 0, newArray, 1, translators.length);
+		return new org.apache.commons.lang3.text.translate.AggregateTranslator(newArray);
+	}
+
+	public static java.lang.String hex(int codepoint) {
+		return java.lang.Integer.toHexString(codepoint).toUpperCase(java.util.Locale.ENGLISH);
+	}
+}
+2019-04-14 20:01:54,950 ERROR main - Undo Error: modified: 
+public abstract class CharSequenceTranslator {
+	public abstract int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException;
+
+	public final java.lang.String translate(java.lang.CharSequence input) {
+		if (input == null) {
+			return null;
+		}
+		try {
+			java.io.StringWriter writer = new java.io.StringWriter(((input.length()) * 2));
+			translate(input, writer);
+			return writer.toString();
+		} catch (java.io.IOException ioe) {
+			throw new java.lang.RuntimeException(ioe);
+		}
+	}
+
+	public final void translate(java.lang.CharSequence input, java.io.Writer out) throws java.io.IOException {
+		if (out == null) {
+			throw new java.lang.IllegalArgumentException("The Writer must not be null");
+		}
+		if (input == null) {
+			return ;
+		}
+		int sz = java.lang.Character.codePointCount(input, 0, input.length());
+		for (int i = 0; i < sz; i++) {
+			int consumed = translate(input, i, out);
+			if (consumed == 0) {
+				out.write(java.lang.Character.toChars(java.lang.Character.codePointAt(input, i)));
+			}else {
+				for (int j = 0; j < consumed; j++)
+					if (i < (sz - 2))
+						i += java.lang.Character.charCount(java.lang.Character.codePointAt(input, i));
+					else
+						i++;
+					
+				
+				i--;
+			}
+		}
+	}
+
+	public final org.apache.commons.lang3.text.translate.CharSequenceTranslator with(org.apache.commons.lang3.text.translate.CharSequenceTranslator... translators) {
+		org.apache.commons.lang3.text.translate.CharSequenceTranslator[] newArray = new org.apache.commons.lang3.text.translate.CharSequenceTranslator[(translators.length) + 1];
+		newArray[0] = this;
+		java.lang.System.arraycopy(translators, 0, newArray, 1, translators.length);
+		return new org.apache.commons.lang3.text.translate.AggregateTranslator(newArray);
+	}
+
+	public static java.lang.String hex(int codepoint) {
+		return java.lang.Integer.toHexString(codepoint).toUpperCase(java.util.Locale.ENGLISH);
+	}
+}
+2019-04-14 20:02:30,779 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-14 20:02:30,779 ERROR main - Undo Error: original: 
+public abstract class CharSequenceTranslator {
+	public abstract int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException;
+
+	public final java.lang.String translate(java.lang.CharSequence input) {
+		if (input == null) {
+			return null;
+		}
+		try {
+			java.io.StringWriter writer = new java.io.StringWriter(((input.length()) * 2));
+			translate(input, writer);
+			return writer.toString();
+		} catch (java.io.IOException ioe) {
+			throw new java.lang.RuntimeException(ioe);
+		}
+	}
+
+	public final void translate(java.lang.CharSequence input, java.io.Writer out) throws java.io.IOException {
+		if (out == null) {
+			throw new java.lang.IllegalArgumentException("The Writer must not be null");
+		}
+		if (input == null) {
+			return ;
+		}
+		int sz = java.lang.Character.codePointCount(input, 0, input.length());
+		for (int i = 0; i < sz; i++) {
+			int consumed = translate(input, i, out);
+			if (consumed == 0) {
+				out.write(java.lang.Character.toChars(java.lang.Character.codePointAt(input, i)));
+			}else {
+				for (int j = 0; j < consumed; j++)
+					if (i < (sz - 2))
+						i += java.lang.Character.charCount(java.lang.Character.codePointAt(input, i));
+					else {
+						i++;
+					}
+				
+				i--;
+			}
+		}
+	}
+
+	public final org.apache.commons.lang3.text.translate.CharSequenceTranslator with(org.apache.commons.lang3.text.translate.CharSequenceTranslator... translators) {
+		org.apache.commons.lang3.text.translate.CharSequenceTranslator[] newArray = new org.apache.commons.lang3.text.translate.CharSequenceTranslator[(translators.length) + 1];
+		newArray[0] = this;
+		java.lang.System.arraycopy(translators, 0, newArray, 1, translators.length);
+		return new org.apache.commons.lang3.text.translate.AggregateTranslator(newArray);
+	}
+
+	public static java.lang.String hex(int codepoint) {
+		return java.lang.Integer.toHexString(codepoint).toUpperCase(java.util.Locale.ENGLISH);
+	}
+}
+2019-04-14 20:02:30,779 ERROR main - Undo Error: modified: 
+public abstract class CharSequenceTranslator {
+	public abstract int translate(java.lang.CharSequence input, int index, java.io.Writer out) throws java.io.IOException;
+
+	public final java.lang.String translate(java.lang.CharSequence input) {
+		if (input == null) {
+			return null;
+		}
+		try {
+			java.io.StringWriter writer = new java.io.StringWriter(((input.length()) * 2));
+			translate(input, writer);
+			return writer.toString();
+		} catch (java.io.IOException ioe) {
+			throw new java.lang.RuntimeException(ioe);
+		}
+	}
+
+	public final void translate(java.lang.CharSequence input, java.io.Writer out) throws java.io.IOException {
+		if (out == null) {
+			throw new java.lang.IllegalArgumentException("The Writer must not be null");
+		}
+		if (input == null) {
+			return ;
+		}
+		int sz = java.lang.Character.codePointCount(input, 0, input.length());
+		for (int i = 0; i < sz; i++) {
+			int consumed = translate(input, i, out);
+			if (consumed == 0) {
+				out.write(java.lang.Character.toChars(java.lang.Character.codePointAt(input, i)));
+			}else {
+				for (int j = 0; j < consumed; j++)
+					if (i < (sz - 2))
+						i += java.lang.Character.charCount(java.lang.Character.codePointAt(input, i));
+					else
+						i++;
+					
+				
+				i--;
+			}
+		}
+	}
+
+	public final org.apache.commons.lang3.text.translate.CharSequenceTranslator with(org.apache.commons.lang3.text.translate.CharSequenceTranslator... translators) {
+		org.apache.commons.lang3.text.translate.CharSequenceTranslator[] newArray = new org.apache.commons.lang3.text.translate.CharSequenceTranslator[(translators.length) + 1];
+		newArray[0] = this;
+		java.lang.System.arraycopy(translators, 0, newArray, 1, translators.length);
+		return new org.apache.commons.lang3.text.translate.AggregateTranslator(newArray);
+	}
+
+	public static java.lang.String hex(int codepoint) {
+		return java.lang.Integer.toHexString(codepoint).toUpperCase(java.util.Locale.ENGLISH);
+	}
+}
+2019-04-14 20:10:17,427 INFO main - Time Repair Loop (s): 780.506
+2019-04-14 20:10:17,427 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-14 20:10:17,427 INFO main - 
+successful_ing_attempts (0): []
+2019-04-14 20:10:17,428 INFO main - 
+failing_ing_attempts (600): [0, 5, 2, 19, 1, 19, 1, 1, 12, 7, 14, 0, 0, 0, 81, 0, 6, 0, 43, 0, 8, 0, 117, 0, 0, 11, 1, 13, 8, 3, 11, 11, 13, 3, 16, 4, 0, 11, 6, 10, 8, 0, 0, 0, 0, 18, 8, 1, 0, 55, 14, 15, 0, 0, 5, 0, 21, 3, 0, 9, 17, 0, 1, 0, 3, 35, 0, 14, 18, 1, 0, 26, 18, 1, 5, 5, 3, 3, 15, 9, 14, 2, 6, 5, 0, 1, 36, 10, 0, 8, 26, 18, 6, 0, 0, 4, 0, 12, 17, 0, 4, 1, 2, 5, 0, 1, 0, 1, 3, 0, 0, 5, 22, 36, 1, 0, 3, 4, 1, 5, 5, 0, 15, 2, 0, 0, 6, 6, 13, 6, 1, 0, 63, 35, 4, 0, 2, 4, 2, 0, 14, 10, 11, 5, 0, 0, 1, 0, 6, 5, 3, 1, 0, 9, 2, 13, 0, 2, 8, 0, 0, 2, 109, 1, 1, 1, 0, 3, 1, 8, 1, 8, 1, 7, 4, 0, 16, 18, 0, 1, 7, 0, 0, 16, 1, 0, 9, 4, 50, 2, 0, 6, 0, 4, 49, 0, 5, 11, 5, 0, 0, 39, 0, 6, 10, 1, 9, 1, 0, 20, 41, 5, 19, 13, 0, 19, 7, 0, 0, 8, 4, 2, 4, 7, 0, 19, 2, 13, 4, 3, 3, 1, 38, 0, 10, 0, 8, 16, 13, 0, 0, 1, 12, 0, 1, 40, 7, 0, 5, 30, 9, 4, 9, 8, 0, 246, 24, 46, 0, 28, 0, 30, 0, 12, 24, 7, 5, 0, 35, 36, 0, 0, 18, 2, 57, 13, 2, 0, 2, 9, 0, 0, 0, 14, 29, 1, 0, 0, 3, 8, 0, 6, 2, 2, 0, 6, 17, 0, 2, 0, 5, 1, 3, 2, 9, 0, 2, 0, 2, 36, 1, 3, 12, 1, 0, 2, 37, 2, 74, 3, 2, 9, 0, 2, 5, 47, 0, 19, 0, 0, 1, 4, 14, 2, 13, 15, 5, 3, 3, 0, 5, 8, 2, 0, 1, 10, 0, 0, 0, 4, 7, 8, 0, 6, 2, 2, 11, 3, 4, 2, 3, 84, 24, 10, 77, 27, 0, 1, 4, 15, 2, 4, 18, 2, 0, 0, 6, 51, 163, 1, 17, 0, 0, 0, 8, 77, 0, 0, 5, 0, 2, 10, 13, 6, 10, 0, 0, 3, 0, 8, 2, 5, 6, 11, 16, 13, 3, 7, 0, 27, 3, 0, 1, 2, 13, 1, 12, 1, 0, 24, 2, 4, 0, 30, 1, 0, 11, 4, 5, 0, 5, 8, 11, 5, 0, 6, 3, 0, 130, 2, 2, 16, 0, 0, 3, 0, 0, 0, 7, 0, 11, 13, 27, 1, 143, 1, 13, 0, 1, 14, 7, 38, 0, 2, 11, 7, 2, 3, 26, 8, 3, 1, 7, 8, 1, 4, 6, 6, 13, 7, 13, 3, 2, 4, 2, 0, 4, 102, 0, 24, 8, 1, 0, 1, 0, 0, 7, 0, 11, 63, 1, 1, 1, 2, 2, 3, 0, 5, 2, 4, 11, 1, 3, 2, 48, 8, 3, 10, 9, 1, 74, 1, 1, 19, 10, 10, 15, 9, 1, 0, 0, 3, 77, 0, 0, 0, 0, 0, 5, 2, 0, 0, 0, 2, 2, 7, 19, 2, 28, 12, 0, 3, 1, 8, 6, 1, 9, 14, 10, 15, 0, 0, 0, 3, 0, 77, 36, 7, 0, 6, 0, 1, 20, 9, 4, 2, 0, 8, 0, 12, 5, 2, 13, 14, 0, 0, 6, 0, 2, 6, 1, 0, 17, 6, 3, 0, 7, 0, 0, 22]
+2019-04-14 20:10:17,428 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 847.987
+[DONE]
