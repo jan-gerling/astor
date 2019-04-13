@@ -38,17 +38,21 @@ for currenttest in $tests; do
 	
 	#compile and current build test case
 	buildOutputFile="$resultsDir/$currenttest-build-output.txt"
-	testErrorString="Tests in error"
-	testErrorEndString="Tests run"
+	testErrorString="Tests in error:"
+	testErrorString1="Tests failed:"
+	testErrorEndString="Tests run:"
 
 	cd $fullPath
 	mvn clean compile test |& tee "$buildOutputFile"
 	cd $2
 	
 	#analyze build output
-	if  [ -f "$buildOutputFile" ] && (grep -q "$testErrorString" "$buildOutputFile" || ); then
+	if  [ -f "$buildOutputFile" ] && grep -q "$testErrorString" "$buildOutputFile"; then
 		echo -e "[\e[34mInfo\e[39m]: $currenttest failed to build with test error:" |& tee -a "$runSummary"
-		awk '/"error:/,0' "$buildOutputFile" |& tee -a "$runSummary"
+		awk '/"$testErrorString"/,"$testErrorEndString"' "$buildOutputFile" |& tee -a "$runSummary"
+	elif  [ -f "$buildOutputFile" ] && grep -q "$testErrorString2" "$buildOutputFile"; then
+		echo -e "[\e[34mInfo\e[39m]: $currenttest failed to build with test error:" |& tee -a "$runSummary"
+		awk '/"$testErrorString2"/,"$testErrorEndString"' "$buildOutputFile" |& tee -a "$runSummary"
 	else 
 		echo -e "[\e[31mFAILURE\e[39m]: $currenttest was not build properly with a failing test!" |& tee -a "$runSummary"
 	fi	
