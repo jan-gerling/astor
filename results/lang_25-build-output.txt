@@ -64,9 +64,9 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.700 s
-[INFO] Finished at: 2019-04-13T19:13:40+00:00
-[INFO] Final Memory: 28M/710M
+[INFO] Total time: 7.153 s
+[INFO] Finished at: 2019-04-14T13:40:43+00:00
+[INFO] Final Memory: 28M/716M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.1:testCompile (default-testCompile) on project commons-lang3: Compilation failure
 [ERROR] /home/jan_gerling/astor/defect4j_tests/lang_25/src/test/java/org/apache/commons/lang3/reflect/TypeUtilsTest.java:[507,40] error: incompatible types: inferred type does not conform to upper bound(s)
