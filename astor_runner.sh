@@ -93,7 +93,7 @@ for currenttest in $tests; do
 			if  [ ! -f "$outputFile" ] || ! grep -q "[DONE]" "$outputFile" ; then
 				echo -e "[\e[34mRUN\e[39m] $runname" |& tee -a "$runSummary"
 			
-				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -failing "&failing" -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -maxtime $maxTime -stopfirst true &> "$outputFile"
+				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -failing "$failing" -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -maxtime $maxTime -stopfirst true &> "$outputFile"
 				echo "[DONE]" >> "$outputFile"
 				echo -e "[\e[34mDONE\e[39m]: $runname is finished!" |& tee -a "$runSummary"
 			else
