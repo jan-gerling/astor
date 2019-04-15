@@ -40,8 +40,11 @@ for currenttest in $tests; do
 	buildOutputFile="$resultsDir/$currenttest-build-output.txt"
 	testErrorString="Tests in error:"
 	testErrorString2="Tests failed:"
+	testErrorString3="Failed tests:"
+	
 
 	cd $fullPath
+	echo -e "[\e[34mCompile\e[39m] Compiling test $currenttest \n"
 	mvn clean compile test &> "$buildOutputFile"
 	cd $2
 	
@@ -52,11 +55,14 @@ for currenttest in $tests; do
 	elif  [ -f "$buildOutputFile" ] && grep -q "$testErrorString2" "$buildOutputFile"; then
 		echo -e "[\e[34mInfo\e[39m]: $currenttest failed to build with test error:" |& tee -a "$runSummary"
 		awk '/Tests failed:/,/Tests run:/' "$buildOutputFile" |& tee -a "$runSummary"
+	elif  [ -f "$buildOutputFile" ] && grep -q "$testErrorString3" "$buildOutputFile"; then
+		echo -e "[\e[34mInfo\e[39m]: $currenttest failed to build with test error:" |& tee -a "$runSummary"
+		awk '/Failed tests:/,/Tests run:/' "$buildOutputFile" |& tee -a "$runSummary"
 	else 
 		echo -e "[\e[31mFAILURE\e[39m]: $currenttest was not build properly with a failing test!" |& tee -a "$runSummary"
 	fi	
 	
-	mvn dependency:build-classpath -B | egrep -v "(^\[INFO\]|^\[WARNING\])" | tee /tmp/astor-classpath.txt
+	mvn dependency:build-classpath -B | egrep -v "(^\[INFO\]|^\[WARNING\])" &> /tmp/astor-classpath.txt
 	
 	# iterate over all of the three modes
 	for mode in ${modes[@]}; do
