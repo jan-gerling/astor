@@ -14,19 +14,6 @@ junitPath="./examples/libs/junit-4.4.jar"
 jvmPath="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin"
 tests=$(ls $1)
 
-testTimeMap=(
-["time_01"]="org.joda.time.TestPartial_Constructors::testConstructorEx7_TypeArray_intArray"
-["time_02"]="org.joda.time.TestPartial_Basics::testWith_baseAndArgHaveNoRange"
-["time_03"]="org.joda.time.TestMutableDateTime_Adds::testAddYears_int_dstOverlapWinter_addZero"
-["time_04"]="org.joda.time.TestPartial_Basics::testWith3"
-["time_05"]="org.joda.time.TestPeriod_Basics::testNormalizedStandard_periodType_months1"
-["time_07"]="org.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_feb29_newYork_startOfYear"
-["time_08"]="org.joda.time.TestDateTimeZone::testForOffsetHoursMinutes_int_int"
-["time_09"]="org.joda.time.TestDateTimeZone::testForOffsetHoursMinutes_int_int"
-["time_10"]="org.joda.time.TestDays::testFactory_daysBetween_RPartial_MonthDay"
-["time_11"]="org.joda.time.tz.TestCompiler::testDateTimeZoneBuilder" )
-
-
 date=$(date '+%d-%m-%Y-%H-%M-%S');
 runSummary=$resultsDir"/summary-"$date".txt"
 
@@ -53,8 +40,7 @@ for currenttest in $tests; do
 	buildOutputFile="$resultsDir/$currenttest-build-output.txt"
 	testErrorString="Tests in error:"
 	testErrorString2="Tests failed:"
-	testErrorString3="Failed tests:"
-	
+	testErrorString3="Failed tests:"	
 
 	cd $fullPath
 	echo -e "[\e[34mCompile\e[39m] Compiling test $currenttest \n"
@@ -87,13 +73,12 @@ for currenttest in $tests; do
 			successString="Found Solution"
 			summaryString="----SUMMARY_EXECUTION---"
 			exceptionString="Exception in thread"
-			failing="${testTimeMap["$currenttest"]}"
 			
 			# check if this test was already run with the current configuration
 			if  [ ! -f "$outputFile" ] || ! grep -q "[DONE]" "$outputFile" ; then
 				echo -e "[\e[34mRUN\e[39m] $runname" |& tee -a "$runSummary"
 			
-				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -failing "$failing" -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -maxtime $maxTime -stopfirst true &> "$outputFile"
+				java -cp $(cat /tmp/astor-classpath.txt):target/classes fr.inria.main.evolution.AstorMain -jvm4testexecution $jvmPath -mode $mode -scope $scope -srcjavafolder /src/java/ -srctestfolder /src/test/ -binjavafolder /target/classes/ -bintestfolder /target/test-classes/ -location $fullPath -dependencies $junitPath -flthreshold $treshold -maxtime $maxTime -stopfirst true &> "$outputFile"
 				echo "[DONE]" >> "$outputFile"
 				echo -e "[\e[34mDONE\e[39m]: $runname is finished!" |& tee -a "$runSummary"
 			else
