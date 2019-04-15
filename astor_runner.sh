@@ -71,7 +71,6 @@ for currenttest in $tests; do
 			runname="$currenttest-$mode-$scope"
 			outputFile="$resultsDir/$runname.txt"
 			successString="Found Solution"
-			summaryString="----SUMMARY_EXECUTION---"
 			exceptionString="Exception in thread"
 			
 			# check if this test was already run with the current configuration
@@ -88,13 +87,13 @@ for currenttest in $tests; do
 			# quickly analyse the output for the summary
 			if  [ -f "$outputFile" ] && grep -q "$successString" "$outputFile" ; then
 				echo -e "[\e[32mSUCCESS\e[39m]: $runname found a fix!" |& tee -a "$runSummary"
-				awk '/$summaryString/,0' "$outputFile" |& tee -a "$runSummary"
+				awk '/----SUMMARY_EXECUTION---/,0' "$outputFile" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "$exceptionString" "$outputFile" ; then				
 				echo -e "[\e[31m[EXCEPTION\e[39m]: $runname had an exception: $exceptionInfo" |& tee -a "$runSummary"
 				awk '/Exception in thread "main"/,0' "$outputFile" |& tee -a "$runSummary"
 			elif [ -f "$outputFile" ] && grep -q "SUMMARY_EXECUTION" "$outputFile" ; then
 				echo -e "[\e[33m[WARNING\e[39m]: $runname did not find a fix!" |& tee -a "$runSummary"
-				awk '/$summaryString/,0' "$outputFile" |& tee -a "$runSummary"	 		
+				awk '/----SUMMARY_EXECUTION---/,0' "$outputFile" |& tee -a "$runSummary"	 		
 			else 
 				echo -e "[\e[31mFAILURE\e[39m]: $runname did not finish properly!" |& tee -a "$runSummary"
 			fi
