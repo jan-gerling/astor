@@ -1,0 +1,18 @@
+[INFO] start run at 15-04-2019-10-11-23
+[[35mBUILD[39m] astor in /home/jan_gerling/astor/
+[[34mInfo[39m]: lang_25 failed to build with test error:
+Failed tests: 
+  testISO8859_1_ESCAPE(org.apache.commons.lang3.text.translate.EntityArraysTest)
+
+Tests run: 1811, Failures: 1, Errors: 0, Skipped: 0
+[[34mRUN[39m] lang_25-jmutrepair-package
+[[34mDONE[39m]: lang_25-jmutrepair-package is finished!
+[[33m[WARNING[39m]: lang_25-jmutrepair-package did not find a fix!
+
+
+[[34mRUN[39m] lang_25-jkali-package
+[[34mDONE[39m]: lang_25-jkali-package is finished!
+[[33m[WARNING[39m]: lang_25-jkali-package did not find a fix!
+
+
+[[34mRUN[39m] lang_25-jgenprog-package

@@ -1,0 +1,285 @@
+[INFO] start run at 16-04-2019-05-51-16
+[[35mBUILD[39m] astor in /home/jan_gerling/astor/
+[[34mInfo[39m]: math_51 failed to build with test error:
+Tests in error: 
+  testIssue631(org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest): illegal state: maximal count (3,624) exceeded: evaluations
+
+Tests run: 2922, Failures: 1, Errors: 1, Skipped: 1
+[[35mSKIP[39m]: math_51-jmutrepair-package was already done!
+[[33m[WARNING[39m]: math_51-jmutrepair-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-15 20:28:32,856 INFO main - 
+successful_ing_attempts (0): []
+2019-04-15 20:28:32,856 INFO main - 
+failing_ing_attempts (535): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-15 20:28:32,856 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6310.581
+[DONE]
+
+
+[[35mSKIP[39m]: math_51-jkali-package was already done!
+[[31mFAILURE[39m]: math_51-jkali-package did not finish properly!
+
+
+[[34mRUN[39m] math_51-jgenprog-package
+[[34mDONE[39m]: math_51-jgenprog-package is finished!
+[[31m[EXCEPTION[39m]: math_51-jgenprog-package had an exception: 
+Exception in thread "main" spoon.SpoonException: cannot insert a statement before a super or this invocation.
+	at spoon.support.reflect.code.CtStatementImpl.insertBefore(CtStatementImpl.java:73)
+	at spoon.support.reflect.code.CtStatementImpl.insertBefore(CtStatementImpl.java:61)
+	at spoon.support.reflect.code.CtInvocationImpl.insertBefore(CtInvocationImpl.java:93)
+	at fr.inria.astor.approaches.jgenprog.operators.InsertBeforeOp.applyChangesInModel(InsertBeforeOp.java:24)
+	at fr.inria.astor.core.entities.OperatorInstance.applyModification(OperatorInstance.java:196)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.applyNewMutationOperationToSpoonElement(JGenProg.java:270)
+	at fr.inria.astor.core.loop.AstorCoreEngine.applyNewOperationsToVariantModel(AstorCoreEngine.java:789)
+	at fr.inria.astor.core.loop.AstorCoreEngine.createNewProgramVariant(AstorCoreEngine.java:481)
+	at fr.inria.astor.core.loop.AstorCoreEngine.processGenerations(AstorCoreEngine.java:248)
+	at fr.inria.astor.core.loop.AstorCoreEngine.startEvolution(AstorCoreEngine.java:132)
+	at fr.inria.main.evolution.AstorMain.run(AstorMain.java:513)
+	at fr.inria.main.evolution.AstorMain.execute(AstorMain.java:571)
+	at fr.inria.main.evolution.AstorMain.main(AstorMain.java:550)
+[DONE]
+
+
+[[34mInfo[39m]: math_52 failed to build with test error:
+Failed tests: 
+  testIssue639(org.apache.commons.math.geometry.euclidean.threed.RotationTest): expected:<0.6228370359608201> but was:<NaN>
+  checkMissingFastMathClasses(org.apache.commons.math.util.FastMathTest): FastMath should implement all StrictMath methods
+
+Tests run: 2899, Failures: 2, Errors: 0, Skipped: 1
+[[34mRUN[39m] math_52-jmutrepair-package
+[[34mDONE[39m]: math_52-jmutrepair-package is finished!
+[[31m[EXCEPTION[39m]: math_52-jmutrepair-package had an exception: 
+Exception in thread "main" java.lang.IllegalStateException: Variant without any modification point. It must have at least one.
+	at fr.inria.astor.approaches.jgenprog.JGenProg.initializePopulation(JGenProg.java:183)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.initPopulation(JGenProg.java:73)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.createInitialPopulation(JGenProg.java:50)
+	at fr.inria.main.evolution.AstorMain.createEngine(AstorMain.java:215)
+	at fr.inria.main.evolution.AstorMain.run(AstorMain.java:498)
+	at fr.inria.main.evolution.AstorMain.execute(AstorMain.java:571)
+	at fr.inria.main.evolution.AstorMain.main(AstorMain.java:550)
+[DONE]
+
+
+[[34mRUN[39m] math_52-jkali-package
+[[34mDONE[39m]: math_52-jkali-package is finished!
+[[33m[WARNING[39m]: math_52-jkali-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-16 06:07:02,398 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 06:07:02,398 INFO main - 
+failing_ing_attempts (2): [0, 0]
+2019-04-16 06:07:02,398 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 215.489
+[DONE]
+
+
+[[34mRUN[39m] math_52-jgenprog-package
+[[34mDONE[39m]: math_52-jgenprog-package is finished!
+[[33m[WARNING[39m]: math_52-jgenprog-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-16 06:29:32,419 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 06:29:32,419 INFO main - 
+failing_ing_attempts (533): [11, 4, 0, 14, 17, 9, 0, 2, 7, 2, 15, 0, 2, 13, 4, 0, 2, 2, 7, 13, 15, 44, 0, 0, 3, 6, 1, 0, 6, 16, 12, 0, 30, 7, 9, 0, 2, 7, 1, 5, 0, 1, 0, 0, 3, 8, 26, 15, 3, 16, 1, 26, 10, 0, 4, 0, 4, 0, 10, 2, 17, 16, 12, 1, 0, 4, 29, 0, 21, 23, 0, 11, 12, 7, 0, 0, 26, 1, 2, 1, 5, 4, 3, 4, 9, 5, 0, 11, 0, 3, 17, 17, 0, 0, 1, 5, 9, 4, 0, 38, 9, 16, 25, 3, 4, 1, 3, 3, 1, 20, 4, 0, 1, 0, 0, 19, 11, 7, 1, 3, 17, 8, 0, 14, 1, 28, 1, 8, 0, 11, 6, 0, 0, 0, 0, 4, 0, 3, 0, 1, 2, 3, 1, 1, 5, 4, 13, 2, 9, 6, 3, 0, 13, 4, 5, 19, 2, 44, 10, 13, 4, 29, 0, 4, 3, 8, 25, 6, 3, 0, 20, 1, 1, 12, 0, 4, 6, 0, 7, 0, 2, 4, 3, 0, 3, 5, 1, 3, 1, 2, 2, 10, 0, 7, 0, 5, 0, 0, 9, 8, 0, 1, 4, 2, 1, 8, 6, 3, 2, 29, 12, 5, 2, 0, 2, 0, 21, 11, 0, 4, 1, 9, 0, 4, 0, 1, 11, 15, 3, 6, 0, 4, 0, 0, 7, 18, 2, 17, 15, 0, 0, 19, 5, 0, 3, 15, 21, 0, 4, 4, 8, 0, 1, 4, 1, 2, 7, 3, 0, 9, 0, 0, 2, 0, 1, 6, 0, 10, 3, 18, 0, 19, 3, 3, 7, 5, 3, 3, 6, 4, 3, 0, 0, 2, 7, 11, 0, 11, 1, 11, 11, 15, 4, 5, 4, 16, 15, 4, 1, 8, 0, 13, 0, 4, 0, 4, 1, 10, 0, 0, 0, 3, 2, 0, 22, 0, 8, 0, 6, 0, 6, 44, 0, 1, 9, 9, 24, 0, 1, 0, 7, 6, 9, 0, 7, 0, 5, 2, 0, 7, 9, 7, 2, 5, 2, 1, 9, 0, 0, 0, 1, 6, 9, 3, 0, 4, 7, 0, 2, 6, 5, 32, 4, 4, 16, 10, 10, 3, 5, 1, 0, 7, 16, 0, 12, 7, 27, 5, 22, 11, 0, 0, 9, 10, 2, 0, 4, 6, 6, 1, 3, 0, 11, 2, 4, 17, 1, 5, 0, 7, 0, 0, 4, 0, 0, 0, 0, 5, 4, 0, 11, 0, 0, 5, 3, 16, 0, 5, 11, 4, 14, 10, 1, 7, 3, 10, 2, 16, 1, 7, 3, 0, 11, 0, 0, 1, 0, 20, 0, 4, 0, 5, 8, 0, 1, 8, 0, 1, 2, 2, 0, 10, 2, 4, 12, 0, 15, 8, 7, 0, 7, 0, 4, 11, 0, 0, 0, 5, 11, 0, 3, 2, 5, 16, 1, 3, 0, 18, 2, 5, 1, 0, 9, 0, 3, 7, 0, 5, 0, 3, 7, 0, 3, 3, 2, 0, 0, 9, 0, 11, 8, 0, 7, 4, 0, 7, 7, 1, 1, 0, 0, 0, 0, 0, 0, 2, 9, 2, 3, 14, 1, 10, 2, 29, 0, 0, 2, 0, 0, 2, 7, 5, 12]
+2019-04-16 06:29:32,420 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 1349.472
+[DONE]
+
+
+[[34mInfo[39m]: math_53 failed to build with test error:
+Failed tests: 
+  checkMissingFastMathClasses(org.apache.commons.math.util.FastMathTest): FastMath should implement all StrictMath methods
+  testAddNaN(org.apache.commons.math.complex.ComplexTest)
+
+Tests run: 2506, Failures: 2, Errors: 0, Skipped: 1
+[[34mRUN[39m] math_53-jmutrepair-package
+[[34mDONE[39m]: math_53-jmutrepair-package is finished!
+[[33m[WARNING[39m]: math_53-jmutrepair-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-16 08:14:37,095 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 08:14:37,095 INFO main - 
+failing_ing_attempts (347): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-16 08:14:37,095 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6273.484
+[DONE]
+
+
+[[34mRUN[39m] math_53-jkali-package
+[[34mDONE[39m]: math_53-jkali-package is finished!
+[[33m[WARNING[39m]: math_53-jkali-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-16 10:05:10,485 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 10:05:10,485 INFO main - 
+failing_ing_attempts (269): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-16 10:05:10,485 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6631.781
+[DONE]
+
+
+[[34mRUN[39m] math_53-jgenprog-package
+[[34mDONE[39m]: math_53-jgenprog-package is finished!
+[[33m[WARNING[39m]: math_53-jgenprog-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-16 11:59:48,608 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 11:59:48,608 INFO main - 
+failing_ing_attempts (435): [14, 0, 8, 2, 4, 0, 5, 2, 8, 0, 5, 24, 6, 3, 1, 0, 3, 2, 4, 3, 3, 22, 0, 10, 3, 0, 0, 1, 0, 2, 1, 2, 0, 0, 3, 2, 10, 4, 1, 1, 43, 1, 3, 6, 2, 0, 8, 1, 0, 0, 3, 1, 3, 0, 1, 1, 6, 5, 3, 1, 1, 0, 0, 4, 1, 0, 0, 7, 21, 28, 0, 6, 1, 3, 4, 0, 0, 0, 0, 3, 6, 7, 18, 6, 1, 0, 31, 2, 1, 6, 5, 0, 2, 5, 4, 0, 23, 10, 0, 4, 6, 0, 0, 10, 20, 0, 8, 2, 0, 10, 8, 21, 0, 39, 10, 1, 12, 0, 6, 0, 2, 3, 15, 3, 3, 0, 2, 14, 2, 2, 0, 0, 3, 3, 0, 10, 12, 1, 13, 7, 1, 2, 4, 4, 0, 0, 0, 1, 0, 1, 10, 1, 10, 4, 4, 1, 19, 3, 0, 0, 3, 1, 1, 10, 14, 3, 1, 5, 1, 33, 0, 3, 3, 9, 33, 8, 4, 4, 3, 2, 0, 1, 11, 3, 4, 0, 0, 18, 6, 2, 2, 4, 3, 0, 1, 1, 3, 5, 4, 10, 0, 1, 14, 12, 7, 6, 0, 8, 43, 9, 8, 0, 0, 0, 10, 0, 2, 0, 3, 2, 0, 1, 7, 14, 5, 3, 3, 2, 1, 3, 0, 5, 0, 3, 4, 2, 18, 0, 1, 0, 12, 0, 15, 6, 1, 0, 12, 4, 5, 1, 10, 1, 4, 15, 1, 3, 0, 2, 0, 10, 7, 0, 1, 0, 2, 0, 2, 6, 1, 6, 2, 6, 6, 1, 2, 6, 12, 13, 0, 7, 2, 3, 0, 14, 33, 0, 0, 3, 1, 1, 1, 11, 8, 19, 0, 8, 4, 1, 0, 11, 14, 5, 6, 8, 5, 1, 2, 2, 0, 0, 7, 0, 9, 8, 15, 0, 0, 4, 22, 4, 2, 12, 6, 4, 17, 0, 6, 2, 1, 0, 7, 0, 17, 2, 5, 1, 9, 0, 1, 4, 5, 3, 1, 6, 3, 36, 1, 5, 0, 2, 2, 17, 7, 0, 0, 0, 0, 7, 4, 4, 3, 2, 2, 13, 1, 13, 2, 3, 6, 6, 6, 6, 0, 3, 1, 0, 0, 0, 2, 2, 0, 17, 18, 10, 6, 13, 20, 0, 0, 2, 1, 4, 1, 0, 5, 1, 0, 1, 0, 3, 1, 2, 2, 2, 7, 5, 3, 0, 17, 3, 0, 1, 5, 0, 2, 3, 3, 3, 0, 2, 2, 14, 10, 46, 11, 13, 2, 10, 6, 64, 1, 2, 0, 3, 6]
+2019-04-16 11:59:48,608 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6876.237
+[DONE]
+
+
+[[34mInfo[39m]: math_54 failed to build with test error:
+Failed tests: 
+  testIssue567(org.apache.commons.math.dfp.DfpTest): expected:<0.0> but was:<-Infinity>
+  checkMissingFastMathClasses(org.apache.commons.math.util.FastMathTest): FastMath should implement all StrictMath methods
+
+Tests run: 2401, Failures: 2, Errors: 0, Skipped: 1
+[[34mRUN[39m] math_54-jmutrepair-package
+[[34mDONE[39m]: math_54-jmutrepair-package is finished!
+[[33m[WARNING[39m]: math_54-jmutrepair-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-16 12:15:38,780 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 12:15:38,780 INFO main - 
+failing_ing_attempts (3): [0, 0, 0]
+2019-04-16 12:15:38,780 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 812.531
+[DONE]
+
+
+[[34mRUN[39m] math_54-jkali-package
+[[34mDONE[39m]: math_54-jkali-package is finished!
+[[33m[WARNING[39m]: math_54-jkali-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-16 12:40:26,044 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 12:40:26,044 INFO main - 
+failing_ing_attempts (68): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-16 12:40:26,044 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 1485.342
+[DONE]
+
+
+[[34mRUN[39m] math_54-jgenprog-package
+[[34mDONE[39m]: math_54-jgenprog-package is finished!
+[[33m[WARNING[39m]: math_54-jgenprog-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-16 14:19:57,612 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 14:19:57,612 INFO main - 
+failing_ing_attempts (600): [3, 10, 8, 3, 5, 13, 13, 2, 11, 15, 5, 2, 26, 2, 0, 15, 1, 0, 7, 1, 7, 4, 0, 2, 0, 2, 1, 10, 6, 1, 1, 0, 1, 3, 1, 1, 0, 0, 8, 15, 0, 9, 1, 0, 1, 20, 8, 3, 0, 30, 3, 15, 4, 2, 1, 1, 5, 2, 1, 6, 1, 16, 5, 0, 3, 11, 0, 2, 4, 4, 60, 1, 2, 0, 0, 1, 7, 5, 13, 23, 5, 3, 0, 4, 2, 10, 1, 2, 0, 0, 2, 3, 0, 6, 8, 2, 1, 0, 1, 1, 4, 2, 2, 0, 5, 0, 2, 9, 0, 4, 6, 4, 0, 0, 3, 0, 1, 2, 0, 2, 0, 1, 8, 4, 0, 3, 0, 1, 6, 0, 1, 0, 21, 6, 2, 0, 17, 3, 11, 0, 0, 2, 17, 0, 3, 5, 0, 19, 0, 4, 15, 2, 7, 1, 0, 0, 9, 1, 0, 3, 2, 1, 7, 6, 4, 1, 0, 12, 5, 0, 7, 3, 1, 4, 7, 15, 9, 5, 1, 0, 2, 0, 6, 0, 16, 0, 25, 1, 2, 1, 2, 2, 2, 9, 2, 2, 0, 2, 7, 2, 1, 1, 1, 0, 6, 1, 1, 2, 1, 3, 0, 2, 14, 18, 11, 0, 0, 2, 0, 2, 2, 0, 6, 0, 4, 1, 16, 0, 1, 28, 2, 0, 12, 7, 2, 0, 0, 10, 5, 1, 0, 1, 0, 2, 3, 2, 0, 1, 11, 0, 2, 13, 1, 0, 0, 1, 0, 1, 0, 1, 3, 4, 5, 4, 2, 3, 2, 2, 0, 0, 0, 2, 5, 2, 34, 1, 4, 2, 5, 5, 8, 4, 0, 1, 2, 0, 8, 10, 0, 11, 1, 0, 2, 2, 0, 2, 2, 2, 6, 18, 16, 8, 4, 0, 4, 7, 0, 0, 3, 0, 0, 0, 2, 1, 0, 1, 2, 0, 2, 1, 8, 1, 3, 3, 2, 1, 16, 4, 0, 1, 2, 9, 1, 4, 6, 4, 5, 0, 0, 4, 0, 4, 0, 0, 0, 10, 1, 0, 2, 0, 1, 3, 2, 6, 7, 1, 0, 4, 1, 0, 1, 11, 1, 3, 2, 2, 2, 9, 1, 0, 5, 0, 1, 6, 6, 3, 0, 15, 5, 0, 5, 12, 0, 1, 0, 4, 0, 1, 3, 3, 1, 16, 5, 4, 0, 4, 5, 1, 0, 14, 0, 0, 1, 0, 3, 6, 0, 2, 0, 0, 24, 1, 0, 0, 1, 0, 11, 1, 1, 11, 11, 2, 3, 0, 12, 3, 2, 0, 0, 4, 3, 1, 3, 0, 4, 4, 7, 29, 0, 0, 0, 0, 0, 3, 6, 0, 5, 1, 0, 4, 1, 10, 0, 2, 2, 2, 4, 8, 9, 10, 0, 10, 0, 1, 1, 4, 5, 0, 2, 7, 0, 5, 8, 3, 0, 2, 2, 0, 0, 1, 3, 14, 9, 17, 1, 0, 3, 0, 0, 7, 0, 2, 12, 3, 0, 10, 5, 8, 10, 2, 0, 8, 4, 0, 0, 1, 9, 13, 0, 0, 5, 3, 1, 4, 0, 4, 1, 2, 3, 8, 1, 1, 2, 2, 12, 1, 1, 0, 13, 6, 5, 7, 1, 14, 0, 20, 4, 0, 6, 5, 4, 2, 2, 0, 16, 5, 0, 1, 0, 4, 14, 3, 31, 1, 0, 1, 0, 1, 0, 0, 2, 0, 2, 6, 2, 0, 0, 0, 2, 1, 6, 35, 2, 0, 0, 3, 16, 8, 0, 0, 3, 6, 7, 1, 3, 8, 4, 9, 9, 5, 5, 2, 2, 0, 0, 1, 11, 11, 3, 2]
+2019-04-16 14:19:57,612 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 5969.773
+[DONE]
+
+
+[[34mInfo[39m]: math_55 failed to build with test error:
+Failed tests: 
+  testCrossProductCancellation(org.apache.commons.math.geometry.Vector3DTest): expected:<1.0> but was:<0.0>
+  checkMissingFastMathClasses(org.apache.commons.math.util.FastMathTest): FastMath should implement all StrictMath methods
+
+Tests run: 2382, Failures: 2, Errors: 0, Skipped: 1
+[[34mRUN[39m] math_55-jmutrepair-package
+[[34mDONE[39m]: math_55-jmutrepair-package is finished!
+[[33m[WARNING[39m]: math_55-jmutrepair-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-16 16:15:15,052 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 16:15:15,052 INFO main - 
+failing_ing_attempts (189): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-16 16:15:15,052 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6786.431
+[DONE]
+
+
+[[34mRUN[39m] math_55-jkali-package
+[[34mDONE[39m]: math_55-jkali-package is finished!
+[[33m[WARNING[39m]: math_55-jkali-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-16 18:13:46,130 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 18:13:46,130 INFO main - 
+failing_ing_attempts (177): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-16 18:13:46,130 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 7108.362
+[DONE]
+
+
+[[34mRUN[39m] math_55-jgenprog-package
+[[34mDONE[39m]: math_55-jgenprog-package is finished!
+[[33m[WARNING[39m]: math_55-jgenprog-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-16 20:20:11,539 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 20:20:11,539 INFO main - 
+failing_ing_attempts (219): [1, 0, 0, 6, 7, 0, 2, 4, 0, 0, 8, 3, 9, 9, 2, 3, 2, 0, 3, 3, 22, 6, 13, 0, 19, 0, 1, 0, 4, 0, 7, 4, 4, 3, 0, 4, 0, 118, 0, 14, 3, 5, 86, 0, 0, 6, 0, 1, 3, 7, 3, 0, 0, 5, 0, 25, 28, 9, 2, 2, 1, 8, 17, 1, 0, 0, 3, 3, 3, 0, 23, 4, 5, 12, 12, 12, 2, 4, 0, 7, 3, 0, 3, 5, 6, 4, 5, 16, 0, 2, 1, 17, 1, 1, 28, 4, 5, 9, 5, 1, 1, 1, 1, 1, 2, 7, 6, 20, 2, 10, 4, 1, 1, 0, 3, 10, 0, 0, 0, 0, 4, 0, 0, 12, 3, 0, 40, 5, 0, 3, 1, 0, 1, 1, 0, 1, 0, 2, 2, 4, 11, 5, 3, 4, 0, 0, 0, 0, 3, 0, 2, 1, 0, 4, 0, 1, 3, 2, 8, 13, 5, 2, 7, 10, 2, 0, 13, 8, 0, 2, 0, 0, 0, 10, 0, 0, 3, 1, 29, 0, 17, 5, 0, 2, 4, 45, 10, 0, 3, 7, 2, 0, 0, 0, 7, 9, 24, 2, 0, 0, 0, 37, 46, 7, 11, 1, 0, 80, 1, 0, 6, 11, 1, 8, 1, 2, 0, 6, 0]
+2019-04-16 20:20:11,539 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 7582.396
+[DONE]
+
+
+[[34mInfo[39m]: math_56 failed to build with test error:
+Failed tests: 
+  testIterationConsistency(org.apache.commons.math.util.MultidimensionalCounterTest): Wrong multidimensional index for [3][2] expected:<3> but was:<2>
+  checkMissingFastMathClasses(org.apache.commons.math.util.FastMathTest): FastMath should implement all StrictMath methods
+
+Tests run: 2381, Failures: 2, Errors: 0, Skipped: 1
+[[34mRUN[39m] math_56-jmutrepair-package
+[[34mDONE[39m]: math_56-jmutrepair-package is finished!
+[[33m[WARNING[39m]: math_56-jmutrepair-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-16 21:07:04,980 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 21:07:04,980 INFO main - 
+failing_ing_attempts (26): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-16 21:07:04,980 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 2579.135
+[DONE]
+
+
+[[34mRUN[39m] math_56-jkali-package
+[[34mDONE[39m]: math_56-jkali-package is finished!
+[[33m[WARNING[39m]: math_56-jkali-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-16 21:52:56,553 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 21:52:56,553 INFO main - 
+failing_ing_attempts (38): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-16 21:52:56,553 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 2749.255
+[DONE]
+
+
+[[34mRUN[39m] math_56-jgenprog-package
+[[34mDONE[39m]: math_56-jgenprog-package is finished!
+[[33m[WARNING[39m]: math_56-jgenprog-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-16 23:57:57,207 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 23:57:57,208 INFO main - 
+failing_ing_attempts (159): [6, 5, 0, 7, 253, 1, 0, 1, 4, 13, 9, 33, 2, 2, 19, 0, 1, 0, 34, 2, 27, 2, 2, 0, 3, 5, 7, 20, 0, 1, 68, 0, 21, 14, 3, 0, 1, 5, 59, 5, 0, 2, 30, 0, 0, 4, 0, 2, 14, 2, 7, 0, 186, 0, 2, 73, 17, 0, 1, 11, 0, 4, 1, 21, 3, 0, 16, 5, 23, 1, 7, 1, 4, 7, 0, 0, 35, 1, 1, 0, 6, 4, 23, 136, 3, 1, 13, 44, 0, 15, 0, 5, 7, 2, 0, 4, 8, 3, 4, 2, 9, 19, 5, 9, 5, 33, 25, 17, 8, 18, 2, 0, 1, 15, 0, 0, 3, 30, 1, 6, 7, 0, 0, 11, 0, 7, 2, 11, 10, 0, 3, 10, 18, 1, 0, 0, 9, 40, 0, 15, 3, 9, 15, 5, 1, 8, 4, 0, 0, 43, 0, 2, 9, 0, 13, 7, 0, 38, 4]
+2019-04-16 23:57:57,208 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 7498.246
+[DONE]
+
+
+[[34mInfo[39m]: math_57 failed to build with test error:
+Failed tests: 
+  testSmallDistances(org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest)
+  checkMissingFastMathClasses(org.apache.commons.math.util.FastMathTest)
+
+Tests run: 2364, Failures: 2, Errors: 0, Skipped: 1
+[[34mRUN[39m] math_57-jmutrepair-package
+[[34mDONE[39m]: math_57-jmutrepair-package is finished!
+[[33m[WARNING[39m]: math_57-jmutrepair-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-17 02:11:26,382 INFO main - 
+successful_ing_attempts (0): []
+2019-04-17 02:11:26,382 INFO main - 
+failing_ing_attempts (95): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-17 02:11:26,383 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 7728.802
+[DONE]
+
+
+[[34mRUN[39m] math_57-jkali-package
+[[34mDONE[39m]: math_57-jkali-package is finished!
+[[33m[WARNING[39m]: math_57-jkali-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-17 04:24:25,134 INFO main - 
+successful_ing_attempts (0): []
+2019-04-17 04:24:25,134 INFO main - 
+failing_ing_attempts (120): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-17 04:24:25,134 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 7975.47
+[DONE]
+
+
+[[34mRUN[39m] math_57-jgenprog-package

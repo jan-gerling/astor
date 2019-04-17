@@ -1,0 +1,703 @@
+2019-04-17 20:37:10,441 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jkali  -scope  local  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan_gerling/astor/defect4j_tests/math_53/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-17 20:37:19,256 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_53//bin//default from 279 classes with test cases
+2019-04-17 20:37:19,259 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-17 20:37:22,786 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_53//bin//default]
+2019-04-17 20:45:29,604 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.complex.ComplexTest#testAddNaN
+2019-04-17 20:45:29,612 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.util.FastMathTest#checkMissingFastMathClasses
+2019-04-17 20:45:29,621 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2525, fails: 2, GZoltar suspicious 21881
+2019-04-17 20:45:29,907 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 1000 with susp > 0.5, we consider: 1000
+2019-04-17 20:45:29,965 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_53//src//default, compliance level: 8
+2019-04-17 20:46:13,062 INFO main - 
+---- Initial suspicious size: 1000
+2019-04-17 20:46:13,435 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.complex.Complex, methodName=org.apache.commons.math.complex.Complex{add(Lorg/apache/commons/math/complex/Complex;)Lorg/apache/commons/math/complex/Complex; 0.0, lineNumber=154, susp=0.15811388300841897]
+2019-04-17 20:46:13,509 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.random.MersenneTwister, methodName=org.apache.commons.math.random.MersenneTwister{setSeed(J)V 0.0, lineNumber=211, susp=0.09053574604251853]
+2019-04-17 20:46:13,879 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.dfp.Dfp, methodName=org.apache.commons.math.dfp.Dfp{round(I)I 0.0, lineNumber=1353, susp=0.0890870806374748]
+2019-04-17 20:46:13,920 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.dfp.Dfp, methodName=org.apache.commons.math.dfp.Dfp{round(I)I 0.0, lineNumber=1354, susp=0.0890870806374748]
+2019-04-17 20:46:14,478 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.dfp.DfpField, methodName=org.apache.commons.math.dfp.DfpField{setIEEEFlagsBits(I)V 0.0, lineNumber=329, susp=0.0890870806374748]
+2019-04-17 20:46:15,020 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.dfp.DfpField, methodName=org.apache.commons.math.dfp.DfpField{computeStringConstants(I)V 0.0, lineNumber=593, susp=0.0890870806374748]
+2019-04-17 20:46:15,307 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.random.MersenneTwister, methodName=org.apache.commons.math.random.MersenneTwister{setSeed([I)V 0.0, lineNumber=201, susp=0.0890870806374748]
+2019-04-17 20:46:15,369 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.random.MersenneTwister, methodName=org.apache.commons.math.random.MersenneTwister{setSeed(I)V 0.0, lineNumber=152, susp=0.08638684255813601]
+2019-04-17 20:46:15,817 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MathUtils, methodName=org.apache.commons.math.util.MathUtils{checkNotNull(Ljava/lang/Object;)V 0.0, lineNumber=2334, susp=0.03220783132004154]
+2019-04-17 20:46:16,028 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.SummaryStatistics, methodName=org.apache.commons.math.stat.descriptive.SummaryStatistics{addValue(D)V 0.0, lineNumber=167, susp=0.0]
+2019-04-17 20:46:16,319 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.SummaryStatistics, methodName=org.apache.commons.math.stat.descriptive.SummaryStatistics{clear()V 0.0, lineNumber=348, susp=0.0]
+2019-04-17 20:46:16,346 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.moment.GeometricMean, methodName=org.apache.commons.math.stat.descriptive.moment.GeometricMean{clear()V 0.0, lineNumber=124, susp=0.0]
+2019-04-17 20:46:16,352 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.summary.SumOfSquares, methodName=org.apache.commons.math.stat.descriptive.summary.SumOfSquares{increment(D)V 0.0, lineNumber=77, susp=0.0]
+2019-04-17 20:46:16,369 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.summary.SumOfSquares, methodName=org.apache.commons.math.stat.descriptive.summary.SumOfSquares{clear()V 0.0, lineNumber=101, susp=0.0]
+2019-04-17 20:46:17,335 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.FastMath, methodName=org.apache.commons.math.util.FastMath{split(D[D)V 0.0, lineNumber=1050, susp=0.0]
+2019-04-17 20:46:17,357 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.FastMath, methodName=org.apache.commons.math.util.FastMath{split(D[D)V 0.0, lineNumber=1055, susp=0.0]
+2019-04-17 20:46:17,599 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.FastMath, methodName=org.apache.commons.math.util.FastMath{resplit([D)V 0.0, lineNumber=1069, susp=0.0]
+2019-04-17 20:46:17,727 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.FastMath, methodName=org.apache.commons.math.util.FastMath{resplit([D)V 0.0, lineNumber=1074, susp=0.0]
+2019-04-17 20:46:17,850 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.FastMath, methodName=org.apache.commons.math.util.FastMath{splitMult([D[D[D)V 0.0, lineNumber=1087, susp=0.0]
+2019-04-17 20:46:17,973 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.FastMath, methodName=org.apache.commons.math.util.FastMath{splitAdd([D[D[D)V 0.0, lineNumber=1099, susp=0.0]
+2019-04-17 20:46:18,449 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.FastMath, methodName=org.apache.commons.math.util.FastMath{splitReciprocal([D[D)V 0.0, lineNumber=1147, susp=0.0]
+2019-04-17 20:46:19,694 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.FastMath, methodName=org.apache.commons.math.util.FastMath{quadMult([D[D[D)V 0.0, lineNumber=1201, susp=0.0]
+2019-04-17 20:46:27,779 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.FastMath, methodName=org.apache.commons.math.util.FastMath{buildSinCosTables()V 0.0, lineNumber=1965, susp=0.0]
+2019-04-17 20:46:28,099 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.moment.SecondMoment, methodName=org.apache.commons.math.stat.descriptive.moment.SecondMoment{increment(D)V 0.0, lineNumber=83, susp=0.0]
+2019-04-17 20:46:28,103 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.moment.SecondMoment, methodName=org.apache.commons.math.stat.descriptive.moment.SecondMoment{increment(D)V 0.0, lineNumber=85, susp=0.0]
+2019-04-17 20:46:28,104 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.moment.SecondMoment, methodName=org.apache.commons.math.stat.descriptive.moment.SecondMoment{clear()V 0.0, lineNumber=92, susp=0.0]
+2019-04-17 20:46:28,123 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.moment.SecondMoment, methodName=org.apache.commons.math.stat.descriptive.moment.SecondMoment{clear()V 0.0, lineNumber=94, susp=0.0]
+2019-04-17 20:46:28,201 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.ResizableDoubleArray, methodName=org.apache.commons.math.util.ResizableDoubleArray{addElement(D)V 0.0, lineNumber=308, susp=0.0]
+2019-04-17 20:46:28,231 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.ResizableDoubleArray, methodName=org.apache.commons.math.util.ResizableDoubleArray{clear()V 0.0, lineNumber=422, susp=0.0]
+2019-04-17 20:46:28,280 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.ResizableDoubleArray, methodName=org.apache.commons.math.util.ResizableDoubleArray{contract()V 0.0, lineNumber=438, susp=0.0]
+2019-04-17 20:46:28,321 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.ResizableDoubleArray, methodName=org.apache.commons.math.util.ResizableDoubleArray{expand()V 0.0, lineNumber=541, susp=0.0]
+2019-04-17 20:46:28,360 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Ljava/lang/String;DDD)V 0.0, lineNumber=64, susp=0.0]
+2019-04-17 20:46:28,360 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Ljava/lang/String;DDD)V 0.0, lineNumber=64, susp=0.0]
+2019-04-17 20:46:28,360 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Ljava/lang/String;DDD)V 0.0, lineNumber=68, susp=0.0]
+2019-04-17 20:46:28,360 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Ljava/lang/String;DDD)V 0.0, lineNumber=68, susp=0.0]
+2019-04-17 20:46:28,360 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Ljava/lang/String;DDD)V 0.0, lineNumber=70, susp=0.0]
+2019-04-17 20:46:28,360 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Ljava/lang/String;DDD)V 0.0, lineNumber=70, susp=0.0]
+2019-04-17 20:46:28,360 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{setUp()V 0.0, lineNumber=51, susp=0.0]
+2019-04-17 20:46:28,360 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{setUp()V 0.0, lineNumber=51, susp=0.0]
+2019-04-17 20:46:28,360 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{setUp()V 0.0, lineNumber=52, susp=0.0]
+2019-04-17 20:46:28,360 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{setUp()V 0.0, lineNumber=52, susp=0.0]
+2019-04-17 20:46:28,361 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{setUp()V 0.0, lineNumber=53, susp=0.0]
+2019-04-17 20:46:28,361 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{setUp()V 0.0, lineNumber=53, susp=0.0]
+2019-04-17 20:46:28,361 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{setUp()V 0.0, lineNumber=55, susp=0.0]
+2019-04-17 20:46:28,361 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{setUp()V 0.0, lineNumber=55, susp=0.0]
+2019-04-17 20:46:28,361 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{setUp()V 0.0, lineNumber=56, susp=0.0]
+2019-04-17 20:46:28,361 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{setUp()V 0.0, lineNumber=56, susp=0.0]
+2019-04-17 20:46:28,361 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=59, susp=0.0]
+2019-04-17 20:46:28,361 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=59, susp=0.0]
+2019-04-17 20:46:28,361 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=62, susp=0.0]
+2019-04-17 20:46:28,361 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=62, susp=0.0]
+2019-04-17 20:46:28,361 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=63, susp=0.0]
+2019-04-17 20:46:28,361 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=63, susp=0.0]
+2019-04-17 20:46:28,361 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=65, susp=0.0]
+2019-04-17 20:46:28,361 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=65, susp=0.0]
+2019-04-17 20:46:28,361 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=66, susp=0.0]
+2019-04-17 20:46:28,361 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=66, susp=0.0]
+2019-04-17 20:46:28,361 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=71, susp=0.0]
+2019-04-17 20:46:28,361 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=71, susp=0.0]
+2019-04-17 20:46:28,361 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=74, susp=0.0]
+2019-04-17 20:46:28,361 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=74, susp=0.0]
+2019-04-17 20:46:28,361 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=75, susp=0.0]
+2019-04-17 20:46:28,361 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=75, susp=0.0]
+2019-04-17 20:46:28,361 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=76, susp=0.0]
+2019-04-17 20:46:28,361 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=76, susp=0.0]
+2019-04-17 20:46:28,362 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=78, susp=0.0]
+2019-04-17 20:46:28,362 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=78, susp=0.0]
+2019-04-17 20:46:28,362 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=79, susp=0.0]
+2019-04-17 20:46:28,362 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=79, susp=0.0]
+2019-04-17 20:46:28,362 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=80, susp=0.0]
+2019-04-17 20:46:28,362 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=80, susp=0.0]
+2019-04-17 20:46:28,362 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=81, susp=0.0]
+2019-04-17 20:46:28,362 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=81, susp=0.0]
+2019-04-17 20:46:28,362 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=83, susp=0.0]
+2019-04-17 20:46:28,362 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=83, susp=0.0]
+2019-04-17 20:46:28,362 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=84, susp=0.0]
+2019-04-17 20:46:28,362 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=84, susp=0.0]
+2019-04-17 20:46:28,362 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=85, susp=0.0]
+2019-04-17 20:46:28,362 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=85, susp=0.0]
+2019-04-17 20:46:28,362 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=86, susp=0.0]
+2019-04-17 20:46:28,362 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=86, susp=0.0]
+2019-04-17 20:46:28,362 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=89, susp=0.0]
+2019-04-17 20:46:28,362 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=89, susp=0.0]
+2019-04-17 20:46:28,362 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=92, susp=0.0]
+2019-04-17 20:46:28,382 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=92, susp=0.0]
+2019-04-17 20:46:28,382 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=93, susp=0.0]
+2019-04-17 20:46:28,382 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=93, susp=0.0]
+2019-04-17 20:46:28,382 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=96, susp=0.0]
+2019-04-17 20:46:28,382 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{loadData()V 0.0, lineNumber=96, susp=0.0]
+2019-04-17 20:46:28,382 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getMaximumAbsoluteError()D 0.0, lineNumber=101, susp=0.0]
+2019-04-17 20:46:28,382 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getMaximumAbsoluteError()D 0.0, lineNumber=101, susp=0.0]
+2019-04-17 20:46:28,383 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{tearDown()V 0.0, lineNumber=106, susp=0.0]
+2019-04-17 20:46:28,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{tearDown()V 0.0, lineNumber=106, susp=0.0]
+2019-04-17 20:46:28,383 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{tearDown()V 0.0, lineNumber=107, susp=0.0]
+2019-04-17 20:46:28,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{tearDown()V 0.0, lineNumber=107, susp=0.0]
+2019-04-17 20:46:28,383 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{tearDown()V 0.0, lineNumber=109, susp=0.0]
+2019-04-17 20:46:28,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{tearDown()V 0.0, lineNumber=109, susp=0.0]
+2019-04-17 20:46:28,383 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{tearDown()V 0.0, lineNumber=110, susp=0.0]
+2019-04-17 20:46:28,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{tearDown()V 0.0, lineNumber=110, susp=0.0]
+2019-04-17 20:46:28,383 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{tearDown()V 0.0, lineNumber=112, susp=0.0]
+2019-04-17 20:46:28,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{tearDown()V 0.0, lineNumber=112, susp=0.0]
+2019-04-17 20:46:28,383 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{tearDown()V 0.0, lineNumber=113, susp=0.0]
+2019-04-17 20:46:28,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{tearDown()V 0.0, lineNumber=113, susp=0.0]
+2019-04-17 20:46:28,383 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{tearDown()V 0.0, lineNumber=114, susp=0.0]
+2019-04-17 20:46:28,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{tearDown()V 0.0, lineNumber=114, susp=0.0]
+2019-04-17 20:46:28,383 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=118, susp=0.0]
+2019-04-17 20:46:28,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=118, susp=0.0]
+2019-04-17 20:46:28,383 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=119, susp=0.0]
+2019-04-17 20:46:28,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=119, susp=0.0]
+2019-04-17 20:46:28,383 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=121, susp=0.0]
+2019-04-17 20:46:28,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=121, susp=0.0]
+2019-04-17 20:46:28,383 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=122, susp=0.0]
+2019-04-17 20:46:28,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=122, susp=0.0]
+2019-04-17 20:46:28,383 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=123, susp=0.0]
+2019-04-17 20:46:28,383 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=123, susp=0.0]
+2019-04-17 20:46:28,384 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=124, susp=0.0]
+2019-04-17 20:46:28,384 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=124, susp=0.0]
+2019-04-17 20:46:28,384 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=125, susp=0.0]
+2019-04-17 20:46:28,384 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=125, susp=0.0]
+2019-04-17 20:46:28,384 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=128, susp=0.0]
+2019-04-17 20:46:28,384 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=128, susp=0.0]
+2019-04-17 20:46:28,384 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=129, susp=0.0]
+2019-04-17 20:46:28,384 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=129, susp=0.0]
+2019-04-17 20:46:28,384 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=130, susp=0.0]
+2019-04-17 20:46:28,384 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=130, susp=0.0]
+2019-04-17 20:46:28,384 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=131, susp=0.0]
+2019-04-17 20:46:28,384 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=131, susp=0.0]
+2019-04-17 20:46:28,384 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=132, susp=0.0]
+2019-04-17 20:46:28,384 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=132, susp=0.0]
+2019-04-17 20:46:28,384 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=134, susp=0.0]
+2019-04-17 20:46:28,384 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=134, susp=0.0]
+2019-04-17 20:46:28,384 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=135, susp=0.0]
+2019-04-17 20:46:28,384 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{testCertifiedValues()V 0.0, lineNumber=135, susp=0.0]
+2019-04-17 20:46:28,384 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=141, susp=0.0]
+2019-04-17 20:46:28,384 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=141, susp=0.0]
+2019-04-17 20:46:28,384 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=142, susp=0.0]
+2019-04-17 20:46:28,385 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=142, susp=0.0]
+2019-04-17 20:46:28,385 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=143, susp=0.0]
+2019-04-17 20:46:28,385 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=143, susp=0.0]
+2019-04-17 20:46:28,385 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=144, susp=0.0]
+2019-04-17 20:46:28,385 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=144, susp=0.0]
+2019-04-17 20:46:28,385 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=145, susp=0.0]
+2019-04-17 20:46:28,385 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=145, susp=0.0]
+2019-04-17 20:46:28,385 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=146, susp=0.0]
+2019-04-17 20:46:28,385 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=146, susp=0.0]
+2019-04-17 20:46:28,385 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=147, susp=0.0]
+2019-04-17 20:46:28,385 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=147, susp=0.0]
+2019-04-17 20:46:28,385 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=157, susp=0.0]
+2019-04-17 20:46:28,385 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=157, susp=0.0]
+2019-04-17 20:46:28,385 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=158, susp=0.0]
+2019-04-17 20:46:28,385 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.data.CertifiedDataAbstractTest, methodName=org.apache.commons.math.stat.data.CertifiedDataAbstractTest{getProperty(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Double; 0.0, lineNumber=158, susp=0.0]
+2019-04-17 20:46:28,482 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.moment.Variance, methodName=org.apache.commons.math.stat.descriptive.moment.Variance{clear()V 0.0, lineNumber=197, susp=0.0]
+2019-04-17 20:46:28,676 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.moment.FirstMoment, methodName=org.apache.commons.math.stat.descriptive.moment.FirstMoment{increment(D)V 0.0, lineNumber=110, susp=0.0]
+2019-04-17 20:46:28,700 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.moment.FirstMoment, methodName=org.apache.commons.math.stat.descriptive.moment.FirstMoment{clear()V 0.0, lineNumber=121, susp=0.0]
+2019-04-17 20:46:28,704 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.summary.Sum, methodName=org.apache.commons.math.stat.descriptive.summary.Sum{increment(D)V 0.0, lineNumber=78, susp=0.0]
+2019-04-17 20:46:28,707 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.summary.Sum, methodName=org.apache.commons.math.stat.descriptive.summary.Sum{clear()V 0.0, lineNumber=102, susp=0.0]
+2019-04-17 20:46:28,793 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.rank.Min, methodName=org.apache.commons.math.stat.descriptive.rank.Min{increment(D)V 0.0, lineNumber=80, susp=0.0]
+2019-04-17 20:46:28,795 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.rank.Min, methodName=org.apache.commons.math.stat.descriptive.rank.Min{clear()V 0.0, lineNumber=89, susp=0.0]
+2019-04-17 20:46:28,866 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.DescriptiveStatistics, methodName=org.apache.commons.math.stat.descriptive.DescriptiveStatistics{addValue(D)V 0.0, lineNumber=170, susp=0.0]
+2019-04-17 20:46:28,926 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.DescriptiveStatistics, methodName=org.apache.commons.math.stat.descriptive.DescriptiveStatistics{clear()V 0.0, lineNumber=301, susp=0.0]
+2019-04-17 20:46:28,989 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.rank.Percentile, methodName=org.apache.commons.math.stat.descriptive.rank.Percentile{setQuantile(D)V 0.0, lineNumber=468, susp=0.0]
+2019-04-17 20:46:28,993 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.rank.Max, methodName=org.apache.commons.math.stat.descriptive.rank.Max{increment(D)V 0.0, lineNumber=80, susp=0.0]
+2019-04-17 20:46:28,995 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.rank.Max, methodName=org.apache.commons.math.stat.descriptive.rank.Max{clear()V 0.0, lineNumber=89, susp=0.0]
+2019-04-17 20:46:29,023 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.summary.SumOfLogs, methodName=org.apache.commons.math.stat.descriptive.summary.SumOfLogs{increment(D)V 0.0, lineNumber=86, susp=0.0]
+2019-04-17 20:46:29,025 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.descriptive.summary.SumOfLogs, methodName=org.apache.commons.math.stat.descriptive.summary.SumOfLogs{clear()V 0.0, lineNumber=110, susp=0.0]
+2019-04-17 20:46:29,027 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.FractionField$LazyHolder, methodName=org.apache.commons.math.fraction.FractionField$LazyHolder{access$000()Lorg/apache/commons/math/fraction/FractionField; 0.0, lineNumber=64, susp=0.0]
+2019-04-17 20:46:29,074 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.exception.util.ExceptionContext, methodName=org.apache.commons.math.exception.util.ExceptionContext{addMessage(Lorg/apache/commons/math/exception/util/Localizable;[Ljava/lang/Object;)V 0.0, lineNumber=68, susp=0.0]
+2019-04-17 20:46:29,522 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MathUtils, methodName=org.apache.commons.math.util.MathUtils{gcd(II)I 0.0, lineNumber=919, susp=0.0]
+2019-04-17 20:46:29,765 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractFieldMatrix, methodName=org.apache.commons.math.linear.AbstractFieldMatrix{buildArray(Lorg/apache/commons/math/Field;II)[[Lorg/apache/commons/math/FieldElement; 0.0, lineNumber=144, susp=0.0]
+2019-04-17 20:46:29,983 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals([Lorg/apache/commons/math/FieldElement;[Lorg/apache/commons/math/FieldElement;)V 0.0, lineNumber=326, susp=0.0]
+2019-04-17 20:46:29,983 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals([Lorg/apache/commons/math/FieldElement;[Lorg/apache/commons/math/FieldElement;)V 0.0, lineNumber=326, susp=0.0]
+2019-04-17 20:46:29,983 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals([Lorg/apache/commons/math/FieldElement;[Lorg/apache/commons/math/FieldElement;)V 0.0, lineNumber=329, susp=0.0]
+2019-04-17 20:46:29,983 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals([Lorg/apache/commons/math/FieldElement;[Lorg/apache/commons/math/FieldElement;)V 0.0, lineNumber=329, susp=0.0]
+2019-04-17 20:46:29,983 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals([Lorg/apache/commons/math/FieldElement;[Lorg/apache/commons/math/FieldElement;)V 0.0, lineNumber=330, susp=0.0]
+2019-04-17 20:46:29,983 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals([Lorg/apache/commons/math/FieldElement;[Lorg/apache/commons/math/FieldElement;)V 0.0, lineNumber=330, susp=0.0]
+2019-04-17 20:46:29,983 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals([Lorg/apache/commons/math/FieldElement;[Lorg/apache/commons/math/FieldElement;)V 0.0, lineNumber=332, susp=0.0]
+2019-04-17 20:46:29,983 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals([Lorg/apache/commons/math/FieldElement;[Lorg/apache/commons/math/FieldElement;)V 0.0, lineNumber=332, susp=0.0]
+2019-04-17 20:46:30,176 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.Array2DRowFieldMatrix, methodName=org.apache.commons.math.linear.Array2DRowFieldMatrix{setSubMatrix([[Lorg/apache/commons/math/FieldElement;II)V 0.0, lineNumber=341, susp=0.0]
+2019-04-17 20:46:30,178 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.Array2DRowFieldMatrix, methodName=org.apache.commons.math.linear.Array2DRowFieldMatrix{setSubMatrix([[Lorg/apache/commons/math/FieldElement;II)V 0.0, lineNumber=345, susp=0.0]
+2019-04-17 20:46:30,325 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.Array2DRowFieldMatrix, methodName=org.apache.commons.math.linear.Array2DRowFieldMatrix{copyIn([[Lorg/apache/commons/math/FieldElement;)V 0.0, lineNumber=588, susp=0.0]
+2019-04-17 20:46:30,344 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.FractionField, methodName=org.apache.commons.math.fraction.FractionField{getZero()Ljava/lang/Object; 0.0, lineNumber=33, susp=0.0]
+2019-04-17 20:46:30,544 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.Fraction, methodName=org.apache.commons.math.fraction.Fraction{multiply(Lorg/apache/commons/math/fraction/Fraction;)Lorg/apache/commons/math/fraction/Fraction; 0.0, lineNumber=545, susp=0.0]
+2019-04-17 20:46:30,549 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.Fraction, methodName=org.apache.commons.math.fraction.Fraction{multiply(Lorg/apache/commons/math/fraction/Fraction;)Lorg/apache/commons/math/fraction/Fraction; 0.0, lineNumber=546, susp=0.0]
+2019-04-17 20:46:31,432 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.Fraction, methodName=org.apache.commons.math.fraction.Fraction{getField()Lorg/apache/commons/math/Field; 0.0, lineNumber=37, susp=0.0]
+2019-04-17 20:46:31,893 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.Fraction, methodName=org.apache.commons.math.fraction.Fraction{multiply(Ljava/lang/Object;)Ljava/lang/Object; 0.0, lineNumber=37, susp=0.0]
+2019-04-17 20:46:32,091 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.Fraction, methodName=org.apache.commons.math.fraction.Fraction{add(Ljava/lang/Object;)Ljava/lang/Object; 0.0, lineNumber=37, susp=0.0]
+2019-04-17 20:46:32,399 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractFieldMatrix, methodName=org.apache.commons.math.linear.AbstractFieldMatrix{checkRowIndex(I)V 0.0, lineNumber=1009, susp=0.0]
+2019-04-17 20:46:32,441 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractFieldMatrix, methodName=org.apache.commons.math.linear.AbstractFieldMatrix{checkColumnIndex(I)V 0.0, lineNumber=1022, susp=0.0]
+2019-04-17 20:46:32,463 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractFieldMatrix, methodName=org.apache.commons.math.linear.AbstractFieldMatrix{checkMultiplicationCompatible(Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=1122, susp=0.0]
+2019-04-17 20:46:33,663 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.Array2DRowFieldMatrix, methodName=org.apache.commons.math.linear.Array2DRowFieldMatrix{setEntry(IILorg/apache/commons/math/FieldElement;)V 0.0, lineNumber=363, susp=0.0]
+2019-04-17 20:46:33,715 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.FractionField, methodName=org.apache.commons.math.fraction.FractionField{getOne()Ljava/lang/Object; 0.0, lineNumber=33, susp=0.0]
+2019-04-17 20:46:33,770 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.Fraction, methodName=org.apache.commons.math.fraction.Fraction{addSub(Lorg/apache/commons/math/fraction/Fraction;Z)Lorg/apache/commons/math/fraction/Fraction; 0.0, lineNumber=495, susp=0.0]
+2019-04-17 20:46:33,788 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.Fraction, methodName=org.apache.commons.math.fraction.Fraction{addSub(Lorg/apache/commons/math/fraction/Fraction;Z)Lorg/apache/commons/math/fraction/Fraction; 0.0, lineNumber=496, susp=0.0]
+2019-04-17 20:46:33,790 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.Fraction, methodName=org.apache.commons.math.fraction.Fraction{addSub(Lorg/apache/commons/math/fraction/Fraction;Z)Lorg/apache/commons/math/fraction/Fraction; 0.0, lineNumber=497, susp=0.0]
+2019-04-17 20:46:33,813 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.Fraction, methodName=org.apache.commons.math.fraction.Fraction{addSub(Lorg/apache/commons/math/fraction/Fraction;Z)Lorg/apache/commons/math/fraction/Fraction; 0.0, lineNumber=503, susp=0.0]
+2019-04-17 20:46:33,817 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.Fraction, methodName=org.apache.commons.math.fraction.Fraction{addSub(Lorg/apache/commons/math/fraction/Fraction;Z)Lorg/apache/commons/math/fraction/Fraction; 0.0, lineNumber=505, susp=0.0]
+2019-04-17 20:46:33,875 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.Fraction, methodName=org.apache.commons.math.fraction.Fraction{addSub(Lorg/apache/commons/math/fraction/Fraction;Z)Lorg/apache/commons/math/fraction/Fraction; 0.0, lineNumber=519, susp=0.0]
+2019-04-17 20:46:34,056 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.Fraction, methodName=org.apache.commons.math.fraction.Fraction{divide(Ljava/lang/Object;)Ljava/lang/Object; 0.0, lineNumber=37, susp=0.0]
+2019-04-17 20:46:34,216 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.fraction.Fraction, methodName=org.apache.commons.math.fraction.Fraction{subtract(Ljava/lang/Object;)Ljava/lang/Object; 0.0, lineNumber=37, susp=0.0]
+2019-04-17 20:46:34,274 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractFieldMatrix, methodName=org.apache.commons.math.linear.AbstractFieldMatrix{checkRowIndex(I)V 0.0, lineNumber=1007, susp=0.0]
+2019-04-17 20:46:34,302 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractFieldMatrix, methodName=org.apache.commons.math.linear.AbstractFieldMatrix{checkAdditionCompatible(Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=1092, susp=0.0]
+2019-04-17 20:46:34,325 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractFieldMatrix, methodName=org.apache.commons.math.linear.AbstractFieldMatrix{checkAdditionCompatible(Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=1090, susp=0.0]
+2019-04-17 20:46:34,348 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractFieldMatrix, methodName=org.apache.commons.math.linear.AbstractFieldMatrix{checkAdditionCompatible(Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=1094, susp=0.0]
+2019-04-17 20:46:34,521 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=273, susp=0.0]
+2019-04-17 20:46:34,521 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=273, susp=0.0]
+2019-04-17 20:46:34,521 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=275, susp=0.0]
+2019-04-17 20:46:34,521 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=275, susp=0.0]
+2019-04-17 20:46:34,521 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=276, susp=0.0]
+2019-04-17 20:46:34,521 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=276, susp=0.0]
+2019-04-17 20:46:34,521 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=286, susp=0.0]
+2019-04-17 20:46:34,521 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=286, susp=0.0]
+2019-04-17 20:46:34,522 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=287, susp=0.0]
+2019-04-17 20:46:34,522 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=287, susp=0.0]
+2019-04-17 20:46:34,522 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=288, susp=0.0]
+2019-04-17 20:46:34,522 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=288, susp=0.0]
+2019-04-17 20:46:34,522 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=289, susp=0.0]
+2019-04-17 20:46:34,522 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=289, susp=0.0]
+2019-04-17 20:46:34,522 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=290, susp=0.0]
+2019-04-17 20:46:34,522 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=290, susp=0.0]
+2019-04-17 20:46:34,524 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=293, susp=0.0]
+2019-04-17 20:46:34,524 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.TestUtils, methodName=org.apache.commons.math.TestUtils{assertEquals(Lorg/apache/commons/math/linear/FieldMatrix;Lorg/apache/commons/math/linear/FieldMatrix;)V 0.0, lineNumber=293, susp=0.0]
+2019-04-17 20:46:34,729 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractFieldMatrix, methodName=org.apache.commons.math.linear.AbstractFieldMatrix{power(I)Lorg/apache/commons/math/linear/FieldMatrix; 0.0, lineNumber=297, susp=0.0]
+2019-04-17 20:46:34,969 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractFieldMatrix, methodName=org.apache.commons.math.linear.AbstractFieldMatrix{power(I)Lorg/apache/commons/math/linear/FieldMatrix; 0.0, lineNumber=322, susp=0.0]
+2019-04-17 20:46:35,212 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractFieldMatrix, methodName=org.apache.commons.math.linear.AbstractFieldMatrix{checkSubMatrixIndex(IIII)V 0.0, lineNumber=1051, susp=0.0]
+2019-04-17 20:46:35,213 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.DefaultFieldMatrixPreservingVisitor, methodName=org.apache.commons.math.linear.DefaultFieldMatrixPreservingVisitor{start(IIIIII)V 0.0, lineNumber=48, susp=0.0]
+2019-04-17 20:46:35,214 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.DefaultFieldMatrixChangingVisitor, methodName=org.apache.commons.math.linear.DefaultFieldMatrixChangingVisitor{start(IIIIII)V 0.0, lineNumber=48, susp=0.0]
+2019-04-17 20:46:35,446 INFO main - Total suspicious from FL: 1000,  854
+2019-04-17 20:46:35,452 INFO main - Total ModPoint created: 854
+2019-04-17 20:46:35,452 INFO main - Creating program variant #1, [Variant id: 1, #gens: 854, #ops: 0, parent:-]
+2019-04-17 20:52:21,041 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-17 20:52:21,043 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-17 20:52:21,043 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-17 20:52:21,064 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-17 20:52:21,064 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-17 20:52:21,069 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-17 20:52:21,069 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-17 20:52:21,071 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-17 20:52:21,071 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-17 20:52:21,071 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-17 20:52:21,071 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-17 20:52:21,071 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-17 20:52:21,072 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-17 20:52:21,072 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jkali
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /home/jan_gerling/astor/defect4j_tests/math_53/
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-17 20:52:21,074 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= local
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-17 20:52:21,075 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-17 20:52:21,077 INFO main - mod_point ModificPoint=Complex line: 152, el: CtInvocationImpl
+2019-04-17 20:52:21,078 INFO main - -->op: RemoveOp: `org.apache.commons.math.u[...] ` ---> `-` at pos 0 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 20:53:08,379 INFO main - mod_point ModificPoint=Complex line: 153, el: CtReturnImpl
+2019-04-17 20:53:08,380 INFO main - -->op: RemoveOp: `return createComplex(((re[...] ` ---> `-` at pos 1 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 20:53:13,345 INFO main - mod_point ModificPoint=Complex line: 319, el: CtReturnImpl
+2019-04-17 20:53:13,361 INFO main - -->op: RemoveOp: `return isNaN ` ---> `-` at pos 0 of parent `{ 	return isNaN; }`
+2019-04-17 20:53:17,734 INFO main - mod_point ModificPoint=MersenneTwister line: 210, el: CtInvocationImpl
+2019-04-17 20:53:17,734 INFO main - -->op: RemoveOp: `setSeed(new int[]{ ((int)[...] ` ---> `-` at pos 0 of parent `{ 	setSeed(new int[]{ ((i[...]`
+2019-04-17 20:53:37,808 INFO main - mod_point ModificPoint=Dfp line: 642, el: CtReturnImpl
+2019-04-17 20:53:37,809 INFO main - -->op: RemoveOp: `return field.getRadixDigi[...] ` ---> `-` at pos 0 of parent `{ 	return field.getRadixD[...]`
+2019-04-17 20:53:40,612 INFO main - mod_point ModificPoint=Dfp line: 1334, el: CtLocalVariableImpl
+2019-04-17 20:53:40,625 INFO main - -->op: RemoveOp: `boolean inc = false ` ---> `-` at pos 0 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 20:53:43,339 INFO main - mod_point ModificPoint=Dfp line: 1335, el: CtSwitchImpl
+2019-04-17 20:53:43,364 INFO main - -->op: RemoveOp: `switch (field.getRounding[...] ` ---> `-` at pos 1 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 20:54:21,378 INFO main - mod_point ModificPoint=Dfp line: 1370, el: CtIfImpl
+2019-04-17 20:54:21,380 INFO main - -->op: ReplaceIfBooleanOp: `if (inc) { 	int rh = 1; 	[...] ` ---> `if (true) { 	int rh = 1; [...]` at pos 2 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 20:54:33,961 INFO main - mod_point ModificPoint=Dfp line: 1370, el: CtIfImpl
+2019-04-17 20:54:33,962 INFO main - -->op: ReplaceIfBooleanOp: `if (inc) { 	int rh = 1; 	[...] ` ---> `if (false) { 	int rh = 1;[...]` at pos 2 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 20:55:12,948 INFO main - mod_point ModificPoint=Dfp line: 1370, el: CtIfImpl
+2019-04-17 20:55:12,949 INFO main - -->op: RemoveOp: `if (inc) { 	int rh = 1; 	[...] ` ---> `-` at pos 2 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 20:55:50,928 INFO main - mod_point ModificPoint=Dfp line: 1372, el: CtLocalVariableImpl
+2019-04-17 20:55:50,928 INFO main - -->op: RemoveOp: `int rh = 1 ` ---> `-` at pos 0 of parent `{ 	int rh = 1; 	for (int [...]`
+2019-04-17 20:55:54,509 INFO main - mod_point ModificPoint=Dfp line: 1373, el: CtForImpl
+2019-04-17 20:55:54,510 INFO main - -->op: RemoveOp: `for (int i = 0; i < (mant[...] ` ---> `-` at pos 1 of parent `{ 	int rh = 1; 	for (int [...]`
+2019-04-17 20:57:59,682 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-17 20:57:59,683 INFO main - mod_point ModificPoint=Dfp line: 1374, el: CtLocalVariableImpl
+2019-04-17 20:57:59,683 INFO main - -->op: RemoveOp: `final int r = (mant[i]) +[...] ` ---> `-` at pos 0 of parent `{ 	final int r = (mant[i][...]`
+2019-04-17 20:58:02,452 INFO main - mod_point ModificPoint=Dfp line: 1375, el: CtAssignmentImpl
+2019-04-17 20:58:02,453 INFO main - -->op: RemoveOp: `rh = r / (org.apache.comm[...] ` ---> `-` at pos 1 of parent `{ 	final int r = (mant[i][...]`
+2019-04-17 21:00:05,690 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-17 21:00:05,691 INFO main - mod_point ModificPoint=Dfp line: 1376, el: CtAssignmentImpl
+2019-04-17 21:00:05,691 INFO main - -->op: RemoveOp: `mant[i] = r - (rh * (org.[...] ` ---> `-` at pos 2 of parent `{ 	final int r = (mant[i][...]`
+2019-04-17 21:00:49,034 INFO main - mod_point ModificPoint=Dfp line: 1379, el: CtIfImpl
+2019-04-17 21:00:49,035 INFO main - -->op: ReplaceIfBooleanOp: `if (rh != 0) { 	shiftRigh[...] ` ---> `if (true) { 	shiftRight()[...]` at pos 2 of parent `{ 	int rh = 1; 	for (int [...]`
+2019-04-17 21:00:57,912 INFO main - mod_point ModificPoint=Dfp line: 1379, el: CtIfImpl
+2019-04-17 21:00:57,912 INFO main - -->op: ReplaceIfBooleanOp: `if (rh != 0) { 	shiftRigh[...] ` ---> `if (false) { 	shiftRight([...]` at pos 2 of parent `{ 	int rh = 1; 	for (int [...]`
+2019-04-17 21:01:38,597 INFO main - mod_point ModificPoint=Dfp line: 1379, el: CtIfImpl
+2019-04-17 21:01:38,598 INFO main - -->op: RemoveOp: `if (rh != 0) { 	shiftRigh[...] ` ---> `-` at pos 2 of parent `{ 	int rh = 1; 	for (int [...]`
+2019-04-17 21:02:21,017 INFO main - mod_point ModificPoint=Dfp line: 1386, el: CtIfImpl
+2019-04-17 21:02:21,018 INFO main - -->op: ReplaceIfBooleanOp: `if ((exp) < (org.apache.c[...] ` ---> `if (true) { 	field.setIEE[...]` at pos 3 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 21:03:06,802 INFO main - mod_point ModificPoint=Dfp line: 1386, el: CtIfImpl
+2019-04-17 21:03:06,803 INFO main - -->op: ReplaceIfBooleanOp: `if ((exp) < (org.apache.c[...] ` ---> `if (false) { 	field.setIE[...]` at pos 3 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 21:03:49,950 INFO main - mod_point ModificPoint=Dfp line: 1386, el: CtIfImpl
+2019-04-17 21:03:49,951 INFO main - -->op: RemoveOp: `if ((exp) < (org.apache.c[...] ` ---> `-` at pos 3 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 21:04:31,842 INFO main - mod_point ModificPoint=Dfp line: 1392, el: CtIfImpl
+2019-04-17 21:04:31,843 INFO main - -->op: ReplaceIfBooleanOp: `if ((exp) > (org.apache.c[...] ` ---> `if (true) { 	field.setIEE[...]` at pos 4 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 21:04:40,499 INFO main - mod_point ModificPoint=Dfp line: 1392, el: CtIfImpl
+2019-04-17 21:04:40,500 INFO main - -->op: ReplaceIfBooleanOp: `if ((exp) > (org.apache.c[...] ` ---> `if (false) { 	field.setIE[...]` at pos 4 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 21:05:23,297 INFO main - mod_point ModificPoint=Dfp line: 1392, el: CtIfImpl
+2019-04-17 21:05:23,298 INFO main - -->op: RemoveOp: `if ((exp) > (org.apache.c[...] ` ---> `-` at pos 4 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 21:06:06,155 INFO main - mod_point ModificPoint=Dfp line: 1398, el: CtIfImpl
+2019-04-17 21:06:06,156 INFO main - -->op: ReplaceIfBooleanOp: `if (n != 0) { 	field.setI[...] ` ---> `if (true) { 	field.setIEE[...]` at pos 5 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 21:06:49,624 INFO main - mod_point ModificPoint=Dfp line: 1398, el: CtIfImpl
+2019-04-17 21:06:49,625 INFO main - -->op: ReplaceIfBooleanOp: `if (n != 0) { 	field.setI[...] ` ---> `if (false) { 	field.setIE[...]` at pos 5 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 21:07:31,478 INFO main - mod_point ModificPoint=Dfp line: 1398, el: CtIfImpl
+2019-04-17 21:07:31,482 INFO main - -->op: RemoveOp: `if (n != 0) { 	field.setI[...] ` ---> `-` at pos 5 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 21:08:14,567 INFO main - mod_point ModificPoint=Dfp line: 1400, el: CtInvocationImpl
+2019-04-17 21:08:14,568 INFO main - -->op: RemoveOp: `field.setIEEEFlagsBits(or[...] ` ---> `-` at pos 0 of parent `{ 	field.setIEEEFlagsBits[...]`
+2019-04-17 21:08:57,393 INFO main - mod_point ModificPoint=Dfp line: 1401, el: CtReturnImpl
+2019-04-17 21:08:57,393 INFO main - -->op: RemoveOp: `return org.apache.commons[...] ` ---> `-` at pos 1 of parent `{ 	field.setIEEEFlagsBits[...]`
+2019-04-17 21:09:39,074 INFO main - mod_point ModificPoint=Dfp line: 1404, el: CtReturnImpl
+2019-04-17 21:09:39,075 INFO main - -->op: RemoveOp: `return 0 ` ---> `-` at pos 6 of parent `{ 	boolean inc = false; 	[...]`
+2019-04-17 21:09:41,160 INFO main - mod_point ModificPoint=DfpField line: 248, el: CtReturnImpl
+2019-04-17 21:09:41,160 INFO main - -->op: RemoveOp: `return radixDigits ` ---> `-` at pos 0 of parent `{ 	return radixDigits; }`
+2019-04-17 21:09:43,245 INFO main - mod_point ModificPoint=DfpField line: 266, el: CtReturnImpl
+2019-04-17 21:09:43,246 INFO main - -->op: RemoveOp: `return rMode ` ---> `-` at pos 0 of parent `{ 	return rMode; }`
+2019-04-17 21:09:45,364 INFO main - mod_point ModificPoint=DfpField line: 328, el: CtOperatorAssignmentImpl
+2019-04-17 21:09:45,364 INFO main - -->op: RemoveOp: `ieeeFlags |= bits & ((((([...] ` ---> `-` at pos 0 of parent `{ 	ieeeFlags |= bits & (([...]`
+2019-04-17 21:10:26,877 INFO main - mod_point ModificPoint=DfpField line: 522, el: CtLocalVariableImpl
+2019-04-17 21:10:26,878 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 0 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 21:10:28,928 INFO main - mod_point ModificPoint=DfpField line: 523, el: CtLocalVariableImpl
+2019-04-17 21:10:28,929 INFO main - -->op: RemoveOp: `boolean leading = true ` ---> `-` at pos 1 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 21:10:30,809 INFO main - mod_point ModificPoint=DfpField line: 524, el: CtLocalVariableImpl
+2019-04-17 21:10:30,810 INFO main - -->op: RemoveOp: `int sp = 0 ` ---> `-` at pos 2 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 21:10:32,855 INFO main - mod_point ModificPoint=DfpField line: 525, el: CtLocalVariableImpl
+2019-04-17 21:10:32,856 INFO main - -->op: RemoveOp: `int sig = 0 ` ---> `-` at pos 3 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 21:10:34,875 INFO main - mod_point ModificPoint=DfpField line: 527, el: CtLocalVariableImpl
+2019-04-17 21:10:34,900 INFO main - -->op: RemoveOp: `char[] buf = new char[a.l[...] ` ---> `-` at pos 4 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 21:10:36,970 INFO main - mod_point ModificPoint=DfpField line: 529, el: CtForImpl
+2019-04-17 21:10:36,971 INFO main - -->op: RemoveOp: `for (int i = 0; i < (buf.[...] ` ---> `-` at pos 5 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 21:10:43,453 INFO main - mod_point ModificPoint=DfpField line: 530, el: CtAssignmentImpl
+2019-04-17 21:10:43,453 INFO main - -->op: RemoveOp: `buf[i] = a.charAt(i) ` ---> `-` at pos 0 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:10:50,003 INFO main - mod_point ModificPoint=DfpField line: 532, el: CtIfImpl
+2019-04-17 21:10:50,003 INFO main - -->op: ReplaceIfBooleanOp: `if (((buf[i]) >= '1') && [...] ` ---> `if (true) { 	leading = fa[...]` at pos 1 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:11:34,123 INFO main - mod_point ModificPoint=DfpField line: 532, el: CtIfImpl
+2019-04-17 21:11:34,123 INFO main - -->op: ReplaceIfBooleanOp: `if (((buf[i]) >= '1') && [...] ` ---> `if (false) { 	leading = f[...]` at pos 1 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:12:17,616 INFO main - mod_point ModificPoint=DfpField line: 532, el: CtIfImpl
+2019-04-17 21:12:17,616 INFO main - -->op: RemoveOp: `if (((buf[i]) >= '1') && [...] ` ---> `-` at pos 1 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:13:00,919 INFO main - mod_point ModificPoint=DfpField line: 533, el: CtAssignmentImpl
+2019-04-17 21:13:00,920 INFO main - -->op: RemoveOp: `leading = false ` ---> `-` at pos 0 of parent `{ 	leading = false; }`
+2019-04-17 21:13:44,309 INFO main - mod_point ModificPoint=DfpField line: 536, el: CtIfImpl
+2019-04-17 21:13:44,310 INFO main - -->op: ReplaceIfBooleanOp: `if ((buf[i]) == '.') { 	s[...] ` ---> `if (true) { 	sig += (400 [...]` at pos 2 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:14:26,577 INFO main - mod_point ModificPoint=DfpField line: 536, el: CtIfImpl
+2019-04-17 21:14:26,577 INFO main - -->op: ReplaceIfBooleanOp: `if ((buf[i]) == '.') { 	s[...] ` ---> `if (false) { 	sig += (400[...]` at pos 2 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:15:08,705 INFO main - mod_point ModificPoint=DfpField line: 536, el: CtIfImpl
+2019-04-17 21:15:08,706 INFO main - -->op: RemoveOp: `if ((buf[i]) == '.') { 	s[...] ` ---> `-` at pos 2 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:15:51,570 INFO main - mod_point ModificPoint=DfpField line: 537, el: CtOperatorAssignmentImpl
+2019-04-17 21:15:51,570 INFO main - -->op: RemoveOp: `sig += (400 - sig) % 4 ` ---> `-` at pos 0 of parent `{ 	sig += (400 - sig) % 4[...]`
+2019-04-17 21:16:35,858 INFO main - mod_point ModificPoint=DfpField line: 538, el: CtAssignmentImpl
+2019-04-17 21:16:35,858 INFO main - -->op: RemoveOp: `leading = false ` ---> `-` at pos 1 of parent `{ 	sig += (400 - sig) % 4[...]`
+2019-04-17 21:17:19,053 INFO main - mod_point ModificPoint=DfpField line: 541, el: CtIfImpl
+2019-04-17 21:17:19,054 INFO main - -->op: ReplaceIfBooleanOp: `if (sig == (((radixDigits[...] ` ---> `if (true) { 	sp = i; 	bre[...]` at pos 3 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:17:25,751 INFO main - mod_point ModificPoint=DfpField line: 541, el: CtIfImpl
+2019-04-17 21:17:25,751 INFO main - -->op: ReplaceIfBooleanOp: `if (sig == (((radixDigits[...] ` ---> `if (false) { 	sp = i; 	br[...]` at pos 3 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:17:32,781 INFO main - mod_point ModificPoint=DfpField line: 541, el: CtIfImpl
+2019-04-17 21:17:32,781 INFO main - -->op: RemoveOp: `if (sig == (((radixDigits[...] ` ---> `-` at pos 3 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:17:39,656 INFO main - mod_point ModificPoint=DfpField line: 542, el: CtAssignmentImpl
+2019-04-17 21:17:39,656 INFO main - -->op: RemoveOp: `sp = i ` ---> `-` at pos 0 of parent `{ 	sp = i; 	break; }`
+2019-04-17 21:17:46,269 INFO main - mod_point ModificPoint=DfpField line: 543, el: CtBreakImpl
+2019-04-17 21:17:46,269 INFO main - -->op: RemoveOp: `break ` ---> `-` at pos 1 of parent `{ 	sp = i; 	break; }`
+2019-04-17 21:18:29,910 INFO main - mod_point ModificPoint=DfpField line: 546, el: CtIfImpl
+2019-04-17 21:18:29,911 INFO main - -->op: ReplaceIfBooleanOp: `if ((((buf[i]) >= '0') &&[...] ` ---> `if (true) { 	sig++; }` at pos 4 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:19:12,954 INFO main - mod_point ModificPoint=DfpField line: 546, el: CtIfImpl
+2019-04-17 21:19:12,954 INFO main - -->op: ReplaceIfBooleanOp: `if ((((buf[i]) >= '0') &&[...] ` ---> `if (false) { 	sig++; }` at pos 4 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:19:19,693 INFO main - mod_point ModificPoint=DfpField line: 546, el: CtIfImpl
+2019-04-17 21:19:19,693 INFO main - -->op: RemoveOp: `if ((((buf[i]) >= '0') &&[...] ` ---> `-` at pos 4 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:19:26,280 INFO main - mod_point ModificPoint=DfpField line: 547, el: CtUnaryOperatorImpl
+2019-04-17 21:19:26,281 INFO main - -->op: RemoveOp: `sig++ ` ---> `-` at pos 0 of parent `{ 	sig++; }`
+2019-04-17 21:19:33,046 INFO main - mod_point ModificPoint=DfpField line: 551, el: CtAssignmentImpl
+2019-04-17 21:19:33,047 INFO main - -->op: RemoveOp: `result[0] = new org.apach[...] ` ---> `-` at pos 6 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 21:19:40,506 INFO main - mod_point ModificPoint=DfpField line: 553, el: CtForImpl
+2019-04-17 21:19:40,506 INFO main - -->op: RemoveOp: `for (int i = 0; i < (buf.[...] ` ---> `-` at pos 7 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 21:20:55,541 INFO main - mod_point ModificPoint=DfpField line: 554, el: CtAssignmentImpl
+2019-04-17 21:20:55,542 INFO main - -->op: RemoveOp: `buf[i] = a.charAt(i) ` ---> `-` at pos 0 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:21:39,961 INFO main - mod_point ModificPoint=DfpField line: 555, el: CtIfImpl
+2019-04-17 21:21:39,962 INFO main - -->op: ReplaceIfBooleanOp: `if ((((buf[i]) >= '0') &&[...] ` ---> `if (true) { 	buf[i] = '0'[...]` at pos 1 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:22:28,376 INFO main - mod_point ModificPoint=DfpField line: 555, el: CtIfImpl
+2019-04-17 21:22:28,376 INFO main - -->op: ReplaceIfBooleanOp: `if ((((buf[i]) >= '0') &&[...] ` ---> `if (false) { 	buf[i] = '0[...]` at pos 1 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:23:44,824 INFO main - mod_point ModificPoint=DfpField line: 555, el: CtIfImpl
+2019-04-17 21:23:44,824 INFO main - -->op: RemoveOp: `if ((((buf[i]) >= '0') &&[...] ` ---> `-` at pos 1 of parent `{ 	buf[i] = a.charAt(i); [...]`
+2019-04-17 21:24:59,919 INFO main - mod_point ModificPoint=DfpField line: 556, el: CtAssignmentImpl
+2019-04-17 21:24:59,919 INFO main - -->op: RemoveOp: `buf[i] = '0' ` ---> `-` at pos 0 of parent `{ 	buf[i] = '0'; }`
+2019-04-17 21:26:15,695 INFO main - mod_point ModificPoint=DfpField line: 560, el: CtAssignmentImpl
+2019-04-17 21:26:15,696 INFO main - -->op: RemoveOp: `result[1] = new org.apach[...] ` ---> `-` at pos 8 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 21:26:23,412 INFO main - mod_point ModificPoint=DfpField line: 562, el: CtReturnImpl
+2019-04-17 21:26:23,413 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 9 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 21:26:25,605 INFO main - mod_point ModificPoint=DfpField line: 570, el: CtIfImpl
+2019-04-17 21:26:25,606 INFO main - -->op: ReplaceIfBooleanOp: `if (((org.apache.commons.[...] ` ---> `if (true) { 	final org.ap[...]` at pos 0 of parent `{ 	if (((org.apache.commo[...]`
+2019-04-17 21:27:16,344 INFO main - mod_point ModificPoint=DfpField line: 570, el: CtIfImpl
+2019-04-17 21:27:16,345 INFO main - -->op: ReplaceIfBooleanOp: `if (((org.apache.commons.[...] ` ---> `if (false) { 	final org.a[...]` at pos 0 of parent `{ 	if (((org.apache.commo[...]`
+2019-04-17 21:27:22,290 INFO main - mod_point ModificPoint=DfpField line: 570, el: CtIfImpl
+2019-04-17 21:27:22,291 INFO main - -->op: RemoveOp: `if (((org.apache.commons.[...] ` ---> `-` at pos 0 of parent `{ 	if (((org.apache.commo[...]`
+2019-04-17 21:27:28,145 INFO main - mod_point ModificPoint=MersenneTwister line: 163, el: CtIfImpl
+2019-04-17 21:27:28,146 INFO main - -->op: ReplaceIfBooleanOp: `if (seed == null) { 	setS[...] ` ---> `if (true) { 	setSeed(java[...]` at pos 0 of parent `{ 	if (seed == null) { 		[...]`
+2019-04-17 21:27:34,907 INFO main - mod_point ModificPoint=MersenneTwister line: 163, el: CtIfImpl
+2019-04-17 21:27:34,908 INFO main - -->op: ReplaceIfBooleanOp: `if (seed == null) { 	setS[...] ` ---> `if (false) { 	setSeed(jav[...]` at pos 0 of parent `{ 	if (seed == null) { 		[...]`
+2019-04-17 21:28:17,422 INFO main - mod_point ModificPoint=MersenneTwister line: 163, el: CtIfImpl
+2019-04-17 21:28:17,423 INFO main - -->op: RemoveOp: `if (seed == null) { 	setS[...] ` ---> `-` at pos 0 of parent `{ 	if (seed == null) { 		[...]`
+2019-04-17 21:28:58,402 INFO main - mod_point ModificPoint=MersenneTwister line: 168, el: CtInvocationImpl
+2019-04-17 21:28:58,403 INFO main - -->op: RemoveOp: `setSeed(19650218) ` ---> `-` at pos 1 of parent `{ 	if (seed == null) { 		[...]`
+2019-04-17 21:29:41,027 INFO main - mod_point ModificPoint=MersenneTwister line: 169, el: CtLocalVariableImpl
+2019-04-17 21:29:41,028 INFO main - -->op: RemoveOp: `int i = 1 ` ---> `-` at pos 2 of parent `{ 	if (seed == null) { 		[...]`
+2019-04-17 21:29:42,979 INFO main - mod_point ModificPoint=MersenneTwister line: 170, el: CtLocalVariableImpl
+2019-04-17 21:29:43,004 INFO main - -->op: RemoveOp: `int j = 0 ` ---> `-` at pos 3 of parent `{ 	if (seed == null) { 		[...]`
+2019-04-17 21:29:44,955 INFO main - mod_point ModificPoint=MersenneTwister line: 172, el: CtForImpl
+2019-04-17 21:29:44,955 INFO main - -->op: RemoveOp: `for (int k = org.apache.c[...] ` ---> `-` at pos 4 of parent `{ 	if (seed == null) { 		[...]`
+2019-04-17 21:30:26,762 INFO main - mod_point ModificPoint=MersenneTwister line: 173, el: CtLocalVariableImpl
+2019-04-17 21:30:26,762 INFO main - -->op: RemoveOp: `long l0 = ((mt[i]) & 2147[...] ` ---> `-` at pos 0 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:30:28,686 INFO main - mod_point ModificPoint=MersenneTwister line: 174, el: CtLocalVariableImpl
+2019-04-17 21:30:28,686 INFO main - -->op: RemoveOp: `long l1 = ((mt[(i - 1)]) [...] ` ---> `-` at pos 1 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:30:30,616 INFO main - mod_point ModificPoint=MersenneTwister line: 175, el: CtLocalVariableImpl
+2019-04-17 21:30:30,617 INFO main - -->op: RemoveOp: `long l = ((l0 ^ ((l1 ^ (l[...] ` ---> `-` at pos 2 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:30:32,624 INFO main - mod_point ModificPoint=MersenneTwister line: 176, el: CtAssignmentImpl
+2019-04-17 21:30:32,643 INFO main - -->op: RemoveOp: `mt[i] = ((int) (l & 42949[...] ` ---> `-` at pos 3 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:31:15,379 INFO main - mod_point ModificPoint=MersenneTwister line: 177, el: CtUnaryOperatorImpl
+2019-04-17 21:31:15,379 INFO main - -->op: RemoveOp: `j++ ` ---> `-` at pos 5 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:31:57,930 INFO main - mod_point ModificPoint=MersenneTwister line: 177, el: CtUnaryOperatorImpl
+2019-04-17 21:31:57,930 INFO main - -->op: RemoveOp: `i++ ` ---> `-` at pos 4 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:32:40,688 INFO main - mod_point ModificPoint=MersenneTwister line: 178, el: CtIfImpl
+2019-04-17 21:32:40,688 INFO main - -->op: ReplaceIfBooleanOp: `if (i >= (org.apache.comm[...] ` ---> `if (true) { 	mt[0] = mt[([...]` at pos 6 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:33:24,175 INFO main - mod_point ModificPoint=MersenneTwister line: 178, el: CtIfImpl
+2019-04-17 21:33:24,176 INFO main - -->op: ReplaceIfBooleanOp: `if (i >= (org.apache.comm[...] ` ---> `if (false) { 	mt[0] = mt[[...]` at pos 6 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:33:31,307 INFO main - mod_point ModificPoint=MersenneTwister line: 178, el: CtIfImpl
+2019-04-17 21:33:31,308 INFO main - -->op: RemoveOp: `if (i >= (org.apache.comm[...] ` ---> `-` at pos 6 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:33:38,141 INFO main - mod_point ModificPoint=MersenneTwister line: 179, el: CtAssignmentImpl
+2019-04-17 21:33:38,141 INFO main - -->op: RemoveOp: `mt[0] = mt[((org.apache.c[...] ` ---> `-` at pos 0 of parent `{ 	mt[0] = mt[((org.apach[...]`
+2019-04-17 21:34:20,894 INFO main - mod_point ModificPoint=MersenneTwister line: 180, el: CtAssignmentImpl
+2019-04-17 21:34:20,894 INFO main - -->op: RemoveOp: `i = 1 ` ---> `-` at pos 1 of parent `{ 	mt[0] = mt[((org.apach[...]`
+2019-04-17 21:34:27,670 INFO main - mod_point ModificPoint=MersenneTwister line: 182, el: CtIfImpl
+2019-04-17 21:34:27,671 INFO main - -->op: ReplaceIfBooleanOp: `if (j >= (seed.length)) {[...] ` ---> `if (true) { 	j = 0; }` at pos 7 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:35:09,746 INFO main - mod_point ModificPoint=MersenneTwister line: 182, el: CtIfImpl
+2019-04-17 21:35:09,748 INFO main - -->op: ReplaceIfBooleanOp: `if (j >= (seed.length)) {[...] ` ---> `if (false) { 	j = 0; }` at pos 7 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:35:16,874 INFO main - mod_point ModificPoint=MersenneTwister line: 182, el: CtIfImpl
+2019-04-17 21:35:16,875 INFO main - -->op: RemoveOp: `if (j >= (seed.length)) {[...] ` ---> `-` at pos 7 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:35:23,486 INFO main - mod_point ModificPoint=MersenneTwister line: 183, el: CtAssignmentImpl
+2019-04-17 21:35:23,487 INFO main - -->op: RemoveOp: `j = 0 ` ---> `-` at pos 0 of parent `{ 	j = 0; }`
+2019-04-17 21:35:30,061 INFO main - mod_point ModificPoint=MersenneTwister line: 187, el: CtForImpl
+2019-04-17 21:35:30,062 INFO main - -->op: RemoveOp: `for (int k = (org.apache.[...] ` ---> `-` at pos 5 of parent `{ 	if (seed == null) { 		[...]`
+2019-04-17 21:36:12,604 INFO main - mod_point ModificPoint=MersenneTwister line: 188, el: CtLocalVariableImpl
+2019-04-17 21:36:12,605 INFO main - -->op: RemoveOp: `long l0 = ((mt[i]) & 2147[...] ` ---> `-` at pos 0 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:36:14,486 INFO main - mod_point ModificPoint=MersenneTwister line: 189, el: CtLocalVariableImpl
+2019-04-17 21:36:14,486 INFO main - -->op: RemoveOp: `long l1 = ((mt[(i - 1)]) [...] ` ---> `-` at pos 1 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:36:16,391 INFO main - mod_point ModificPoint=MersenneTwister line: 190, el: CtLocalVariableImpl
+2019-04-17 21:36:16,395 INFO main - -->op: RemoveOp: `long l = (l0 ^ ((l1 ^ (l1[...] ` ---> `-` at pos 2 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:36:18,278 INFO main - mod_point ModificPoint=MersenneTwister line: 191, el: CtAssignmentImpl
+2019-04-17 21:36:18,279 INFO main - -->op: RemoveOp: `mt[i] = ((int) (l & 42949[...] ` ---> `-` at pos 3 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:36:59,725 INFO main - mod_point ModificPoint=MersenneTwister line: 192, el: CtUnaryOperatorImpl
+2019-04-17 21:36:59,726 INFO main - -->op: RemoveOp: `i++ ` ---> `-` at pos 4 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:37:41,357 INFO main - mod_point ModificPoint=MersenneTwister line: 193, el: CtIfImpl
+2019-04-17 21:37:41,357 INFO main - -->op: ReplaceIfBooleanOp: `if (i >= (org.apache.comm[...] ` ---> `if (true) { 	mt[0] = mt[([...]` at pos 5 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:38:23,023 INFO main - mod_point ModificPoint=MersenneTwister line: 193, el: CtIfImpl
+2019-04-17 21:38:23,024 INFO main - -->op: ReplaceIfBooleanOp: `if (i >= (org.apache.comm[...] ` ---> `if (false) { 	mt[0] = mt[[...]` at pos 5 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:38:29,442 INFO main - mod_point ModificPoint=MersenneTwister line: 193, el: CtIfImpl
+2019-04-17 21:38:29,442 INFO main - -->op: RemoveOp: `if (i >= (org.apache.comm[...] ` ---> `-` at pos 5 of parent `{ 	long l0 = ((mt[i]) & 2[...]`
+2019-04-17 21:38:36,365 INFO main - mod_point ModificPoint=MersenneTwister line: 194, el: CtAssignmentImpl
+2019-04-17 21:38:36,365 INFO main - -->op: RemoveOp: `mt[0] = mt[((org.apache.c[...] ` ---> `-` at pos 0 of parent `{ 	mt[0] = mt[((org.apach[...]`
+2019-04-17 21:39:19,562 INFO main - mod_point ModificPoint=MersenneTwister line: 195, el: CtAssignmentImpl
+2019-04-17 21:39:19,563 INFO main - -->op: RemoveOp: `i = 1 ` ---> `-` at pos 1 of parent `{ 	mt[0] = mt[((org.apach[...]`
+2019-04-17 21:39:26,471 INFO main - mod_point ModificPoint=MersenneTwister line: 199, el: CtAssignmentImpl
+2019-04-17 21:39:26,471 INFO main - -->op: RemoveOp: `mt[0] = -2147483648 ` ---> `-` at pos 6 of parent `{ 	if (seed == null) { 		[...]`
+2019-04-17 21:40:07,786 INFO main - mod_point ModificPoint=MersenneTwister line: 144, el: CtLocalVariableImpl
+2019-04-17 21:40:07,786 INFO main - -->op: RemoveOp: `long longMT = seed ` ---> `-` at pos 0 of parent `{ 	long longMT = seed; 	m[...]`
+2019-04-17 21:40:09,606 INFO main - mod_point ModificPoint=MersenneTwister line: 145, el: CtAssignmentImpl
+2019-04-17 21:40:09,607 INFO main - -->op: RemoveOp: `mt[0] = ((int) (longMT)) ` ---> `-` at pos 1 of parent `{ 	long longMT = seed; 	m[...]`
+2019-04-17 21:40:51,275 INFO main - mod_point ModificPoint=MersenneTwister line: 146, el: CtForImpl
+2019-04-17 21:40:51,275 INFO main - -->op: RemoveOp: `for (mti = 1; (mti) < (or[...] ` ---> `-` at pos 2 of parent `{ 	long longMT = seed; 	m[...]`
+2019-04-17 21:41:33,503 INFO main - mod_point ModificPoint=MersenneTwister line: 149, el: CtAssignmentImpl
+2019-04-17 21:41:33,503 INFO main - -->op: RemoveOp: `longMT = ((1812433253L * [...] ` ---> `-` at pos 0 of parent `{ 	longMT = ((1812433253L[...]`
+2019-04-17 21:42:15,828 INFO main - mod_point ModificPoint=MersenneTwister line: 150, el: CtAssignmentImpl
+2019-04-17 21:42:15,829 INFO main - -->op: RemoveOp: `mt[mti] = ((int) (longMT)[...] ` ---> `-` at pos 1 of parent `{ 	longMT = ((1812433253L[...]`
+2019-04-17 21:42:58,848 INFO main - mod_point ModificPoint=Complex line: 997, el: CtReturnImpl
+2019-04-17 21:42:58,848 INFO main - -->op: RemoveOp: `return new org.apache.com[...] ` ---> `-` at pos 0 of parent `{ 	return new org.apache.[...]`
+2019-04-17 21:43:01,083 INFO main - mod_point ModificPoint=Complex line: 308, el: CtReturnImpl
+2019-04-17 21:43:01,084 INFO main - -->op: RemoveOp: `return real ` ---> `-` at pos 0 of parent `{ 	return real; }`
+2019-04-17 21:43:03,295 INFO main - mod_point ModificPoint=Complex line: 299, el: CtReturnImpl
+2019-04-17 21:43:03,295 INFO main - -->op: RemoveOp: `return imaginary ` ---> `-` at pos 0 of parent `{ 	return imaginary; }`
+2019-04-17 21:43:05,632 INFO main - mod_point ModificPoint=FastMath line: 3882, el: CtReturnImpl
+2019-04-17 21:43:05,632 INFO main - -->op: RemoveOp: `return a <= b ? b : a ` ---> `-` at pos 0 of parent `{ 	return a <= b ? b : a;[...]`
+2019-04-17 21:43:07,902 INFO main - mod_point ModificPoint=MathUtils line: 2331, el: CtIfImpl
+2019-04-17 21:43:07,902 INFO main - -->op: ReplaceIfBooleanOp: `if (o == null) { 	throw n[...] ` ---> `if (true) { 	throw new or[...]` at pos 0 of parent `{ 	if (o == null) { 		thr[...]`
+2019-04-17 21:43:50,900 INFO main - mod_point ModificPoint=MathUtils line: 2331, el: CtIfImpl
+2019-04-17 21:43:50,900 INFO main - -->op: ReplaceIfBooleanOp: `if (o == null) { 	throw n[...] ` ---> `if (false) { 	throw new o[...]` at pos 0 of parent `{ 	if (o == null) { 		thr[...]`
+2019-04-17 21:44:32,228 INFO main - mod_point ModificPoint=MathUtils line: 2331, el: CtIfImpl
+2019-04-17 21:44:32,228 INFO main - -->op: RemoveOp: `if (o == null) { 	throw n[...] ` ---> `-` at pos 0 of parent `{ 	if (o == null) { 		thr[...]`
+2019-04-17 21:45:15,040 INFO main - mod_point ModificPoint=SummaryStatistics line: 149, el: CtInvocationImpl
+2019-04-17 21:45:15,041 INFO main - -->op: RemoveOp: `sumImpl.increment(value) ` ---> `-` at pos 0 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:45:57,124 INFO main - mod_point ModificPoint=SummaryStatistics line: 150, el: CtInvocationImpl
+2019-04-17 21:45:57,124 INFO main - -->op: RemoveOp: `sumsqImpl.increment(value[...] ` ---> `-` at pos 1 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:46:38,995 INFO main - mod_point ModificPoint=SummaryStatistics line: 151, el: CtInvocationImpl
+2019-04-17 21:46:38,996 INFO main - -->op: RemoveOp: `minImpl.increment(value) ` ---> `-` at pos 2 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:47:19,653 INFO main - mod_point ModificPoint=SummaryStatistics line: 152, el: CtInvocationImpl
+2019-04-17 21:47:19,654 INFO main - -->op: RemoveOp: `maxImpl.increment(value) ` ---> `-` at pos 3 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:48:02,137 INFO main - mod_point ModificPoint=SummaryStatistics line: 153, el: CtInvocationImpl
+2019-04-17 21:48:02,138 INFO main - -->op: RemoveOp: `sumLogImpl.increment(valu[...] ` ---> `-` at pos 4 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:48:44,195 INFO main - mod_point ModificPoint=SummaryStatistics line: 154, el: CtInvocationImpl
+2019-04-17 21:48:44,196 INFO main - -->op: RemoveOp: `secondMoment.increment(va[...] ` ---> `-` at pos 5 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:49:26,897 INFO main - mod_point ModificPoint=SummaryStatistics line: 157, el: CtIfImpl
+2019-04-17 21:49:26,897 INFO main - -->op: ReplaceIfBooleanOp: `if (!((meanImpl) instance[...] ` ---> `if (true) { 	meanImpl.inc[...]` at pos 6 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:50:09,747 INFO main - mod_point ModificPoint=SummaryStatistics line: 157, el: CtIfImpl
+2019-04-17 21:50:09,748 INFO main - -->op: ReplaceIfBooleanOp: `if (!((meanImpl) instance[...] ` ---> `if (false) { 	meanImpl.in[...]` at pos 6 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:50:52,025 INFO main - mod_point ModificPoint=SummaryStatistics line: 157, el: CtIfImpl
+2019-04-17 21:50:52,025 INFO main - -->op: RemoveOp: `if (!((meanImpl) instance[...] ` ---> `-` at pos 6 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:51:34,119 INFO main - mod_point ModificPoint=SummaryStatistics line: 160, el: CtIfImpl
+2019-04-17 21:51:34,120 INFO main - -->op: ReplaceIfBooleanOp: `if (!((varianceImpl) inst[...] ` ---> `if (true) { 	varianceImpl[...]` at pos 7 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:52:16,765 INFO main - mod_point ModificPoint=SummaryStatistics line: 160, el: CtIfImpl
+2019-04-17 21:52:16,765 INFO main - -->op: ReplaceIfBooleanOp: `if (!((varianceImpl) inst[...] ` ---> `if (false) { 	varianceImp[...]` at pos 7 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:52:59,383 INFO main - mod_point ModificPoint=SummaryStatistics line: 160, el: CtIfImpl
+2019-04-17 21:52:59,384 INFO main - -->op: RemoveOp: `if (!((varianceImpl) inst[...] ` ---> `-` at pos 7 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:53:42,624 INFO main - mod_point ModificPoint=SummaryStatistics line: 163, el: CtIfImpl
+2019-04-17 21:53:42,624 INFO main - -->op: ReplaceIfBooleanOp: `if (!((geoMeanImpl) insta[...] ` ---> `if (true) { 	geoMeanImpl.[...]` at pos 8 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:54:26,034 INFO main - mod_point ModificPoint=SummaryStatistics line: 163, el: CtIfImpl
+2019-04-17 21:54:26,034 INFO main - -->op: ReplaceIfBooleanOp: `if (!((geoMeanImpl) insta[...] ` ---> `if (false) { 	geoMeanImpl[...]` at pos 8 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:55:08,243 INFO main - mod_point ModificPoint=SummaryStatistics line: 163, el: CtIfImpl
+2019-04-17 21:55:08,244 INFO main - -->op: RemoveOp: `if (!((geoMeanImpl) insta[...] ` ---> `-` at pos 8 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:55:50,606 INFO main - mod_point ModificPoint=SummaryStatistics line: 166, el: CtUnaryOperatorImpl
+2019-04-17 21:55:50,606 INFO main - -->op: RemoveOp: `(n)++ ` ---> `-` at pos 9 of parent `{ 	sumImpl.increment(valu[...]`
+2019-04-17 21:56:32,669 INFO main - mod_point ModificPoint=SummaryStatistics line: 174, el: CtReturnImpl
+2019-04-17 21:56:32,669 INFO main - -->op: RemoveOp: `return n ` ---> `-` at pos 0 of parent `{ 	return n; }`
+2019-04-17 21:56:34,673 INFO main - mod_point ModificPoint=SummaryStatistics line: 204, el: CtIfImpl
+2019-04-17 21:56:34,674 INFO main - -->op: ReplaceIfBooleanOp: `if ((mean) == (meanImpl))[...] ` ---> `if (true) { 	return new o[...]` at pos 0 of parent `{ 	if ((mean) == (meanImp[...]`
+2019-04-17 21:57:15,976 INFO main - mod_point ModificPoint=SummaryStatistics line: 204, el: CtIfImpl
+2019-04-17 21:57:15,976 INFO main - -->op: ReplaceIfBooleanOp: `if ((mean) == (meanImpl))[...] ` ---> `if (false) { 	return new [...]` at pos 0 of parent `{ 	if ((mean) == (meanImp[...]`
+2019-04-17 21:57:58,695 INFO main - mod_point ModificPoint=SummaryStatistics line: 204, el: CtIfImpl
+2019-04-17 21:57:58,695 INFO main - -->op: RemoveOp: `if ((mean) == (meanImpl))[...] ` ---> `-` at pos 0 of parent `{ 	if ((mean) == (meanImp[...]`
+2019-04-17 21:58:00,555 INFO main - mod_point ModificPoint=SummaryStatistics line: 205, el: CtReturnImpl
+2019-04-17 21:58:00,555 INFO main - -->op: RemoveOp: `return new org.apache.com[...] ` ---> `-` at pos 0 of parent `{ 	return new org.apache.[...]`
+2019-04-17 21:58:02,580 INFO main - mod_point ModificPoint=SummaryStatistics line: 219, el: CtLocalVariableImpl
+2019-04-17 21:58:02,581 INFO main - -->op: RemoveOp: `double stdDev = java.lang[...] ` ---> `-` at pos 0 of parent `{ 	double stdDev = java.l[...]`
+2019-04-17 21:58:04,554 INFO main - mod_point ModificPoint=SummaryStatistics line: 220, el: CtIfImpl
+2019-04-17 21:58:04,576 INFO main - -->op: ReplaceIfBooleanOp: `if ((getN()) > 0) { 	if ([...] ` ---> `if (true) { 	if ((getN())[...]` at pos 1 of parent `{ 	double stdDev = java.l[...]`
+2019-04-17 21:58:48,032 INFO main - mod_point ModificPoint=SummaryStatistics line: 220, el: CtIfImpl
+2019-04-17 21:58:48,032 INFO main - -->op: ReplaceIfBooleanOp: `if ((getN()) > 0) { 	if ([...] ` ---> `if (false) { 	if ((getN()[...]` at pos 1 of parent `{ 	double stdDev = java.l[...]`
+2019-04-17 21:59:31,305 INFO main - mod_point ModificPoint=SummaryStatistics line: 220, el: CtIfImpl
+2019-04-17 21:59:31,306 INFO main - -->op: RemoveOp: `if ((getN()) > 0) { 	if ([...] ` ---> `-` at pos 1 of parent `{ 	double stdDev = java.l[...]`
+2019-04-17 22:00:13,855 INFO main - mod_point ModificPoint=SummaryStatistics line: 221, el: CtIfImpl
+2019-04-17 22:00:13,856 INFO main - -->op: ReplaceIfBooleanOp: `if ((getN()) > 1) { 	stdD[...] ` ---> `if (true) { 	stdDev = org[...]` at pos 0 of parent `{ 	if ((getN()) > 1) { 		[...]`
+2019-04-17 22:00:56,217 INFO main - mod_point ModificPoint=SummaryStatistics line: 221, el: CtIfImpl
+2019-04-17 22:00:56,218 INFO main - -->op: ReplaceIfBooleanOp: `if ((getN()) > 1) { 	stdD[...] ` ---> `if (false) { 	stdDev = or[...]` at pos 0 of parent `{ 	if ((getN()) > 1) { 		[...]`
+2019-04-17 22:01:39,223 INFO main - mod_point ModificPoint=SummaryStatistics line: 221, el: CtIfImpl
+2019-04-17 22:01:39,223 INFO main - -->op: RemoveOp: `if ((getN()) > 1) { 	stdD[...] ` ---> `-` at pos 0 of parent `{ 	if ((getN()) > 1) { 		[...]`
+2019-04-17 22:02:21,898 INFO main - mod_point ModificPoint=SummaryStatistics line: 222, el: CtAssignmentImpl
+2019-04-17 22:02:21,898 INFO main - -->op: RemoveOp: `stdDev = org.apache.commo[...] ` ---> `-` at pos 0 of parent `{ 	stdDev = org.apache.co[...]`
+2019-04-17 22:03:04,019 INFO main - mod_point ModificPoint=SummaryStatistics line: 227, el: CtReturnImpl
+2019-04-17 22:03:04,020 INFO main - -->op: RemoveOp: `return stdDev ` ---> `-` at pos 2 of parent `{ 	double stdDev = java.l[...]`
+2019-04-17 22:03:06,054 INFO main - mod_point ModificPoint=SummaryStatistics line: 238, el: CtIfImpl
+2019-04-17 22:03:06,054 INFO main - -->op: ReplaceIfBooleanOp: `if ((varianceImpl) == (va[...] ` ---> `if (true) { 	return new o[...]` at pos 0 of parent `{ 	if ((varianceImpl) == [...]`
+2019-04-17 22:03:48,519 INFO main - mod_point ModificPoint=SummaryStatistics line: 238, el: CtIfImpl
+2019-04-17 22:03:48,519 INFO main - -->op: ReplaceIfBooleanOp: `if ((varianceImpl) == (va[...] ` ---> `if (false) { 	return new [...]` at pos 0 of parent `{ 	if ((varianceImpl) == [...]`
+2019-04-17 22:04:30,977 INFO main - mod_point ModificPoint=SummaryStatistics line: 238, el: CtIfImpl
+2019-04-17 22:04:30,977 INFO main - -->op: RemoveOp: `if ((varianceImpl) == (va[...] ` ---> `-` at pos 0 of parent `{ 	if ((varianceImpl) == [...]`
+2019-04-17 22:04:32,775 INFO main - mod_point ModificPoint=SummaryStatistics line: 239, el: CtReturnImpl
+2019-04-17 22:04:32,775 INFO main - -->op: RemoveOp: `return new org.apache.com[...] ` ---> `-` at pos 0 of parent `{ 	return new org.apache.[...]`
+2019-04-17 22:04:34,833 INFO main - mod_point ModificPoint=SummaryStatistics line: 334, el: CtAssignmentImpl
+2019-04-17 22:04:34,833 INFO main - -->op: RemoveOp: `this.n = 0 ` ---> `-` at pos 0 of parent `{ 	this.n = 0; 	minImpl.c[...]`
+2019-04-17 22:05:17,199 INFO main - mod_point ModificPoint=SummaryStatistics line: 335, el: CtInvocationImpl
+2019-04-17 22:05:17,199 INFO main - -->op: RemoveOp: `minImpl.clear() ` ---> `-` at pos 1 of parent `{ 	this.n = 0; 	minImpl.c[...]`
+2019-04-17 22:05:59,671 INFO main - mod_point ModificPoint=SummaryStatistics line: 336, el: CtInvocationImpl
+2019-04-17 22:05:59,671 INFO main - -->op: RemoveOp: `maxImpl.clear() ` ---> `-` at pos 2 of parent `{ 	this.n = 0; 	minImpl.c[...]`
+2019-04-17 22:06:42,619 INFO main - mod_point ModificPoint=SummaryStatistics line: 337, el: CtInvocationImpl
+2019-04-17 22:06:42,619 INFO main - -->op: RemoveOp: `sumImpl.clear() ` ---> `-` at pos 3 of parent `{ 	this.n = 0; 	minImpl.c[...]`
+2019-04-17 22:07:25,076 INFO main - mod_point ModificPoint=SummaryStatistics line: 338, el: CtInvocationImpl
+2019-04-17 22:07:25,079 INFO main - -->op: RemoveOp: `sumLogImpl.clear() ` ---> `-` at pos 4 of parent `{ 	this.n = 0; 	minImpl.c[...]`
+2019-04-17 22:08:07,803 INFO main - mod_point ModificPoint=SummaryStatistics line: 339, el: CtInvocationImpl
+2019-04-17 22:08:07,803 INFO main - -->op: RemoveOp: `sumsqImpl.clear() ` ---> `-` at pos 5 of parent `{ 	this.n = 0; 	minImpl.c[...]`
+2019-04-17 22:08:49,208 INFO main - mod_point ModificPoint=SummaryStatistics line: 340, el: CtInvocationImpl
+2019-04-17 22:08:49,208 INFO main - -->op: RemoveOp: `geoMeanImpl.clear() ` ---> `-` at pos 6 of parent `{ 	this.n = 0; 	minImpl.c[...]`
+2019-04-17 22:09:31,288 INFO main - mod_point ModificPoint=SummaryStatistics line: 341, el: CtInvocationImpl
+2019-04-17 22:09:31,289 INFO main - -->op: RemoveOp: `secondMoment.clear() ` ---> `-` at pos 7 of parent `{ 	this.n = 0; 	minImpl.c[...]`
+2019-04-17 22:10:14,365 INFO main - mod_point ModificPoint=SummaryStatistics line: 342, el: CtIfImpl
+2019-04-17 22:10:14,365 INFO main - -->op: ReplaceIfBooleanOp: `if ((meanImpl) != (mean))[...] ` ---> `if (true) { 	meanImpl.cle[...]` at pos 8 of parent `{ 	this.n = 0; 	minImpl.c[...]`
+2019-04-17 22:10:57,478 INFO main - mod_point ModificPoint=SummaryStatistics line: 342, el: CtIfImpl
+2019-04-17 22:10:57,478 INFO main - -->op: ReplaceIfBooleanOp: `if ((meanImpl) != (mean))[...] ` ---> `if (false) { 	meanImpl.cl[...]` at pos 8 of parent `{ 	this.n = 0; 	minImpl.c[...]`
+2019-04-17 22:11:40,441 INFO main - mod_point ModificPoint=SummaryStatistics line: 342, el: CtIfImpl
+2019-04-17 22:11:40,442 INFO main - -->op: RemoveOp: `if ((meanImpl) != (mean))[...] ` ---> `-` at pos 8 of parent `{ 	this.n = 0; 	minImpl.c[...]`
+2019-04-17 22:12:24,414 INFO main - mod_point ModificPoint=SummaryStatistics line: 345, el: CtIfImpl
+2019-04-17 22:12:24,414 INFO main - -->op: ReplaceIfBooleanOp: `if ((varianceImpl) != (va[...] ` ---> `if (true) { 	varianceImpl[...]` at pos 9 of parent `{ 	this.n = 0; 	minImpl.c[...]`
+2019-04-17 22:13:06,574 INFO main - mod_point ModificPoint=SummaryStatistics line: 345, el: CtIfImpl
+2019-04-17 22:13:06,574 INFO main - -->op: ReplaceIfBooleanOp: `if ((varianceImpl) != (va[...] ` ---> `if (false) { 	varianceImp[...]` at pos 9 of parent `{ 	this.n = 0; 	minImpl.c[...]`
+2019-04-17 22:13:49,044 INFO main - mod_point ModificPoint=SummaryStatistics line: 345, el: CtIfImpl
+2019-04-17 22:13:49,044 INFO main - -->op: RemoveOp: `if ((varianceImpl) != (va[...] ` ---> `-` at pos 9 of parent `{ 	this.n = 0; 	minImpl.c[...]`
+2019-04-17 22:14:31,801 INFO main - mod_point ModificPoint=GeometricMean line: 123, el: CtInvocationImpl
+2019-04-17 22:14:31,801 INFO main - -->op: RemoveOp: `sumOfLogs.clear() ` ---> `-` at pos 0 of parent `{ 	sumOfLogs.clear(); }`
+2019-04-17 22:15:14,655 INFO main - mod_point ModificPoint=SumOfSquares line: 75, el: CtOperatorAssignmentImpl
+2019-04-17 22:15:14,656 INFO main - -->op: RemoveOp: `value += d * d ` ---> `-` at pos 0 of parent `{ 	value += d * d; 	(n)++[...]`
+2019-04-17 22:15:58,097 INFO main - mod_point ModificPoint=SumOfSquares line: 76, el: CtUnaryOperatorImpl
+2019-04-17 22:15:58,097 INFO main - -->op: RemoveOp: `(n)++ ` ---> `-` at pos 1 of parent `{ 	value += d * d; 	(n)++[...]`
+2019-04-17 22:16:40,766 INFO main - mod_point ModificPoint=SumOfSquares line: 99, el: CtAssignmentImpl
+2019-04-17 22:16:40,766 INFO main - -->op: RemoveOp: `value = 0 ` ---> `-` at pos 0 of parent `{ 	value = 0; 	n = 0; }`
+2019-04-17 22:17:22,291 INFO main - mod_point ModificPoint=SumOfSquares line: 100, el: CtAssignmentImpl
+2019-04-17 22:17:22,292 INFO main - -->op: RemoveOp: `n = 0 ` ---> `-` at pos 1 of parent `{ 	value = 0; 	n = 0; }`
+2019-04-17 22:18:04,872 INFO main - mod_point ModificPoint=FastMath line: 302, el: CtReturnImpl
+2019-04-17 22:18:04,872 INFO main - -->op: RemoveOp: `return java.lang.Math.sqr[...] ` ---> `-` at pos 0 of parent `{ 	return java.lang.Math.[...]`
+2019-04-17 22:18:06,727 INFO main - mod_point ModificPoint=FastMath line: 1012, el: CtLocalVariableImpl
+2019-04-17 22:18:06,736 INFO main - -->op: RemoveOp: `final double[] xs = new d[...] ` ---> `-` at pos 0 of parent `{ 	final double[] xs = ne[...]`
+2019-04-17 22:18:08,574 INFO main - mod_point ModificPoint=FastMath line: 1013, el: CtLocalVariableImpl
+2019-04-17 22:18:08,575 INFO main - -->op: RemoveOp: `final double[] ys = new d[...] ` ---> `-` at pos 1 of parent `{ 	final double[] xs = ne[...]`
+2019-04-17 22:18:10,856 INFO main - mod_point ModificPoint=FastMath line: 1014, el: CtLocalVariableImpl
+2019-04-17 22:18:10,857 INFO main - -->op: RemoveOp: `final double[] facts = ne[...] ` ---> `-` at pos 2 of parent `{ 	final double[] xs = ne[...]`
+2019-04-17 22:18:12,846 INFO main - mod_point ModificPoint=FastMath line: 1015, el: CtLocalVariableImpl
+2019-04-17 22:18:12,847 INFO main - -->op: RemoveOp: `final double[] as = new d[...] ` ---> `-` at pos 3 of parent `{ 	final double[] xs = ne[...]`
+2019-04-17 22:18:14,937 INFO main - mod_point ModificPoint=FastMath line: 1016, el: CtInvocationImpl
+2019-04-17 22:18:14,948 INFO main - -->op: RemoveOp: `org.apache.commons.math.u[...] ` ---> `-` at pos 4 of parent `{ 	final double[] xs = ne[...]`
+2019-04-17 22:19:19,598 INFO main - mod_point ModificPoint=FastMath line: 1017, el: CtAssignmentImpl
+2019-04-17 22:19:19,599 INFO main - -->op: RemoveOp: `ys[0] = ys[1] = 0.0 ` ---> `-` at pos 5 of parent `{ 	final double[] xs = ne[...]`
+2019-04-17 22:20:02,118 INFO main - mod_point ModificPoint=FastMath line: 1019, el: CtForImpl
+2019-04-17 22:20:02,118 INFO main - -->op: RemoveOp: `for (int i = 19; i >= 0; [...] ` ---> `-` at pos 6 of parent `{ 	final double[] xs = ne[...]`
+2019-04-17 22:20:59,043 INFO main - mod_point ModificPoint=FastMath line: 1020, el: CtInvocationImpl
+2019-04-17 22:20:59,043 INFO main - -->op: RemoveOp: `org.apache.commons.math.u[...] ` ---> `-` at pos 0 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 22:21:57,902 INFO main - mod_point ModificPoint=FastMath line: 1021, el: CtAssignmentImpl
+2019-04-17 22:21:57,902 INFO main - -->op: RemoveOp: `ys[0] = as[0] ` ---> `-` at pos 1 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 22:22:57,310 INFO main - mod_point ModificPoint=FastMath line: 1022, el: CtAssignmentImpl
+2019-04-17 22:22:57,310 INFO main - -->op: RemoveOp: `ys[1] = as[1] ` ---> `-` at pos 2 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 22:23:58,934 INFO main - mod_point ModificPoint=FastMath line: 1024, el: CtInvocationImpl
+2019-04-17 22:23:58,934 INFO main - -->op: RemoveOp: `org.apache.commons.math.u[...] ` ---> `-` at pos 3 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 22:24:54,979 INFO main - mod_point ModificPoint=FastMath line: 1025, el: CtInvocationImpl
+2019-04-17 22:24:54,980 INFO main - -->op: RemoveOp: `org.apache.commons.math.u[...] ` ---> `-` at pos 4 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 22:25:54,816 INFO main - mod_point ModificPoint=FastMath line: 1027, el: CtInvocationImpl
+2019-04-17 22:25:54,817 INFO main - -->op: RemoveOp: `org.apache.commons.math.u[...] ` ---> `-` at pos 5 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 22:26:54,898 INFO main - mod_point ModificPoint=FastMath line: 1028, el: CtAssignmentImpl
+2019-04-17 22:26:54,898 INFO main - -->op: RemoveOp: `ys[0] = as[0] ` ---> `-` at pos 6 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 22:27:55,783 INFO main - mod_point ModificPoint=FastMath line: 1029, el: CtAssignmentImpl
+2019-04-17 22:27:55,783 INFO main - -->op: RemoveOp: `ys[1] = as[1] ` ---> `-` at pos 7 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-17 22:28:57,228 INFO main - mod_point ModificPoint=FastMath line: 1032, el: CtIfImpl
+2019-04-17 22:28:57,229 INFO main - -->op: ReplaceIfBooleanOp: `if (result != null) { 	re[...] ` ---> `if (true) { 	result[0] = [...]` at pos 7 of parent `{ 	final double[] xs = ne[...]`
+2019-04-17 22:29:36,061 INFO main - mod_point ModificPoint=FastMath line: 1032, el: CtIfImpl
+2019-04-17 22:29:36,061 INFO main - -->op: ReplaceIfBooleanOp: `if (result != null) { 	re[...] ` ---> `if (false) { 	result[0] =[...]` at pos 7 of parent `{ 	final double[] xs = ne[...]`
+2019-04-17 22:30:31,749 INFO main - mod_point ModificPoint=FastMath line: 1032, el: CtIfImpl
+2019-04-17 22:30:31,750 INFO main - -->op: RemoveOp: `if (result != null) { 	re[...] ` ---> `-` at pos 7 of parent `{ 	final double[] xs = ne[...]`
+2019-04-17 22:31:28,510 INFO main - mod_point ModificPoint=FastMath line: 1033, el: CtAssignmentImpl
+2019-04-17 22:31:28,511 INFO main - -->op: RemoveOp: `result[0] = ys[0] ` ---> `-` at pos 0 of parent `{ 	result[0] = ys[0]; 	re[...]`
+2019-04-17 22:32:26,703 INFO main - mod_point ModificPoint=FastMath line: 1034, el: CtAssignmentImpl
+2019-04-17 22:32:26,703 INFO main - -->op: RemoveOp: `result[1] = ys[1] ` ---> `-` at pos 1 of parent `{ 	result[0] = ys[0]; 	re[...]`
+2019-04-17 22:33:24,456 INFO main - 
+ No more time for operating
+2019-04-17 22:33:24,456 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-17 22:33:24,456 INFO main - 
+successful_ing_attempts (0): []
+2019-04-17 22:33:24,456 INFO main - 
+failing_ing_attempts (190): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-17 22:33:24,456 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6973.979
+[DONE]

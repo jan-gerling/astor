@@ -1,0 +1,229 @@
+2019-04-16 12:15:40,685 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jkali  -scope  package  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan_gerling/astor/defect4j_tests/math_54/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-16 12:15:44,360 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_54//bin//default from 265 classes with test cases
+2019-04-16 12:15:44,363 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-16 12:15:47,186 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./outputMutation/AstorMain-math_54//bin//default, /home/jan_gerling/astor/./examples/libs/junit-4.4.jar]
+2019-04-16 12:22:06,229 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.dfp.DfpTest#testIssue567
+2019-04-16 12:22:06,257 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.util.FastMathTest#checkMissingFastMathClasses
+2019-04-16 12:22:06,265 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2420, fails: 2, GZoltar suspicious 20371
+2019-04-16 12:22:06,341 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 62 with susp > 0.5, we consider: 62
+2019-04-16 12:22:06,379 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_54//src//default, compliance level: 8
+2019-04-16 12:22:38,032 INFO main - 
+---- Initial suspicious size: 62
+2019-04-16 12:22:39,395 INFO main - Total suspicious from FL: 62,  62
+2019-04-16 12:22:39,395 INFO main - Total ModPoint created: 62
+2019-04-16 12:22:39,404 INFO main - Creating program variant #1, [Variant id: 1, #gens: 62, #ops: 0, parent:-]
+2019-04-16 12:27:46,865 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-16 12:27:46,865 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-16 12:27:46,873 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-16 12:27:46,873 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-16 12:27:46,873 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-16 12:27:46,873 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-16 12:27:46,873 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-16 12:27:46,873 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-16 12:27:46,873 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-16 12:27:46,873 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-16 12:27:46,873 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-16 12:27:46,873 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-16 12:27:46,873 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-16 12:27:46,874 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-16 12:27:46,874 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-16 12:27:46,884 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jkali
+2019-04-16 12:27:46,884 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-16 12:27:46,884 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-16 12:27:46,884 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-16 12:27:46,885 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-16 12:27:46,885 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-16 12:27:46,885 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-16 12:27:46,885 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-16 12:27:46,886 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-16 12:27:46,895 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-16 12:27:46,895 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-16 12:27:46,895 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-16 12:27:46,895 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-16 12:27:46,895 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /home/jan_gerling/astor/defect4j_tests/math_54/
+2019-04-16 12:27:46,895 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-16 12:27:46,895 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-16 12:27:46,895 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= package
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-16 12:27:46,896 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-16 12:27:46,897 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-16 12:27:46,899 INFO main - mod_point ModificPoint=DfpField line: 573, el: CtLocalVariableImpl
+2019-04-16 12:27:46,928 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 0 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:27:48,597 INFO main - mod_point ModificPoint=DfpField line: 574, el: CtLocalVariableImpl
+2019-04-16 12:27:48,598 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 1 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:27:49,798 INFO main - mod_point ModificPoint=DfpField line: 575, el: CtLocalVariableImpl
+2019-04-16 12:27:49,799 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 2 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:27:50,109 INFO main - mod_point ModificPoint=DfpField line: 576, el: CtLocalVariableImpl
+2019-04-16 12:27:50,109 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 3 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:27:50,361 INFO main - mod_point ModificPoint=DfpField line: 578, el: CtLocalVariableImpl
+2019-04-16 12:27:50,361 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 4 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:27:50,523 INFO main - mod_point ModificPoint=DfpField line: 579, el: CtAssignmentImpl
+2019-04-16 12:27:50,546 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 5 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:28:03,926 INFO main - mod_point ModificPoint=DfpField line: 580, el: CtAssignmentImpl
+2019-04-16 12:28:03,927 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 6 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:28:05,789 INFO main - mod_point ModificPoint=DfpField line: 582, el: CtLocalVariableImpl
+2019-04-16 12:28:05,790 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 7 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:28:05,995 INFO main - mod_point ModificPoint=DfpField line: 583, el: CtAssignmentImpl
+2019-04-16 12:28:06,003 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 8 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:28:07,806 INFO main - mod_point ModificPoint=DfpField line: 584, el: CtAssignmentImpl
+2019-04-16 12:28:07,806 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 9 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:28:09,669 INFO main - mod_point ModificPoint=DfpField line: 586, el: CtAssignmentImpl
+2019-04-16 12:28:09,670 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 10 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:28:11,318 INFO main - mod_point ModificPoint=DfpField line: 587, el: CtAssignmentImpl
+2019-04-16 12:28:11,319 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 11 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:28:12,985 INFO main - mod_point ModificPoint=DfpField line: 588, el: CtAssignmentImpl
+2019-04-16 12:28:12,986 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 12 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:28:14,638 INFO main - mod_point ModificPoint=DfpField line: 589, el: CtAssignmentImpl
+2019-04-16 12:28:14,639 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 13 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:28:16,202 INFO main - mod_point ModificPoint=DfpField line: 590, el: CtAssignmentImpl
+2019-04-16 12:28:16,202 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 14 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:28:17,710 INFO main - mod_point ModificPoint=DfpField line: 603, el: CtLocalVariableImpl
+2019-04-16 12:28:17,711 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 0 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-16 12:28:17,896 INFO main - mod_point ModificPoint=DfpField line: 604, el: CtLocalVariableImpl
+2019-04-16 12:28:17,897 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 1 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-16 12:28:18,055 INFO main - mod_point ModificPoint=DfpField line: 605, el: CtLocalVariableImpl
+2019-04-16 12:28:18,065 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 2 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-16 12:28:18,178 INFO main - mod_point ModificPoint=DfpField line: 606, el: CtLocalVariableImpl
+2019-04-16 12:28:18,178 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 3 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-16 12:28:18,307 INFO main - mod_point ModificPoint=DfpField line: 607, el: CtLocalVariableImpl
+2019-04-16 12:28:18,308 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 4 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-16 12:28:18,435 INFO main - mod_point ModificPoint=DfpField line: 615, el: CtForImpl
+2019-04-16 12:28:18,436 INFO main - -->op: RemoveOp: `for (int i = 1; i < 20; i[...] ` ---> `-` at pos 5 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-16 12:28:56,852 INFO main - mod_point ModificPoint=DfpField line: 616, el: CtLocalVariableImpl
+2019-04-16 12:28:56,852 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 0 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:28:56,977 INFO main - mod_point ModificPoint=DfpField line: 618, el: CtLocalVariableImpl
+2019-04-16 12:28:56,978 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 1 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:28:57,073 INFO main - mod_point ModificPoint=DfpField line: 619, el: CtLocalVariableImpl
+2019-04-16 12:28:57,073 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 2 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:28:57,174 INFO main - mod_point ModificPoint=DfpField line: 620, el: CtLocalVariableImpl
+2019-04-16 12:28:57,174 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 3 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:28:57,283 INFO main - mod_point ModificPoint=DfpField line: 621, el: CtAssignmentImpl
+2019-04-16 12:28:57,283 INFO main - -->op: RemoveOp: `yk = one.subtract(s).divi[...] ` ---> `-` at pos 4 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:29:36,149 INFO main - mod_point ModificPoint=DfpField line: 623, el: CtAssignmentImpl
+2019-04-16 12:29:36,149 INFO main - -->op: RemoveOp: `two2kp3 = two2kp3.multipl[...] ` ---> `-` at pos 5 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:30:15,685 INFO main - mod_point ModificPoint=DfpField line: 625, el: CtLocalVariableImpl
+2019-04-16 12:30:15,685 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 6 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:30:15,805 INFO main - mod_point ModificPoint=DfpField line: 626, el: CtLocalVariableImpl
+2019-04-16 12:30:15,820 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 7 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:30:15,921 INFO main - mod_point ModificPoint=DfpField line: 627, el: CtAssignmentImpl
+2019-04-16 12:30:15,922 INFO main - -->op: RemoveOp: `ak = ak.multiply(p2.multi[...] ` ---> `-` at pos 8 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:30:54,802 INFO main - mod_point ModificPoint=DfpField line: 629, el: CtIfImpl
+2019-04-16 12:30:54,802 INFO main - -->op: ReplaceIfBooleanOp: `if (yk.equals(ykM1)) { 	b[...] ` ---> `if (true) { 	break; }` at pos 9 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:31:33,244 INFO main - mod_point ModificPoint=DfpField line: 629, el: CtIfImpl
+2019-04-16 12:31:33,244 INFO main - -->op: ReplaceIfBooleanOp: `if (yk.equals(ykM1)) { 	b[...] ` ---> `if (false) { 	break; }` at pos 9 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:32:04,461 INFO main - mod_point ModificPoint=DfpField line: 629, el: CtIfImpl
+2019-04-16 12:32:04,462 INFO main - -->op: RemoveOp: `if (yk.equals(ykM1)) { 	b[...] ` ---> `-` at pos 9 of parent `{ 	final org.apache.commo[...]`
+2019-04-16 12:32:36,101 INFO main - mod_point ModificPoint=DfpField line: 630, el: CtBreakImpl
+2019-04-16 12:32:36,102 INFO main - -->op: RemoveOp: `break ` ---> `-` at pos 0 of parent `{ 	break; }`
+2019-04-16 12:33:06,998 INFO main - mod_point ModificPoint=DfpField line: 634, el: CtReturnImpl
+2019-04-16 12:33:06,999 INFO main - -->op: RemoveOp: `return one.divide(ak) ` ---> `-` at pos 6 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-16 12:33:07,087 INFO main - mod_point ModificPoint=DfpField line: 645, el: CtLocalVariableImpl
+2019-04-16 12:33:07,088 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 0 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-16 12:33:07,185 INFO main - mod_point ModificPoint=DfpField line: 646, el: CtLocalVariableImpl
+2019-04-16 12:33:07,185 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 1 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-16 12:33:07,304 INFO main - mod_point ModificPoint=DfpField line: 647, el: CtLocalVariableImpl
+2019-04-16 12:33:07,305 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 2 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-16 12:33:07,395 INFO main - mod_point ModificPoint=DfpField line: 648, el: CtLocalVariableImpl
+2019-04-16 12:33:07,395 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 3 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-16 12:33:07,493 INFO main - mod_point ModificPoint=DfpField line: 649, el: CtLocalVariableImpl
+2019-04-16 12:33:07,494 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 4 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-16 12:33:07,598 INFO main - mod_point ModificPoint=DfpField line: 651, el: CtForImpl
+2019-04-16 12:33:07,599 INFO main - -->op: RemoveOp: `for (int i = 0; i < 10000[...] ` ---> `-` at pos 5 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-16 12:33:09,152 INFO main - mod_point ModificPoint=DfpField line: 652, el: CtAssignmentImpl
+2019-04-16 12:33:09,153 INFO main - -->op: RemoveOp: `x = x.multiply(a) ` ---> `-` at pos 0 of parent `{ 	x = x.multiply(a); 	y [...]`
+2019-04-16 12:33:39,708 INFO main - mod_point ModificPoint=DfpField line: 653, el: CtAssignmentImpl
+2019-04-16 12:33:39,709 INFO main - -->op: RemoveOp: `y = y.add(x.divide(f)) ` ---> `-` at pos 1 of parent `{ 	x = x.multiply(a); 	y [...]`
+2019-04-16 12:33:41,213 INFO main - mod_point ModificPoint=DfpField line: 654, el: CtAssignmentImpl
+2019-04-16 12:33:41,213 INFO main - -->op: RemoveOp: `fi = fi.add(one) ` ---> `-` at pos 2 of parent `{ 	x = x.multiply(a); 	y [...]`
+2019-04-16 12:33:47,647 INFO main - mod_point ModificPoint=DfpField line: 655, el: CtAssignmentImpl
+2019-04-16 12:33:47,647 INFO main - -->op: RemoveOp: `f = f.multiply(fi) ` ---> `-` at pos 3 of parent `{ 	x = x.multiply(a); 	y [...]`
+2019-04-16 12:33:53,609 INFO main - mod_point ModificPoint=DfpField line: 656, el: CtIfImpl
+2019-04-16 12:33:53,609 INFO main - -->op: ReplaceIfBooleanOp: `if (y.equals(py)) { 	brea[...] ` ---> `if (true) { 	break; }` at pos 4 of parent `{ 	x = x.multiply(a); 	y [...]`
+2019-04-16 12:33:55,253 INFO main - mod_point ModificPoint=DfpField line: 656, el: CtIfImpl
+2019-04-16 12:33:55,254 INFO main - -->op: ReplaceIfBooleanOp: `if (y.equals(py)) { 	brea[...] ` ---> `if (false) { 	break; }` at pos 4 of parent `{ 	x = x.multiply(a); 	y [...]`
+2019-04-16 12:34:35,492 INFO main - mod_point ModificPoint=DfpField line: 656, el: CtIfImpl
+2019-04-16 12:34:35,493 INFO main - -->op: RemoveOp: `if (y.equals(py)) { 	brea[...] ` ---> `-` at pos 4 of parent `{ 	x = x.multiply(a); 	y [...]`
+2019-04-16 12:35:15,645 INFO main - mod_point ModificPoint=DfpField line: 657, el: CtBreakImpl
+2019-04-16 12:35:15,645 INFO main - -->op: RemoveOp: `break ` ---> `-` at pos 0 of parent `{ 	break; }`
+2019-04-16 12:35:56,248 INFO main - mod_point ModificPoint=DfpField line: 659, el: CtAssignmentImpl
+2019-04-16 12:35:56,249 INFO main - -->op: RemoveOp: `py = new org.apache.commo[...] ` ---> `-` at pos 5 of parent `{ 	x = x.multiply(a); 	y [...]`
+2019-04-16 12:36:36,660 INFO main - mod_point ModificPoint=DfpField line: 662, el: CtReturnImpl
+2019-04-16 12:36:36,661 INFO main - -->op: RemoveOp: `return y ` ---> `-` at pos 6 of parent `{ 	org.apache.commons.mat[...]`
+2019-04-16 12:36:36,751 INFO main - mod_point ModificPoint=DfpField line: 728, el: CtLocalVariableImpl
+2019-04-16 12:36:36,752 INFO main - -->op: RemoveOp: `int den = 1 ` ---> `-` at pos 0 of parent `{ 	int den = 1; 	org.apac[...]`
+2019-04-16 12:36:36,862 INFO main - mod_point ModificPoint=DfpField line: 729, el: CtLocalVariableImpl
+2019-04-16 12:36:36,880 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 1 of parent `{ 	int den = 1; 	org.apac[...]`
+2019-04-16 12:36:36,964 INFO main - mod_point ModificPoint=DfpField line: 731, el: CtLocalVariableImpl
+2019-04-16 12:36:36,964 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 2 of parent `{ 	int den = 1; 	org.apac[...]`
+2019-04-16 12:36:37,050 INFO main - mod_point ModificPoint=DfpField line: 732, el: CtLocalVariableImpl
+2019-04-16 12:36:37,050 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 3 of parent `{ 	int den = 1; 	org.apac[...]`
+2019-04-16 12:36:37,148 INFO main - mod_point ModificPoint=DfpField line: 733, el: CtLocalVariableImpl
+2019-04-16 12:36:37,148 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 4 of parent `{ 	int den = 1; 	org.apac[...]`
+2019-04-16 12:36:37,219 INFO main - mod_point ModificPoint=DfpField line: 734, el: CtForImpl
+2019-04-16 12:36:37,220 INFO main - -->op: RemoveOp: `for (int i = 0; i < 10000[...] ` ---> `-` at pos 5 of parent `{ 	int den = 1; 	org.apac[...]`
+2019-04-16 12:37:12,917 INFO main - mod_point ModificPoint=DfpField line: 735, el: CtAssignmentImpl
+2019-04-16 12:37:12,917 INFO main - -->op: RemoveOp: `num = num.multiply(x) ` ---> `-` at pos 0 of parent `{ 	num = num.multiply(x);[...]`
+2019-04-16 12:37:49,098 INFO main - mod_point ModificPoint=DfpField line: 736, el: CtAssignmentImpl
+2019-04-16 12:37:49,098 INFO main - -->op: RemoveOp: `num = num.multiply(x) ` ---> `-` at pos 1 of parent `{ 	num = num.multiply(x);[...]`
+2019-04-16 12:38:25,068 INFO main - mod_point ModificPoint=DfpField line: 737, el: CtAssignmentImpl
+2019-04-16 12:38:25,068 INFO main - -->op: RemoveOp: `den = den + 2 ` ---> `-` at pos 2 of parent `{ 	num = num.multiply(x);[...]`
+2019-04-16 12:39:01,197 INFO main - mod_point ModificPoint=DfpField line: 738, el: CtLocalVariableImpl
+2019-04-16 12:39:01,198 INFO main - -->op: RemoveOp: `org.apache.commons.math.d[...] ` ---> `-` at pos 3 of parent `{ 	num = num.multiply(x);[...]`
+2019-04-16 12:39:01,325 INFO main - mod_point ModificPoint=DfpField line: 739, el: CtAssignmentImpl
+2019-04-16 12:39:01,325 INFO main - -->op: RemoveOp: `y = y.add(t) ` ---> `-` at pos 4 of parent `{ 	num = num.multiply(x);[...]`
+2019-04-16 12:39:36,516 INFO main - mod_point ModificPoint=DfpField line: 740, el: CtIfImpl
+2019-04-16 12:39:36,517 INFO main - -->op: ReplaceIfBooleanOp: `if (y.equals(py)) { 	brea[...] ` ---> `if (true) { 	break; }` at pos 5 of parent `{ 	num = num.multiply(x);[...]`
+2019-04-16 12:40:12,057 INFO main - mod_point ModificPoint=DfpField line: 740, el: CtIfImpl
+2019-04-16 12:40:12,057 INFO main - -->op: ReplaceIfBooleanOp: `if (y.equals(py)) { 	brea[...] ` ---> `if (false) { 	break; }` at pos 5 of parent `{ 	num = num.multiply(x);[...]`
+2019-04-16 12:40:15,465 INFO main - mod_point ModificPoint=DfpField line: 740, el: CtIfImpl
+2019-04-16 12:40:15,465 INFO main - -->op: RemoveOp: `if (y.equals(py)) { 	brea[...] ` ---> `-` at pos 5 of parent `{ 	num = num.multiply(x);[...]`
+2019-04-16 12:40:19,105 INFO main - mod_point ModificPoint=DfpField line: 741, el: CtBreakImpl
+2019-04-16 12:40:19,105 INFO main - -->op: RemoveOp: `break ` ---> `-` at pos 0 of parent `{ 	break; }`
+2019-04-16 12:40:22,613 INFO main - mod_point ModificPoint=DfpField line: 743, el: CtAssignmentImpl
+2019-04-16 12:40:22,614 INFO main - -->op: RemoveOp: `py = new org.apache.commo[...] ` ---> `-` at pos 6 of parent `{ 	num = num.multiply(x);[...]`
+2019-04-16 12:40:25,957 INFO main - mod_point ModificPoint=DfpField line: 746, el: CtReturnImpl
+2019-04-16 12:40:25,957 INFO main - -->op: RemoveOp: `return y.multiply(two) ` ---> `-` at pos 6 of parent `{ 	int den = 1; 	org.apac[...]`
+2019-04-16 12:40:26,044 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-16 12:40:26,044 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 12:40:26,044 INFO main - 
+failing_ing_attempts (68): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-16 12:40:26,044 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 1485.342
+[DONE]

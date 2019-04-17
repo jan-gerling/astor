@@ -1,0 +1,308 @@
+2019-04-12 21:08:43,895 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jkali  -scope  package  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan/astor/defect4j_tests/math_74/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-12 21:08:56,623 INFO main - -Executing Gzoltar classpath: /home/jan/astor/./outputMutation/AstorMain-math_74//bin//default from 230 classes with test cases
+2019-04-12 21:08:56,627 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-12 21:09:08,264 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan/astor/./examples/libs/junit-4.4.jar, /home/jan/astor/./outputMutation/AstorMain-math_74//bin//default]
+2019-04-12 21:11:38,677 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#polynomial
+2019-04-12 21:11:38,744 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2131, fails: 1, GZoltar suspicious 17278
+2019-04-12 21:11:39,001 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 84 with susp > 0.5, we consider: 84
+2019-04-12 21:11:39,085 INFO main - building model: /home/jan/astor/./outputMutation/AstorMain-math_74//src//default, compliance level: 8
+2019-04-12 21:13:19,739 INFO main - 
+---- Initial suspicious size: 84
+2019-04-12 21:13:20,721 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=299, susp=0.5773502691896258]
+2019-04-12 21:13:21,217 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector{start(IIIIII)V 0.0, lineNumber=401, susp=0.5]
+2019-04-12 21:13:21,655 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator$Corrector{visit(IID)V 0.0, lineNumber=411, susp=0.5]
+2019-04-12 21:13:26,238 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=307, susp=0.5]
+2019-04-12 21:13:26,319 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=314, susp=0.5]
+2019-04-12 21:13:26,581 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=327, susp=0.5]
+2019-04-12 21:13:26,968 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator, methodName=org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=354, susp=0.5]
+2019-04-12 21:13:26,968 INFO main - Total suspicious from FL: 84,  77
+2019-04-12 21:13:26,969 INFO main - Total ModPoint created: 77
+2019-04-12 21:13:26,969 INFO main - Creating program variant #1, [Variant id: 1, #gens: 77, #ops: 0, parent:-]
+2019-04-12 21:15:01,976 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 21:15:01,977 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-12 21:15:01,977 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-12 21:15:01,977 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-12 21:15:01,977 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-12 21:15:01,977 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-12 21:15:01,977 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-12 21:15:01,977 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-12 21:15:01,977 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-12 21:15:01,978 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-12 21:15:01,978 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-12 21:15:01,978 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-12 21:15:01,978 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-12 21:15:01,978 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-12 21:15:01,978 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan/astor/./outputMutation
+2019-04-12 21:15:01,978 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jkali
+2019-04-12 21:15:01,978 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-12 21:15:01,978 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-12 21:15:01,978 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-12 21:15:01,979 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-12 21:15:01,979 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-12 21:15:01,979 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-12 21:15:01,979 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-12 21:15:01,979 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-12 21:15:01,979 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-12 21:15:01,979 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-12 21:15:01,979 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-12 21:15:01,979 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-12 21:15:01,979 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /home/jan/astor/defect4j_tests/math_74/
+2019-04-12 21:15:01,979 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-12 21:15:01,980 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-12 21:15:01,980 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 21:15:01,980 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-12 21:15:01,980 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-12 21:15:01,980 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-12 21:15:01,980 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-12 21:15:01,983 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-12 21:15:01,983 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-12 21:15:01,983 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-12 21:15:01,984 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 21:15:01,984 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-12 21:15:01,984 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-12 21:15:01,984 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-12 21:15:01,984 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-12 21:15:01,990 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-12 21:15:01,990 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-12 21:15:01,990 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-12 21:15:01,990 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-12 21:15:01,990 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-12 21:15:01,990 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-12 21:15:01,990 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-12 21:15:01,991 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= package
+2019-04-12 21:15:01,991 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-12 21:15:01,991 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-12 21:15:01,991 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-12 21:15:01,991 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-12 21:15:01,991 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-12 21:15:01,991 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-12 21:15:01,991 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-12 21:15:01,991 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-12 21:15:01,991 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-12 21:15:01,991 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-12 21:15:01,991 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-12 21:15:01,999 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-12 21:15:01,999 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-12 21:15:01,999 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-12 21:15:02,000 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-12 21:15:02,000 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-12 21:15:02,000 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-12 21:15:02,000 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-12 21:15:02,000 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 21:15:02,001 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 309, el: CtLocalVariableImpl
+2019-04-12 21:15:02,002 INFO main - -->op: RemoveOp: `final double factor = com[...] ` ---> `-` at pos 0 of parent `{ 	final double factor = [...]`
+2019-04-12 21:15:08,408 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 310, el: CtAssignmentImpl
+2019-04-12 21:15:08,408 INFO main - -->op: RemoveOp: `hNew = filterStep(((stepS[...] ` ---> `-` at pos 1 of parent `{ 	final double factor = [...]`
+2019-04-12 21:17:10,649 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:17:10,649 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 311, el: CtInvocationImpl
+2019-04-12 21:17:10,650 INFO main - -->op: RemoveOp: `interpolator.rescale(hNew[...] ` ---> `-` at pos 2 of parent `{ 	final double factor = [...]`
+2019-04-12 21:17:16,100 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 290, el: CtLocalVariableImpl
+2019-04-12 21:17:16,101 INFO main - -->op: RemoveOp: `final double dt = (manage[...] ` ---> `-` at pos 0 of parent `{ 	final double dt = (man[...]`
+2019-04-12 21:17:17,157 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 291, el: CtIfImpl
+2019-04-12 21:17:17,157 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(d[...] ` ---> `if (true) { 	loop = false[...]` at pos 1 of parent `{ 	final double dt = (man[...]`
+2019-04-12 21:17:22,468 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 291, el: CtIfImpl
+2019-04-12 21:17:22,468 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(d[...] ` ---> `if (false) { 	loop = fals[...]` at pos 1 of parent `{ 	final double dt = (man[...]`
+2019-04-12 21:17:27,700 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 291, el: CtIfImpl
+2019-04-12 21:17:27,701 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(d[...] ` ---> `-` at pos 1 of parent `{ 	final double dt = (man[...]`
+2019-04-12 21:17:27,873 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 296, el: CtAssignmentImpl
+2019-04-12 21:17:27,873 INFO main - -->op: RemoveOp: `hNew = dt ` ---> `-` at pos 0 of parent `{ 	hNew = dt; 	interpolat[...]`
+2019-04-12 21:19:29,104 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:19:29,104 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 297, el: CtInvocationImpl
+2019-04-12 21:19:29,104 INFO main - -->op: RemoveOp: `interpolator.rescale(hNew[...] ` ---> `-` at pos 1 of parent `{ 	hNew = dt; 	interpolat[...]`
+2019-04-12 21:19:34,316 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 356, el: CtLocalVariableImpl
+2019-04-12 21:19:34,324 INFO main - -->op: RemoveOp: `final double stopTime = s[...] ` ---> `-` at pos 21 of parent `{ 	final int n = y0.lengt[...]`
+2019-04-12 21:19:34,943 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 357, el: CtAssignmentImpl
+2019-04-12 21:19:34,997 INFO main - -->op: RemoveOp: `stepStart = java.lang.Dou[...] ` ---> `-` at pos 22 of parent `{ 	final int n = y0.lengt[...]`
+2019-04-12 21:19:40,172 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 358, el: CtAssignmentImpl
+2019-04-12 21:19:40,176 INFO main - -->op: RemoveOp: `stepSize = java.lang.Doub[...] ` ---> `-` at pos 23 of parent `{ 	final int n = y0.lengt[...]`
+2019-04-12 21:19:45,015 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 359, el: CtReturnImpl
+2019-04-12 21:19:45,019 INFO main - -->op: RemoveOp: `return stopTime ` ---> `-` at pos 24 of parent `{ 	final int n = y0.lengt[...]`
+2019-04-12 21:19:45,646 INFO main - mod_point ModificPoint=AdaptiveStepsizeIntegrator line: 292, el: CtAssignmentImpl
+2019-04-12 21:19:45,646 INFO main - -->op: RemoveOp: `filteredH = maxStep ` ---> `-` at pos 0 of parent `{ 	filteredH = maxStep; }`
+2019-04-12 21:19:50,484 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 400, el: CtInvocationImpl
+2019-04-12 21:19:50,484 INFO main - -->op: RemoveOp: `java.util.Arrays.fill(aft[...] ` ---> `-` at pos 0 of parent `{ 	java.util.Arrays.fill([...]`
+2019-04-12 21:21:51,260 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:21:51,260 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 406, el: CtIfImpl
+2019-04-12 21:21:51,261 INFO main - -->op: ReplaceIfBooleanOp: `if ((row & 1) == 0) { 	af[...] ` ---> `if (true) { 	after[column[...]` at pos 0 of parent `{ 	if ((row & 1) == 0) { [...]`
+2019-04-12 21:22:06,508 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 406, el: CtIfImpl
+2019-04-12 21:22:06,508 INFO main - -->op: ReplaceIfBooleanOp: `if ((row & 1) == 0) { 	af[...] ` ---> `if (false) { 	after[colum[...]` at pos 0 of parent `{ 	if ((row & 1) == 0) { [...]`
+2019-04-12 21:24:07,228 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:24:07,228 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 406, el: CtIfImpl
+2019-04-12 21:24:07,228 INFO main - -->op: RemoveOp: `if ((row & 1) == 0) { 	af[...] ` ---> `-` at pos 0 of parent `{ 	if ((row & 1) == 0) { [...]`
+2019-04-12 21:26:07,980 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:26:07,981 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 407, el: CtOperatorAssignmentImpl
+2019-04-12 21:26:07,981 INFO main - -->op: RemoveOp: `after[column] -= value ` ---> `-` at pos 0 of parent `{ 	after[column] -= value[...]`
+2019-04-12 21:28:08,701 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:28:08,701 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 409, el: CtOperatorAssignmentImpl
+2019-04-12 21:28:08,701 INFO main - -->op: RemoveOp: `after[column] += value ` ---> `-` at pos 0 of parent `{ 	after[column] += value[...]`
+2019-04-12 21:28:25,228 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 424, el: CtLocalVariableImpl
+2019-04-12 21:28:25,228 INFO main - -->op: RemoveOp: `double error = 0 ` ---> `-` at pos 0 of parent `{ 	double error = 0; 	for[...]`
+2019-04-12 21:28:25,780 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 425, el: CtForImpl
+2019-04-12 21:28:25,781 INFO main - -->op: RemoveOp: `for (int i = 0; i < (afte[...] ` ---> `-` at pos 1 of parent `{ 	double error = 0; 	for[...]`
+2019-04-12 21:28:30,224 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 426, el: CtOperatorAssignmentImpl
+2019-04-12 21:28:30,224 INFO main - -->op: RemoveOp: `after[i] += (previous[i])[...] ` ---> `-` at pos 0 of parent `{ 	after[i] += (previous[[...]`
+2019-04-12 21:30:30,880 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:30:30,880 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 427, el: CtLocalVariableImpl
+2019-04-12 21:30:30,881 INFO main - -->op: RemoveOp: `final double yScale = jav[...] ` ---> `-` at pos 1 of parent `{ 	after[i] += (previous[[...]`
+2019-04-12 21:30:31,435 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 428, el: CtLocalVariableImpl
+2019-04-12 21:30:31,436 INFO main - -->op: RemoveOp: `final double tol = ((vecA[...] ` ---> `-` at pos 2 of parent `{ 	after[i] += (previous[[...]`
+2019-04-12 21:30:31,970 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 431, el: CtLocalVariableImpl
+2019-04-12 21:30:31,970 INFO main - -->op: RemoveOp: `final double ratio = ((af[...] ` ---> `-` at pos 3 of parent `{ 	after[i] += (previous[[...]`
+2019-04-12 21:30:32,676 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 432, el: CtOperatorAssignmentImpl
+2019-04-12 21:30:32,676 INFO main - -->op: RemoveOp: `error += ratio * ratio ` ---> `-` at pos 4 of parent `{ 	after[i] += (previous[[...]`
+2019-04-12 21:30:36,842 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 435, el: CtReturnImpl
+2019-04-12 21:30:36,843 INFO main - -->op: RemoveOp: `return java.lang.Math.sqr[...] ` ---> `-` at pos 2 of parent `{ 	double error = 0; 	for[...]`
+2019-04-12 21:30:37,282 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 236, el: CtInvocationImpl
+2019-04-12 21:30:37,333 INFO main - -->op: RemoveOp: `interpolator.reinitialize[...] ` ---> `-` at pos 15 of parent `{ 	final int n = y0.lengt[...]`
+2019-04-12 21:30:41,364 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 237, el: CtInvocationImpl
+2019-04-12 21:30:41,368 INFO main - -->op: RemoveOp: `interpolator.storeTime(st[...] ` ---> `-` at pos 16 of parent `{ 	final int n = y0.lengt[...]`
+2019-04-12 21:30:46,672 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 239, el: CtLocalVariableImpl
+2019-04-12 21:30:46,676 INFO main - -->op: RemoveOp: `double hNew = stepSize ` ---> `-` at pos 17 of parent `{ 	final int n = y0.lengt[...]`
+2019-04-12 21:30:47,212 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 240, el: CtInvocationImpl
+2019-04-12 21:30:47,256 INFO main - -->op: RemoveOp: `interpolator.rescale(hNew[...] ` ---> `-` at pos 18 of parent `{ 	final int n = y0.lengt[...]`
+2019-04-12 21:30:52,916 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 242, el: CtLocalVariableImpl
+2019-04-12 21:30:52,920 INFO main - -->op: RemoveOp: `boolean lastStep = false ` ---> `-` at pos 19 of parent `{ 	final int n = y0.lengt[...]`
+2019-04-12 21:30:53,427 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 243, el: CtWhileImpl
+2019-04-12 21:30:53,478 INFO main - -->op: RemoveOp: `while (!lastStep) { 	inte[...] ` ---> `-` at pos 20 of parent `{ 	final int n = y0.lengt[...]`
+2019-04-12 21:30:57,492 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 246, el: CtInvocationImpl
+2019-04-12 21:30:57,495 INFO main - -->op: RemoveOp: `interpolator.shift() ` ---> `-` at pos 0 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 21:31:03,664 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 248, el: CtLocalVariableImpl
+2019-04-12 21:31:03,667 INFO main - -->op: RemoveOp: `double error = 0 ` ---> `-` at pos 1 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 21:31:04,173 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 249, el: CtForImpl
+2019-04-12 21:31:04,231 INFO main - -->op: RemoveOp: `for (boolean loop = true;[...] ` ---> `-` at pos 2 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 21:33:04,870 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:33:04,871 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 251, el: CtAssignmentImpl
+2019-04-12 21:33:04,874 INFO main - -->op: RemoveOp: `stepSize = hNew ` ---> `-` at pos 0 of parent `{ 	stepSize = hNew; 	fina[...]`
+2019-04-12 21:35:05,599 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:35:05,600 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 254, el: CtLocalVariableImpl
+2019-04-12 21:35:05,603 INFO main - -->op: RemoveOp: `final double stepEnd = (s[...] ` ---> `-` at pos 1 of parent `{ 	stepSize = hNew; 	fina[...]`
+2019-04-12 21:35:06,233 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 255, el: CtInvocationImpl
+2019-04-12 21:35:06,280 INFO main - -->op: RemoveOp: `interpolator.setInterpola[...] ` ---> `-` at pos 2 of parent `{ 	stepSize = hNew; 	fina[...]`
+2019-04-12 21:37:07,144 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:37:07,144 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 256, el: CtInvocationImpl
+2019-04-12 21:37:07,148 INFO main - -->op: RemoveOp: `java.lang.System.arraycop[...] ` ---> `-` at pos 3 of parent `{ 	stepSize = hNew; 	fina[...]`
+2019-04-12 21:39:07,884 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:39:07,887 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 259, el: CtInvocationImpl
+2019-04-12 21:39:07,891 INFO main - -->op: RemoveOp: `computeDerivatives(stepEn[...] ` ---> `-` at pos 4 of parent `{ 	stepSize = hNew; 	fina[...]`
+2019-04-12 21:41:08,540 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:41:08,540 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 262, el: CtLocalVariableImpl
+2019-04-12 21:41:08,543 INFO main - -->op: RemoveOp: `final double[] predictedS[...] ` ---> `-` at pos 5 of parent `{ 	stepSize = hNew; 	fina[...]`
+2019-04-12 21:41:09,046 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 263, el: CtForImpl
+2019-04-12 21:41:09,105 INFO main - -->op: RemoveOp: `for (int j = 0; j < (y0.l[...] ` ---> `-` at pos 6 of parent `{ 	stepSize = hNew; 	fina[...]`
+2019-04-12 21:43:09,884 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:43:09,884 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 264, el: CtAssignmentImpl
+2019-04-12 21:43:09,884 INFO main - -->op: RemoveOp: `predictedScaled[j] = (ste[...] ` ---> `-` at pos 0 of parent `{ 	predictedScaled[j] = ([...]`
+2019-04-12 21:45:10,473 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:45:10,473 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 266, el: CtLocalVariableImpl
+2019-04-12 21:45:10,481 INFO main - -->op: RemoveOp: `final org.apache.commons.[...] ` ---> `-` at pos 7 of parent `{ 	stepSize = hNew; 	fina[...]`
+2019-04-12 21:45:10,964 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 267, el: CtInvocationImpl
+2019-04-12 21:45:10,988 INFO main - -->op: RemoveOp: `updateHighOrderDerivative[...] ` ---> `-` at pos 8 of parent `{ 	stepSize = hNew; 	fina[...]`
+2019-04-12 21:47:11,692 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:47:11,692 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 270, el: CtAssignmentImpl
+2019-04-12 21:47:11,697 INFO main - -->op: RemoveOp: `error = nordsieckTmp.walk[...] ` ---> `-` at pos 9 of parent `{ 	stepSize = hNew; 	fina[...]`
+2019-04-12 21:47:16,041 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 272, el: CtIfImpl
+2019-04-12 21:47:16,047 INFO main - -->op: ReplaceIfBooleanOp: `if (error <= 1.0) { 	comp[...] ` ---> `if (true) { 	computeDeriv[...]` at pos 10 of parent `{ 	stepSize = hNew; 	fina[...]`
+2019-04-12 21:47:21,916 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 272, el: CtIfImpl
+2019-04-12 21:47:21,922 INFO main - -->op: ReplaceIfBooleanOp: `if (error <= 1.0) { 	comp[...] ` ---> `if (false) { 	computeDeri[...]` at pos 10 of parent `{ 	stepSize = hNew; 	fina[...]`
+2019-04-12 21:49:22,572 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:49:22,572 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 272, el: CtIfImpl
+2019-04-12 21:49:22,575 INFO main - -->op: RemoveOp: `if (error <= 1.0) { 	comp[...] ` ---> `-` at pos 10 of parent `{ 	stepSize = hNew; 	fina[...]`
+2019-04-12 21:51:23,223 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:51:23,224 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 275, el: CtInvocationImpl
+2019-04-12 21:51:23,227 INFO main - -->op: RemoveOp: `computeDerivatives(stepEn[...] ` ---> `-` at pos 0 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 21:51:28,880 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 278, el: CtLocalVariableImpl
+2019-04-12 21:51:28,880 INFO main - -->op: RemoveOp: `final double[] correctedS[...] ` ---> `-` at pos 1 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 21:51:29,317 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 279, el: CtForImpl
+2019-04-12 21:51:29,317 INFO main - -->op: RemoveOp: `for (int j = 0; j < (y0.l[...] ` ---> `-` at pos 2 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 21:53:30,068 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:53:30,068 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 280, el: CtAssignmentImpl
+2019-04-12 21:53:30,068 INFO main - -->op: RemoveOp: `correctedScaled[j] = (ste[...] ` ---> `-` at pos 0 of parent `{ 	correctedScaled[j] = ([...]`
+2019-04-12 21:55:30,665 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:55:30,665 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 282, el: CtInvocationImpl
+2019-04-12 21:55:30,666 INFO main - -->op: RemoveOp: `updateHighOrderDerivative[...] ` ---> `-` at pos 3 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 21:55:36,224 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 285, el: CtInvocationImpl
+2019-04-12 21:55:36,225 INFO main - -->op: RemoveOp: `interpolatorTmp.reinitial[...] ` ---> `-` at pos 4 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 21:55:40,474 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 286, el: CtInvocationImpl
+2019-04-12 21:55:40,475 INFO main - -->op: RemoveOp: `interpolatorTmp.storeTime[...] ` ---> `-` at pos 5 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 21:55:46,544 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 287, el: CtInvocationImpl
+2019-04-12 21:55:46,544 INFO main - -->op: RemoveOp: `interpolatorTmp.shift() ` ---> `-` at pos 6 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 21:55:52,832 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 288, el: CtInvocationImpl
+2019-04-12 21:55:52,832 INFO main - -->op: RemoveOp: `interpolatorTmp.storeTime[...] ` ---> `-` at pos 7 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 21:57:53,321 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:57:53,324 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 289, el: CtIfImpl
+2019-04-12 21:57:53,325 INFO main - -->op: ReplaceIfBooleanOp: `if (manager.evaluateStep([...] ` ---> `if (true) { 	final double[...]` at pos 8 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 21:59:53,904 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 21:59:53,904 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 289, el: CtIfImpl
+2019-04-12 21:59:53,905 INFO main - -->op: ReplaceIfBooleanOp: `if (manager.evaluateStep([...] ` ---> `if (false) { 	final doubl[...]` at pos 8 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 22:01:54,519 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 22:01:54,523 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 289, el: CtIfImpl
+2019-04-12 22:01:54,523 INFO main - -->op: RemoveOp: `if (manager.evaluateStep([...] ` ---> `-` at pos 8 of parent `{ 	computeDerivatives(ste[...]`
+2019-04-12 22:03:55,236 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 22:03:55,237 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 301, el: CtAssignmentImpl
+2019-04-12 22:03:55,237 INFO main - -->op: RemoveOp: `scaled = correctedScaled ` ---> `-` at pos 0 of parent `{ 	scaled = correctedScal[...]`
+2019-04-12 22:05:55,915 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 22:05:55,919 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 302, el: CtAssignmentImpl
+2019-04-12 22:05:55,922 INFO main - -->op: RemoveOp: `nordsieck = nordsieckTmp ` ---> `-` at pos 1 of parent `{ 	scaled = correctedScal[...]`
+2019-04-12 22:07:56,720 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 22:07:56,720 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 303, el: CtInvocationImpl
+2019-04-12 22:07:56,720 INFO main - -->op: RemoveOp: `interpolator.reinitialize[...] ` ---> `-` at pos 2 of parent `{ 	scaled = correctedScal[...]`
+2019-04-12 22:09:57,409 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 22:09:57,409 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 304, el: CtAssignmentImpl
+2019-04-12 22:09:57,409 INFO main - -->op: RemoveOp: `loop = false ` ---> `-` at pos 3 of parent `{ 	scaled = correctedScal[...]`
+2019-04-12 22:11:58,049 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 22:11:58,049 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 317, el: CtLocalVariableImpl
+2019-04-12 22:11:58,052 INFO main - -->op: RemoveOp: `final double nextStep = ([...] ` ---> `-` at pos 3 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 22:11:58,587 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 318, el: CtInvocationImpl
+2019-04-12 22:11:58,955 INFO main - -->op: RemoveOp: `java.lang.System.arraycop[...] ` ---> `-` at pos 4 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 22:12:06,766 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 319, el: CtInvocationImpl
+2019-04-12 22:12:06,769 INFO main - -->op: RemoveOp: `interpolator.storeTime(ne[...] ` ---> `-` at pos 5 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 22:12:13,128 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 320, el: CtInvocationImpl
+2019-04-12 22:12:13,131 INFO main - -->op: RemoveOp: `manager.stepAccepted(next[...] ` ---> `-` at pos 6 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 22:14:13,808 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 22:14:13,808 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 321, el: CtAssignmentImpl
+2019-04-12 22:14:13,811 INFO main - -->op: RemoveOp: `lastStep = manager.stop() ` ---> `-` at pos 7 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 22:16:14,423 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 22:16:14,424 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 324, el: CtForEachImpl
+2019-04-12 22:16:14,428 INFO main - -->op: RemoveOp: `for (org.apache.commons.m[...] ` ---> `-` at pos 8 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 22:16:20,420 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 325, el: CtInvocationImpl
+2019-04-12 22:16:20,420 INFO main - -->op: RemoveOp: `interpolator.setInterpola[...] ` ---> `-` at pos 0 of parent `{ 	interpolator.setInterp[...]`
+2019-04-12 22:16:27,232 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 326, el: CtInvocationImpl
+2019-04-12 22:16:27,232 INFO main - -->op: RemoveOp: `handler.handleStep(interp[...] ` ---> `-` at pos 1 of parent `{ 	interpolator.setInterp[...]`
+2019-04-12 22:16:33,236 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 328, el: CtAssignmentImpl
+2019-04-12 22:16:33,239 INFO main - -->op: RemoveOp: `stepStart = nextStep ` ---> `-` at pos 9 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 22:18:33,883 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 22:18:33,884 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 330, el: CtIfImpl
+2019-04-12 22:18:33,889 INFO main - -->op: ReplaceIfBooleanOp: `if ((!lastStep) && (manag[...] ` ---> `if (true) { 	start(stepSt[...]` at pos 10 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 22:18:43,043 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 330, el: CtIfImpl
+2019-04-12 22:18:43,046 INFO main - -->op: ReplaceIfBooleanOp: `if ((!lastStep) && (manag[...] ` ---> `if (false) { 	start(stepS[...]` at pos 10 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 22:18:49,704 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 330, el: CtIfImpl
+2019-04-12 22:18:49,707 INFO main - -->op: RemoveOp: `if ((!lastStep) && (manag[...] ` ---> `-` at pos 10 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 22:18:57,052 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 339, el: CtIfImpl
+2019-04-12 22:18:57,056 INFO main - -->op: ReplaceIfBooleanOp: `if (!lastStep) { 	stepSiz[...] ` ---> `if (true) { 	stepSize = f[...]` at pos 11 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 22:19:05,180 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 339, el: CtIfImpl
+2019-04-12 22:19:05,184 INFO main - -->op: ReplaceIfBooleanOp: `if (!lastStep) { 	stepSiz[...] ` ---> `if (false) { 	stepSize = [...]` at pos 11 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 22:19:12,821 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 339, el: CtIfImpl
+2019-04-12 22:19:12,824 INFO main - -->op: RemoveOp: `if (!lastStep) { 	stepSiz[...] ` ---> `-` at pos 11 of parent `{ 	interpolator.shift(); [...]`
+2019-04-12 22:19:19,821 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 343, el: CtAssignmentImpl
+2019-04-12 22:19:19,821 INFO main - -->op: RemoveOp: `stepSize = filterStep(ste[...] ` ---> `-` at pos 0 of parent `{ 	stepSize = filterStep([...]`
+2019-04-12 22:19:26,936 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 346, el: CtLocalVariableImpl
+2019-04-12 22:19:26,936 INFO main - -->op: RemoveOp: `final double factor = com[...] ` ---> `-` at pos 1 of parent `{ 	stepSize = filterStep([...]`
+2019-04-12 22:19:27,363 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 347, el: CtLocalVariableImpl
+2019-04-12 22:19:27,364 INFO main - -->op: RemoveOp: `final double scaledH = (s[...] ` ---> `-` at pos 2 of parent `{ 	stepSize = filterStep([...]`
+2019-04-12 22:19:28,000 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 348, el: CtLocalVariableImpl
+2019-04-12 22:19:28,001 INFO main - -->op: RemoveOp: `final double nextT = (ste[...] ` ---> `-` at pos 3 of parent `{ 	stepSize = filterStep([...]`
+2019-04-12 22:19:28,647 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 349, el: CtLocalVariableImpl
+2019-04-12 22:19:28,651 INFO main - -->op: RemoveOp: `final boolean nextIsLast [...] ` ---> `-` at pos 4 of parent `{ 	stepSize = filterStep([...]`
+2019-04-12 22:19:29,195 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 350, el: CtAssignmentImpl
+2019-04-12 22:19:29,195 INFO main - -->op: RemoveOp: `hNew = filterStep(scaledH[...] ` ---> `-` at pos 5 of parent `{ 	stepSize = filterStep([...]`
+2019-04-12 22:19:37,424 INFO main - mod_point ModificPoint=AdamsMoultonIntegrator line: 351, el: CtInvocationImpl
+2019-04-12 22:19:37,424 INFO main - -->op: RemoveOp: `interpolator.rescale(hNew[...] ` ---> `-` at pos 6 of parent `{ 	stepSize = filterStep([...]`
+2019-04-12 22:21:38,052 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-12 22:21:38,052 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-12 22:21:38,052 INFO main - 
+successful_ing_attempts (0): []
+2019-04-12 22:21:38,052 INFO main - 
+failing_ing_attempts (89): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 22:21:38,052 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 4374.026
+[DONE]

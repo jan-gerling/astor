@@ -1,0 +1,487 @@
+[INFO] start run at 17-04-2019-20-30-34
+[[35mBUILD[39m] astor in /home/jan_gerling/astor/
+[[34mInfo[39m]: math_51 failed to build with test error:
+Tests in error: 
+  testIssue631(org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest): illegal state: maximal count (3,624) exceeded: evaluations
+
+Tests run: 2922, Failures: 1, Errors: 1, Skipped: 1
+[[34mRUN[39m] math_51-jmutrepair-local
+[[34mDONE[39m]: math_51-jmutrepair-local is finished!
+[[33m[WARNING[39m]: math_51-jmutrepair-local did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-17 22:17:33,837 INFO main - 
+successful_ing_attempts (0): []
+2019-04-17 22:17:33,838 INFO main - 
+failing_ing_attempts (523): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-17 22:17:33,838 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6303.949
+[DONE]
+
+
+[[35mSKIP[39m]: math_51-jmutrepair-package was already done!
+[[33m[WARNING[39m]: math_51-jmutrepair-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-15 20:28:32,856 INFO main - 
+successful_ing_attempts (0): []
+2019-04-15 20:28:32,856 INFO main - 
+failing_ing_attempts (535): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-15 20:28:32,856 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6310.581
+[DONE]
+
+
+[[35mSKIP[39m]: math_51-jmutrepair-global was already done!
+[[33m[WARNING[39m]: math_51-jmutrepair-global did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-17 08:13:22,243 INFO main - 
+successful_ing_attempts (0): []
+2019-04-17 08:13:22,243 INFO main - 
+failing_ing_attempts (577): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-17 08:13:22,243 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6301.718
+[DONE]
+
+
+[[35mSKIP[39m]: math_51-jkali-local was already done!
+[[33m[WARNING[39m]: math_51-jkali-local did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-17 09:58:34,906 INFO main - 
+successful_ing_attempts (0): []
+2019-04-17 09:58:34,906 INFO main - 
+failing_ing_attempts (784): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-17 09:58:34,906 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6311.681
+[DONE]
+
+
+[[35mSKIP[39m]: math_51-jkali-package was already done!
+[[33m[WARNING[39m]: math_51-jkali-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-17 17:39:10,553 INFO main - 
+successful_ing_attempts (0): []
+2019-04-17 17:39:10,553 INFO main - 
+failing_ing_attempts (715): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-17 17:39:10,553 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6319.404
+[DONE]
+
+
+[[34mRUN[39m] math_51-jkali-global
+[[34mDONE[39m]: math_51-jkali-global is finished!
+[[33m[WARNING[39m]: math_51-jkali-global did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-18 00:02:54,651 INFO main - 
+successful_ing_attempts (0): []
+2019-04-18 00:02:54,651 INFO main - 
+failing_ing_attempts (697): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-18 00:02:54,651 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6319.406
+[DONE]
+
+
+[[35mSKIP[39m]: math_51-jgenprog-local was already done!
+[[31mFAILURE[39m]: math_51-jgenprog-local did not finish properly!
+
+
+[[35mSKIP[39m]: math_51-jgenprog-package was already done!
+[[31m[EXCEPTION[39m]: math_51-jgenprog-package had an exception: 
+Exception in thread "main" spoon.SpoonException: cannot insert a statement before a super or this invocation.
+	at spoon.support.reflect.code.CtStatementImpl.insertBefore(CtStatementImpl.java:73)
+	at spoon.support.reflect.code.CtStatementImpl.insertBefore(CtStatementImpl.java:61)
+	at spoon.support.reflect.code.CtInvocationImpl.insertBefore(CtInvocationImpl.java:93)
+	at fr.inria.astor.approaches.jgenprog.operators.InsertBeforeOp.applyChangesInModel(InsertBeforeOp.java:24)
+	at fr.inria.astor.core.entities.OperatorInstance.applyModification(OperatorInstance.java:196)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.applyNewMutationOperationToSpoonElement(JGenProg.java:270)
+	at fr.inria.astor.core.loop.AstorCoreEngine.applyNewOperationsToVariantModel(AstorCoreEngine.java:789)
+	at fr.inria.astor.core.loop.AstorCoreEngine.createNewProgramVariant(AstorCoreEngine.java:481)
+	at fr.inria.astor.core.loop.AstorCoreEngine.processGenerations(AstorCoreEngine.java:248)
+	at fr.inria.astor.core.loop.AstorCoreEngine.startEvolution(AstorCoreEngine.java:132)
+	at fr.inria.main.evolution.AstorMain.run(AstorMain.java:513)
+	at fr.inria.main.evolution.AstorMain.execute(AstorMain.java:571)
+	at fr.inria.main.evolution.AstorMain.main(AstorMain.java:550)
+[DONE]
+
+
+[[34mRUN[39m] math_51-jgenprog-global
+[[34mDONE[39m]: math_51-jgenprog-global is finished!
+[[31m[EXCEPTION[39m]: math_51-jgenprog-global had an exception: 
+Exception in thread "main" spoon.SpoonException: cannot insert a statement before a super or this invocation.
+	at spoon.support.reflect.code.CtStatementImpl.insertBefore(CtStatementImpl.java:73)
+	at spoon.support.reflect.code.CtStatementImpl.insertBefore(CtStatementImpl.java:61)
+	at spoon.support.reflect.code.CtInvocationImpl.insertBefore(CtInvocationImpl.java:93)
+	at fr.inria.astor.approaches.jgenprog.operators.InsertBeforeOp.applyChangesInModel(InsertBeforeOp.java:24)
+	at fr.inria.astor.core.entities.OperatorInstance.applyModification(OperatorInstance.java:196)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.applyNewMutationOperationToSpoonElement(JGenProg.java:270)
+	at fr.inria.astor.core.loop.AstorCoreEngine.applyNewOperationsToVariantModel(AstorCoreEngine.java:789)
+	at fr.inria.astor.core.loop.AstorCoreEngine.createNewProgramVariant(AstorCoreEngine.java:481)
+	at fr.inria.astor.core.loop.AstorCoreEngine.processGenerations(AstorCoreEngine.java:248)
+	at fr.inria.astor.core.loop.AstorCoreEngine.startEvolution(AstorCoreEngine.java:132)
+	at fr.inria.main.evolution.AstorMain.run(AstorMain.java:513)
+	at fr.inria.main.evolution.AstorMain.execute(AstorMain.java:571)
+	at fr.inria.main.evolution.AstorMain.main(AstorMain.java:550)
+[DONE]
+
+
+[[34mInfo[39m]: math_74 failed to build with test error:
+Failed tests: 
+  polynomial(org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest)
+
+Tests run: 2131, Failures: 1, Errors: 0, Skipped: 0
+[[35mSKIP[39m]: math_74-jmutrepair-local was already done!
+[[33m[WARNING[39m]: math_74-jmutrepair-local did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-12 19:20:54,532 INFO main - 
+successful_ing_attempts (0): []
+2019-04-12 19:20:54,532 INFO main - 
+failing_ing_attempts (24): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 19:20:54,533 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 956.037
+[DONE]
+
+
+[[35mSKIP[39m]: math_74-jmutrepair-package was already done!
+[[33m[WARNING[39m]: math_74-jmutrepair-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-12 19:40:39,516 INFO main - 
+successful_ing_attempts (0): []
+2019-04-12 19:40:39,516 INFO main - 
+failing_ing_attempts (24): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 19:40:39,516 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 1183.735
+[DONE]
+
+
+[[35mSKIP[39m]: math_74-jmutrepair-global was already done!
+[[33m[WARNING[39m]: math_74-jmutrepair-global did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-12 20:01:21,965 INFO main - 
+successful_ing_attempts (0): []
+2019-04-12 20:01:21,965 INFO main - 
+failing_ing_attempts (24): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 20:01:21,966 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 1240.844
+[DONE]
+
+
+[[35mSKIP[39m]: math_74-jkali-local was already done!
+[[33m[WARNING[39m]: math_74-jkali-local did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-12 21:08:40,129 INFO main - 
+successful_ing_attempts (0): []
+2019-04-12 21:08:40,129 INFO main - 
+failing_ing_attempts (89): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 21:08:40,129 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 4036.157
+[DONE]
+
+
+[[35mSKIP[39m]: math_74-jkali-package was already done!
+[[33m[WARNING[39m]: math_74-jkali-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-12 22:21:38,052 INFO main - 
+successful_ing_attempts (0): []
+2019-04-12 22:21:38,052 INFO main - 
+failing_ing_attempts (89): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 22:21:38,052 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 4374.026
+[DONE]
+
+
+[[34mRUN[39m] math_74-jkali-global
+[[34mDONE[39m]: math_74-jkali-global is finished!
+[[33m[WARNING[39m]: math_74-jkali-global did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-18 01:14:03,351 INFO main - 
+successful_ing_attempts (0): []
+2019-04-18 01:14:03,351 INFO main - 
+failing_ing_attempts (89): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-18 01:14:03,351 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 3602.5
+[DONE]
+
+
+[[35mSKIP[39m]: math_74-jgenprog-local was already done!
+[[33m[WARNING[39m]: math_74-jgenprog-local did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-13 09:10:47,360 INFO main - 
+successful_ing_attempts (0): []
+2019-04-13 09:10:47,369 INFO main - 
+failing_ing_attempts (183): [2, 1, 2, 0, 4, 0, 1, 2, 0, 2, 1, 0, 1, 0, 1, 2, 4, 1, 1, 2, 0, 0, 1, 2, 6, 4, 1, 0, 0, 0, 2, 0, 3, 1, 0, 2, 1, 0, 0, 2, 1, 0, 3, 1, 3, 2, 1, 1, 0, 0, 2, 0, 2, 1, 1, 1, 1, 2, 0, 3, 1, 0, 1, 1, 3, 2, 3, 0, 0, 2, 5, 1, 1, 0, 1, 0, 1, 0, 2, 2, 1, 1, 1, 1, 1, 1, 0, 2, 3, 0, 1, 1, 2, 1, 1, 2, 1, 0, 1, 1, 3, 2, 3, 3, 1, 4, 2, 2, 8, 1, 1, 0, 1, 0, 0, 0, 0, 3, 1, 1, 0, 0, 2, 0, 1, 1, 0, 0, 1, 6, 1, 0, 0, 1, 2, 1, 8, 1, 2, 0, 1, 0, 1, 2, 3, 5, 1, 1, 0, 3, 1, 1, 0, 3, 1, 1, 0, 0, 3, 2, 1, 0, 0, 1, 0, 0, 2, 0, 0, 1, 0, 2, 3, 1, 2, 0, 1, 0, 0, 1, 0, 0, 1]
+2019-04-13 09:10:47,370 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6132.537
+[DONE]
+
+
+[[35mSKIP[39m]: math_74-jgenprog-package was already done!
+[[32mSUCCESS[39m]: math_74-jgenprog-package found a fix!
+----SUMMARY_EXECUTION---
+2019-04-13 10:31:35,938 INFO main - 
+Solution details
+2019-04-13 10:31:35,942 INFO main - 
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 230
+ 
+time(sec)= 4572
+operation: InsertBeforeOp
+location= org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator
+line= 263
+lineSuspiciousness= 0.5
+original statement= for (int j = 0; j < (y0.length); ++j)
+	predictedScaled[j] = (stepSize) * (yDot[j]);
+
+fixed statement= setMaxGrowth(10.0)
+generation= 57
+ingredientScope= PACKAGE
+validation=|true|0|2131|[]|
+2019-04-13 10:31:35,942 INFO main - 
+successful_ing_attempts (1): [5]
+2019-04-13 10:31:35,942 INFO main - 
+failing_ing_attempts (170): [1, 3, 25, 13, 4, 0, 1, 4, 2, 2, 12, 14, 9, 4, 0, 1, 0, 1, 5, 15, 6, 8, 9, 1, 5, 1, 5, 4, 0, 5, 0, 0, 2, 0, 15, 2, 4, 1, 5, 0, 7, 3, 13, 9, 0, 19, 6, 19, 5, 5, 5, 0, 0, 4, 21, 67, 48, 2, 2, 5, 1, 1, 5, 4, 0, 4, 13, 4, 0, 5, 9, 9, 3, 3, 13, 1, 4, 15, 0, 0, 8, 8, 1, 0, 6, 4, 4, 11, 3, 0, 3, 2, 0, 2, 0, 6, 66, 5, 2, 7, 15, 11, 1, 1, 0, 4, 1, 1, 3, 4, 0, 1, 3, 8, 1, 2, 0, 0, 3, 21, 13, 0, 3, 7, 0, 14, 15, 5, 7, 24, 1, 5, 2, 4, 11, 4, 12, 0, 3, 0, 13, 1, 7, 0, 0, 0, 5, 2, 0, 23, 2, 0, 6, 2, 12, 3, 3, 0, 1, 1, 8, 0, 15, 0, 5, 2, 32, 4, 0, 6]
+2019-04-13 10:31:35,942 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 4845.475
+[DONE]
+
+
+[[35mSKIP[39m]: math_74-jgenprog-global was already done!
+[[33m[WARNING[39m]: math_74-jgenprog-global did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-13 12:56:50,305 INFO main - 
+successful_ing_attempts (0): []
+2019-04-13 12:56:50,305 INFO main - 
+failing_ing_attempts (201): [4, 5, 0, 11, 0, 0, 9, 0, 1, 5, 106, 1, 0, 3, 18, 0, 7, 0, 22, 2, 12, 22, 0, 0, 10, 25, 0, 3, 21, 0, 0, 13, 27, 5, 80, 7, 5, 5, 13, 6, 11, 2, 1, 8, 3, 19, 17, 6, 18, 6, 3, 0, 2, 7, 7, 1, 3, 6, 10, 20, 0, 8, 1, 2, 4, 7, 7, 0, 0, 0, 4, 2, 0, 4, 76, 3, 1, 0, 5, 2, 0, 5, 0, 58, 0, 0, 4, 0, 2, 2, 12, 2, 2, 8, 2, 5, 14, 9, 1, 7, 2, 0, 3, 1, 12, 0, 0, 3, 5, 12, 3, 7, 5, 0, 6, 2, 6, 0, 2, 11, 0, 18, 17, 2, 10, 5, 13, 1, 6, 0, 196, 7, 63, 8, 12, 2, 1, 5, 5, 2, 3, 6, 4, 1, 18, 2, 31, 0, 4, 0, 3, 0, 7, 2, 61, 0, 0, 2, 14, 13, 0, 38, 3, 5, 19, 0, 3, 0, 10, 5, 4, 23, 2, 10, 2, 1, 96, 7, 0, 0, 25, 17, 73, 12, 0, 1, 0, 0, 10, 6, 32, 1, 6, 11, 0, 1, 0, 3, 0, 8, 4]
+2019-04-13 12:56:50,305 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 8710.069
+[DONE]
+
+
+[[34mInfo[39m]: math_84 failed to build with test error:
+Tests in error: 
+  testMath283(org.apache.commons.math.optimization.direct.MultiDirectionalTest)
+
+Tests run: 2052, Failures: 1, Errors: 1, Skipped: 0
+[[35mSKIP[39m]: math_84-jmutrepair-local was already done!
+[[32mSUCCESS[39m]: math_84-jmutrepair-local found a fix!
+----SUMMARY_EXECUTION---
+2019-04-12 08:00:20,754 INFO main - 
+Solution details
+2019-04-12 08:00:20,754 INFO main - 
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 8
+ 
+time(sec)= 1
+operation: IfExpresionMutOp
+location= org.apache.commons.math.optimization.direct.MultiDirectional
+line= 90
+lineSuspiciousness= 0.707
+original statement= (comparator.compare(contracted, best)) < 0
+fixed statement= (comparator.compare(contracted, best)) == 0
+generation= 1
+ingredientScope= -
+validation=|true|0|2054|[]|
+2019-04-12 08:00:20,755 INFO main - 
+successful_ing_attempts (1): [0]
+2019-04-12 08:00:20,755 INFO main - 
+failing_ing_attempts (6): [0, 0, 0, 0, 0, 0]
+2019-04-12 08:00:20,755 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 33.161
+[DONE]
+
+
+[[35mSKIP[39m]: math_84-jmutrepair-package was already done!
+[[32mSUCCESS[39m]: math_84-jmutrepair-package found a fix!
+----SUMMARY_EXECUTION---
+2019-04-12 08:00:53,657 INFO main - 
+Solution details
+2019-04-12 08:00:53,657 INFO main - 
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 8
+ 
+time(sec)= 1
+operation: IfExpresionMutOp
+location= org.apache.commons.math.optimization.direct.MultiDirectional
+line= 90
+lineSuspiciousness= 0.707
+original statement= (comparator.compare(contracted, best)) < 0
+fixed statement= (comparator.compare(contracted, best)) == 0
+generation= 1
+ingredientScope= -
+validation=|true|0|2054|[]|
+2019-04-12 08:00:53,657 INFO main - 
+successful_ing_attempts (1): [0]
+2019-04-12 08:00:53,657 INFO main - 
+failing_ing_attempts (6): [0, 0, 0, 0, 0, 0]
+2019-04-12 08:00:53,657 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 32.332
+[DONE]
+
+
+[[35mSKIP[39m]: math_84-jmutrepair-global was already done!
+[[32mSUCCESS[39m]: math_84-jmutrepair-global found a fix!
+----SUMMARY_EXECUTION---
+2019-04-12 08:01:26,909 INFO main - 
+Solution details
+2019-04-12 08:01:26,910 INFO main - 
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 8
+ 
+time(sec)= 1
+operation: IfExpresionMutOp
+location= org.apache.commons.math.optimization.direct.MultiDirectional
+line= 90
+lineSuspiciousness= 0.707
+original statement= (comparator.compare(contracted, best)) < 0
+fixed statement= (comparator.compare(contracted, best)) == 0
+generation= 1
+ingredientScope= -
+validation=|true|0|2054|[]|
+2019-04-12 08:01:26,910 INFO main - 
+successful_ing_attempts (1): [0]
+2019-04-12 08:01:26,910 INFO main - 
+failing_ing_attempts (6): [0, 0, 0, 0, 0, 0]
+2019-04-12 08:01:26,910 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 32.686
+[DONE]
+
+
+[[35mSKIP[39m]: math_84-jkali-local was already done!
+[[32mSUCCESS[39m]: math_84-jkali-local found a fix!
+----SUMMARY_EXECUTION---
+2019-04-12 08:03:59,631 INFO main - 
+Solution details
+2019-04-12 08:03:59,632 INFO main - 
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 10
+ 
+time(sec)= 121
+operation: ReplaceIfBooleanOp
+location= org.apache.commons.math.optimization.direct.MultiDirectional
+line= 90
+lineSuspiciousness= 0.707
+original statement= if ((comparator.compare(contracted, best)) < 0) {
+	return ;
+}
+fixed statement= if (true) {
+	return ;
+}
+generation= 1
+ingredientScope= -
+validation=|true|0|2054|[]|
+2019-04-12 08:03:59,632 INFO main - 
+successful_ing_attempts (1): [0]
+2019-04-12 08:03:59,632 INFO main - 
+failing_ing_attempts (8): [0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 08:03:59,632 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 152.165
+[DONE]
+
+
+[[35mSKIP[39m]: math_84-jkali-package was already done!
+[[32mSUCCESS[39m]: math_84-jkali-package found a fix!
+----SUMMARY_EXECUTION---
+2019-04-12 08:06:35,672 INFO main - 
+Solution details
+2019-04-12 08:06:35,673 INFO main - 
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 10
+ 
+time(sec)= 121
+operation: ReplaceIfBooleanOp
+location= org.apache.commons.math.optimization.direct.MultiDirectional
+line= 90
+lineSuspiciousness= 0.707
+original statement= if ((comparator.compare(contracted, best)) < 0) {
+	return ;
+}
+fixed statement= if (true) {
+	return ;
+}
+generation= 1
+ingredientScope= -
+validation=|true|0|2054|[]|
+2019-04-12 08:06:35,673 INFO main - 
+successful_ing_attempts (1): [0]
+2019-04-12 08:06:35,673 INFO main - 
+failing_ing_attempts (8): [0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 08:06:35,673 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 155.495
+[DONE]
+
+
+[[35mSKIP[39m]: math_84-jkali-global was already done!
+[[32mSUCCESS[39m]: math_84-jkali-global found a fix!
+----SUMMARY_EXECUTION---
+2019-04-12 08:09:18,507 INFO main - 
+Solution details
+2019-04-12 08:09:18,507 INFO main - 
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 10
+ 
+time(sec)= 122
+operation: ReplaceIfBooleanOp
+location= org.apache.commons.math.optimization.direct.MultiDirectional
+line= 90
+lineSuspiciousness= 0.707
+original statement= if ((comparator.compare(contracted, best)) < 0) {
+	return ;
+}
+fixed statement= if (true) {
+	return ;
+}
+generation= 1
+ingredientScope= -
+validation=|true|0|2054|[]|
+2019-04-12 08:09:18,508 INFO main - 
+successful_ing_attempts (1): [0]
+2019-04-12 08:09:18,508 INFO main - 
+failing_ing_attempts (8): [0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 08:09:18,508 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 162.238
+[DONE]
+
+
+[[35mSKIP[39m]: math_84-jgenprog-local was already done!
+[[32mSUCCESS[39m]: math_84-jgenprog-local found a fix!
+----SUMMARY_EXECUTION---
+2019-04-12 08:30:37,388 INFO main - 
+Solution details
+2019-04-12 08:30:37,388 INFO main - 
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 725
+ 
+time(sec)= 1237
+operation: InsertAfterOp
+location= org.apache.commons.math.optimization.direct.MultiDirectional
+line= 90
+lineSuspiciousness= 0.707
+original statement= if ((comparator.compare(contracted, best)) < 0) {
+	return ;
+}
+fixed statement= return 
+generation= 181
+ingredientScope= LOCAL
+validation=|true|0|2054|[]|
+2019-04-12 08:30:37,415 INFO main - 
+successful_ing_attempts (1): [5]
+2019-04-12 08:30:37,415 INFO main - 
+failing_ing_attempts (541): [1, 1, 0, 1, 1, 2, 0, 0, 1, 2, 1, 1, 2, 1, 0, 0, 0, 2, 1, 1, 1, 0, 0, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 4, 1, 1, 0, 0, 2, 0, 2, 1, 1, 0, 1, 1, 0, 1, 0, 3, 1, 1, 0, 2, 2, 8, 1, 3, 0, 6, 1, 0, 1, 1, 1, 1, 1, 4, 4, 2, 1, 1, 3, 1, 1, 1, 1, 2, 3, 2, 0, 4, 1, 1, 1, 0, 0, 2, 1, 1, 0, 0, 0, 1, 4, 1, 1, 0, 1, 2, 3, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 6, 1, 1, 1, 0, 1, 0, 1, 3, 0, 0, 1, 1, 1, 1, 0, 1, 0, 2, 3, 1, 0, 0, 4, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 0, 1, 1, 0, 2, 1, 0, 1, 1, 1, 1, 1, 0, 2, 4, 1, 3, 1, 0, 4, 1, 1, 1, 0, 1, 2, 2, 0, 0, 1, 1, 1, 0, 0, 2, 1, 1, 1, 1, 1, 1, 0, 3, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0, 1, 5, 1, 2, 2, 1, 0, 1, 1, 3, 0, 1, 0, 1, 2, 2, 2, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 6, 1, 2, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 2, 3, 2, 1, 1, 1, 0, 0, 4, 1, 1, 0, 2, 1, 0, 0, 2, 0, 2, 0, 0, 3, 0, 2, 2, 2, 1, 6, 1, 1, 4, 1, 3, 6, 0, 1, 1, 1, 4, 1, 1, 1, 0, 2, 1, 1, 1, 6, 1, 1, 0, 2, 3, 1, 0, 0, 2, 2, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 3, 0, 1, 1, 0, 2, 4, 1, 2, 2, 1, 4, 1, 1, 1, 1, 1, 1, 1, 2, 4, 1, 0, 2, 2, 1, 4, 1, 1, 0, 0, 0, 1, 0, 1, 5, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 2, 2, 0, 3, 2, 2, 4, 1, 2, 1, 3, 0, 3, 1, 1, 0, 0, 3, 1, 1, 0, 1, 1, 0, 1, 1, 1, 2, 1, 2, 2, 1, 1, 2, 1, 1, 1, 3, 0, 5, 0, 1, 2, 1, 1, 3, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 2, 3, 2, 1, 3, 0, 1, 1, 2, 0, 0, 2, 0, 3, 0, 0, 1, 0, 1, 0, 0, 2, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 6, 1, 0, 2, 1, 3, 1, 0, 1, 2, 1, 0, 2, 2, 0, 2, 0, 1, 4, 2, 0, 1, 0, 0, 1, 2, 0, 1, 0, 0, 1, 0, 0, 2, 1, 0, 0, 0, 1, 4, 1, 0, 0, 0, 1, 2, 0, 0, 1, 0, 1, 1, 1, 4, 0, 1, 0, 2, 3, 2, 1, 1, 0, 1, 1, 2, 1, 0, 1, 3, 0, 2, 0, 1, 0, 2, 1, 1, 0, 1, 2]
+2019-04-12 08:30:37,415 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 1278.294
+[DONE]
+
+
+[[35mSKIP[39m]: math_84-jgenprog-package was already done!
+[[33m[WARNING[39m]: math_84-jgenprog-package did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-17 18:22:31,072 INFO main - 
+successful_ing_attempts (0): []
+2019-04-17 18:22:31,072 INFO main - 
+failing_ing_attempts (600): [1, 7, 2, 0, 14, 8, 4, 4, 9, 9, 5, 1, 16, 4, 2, 0, 3, 0, 2, 3, 1, 1, 1, 0, 1, 8, 4, 3, 7, 0, 21, 0, 0, 1, 6, 8, 3, 1, 0, 3, 10, 1, 1, 6, 3, 3, 12, 5, 3, 0, 0, 0, 1, 3, 4, 7, 2, 3, 5, 0, 0, 0, 2, 9, 17, 6, 7, 0, 7, 3, 7, 3, 1, 4, 3, 0, 0, 10, 0, 2, 1, 1, 11, 6, 0, 18, 4, 3, 0, 4, 0, 3, 4, 3, 0, 0, 0, 5, 3, 1, 6, 3, 0, 3, 1, 0, 1, 5, 0, 3, 3, 1, 4, 1, 0, 3, 5, 2, 12, 3, 0, 6, 0, 0, 7, 0, 4, 2, 1, 5, 1, 1, 0, 2, 3, 0, 1, 2, 5, 1, 2, 4, 4, 0, 4, 3, 3, 2, 5, 0, 1, 2, 1, 6, 2, 0, 12, 6, 6, 0, 1, 5, 3, 11, 0, 1, 2, 5, 2, 8, 0, 6, 1, 0, 1, 8, 4, 0, 7, 1, 3, 3, 9, 2, 1, 3, 2, 5, 1, 6, 10, 0, 0, 2, 4, 0, 4, 1, 0, 1, 2, 14, 0, 4, 0, 6, 0, 3, 8, 0, 1, 1, 0, 3, 4, 0, 2, 3, 0, 0, 4, 9, 7, 6, 3, 2, 6, 6, 0, 0, 2, 6, 5, 0, 0, 8, 1, 8, 9, 6, 4, 5, 6, 1, 1, 5, 0, 9, 3, 3, 0, 2, 2, 1, 2, 0, 3, 6, 3, 0, 4, 2, 1, 1, 9, 4, 6, 5, 25, 6, 4, 0, 2, 0, 1, 15, 3, 3, 6, 0, 0, 2, 0, 7, 0, 2, 1, 2, 1, 0, 0, 0, 2, 1, 3, 0, 0, 6, 4, 2, 3, 4, 3, 0, 0, 5, 0, 1, 0, 0, 6, 1, 3, 5, 0, 2, 4, 1, 0, 0, 1, 3, 2, 3, 2, 6, 0, 2, 0, 1, 16, 6, 1, 1, 0, 16, 9, 5, 0, 3, 0, 1, 1, 19, 2, 1, 2, 1, 3, 0, 7, 1, 0, 2, 1, 5, 0, 2, 1, 2, 4, 0, 0, 1, 0, 5, 6, 3, 11, 2, 1, 3, 1, 2, 4, 0, 5, 0, 1, 4, 0, 1, 0, 11, 5, 0, 2, 0, 6, 1, 0, 6, 4, 2, 11, 0, 8, 0, 5, 1, 2, 1, 4, 4, 3, 1, 2, 3, 2, 1, 3, 3, 2, 2, 0, 4, 5, 6, 1, 1, 0, 2, 9, 0, 1, 3, 9, 1, 0, 4, 0, 1, 0, 0, 1, 0, 8, 6, 11, 4, 0, 3, 4, 1, 3, 1, 2, 0, 0, 3, 0, 2, 3, 6, 1, 0, 2, 2, 3, 1, 0, 0, 8, 3, 6, 9, 0, 0, 7, 0, 6, 9, 1, 4, 2, 1, 0, 0, 11, 1, 1, 2, 0, 1, 0, 1, 1, 2, 8, 2, 0, 16, 6, 34, 14, 3, 6, 1, 3, 1, 0, 2, 1, 7, 0, 1, 7, 4, 0, 3, 5, 0, 3, 5, 1, 3, 6, 0, 0, 0, 4, 1, 2, 2, 3, 2, 0, 20, 2, 9, 0, 1, 1, 0, 0, 2, 6, 2, 2, 1, 5, 2, 0, 1, 2, 2, 1, 5, 5, 0, 15, 1, 12, 1, 10, 8, 0, 0, 1, 4, 3, 0, 3, 5, 11, 0, 0, 3, 1, 1, 0, 6, 1, 8, 6, 4, 1, 0, 1, 8, 1, 0, 3, 7, 2, 1, 5, 1, 0, 6, 2, 9, 4, 1, 2, 15, 3, 8, 3, 1]
+2019-04-17 18:22:31,072 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 2539.311
+[DONE]
+
+
+[[35mSKIP[39m]: math_84-jgenprog-global was already done!
+[[33m[WARNING[39m]: math_84-jgenprog-global did not find a fix!
+----SUMMARY_EXECUTION---
+2019-04-12 09:49:45,869 INFO main - 
+successful_ing_attempts (0): []
+2019-04-12 09:49:45,870 INFO main - 
+failing_ing_attempts (600): [22, 18, 8, 14, 9, 1, 5, 1, 2, 9, 20, 22, 4, 4, 7, 14, 1, 31, 22, 81, 11, 2, 2, 5, 2, 8, 10, 37, 23, 0, 3, 15, 4, 0, 255, 0, 25, 6, 1, 0, 6, 0, 8, 46, 4, 246, 216, 14, 2, 2, 0, 4, 4, 0, 3, 5, 14, 0, 0, 3, 6, 13, 9, 1, 4, 69, 3, 5, 0, 52, 1, 0, 15, 8, 2, 16, 13, 14, 14, 2, 2, 761, 251, 13, 12, 1, 9, 3, 0, 8, 1, 19, 3, 9, 17, 6, 1, 10, 17, 9, 1, 0, 14, 20, 0, 23, 0, 0, 18, 72, 0, 0, 0, 2, 5, 1, 0, 17, 37, 16, 9, 0, 14, 13, 2, 4, 10, 19, 3, 2, 359, 5, 0, 3, 8, 0, 1, 3, 12, 10, 2, 0, 2, 0, 5, 43, 2, 0, 1, 1, 17, 0, 9, 8, 10, 2, 0, 0, 18, 155, 9, 2, 2, 3, 2, 0, 0, 1, 22, 554, 1, 12, 3, 13, 5, 4, 5, 6, 1, 21, 0, 0, 7, 656, 0, 7, 0, 24, 30, 8, 7, 153, 630, 4, 5, 6, 6, 28, 0, 23, 0, 0, 1, 2, 1, 13, 25, 8, 0, 5, 0, 0, 4, 0, 0, 4, 10, 0, 0, 11, 0, 590, 3, 469, 0, 1, 0, 29, 8, 308, 23, 1, 0, 0, 1, 12, 0, 4, 0, 0, 2, 4, 0, 1, 2, 20, 0, 1, 6, 0, 0, 0, 7, 3, 2, 0, 0, 3, 0, 1, 0, 0, 12, 215, 5, 4, 0, 1, 6, 2, 20, 12, 16, 6, 266, 83, 408, 2, 4, 6, 2, 0, 6, 0, 32, 0, 0, 7, 3, 210, 0, 9, 11, 0, 1, 0, 91, 10, 5, 9, 8, 5, 0, 17, 0, 0, 0, 323, 2, 6, 13, 6, 24, 5, 0, 1, 15, 4, 4, 21, 2, 4, 1, 5, 7, 15, 6, 9, 4, 0, 0, 0, 2, 2, 46, 7, 7, 0, 0, 5, 86, 6, 5, 4, 5, 45, 9, 0, 13, 3, 0, 2, 0, 0, 21, 3, 1, 3, 268, 3, 1, 246, 0, 195, 1, 1, 9, 3, 0, 81, 8, 0, 0, 10, 4, 14, 9, 136, 0, 5, 6, 17, 1, 15, 0, 1, 5, 2, 0, 5, 0, 1, 3, 0, 0, 96, 0, 0, 0, 1, 2, 3, 9, 3, 0, 0, 28, 206, 0, 6, 0, 12, 3, 4, 1, 0, 13, 10, 8, 17, 11, 0, 8, 0, 0, 2, 1, 11, 6, 8, 7, 12, 4, 0, 2, 19, 4, 1, 25, 4, 5, 16, 3, 161, 4, 9, 0, 1, 2, 4, 15, 22, 8, 4, 425, 0, 1, 0, 0, 4, 33, 43, 3, 2, 1, 12, 8, 26, 15, 0, 7, 36, 1, 41, 482, 2, 0, 0, 0, 0, 2, 0, 2, 9, 1, 20, 1, 0, 0, 1, 1, 21, 5, 20, 17, 1, 15, 3, 7, 1, 0, 20, 11, 8, 0, 5, 0, 13, 4, 0, 79, 152, 4, 5, 3, 0, 0, 3, 4, 0, 77, 3, 0, 4, 1, 1, 16, 1, 2, 0, 1, 1, 0, 368, 8, 3, 18, 17, 3, 1, 1, 0, 4, 12, 0, 0, 2, 5, 0, 50, 0, 25, 0, 2, 0, 0, 6, 10, 2, 4, 2, 0, 15, 0, 11, 11, 13, 13, 4, 9, 0, 0, 1, 2, 13, 2, 21, 8, 1, 13, 4, 6, 12, 19, 4, 0, 0, 16, 6, 121, 1, 22, 0, 0, 20, 3, 0, 1, 53, 75]
+2019-04-12 09:49:45,870 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 1460.614
+[DONE]
+
+

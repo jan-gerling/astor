@@ -1,0 +1,8 @@
+2019-04-12 22:21:44,216 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jkali  -scope  global  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan/astor/defect4j_tests/math_74/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-12 22:22:06,708 INFO main - -Executing Gzoltar classpath: /home/jan/astor/./outputMutation/AstorMain-math_74//bin//default from 230 classes with test cases
+2019-04-12 22:22:06,710 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-12 22:22:25,288 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan/astor/./examples/libs/junit-4.4.jar, /home/jan/astor/./outputMutation/AstorMain-math_74//bin//default]
+2019-04-12 22:26:25,403 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#polynomial
+2019-04-12 22:26:25,562 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2131, fails: 1, GZoltar suspicious 17279
+2019-04-12 22:26:25,974 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 84 with susp > 0.5, we consider: 84
+2019-04-12 22:26:26,231 INFO main - building model: /home/jan/astor/./outputMutation/AstorMain-math_74//src//default, compliance level: 8

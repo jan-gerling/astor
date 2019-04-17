@@ -1,0 +1,130 @@
+2019-04-12 18:20:12,902 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jmutrepair  -scope  local  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests/math_79/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-12 18:20:18,197 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_79//bin//default from 225 classes with test cases
+2019-04-12 18:20:18,221 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-12 18:20:23,125 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_79//bin//default]
+2019-04-12 18:21:37,249 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest#testPerformClusterAnalysisDegenerate
+2019-04-12 18:21:37,271 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2104, fails: 1, GZoltar suspicious 17374
+2019-04-12 18:21:37,385 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 27 with susp > 0.5, we consider: 27
+2019-04-12 18:21:37,443 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_79//src//default, compliance level: 8
+2019-04-12 18:22:23,016 INFO main - 
+---- Initial suspicious size: 27
+2019-04-12 18:22:23,176 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{cluster(Ljava/util/Collection;II)Ljava/util/List; 0.0, lineNumber=56, susp=0.7071067811865475]
+2019-04-12 18:22:23,227 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{cluster(Ljava/util/Collection;II)Ljava/util/List; 0.0, lineNumber=57, susp=0.7071067811865475]
+2019-04-12 18:22:23,240 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{assignPointsToClusters(Ljava/util/Collection;Ljava/util/Collection;)V 0.0, lineNumber=89, susp=0.7071067811865475]
+2019-04-12 18:22:23,261 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{assignPointsToClusters(Ljava/util/Collection;Ljava/util/Collection;)V 0.0, lineNumber=90, susp=0.7071067811865475]
+2019-04-12 18:22:23,285 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{assignPointsToClusters(Ljava/util/Collection;Ljava/util/Collection;)V 0.0, lineNumber=91, susp=0.7071067811865475]
+2019-04-12 18:22:23,296 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{chooseInitialCenters(Ljava/util/Collection;ILjava/util/Random;)Ljava/util/List; 0.0, lineNumber=107, susp=0.7071067811865475]
+2019-04-12 18:22:23,328 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{chooseInitialCenters(Ljava/util/Collection;ILjava/util/Random;)Ljava/util/List; 0.0, lineNumber=108, susp=0.7071067811865475]
+2019-04-12 18:22:23,351 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{chooseInitialCenters(Ljava/util/Collection;ILjava/util/Random;)Ljava/util/List; 0.0, lineNumber=111, susp=0.7071067811865475]
+2019-04-12 18:22:23,362 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{chooseInitialCenters(Ljava/util/Collection;ILjava/util/Random;)Ljava/util/List; 0.0, lineNumber=112, susp=0.7071067811865475]
+2019-04-12 18:22:23,381 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{chooseInitialCenters(Ljava/util/Collection;ILjava/util/Random;)Ljava/util/List; 0.0, lineNumber=114, susp=0.7071067811865475]
+2019-04-12 18:22:23,392 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{chooseInitialCenters(Ljava/util/Collection;ILjava/util/Random;)Ljava/util/List; 0.0, lineNumber=115, susp=0.7071067811865475]
+2019-04-12 18:22:23,422 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{chooseInitialCenters(Ljava/util/Collection;ILjava/util/Random;)Ljava/util/List; 0.0, lineNumber=139, susp=0.7071067811865475]
+2019-04-12 18:22:23,438 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{getNearestCluster(Ljava/util/Collection;Lorg/apache/commons/math/stat/clustering/Clusterable;)Lorg/apache/commons/math/stat/clustering/Cluster; 0.0, lineNumber=153, susp=0.7071067811865475]
+2019-04-12 18:22:23,440 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{getNearestCluster(Ljava/util/Collection;Lorg/apache/commons/math/stat/clustering/Clusterable;)Lorg/apache/commons/math/stat/clustering/Cluster; 0.0, lineNumber=154, susp=0.7071067811865475]
+2019-04-12 18:22:23,471 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{getNearestCluster(Ljava/util/Collection;Lorg/apache/commons/math/stat/clustering/Clusterable;)Lorg/apache/commons/math/stat/clustering/Cluster; 0.0, lineNumber=155, susp=0.7071067811865475]
+2019-04-12 18:22:23,496 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{getNearestCluster(Ljava/util/Collection;Lorg/apache/commons/math/stat/clustering/Clusterable;)Lorg/apache/commons/math/stat/clustering/Cluster; 0.0, lineNumber=156, susp=0.7071067811865475]
+2019-04-12 18:22:23,529 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{getNearestCluster(Ljava/util/Collection;Lorg/apache/commons/math/stat/clustering/Clusterable;)Lorg/apache/commons/math/stat/clustering/Cluster; 0.0, lineNumber=161, susp=0.7071067811865475]
+2019-04-12 18:22:23,549 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer, methodName=org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer{getNearestCluster(Ljava/util/Collection;Lorg/apache/commons/math/stat/clustering/Clusterable;)Lorg/apache/commons/math/stat/clustering/Cluster; 0.0, lineNumber=162, susp=0.7071067811865475]
+2019-04-12 18:22:23,586 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.EuclideanIntegerPoint, methodName=org.apache.commons.math.stat.clustering.EuclideanIntegerPoint{distanceFrom(Ljava/lang/Object;)D 0.0, lineNumber=30, susp=0.7071067811865475]
+2019-04-12 18:22:23,643 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.Cluster, methodName=org.apache.commons.math.stat.clustering.Cluster{getCenter()Lorg/apache/commons/math/stat/clustering/Clusterable; 0.0, lineNumber=71, susp=0.7071067811865475]
+2019-04-12 18:22:23,662 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.stat.clustering.EuclideanIntegerPoint, methodName=org.apache.commons.math.stat.clustering.EuclideanIntegerPoint{distanceFrom(Lorg/apache/commons/math/stat/clustering/EuclideanIntegerPoint;)D 0.0, lineNumber=57, susp=0.5773502691896258]
+2019-04-12 18:22:23,840 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MathUtils, methodName=org.apache.commons.math.util.MathUtils{distance([I[I)D 0.0, lineNumber=1624, susp=0.5]
+2019-04-12 18:22:23,849 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MathUtils, methodName=org.apache.commons.math.util.MathUtils{distance([I[I)D 0.0, lineNumber=1625, susp=0.5]
+2019-04-12 18:22:23,916 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MathUtils, methodName=org.apache.commons.math.util.MathUtils{distance([I[I)D 0.0, lineNumber=1626, susp=0.5]
+2019-04-12 18:22:23,922 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MathUtils, methodName=org.apache.commons.math.util.MathUtils{distance([I[I)D 0.0, lineNumber=1627, susp=0.5]
+2019-04-12 18:22:23,960 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MathUtils, methodName=org.apache.commons.math.util.MathUtils{distance([I[I)D 0.0, lineNumber=1629, susp=0.5]
+2019-04-12 18:22:23,960 INFO main - Total suspicious from FL: 27,  1
+2019-04-12 18:22:23,984 INFO main - Total ModPoint created: 1
+2019-04-12 18:22:23,994 INFO main - Creating program variant #1, [Variant id: 1, #gens: 1, #ops: 0, parent:-]
+2019-04-12 18:23:16,681 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 18:23:16,682 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-12 18:23:16,682 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-12 18:23:16,682 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-12 18:23:16,682 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-12 18:23:16,682 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-12 18:23:16,682 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-12 18:23:16,683 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-12 18:23:16,683 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-12 18:23:16,683 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-12 18:23:16,683 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-12 18:23:16,683 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-12 18:23:16,683 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-12 18:23:16,695 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-12 18:23:16,695 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-12 18:23:16,695 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jmutrepair
+2019-04-12 18:23:16,695 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-12 18:23:16,709 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-12 18:23:16,709 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-12 18:23:16,710 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-12 18:23:16,710 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-12 18:23:16,710 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-12 18:23:16,710 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-12 18:23:16,710 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-12 18:23:16,710 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-12 18:23:16,710 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-12 18:23:16,721 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-12 18:23:16,721 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-12 18:23:16,721 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= defect4j_tests/math_79/
+2019-04-12 18:23:16,721 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-12 18:23:16,721 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-12 18:23:16,721 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 18:23:16,721 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-12 18:23:16,721 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-12 18:23:16,722 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-12 18:23:16,723 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-12 18:23:16,723 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-12 18:23:16,723 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= local
+2019-04-12 18:23:16,723 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-12 18:23:16,723 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-12 18:23:16,723 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-12 18:23:16,723 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-12 18:23:16,723 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-12 18:23:16,730 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-12 18:23:16,731 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-12 18:23:16,731 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-12 18:23:16,731 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-12 18:23:16,733 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-12 18:23:16,734 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-12 18:23:16,735 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-12 18:23:16,735 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-12 18:23:16,735 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-12 18:23:16,740 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-12 18:23:16,740 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-12 18:23:16,740 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-12 18:23:16,740 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-12 18:23:16,740 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 18:23:16,755 INFO main - mod_point ModificPoint=KMeansPlusPlusClusterer line: 157, el: CtIfImpl
+2019-04-12 18:23:16,769 INFO main - -->op: IfExpresionMutOp: `distance < minDistance ` ---> `distance == minDistance` at pos -1 of parent `-`
+2019-04-12 18:23:22,117 INFO main - mod_point ModificPoint=KMeansPlusPlusClusterer line: 157, el: CtIfImpl
+2019-04-12 18:23:22,117 INFO main - -->op: IfExpresionMutOp: `distance < minDistance ` ---> `distance != minDistance` at pos -1 of parent `-`
+2019-04-12 18:23:23,981 INFO main - mod_point ModificPoint=KMeansPlusPlusClusterer line: 157, el: CtIfImpl
+2019-04-12 18:23:23,982 INFO main - -->op: IfExpresionMutOp: `distance < minDistance ` ---> `distance >= minDistance` at pos -1 of parent `-`
+2019-04-12 18:23:25,877 INFO main - mod_point ModificPoint=KMeansPlusPlusClusterer line: 157, el: CtIfImpl
+2019-04-12 18:23:25,877 INFO main - -->op: IfExpresionMutOp: `distance < minDistance ` ---> `distance > minDistance` at pos -1 of parent `-`
+2019-04-12 18:23:27,666 INFO main - mod_point ModificPoint=KMeansPlusPlusClusterer line: 157, el: CtIfImpl
+2019-04-12 18:23:27,666 INFO main - -->op: IfExpresionMutOp: `distance < minDistance ` ---> `distance <= minDistance` at pos -1 of parent `-`
+2019-04-12 18:23:29,697 INFO main - mod_point ModificPoint=KMeansPlusPlusClusterer line: 157, el: CtIfImpl
+2019-04-12 18:23:29,698 INFO main - -->op: IfExpresionMutOp: `distance < minDistance ` ---> `!(distance < minDistance)` at pos -1 of parent `-`
+2019-04-12 18:23:31,859 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-12 18:23:31,859 INFO main - 
+successful_ing_attempts (0): []
+2019-04-12 18:23:31,860 INFO main - 
+failing_ing_attempts (6): [0, 0, 0, 0, 0, 0]
+2019-04-12 18:23:31,860 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 198.895
+[DONE]
