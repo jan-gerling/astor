@@ -54,6 +54,8 @@ Found by jkali local
 * just removed the throw of the exception
 * different from the paper, see snippet below
 * stoped here, because we have set stopfirst to true
+Hypothesis: remove stopfirst true to get more reasonable results
+TODO: rerun without stopfirst true
 
 ![Solution presented in the astor paper](Math-85-paper-solution.PNG)
 
@@ -62,6 +64,7 @@ Found by jkali local
 ### Math 50
 
 No Solution found!
+TODO: analyze rerun for math 50 with lower threshold
 
 ## Exception Analysis
 
@@ -69,8 +72,7 @@ No Solution found!
 *Variant without any modification point. It must have at least one.*
 
 * for unkwown reasons, jmutreapair finds some suspicious files/ points but reduces them all to none
-TODO:  - run jmutrepair with treshold .1 on IllegalStatExceptions runs
-Hypothesis: too high ftreshold -> 0.1
+* if the flthreshold is lower, 0.1, it is more likely to not throw the exception (see table Jmutrepair with threshhold 0.1)
 
 ### SpoonException	
 *Cannot insert a statement before a super or this invocation.* 
