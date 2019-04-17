@@ -10,8 +10,8 @@
 ## Fix Comparison:
 * for the math problems 50 - 89 we found less solutions, than the paper
 Because:
-  * jmutrepair often had an IllegalStateException, where it could not find any variation and therefore, no results (math 71)
-  * for math 50, 78, 82 we did not find a solution with any of the specs, this might be due to a different version of astor, and or a different seed
+  * jmutrepair often had an IllegalStateException, where it could not find any variation and therefore, no fixes
+  * for math 50, 71, 78, 82 we did not find a fix with any of the specs, this might be due to a different version of astor, and or a different seed - TODO: analyze further
 
 
 ### Math 70
