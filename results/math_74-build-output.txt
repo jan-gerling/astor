@@ -1,4 +1,6 @@
 [INFO] Scanning for projects...
+Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/12/commons-parent-12.pom
+3/27 KB   5/27 KB   8/27 KB   11/27 KB   13/27 KB   16/27 KB   19/27 KB   21/27 KB   24/27 KB   27/27 KB   27/27 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/12/commons-parent-12.pom (27 KB at 19.9 KB/sec)
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for org.apache.commons:commons-math:jar:2.1-SNAPSHOT
 [WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:12, /home/jan_gerling/.m2/repository/org/apache/commons/commons-parent/12/commons-parent-12.pom, line 266, column 15
@@ -12,14 +14,102 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] Building Commons Math 2.1-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.2/cobertura-maven-plugin-2.2.pom
+3/6 KB     5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.2/cobertura-maven-plugin-2.2.pom (6 KB at 16.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo/16/mojo-16.pom
+3/9 KB   6/9 KB   9/9 KB   9/9 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo/16/mojo-16.pom (9 KB at 26.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.2/cobertura-maven-plugin-2.2.jar
+3/29 KB   5/29 KB   8/29 KB   11/29 KB   13/29 KB   16/29 KB   19/29 KB   21/29 KB   24/29 KB   27/29 KB   29/29 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.2/cobertura-maven-plugin-2.2.jar (29 KB at 86.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.3/maven-clean-plugin-2.3.pom
+3/5 KB     5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.3/maven-clean-plugin-2.3.pom (5 KB at 12.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.3/maven-clean-plugin-2.3.jar
+3/17 KB   5/17 KB   8/17 KB   11/17 KB   13/17 KB   16/17 KB   17/17 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.3/maven-clean-plugin-2.3.jar (17 KB at 49.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.pom
+3/3 KB     3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.pom (3 KB at 7.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/8/maven-plugins-8.pom
+3/6 KB   6/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/8/maven-plugins-8.pom (6 KB at 18.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
+3/18 KB   6/18 KB   9/18 KB   11/18 KB   14/18 KB   16/18 KB   18/18 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar (18 KB at 54.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/felix/maven-bundle-plugin/1.4.0/maven-bundle-plugin-1.4.0.pom
+3/5 KB     5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/felix/maven-bundle-plugin/1.4.0/maven-bundle-plugin-1.4.0.pom (5 KB at 14.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/felix/maven-bundle-plugin/1.4.0/maven-bundle-plugin-1.4.0.jar
+3/135 KB   5/135 KB   8/135 KB   11/135 KB   13/135 KB   16/135 KB   19/135 KB   21/135 KB   24/135 KB   27/135 KB   29/135 KB   32/135 KB   36/135 KB   40/135 KB   44/135 KB   48/135 KB   52/135 KB   56/135 KB   60/135 KB   64/135 KB   68/135 KB   72/135 KB   76/135 KB   80/135 KB   84/135 KB   88/135 KB   92/135 KB   96/135 KB   100/135 KB   104/135 KB   108/135 KB   112/135 KB   116/135 KB   120/135 KB   124/135 KB   128/135 KB   132/135 KB   135/135 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/felix/maven-bundle-plugin/1.4.0/maven-bundle-plugin-1.4.0.jar (135 KB at 269.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.4.3/maven-surefire-plugin-2.4.3.pom
+3/7 KB       5/7 KB   7/7 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.4.3/maven-surefire-plugin-2.4.3.pom (7 KB at 21.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.4.3/surefire-2.4.3.pom
+3/8 KB   5/8 KB   8/8 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.4.3/surefire-2.4.3.pom (8 KB at 21.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.4.3/maven-surefire-plugin-2.4.3.jar
+3/23 KB   5/23 KB   8/23 KB   11/23 KB   13/23 KB   16/23 KB   19/23 KB   21/23 KB   23/23 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.4.3/maven-surefire-plugin-2.4.3.jar (23 KB at 69.1 KB/sec)
 [INFO] 
 [INFO] --- maven-clean-plugin:2.3:clean (default-clean) @ commons-math ---
 [INFO] 
 [INFO] --- cobertura-maven-plugin:2.2:clean (default) @ commons-math ---
+Downloading: https://repo.maven.apache.org/maven2/net/sourceforge/cobertura/cobertura/1.9/cobertura-1.9.pom
+2/2 KB              Downloaded: https://repo.maven.apache.org/maven2/net/sourceforge/cobertura/cobertura/1.9/cobertura-1.9.pom (2 KB at 4.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/asm/asm/2.2.1/asm-2.2.1.pom
+847/847 B               Downloaded: https://repo.maven.apache.org/maven2/asm/asm/2.2.1/asm-2.2.1.pom (847 B at 2.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/asm/asm-tree/2.2.1/asm-tree-2.2.1.pom
+2/2 KB               Downloaded: https://repo.maven.apache.org/maven2/asm/asm-tree/2.2.1/asm-tree-2.2.1.pom (2 KB at 3.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.9/log4j-1.2.9.pom
+144/144 B               Downloaded: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.9/log4j-1.2.9.pom (144 B at 0.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.7.0/ant-1.7.0.pom
+3/10 KB     5/10 KB   8/10 KB   10/10 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.7.0/ant-1.7.0.pom (10 KB at 29.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant-parent/1.7.0/ant-parent-1.7.0.pom
+3/5 KB     5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant-parent/1.7.0/ant-parent-1.7.0.pom (5 KB at 13.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.pom
+3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.pom (3 KB at 7.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/net/sourceforge/cobertura/cobertura-runtime/1.9/cobertura-runtime-1.9.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/net/sourceforge/cobertura/cobertura-runtime/1.9/cobertura-runtime-1.9.pom (2 KB at 3.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/urbanophile/java-getopt/1.0.9/java-getopt-1.0.9.pom
+157/157 B               Downloaded: https://repo.maven.apache.org/maven2/urbanophile/java-getopt/1.0.9/java-getopt-1.0.9.pom (157 B at 0.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0/maven-reporting-impl-2.0.pom
+3/3 KB               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0/maven-reporting-impl-2.0.pom (3 KB at 6.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.1.4/commons-validator-1.1.4.pom
+168/168 B               Downloaded: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.1.4/commons-validator-1.1.4.pom (168 B at 0.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/oro/oro/2.0.7/oro-2.0.7.pom
+141/141 B               Downloaded: https://repo.maven.apache.org/maven2/oro/oro/2.0.7/oro-2.0.7.pom (141 B at 0.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/doxia/doxia-core/1.0-alpha-4/doxia-core-1.0-alpha-4.pom
+3/5 KB      5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/doxia/doxia-core/1.0-alpha-4/doxia-core-1.0-alpha-4.pom (5 KB at 13.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/net/sourceforge/cobertura/cobertura/1.9/cobertura-1.9.jar
+Downloading: https://repo.maven.apache.org/maven2/asm/asm/2.2.1/asm-2.2.1.jar
+Downloading: https://repo.maven.apache.org/maven2/asm/asm-tree/2.2.1/asm-tree-2.2.1.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.7.0/ant-1.7.0.jar
+Downloading: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.9/log4j-1.2.9.jar
+3/190 KB   5/190 KB   8/190 KB   11/190 KB   13/190 KB   16/190 KB   19/190 KB   21/190 KB   24/190 KB   27/190 KB   29/190 KB   32/190 KB   36/190 KB   40/190 KB   44/190 KB   48/190 KB   52/190 KB   56/190 KB   60/190 KB   64/190 KB   68/190 KB   72/190 KB   76/190 KB   80/190 KB   84/190 KB   88/190 KB   92/190 KB   96/190 KB   100/190 KB   104/190 KB   108/190 KB   112/190 KB   116/190 KB   120/190 KB   124/190 KB   128/190 KB   132/190 KB   136/190 KB   140/190 KB   144/190 KB   148/190 KB   152/190 KB   156/190 KB   160/190 KB   164/190 KB   168/190 KB   172/190 KB   176/190 KB   180/190 KB   184/190 KB   188/190 KB   190/190 KB                Downloaded: https://repo.maven.apache.org/maven2/net/sourceforge/cobertura/cobertura/1.9/cobertura-1.9.jar (190 KB at 544.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.jar
+3/16 KB   3/345 KB   3/16 KB   3/34 KB   3/345 KB   3/16 KB   5/34 KB   3/345 KB   5/16 KB   5/34 KB   3/345 KB   5/16 KB   5/34 KB   3/345 KB   8/16 KB   8/34 KB   3/345 KB   8/16 KB   8/34 KB   3/345 KB   11/16 KB   8/34 KB   3/345 KB   11/16 KB   11/34 KB   3/345 KB   11/16 KB   11/34 KB   5/345 KB   3/1260 KB   11/16 KB   11/34 KB   5/345 KB   3/1260 KB   13/16 KB   11/34 KB   5/345 KB   3/1260 KB   13/16 KB   13/34 KB   5/345 KB   3/1260 KB   13/16 KB   13/34 KB   8/345 KB   5/1260 KB   13/16 KB   13/34 KB   8/345 KB   5/1260 KB   13/16 KB   13/34 KB   11/345 KB   5/1260 KB   13/16 KB   13/34 KB   13/345 KB   8/1260 KB   13/16 KB   13/34 KB   13/345 KB   11/1260 KB   13/16 KB   13/34 KB   13/345 KB   13/1260 KB   13/16 KB   13/34 KB   13/345 KB   13/1260 KB   13/16 KB   13/34 KB   13/345 KB   4/12 KB   13/1260 KB   13/16 KB   13/34 KB   13/345 KB   8/12 KB   13/1260 KB   13/16 KB   13/34 KB   13/345 KB   12/12 KB   13/1260 KB   13/16 KB   13/34 KB   16/345 KB   12/12 KB   13/1260 KB   16/16 KB   13/34 KB   16/345 KB   12/12 KB   13/1260 KB   16/16 KB   16/34 KB   16/345 KB   12/12 KB   13/1260 KB   16/16 KB   16/34 KB   19/345 KB   12/12 KB   13/1260 KB   16/16 KB   16/34 KB   19/345 KB   12/12 KB   13/1260 KB   16/16 KB   19/34 KB   19/345 KB   12/12 KB   13/1260 KB   16/16 KB   19/34 KB   21/345 KB   12/12 KB   13/1260 KB   16/16 KB   21/34 KB   21/345 KB   12/12 KB   13/1260 KB   16/16 KB   21/34 KB   24/345 KB   12/12 KB   13/1260 KB   16/16 KB   21/34 KB   27/345 KB   12/12 KB   13/1260 KB   16/16 KB   24/34 KB   27/345 KB   12/12 KB   13/1260 KB   16/16 KB   24/34 KB   29/345 KB   12/12 KB   13/1260 KB   16/16 KB   27/34 KB   29/345 KB   12/12 KB   13/1260 KB   16/16 KB   27/34 KB   32/345 KB   12/12 KB   13/1260 KB   16/16 KB   29/34 KB   32/345 KB   12/12 KB   16/1260 KB   16/16 KB   29/34 KB   32/345 KB   12/12 KB   16/1260 KB   16/16 KB   32/34 KB   32/345 KB   12/12 KB   19/1260 KB   16/16 KB   32/34 KB   32/345 KB   12/12 KB   19/1260 KB   16/16 KB   34/34 KB   32/345 KB   12/12 KB   21/1260 KB   16/16 KB   34/34 KB   32/345 KB   12/12 KB   24/1260 KB   16/16 KB   34/34 KB   32/345 KB   12/12 KB   27/1260 KB   16/16 KB   34/34 KB   32/345 KB   12/12 KB   29/1260 KB   16/16 KB   34/34 KB   32/345 KB   12/12 KB   32/1260 KB   16/16 KB   34/34 KB   32/345 KB   12/12 KB                                                             Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.jar (12 KB at 17.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/urbanophile/java-getopt/1.0.9/java-getopt-1.0.9.jar
+32/1260 KB   16/16 KB   34/34 KB   36/345 KB              32/1260 KB   16/16 KB   34/34 KB   40/345 KB   32/1260 KB   16/16 KB   34/34 KB   44/345 KB   32/1260 KB   16/16 KB   34/34 KB   48/345 KB   32/1260 KB   16/16 KB   34/34 KB   52/345 KB   32/1260 KB   16/16 KB   34/34 KB   56/345 KB   32/1260 KB   16/16 KB   34/34 KB   60/345 KB   32/1260 KB   16/16 KB   34/34 KB   64/345 KB   32/1260 KB   16/16 KB   34/34 KB   68/345 KB   32/1260 KB   16/16 KB   34/34 KB   72/345 KB   36/1260 KB   16/16 KB   34/34 KB   76/345 KB   36/1260 KB   16/16 KB   34/34 KB   76/345 KB   36/1260 KB   16/16 KB   34/34 KB   80/345 KB   40/1260 KB   16/16 KB   34/34 KB   80/345 KB   44/1260 KB   16/16 KB   34/34 KB   80/345 KB   48/1260 KB   16/16 KB   34/34 KB   80/345 KB   52/1260 KB   16/16 KB   34/34 KB   80/345 KB   56/1260 KB   16/16 KB   34/34 KB   80/345 KB   60/1260 KB   16/16 KB   34/34 KB   80/345 KB   64/1260 KB   16/16 KB   34/34 KB   80/345 KB   68/1260 KB   16/16 KB   34/34 KB   80/345 KB   72/1260 KB   16/16 KB   34/34 KB   80/345 KB   76/1260 KB   16/16 KB   34/34 KB   80/345 KB   80/1260 KB   16/16 KB   34/34 KB   80/345 KB                                                  Downloaded: https://repo.maven.apache.org/maven2/asm/asm-tree/2.2.1/asm-tree-2.2.1.jar (16 KB at 19.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0/maven-reporting-api-2.0.jar
+                                               Downloaded: https://repo.maven.apache.org/maven2/asm/asm/2.2.1/asm-2.2.1.jar (34 KB at 41.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/doxia/doxia-sink-api/1.0-alpha-4/doxia-sink-api-1.0-alpha-4.jar
+80/1260 KB   4/53 KB   80/345 KB               80/1260 KB   8/53 KB   80/345 KB   80/1260 KB   12/53 KB   80/345 KB   80/1260 KB   16/53 KB   80/345 KB   80/1260 KB   20/53 KB   80/345 KB   80/1260 KB   24/53 KB   80/345 KB   80/1260 KB   28/53 KB   80/345 KB   80/1260 KB   32/53 KB   80/345 KB   80/1260 KB   36/53 KB   80/345 KB   80/1260 KB   40/53 KB   80/345 KB   80/1260 KB   44/53 KB   80/345 KB   80/1260 KB   48/53 KB   80/345 KB   80/1260 KB   52/53 KB   80/345 KB   80/1260 KB   53/53 KB   80/345 KB   80/1260 KB   53/53 KB   84/345 KB   80/1260 KB   53/53 KB   88/345 KB   80/1260 KB   53/53 KB   92/345 KB   80/1260 KB   53/53 KB   96/345 KB   80/1260 KB   53/53 KB   100/345 KB   80/1260 KB   53/53 KB   104/345 KB   80/1260 KB   53/53 KB   108/345 KB   80/1260 KB   53/53 KB   112/345 KB   80/1260 KB   53/53 KB   116/345 KB   80/1260 KB   53/53 KB   120/345 KB   80/1260 KB   53/53 KB   124/345 KB   80/1260 KB   53/53 KB   128/345 KB   84/1260 KB   53/53 KB   128/345 KB   88/1260 KB   53/53 KB   128/345 KB   92/1260 KB   53/53 KB   128/345 KB   96/1260 KB   53/53 KB   128/345 KB   96/1260 KB   53/53 KB   132/345 KB   96/1260 KB   53/53 KB   136/345 KB   96/1260 KB   53/53 KB   140/345 KB   96/1260 KB   53/53 KB   144/345 KB   100/1260 KB   53/53 KB   144/345 KB   104/1260 KB   53/53 KB   144/345 KB   108/1260 KB   53/53 KB   144/345 KB   112/1260 KB   53/53 KB   144/345 KB   112/1260 KB   53/53 KB   148/345 KB   112/1260 KB   53/53 KB   152/345 KB   112/1260 KB   53/53 KB   156/345 KB   112/1260 KB   53/53 KB   160/345 KB   116/1260 KB   53/53 KB   160/345 KB   120/1260 KB   53/53 KB   160/345 KB   124/1260 KB   53/53 KB   160/345 KB   128/1260 KB   53/53 KB   160/345 KB   128/1260 KB   53/53 KB   164/345 KB   128/1260 KB   53/53 KB   168/345 KB   128/1260 KB   53/53 KB   172/345 KB   128/1260 KB   53/53 KB   176/345 KB   132/1260 KB   53/53 KB   176/345 KB   136/1260 KB   53/53 KB   176/345 KB   140/1260 KB   53/53 KB   176/345 KB   144/1260 KB   53/53 KB   176/345 KB   148/1260 KB   53/53 KB   176/345 KB   152/1260 KB   53/53 KB   176/345 KB   156/1260 KB   53/53 KB   176/345 KB   160/1260 KB   53/53 KB   176/345 KB   164/1260 KB   53/53 KB   176/345 KB   168/1260 KB   53/53 KB   176/345 KB   172/1260 KB   53/53 KB   176/345 KB   176/1260 KB   53/53 KB   176/345 KB   180/1260 KB   53/53 KB   176/345 KB   184/1260 KB   53/53 KB   176/345 KB   188/1260 KB   53/53 KB   176/345 KB   192/1260 KB   53/53 KB   176/345 KB   192/1260 KB   3/7 KB   53/53 KB   176/345 KB   192/1260 KB   5/7 KB   53/53 KB   176/345 KB   192/1260 KB   7/7 KB   53/53 KB   176/345 KB   192/1260 KB   3/5 KB   7/7 KB   53/53 KB   176/345 KB   192/1260 KB   5/5 KB   7/7 KB   53/53 KB   176/345 KB                                                           Downloaded: https://repo.maven.apache.org/maven2/urbanophile/java-getopt/1.0.9/java-getopt-1.0.9.jar (53 KB at 52.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.jar
+192/1260 KB   5/5 KB   7/7 KB   180/345 KB              192/1260 KB   5/5 KB   7/7 KB   184/345 KB   192/1260 KB   5/5 KB   7/7 KB   188/345 KB   192/1260 KB   5/5 KB   7/7 KB   192/345 KB   192/1260 KB   5/5 KB   7/7 KB   196/345 KB   192/1260 KB   5/5 KB   7/7 KB   200/345 KB   192/1260 KB   5/5 KB   7/7 KB   204/345 KB   192/1260 KB   5/5 KB   7/7 KB   208/345 KB   192/1260 KB   5/5 KB   7/7 KB   212/345 KB   192/1260 KB   5/5 KB   7/7 KB   216/345 KB   192/1260 KB   5/5 KB   7/7 KB   220/345 KB   192/1260 KB   5/5 KB   7/7 KB   224/345 KB   192/1260 KB   5/5 KB   7/7 KB   228/345 KB   192/1260 KB   5/5 KB   7/7 KB   232/345 KB   192/1260 KB   5/5 KB   7/7 KB   236/345 KB   196/1260 KB   5/5 KB   7/7 KB   236/345 KB   196/1260 KB   5/5 KB   7/7 KB   240/345 KB   200/1260 KB   5/5 KB   7/7 KB   240/345 KB   204/1260 KB   5/5 KB   7/7 KB   240/345 KB   208/1260 KB   5/5 KB   7/7 KB   240/345 KB   208/1260 KB   5/5 KB   7/7 KB   244/345 KB   208/1260 KB   5/5 KB   7/7 KB   248/345 KB   208/1260 KB   5/5 KB   7/7 KB   252/345 KB   208/1260 KB   5/5 KB   7/7 KB   256/345 KB   212/1260 KB   5/5 KB   7/7 KB   256/345 KB   216/1260 KB   5/5 KB   7/7 KB   256/345 KB   220/1260 KB   5/5 KB   7/7 KB   256/345 KB   224/1260 KB   5/5 KB   7/7 KB   256/345 KB   224/1260 KB   5/5 KB   7/7 KB   260/345 KB   224/1260 KB   5/5 KB   7/7 KB   264/345 KB   224/1260 KB   5/5 KB   7/7 KB   268/345 KB   224/1260 KB   5/5 KB   7/7 KB   272/345 KB   228/1260 KB   5/5 KB   7/7 KB   272/345 KB   232/1260 KB   5/5 KB   7/7 KB   272/345 KB   236/1260 KB   5/5 KB   7/7 KB   272/345 KB   240/1260 KB   5/5 KB   7/7 KB   272/345 KB   240/1260 KB   5/5 KB   7/7 KB   276/345 KB   240/1260 KB   5/5 KB   7/7 KB   280/345 KB   240/1260 KB   5/5 KB   7/7 KB   284/345 KB   240/1260 KB   5/5 KB   7/7 KB   288/345 KB   244/1260 KB   5/5 KB   7/7 KB   288/345 KB   248/1260 KB   5/5 KB   7/7 KB   288/345 KB   252/1260 KB   5/5 KB   7/7 KB   288/345 KB   256/1260 KB   5/5 KB   7/7 KB   288/345 KB   256/1260 KB   5/5 KB   7/7 KB   292/345 KB   256/1260 KB   5/5 KB   7/7 KB   296/345 KB   256/1260 KB   5/5 KB   7/7 KB   300/345 KB   256/1260 KB   5/5 KB   7/7 KB   304/345 KB   260/1260 KB   5/5 KB   7/7 KB   304/345 KB   264/1260 KB   5/5 KB   7/7 KB   304/345 KB   268/1260 KB   5/5 KB   7/7 KB   304/345 KB   272/1260 KB   5/5 KB   7/7 KB   304/345 KB   272/1260 KB   5/5 KB   7/7 KB   308/345 KB   272/1260 KB   5/5 KB   7/7 KB   312/345 KB   272/1260 KB   5/5 KB   7/7 KB   316/345 KB   272/1260 KB   5/5 KB   7/7 KB   320/345 KB   276/1260 KB   5/5 KB   7/7 KB   320/345 KB   280/1260 KB   5/5 KB   7/7 KB   320/345 KB   284/1260 KB   5/5 KB   7/7 KB   320/345 KB   288/1260 KB   5/5 KB   7/7 KB   320/345 KB   292/1260 KB   5/5 KB   7/7 KB   320/345 KB   296/1260 KB   5/5 KB   7/7 KB   320/345 KB   300/1260 KB   5/5 KB   7/7 KB   320/345 KB   304/1260 KB   5/5 KB   7/7 KB   320/345 KB   308/1260 KB   5/5 KB   7/7 KB   320/345 KB   312/1260 KB   5/5 KB   7/7 KB   320/345 KB   316/1260 KB   5/5 KB   7/7 KB   320/345 KB   320/1260 KB   5/5 KB   7/7 KB   320/345 KB                                                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0/maven-reporting-api-2.0.jar (7 KB at 5.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0/maven-profile-2.0.jar
+                                             Downloaded: https://repo.maven.apache.org/maven2/doxia/doxia-sink-api/1.0-alpha-4/doxia-sink-api-1.0-alpha-4.jar (5 KB at 3.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0/maven-model-2.0.jar
+320/1260 KB   3/103 KB   320/345 KB          320/1260 KB   6/103 KB   320/345 KB   320/1260 KB   9/103 KB   320/345 KB   320/1260 KB   11/103 KB   320/345 KB   320/1260 KB   14/103 KB   320/345 KB   320/1260 KB   16/103 KB   320/345 KB   320/1260 KB   19/103 KB   320/345 KB   320/1260 KB   22/103 KB   320/345 KB   320/1260 KB   25/103 KB   320/345 KB   320/1260 KB   27/103 KB   320/345 KB   320/1260 KB   30/103 KB   320/345 KB   320/1260 KB   32/103 KB   320/345 KB   320/1260 KB   36/103 KB   320/345 KB   320/1260 KB   40/103 KB   320/345 KB   320/1260 KB   44/103 KB   320/345 KB   320/1260 KB   48/103 KB   320/345 KB   320/1260 KB   52/103 KB   320/345 KB   320/1260 KB   56/103 KB   320/345 KB   320/1260 KB   60/103 KB   320/345 KB   320/1260 KB   61/103 KB   320/345 KB   320/1260 KB   65/103 KB   320/345 KB   320/1260 KB   69/103 KB   320/345 KB   320/1260 KB   73/103 KB   320/345 KB   320/1260 KB   77/103 KB   320/345 KB   320/1260 KB   81/103 KB   320/345 KB   320/1260 KB   85/103 KB   320/345 KB   320/1260 KB   89/103 KB   320/345 KB   320/1260 KB   93/103 KB   320/345 KB   320/1260 KB   97/103 KB   320/345 KB   320/1260 KB   101/103 KB   320/345 KB   320/1260 KB   103/103 KB   320/345 KB   320/1260 KB   103/103 KB   324/345 KB   320/1260 KB   103/103 KB   328/345 KB   320/1260 KB   103/103 KB   332/345 KB   320/1260 KB   103/103 KB   336/345 KB   320/1260 KB   103/103 KB   340/345 KB   320/1260 KB   103/103 KB   344/345 KB   320/1260 KB   103/103 KB   345/345 KB   324/1260 KB   103/103 KB   345/345 KB   328/1260 KB   103/103 KB   345/345 KB   332/1260 KB   103/103 KB   345/345 KB   336/1260 KB   103/103 KB   345/345 KB   340/1260 KB   103/103 KB   345/345 KB   344/1260 KB   103/103 KB   345/345 KB   348/1260 KB   103/103 KB   345/345 KB   352/1260 KB   103/103 KB   345/345 KB   356/1260 KB   103/103 KB   345/345 KB   360/1260 KB   103/103 KB   345/345 KB   364/1260 KB   103/103 KB   345/345 KB   368/1260 KB   103/103 KB   345/345 KB   372/1260 KB   103/103 KB   345/345 KB   376/1260 KB   103/103 KB   345/345 KB   380/1260 KB   103/103 KB   345/345 KB   384/1260 KB   103/103 KB   345/345 KB   388/1260 KB   103/103 KB   345/345 KB   392/1260 KB   103/103 KB   345/345 KB   396/1260 KB   103/103 KB   345/345 KB   400/1260 KB   103/103 KB   345/345 KB   404/1260 KB   103/103 KB   345/345 KB   408/1260 KB   103/103 KB   345/345 KB   412/1260 KB   103/103 KB   345/345 KB   416/1260 KB   103/103 KB   345/345 KB   420/1260 KB   103/103 KB   345/345 KB   424/1260 KB   103/103 KB   345/345 KB   428/1260 KB   103/103 KB   345/345 KB   432/1260 KB   103/103 KB   345/345 KB   436/1260 KB   103/103 KB   345/345 KB   440/1260 KB   103/103 KB   345/345 KB   444/1260 KB   103/103 KB   345/345 KB   448/1260 KB   103/103 KB   345/345 KB   452/1260 KB   103/103 KB   345/345 KB   456/1260 KB   103/103 KB   345/345 KB   460/1260 KB   103/103 KB   345/345 KB   464/1260 KB   103/103 KB   345/345 KB   468/1260 KB   103/103 KB   345/345 KB   472/1260 KB   103/103 KB   345/345 KB   476/1260 KB   103/103 KB   345/345 KB   480/1260 KB   103/103 KB   345/345 KB   484/1260 KB   103/103 KB   345/345 KB   488/1260 KB   103/103 KB   345/345 KB   492/1260 KB   103/103 KB   345/345 KB   496/1260 KB   103/103 KB   345/345 KB   500/1260 KB   103/103 KB   345/345 KB   504/1260 KB   103/103 KB   345/345 KB   508/1260 KB   103/103 KB   345/345 KB   512/1260 KB   103/103 KB   345/345 KB   516/1260 KB   103/103 KB   345/345 KB   520/1260 KB   103/103 KB   345/345 KB   524/1260 KB   103/103 KB   345/345 KB   528/1260 KB   103/103 KB   345/345 KB   532/1260 KB   103/103 KB   345/345 KB   536/1260 KB   103/103 KB   345/345 KB   540/1260 KB   103/103 KB   345/345 KB   544/1260 KB   103/103 KB   345/345 KB   548/1260 KB   103/103 KB   345/345 KB   552/1260 KB   103/103 KB   345/345 KB   556/1260 KB   103/103 KB   345/345 KB   560/1260 KB   103/103 KB   345/345 KB   564/1260 KB   103/103 KB   345/345 KB   568/1260 KB   103/103 KB   345/345 KB   572/1260 KB   103/103 KB   345/345 KB   576/1260 KB   103/103 KB   345/345 KB   580/1260 KB   103/103 KB   345/345 KB   584/1260 KB   103/103 KB   345/345 KB   588/1260 KB   103/103 KB   345/345 KB   592/1260 KB   103/103 KB   345/345 KB   596/1260 KB   103/103 KB   345/345 KB   600/1260 KB   103/103 KB   345/345 KB   604/1260 KB   103/103 KB   345/345 KB   608/1260 KB   103/103 KB   345/345 KB   612/1260 KB   103/103 KB   345/345 KB   616/1260 KB   103/103 KB   345/345 KB   620/1260 KB   103/103 KB   345/345 KB   624/1260 KB   103/103 KB   345/345 KB   628/1260 KB   103/103 KB   345/345 KB   632/1260 KB   103/103 KB   345/345 KB   636/1260 KB   103/103 KB   345/345 KB   640/1260 KB   103/103 KB   345/345 KB   644/1260 KB   103/103 KB   345/345 KB   648/1260 KB   103/103 KB   345/345 KB   652/1260 KB   103/103 KB   345/345 KB   656/1260 KB   103/103 KB   345/345 KB   656/1260 KB   3/30 KB   103/103 KB   345/345 KB   660/1260 KB   5/30 KB   103/103 KB   345/345 KB   660/1260 KB   5/30 KB   103/103 KB   345/345 KB   664/1260 KB   5/30 KB   103/103 KB   345/345 KB   668/1260 KB   5/30 KB   103/103 KB   345/345 KB   672/1260 KB   5/30 KB   103/103 KB   345/345 KB   672/1260 KB   8/30 KB   103/103 KB   345/345 KB   672/1260 KB   11/30 KB   103/103 KB   345/345 KB   672/1260 KB   13/30 KB   103/103 KB   345/345 KB   672/1260 KB   16/30 KB   103/103 KB   345/345 KB   672/1260 KB   19/30 KB   103/103 KB   345/345 KB   672/1260 KB   21/30 KB   103/103 KB   345/345 KB   672/1260 KB   24/30 KB   103/103 KB   345/345 KB   672/1260 KB   27/30 KB   103/103 KB   345/345 KB   672/1260 KB   3/77 KB   27/30 KB   103/103 KB   345/345 KB   672/1260 KB   5/77 KB   27/30 KB   103/103 KB   345/345 KB   672/1260 KB   8/77 KB   27/30 KB   103/103 KB   345/345 KB   672/1260 KB   11/77 KB   27/30 KB   103/103 KB   345/345 KB   672/1260 KB   13/77 KB   27/30 KB   103/103 KB   345/345 KB   672/1260 KB   16/77 KB   27/30 KB   103/103 KB   345/345 KB   672/1260 KB   19/77 KB   27/30 KB   103/103 KB   345/345 KB   672/1260 KB   21/77 KB   27/30 KB   103/103 KB   345/345 KB   672/1260 KB   24/77 KB   27/30 KB   103/103 KB   345/345 KB   672/1260 KB   27/77 KB   27/30 KB   103/103 KB   345/345 KB   672/1260 KB   29/77 KB   27/30 KB   103/103 KB   345/345 KB                                                                 Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.jar (103 KB at 76.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.jar
+676/1260 KB   29/77 KB   27/30 KB   345/345 KB                680/1260 KB   29/77 KB   27/30 KB   345/345 KB   684/1260 KB   29/77 KB   27/30 KB   345/345 KB   688/1260 KB   29/77 KB   27/30 KB   345/345 KB   692/1260 KB   29/77 KB   27/30 KB   345/345 KB   696/1260 KB   29/77 KB   27/30 KB   345/345 KB                                                    700/1260 KB   29/77 KB   27/30 KB                704/1260 KB   29/77 KB   27/30 KB   Downloaded: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.9/log4j-1.2.9.jar (345 KB at 235.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.jar
+708/1260 KB   29/77 KB   27/30 KB   712/1260 KB   29/77 KB   27/30 KB   716/1260 KB   29/77 KB   27/30 KB   720/1260 KB   29/77 KB   27/30 KB   724/1260 KB   29/77 KB   27/30 KB   728/1260 KB   29/77 KB   27/30 KB   732/1260 KB   29/77 KB   27/30 KB   736/1260 KB   29/77 KB   27/30 KB   740/1260 KB   29/77 KB   27/30 KB   744/1260 KB   29/77 KB   27/30 KB   748/1260 KB   29/77 KB   27/30 KB   752/1260 KB   29/77 KB   27/30 KB   756/1260 KB   29/77 KB   27/30 KB   760/1260 KB   29/77 KB   27/30 KB   764/1260 KB   29/77 KB   27/30 KB   768/1260 KB   29/77 KB   27/30 KB   772/1260 KB   29/77 KB   27/30 KB   776/1260 KB   29/77 KB   27/30 KB   780/1260 KB   29/77 KB   27/30 KB   784/1260 KB   29/77 KB   27/30 KB   788/1260 KB   29/77 KB   27/30 KB   792/1260 KB   29/77 KB   27/30 KB   796/1260 KB   29/77 KB   27/30 KB   800/1260 KB   29/77 KB   27/30 KB   804/1260 KB   29/77 KB   27/30 KB   808/1260 KB   29/77 KB   27/30 KB   812/1260 KB   29/77 KB   27/30 KB   816/1260 KB   29/77 KB   27/30 KB   820/1260 KB   29/77 KB   27/30 KB   824/1260 KB   29/77 KB   27/30 KB   828/1260 KB   29/77 KB   27/30 KB   832/1260 KB   29/77 KB   27/30 KB   836/1260 KB   29/77 KB   27/30 KB   840/1260 KB   29/77 KB   27/30 KB   844/1260 KB   29/77 KB   27/30 KB   848/1260 KB   29/77 KB   27/30 KB   852/1260 KB   29/77 KB   27/30 KB   856/1260 KB   29/77 KB   27/30 KB   860/1260 KB   29/77 KB   27/30 KB   864/1260 KB   29/77 KB   27/30 KB   868/1260 KB   29/77 KB   27/30 KB   872/1260 KB   29/77 KB   27/30 KB   876/1260 KB   29/77 KB   27/30 KB   880/1260 KB   29/77 KB   27/30 KB   884/1260 KB   29/77 KB   27/30 KB   888/1260 KB   29/77 KB   27/30 KB   892/1260 KB   29/77 KB   27/30 KB   896/1260 KB   29/77 KB   27/30 KB   900/1260 KB   29/77 KB   27/30 KB   904/1260 KB   29/77 KB   27/30 KB   908/1260 KB   29/77 KB   27/30 KB   912/1260 KB   29/77 KB   27/30 KB   916/1260 KB   29/77 KB   27/30 KB   920/1260 KB   29/77 KB   27/30 KB   924/1260 KB   29/77 KB   27/30 KB   928/1260 KB   29/77 KB   27/30 KB   932/1260 KB   29/77 KB   27/30 KB   936/1260 KB   29/77 KB   27/30 KB   940/1260 KB   29/77 KB   27/30 KB   944/1260 KB   29/77 KB   27/30 KB   948/1260 KB   29/77 KB   27/30 KB   952/1260 KB   29/77 KB   27/30 KB   956/1260 KB   29/77 KB   27/30 KB   960/1260 KB   29/77 KB   27/30 KB   964/1260 KB   29/77 KB   29/30 KB   968/1260 KB   29/77 KB   29/30 KB   960/1260 KB   29/77 KB   29/30 KB   972/1260 KB   29/77 KB   29/30 KB   976/1260 KB   29/77 KB   29/30 KB   976/1260 KB   29/77 KB   30/30 KB   980/1260 KB   29/77 KB   30/30 KB   984/1260 KB   29/77 KB   30/30 KB   988/1260 KB   29/77 KB   30/30 KB   992/1260 KB   29/77 KB   30/30 KB   992/1260 KB   32/77 KB   30/30 KB   992/1260 KB   36/77 KB   30/30 KB   992/1260 KB   40/77 KB   30/30 KB   992/1260 KB   44/77 KB   30/30 KB   992/1260 KB   48/77 KB   30/30 KB   992/1260 KB   52/77 KB   30/30 KB   992/1260 KB   56/77 KB   30/30 KB   992/1260 KB   60/77 KB   30/30 KB   992/1260 KB   64/77 KB   30/30 KB   992/1260 KB   68/77 KB   30/30 KB   992/1260 KB   72/77 KB   30/30 KB   992/1260 KB   76/77 KB   30/30 KB   992/1260 KB   77/77 KB   30/30 KB   992/1260 KB   77/77 KB   30/30 KB   4/50 KB   992/1260 KB   77/77 KB   30/30 KB   8/50 KB   992/1260 KB   77/77 KB   30/30 KB   12/50 KB   992/1260 KB   77/77 KB   30/30 KB   16/50 KB   992/1260 KB   77/77 KB   30/30 KB   20/50 KB   992/1260 KB   77/77 KB   30/30 KB   24/50 KB   992/1260 KB   77/77 KB   30/30 KB   28/50 KB   992/1260 KB   77/77 KB   30/30 KB   32/50 KB   992/1260 KB   77/77 KB   30/30 KB   36/50 KB   992/1260 KB   77/77 KB   30/30 KB   40/50 KB   992/1260 KB   77/77 KB   30/30 KB   44/50 KB   992/1260 KB   77/77 KB   30/30 KB   48/50 KB   992/1260 KB   77/77 KB   30/30 KB   50/50 KB   996/1260 KB   77/77 KB   30/30 KB   50/50 KB   1000/1260 KB   77/77 KB   30/30 KB   50/50 KB   1004/1260 KB   77/77 KB   30/30 KB   50/50 KB   1008/1260 KB   77/77 KB   30/30 KB   50/50 KB   1012/1260 KB   77/77 KB   30/30 KB   50/50 KB   1016/1260 KB   77/77 KB   30/30 KB   50/50 KB   1020/1260 KB   77/77 KB   30/30 KB   50/50 KB   1024/1260 KB   77/77 KB   30/30 KB   50/50 KB   1028/1260 KB   77/77 KB   30/30 KB   50/50 KB   1032/1260 KB   77/77 KB   30/30 KB   50/50 KB   1036/1260 KB   77/77 KB   30/30 KB   50/50 KB   1040/1260 KB   77/77 KB   30/30 KB   50/50 KB   1044/1260 KB   77/77 KB   30/30 KB   50/50 KB   1048/1260 KB   77/77 KB   30/30 KB   50/50 KB   1052/1260 KB   77/77 KB   30/30 KB   50/50 KB   1056/1260 KB   77/77 KB   30/30 KB   50/50 KB   1060/1260 KB   77/77 KB   30/30 KB   50/50 KB   1064/1260 KB   77/77 KB   30/30 KB   50/50 KB   1068/1260 KB   77/77 KB   30/30 KB   50/50 KB   1072/1260 KB   77/77 KB   30/30 KB   50/50 KB   1076/1260 KB   77/77 KB   30/30 KB   50/50 KB   1080/1260 KB   77/77 KB   30/30 KB   50/50 KB   1084/1260 KB   77/77 KB   30/30 KB   50/50 KB   1088/1260 KB   77/77 KB   30/30 KB   50/50 KB   1088/1260 KB   77/77 KB   30/30 KB   50/50 KB   4/21 KB   1092/1260 KB   77/77 KB   30/30 KB   50/50 KB   4/21 KB   1096/1260 KB   77/77 KB   30/30 KB   50/50 KB   8/21 KB   1096/1260 KB   77/77 KB   30/30 KB   50/50 KB   8/21 KB   1100/1260 KB   77/77 KB   30/30 KB   50/50 KB   12/21 KB   1100/1260 KB   77/77 KB   30/30 KB   50/50 KB   12/21 KB   1104/1260 KB   77/77 KB   30/30 KB   50/50 KB   12/21 KB   1104/1260 KB   77/77 KB   30/30 KB   50/50 KB   16/21 KB   1104/1260 KB   77/77 KB   30/30 KB   50/50 KB   20/21 KB   1104/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1108/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1112/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1116/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1120/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1124/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1128/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1132/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1136/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1140/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1144/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1148/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1152/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1156/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1160/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1164/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1168/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1172/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1176/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1180/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1184/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1188/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1192/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1196/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1200/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1204/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1208/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1212/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1216/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1220/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1224/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1228/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1232/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1236/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1240/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1244/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1248/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1252/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1256/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1260/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB   1260/1260 KB   77/77 KB   30/30 KB   50/50 KB   21/21 KB                                                              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0/maven-profile-2.0.jar (30 KB at 18.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0/maven-reporting-impl-2.0.jar
+                                                           Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0/maven-model-2.0.jar (77 KB at 46.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.1.4/commons-validator-1.1.4.jar
+                                                           Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.jar (50 KB at 29.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/doxia/doxia-core/1.0-alpha-4/doxia-core-1.0-alpha-4.jar
+                                                           Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.jar (21 KB at 11.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
+                                                           Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.7.0/ant-1.7.0.jar (1260 KB at 701.3 KB/sec)
+4/16 KB                                                    8/16 KB   12/16 KB   16/16 KB   16/16 KB   4/83 KB   16/16 KB   8/83 KB   16/16 KB   12/83 KB   16/16 KB   16/83 KB   16/16 KB   20/83 KB   16/16 KB   24/83 KB   16/16 KB   28/83 KB   16/16 KB   32/83 KB   16/16 KB   36/83 KB   16/16 KB   40/83 KB   16/16 KB   44/83 KB   16/16 KB   48/83 KB   16/16 KB   52/83 KB   16/16 KB   56/83 KB   16/16 KB   60/83 KB   16/16 KB   64/83 KB   16/16 KB   68/83 KB   16/16 KB   72/83 KB   16/16 KB   76/83 KB   16/16 KB   80/83 KB   16/16 KB   83/83 KB   16/16 KB   83/83 KB   16/16 KB   3/255 KB   83/83 KB   16/16 KB   5/255 KB   83/83 KB   16/16 KB   8/255 KB   83/83 KB   16/16 KB   11/255 KB   83/83 KB   16/16 KB   13/255 KB   83/83 KB   16/16 KB   16/255 KB   83/83 KB   16/16 KB   19/255 KB   83/83 KB   16/16 KB   21/255 KB   83/83 KB   16/16 KB   24/255 KB   83/83 KB   16/16 KB   27/255 KB   83/83 KB   16/16 KB   29/255 KB   83/83 KB   16/16 KB   32/255 KB   83/83 KB   16/16 KB   36/255 KB   83/83 KB   16/16 KB   40/255 KB   83/83 KB   16/16 KB   44/255 KB   83/83 KB   16/16 KB   48/255 KB   83/83 KB   16/16 KB   52/255 KB   83/83 KB   16/16 KB   56/255 KB   83/83 KB   16/16 KB   60/255 KB   83/83 KB   16/16 KB   64/255 KB   83/83 KB   16/16 KB   68/255 KB   83/83 KB   16/16 KB   72/255 KB   83/83 KB   16/16 KB   76/255 KB   83/83 KB   16/16 KB   80/255 KB   83/83 KB   16/16 KB   84/255 KB   83/83 KB   16/16 KB   88/255 KB   83/83 KB   16/16 KB   92/255 KB   83/83 KB   16/16 KB   96/255 KB   83/83 KB   16/16 KB   100/255 KB   83/83 KB   16/16 KB   104/255 KB   83/83 KB   16/16 KB   108/255 KB   83/83 KB   16/16 KB   112/255 KB   83/83 KB   16/16 KB   116/255 KB   83/83 KB   16/16 KB   120/255 KB   83/83 KB   16/16 KB   124/255 KB   83/83 KB   16/16 KB   128/255 KB   83/83 KB   16/16 KB   132/255 KB   83/83 KB   16/16 KB   136/255 KB   83/83 KB   16/16 KB   140/255 KB   83/83 KB   16/16 KB   144/255 KB   83/83 KB   16/16 KB   148/255 KB   83/83 KB   16/16 KB   152/255 KB   83/83 KB   16/16 KB   156/255 KB   83/83 KB   16/16 KB   160/255 KB   83/83 KB   16/16 KB   164/255 KB   83/83 KB   16/16 KB   168/255 KB   83/83 KB   16/16 KB   172/255 KB   83/83 KB   16/16 KB   176/255 KB   83/83 KB   16/16 KB   180/255 KB   83/83 KB   16/16 KB   184/255 KB   83/83 KB   16/16 KB   188/255 KB   83/83 KB   16/16 KB   192/255 KB   83/83 KB   16/16 KB   196/255 KB   83/83 KB   16/16 KB   200/255 KB   83/83 KB   16/16 KB   204/255 KB   83/83 KB   16/16 KB   208/255 KB   83/83 KB   16/16 KB   212/255 KB   83/83 KB   16/16 KB   216/255 KB   83/83 KB   16/16 KB   220/255 KB   83/83 KB   16/16 KB   224/255 KB   83/83 KB   16/16 KB   228/255 KB   83/83 KB   16/16 KB   232/255 KB   83/83 KB   16/16 KB   236/255 KB   83/83 KB   16/16 KB   240/255 KB   83/83 KB   16/16 KB   244/255 KB   83/83 KB   16/16 KB   248/255 KB   83/83 KB   16/16 KB   252/255 KB   83/83 KB   16/16 KB   255/255 KB   83/83 KB   16/16 KB   4/165 KB   255/255 KB   83/83 KB   16/16 KB   8/165 KB   255/255 KB   83/83 KB   16/16 KB   12/165 KB   255/255 KB   83/83 KB   16/16 KB   16/165 KB   255/255 KB   83/83 KB   16/16 KB   20/165 KB   255/255 KB   83/83 KB   16/16 KB   24/165 KB   255/255 KB   83/83 KB   16/16 KB   28/165 KB   255/255 KB   83/83 KB   16/16 KB   32/165 KB   255/255 KB   83/83 KB   16/16 KB   36/165 KB   255/255 KB   83/83 KB   16/16 KB   40/165 KB   255/255 KB   83/83 KB   16/16 KB   44/165 KB   255/255 KB   83/83 KB   16/16 KB   48/165 KB   255/255 KB   83/83 KB   16/16 KB   52/165 KB   255/255 KB   83/83 KB   16/16 KB   56/165 KB   255/255 KB   83/83 KB   16/16 KB   60/165 KB   255/255 KB   83/83 KB   16/16 KB   64/165 KB   255/255 KB   83/83 KB   16/16 KB   68/165 KB   255/255 KB   83/83 KB   16/16 KB   72/165 KB   255/255 KB   83/83 KB   16/16 KB   76/165 KB   255/255 KB   83/83 KB   16/16 KB   80/165 KB   255/255 KB   83/83 KB   16/16 KB   84/165 KB   255/255 KB   83/83 KB   16/16 KB   88/165 KB   255/255 KB   83/83 KB   16/16 KB   92/165 KB   255/255 KB   83/83 KB   16/16 KB   96/165 KB   255/255 KB   83/83 KB   16/16 KB   100/165 KB   255/255 KB   83/83 KB   16/16 KB   104/165 KB   255/255 KB   83/83 KB   16/16 KB   108/165 KB   255/255 KB   83/83 KB   16/16 KB   112/165 KB   255/255 KB   83/83 KB   16/16 KB   116/165 KB   255/255 KB   83/83 KB   16/16 KB   120/165 KB   255/255 KB   83/83 KB   16/16 KB   124/165 KB   255/255 KB   83/83 KB   16/16 KB   128/165 KB   255/255 KB   83/83 KB   16/16 KB   132/165 KB   255/255 KB   83/83 KB   16/16 KB   136/165 KB   255/255 KB   83/83 KB   16/16 KB   140/165 KB   255/255 KB   83/83 KB   16/16 KB   144/165 KB   255/255 KB   83/83 KB   16/16 KB   148/165 KB   255/255 KB   83/83 KB   16/16 KB   152/165 KB   255/255 KB   83/83 KB   16/16 KB   156/165 KB   255/255 KB   83/83 KB   16/16 KB   160/165 KB   255/255 KB   83/83 KB   16/16 KB   164/165 KB   255/255 KB   83/83 KB   16/16 KB   165/165 KB   255/255 KB                                                   Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0/maven-reporting-impl-2.0.jar (16 KB at 8.1 KB/sec)
+                                                Downloaded: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.1.4/commons-validator-1.1.4.jar (83 KB at 41.9 KB/sec)
+                                                Downloaded: https://repo.maven.apache.org/maven2/doxia/doxia-core/1.0-alpha-4/doxia-core-1.0-alpha-4.jar (255 KB at 126.7 KB/sec)
+                                                Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar (165 KB at 77.7 KB/sec)
 [INFO] 
 [INFO] --- maven-antrun-plugin:1.3:run (javadoc.resources) @ commons-math ---
 [INFO] Executing tasks
-     [copy] Copying 2 files to /home/jan_gerling/astor/defect4j_tests/math_74/target/apidocs/META-INF
+     [copy] Copying 2 files to /home/jan_gerling/astor/defect4j_tests/rerun/math_74/target/apidocs/META-INF
 [INFO] Executed tasks
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-math ---
@@ -27,7 +117,29 @@
 [INFO] Copying 2 resources to META-INF
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.0.2:compile (default-compile) @ commons-math ---
-[INFO] Compiling 398 source files to /home/jan_gerling/astor/defect4j_tests/math_74/target/classes
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.pom
+624/624 B                                                   Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.pom (624 B at 1.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/1.5.3/plexus-compiler-1.5.3.pom
+2/2 KB               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/1.5.3/plexus-compiler-1.5.3.pom (2 KB at 4.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.pom
+634/634 B               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.pom (634 B at 1.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.pom
+797/797 B               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.pom (797 B at 2.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/1.5.3/plexus-compilers-1.5.3.pom
+3/8 KB      5/8 KB   8/8 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/1.5.3/plexus-compilers-1.5.3.pom (8 KB at 22.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.0.5/plexus-utils-1.0.5.pom
+918/918 B               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.0.5/plexus-utils-1.0.5.pom (918 B at 2.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
+3/160 KB    5/160 KB   8/160 KB   11/160 KB   13/160 KB   16/160 KB   19/160 KB   21/160 KB   24/160 KB   27/160 KB   29/160 KB   32/160 KB   36/160 KB   40/160 KB   44/160 KB   48/160 KB   52/160 KB   56/160 KB   60/160 KB   64/160 KB   68/160 KB   72/160 KB   76/160 KB   80/160 KB   84/160 KB   88/160 KB   92/160 KB   96/160 KB   100/160 KB   104/160 KB   108/160 KB   112/160 KB   116/160 KB   120/160 KB   124/160 KB   128/160 KB   132/160 KB   136/160 KB   140/160 KB   144/160 KB   148/160 KB   152/160 KB   156/160 KB   160/160 KB   160/160 KB   3/20 KB   160/160 KB   5/20 KB   160/160 KB   8/20 KB   160/160 KB   11/20 KB   160/160 KB   13/20 KB   160/160 KB   16/20 KB   160/160 KB   19/20 KB   160/160 KB   20/20 KB   160/160 KB   20/20 KB   3/6 KB   160/160 KB   20/20 KB   5/6 KB   160/160 KB   20/20 KB   6/6 KB   160/160 KB   20/20 KB   6/6 KB   160/160 KB   3/14 KB   20/20 KB   6/6 KB   160/160 KB   6/14 KB   20/20 KB   6/6 KB   160/160 KB   9/14 KB   20/20 KB   6/6 KB   160/160 KB   11/14 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   3/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   5/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   8/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   11/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   13/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   16/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   19/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   21/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   24/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   27/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   29/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   32/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   36/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   40/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   44/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   48/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   52/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   56/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   60/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   64/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   68/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   72/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   76/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   80/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   84/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   88/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   92/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   96/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   100/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   104/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   108/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   112/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   116/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   120/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   124/191 KB   20/20 KB   6/6 KB   160/160 KB   14/14 KB   128/191 KB                                                            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar (160 KB at 477.5 KB/sec)
+                                                         Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar (20 KB at 56.2 KB/sec)
+6/6 KB   14/14 KB   132/191 KB                           6/6 KB   14/14 KB   136/191 KB   6/6 KB   14/14 KB   140/191 KB   6/6 KB   14/14 KB   144/191 KB                                    Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar (6 KB at 14.9 KB/sec)
+14/14 KB   148/191 KB                                    152/191 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar (14 KB at 39.8 KB/sec)
+156/191 KB   160/191 KB   164/191 KB   168/191 KB   172/191 KB   176/191 KB   180/191 KB   184/191 KB   188/191 KB   191/191 KB                Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar (191 KB at 370.6 KB/sec)
+[INFO] Compiling 398 source files to /home/jan_gerling/astor/defect4j_tests/rerun/math_74/target/classes
 [INFO] 
 [INFO] --- maven-antrun-plugin:1.3:run (javadoc.resources) @ commons-math ---
 [INFO] Executing tasks
@@ -41,84 +153,102 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-bundle-plugin:1.4.0:manifest (bundle-manifest) @ commons-math ---
+Downloading: https://repo.maven.apache.org/maven2/biz/aQute/bndlib/0.0.238/bndlib-0.0.238.pom
+864/864 B                Downloaded: https://repo.maven.apache.org/maven2/biz/aQute/bndlib/0.0.238/bndlib-0.0.238.pom (864 B at 2.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/biz/aQute/bndlib/0.0.238/bndlib-0.0.238.jar
+3/154 KB    5/154 KB   8/154 KB   11/154 KB   13/154 KB   16/154 KB   19/154 KB   21/154 KB   24/154 KB   27/154 KB   29/154 KB   32/154 KB   36/154 KB   40/154 KB   44/154 KB   48/154 KB   52/154 KB   56/154 KB   60/154 KB   64/154 KB   68/154 KB   72/154 KB   76/154 KB   80/154 KB   84/154 KB   88/154 KB   92/154 KB   96/154 KB   100/154 KB   104/154 KB   108/154 KB   112/154 KB   116/154 KB   120/154 KB   124/154 KB   128/154 KB   132/154 KB   136/154 KB   140/154 KB   144/154 KB   148/154 KB   152/154 KB   154/154 KB                Downloaded: https://repo.maven.apache.org/maven2/biz/aQute/bndlib/0.0.238/bndlib-0.0.238.jar (154 KB at 459.1 KB/sec)
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-math ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] Copying 11 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.0.2:testCompile (default-testCompile) @ commons-math ---
-[INFO] Compiling 262 source files to /home/jan_gerling/astor/defect4j_tests/math_74/target/test-classes
+[INFO] Compiling 262 source files to /home/jan_gerling/astor/defect4j_tests/rerun/math_74/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.4.3:test (default-test) @ commons-math ---
-[INFO] Surefire report directory: /home/jan_gerling/astor/defect4j_tests/math_74/target/surefire-reports
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.4.3/surefire-booter-2.4.3.pom
+2/2 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.4.3/surefire-booter-2.4.3.pom (2 KB at 6.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.4.3/surefire-api-2.4.3.pom
+3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.4.3/surefire-api-2.4.3.pom (3 KB at 6.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.4.3/surefire-booter-2.4.3.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.4.3/surefire-api-2.4.3.jar
+3/504 KB   3/262 KB   3/504 KB   3/262 KB   5/504 KB   5/262 KB   5/504 KB   5/262 KB   8/504 KB   5/262 KB   8/504 KB   8/262 KB   8/504 KB   11/262 KB   11/504 KB   11/262 KB   13/504 KB   11/262 KB   13/504 KB   13/262 KB   16/504 KB   13/262 KB   16/504 KB   16/262 KB   19/504 KB   16/262 KB   19/504 KB   19/262 KB   21/504 KB   19/262 KB   21/504 KB   21/262 KB   24/504 KB   21/262 KB   24/504 KB   24/262 KB   27/504 KB   24/262 KB   27/504 KB   27/262 KB   29/504 KB   27/262 KB   29/504 KB   29/262 KB   32/504 KB   29/262 KB   32/504 KB   32/262 KB   36/504 KB   32/262 KB   40/504 KB   32/262 KB   44/504 KB   32/262 KB   44/504 KB   36/262 KB   48/504 KB   36/262 KB   48/504 KB   40/262 KB   48/504 KB   44/262 KB   48/504 KB   48/262 KB   48/504 KB   52/262 KB   48/504 KB   56/262 KB   48/504 KB   60/262 KB   48/504 KB   64/262 KB   48/504 KB   68/262 KB   48/504 KB   72/262 KB   48/504 KB   76/262 KB   48/504 KB   80/262 KB   48/504 KB   84/262 KB   48/504 KB   88/262 KB   48/504 KB   92/262 KB   48/504 KB   96/262 KB   48/504 KB   100/262 KB   48/504 KB   104/262 KB   48/504 KB   108/262 KB   48/504 KB   112/262 KB   48/504 KB   116/262 KB   48/504 KB   120/262 KB   48/504 KB   124/262 KB   48/504 KB   128/262 KB   48/504 KB   132/262 KB   48/504 KB   136/262 KB   48/504 KB   140/262 KB   48/504 KB   144/262 KB   48/504 KB   148/262 KB   48/504 KB   152/262 KB   48/504 KB   156/262 KB   48/504 KB   160/262 KB   48/504 KB   164/262 KB   48/504 KB   168/262 KB   48/504 KB   172/262 KB   48/504 KB   176/262 KB   48/504 KB   180/262 KB   48/504 KB   184/262 KB   48/504 KB   188/262 KB   48/504 KB   192/262 KB   48/504 KB   196/262 KB   48/504 KB   200/262 KB   48/504 KB   204/262 KB   48/504 KB   208/262 KB   48/504 KB   212/262 KB   48/504 KB   216/262 KB   48/504 KB   220/262 KB   48/504 KB   224/262 KB   48/504 KB   228/262 KB   48/504 KB   232/262 KB   48/504 KB   236/262 KB   48/504 KB   240/262 KB   48/504 KB   244/262 KB   48/504 KB   248/262 KB   48/504 KB   252/262 KB   48/504 KB   256/262 KB   48/504 KB   260/262 KB   48/504 KB   262/262 KB   52/504 KB   262/262 KB   56/504 KB   262/262 KB   60/504 KB   262/262 KB   64/504 KB   262/262 KB   68/504 KB   262/262 KB   72/504 KB   262/262 KB   76/504 KB   262/262 KB   80/504 KB   262/262 KB   84/504 KB   262/262 KB   88/504 KB   262/262 KB   92/504 KB   262/262 KB   96/504 KB   262/262 KB   100/504 KB   262/262 KB   104/504 KB   262/262 KB   108/504 KB   262/262 KB   112/504 KB   262/262 KB   116/504 KB   262/262 KB   120/504 KB   262/262 KB   124/504 KB   262/262 KB   128/504 KB   262/262 KB   132/504 KB   262/262 KB   136/504 KB   262/262 KB   140/504 KB   262/262 KB   144/504 KB   262/262 KB                             Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.4.3/surefire-booter-2.4.3.jar (262 KB at 760.5 KB/sec)
+148/504 KB                152/504 KB   156/504 KB   160/504 KB   164/504 KB   168/504 KB   172/504 KB   176/504 KB   180/504 KB   184/504 KB   188/504 KB   192/504 KB   196/504 KB   200/504 KB   204/504 KB   208/504 KB   212/504 KB   216/504 KB   220/504 KB   224/504 KB   228/504 KB   232/504 KB   236/504 KB   240/504 KB   244/504 KB   248/504 KB   252/504 KB   256/504 KB   260/504 KB   264/504 KB   268/504 KB   272/504 KB   276/504 KB   280/504 KB   284/504 KB   288/504 KB   292/504 KB   296/504 KB   300/504 KB   304/504 KB   308/504 KB   312/504 KB   316/504 KB   320/504 KB   324/504 KB   328/504 KB   332/504 KB   336/504 KB   340/504 KB   344/504 KB   348/504 KB   352/504 KB   356/504 KB   360/504 KB   364/504 KB   368/504 KB   372/504 KB   376/504 KB   380/504 KB   384/504 KB   388/504 KB   392/504 KB   396/504 KB   400/504 KB   404/504 KB   408/504 KB   412/504 KB   416/504 KB   420/504 KB   424/504 KB   428/504 KB   432/504 KB   436/504 KB   440/504 KB   444/504 KB   448/504 KB   452/504 KB   456/504 KB   460/504 KB   464/504 KB   468/504 KB   472/504 KB   476/504 KB   480/504 KB   484/504 KB   488/504 KB   492/504 KB   496/504 KB   500/504 KB   504/504 KB   504/504 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.4.3/surefire-api-2.4.3.jar (504 KB at 613.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.4.3/surefire-junit4-2.4.3.pom
+2/2 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.4.3/surefire-junit4-2.4.3.pom (2 KB at 5.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.4.3/surefire-providers-2.4.3.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.4.3/surefire-providers-2.4.3.pom (2 KB at 5.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.4.3/surefire-junit4-2.4.3.jar
+3/12 KB   5/12 KB   8/12 KB   11/12 KB   12/12 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.4.3/surefire-junit4-2.4.3.jar (12 KB at 34.4 KB/sec)
+[INFO] Surefire report directory: /home/jan_gerling/astor/defect4j_tests/rerun/math_74/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.apache.commons.math.stat.data.LotteryTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
 Running org.apache.commons.math.linear.FieldMatrixImplTest
-Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec
 Running org.apache.commons.math.ode.sampling.StepNormalizerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
 Running org.apache.commons.math.stat.descriptive.AggregateSummaryStatisticsTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.geometry.RotationOrderTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.analysis.solvers.NewtonSolverTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.estimation.EstimatedParameterTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.linear.CholeskyDecompositionImplTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
 Running org.apache.commons.math.linear.Array2DRowRealMatrixTest
 Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
 Running org.apache.commons.math.linear.SparseRealMatrixTest
-Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
 Running org.apache.commons.math.util.OpenIntToFieldTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
 Running org.apache.commons.math.analysis.BinaryFunctionTest
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.optimization.fitting.PolynomialFitterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
 Running org.apache.commons.math.linear.ArrayRealVectorTest
 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running org.apache.commons.math.distribution.HypergeometricDistributionTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.247 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.25 sec
 Running org.apache.commons.math.random.RandomAdaptorTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec
 Running org.apache.commons.math.stat.descriptive.SynchronizedSummaryStatisticsTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
 Running org.apache.commons.math.ode.FirstOrderConverterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
 Running org.apache.commons.math.stat.inference.TestUtilsTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running org.apache.commons.math.stat.data.LewTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.distribution.GammaDistributionTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.stat.descriptive.rank.MedianTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.stat.CertifiedDataTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
 Running org.apache.commons.math.distribution.ZipfDistributionTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.ode.nonstiff.DormandPrince54StepInterpolatorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
 Running org.apache.commons.math.ode.nonstiff.HighamHall54IntegratorTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
 Running org.apache.commons.math.complex.FrenchComplexFormatTest
 Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
 Running org.apache.commons.math.ode.nonstiff.MidpointStepInterpolatorTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
 Running org.apache.commons.math.analysis.polynomials.PolynomialsUtilsTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
 Running org.apache.commons.math.DuplicateSampleAbscissaExceptionTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.estimation.MinpackTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.97 sec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.934 sec
 Running org.apache.commons.math.genetics.FixedGenerationCountTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest
@@ -132,113 +262,113 @@ Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
 Running org.apache.commons.math.distribution.FDistributionTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.FunctionEvaluationExceptionTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.stat.inference.TTestFactoryTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.ode.sampling.NordsieckStepInterpolatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
 Running org.apache.commons.math.stat.descriptive.moment.SkewnessTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running org.apache.commons.math.special.GammaTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.ode.nonstiff.EulerStepInterpolatorTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running org.apache.commons.math.analysis.integration.RombergIntegratorTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.ode.nonstiff.HighamHall54StepInterpolatorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
 Running org.apache.commons.math.analysis.integration.LegendreGaussIntegratorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.stat.descriptive.SummaryStatisticsTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.ode.nonstiff.MidpointIntegratorTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
 Running org.apache.commons.math.stat.descriptive.moment.FirstMomentTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.descriptive.moment.StandardDeviationTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.distribution.BetaDistributionTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running org.apache.commons.math.complex.ComplexTest
-Tests run: 98, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Tests run: 98, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 Running org.apache.commons.math.special.ErfTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.special.BetaTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.ode.nonstiff.GillIntegratorTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec
 Running org.apache.commons.math.random.EmpiricalDistributionTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
 Running org.apache.commons.math.stat.descriptive.MultivariateSummaryStatisticsTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
 Running org.apache.commons.math.stat.descriptive.StatisticalSummaryValuesTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.regression.OLSMultipleLinearRegressionTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running org.apache.commons.math.estimation.LevenbergMarquardtEstimatorTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
 Running org.apache.commons.math.fraction.BigFractionFieldTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.random.AbstractRandomGeneratorTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
 Running org.apache.commons.math.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
 Running org.apache.commons.math.genetics.GeneticAlgorithmTestBinary
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
 Running org.apache.commons.math.linear.BiDiagonalTransformerTest
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.util.DefaultTransformerTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.linear.LUDecompositionImplTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.random.ValueServerTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
 Running org.apache.commons.math.stat.descriptive.moment.MeanTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.util.BigRealFieldTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.linear.QRDecompositionImplTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
 Running org.apache.commons.math.analysis.interpolation.NevilleInterpolatorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.stat.descriptive.moment.VarianceTest
 Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.genetics.OnePointCrossoverTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.stat.ranking.NaturalRankingTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.optimization.linear.SimplexSolverTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 sec
 Running org.apache.commons.math.stat.descriptive.moment.FourthMomentTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.linear.BlockRealMatrixTest
-Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec
 Running org.apache.commons.math.ode.nonstiff.DormandPrince853StepInterpolatorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
 Running org.apache.commons.math.random.MersenneTwisterTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
 Running org.apache.commons.math.genetics.RandomKeyTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.stat.descriptive.summary.ProductTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.fraction.FractionTest
-Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.analysis.ComposableFunctionTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.util.OpenIntToDoubleHashMapTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
 Running org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.ode.nonstiff.DormandPrince54IntegratorTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
 Running org.apache.commons.math.analysis.polynomials.PolynomialFunctionTest
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.genetics.ChromosomeTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.stat.descriptive.moment.GeometricMeanTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.optimization.MultiStartDifferentiableMultivariateRealOptimizerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running org.apache.commons.math.random.CorrelatedRandomVectorGeneratorTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running org.apache.commons.math.geometry.Vector3DTest
@@ -246,9 +376,9 @@ Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.descriptive.rank.MinTest
 Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.clustering.EuclideanIntegerPointTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.linear.FieldLUDecompositionImplTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.analysis.integration.TrapezoidIntegratorTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.descriptive.moment.VectorialCovarianceTest
@@ -256,7 +386,7 @@ Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.transform.FastHadamardTransformerTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.optimization.fitting.HarmonicFitterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running org.apache.commons.math.stat.correlation.PearsonsCorrelationTest
 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.random.GaussianRandomGeneratorTest
@@ -264,31 +394,31 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.stat.descriptive.moment.ThirdMomentTest
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.linear.FrenchRealVectorFormatTest
-Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.fraction.BigFractionTest
-Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running org.apache.commons.math.optimization.fitting.CurveFitterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.util.ContinuedFractionTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.apache.commons.math.util.TransformerMapTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.analysis.solvers.BisectionSolverTest
 Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.genetics.BinaryChromosomeTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.linear.BlockFieldMatrixTest
-Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.448 sec
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.367 sec
 Running org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaStepInterpolatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
 Running org.apache.commons.math.linear.SingularValueDecompositionImplTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running org.apache.commons.math.distribution.TDistributionTest
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest
 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
 Running org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 sec
 Running org.apache.commons.math.linear.InvalidMatrixExceptionTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.distribution.BinomialDistributionTest
@@ -304,13 +434,13 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.stat.descriptive.rank.PercentileTest
 Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.ode.events.EventStateTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.analysis.solvers.RiddersSolverTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.linear.ArrayFieldVectorTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.ode.ContinuousOutputModelTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running org.apache.commons.math.random.UncorrelatedRandomVectorGeneratorTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running org.apache.commons.math.optimization.linear.SimplexTableauTest
@@ -318,17 +448,17 @@ Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.ConvergenceExceptionTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.util.ResizableDoubleArrayTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.complex.ComplexFormatTest
-Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.linear.RealMatrixImplTest
 Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
 Running org.apache.commons.math.stat.descriptive.summary.SumTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.linear.SparseFieldVectorTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.genetics.ElitisticListPopulationTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.apache.commons.math.stat.descriptive.summary.SumSqTest
 Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.linear.SparseRealVectorTest
@@ -336,37 +466,37 @@ Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
 Running org.apache.commons.math.analysis.interpolation.DividedDifferenceInterpolatorTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.linear.EigenDecompositionImplTest
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
 Running org.apache.commons.math.analysis.interpolation.MicrosphereInterpolatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
 Running org.apache.commons.math.analysis.integration.SimpsonIntegratorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.analysis.polynomials.PolynomialSplineFunctionTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.genetics.GeneticAlgorithmTestPermutations
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec
 Running org.apache.commons.math.stat.descriptive.moment.KurtosisTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.transform.FastFourierTransformerTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.stat.descriptive.moment.VectorialMeanTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.distribution.NormalDistributionTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.geometry.Vector3DFormatTest
 Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.distribution.PoissonDistributionTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
 Running org.apache.commons.math.analysis.polynomials.PolynomialFunctionLagrangeFormTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.genetics.TournamentSelectionTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.optimization.general.MinpackTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
 Running org.apache.commons.math.stat.descriptive.SynchronizedMultivariateSummaryStatisticsTest
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.linear.AbstractRealVectorTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 sec
 Running org.apache.commons.math.analysis.solvers.BrentSolverTest
 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegratorTest
@@ -378,13 +508,13 @@ Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.stat.inference.ChiSquareTestTest
 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.analysis.interpolation.LoessInterpolatorTest
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
 Running org.apache.commons.math.ode.nonstiff.ThreeEighthesStepInterpolatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
 Running org.apache.commons.math.linear.MatrixIndexExceptionTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.fraction.FractionFormatTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.genetics.BinaryMutationTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.distribution.PascalDistributionTest
@@ -392,31 +522,31 @@ Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest
 Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.apache.commons.math.util.MathUtilsTest
-Tests run: 57, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.291 sec
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 sec
 Running org.apache.commons.math.complex.ComplexUtilsTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.analysis.solvers.UnivariateRealSolverFactoryImplTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.apache.commons.math.optimization.direct.MultiDirectionalTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running org.apache.commons.math.genetics.FitnessCachingTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.inference.ChiSquareFactoryTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.linear.BigMatrixImplTest
-Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
 Running org.apache.commons.math.fraction.FractionFieldTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.stat.descriptive.InteractionTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.apache.commons.math.stat.correlation.CovarianceTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.optimization.univariate.BrentMinimizerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.linear.RealVectorFormatTest
 Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.linear.QRSolverTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
 Running org.apache.commons.math.analysis.solvers.LaguerreSolverTest
 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.linear.CholeskySolverTest
@@ -434,11 +564,11 @@ Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.distribution.ChiSquareDistributionTest
 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtilsTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.transform.FastSineTransformerTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.inference.OneWayAnovaTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.transform.FastCosineTransformerTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.ArgumentOutsideDomainExceptionTest
@@ -446,13 +576,13 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running org.apache.commons.math.ode.nonstiff.EulerIntegratorTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
 Running org.apache.commons.math.stat.descriptive.rank.MaxTest
 Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.complex.ComplexFieldTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.descriptive.ListUnivariateImplTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.stat.descriptive.DescriptiveStatisticsTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.MaxIterationsExceededExceptionTest
@@ -462,57 +592,57 @@ Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.optimization.MultiStartDifferentiableMultivariateVectorialOptimizerTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.optimization.direct.NelderMeadTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running org.apache.commons.math.geometry.RotationTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec
 Running org.apache.commons.math.ode.sampling.DummyStepInterpolatorTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running org.apache.commons.math.linear.SingularValueSolverTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.genetics.RandomKeyMutationTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.util.BigRealTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.apache.commons.math.distribution.ExponentialDistributionTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.descriptive.SynchronizedDescriptiveStatisticsTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.geometry.FrenchVector3DFormatTest
-Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running org.apache.commons.math.stat.regression.SimpleRegressionTest
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec <<< FAILURE!
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec <<< FAILURE!
 Running org.apache.commons.math.optimization.MultiStartMultivariateRealOptimizerTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.stat.regression.GLSMultipleLinearRegressionTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.ode.nonstiff.ThreeEighthesIntegratorTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec
 Running org.apache.commons.math.ode.nonstiff.GillStepInterpolatorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
 Running org.apache.commons.math.linear.LUSolverTest
 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
 Running org.apache.commons.math.MathConfigurationExceptionTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.estimation.GaussNewtonEstimatorTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
 Running org.apache.commons.math.genetics.ListPopulationTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.MathExceptionTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.apache.commons.math.distribution.CauchyDistributionTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.linear.SparseFieldMatrixTest
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running org.apache.commons.math.stat.descriptive.summary.SumLogTest
 Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.apache.commons.math.stat.FrequencyTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running org.apache.commons.math.stat.descriptive.moment.SecondMomentTest
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 
@@ -526,13 +656,13 @@ Tests run: 2131, Failures: 1, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 12.598 s
-[INFO] Finished at: 2019-04-15T12:58:33+00:00
-[INFO] Final Memory: 26M/703M
+[INFO] Total time: 31.335 s
+[INFO] Finished at: 2019-04-17T17:39:43+00:00
+[INFO] Final Memory: 29M/866M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.4.3:test (default-test) on project commons-math: There are test failures.
 [ERROR] 
-[ERROR] Please refer to /home/jan_gerling/astor/defect4j_tests/math_74/target/surefire-reports for the individual test results.
+[ERROR] Please refer to /home/jan_gerling/astor/defect4j_tests/rerun/math_74/target/surefire-reports for the individual test results.
 [ERROR] -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
