@@ -1,0 +1,532 @@
+2019-04-17 14:36:19,740 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jmutrepair  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests/math_83  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.1  -maxtime  100  -stopfirst  true]
+2019-04-17 14:36:20,477 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/test/astor/./outputMutation/AstorMain-math_83//bin//default from 224 classes with test cases
+2019-04-17 14:36:20,479 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.1
+2019-04-17 14:36:21,204 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/test/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/test/astor/./outputMutation/AstorMain-math_83//bin//default]
+2019-04-17 14:36:30,745 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.optimization.linear.SimplexSolverTest#testMath286
+2019-04-17 14:36:30,752 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2055, fails: 1, GZoltar suspicious 16956
+2019-04-17 14:36:30,769 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 182 with susp > 0.1, we consider: 182
+2019-04-17 14:36:30,778 INFO main - building model: /home/jan_gerling/test/astor/./outputMutation/AstorMain-math_83//src//default, compliance level: 8
+2019-04-17 14:36:38,261 INFO main - 
+---- Initial suspicious size: 182
+2019-04-17 14:36:38,298 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getSolution()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=349, susp=0.5]
+2019-04-17 14:36:38,306 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{isOptimal(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)Z 0.0, lineNumber=151, susp=0.35355339059327373]
+2019-04-17 14:36:38,311 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doOptimize()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=190, susp=0.35355339059327373]
+2019-04-17 14:36:38,313 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{solvePhase1(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)V 0.0, lineNumber=179, susp=0.31622776601683794]
+2019-04-17 14:36:38,318 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getBasicRow(IZ)Ljava/lang/Integer; 0.0, lineNumber=297, susp=0.31622776601683794]
+2019-04-17 14:36:38,325 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{isPhase1Solved(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)Z 0.0, lineNumber=132, susp=0.30151134457776363]
+2019-04-17 14:36:38,332 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{isPhase1Solved(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)Z 0.0, lineNumber=134, susp=0.30151134457776363]
+2019-04-17 14:36:38,335 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{isPhase1Solved(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)Z 0.0, lineNumber=137, susp=0.30151134457776363]
+2019-04-17 14:36:38,337 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{isOptimal(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)Z 0.0, lineNumber=154, susp=0.30151134457776363]
+2019-04-17 14:36:38,339 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{solvePhase1(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)V 0.0, lineNumber=171, susp=0.30151134457776363]
+2019-04-17 14:36:38,341 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{solvePhase1(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)V 0.0, lineNumber=172, susp=0.30151134457776363]
+2019-04-17 14:36:38,345 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doOptimize()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=192, susp=0.30151134457776363]
+2019-04-17 14:36:38,348 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{discardArtificialVariables()V 0.0, lineNumber=310, susp=0.30151134457776363]
+2019-04-17 14:36:38,352 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{discardArtificialVariables()V 0.0, lineNumber=311, susp=0.30151134457776363]
+2019-04-17 14:36:38,355 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{discardArtificialVariables()V 0.0, lineNumber=312, susp=0.30151134457776363]
+2019-04-17 14:36:38,358 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{discardArtificialVariables()V 0.0, lineNumber=313, susp=0.30151134457776363]
+2019-04-17 14:36:38,360 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{discardArtificialVariables()V 0.0, lineNumber=314, susp=0.30151134457776363]
+2019-04-17 14:36:38,363 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{discardArtificialVariables()V 0.0, lineNumber=315, susp=0.30151134457776363]
+2019-04-17 14:36:38,368 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{discardArtificialVariables()V 0.0, lineNumber=317, susp=0.30151134457776363]
+2019-04-17 14:36:38,371 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{discardArtificialVariables()V 0.0, lineNumber=319, susp=0.30151134457776363]
+2019-04-17 14:36:38,375 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{discardArtificialVariables()V 0.0, lineNumber=320, susp=0.30151134457776363]
+2019-04-17 14:36:38,377 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{discardArtificialVariables()V 0.0, lineNumber=321, susp=0.30151134457776363]
+2019-04-17 14:36:38,380 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getSolution()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=340, susp=0.30151134457776363]
+2019-04-17 14:36:38,384 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getSolution()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=341, susp=0.30151134457776363]
+2019-04-17 14:36:38,387 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getSolution()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=342, susp=0.30151134457776363]
+2019-04-17 14:36:38,390 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getSolution()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=343, susp=0.30151134457776363]
+2019-04-17 14:36:38,393 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getSolution()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=344, susp=0.30151134457776363]
+2019-04-17 14:36:38,395 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getSolution()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=345, susp=0.30151134457776363]
+2019-04-17 14:36:38,401 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getSolution()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=351, susp=0.30151134457776363]
+2019-04-17 14:36:38,404 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getSolution()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=352, susp=0.30151134457776363]
+2019-04-17 14:36:38,407 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getSolution()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=353, susp=0.30151134457776363]
+2019-04-17 14:36:38,409 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getSolution()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=357, susp=0.30151134457776363]
+2019-04-17 14:36:38,411 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getNegativeDecisionVariableOffset()I 0.0, lineNumber=458, susp=0.30151134457776363]
+2019-04-17 14:36:38,413 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getOriginalNumDecisionVariables()I 0.0, lineNumber=481, susp=0.30151134457776363]
+2019-04-17 14:36:38,415 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.LinearObjectiveFunction, methodName=org.apache.commons.math.optimization.linear.LinearObjectiveFunction{getValue([D)D 0.0, lineNumber=92, susp=0.30151134457776363]
+2019-04-17 14:36:38,418 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{isOptimal(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)Z 0.0, lineNumber=149, susp=0.2886751345948129]
+2019-04-17 14:36:38,422 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doOptimize()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=188, susp=0.2886751345948129]
+2019-04-17 14:36:38,423 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doOptimize()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=189, susp=0.2886751345948129]
+2019-04-17 14:36:38,425 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer, methodName=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer{setMaxIterations(I)V 0.0, lineNumber=67, susp=0.2773500981126146]
+2019-04-17 14:36:38,425 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer, methodName=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer{setMaxIterations(I)V 0.0, lineNumber=68, susp=0.2773500981126146]
+2019-04-17 14:36:38,428 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer, methodName=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer{incrementIterationsCounter()V 0.0, lineNumber=89, susp=0.2773500981126146]
+2019-04-17 14:36:38,429 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer, methodName=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer{optimize(Lorg/apache/commons/math/optimization/linear/LinearObjectiveFunction;Ljava/util/Collection;Lorg/apache/commons/math/optimization/GoalType;Z)Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=98, susp=0.2773500981126146]
+2019-04-17 14:36:38,431 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer, methodName=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer{optimize(Lorg/apache/commons/math/optimization/linear/LinearObjectiveFunction;Ljava/util/Collection;Lorg/apache/commons/math/optimization/GoalType;Z)Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=99, susp=0.2773500981126146]
+2019-04-17 14:36:38,432 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer, methodName=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer{optimize(Lorg/apache/commons/math/optimization/linear/LinearObjectiveFunction;Ljava/util/Collection;Lorg/apache/commons/math/optimization/GoalType;Z)Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=100, susp=0.2773500981126146]
+2019-04-17 14:36:38,433 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer, methodName=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer{optimize(Lorg/apache/commons/math/optimization/linear/LinearObjectiveFunction;Ljava/util/Collection;Lorg/apache/commons/math/optimization/GoalType;Z)Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=101, susp=0.2773500981126146]
+2019-04-17 14:36:38,435 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer, methodName=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer{optimize(Lorg/apache/commons/math/optimization/linear/LinearObjectiveFunction;Ljava/util/Collection;Lorg/apache/commons/math/optimization/GoalType;Z)Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=103, susp=0.2773500981126146]
+2019-04-17 14:36:38,436 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer, methodName=org.apache.commons.math.optimization.linear.AbstractLinearOptimizer{optimize(Lorg/apache/commons/math/optimization/linear/LinearObjectiveFunction;Ljava/util/Collection;Lorg/apache/commons/math/optimization/GoalType;Z)Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=106, susp=0.2773500981126146]
+2019-04-17 14:36:38,438 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{getPivotColumn(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)Ljava/lang/Integer; 0.0, lineNumber=59, susp=0.2773500981126146]
+2019-04-17 14:36:38,439 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{getPivotColumn(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)Ljava/lang/Integer; 0.0, lineNumber=60, susp=0.2773500981126146]
+2019-04-17 14:36:38,442 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{getPivotColumn(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)Ljava/lang/Integer; 0.0, lineNumber=61, susp=0.2773500981126146]
+2019-04-17 14:36:38,446 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{getPivotColumn(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)Ljava/lang/Integer; 0.0, lineNumber=63, susp=0.2773500981126146]
+2019-04-17 14:36:38,447 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{getPivotColumn(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)Ljava/lang/Integer; 0.0, lineNumber=64, susp=0.2773500981126146]
+2019-04-17 14:36:38,449 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{getPivotColumn(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)Ljava/lang/Integer; 0.0, lineNumber=67, susp=0.2773500981126146]
+2019-04-17 14:36:38,451 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{getPivotRow(ILorg/apache/commons/math/optimization/linear/SimplexTableau;)Ljava/lang/Integer; 0.0, lineNumber=77, susp=0.2773500981126146]
+2019-04-17 14:36:38,453 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{getPivotRow(ILorg/apache/commons/math/optimization/linear/SimplexTableau;)Ljava/lang/Integer; 0.0, lineNumber=78, susp=0.2773500981126146]
+2019-04-17 14:36:38,455 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{getPivotRow(ILorg/apache/commons/math/optimization/linear/SimplexTableau;)Ljava/lang/Integer; 0.0, lineNumber=79, susp=0.2773500981126146]
+2019-04-17 14:36:38,457 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{getPivotRow(ILorg/apache/commons/math/optimization/linear/SimplexTableau;)Ljava/lang/Integer; 0.0, lineNumber=80, susp=0.2773500981126146]
+2019-04-17 14:36:38,461 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{getPivotRow(ILorg/apache/commons/math/optimization/linear/SimplexTableau;)Ljava/lang/Integer; 0.0, lineNumber=82, susp=0.2773500981126146]
+2019-04-17 14:36:38,465 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{getPivotRow(ILorg/apache/commons/math/optimization/linear/SimplexTableau;)Ljava/lang/Integer; 0.0, lineNumber=84, susp=0.2773500981126146]
+2019-04-17 14:36:38,467 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{getPivotRow(ILorg/apache/commons/math/optimization/linear/SimplexTableau;)Ljava/lang/Integer; 0.0, lineNumber=85, susp=0.2773500981126146]
+2019-04-17 14:36:38,468 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{getPivotRow(ILorg/apache/commons/math/optimization/linear/SimplexTableau;)Ljava/lang/Integer; 0.0, lineNumber=89, susp=0.2773500981126146]
+2019-04-17 14:36:38,470 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doIteration(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)V 0.0, lineNumber=102, susp=0.2773500981126146]
+2019-04-17 14:36:38,472 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doIteration(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)V 0.0, lineNumber=104, susp=0.2773500981126146]
+2019-04-17 14:36:38,473 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doIteration(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)V 0.0, lineNumber=105, susp=0.2773500981126146]
+2019-04-17 14:36:38,476 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doIteration(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)V 0.0, lineNumber=111, susp=0.2773500981126146]
+2019-04-17 14:36:38,478 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doIteration(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)V 0.0, lineNumber=112, susp=0.2773500981126146]
+2019-04-17 14:36:38,479 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doIteration(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)V 0.0, lineNumber=115, susp=0.2773500981126146]
+2019-04-17 14:36:38,481 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doIteration(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)V 0.0, lineNumber=117, susp=0.2773500981126146]
+2019-04-17 14:36:38,482 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doIteration(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)V 0.0, lineNumber=118, susp=0.2773500981126146]
+2019-04-17 14:36:38,483 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doIteration(Lorg/apache/commons/math/optimization/linear/SimplexTableau;)V 0.0, lineNumber=121, susp=0.2773500981126146]
+2019-04-17 14:36:38,485 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doOptimize()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=185, susp=0.2773500981126146]
+2019-04-17 14:36:38,486 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexSolver, methodName=org.apache.commons.math.optimization.linear.SimplexSolver{doOptimize()Lorg/apache/commons/math/optimization/RealPointValuePair; 0.0, lineNumber=187, susp=0.2773500981126146]
+2019-04-17 14:36:38,489 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{divideRow(ID)V 0.0, lineNumber=370, susp=0.2773500981126146]
+2019-04-17 14:36:38,491 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{divideRow(ID)V 0.0, lineNumber=371, susp=0.2773500981126146]
+2019-04-17 14:36:38,492 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{divideRow(ID)V 0.0, lineNumber=373, susp=0.2773500981126146]
+2019-04-17 14:36:38,494 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getNumArtificialVariables()I 0.0, lineNumber=497, susp=0.2773500981126146]
+2019-04-17 14:36:38,513 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MathUtils, methodName=org.apache.commons.math.util.MathUtils{compareTo(DDD)I 0.0, lineNumber=368, susp=0.2672612419124244]
+2019-04-17 14:36:38,521 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MathUtils, methodName=org.apache.commons.math.util.MathUtils{compareTo(DDD)I 0.0, lineNumber=370, susp=0.2672612419124244]
+2019-04-17 14:36:38,526 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MathUtils, methodName=org.apache.commons.math.util.MathUtils{compareTo(DDD)I 0.0, lineNumber=372, susp=0.2672612419124244]
+2019-04-17 14:36:38,528 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=134, susp=0.2672612419124244]
+2019-04-17 14:36:38,532 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=139, susp=0.2672612419124244]
+2019-04-17 14:36:38,534 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=142, susp=0.2672612419124244]
+2019-04-17 14:36:38,538 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=178, susp=0.2672612419124244]
+2019-04-17 14:36:38,540 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=179, susp=0.2672612419124244]
+2019-04-17 14:36:38,541 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{initialize()V 0.0, lineNumber=249, susp=0.2672612419124244]
+2019-04-17 14:36:38,543 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{initialize()V 0.0, lineNumber=250, susp=0.2672612419124244]
+2019-04-17 14:36:38,544 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getArtificialVariableOffset()I 0.0, lineNumber=441, susp=0.2672612419124244]
+2019-04-17 14:36:38,546 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getRhsOffset()I 0.0, lineNumber=449, susp=0.2672612419124244]
+2019-04-17 14:36:38,565 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{dotProduct([D)D 0.0, lineNumber=884, susp=0.2581988897471611]
+2019-04-17 14:36:38,569 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{dotProduct([D)D 0.0, lineNumber=885, susp=0.2581988897471611]
+2019-04-17 14:36:38,573 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{dotProduct([D)D 0.0, lineNumber=886, susp=0.2581988897471611]
+2019-04-17 14:36:38,578 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{dotProduct([D)D 0.0, lineNumber=887, susp=0.2581988897471611]
+2019-04-17 14:36:38,582 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{dotProduct([D)D 0.0, lineNumber=889, susp=0.2581988897471611]
+2019-04-17 14:36:38,589 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{mapMultiply(D)Lorg/apache/commons/math/linear/RealVector; 0.0, lineNumber=338, susp=0.25]
+2019-04-17 14:36:38,593 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{mapMultiply(D)Lorg/apache/commons/math/linear/RealVector; 0.0, lineNumber=339, susp=0.25]
+2019-04-17 14:36:38,596 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{mapMultiply(D)Lorg/apache/commons/math/linear/RealVector; 0.0, lineNumber=340, susp=0.25]
+2019-04-17 14:36:38,599 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{mapMultiply(D)Lorg/apache/commons/math/linear/RealVector; 0.0, lineNumber=342, susp=0.25]
+2019-04-17 14:36:38,601 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getBasicRow(I)Ljava/lang/Integer; 0.0, lineNumber=273, susp=0.25]
+2019-04-17 14:36:38,602 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getBasicRow(IZ)Ljava/lang/Integer; 0.0, lineNumber=291, susp=0.25]
+2019-04-17 14:36:38,603 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getBasicRow(IZ)Ljava/lang/Integer; 0.0, lineNumber=292, susp=0.25]
+2019-04-17 14:36:38,605 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getBasicRow(IZ)Ljava/lang/Integer; 0.0, lineNumber=293, susp=0.25]
+2019-04-17 14:36:38,608 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getBasicRow(IZ)Ljava/lang/Integer; 0.0, lineNumber=295, susp=0.25]
+2019-04-17 14:36:38,610 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getBasicRow(IZ)Ljava/lang/Integer; 0.0, lineNumber=300, susp=0.25]
+2019-04-17 14:36:38,611 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{subtractRow(IID)V 0.0, lineNumber=387, susp=0.25]
+2019-04-17 14:36:38,613 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{subtractRow(IID)V 0.0, lineNumber=388, susp=0.25]
+2019-04-17 14:36:38,615 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{subtractRow(IID)V 0.0, lineNumber=389, susp=0.25]
+2019-04-17 14:36:38,616 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{subtractRow(IID)V 0.0, lineNumber=391, susp=0.25]
+2019-04-17 14:36:38,618 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getWidth()I 0.0, lineNumber=398, susp=0.25]
+2019-04-17 14:36:38,621 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getHeight()I 0.0, lineNumber=406, susp=0.25]
+2019-04-17 14:36:38,623 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getEntry(II)D 0.0, lineNumber=415, susp=0.25]
+2019-04-17 14:36:38,625 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=126, susp=0.24253562503633297]
+2019-04-17 14:36:38,628 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=127, susp=0.24253562503633297]
+2019-04-17 14:36:38,631 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=128, susp=0.24253562503633297]
+2019-04-17 14:36:38,633 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=129, susp=0.24253562503633297]
+2019-04-17 14:36:38,635 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=130, susp=0.24253562503633297]
+2019-04-17 14:36:38,640 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=136, susp=0.24253562503633297]
+2019-04-17 14:36:38,643 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=137, susp=0.24253562503633297]
+2019-04-17 14:36:38,645 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=138, susp=0.24253562503633297]
+2019-04-17 14:36:38,648 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=140, susp=0.24253562503633297]
+2019-04-17 14:36:38,650 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=141, susp=0.24253562503633297]
+2019-04-17 14:36:38,655 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=150, susp=0.24253562503633297]
+2019-04-17 14:36:38,657 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=151, susp=0.24253562503633297]
+2019-04-17 14:36:38,661 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=152, susp=0.24253562503633297]
+2019-04-17 14:36:38,664 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=153, susp=0.24253562503633297]
+2019-04-17 14:36:38,666 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=154, susp=0.24253562503633297]
+2019-04-17 14:36:38,669 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=157, susp=0.24253562503633297]
+2019-04-17 14:36:38,674 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=166, susp=0.24253562503633297]
+2019-04-17 14:36:38,679 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{createTableau(Z)[[D 0.0, lineNumber=183, susp=0.24253562503633297]
+2019-04-17 14:36:38,681 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getNumVariables()I 0.0, lineNumber=190, susp=0.24253562503633297]
+2019-04-17 14:36:38,682 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getNormalizedConstraints()Ljava/util/List; 0.0, lineNumber=198, susp=0.24253562503633297]
+2019-04-17 14:36:38,683 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getNormalizedConstraints()Ljava/util/List; 0.0, lineNumber=199, susp=0.24253562503633297]
+2019-04-17 14:36:38,685 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getNormalizedConstraints()Ljava/util/List; 0.0, lineNumber=200, susp=0.24253562503633297]
+2019-04-17 14:36:38,686 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getNormalizedConstraints()Ljava/util/List; 0.0, lineNumber=201, susp=0.24253562503633297]
+2019-04-17 14:36:38,687 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getNormalizedConstraints()Ljava/util/List; 0.0, lineNumber=202, susp=0.24253562503633297]
+2019-04-17 14:36:38,690 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{normalize(Lorg/apache/commons/math/optimization/linear/LinearConstraint;)Lorg/apache/commons/math/optimization/linear/LinearConstraint; 0.0, lineNumber=216, susp=0.24253562503633297]
+2019-04-17 14:36:38,691 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{normalize(Lorg/apache/commons/math/optimization/linear/LinearConstraint;)Lorg/apache/commons/math/optimization/linear/LinearConstraint; 0.0, lineNumber=217, susp=0.24253562503633297]
+2019-04-17 14:36:38,693 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getNumObjectiveFunctions()I 0.0, lineNumber=225, susp=0.24253562503633297]
+2019-04-17 14:36:38,694 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getConstraintTypeCounts(Lorg/apache/commons/math/optimization/linear/Relationship;)I 0.0, lineNumber=234, susp=0.24253562503633297]
+2019-04-17 14:36:38,696 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getConstraintTypeCounts(Lorg/apache/commons/math/optimization/linear/Relationship;)I 0.0, lineNumber=235, susp=0.24253562503633297]
+2019-04-17 14:36:38,700 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getConstraintTypeCounts(Lorg/apache/commons/math/optimization/linear/Relationship;)I 0.0, lineNumber=237, susp=0.24253562503633297]
+2019-04-17 14:36:38,701 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getConstraintTypeCounts(Lorg/apache/commons/math/optimization/linear/Relationship;)I 0.0, lineNumber=239, susp=0.24253562503633297]
+2019-04-17 14:36:38,703 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{getConstraintTypeCounts(Lorg/apache/commons/math/optimization/linear/Relationship;)I 0.0, lineNumber=240, susp=0.24253562503633297]
+2019-04-17 14:36:38,706 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{initialize()V 0.0, lineNumber=248, susp=0.24253562503633297]
+2019-04-17 14:36:38,707 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{initialize()V 0.0, lineNumber=252, susp=0.24253562503633297]
+2019-04-17 14:36:38,709 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{copyArray([D[DI)V 0.0, lineNumber=331, susp=0.24253562503633297]
+2019-04-17 14:36:38,710 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.SimplexTableau, methodName=org.apache.commons.math.optimization.linear.SimplexTableau{copyArray([D[DI)V 0.0, lineNumber=332, susp=0.24253562503633297]
+2019-04-17 14:36:38,711 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.LinearObjectiveFunction, methodName=org.apache.commons.math.optimization.linear.LinearObjectiveFunction{getCoefficients()Lorg/apache/commons/math/linear/RealVector; 0.0, lineNumber=75, susp=0.24253562503633297]
+2019-04-17 14:36:38,713 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.LinearObjectiveFunction, methodName=org.apache.commons.math.optimization.linear.LinearObjectiveFunction{getConstantTerm()D 0.0, lineNumber=83, susp=0.24253562503633297]
+2019-04-17 14:36:38,716 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.LinearConstraint, methodName=org.apache.commons.math.optimization.linear.LinearConstraint{getCoefficients()Lorg/apache/commons/math/linear/RealVector; 0.0, lineNumber=168, susp=0.24253562503633297]
+2019-04-17 14:36:38,718 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.LinearConstraint, methodName=org.apache.commons.math.optimization.linear.LinearConstraint{getRelationship()Lorg/apache/commons/math/optimization/linear/Relationship; 0.0, lineNumber=176, susp=0.24253562503633297]
+2019-04-17 14:36:38,719 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.linear.LinearConstraint, methodName=org.apache.commons.math.optimization.linear.LinearConstraint{getValue()D 0.0, lineNumber=184, susp=0.24253562503633297]
+2019-04-17 14:36:38,723 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MathUtils, methodName=org.apache.commons.math.util.MathUtils{equals(DDD)Z 0.0, lineNumber=411, susp=0.23570226039551587]
+2019-04-17 14:36:38,727 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{getData()[D 0.0, lineNumber=854, susp=0.16666666666666666]
+2019-04-17 14:36:38,730 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{checkVectorDimensions(I)V 0.0, lineNumber=1292, susp=0.16012815380508713]
+2019-04-17 14:36:38,731 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.optimization.RealPointValuePair, methodName=org.apache.commons.math.optimization.RealPointValuePair{getValue()D 0.0, lineNumber=86, susp=0.16012815380508713]
+2019-04-17 14:36:38,734 INFO main - Total suspicious from FL: 182,  27
+2019-04-17 14:36:38,734 INFO main - Total ModPoint created: 27
+2019-04-17 14:36:38,734 INFO main - Creating program variant #1, [Variant id: 1, #gens: 27, #ops: 0, parent:-]
+2019-04-17 14:36:44,853 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-17 14:36:44,853 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-17 14:36:44,853 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-17 14:36:44,853 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-17 14:36:44,853 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.1
+2019-04-17 14:36:44,853 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-17 14:36:44,853 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-17 14:36:44,853 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-17 14:36:44,853 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/test/astor/./outputMutation
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jmutrepair
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= defect4j_tests/math_83
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-17 14:36:44,854 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= package
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-17 14:36:44,855 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-17 14:36:44,856 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-17 14:36:44,856 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-17 14:36:44,856 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-17 14:36:44,856 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-17 14:36:44,856 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-17 14:36:44,856 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-17 14:36:44,856 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-17 14:36:44,856 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-17 14:36:44,858 INFO main - mod_point ModificPoint=SimplexSolver line: 129, el: CtIfImpl
+2019-04-17 14:36:44,859 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:36:45,977 INFO main - mod_point ModificPoint=SimplexSolver line: 129, el: CtIfImpl
+2019-04-17 14:36:45,978 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:36:46,478 INFO main - mod_point ModificPoint=SimplexSolver line: 129, el: CtIfImpl
+2019-04-17 14:36:46,478 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:36:46,959 INFO main - mod_point ModificPoint=SimplexSolver line: 129, el: CtIfImpl
+2019-04-17 14:36:46,959 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:36:47,355 INFO main - mod_point ModificPoint=SimplexSolver line: 129, el: CtIfImpl
+2019-04-17 14:36:47,355 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:36:47,818 INFO main - mod_point ModificPoint=SimplexSolver line: 129, el: CtIfImpl
+2019-04-17 14:36:47,818 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `!((tableau.getNumArtifici[...]` at pos -1 of parent `-`
+2019-04-17 14:36:48,149 INFO main - mod_point ModificPoint=SimplexSolver line: 133, el: CtIfImpl
+2019-04-17 14:36:48,149 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:48,496 INFO main - mod_point ModificPoint=SimplexSolver line: 133, el: CtIfImpl
+2019-04-17 14:36:48,496 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:48,906 INFO main - mod_point ModificPoint=SimplexSolver line: 133, el: CtIfImpl
+2019-04-17 14:36:48,906 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:49,278 INFO main - mod_point ModificPoint=SimplexSolver line: 133, el: CtIfImpl
+2019-04-17 14:36:49,279 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:49,648 INFO main - mod_point ModificPoint=SimplexSolver line: 133, el: CtIfImpl
+2019-04-17 14:36:49,649 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:50,024 INFO main - mod_point ModificPoint=SimplexSolver line: 133, el: CtIfImpl
+2019-04-17 14:36:50,025 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `!((org.apache.commons.mat[...]` at pos -1 of parent `-`
+2019-04-17 14:36:50,419 INFO main - mod_point ModificPoint=SimplexSolver line: 176, el: CtIfImpl
+2019-04-17 14:36:50,420 INFO main - -->op: IfExpresionMutOp: `!(org.apache.commons.math[...] ` ---> `org.apache.commons.math.u[...]` at pos -1 of parent `-`
+2019-04-17 14:36:50,839 INFO main - mod_point ModificPoint=SimplexTableau line: 346, el: CtIfImpl
+2019-04-17 14:36:50,839 INFO main - -->op: IfExpresionMutOp: `basicRows.contains(basicR[...] ` ---> `!(basicRows.contains(basi[...]` at pos -1 of parent `-`
+2019-04-17 14:36:51,254 INFO main - mod_point ModificPoint=SimplexSolver line: 146, el: CtIfImpl
+2019-04-17 14:36:51,254 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:36:51,605 INFO main - mod_point ModificPoint=SimplexSolver line: 146, el: CtIfImpl
+2019-04-17 14:36:51,605 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:36:51,950 INFO main - mod_point ModificPoint=SimplexSolver line: 146, el: CtIfImpl
+2019-04-17 14:36:51,951 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:36:52,306 INFO main - mod_point ModificPoint=SimplexSolver line: 146, el: CtIfImpl
+2019-04-17 14:36:52,307 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:36:52,677 INFO main - mod_point ModificPoint=SimplexSolver line: 146, el: CtIfImpl
+2019-04-17 14:36:52,678 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:36:52,985 INFO main - mod_point ModificPoint=SimplexSolver line: 146, el: CtIfImpl
+2019-04-17 14:36:52,985 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `!((tableau.getNumArtifici[...]` at pos -1 of parent `-`
+2019-04-17 14:36:53,324 INFO main - mod_point ModificPoint=SimplexSolver line: 150, el: CtIfImpl
+2019-04-17 14:36:53,324 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:53,663 INFO main - mod_point ModificPoint=SimplexSolver line: 150, el: CtIfImpl
+2019-04-17 14:36:53,663 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:53,985 INFO main - mod_point ModificPoint=SimplexSolver line: 150, el: CtIfImpl
+2019-04-17 14:36:53,985 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:54,310 INFO main - mod_point ModificPoint=SimplexSolver line: 150, el: CtIfImpl
+2019-04-17 14:36:54,311 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:54,658 INFO main - mod_point ModificPoint=SimplexSolver line: 150, el: CtIfImpl
+2019-04-17 14:36:54,658 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:54,993 INFO main - mod_point ModificPoint=SimplexSolver line: 150, el: CtIfImpl
+2019-04-17 14:36:54,993 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `!((org.apache.commons.mat[...]` at pos -1 of parent `-`
+2019-04-17 14:36:55,353 INFO main - mod_point ModificPoint=AbstractLinearOptimizer line: 86, el: CtIfImpl
+2019-04-17 14:36:55,354 INFO main - -->op: IfExpresionMutOp: `(++(iterations)) > (maxIt[...] ` ---> `(++(iterations)) == (maxI[...]` at pos -1 of parent `-`
+2019-04-17 14:36:55,712 INFO main - mod_point ModificPoint=AbstractLinearOptimizer line: 86, el: CtIfImpl
+2019-04-17 14:36:55,713 INFO main - -->op: IfExpresionMutOp: `(++(iterations)) > (maxIt[...] ` ---> `(++(iterations)) != (maxI[...]` at pos -1 of parent `-`
+2019-04-17 14:36:56,034 INFO main - mod_point ModificPoint=AbstractLinearOptimizer line: 86, el: CtIfImpl
+2019-04-17 14:36:56,035 INFO main - -->op: IfExpresionMutOp: `(++(iterations)) > (maxIt[...] ` ---> `(++(iterations)) >= (maxI[...]` at pos -1 of parent `-`
+2019-04-17 14:36:56,378 INFO main - mod_point ModificPoint=AbstractLinearOptimizer line: 86, el: CtIfImpl
+2019-04-17 14:36:56,378 INFO main - -->op: IfExpresionMutOp: `(++(iterations)) > (maxIt[...] ` ---> `(++(iterations)) <= (maxI[...]` at pos -1 of parent `-`
+2019-04-17 14:36:56,684 INFO main - mod_point ModificPoint=AbstractLinearOptimizer line: 86, el: CtIfImpl
+2019-04-17 14:36:56,685 INFO main - -->op: IfExpresionMutOp: `(++(iterations)) > (maxIt[...] ` ---> `(++(iterations)) < (maxIt[...]` at pos -1 of parent `-`
+2019-04-17 14:36:56,988 INFO main - mod_point ModificPoint=AbstractLinearOptimizer line: 86, el: CtIfImpl
+2019-04-17 14:36:56,989 INFO main - -->op: IfExpresionMutOp: `(++(iterations)) > (maxIt[...] ` ---> `!((++(iterations)) > (max[...]` at pos -1 of parent `-`
+2019-04-17 14:36:57,329 INFO main - mod_point ModificPoint=SimplexSolver line: 62, el: CtIfImpl
+2019-04-17 14:36:57,329 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:57,648 INFO main - mod_point ModificPoint=SimplexSolver line: 62, el: CtIfImpl
+2019-04-17 14:36:57,649 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:57,940 INFO main - mod_point ModificPoint=SimplexSolver line: 62, el: CtIfImpl
+2019-04-17 14:36:57,940 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:58,231 INFO main - mod_point ModificPoint=SimplexSolver line: 62, el: CtIfImpl
+2019-04-17 14:36:58,231 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:58,561 INFO main - mod_point ModificPoint=SimplexSolver line: 62, el: CtIfImpl
+2019-04-17 14:36:58,561 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:58,905 INFO main - mod_point ModificPoint=SimplexSolver line: 62, el: CtIfImpl
+2019-04-17 14:36:58,905 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `!((org.apache.commons.mat[...]` at pos -1 of parent `-`
+2019-04-17 14:36:59,194 INFO main - mod_point ModificPoint=SimplexSolver line: 81, el: CtIfImpl
+2019-04-17 14:36:59,194 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:59,535 INFO main - mod_point ModificPoint=SimplexSolver line: 81, el: CtIfImpl
+2019-04-17 14:36:59,535 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:36:59,889 INFO main - mod_point ModificPoint=SimplexSolver line: 81, el: CtIfImpl
+2019-04-17 14:36:59,889 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:37:00,210 INFO main - mod_point ModificPoint=SimplexSolver line: 81, el: CtIfImpl
+2019-04-17 14:37:00,210 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:37:00,489 INFO main - mod_point ModificPoint=SimplexSolver line: 81, el: CtIfImpl
+2019-04-17 14:37:00,489 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:37:00,817 INFO main - mod_point ModificPoint=SimplexSolver line: 81, el: CtIfImpl
+2019-04-17 14:37:00,818 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `!((org.apache.commons.mat[...]` at pos -1 of parent `-`
+2019-04-17 14:37:01,107 INFO main - mod_point ModificPoint=SimplexSolver line: 83, el: CtIfImpl
+2019-04-17 14:37:01,107 INFO main - -->op: IfExpresionMutOp: `ratio < minRatio ` ---> `ratio == minRatio` at pos -1 of parent `-`
+2019-04-17 14:37:01,384 INFO main - mod_point ModificPoint=SimplexSolver line: 83, el: CtIfImpl
+2019-04-17 14:37:01,384 INFO main - -->op: IfExpresionMutOp: `ratio < minRatio ` ---> `ratio != minRatio` at pos -1 of parent `-`
+2019-04-17 14:37:01,703 INFO main - mod_point ModificPoint=SimplexSolver line: 83, el: CtIfImpl
+2019-04-17 14:37:01,703 INFO main - -->op: IfExpresionMutOp: `ratio < minRatio ` ---> `ratio >= minRatio` at pos -1 of parent `-`
+2019-04-17 14:37:02,004 INFO main - mod_point ModificPoint=SimplexSolver line: 83, el: CtIfImpl
+2019-04-17 14:37:02,004 INFO main - -->op: IfExpresionMutOp: `ratio < minRatio ` ---> `ratio > minRatio` at pos -1 of parent `-`
+2019-04-17 14:37:02,314 INFO main - mod_point ModificPoint=SimplexSolver line: 83, el: CtIfImpl
+2019-04-17 14:37:02,314 INFO main - -->op: IfExpresionMutOp: `ratio < minRatio ` ---> `ratio <= minRatio` at pos -1 of parent `-`
+2019-04-17 14:37:02,622 INFO main - mod_point ModificPoint=SimplexSolver line: 83, el: CtIfImpl
+2019-04-17 14:37:02,622 INFO main - -->op: IfExpresionMutOp: `ratio < minRatio ` ---> `!(ratio < minRatio)` at pos -1 of parent `-`
+2019-04-17 14:37:02,938 INFO main - mod_point ModificPoint=SimplexSolver line: 106, el: CtIfImpl
+2019-04-17 14:37:02,938 INFO main - -->op: IfExpresionMutOp: `pivotRow == null ` ---> `pivotRow != null` at pos -1 of parent `-`
+2019-04-17 14:37:03,257 INFO main - mod_point ModificPoint=SimplexSolver line: 106, el: CtIfImpl
+2019-04-17 14:37:03,257 INFO main - -->op: IfExpresionMutOp: `pivotRow == null ` ---> `pivotRow >= null` at pos -1 of parent `-`
+2019-04-17 14:37:03,357 INFO main - mod_point ModificPoint=SimplexSolver line: 106, el: CtIfImpl
+2019-04-17 14:37:03,357 INFO main - -->op: IfExpresionMutOp: `pivotRow == null ` ---> `pivotRow > null` at pos -1 of parent `-`
+2019-04-17 14:37:03,448 INFO main - mod_point ModificPoint=SimplexSolver line: 106, el: CtIfImpl
+2019-04-17 14:37:03,449 INFO main - -->op: IfExpresionMutOp: `pivotRow == null ` ---> `pivotRow <= null` at pos -1 of parent `-`
+2019-04-17 14:37:03,536 INFO main - mod_point ModificPoint=SimplexSolver line: 106, el: CtIfImpl
+2019-04-17 14:37:03,536 INFO main - -->op: IfExpresionMutOp: `pivotRow == null ` ---> `pivotRow < null` at pos -1 of parent `-`
+2019-04-17 14:37:03,625 INFO main - mod_point ModificPoint=SimplexSolver line: 106, el: CtIfImpl
+2019-04-17 14:37:03,625 INFO main - -->op: IfExpresionMutOp: `pivotRow == null ` ---> `!(pivotRow == null)` at pos -1 of parent `-`
+2019-04-17 14:37:03,972 INFO main - mod_point ModificPoint=SimplexSolver line: 116, el: CtIfImpl
+2019-04-17 14:37:03,972 INFO main - -->op: IfExpresionMutOp: `i != pivotRow ` ---> `i == pivotRow` at pos -1 of parent `-`
+2019-04-17 14:37:04,304 INFO main - mod_point ModificPoint=SimplexSolver line: 116, el: CtIfImpl
+2019-04-17 14:37:04,304 INFO main - -->op: IfExpresionMutOp: `i != pivotRow ` ---> `i >= pivotRow` at pos -1 of parent `-`
+2019-04-17 14:37:04,714 INFO main - mod_point ModificPoint=SimplexSolver line: 116, el: CtIfImpl
+2019-04-17 14:37:04,714 INFO main - -->op: IfExpresionMutOp: `i != pivotRow ` ---> `i > pivotRow` at pos -1 of parent `-`
+2019-04-17 14:37:05,048 INFO main - mod_point ModificPoint=SimplexSolver line: 116, el: CtIfImpl
+2019-04-17 14:37:05,049 INFO main - -->op: IfExpresionMutOp: `i != pivotRow ` ---> `i <= pivotRow` at pos -1 of parent `-`
+2019-04-17 14:37:05,372 INFO main - mod_point ModificPoint=SimplexSolver line: 116, el: CtIfImpl
+2019-04-17 14:37:05,372 INFO main - -->op: IfExpresionMutOp: `i != pivotRow ` ---> `i < pivotRow` at pos -1 of parent `-`
+2019-04-17 14:37:05,676 INFO main - mod_point ModificPoint=SimplexSolver line: 116, el: CtIfImpl
+2019-04-17 14:37:05,676 INFO main - -->op: IfExpresionMutOp: `i != pivotRow ` ---> `!(i != pivotRow)` at pos -1 of parent `-`
+2019-04-17 14:37:05,981 INFO main - mod_point ModificPoint=SimplexSolver line: 167, el: CtIfImpl
+2019-04-17 14:37:05,981 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:37:06,287 INFO main - mod_point ModificPoint=SimplexSolver line: 167, el: CtIfImpl
+2019-04-17 14:37:06,287 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:37:06,602 INFO main - mod_point ModificPoint=SimplexSolver line: 167, el: CtIfImpl
+2019-04-17 14:37:06,602 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:37:06,899 INFO main - mod_point ModificPoint=SimplexSolver line: 167, el: CtIfImpl
+2019-04-17 14:37:06,899 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:37:07,212 INFO main - mod_point ModificPoint=SimplexSolver line: 167, el: CtIfImpl
+2019-04-17 14:37:07,212 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `(tableau.getNumArtificial[...]` at pos -1 of parent `-`
+2019-04-17 14:37:07,540 INFO main - mod_point ModificPoint=SimplexSolver line: 167, el: CtIfImpl
+2019-04-17 14:37:07,540 INFO main - -->op: IfExpresionMutOp: `(tableau.getNumArtificial[...] ` ---> `!((tableau.getNumArtifici[...]` at pos -1 of parent `-`
+2019-04-17 14:37:07,837 INFO main - mod_point ModificPoint=SimplexTableau line: 307, el: CtIfImpl
+2019-04-17 14:37:07,837 INFO main - -->op: IfExpresionMutOp: `(numArtificialVariables) [...] ` ---> `(numArtificialVariables) [...]` at pos -1 of parent `-`
+2019-04-17 14:37:08,151 INFO main - mod_point ModificPoint=SimplexTableau line: 307, el: CtIfImpl
+2019-04-17 14:37:08,152 INFO main - -->op: IfExpresionMutOp: `(numArtificialVariables) [...] ` ---> `(numArtificialVariables) [...]` at pos -1 of parent `-`
+2019-04-17 14:37:08,477 INFO main - mod_point ModificPoint=SimplexTableau line: 307, el: CtIfImpl
+2019-04-17 14:37:08,478 INFO main - -->op: IfExpresionMutOp: `(numArtificialVariables) [...] ` ---> `(numArtificialVariables) [...]` at pos -1 of parent `-`
+2019-04-17 14:37:08,788 INFO main - mod_point ModificPoint=SimplexTableau line: 307, el: CtIfImpl
+2019-04-17 14:37:08,788 INFO main - -->op: IfExpresionMutOp: `(numArtificialVariables) [...] ` ---> `(numArtificialVariables) [...]` at pos -1 of parent `-`
+2019-04-17 14:37:09,099 INFO main - mod_point ModificPoint=SimplexTableau line: 307, el: CtIfImpl
+2019-04-17 14:37:09,100 INFO main - -->op: IfExpresionMutOp: `(numArtificialVariables) [...] ` ---> `(numArtificialVariables) [...]` at pos -1 of parent `-`
+2019-04-17 14:37:09,434 INFO main - mod_point ModificPoint=SimplexTableau line: 307, el: CtIfImpl
+2019-04-17 14:37:09,434 INFO main - -->op: IfExpresionMutOp: `(numArtificialVariables) [...] ` ---> `!((numArtificialVariables[...]` at pos -1 of parent `-`
+2019-04-17 14:37:09,768 INFO main - mod_point ModificPoint=MathUtils line: 367, el: CtIfImpl
+2019-04-17 14:37:09,768 INFO main - -->op: IfExpresionMutOp: `org.apache.commons.math.u[...] ` ---> `!(org.apache.commons.math[...]` at pos -1 of parent `-`
+2019-04-17 14:37:10,076 INFO main - mod_point ModificPoint=MathUtils line: 369, el: CtIfImpl
+2019-04-17 14:37:10,077 INFO main - -->op: IfExpresionMutOp: `x < y ` ---> `x == y` at pos -1 of parent `-`
+2019-04-17 14:37:10,498 INFO main - mod_point ModificPoint=MathUtils line: 369, el: CtIfImpl
+2019-04-17 14:37:10,498 INFO main - -->op: IfExpresionMutOp: `x < y ` ---> `x != y` at pos -1 of parent `-`
+2019-04-17 14:37:10,928 INFO main - mod_point ModificPoint=MathUtils line: 369, el: CtIfImpl
+2019-04-17 14:37:10,928 INFO main - -->op: IfExpresionMutOp: `x < y ` ---> `x >= y` at pos -1 of parent `-`
+2019-04-17 14:37:11,343 INFO main - mod_point ModificPoint=MathUtils line: 369, el: CtIfImpl
+2019-04-17 14:37:11,343 INFO main - -->op: IfExpresionMutOp: `x < y ` ---> `x > y` at pos -1 of parent `-`
+2019-04-17 14:37:11,655 INFO main - mod_point ModificPoint=MathUtils line: 369, el: CtIfImpl
+2019-04-17 14:37:11,656 INFO main - -->op: IfExpresionMutOp: `x < y ` ---> `x <= y` at pos -1 of parent `-`
+2019-04-17 14:37:11,952 INFO main - mod_point ModificPoint=MathUtils line: 369, el: CtIfImpl
+2019-04-17 14:37:11,952 INFO main - -->op: IfExpresionMutOp: `x < y ` ---> `!(x < y)` at pos -1 of parent `-`
+2019-04-17 14:37:12,235 INFO main - mod_point ModificPoint=SimplexTableau line: 171, el: CtIfImpl
+2019-04-17 14:37:12,236 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:12,489 INFO main - mod_point ModificPoint=SimplexTableau line: 171, el: CtIfImpl
+2019-04-17 14:37:12,489 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:12,563 INFO main - mod_point ModificPoint=SimplexTableau line: 171, el: CtIfImpl
+2019-04-17 14:37:12,563 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:12,635 INFO main - mod_point ModificPoint=SimplexTableau line: 171, el: CtIfImpl
+2019-04-17 14:37:12,636 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:12,719 INFO main - mod_point ModificPoint=SimplexTableau line: 171, el: CtIfImpl
+2019-04-17 14:37:12,719 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:12,798 INFO main - mod_point ModificPoint=SimplexTableau line: 171, el: CtIfImpl
+2019-04-17 14:37:12,798 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `!((constraint.getRelation[...]` at pos -1 of parent `-`
+2019-04-17 14:37:13,075 INFO main - mod_point ModificPoint=SimplexTableau line: 296, el: CtIfImpl
+2019-04-17 14:37:13,076 INFO main - -->op: IfExpresionMutOp: `!(org.apache.commons.math[...] ` ---> `org.apache.commons.math.u[...]` at pos -1 of parent `-`
+2019-04-17 14:37:13,330 INFO main - mod_point ModificPoint=SimplexTableau line: 294, el: CtIfImpl
+2019-04-17 14:37:13,330 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(!(org.apache.commons.mat[...]` at pos -1 of parent `-`
+2019-04-17 14:37:13,587 INFO main - mod_point ModificPoint=SimplexTableau line: 294, el: CtIfImpl
+2019-04-17 14:37:13,587 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:37:13,857 INFO main - mod_point ModificPoint=SimplexTableau line: 294, el: CtIfImpl
+2019-04-17 14:37:13,857 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:37:13,931 INFO main - mod_point ModificPoint=SimplexTableau line: 294, el: CtIfImpl
+2019-04-17 14:37:13,931 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:37:14,017 INFO main - mod_point ModificPoint=SimplexTableau line: 294, el: CtIfImpl
+2019-04-17 14:37:14,018 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:37:14,090 INFO main - mod_point ModificPoint=SimplexTableau line: 294, el: CtIfImpl
+2019-04-17 14:37:14,090 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:37:14,163 INFO main - mod_point ModificPoint=SimplexTableau line: 294, el: CtIfImpl
+2019-04-17 14:37:14,163 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:37:14,444 INFO main - mod_point ModificPoint=SimplexTableau line: 294, el: CtIfImpl
+2019-04-17 14:37:14,444 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `(org.apache.commons.math.[...]` at pos -1 of parent `-`
+2019-04-17 14:37:14,753 INFO main - mod_point ModificPoint=SimplexTableau line: 294, el: CtIfImpl
+2019-04-17 14:37:14,753 INFO main - -->op: IfExpresionMutOp: `(org.apache.commons.math.[...] ` ---> `!((org.apache.commons.mat[...]` at pos -1 of parent `-`
+2019-04-17 14:37:15,016 INFO main - mod_point ModificPoint=SimplexTableau line: 133, el: CtIfImpl
+2019-04-17 14:37:15,017 INFO main - -->op: IfExpresionMutOp: `(getNumObjectiveFunctions[...] ` ---> `(getNumObjectiveFunctions[...]` at pos -1 of parent `-`
+2019-04-17 14:37:15,370 INFO main - mod_point ModificPoint=SimplexTableau line: 133, el: CtIfImpl
+2019-04-17 14:37:15,370 INFO main - -->op: IfExpresionMutOp: `(getNumObjectiveFunctions[...] ` ---> `(getNumObjectiveFunctions[...]` at pos -1 of parent `-`
+2019-04-17 14:37:15,688 INFO main - mod_point ModificPoint=SimplexTableau line: 133, el: CtIfImpl
+2019-04-17 14:37:15,689 INFO main - -->op: IfExpresionMutOp: `(getNumObjectiveFunctions[...] ` ---> `(getNumObjectiveFunctions[...]` at pos -1 of parent `-`
+2019-04-17 14:37:15,971 INFO main - mod_point ModificPoint=SimplexTableau line: 133, el: CtIfImpl
+2019-04-17 14:37:15,971 INFO main - -->op: IfExpresionMutOp: `(getNumObjectiveFunctions[...] ` ---> `(getNumObjectiveFunctions[...]` at pos -1 of parent `-`
+2019-04-17 14:37:16,254 INFO main - mod_point ModificPoint=SimplexTableau line: 133, el: CtIfImpl
+2019-04-17 14:37:16,254 INFO main - -->op: IfExpresionMutOp: `(getNumObjectiveFunctions[...] ` ---> `(getNumObjectiveFunctions[...]` at pos -1 of parent `-`
+2019-04-17 14:37:16,553 INFO main - mod_point ModificPoint=SimplexTableau line: 133, el: CtIfImpl
+2019-04-17 14:37:16,553 INFO main - -->op: IfExpresionMutOp: `(getNumObjectiveFunctions[...] ` ---> `!((getNumObjectiveFunctio[...]` at pos -1 of parent `-`
+2019-04-17 14:37:16,850 INFO main - mod_point ModificPoint=SimplexTableau line: 144, el: CtIfImpl
+2019-04-17 14:37:16,850 INFO main - -->op: IfExpresionMutOp: `!(restrictToNonNegative) ` ---> `restrictToNonNegative` at pos -1 of parent `-`
+2019-04-17 14:37:17,129 INFO main - mod_point ModificPoint=SimplexTableau line: 160, el: CtIfImpl
+2019-04-17 14:37:17,129 INFO main - -->op: IfExpresionMutOp: `!(restrictToNonNegative) ` ---> `restrictToNonNegative` at pos -1 of parent `-`
+2019-04-17 14:37:17,415 INFO main - mod_point ModificPoint=SimplexTableau line: 169, el: CtIfImpl
+2019-04-17 14:37:17,415 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:17,693 INFO main - mod_point ModificPoint=SimplexTableau line: 169, el: CtIfImpl
+2019-04-17 14:37:17,694 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:17,765 INFO main - mod_point ModificPoint=SimplexTableau line: 169, el: CtIfImpl
+2019-04-17 14:37:17,766 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:17,837 INFO main - mod_point ModificPoint=SimplexTableau line: 169, el: CtIfImpl
+2019-04-17 14:37:17,838 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:17,909 INFO main - mod_point ModificPoint=SimplexTableau line: 169, el: CtIfImpl
+2019-04-17 14:37:17,910 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:17,980 INFO main - mod_point ModificPoint=SimplexTableau line: 169, el: CtIfImpl
+2019-04-17 14:37:17,981 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `!((constraint.getRelation[...]` at pos -1 of parent `-`
+2019-04-17 14:37:18,245 INFO main - mod_point ModificPoint=SimplexTableau line: 176, el: CtIfImpl
+2019-04-17 14:37:18,245 INFO main - -->op: IfExpresionMutOp: `((constraint.getRelations[...] ` ---> `((constraint.getRelations[...]` at pos -1 of parent `-`
+2019-04-17 14:37:18,505 INFO main - mod_point ModificPoint=SimplexTableau line: 176, el: CtIfImpl
+2019-04-17 14:37:18,505 INFO main - -->op: IfExpresionMutOp: `((constraint.getRelations[...] ` ---> `((constraint.getRelations[...]` at pos -1 of parent `-`
+2019-04-17 14:37:18,764 INFO main - mod_point ModificPoint=SimplexTableau line: 176, el: CtIfImpl
+2019-04-17 14:37:18,764 INFO main - -->op: IfExpresionMutOp: `((constraint.getRelations[...] ` ---> `((constraint.getRelations[...]` at pos -1 of parent `-`
+2019-04-17 14:37:18,837 INFO main - mod_point ModificPoint=SimplexTableau line: 176, el: CtIfImpl
+2019-04-17 14:37:18,837 INFO main - -->op: IfExpresionMutOp: `((constraint.getRelations[...] ` ---> `((constraint.getRelations[...]` at pos -1 of parent `-`
+2019-04-17 14:37:18,931 INFO main - mod_point ModificPoint=SimplexTableau line: 176, el: CtIfImpl
+2019-04-17 14:37:18,932 INFO main - -->op: IfExpresionMutOp: `((constraint.getRelations[...] ` ---> `((constraint.getRelations[...]` at pos -1 of parent `-`
+2019-04-17 14:37:19,006 INFO main - mod_point ModificPoint=SimplexTableau line: 176, el: CtIfImpl
+2019-04-17 14:37:19,007 INFO main - -->op: IfExpresionMutOp: `((constraint.getRelations[...] ` ---> `((constraint.getRelations[...]` at pos -1 of parent `-`
+2019-04-17 14:37:19,084 INFO main - mod_point ModificPoint=SimplexTableau line: 176, el: CtIfImpl
+2019-04-17 14:37:19,084 INFO main - -->op: IfExpresionMutOp: `((constraint.getRelations[...] ` ---> `(!((constraint.getRelatio[...]` at pos -1 of parent `-`
+2019-04-17 14:37:19,360 INFO main - mod_point ModificPoint=SimplexTableau line: 176, el: CtIfImpl
+2019-04-17 14:37:19,361 INFO main - -->op: IfExpresionMutOp: `((constraint.getRelations[...] ` ---> `((constraint.getRelations[...]` at pos -1 of parent `-`
+2019-04-17 14:37:19,766 INFO main - mod_point ModificPoint=SimplexTableau line: 176, el: CtIfImpl
+2019-04-17 14:37:19,766 INFO main - -->op: IfExpresionMutOp: `((constraint.getRelations[...] ` ---> `((constraint.getRelations[...]` at pos -1 of parent `-`
+2019-04-17 14:37:19,983 INFO main - mod_point ModificPoint=SimplexTableau line: 176, el: CtIfImpl
+2019-04-17 14:37:19,983 INFO main - -->op: IfExpresionMutOp: `((constraint.getRelations[...] ` ---> `((constraint.getRelations[...]` at pos -1 of parent `-`
+2019-04-17 14:37:20,202 INFO main - mod_point ModificPoint=SimplexTableau line: 176, el: CtIfImpl
+2019-04-17 14:37:20,202 INFO main - -->op: IfExpresionMutOp: `((constraint.getRelations[...] ` ---> `((constraint.getRelations[...]` at pos -1 of parent `-`
+2019-04-17 14:37:20,447 INFO main - mod_point ModificPoint=SimplexTableau line: 176, el: CtIfImpl
+2019-04-17 14:37:20,447 INFO main - -->op: IfExpresionMutOp: `((constraint.getRelations[...] ` ---> `((constraint.getRelations[...]` at pos -1 of parent `-`
+2019-04-17 14:37:20,695 INFO main - mod_point ModificPoint=SimplexTableau line: 176, el: CtIfImpl
+2019-04-17 14:37:20,695 INFO main - -->op: IfExpresionMutOp: `((constraint.getRelations[...] ` ---> `((constraint.getRelations[...]` at pos -1 of parent `-`
+2019-04-17 14:37:21,029 INFO main - mod_point ModificPoint=SimplexTableau line: 176, el: CtIfImpl
+2019-04-17 14:37:21,029 INFO main - -->op: IfExpresionMutOp: `((constraint.getRelations[...] ` ---> `!(((constraint.getRelatio[...]` at pos -1 of parent `-`
+2019-04-17 14:37:21,301 INFO main - mod_point ModificPoint=SimplexTableau line: 211, el: CtIfImpl
+2019-04-17 14:37:21,301 INFO main - -->op: IfExpresionMutOp: `(constraint.getValue()) <[...] ` ---> `(constraint.getValue()) =[...]` at pos -1 of parent `-`
+2019-04-17 14:37:21,598 INFO main - mod_point ModificPoint=SimplexTableau line: 211, el: CtIfImpl
+2019-04-17 14:37:21,598 INFO main - -->op: IfExpresionMutOp: `(constraint.getValue()) <[...] ` ---> `(constraint.getValue()) ![...]` at pos -1 of parent `-`
+2019-04-17 14:37:21,868 INFO main - mod_point ModificPoint=SimplexTableau line: 211, el: CtIfImpl
+2019-04-17 14:37:21,869 INFO main - -->op: IfExpresionMutOp: `(constraint.getValue()) <[...] ` ---> `(constraint.getValue()) >[...]` at pos -1 of parent `-`
+2019-04-17 14:37:22,129 INFO main - mod_point ModificPoint=SimplexTableau line: 211, el: CtIfImpl
+2019-04-17 14:37:22,129 INFO main - -->op: IfExpresionMutOp: `(constraint.getValue()) <[...] ` ---> `(constraint.getValue()) >[...]` at pos -1 of parent `-`
+2019-04-17 14:37:22,454 INFO main - mod_point ModificPoint=SimplexTableau line: 211, el: CtIfImpl
+2019-04-17 14:37:22,454 INFO main - -->op: IfExpresionMutOp: `(constraint.getValue()) <[...] ` ---> `(constraint.getValue()) <[...]` at pos -1 of parent `-`
+2019-04-17 14:37:22,738 INFO main - mod_point ModificPoint=SimplexTableau line: 211, el: CtIfImpl
+2019-04-17 14:37:22,738 INFO main - -->op: IfExpresionMutOp: `(constraint.getValue()) <[...] ` ---> `!((constraint.getValue())[...]` at pos -1 of parent `-`
+2019-04-17 14:37:23,013 INFO main - mod_point ModificPoint=SimplexTableau line: 236, el: CtIfImpl
+2019-04-17 14:37:23,013 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:23,301 INFO main - mod_point ModificPoint=SimplexTableau line: 236, el: CtIfImpl
+2019-04-17 14:37:23,301 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:23,374 INFO main - mod_point ModificPoint=SimplexTableau line: 236, el: CtIfImpl
+2019-04-17 14:37:23,374 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:23,448 INFO main - mod_point ModificPoint=SimplexTableau line: 236, el: CtIfImpl
+2019-04-17 14:37:23,448 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:23,526 INFO main - mod_point ModificPoint=SimplexTableau line: 236, el: CtIfImpl
+2019-04-17 14:37:23,527 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `(constraint.getRelationsh[...]` at pos -1 of parent `-`
+2019-04-17 14:37:23,618 INFO main - mod_point ModificPoint=SimplexTableau line: 236, el: CtIfImpl
+2019-04-17 14:37:23,618 INFO main - -->op: IfExpresionMutOp: `(constraint.getRelationsh[...] ` ---> `!((constraint.getRelation[...]` at pos -1 of parent `-`
+2019-04-17 14:37:23,909 INFO main - mod_point ModificPoint=ArrayRealVector line: 1287, el: CtIfImpl
+2019-04-17 14:37:23,909 INFO main - -->op: IfExpresionMutOp: `(data.length) != n ` ---> `(data.length) == n` at pos -1 of parent `-`
+2019-04-17 14:37:24,209 INFO main - mod_point ModificPoint=ArrayRealVector line: 1287, el: CtIfImpl
+2019-04-17 14:37:24,209 INFO main - -->op: IfExpresionMutOp: `(data.length) != n ` ---> `(data.length) >= n` at pos -1 of parent `-`
+2019-04-17 14:37:24,529 INFO main - mod_point ModificPoint=ArrayRealVector line: 1287, el: CtIfImpl
+2019-04-17 14:37:24,529 INFO main - -->op: IfExpresionMutOp: `(data.length) != n ` ---> `(data.length) > n` at pos -1 of parent `-`
+2019-04-17 14:37:24,807 INFO main - mod_point ModificPoint=ArrayRealVector line: 1287, el: CtIfImpl
+2019-04-17 14:37:24,808 INFO main - -->op: IfExpresionMutOp: `(data.length) != n ` ---> `(data.length) <= n` at pos -1 of parent `-`
+2019-04-17 14:37:25,097 INFO main - mod_point ModificPoint=ArrayRealVector line: 1287, el: CtIfImpl
+2019-04-17 14:37:25,097 INFO main - -->op: IfExpresionMutOp: `(data.length) != n ` ---> `(data.length) < n` at pos -1 of parent `-`
+2019-04-17 14:37:25,376 INFO main - mod_point ModificPoint=ArrayRealVector line: 1287, el: CtIfImpl
+2019-04-17 14:37:25,376 INFO main - -->op: IfExpresionMutOp: `(data.length) != n ` ---> `!((data.length) != n)` at pos -1 of parent `-`
+2019-04-17 14:37:25,665 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-17 14:37:25,665 INFO main - 
+successful_ing_attempts (0): []
+2019-04-17 14:37:25,665 INFO main - 
+failing_ing_attempts (143): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-17 14:37:25,665 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 65.918

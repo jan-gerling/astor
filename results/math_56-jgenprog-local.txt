@@ -1,0 +1,2477 @@
+2019-04-16 15:48:39,070 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jgenprog  -scope  local  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan_gerling/astor/defect4j_tests/math_56/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-16 15:48:43,592 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_56//bin//default from 262 classes with test cases
+2019-04-16 15:48:43,601 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-16 15:48:46,521 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_56//bin//default]
+2019-04-16 15:54:38,922 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.util.MultidimensionalCounterTest#testIterationConsistency
+2019-04-16 15:54:38,936 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.util.FastMathTest#checkMissingFastMathClasses
+2019-04-16 15:54:38,943 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2400, fails: 2, GZoltar suspicious 20245
+2019-04-16 15:54:38,985 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 35 with susp > 0.5, we consider: 35
+2019-04-16 15:54:38,998 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_56//src//default, compliance level: 8
+2019-04-16 15:55:05,513 INFO main - 
+---- Initial suspicious size: 35
+2019-04-16 15:55:06,001 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MultidimensionalCounter, methodName=org.apache.commons.math.util.MultidimensionalCounter{access$200(Lorg/apache/commons/math/util/MultidimensionalCounter;)[I 0.0, lineNumber=46, susp=0.7071067811865475]
+2019-04-16 15:55:06,233 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MultidimensionalCounter, methodName=org.apache.commons.math.util.MultidimensionalCounter{access$000(Lorg/apache/commons/math/util/MultidimensionalCounter;)I 0.0, lineNumber=46, susp=0.5]
+2019-04-16 15:55:06,343 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MultidimensionalCounter, methodName=org.apache.commons.math.util.MultidimensionalCounter{access$100(Lorg/apache/commons/math/util/MultidimensionalCounter;)I 0.0, lineNumber=46, susp=0.5]
+2019-04-16 15:55:06,346 INFO main - Total suspicious from FL: 35,  32
+2019-04-16 15:55:06,346 INFO main - Total ModPoint created: 32
+2019-04-16 15:55:06,346 INFO main - Creating program variant #1, [Variant id: 1, #gens: 32, #ops: 0, parent:-]
+2019-04-16 15:55:06,602 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MultidimensionalCounter, methodName=org.apache.commons.math.util.MultidimensionalCounter{access$200(Lorg/apache/commons/math/util/MultidimensionalCounter;)[I 0.0, lineNumber=46, susp=0.7071067811865475]
+2019-04-16 15:55:06,826 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MultidimensionalCounter, methodName=org.apache.commons.math.util.MultidimensionalCounter{access$000(Lorg/apache/commons/math/util/MultidimensionalCounter;)I 0.0, lineNumber=46, susp=0.5]
+2019-04-16 15:55:06,928 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MultidimensionalCounter, methodName=org.apache.commons.math.util.MultidimensionalCounter{access$100(Lorg/apache/commons/math/util/MultidimensionalCounter;)I 0.0, lineNumber=46, susp=0.5]
+2019-04-16 15:55:06,938 INFO main - Total suspicious from FL: 35,  32
+2019-04-16 15:55:06,939 INFO main - Total ModPoint created: 32
+2019-04-16 15:55:06,939 INFO main - Creating program variant #2, [Variant id: 2, #gens: 32, #ops: 0, parent:-]
+2019-04-16 15:55:07,154 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MultidimensionalCounter, methodName=org.apache.commons.math.util.MultidimensionalCounter{access$200(Lorg/apache/commons/math/util/MultidimensionalCounter;)[I 0.0, lineNumber=46, susp=0.7071067811865475]
+2019-04-16 15:55:07,325 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MultidimensionalCounter, methodName=org.apache.commons.math.util.MultidimensionalCounter{access$000(Lorg/apache/commons/math/util/MultidimensionalCounter;)I 0.0, lineNumber=46, susp=0.5]
+2019-04-16 15:55:07,416 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MultidimensionalCounter, methodName=org.apache.commons.math.util.MultidimensionalCounter{access$100(Lorg/apache/commons/math/util/MultidimensionalCounter;)I 0.0, lineNumber=46, susp=0.5]
+2019-04-16 15:55:07,418 INFO main - Total suspicious from FL: 35,  32
+2019-04-16 15:55:07,419 INFO main - Total ModPoint created: 32
+2019-04-16 15:55:07,419 INFO main - Creating program variant #3, [Variant id: 3, #gens: 32, #ops: 0, parent:-]
+2019-04-16 15:59:56,239 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-16 15:59:56,239 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-16 15:59:56,239 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-16 15:59:56,249 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-16 15:59:56,249 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-16 15:59:56,249 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-16 15:59:56,249 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-16 15:59:56,249 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-16 15:59:56,249 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-16 15:59:56,249 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-16 15:59:56,249 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-16 15:59:56,249 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-16 15:59:56,249 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-16 15:59:56,249 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-16 15:59:56,249 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-16 15:59:56,249 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jgenprog
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /home/jan_gerling/astor/defect4j_tests/math_56/
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-16 15:59:56,250 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= local
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-16 15:59:56,251 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 3
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-16 15:59:56,252 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-16 15:59:56,252 INFO main - 
+----Starting Solution Search
+2019-04-16 16:02:46,267 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-16 16:02:46,268 ERROR main - Undo Error: original: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++) {
+				if ((counter[i]) != ((size[i]) - 1)) {
+					return true;
+				}
+			}
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--) {
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			}
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			++idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 16:02:46,269 ERROR main - Undo Error: modified: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++)
+				if ((counter[i]) != ((size[i]) - 1)) {
+					return true;
+				}
+			
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--) {
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			}
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			++idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 16:05:14,993 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-16 16:06:45,866 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-16 16:06:45,866 ERROR main - Undo Error: original: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++) {
+				if ((counter[i]) != ((size[i]) - 1)) {
+					return true;
+				}
+			}
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--) {
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			}
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			++idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 16:06:45,867 ERROR main - Undo Error: modified: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++) {
+				if ((counter[i]) != ((size[i]) - 1)) {
+					return true;
+				}
+			}
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--)
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			++idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 16:17:03,259 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-16 16:17:03,259 ERROR main - Undo Error: original: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++)
+				if ((counter[i]) != ((size[i]) - 1)) {
+					return true;
+				}
+			
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--) {
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			}
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			++idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 16:17:03,260 ERROR main - Undo Error: modified: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++)
+				if ((counter[i]) != ((size[i]) - 1))
+					return true;
+				
+			
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--) {
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			}
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			++idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 16:20:59,839 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-16 16:20:59,840 ERROR main - Undo Error: original: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++)
+				if ((counter[i]) != ((size[i]) - 1))
+					return true;
+				
+			
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--) {
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			}
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			++idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 16:20:59,841 ERROR main - Undo Error: modified: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++)
+				if ((counter[i]) != ((size[i]) - 1))
+					return true;
+				
+			
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--)
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			++idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 16:21:30,161 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-16 16:21:30,162 ERROR main - Undo Error: original: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++)
+				if ((counter[i]) != ((size[i]) - 1))
+					return true;
+				
+			
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--)
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			++idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 16:21:30,163 ERROR main - Undo Error: modified: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++)
+				if ((counter[i]) != ((size[i]) - 1))
+					return true;
+				
+			
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--)
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			--idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 16:21:31,255 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-16 16:21:31,269 ERROR main - Undo Error: original: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++)
+				if ((counter[i]) != ((size[i]) - 1))
+					return true;
+				
+			
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--)
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			--idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 16:21:31,270 ERROR main - Undo Error: modified: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++)
+				if ((counter[i]) != ((size[i]) - 1))
+					return true;
+				
+			
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--)
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			++idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 16:25:29,341 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-16 16:39:29,103 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-16 16:39:29,103 ERROR main - Undo Error: original: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++) {
+				if ((counter[i]) != ((size[i]) - 1)) {
+					return true;
+				}
+			}
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--)
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			++idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 16:39:29,105 ERROR main - Undo Error: modified: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++) {
+				if ((counter[i]) != ((size[i]) - 1))
+					return true;
+				
+			}
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--)
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			++idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 17:03:55,496 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-16 17:03:55,503 ERROR main - Undo Error: original: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++) {
+				if ((counter[i]) != ((size[i]) - 1))
+					return true;
+				
+			}
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--)
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			++idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 17:03:55,504 ERROR main - Undo Error: modified: 
+public class MultidimensionalCounter implements java.lang.Iterable<java.lang.Integer> {
+	private final int dimension;
+
+	private final int[] uniCounterOffset;
+
+	private final int[] size;
+
+	private final int totalSize;
+
+	private final int last;
+
+	public class Iterator implements java.util.Iterator<java.lang.Integer> {
+		private final int[] counter = new int[dimension];
+
+		private int count = -1;
+
+		Iterator() {
+			counter[last] = -1;
+		}
+
+		public boolean hasNext() {
+			for (int i = 0; i < (dimension); i++)
+				if ((counter[i]) != ((size[i]) - 1))
+					return true;
+				
+			
+			return false;
+		}
+
+		public java.lang.Integer next() {
+			for (int i = last; i >= 0; i--)
+				if ((counter[i]) == ((size[i]) - 1)) {
+					counter[i] = 0;
+				}else {
+					++(counter[i]);
+					break;
+				}
+			
+			return ++(count);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public int[] getCounts() {
+			return org.apache.commons.math.util.MathUtils.copyOf(counter);
+		}
+
+		public int getCount(int dim) {
+			return counter[dim];
+		}
+
+		public void remove() {
+			throw new java.lang.UnsupportedOperationException();
+		}
+	}
+
+	public MultidimensionalCounter(int... size) {
+		dimension = size.length;
+		this.size = org.apache.commons.math.util.MathUtils.copyOf(size);
+		uniCounterOffset = new int[dimension];
+		last = (dimension) - 1;
+		int tS = size[last];
+		for (int i = 0; i < (last); i++) {
+			int count = 1;
+			for (int j = i + 1; j < (dimension); j++) {
+				count *= size[j];
+			}
+			uniCounterOffset[i] = count;
+			tS *= size[i];
+		}
+		uniCounterOffset[last] = 0;
+		if (tS <= 0) {
+			throw new org.apache.commons.math.exception.NotStrictlyPositiveException(tS);
+		}
+		totalSize = tS;
+	}
+
+	public org.apache.commons.math.util.MultidimensionalCounter.Iterator iterator() {
+		return new org.apache.commons.math.util.MultidimensionalCounter.Iterator();
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public int[] getCounts(int index) {
+		if ((index < 0) || (index >= (totalSize))) {
+			throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, totalSize);
+		}
+		final int[] indices = new int[dimension];
+		int count = 0;
+		for (int i = 0; i < (last); i++) {
+			int idx = 0;
+			final int offset = uniCounterOffset[i];
+			while (count <= index) {
+				count += offset;
+				++idx;
+			} 
+			--idx;
+			count -= offset;
+			indices[i] = idx;
+		}
+		int idx = 1;
+		while (count < index) {
+			count += idx;
+			++idx;
+		} 
+		--idx;
+		indices[last] = idx;
+		return indices;
+	}
+
+	public int getCount(int... c) throws org.apache.commons.math.exception.OutOfRangeException {
+		if ((c.length) != (dimension)) {
+			throw new org.apache.commons.math.exception.DimensionMismatchException(c.length, dimension);
+		}
+		int count = 0;
+		for (int i = 0; i < (dimension); i++) {
+			final int index = c[i];
+			if ((index < 0) || (index >= (size[i]))) {
+				throw new org.apache.commons.math.exception.OutOfRangeException(index, 0, ((size[i]) - 1));
+			}
+			count += (uniCounterOffset[i]) * (c[i]);
+		}
+		return count + (c[last]);
+	}
+
+	public int getSize() {
+		return totalSize;
+	}
+
+	public int[] getSizes() {
+		return org.apache.commons.math.util.MathUtils.copyOf(size);
+	}
+
+	@java.lang.Override
+	public java.lang.String toString() {
+		final java.lang.StringBuilder sb = new java.lang.StringBuilder();
+		for (int i = 0; i < (dimension); i++) {
+			sb.append("[").append(getCount(i)).append("]");
+		}
+		return sb.toString();
+	}
+}
+2019-04-16 17:06:27,333 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-16 17:23:30,218 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-16 17:41:27,852 INFO main - 
+ No more time for operating
+2019-04-16 17:41:27,865 INFO main - Time Repair Loop (s): 6091.592
+2019-04-16 17:41:27,865 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-16 17:41:27,865 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 17:41:27,865 INFO main - 
+failing_ing_attempts (489): [1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 0, 2, 0, 1, 1, 1, 3, 0, 0, 3, 1, 0, 1, 1, 1, 13, 0, 2, 1, 2, 1, 2, 0, 2, 2, 1, 3, 0, 5, 0, 2, 2, 0, 6, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 3, 1, 0, 2, 0, 2, 1, 2, 1, 1, 0, 2, 2, 1, 1, 1, 1, 3, 2, 1, 0, 1, 0, 1, 2, 3, 1, 1, 1, 1, 2, 6, 1, 0, 0, 3, 0, 1, 8, 0, 1, 2, 0, 2, 1, 4, 0, 3, 2, 0, 8, 1, 1, 1, 1, 1, 2, 0, 0, 1, 2, 2, 0, 1, 1, 0, 0, 0, 9, 1, 0, 1, 2, 1, 0, 1, 2, 4, 1, 3, 0, 0, 2, 1, 0, 0, 0, 3, 0, 2, 1, 0, 2, 1, 0, 1, 1, 1, 1, 1, 2, 0, 0, 1, 0, 0, 5, 0, 1, 1, 1, 2, 2, 0, 3, 2, 0, 3, 0, 0, 1, 2, 3, 4, 1, 1, 8, 5, 1, 0, 0, 2, 0, 0, 0, 0, 4, 1, 1, 2, 0, 2, 1, 2, 1, 1, 0, 1, 0, 3, 1, 2, 1, 4, 2, 3, 4, 4, 1, 2, 1, 0, 2, 1, 3, 0, 1, 2, 1, 1, 0, 1, 2, 0, 1, 1, 2, 2, 0, 0, 0, 0, 1, 3, 2, 2, 1, 1, 0, 2, 1, 0, 1, 2, 1, 0, 3, 1, 3, 1, 0, 1, 2, 2, 0, 1, 2, 1, 2, 1, 2, 1, 0, 0, 0, 1, 1, 1, 2, 5, 0, 1, 1, 4, 1, 1, 2, 0, 1, 1, 2, 1, 0, 2, 0, 3, 0, 0, 2, 0, 0, 2, 1, 2, 5, 3, 1, 1, 0, 4, 2, 6, 1, 1, 1, 0, 1, 3, 1, 3, 1, 1, 3, 1, 5, 1, 3, 1, 5, 2, 0, 1, 0, 3, 0, 2, 1, 2, 4, 1, 4, 2, 0, 2, 0, 6, 0, 3, 0, 5, 1, 2, 3, 0, 0, 0, 3, 1, 1, 1, 0, 0, 1, 0, 0, 3, 0, 0, 1, 3, 1, 6, 1, 1, 1, 2, 2, 3, 0, 0, 1, 1, 1, 1, 0, 1, 2, 0, 1, 0, 0, 3, 0, 1, 3, 0, 2, 0, 1, 0, 1, 0, 0, 0, 2, 0, 1, 0, 2, 0, 2, 1, 0, 1, 1, 0, 1, 1, 1, 0, 2, 1, 1, 0, 2, 0, 1, 1, 1, 1, 2, 0, 4, 1, 0, 1, 1, 2, 2, 3, 2, 0, 0, 3, 1, 0, 1, 0, 1, 3, 1, 3, 4, 6, 2, 0, 2, 0, 0, 0, 0, 1, 2, 2, 1, 1, 0, 6, 2, 4, 0, 3, 0, 1, 0, 1, 1, 1, 1, 2, 0, 0, 1, 0, 1, 2, 0, 4, 2, 1, 1, 1, 1, 1]
+2019-04-16 17:41:27,865 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 6768.753
+[DONE]

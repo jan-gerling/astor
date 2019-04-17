@@ -1,0 +1,796 @@
+2019-04-16 12:36:06,089 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jgenprog  -scope  package  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan_gerling/astor/defect4j_tests/math_60/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-16 12:36:09,171 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_60//bin//default from 252 classes with test cases
+2019-04-16 12:36:09,172 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-16 12:36:11,379 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_60//bin//default]
+2019-04-16 12:37:25,946 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.distribution.NormalDistributionTest#testExtremeValues
+2019-04-16 12:37:25,969 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2218, fails: 1, GZoltar suspicious 19202
+2019-04-16 12:37:26,000 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 17 with susp > 0.5, we consider: 17
+2019-04-16 12:37:26,033 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_60//src//default, compliance level: 8
+2019-04-16 12:37:47,843 INFO main - 
+---- Initial suspicious size: 17
+2019-04-16 12:37:47,915 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.ContinuedFraction, methodName=org.apache.commons.math.util.ContinuedFraction{evaluate(DDI)D 0.0, lineNumber=188, susp=1.0]
+2019-04-16 12:37:48,040 INFO main - Total suspicious from FL: 17,  16
+2019-04-16 12:37:48,040 INFO main - Total ModPoint created: 16
+2019-04-16 12:37:48,040 INFO main - Creating program variant #1, [Variant id: 1, #gens: 16, #ops: 0, parent:-]
+2019-04-16 12:37:48,076 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.ContinuedFraction, methodName=org.apache.commons.math.util.ContinuedFraction{evaluate(DDI)D 0.0, lineNumber=188, susp=1.0]
+2019-04-16 12:37:48,186 INFO main - Total suspicious from FL: 17,  16
+2019-04-16 12:37:48,187 INFO main - Total ModPoint created: 16
+2019-04-16 12:37:48,187 INFO main - Creating program variant #2, [Variant id: 2, #gens: 16, #ops: 0, parent:-]
+2019-04-16 12:37:48,229 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.ContinuedFraction, methodName=org.apache.commons.math.util.ContinuedFraction{evaluate(DDI)D 0.0, lineNumber=188, susp=1.0]
+2019-04-16 12:37:48,317 INFO main - Total suspicious from FL: 17,  16
+2019-04-16 12:37:48,317 INFO main - Total ModPoint created: 16
+2019-04-16 12:37:48,318 INFO main - Creating program variant #3, [Variant id: 3, #gens: 16, #ops: 0, parent:-]
+2019-04-16 12:38:51,636 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-16 12:38:51,637 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-16 12:38:51,637 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-16 12:38:51,637 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-16 12:38:51,637 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-16 12:38:51,637 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-16 12:38:51,637 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-16 12:38:51,637 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-16 12:38:51,637 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-16 12:38:51,637 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-16 12:38:51,637 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jgenprog
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /home/jan_gerling/astor/defect4j_tests/math_60/
+2019-04-16 12:38:51,638 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-16 12:38:51,639 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-16 12:38:51,639 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-16 12:38:51,639 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-16 12:38:51,639 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-16 12:38:51,639 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= package
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-16 12:38:51,641 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-16 12:38:51,642 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-16 12:38:51,642 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-16 12:38:51,642 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-16 12:38:51,642 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-16 12:38:51,642 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 3
+2019-04-16 12:38:51,642 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-16 12:38:51,642 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-16 12:38:51,642 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-16 12:38:51,642 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-16 12:38:51,642 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-16 12:38:51,645 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-16 12:38:51,645 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-16 12:38:51,645 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-16 12:38:51,645 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-16 12:38:51,645 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-16 12:38:51,645 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-16 12:38:51,661 INFO main - 
+----Starting Solution Search
+2019-04-16 12:38:56,647 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-16 12:38:56,647 ERROR main - Undo Error: original: 
+public abstract class ContinuedFraction {
+	private static final double DEFAULT_EPSILON = 1.0E-8;
+
+	protected ContinuedFraction() {
+		super();
+	}
+
+	protected abstract double getA(int n, double x);
+
+	protected abstract double getB(int n, double x);
+
+	public double evaluate(double x) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, double epsilon) throws org.apache.commons.math.MathException {
+		return evaluate(x, epsilon, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, int maxIterations) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, maxIterations);
+	}
+
+	public double evaluate(double x, double epsilon, int maxIterations) throws org.apache.commons.math.MathException {
+		double p0 = 1.0;
+		double p1 = getA(0, x);
+		double q0 = 0.0;
+		double q1 = 1.0;
+		double c = p1 / q1;
+		int n = 0;
+		double relativeError = java.lang.Double.MAX_VALUE;
+		while ((n < maxIterations) && (relativeError > epsilon)) {
+			++n;
+			double a = getA(n, x);
+			double b = getB(n, x);
+			double p2 = (a * p1) + (b * p0);
+			double q2 = (a * q1) + (b * q0);
+			boolean infinite = false;
+			if ((java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2))) {
+				double scaleFactor = 1.0;
+				double lastScaleFactor = 1.0;
+				final int maxPower = 5;
+				final double scale = org.apache.commons.math.util.FastMath.max(a, b);
+				if (scale <= 0) {
+					throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+				}
+				infinite = true;
+				for (int i = 0; i < maxPower; i++) {
+					lastScaleFactor = scaleFactor;
+					scaleFactor *= scale;
+					if ((a != 0.0) && (a > b)) {
+						p2 = (p1 / lastScaleFactor) + ((b / scaleFactor) * p0);
+						q2 = (q1 / lastScaleFactor) + ((b / scaleFactor) * q0);
+					}else
+						if (b != 0) {
+							p2 = ((a / scaleFactor) * p1) + (p0 / lastScaleFactor);
+							q2 = ((a / scaleFactor) * q1) + (q0 / lastScaleFactor);
+						}
+					
+					infinite = (java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2));
+					if (!infinite) {
+						break;
+					}
+				}
+			}
+			if (infinite) {
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+			}
+			double r = p2 / q2;
+			if (java.lang.Double.isNaN(r)) {
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_NAN_DIVERGENCE, x);
+			}
+			relativeError = org.apache.commons.math.util.FastMath.abs(((r / c) - 1.0));
+			c = p2 / q2;
+			p0 = p1;
+			p1 = p2;
+			q0 = q1;
+			q1 = q2;
+		} 
+		if (n >= maxIterations) {
+			throw new org.apache.commons.math.MaxIterationsExceededException(maxIterations, org.apache.commons.math.exception.util.LocalizedFormats.NON_CONVERGENT_CONTINUED_FRACTION, x);
+		}
+		return c;
+	}
+}
+2019-04-16 12:38:56,648 ERROR main - Undo Error: modified: 
+public abstract class ContinuedFraction {
+	private static final double DEFAULT_EPSILON = 1.0E-8;
+
+	protected ContinuedFraction() {
+		super();
+	}
+
+	protected abstract double getA(int n, double x);
+
+	protected abstract double getB(int n, double x);
+
+	public double evaluate(double x) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, double epsilon) throws org.apache.commons.math.MathException {
+		return evaluate(x, epsilon, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, int maxIterations) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, maxIterations);
+	}
+
+	public double evaluate(double x, double epsilon, int maxIterations) throws org.apache.commons.math.MathException {
+		double p0 = 1.0;
+		double p1 = getA(0, x);
+		double q0 = 0.0;
+		double q1 = 1.0;
+		double c = p1 / q1;
+		int n = 0;
+		double relativeError = java.lang.Double.MAX_VALUE;
+		while ((n < maxIterations) && (relativeError > epsilon)) {
+			++n;
+			double a = getA(n, x);
+			double b = getB(n, x);
+			double p2 = (a * p1) + (b * p0);
+			double q2 = (a * q1) + (b * q0);
+			boolean infinite = false;
+			if ((java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2))) {
+				double scaleFactor = 1.0;
+				double lastScaleFactor = 1.0;
+				final int maxPower = 5;
+				final double scale = org.apache.commons.math.util.FastMath.max(a, b);
+				if (scale <= 0) {
+					throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+				}
+				infinite = true;
+				for (int i = 0; i < maxPower; i++) {
+					lastScaleFactor = scaleFactor;
+					scaleFactor *= scale;
+					if ((a != 0.0) && (a > b)) {
+						p2 = (p1 / lastScaleFactor) + ((b / scaleFactor) * p0);
+						q2 = (q1 / lastScaleFactor) + ((b / scaleFactor) * q0);
+					}else
+						if (b != 0) {
+							p2 = ((a / scaleFactor) * p1) + (p0 / lastScaleFactor);
+							q2 = ((a / scaleFactor) * q1) + (q0 / lastScaleFactor);
+						}
+					
+					infinite = (java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2));
+					if (!infinite) {
+						break;
+					}
+				}
+			}
+			if (infinite) {
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+			}
+			double r = p2 / q2;
+			if (java.lang.Double.isNaN(r))
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_NAN_DIVERGENCE, x);
+			
+			relativeError = org.apache.commons.math.util.FastMath.abs(((r / c) - 1.0));
+			c = p2 / q2;
+			p0 = p1;
+			p1 = p2;
+			q0 = q1;
+			q1 = q2;
+		} 
+		if (n >= maxIterations) {
+			throw new org.apache.commons.math.MaxIterationsExceededException(maxIterations, org.apache.commons.math.exception.util.LocalizedFormats.NON_CONVERGENT_CONTINUED_FRACTION, x);
+		}
+		return c;
+	}
+}
+2019-04-16 12:39:07,940 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-16 12:39:07,940 ERROR main - Undo Error: original: 
+public abstract class ContinuedFraction {
+	private static final double DEFAULT_EPSILON = 1.0E-8;
+
+	protected ContinuedFraction() {
+		super();
+	}
+
+	protected abstract double getA(int n, double x);
+
+	protected abstract double getB(int n, double x);
+
+	public double evaluate(double x) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, double epsilon) throws org.apache.commons.math.MathException {
+		return evaluate(x, epsilon, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, int maxIterations) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, maxIterations);
+	}
+
+	public double evaluate(double x, double epsilon, int maxIterations) throws org.apache.commons.math.MathException {
+		double p0 = 1.0;
+		double p1 = getA(0, x);
+		double q0 = 0.0;
+		double q1 = 1.0;
+		double c = p1 / q1;
+		int n = 0;
+		double relativeError = java.lang.Double.MAX_VALUE;
+		while ((n < maxIterations) && (relativeError > epsilon)) {
+			++n;
+			double a = getA(n, x);
+			double b = getB(n, x);
+			double p2 = (a * p1) + (b * p0);
+			double q2 = (a * q1) + (b * q0);
+			boolean infinite = false;
+			if ((java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2))) {
+				double scaleFactor = 1.0;
+				double lastScaleFactor = 1.0;
+				final int maxPower = 5;
+				final double scale = org.apache.commons.math.util.FastMath.max(a, b);
+				if (scale <= 0) {
+					throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+				}
+				infinite = true;
+				for (int i = 0; i < maxPower; i++) {
+					lastScaleFactor = scaleFactor;
+					scaleFactor *= scale;
+					if ((a != 0.0) && (a > b)) {
+						p2 = (p1 / lastScaleFactor) + ((b / scaleFactor) * p0);
+						q2 = (q1 / lastScaleFactor) + ((b / scaleFactor) * q0);
+					}else
+						if (b != 0) {
+							p2 = ((a / scaleFactor) * p1) + (p0 / lastScaleFactor);
+							q2 = ((a / scaleFactor) * q1) + (q0 / lastScaleFactor);
+						}
+					
+					infinite = (java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2));
+					if (!infinite) {
+						break;
+					}
+				}
+			}
+			if (infinite) {
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+			}
+			double r = p2 / q2;
+			if (java.lang.Double.isNaN(r)) {
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_NAN_DIVERGENCE, x);
+			}
+			relativeError = org.apache.commons.math.util.FastMath.abs(((r / c) - 1.0));
+			c = p2 / q2;
+			p0 = p1;
+			p1 = p2;
+			q0 = q1;
+			q1 = q2;
+		} 
+		if (n >= maxIterations) {
+			throw new org.apache.commons.math.MaxIterationsExceededException(maxIterations, org.apache.commons.math.exception.util.LocalizedFormats.NON_CONVERGENT_CONTINUED_FRACTION, x);
+		}
+		return c;
+	}
+}
+2019-04-16 12:39:07,941 ERROR main - Undo Error: modified: 
+public abstract class ContinuedFraction {
+	private static final double DEFAULT_EPSILON = 1.0E-8;
+
+	protected ContinuedFraction() {
+		super();
+	}
+
+	protected abstract double getA(int n, double x);
+
+	protected abstract double getB(int n, double x);
+
+	public double evaluate(double x) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, double epsilon) throws org.apache.commons.math.MathException {
+		return evaluate(x, epsilon, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, int maxIterations) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, maxIterations);
+	}
+
+	public double evaluate(double x, double epsilon, int maxIterations) throws org.apache.commons.math.MathException {
+		double p0 = 1.0;
+		double p1 = getA(0, x);
+		double q0 = 0.0;
+		double q1 = 1.0;
+		double c = p1 / q1;
+		int n = 0;
+		double relativeError = java.lang.Double.MAX_VALUE;
+		while ((n < maxIterations) && (relativeError > epsilon)) {
+			++n;
+			double a = getA(n, x);
+			double b = getB(n, x);
+			double p2 = (a * p1) + (b * p0);
+			double q2 = (a * q1) + (b * q0);
+			boolean infinite = false;
+			if ((java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2))) {
+				double scaleFactor = 1.0;
+				double lastScaleFactor = 1.0;
+				final int maxPower = 5;
+				final double scale = org.apache.commons.math.util.FastMath.max(a, b);
+				if (scale <= 0) {
+					throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+				}
+				infinite = true;
+				for (int i = 0; i < maxPower; i++) {
+					lastScaleFactor = scaleFactor;
+					scaleFactor *= scale;
+					if ((a != 0.0) && (a > b)) {
+						p2 = (p1 / lastScaleFactor) + ((b / scaleFactor) * p0);
+						q2 = (q1 / lastScaleFactor) + ((b / scaleFactor) * q0);
+					}else
+						if (b != 0) {
+							p2 = ((a / scaleFactor) * p1) + (p0 / lastScaleFactor);
+							q2 = ((a / scaleFactor) * q1) + (q0 / lastScaleFactor);
+						}
+					
+					infinite = (java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2));
+					if (!infinite) {
+						break;
+					}
+				}
+			}
+			if (infinite) {
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+			}
+			double r = p2 / q2;
+			if (java.lang.Double.isNaN(r))
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_NAN_DIVERGENCE, x);
+			
+			relativeError = org.apache.commons.math.util.FastMath.abs(((r / c) - 1.0));
+			c = p2 / q2;
+			p0 = p1;
+			p1 = p2;
+			q0 = q1;
+			q1 = q2;
+		} 
+		if (n >= maxIterations) {
+			throw new org.apache.commons.math.MaxIterationsExceededException(maxIterations, org.apache.commons.math.exception.util.LocalizedFormats.NON_CONVERGENT_CONTINUED_FRACTION, x);
+		}
+		return c;
+	}
+}
+2019-04-16 12:39:39,971 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-16 12:39:39,972 ERROR main - Undo Error: original: 
+public abstract class ContinuedFraction {
+	private static final double DEFAULT_EPSILON = 1.0E-8;
+
+	protected ContinuedFraction() {
+		super();
+	}
+
+	protected abstract double getA(int n, double x);
+
+	protected abstract double getB(int n, double x);
+
+	public double evaluate(double x) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, double epsilon) throws org.apache.commons.math.MathException {
+		return evaluate(x, epsilon, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, int maxIterations) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, maxIterations);
+	}
+
+	public double evaluate(double x, double epsilon, int maxIterations) throws org.apache.commons.math.MathException {
+		double p0 = 1.0;
+		double p1 = getA(0, x);
+		double q0 = 0.0;
+		double q1 = 1.0;
+		double c = p1 / q1;
+		int n = 0;
+		double relativeError = java.lang.Double.MAX_VALUE;
+		while ((n < maxIterations) && (relativeError > epsilon)) {
+			++n;
+			double a = getA(n, x);
+			double b = getB(n, x);
+			double p2 = (a * p1) + (b * p0);
+			double q2 = (a * q1) + (b * q0);
+			boolean infinite = false;
+			if ((java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2))) {
+				double scaleFactor = 1.0;
+				double lastScaleFactor = 1.0;
+				final int maxPower = 5;
+				final double scale = org.apache.commons.math.util.FastMath.max(a, b);
+				if (scale <= 0) {
+					throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+				}
+				infinite = true;
+				for (int i = 0; i < maxPower; i++) {
+					lastScaleFactor = scaleFactor;
+					scaleFactor *= scale;
+					if ((a != 0.0) && (a > b)) {
+						p2 = (p1 / lastScaleFactor) + ((b / scaleFactor) * p0);
+						q2 = (q1 / lastScaleFactor) + ((b / scaleFactor) * q0);
+					}else
+						if (b != 0) {
+							p2 = ((a / scaleFactor) * p1) + (p0 / lastScaleFactor);
+							q2 = ((a / scaleFactor) * q1) + (q0 / lastScaleFactor);
+						}
+					
+					infinite = (java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2));
+					if (!infinite) {
+						break;
+					}
+				}
+			}
+			if (infinite) {
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+			}
+			double r = p2 / q2;
+			if (java.lang.Double.isNaN(r))
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_NAN_DIVERGENCE, x);
+			
+			relativeError = org.apache.commons.math.util.FastMath.abs(((r / c) - 1.0));
+			c = p2 / q2;
+			p0 = p1;
+			p1 = p2;
+			q0 = q1;
+			q1 = q2;
+		} 
+		if (n >= maxIterations) {
+			throw new org.apache.commons.math.MaxIterationsExceededException(maxIterations, org.apache.commons.math.exception.util.LocalizedFormats.NON_CONVERGENT_CONTINUED_FRACTION, x);
+		}
+		return c;
+	}
+}
+2019-04-16 12:39:39,972 ERROR main - Undo Error: modified: 
+public abstract class ContinuedFraction {
+	private static final double DEFAULT_EPSILON = 1.0E-8;
+
+	protected ContinuedFraction() {
+		super();
+	}
+
+	protected abstract double getA(int n, double x);
+
+	protected abstract double getB(int n, double x);
+
+	public double evaluate(double x) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, double epsilon) throws org.apache.commons.math.MathException {
+		return evaluate(x, epsilon, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, int maxIterations) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, maxIterations);
+	}
+
+	public double evaluate(double x, double epsilon, int maxIterations) throws org.apache.commons.math.MathException {
+		double p0 = 1.0;
+		double p1 = getA(0, x);
+		double q0 = 0.0;
+		double q1 = 1.0;
+		double c = p1 / q1;
+		int n = 0;
+		double relativeError = java.lang.Double.MAX_VALUE;
+		while ((n < maxIterations) && (relativeError > epsilon)) {
+			++n;
+			double a = getA(n, x);
+			double b = getB(n, x);
+			double p2 = (a * p1) + (b * p0);
+			double q2 = (a * q1) + (b * q0);
+			boolean infinite = false;
+			if ((java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2))) {
+				double scaleFactor = 1.0;
+				double lastScaleFactor = 1.0;
+				final int maxPower = 5;
+				final double scale = org.apache.commons.math.util.FastMath.max(a, b);
+				if (scale <= 0) {
+					throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+				}
+				infinite = true;
+				for (int i = 0; i < maxPower; i++) {
+					lastScaleFactor = scaleFactor;
+					scaleFactor *= scale;
+					if ((a != 0.0) && (a > b)) {
+						p2 = (p1 / lastScaleFactor) + ((b / scaleFactor) * p0);
+						q2 = (q1 / lastScaleFactor) + ((b / scaleFactor) * q0);
+					}else
+						if (b != 0) {
+							p2 = ((a / scaleFactor) * p1) + (p0 / lastScaleFactor);
+							q2 = ((a / scaleFactor) * q1) + (q0 / lastScaleFactor);
+						}
+					
+					infinite = (java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2));
+					if (!infinite)
+						break;
+					
+				}
+			}
+			if (infinite) {
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+			}
+			double r = p2 / q2;
+			if (java.lang.Double.isNaN(r))
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_NAN_DIVERGENCE, x);
+			
+			relativeError = org.apache.commons.math.util.FastMath.abs(((r / c) - 1.0));
+			c = p2 / q2;
+			p0 = p1;
+			p1 = p2;
+			q0 = q1;
+			q1 = q2;
+		} 
+		if (n >= maxIterations) {
+			throw new org.apache.commons.math.MaxIterationsExceededException(maxIterations, org.apache.commons.math.exception.util.LocalizedFormats.NON_CONVERGENT_CONTINUED_FRACTION, x);
+		}
+		return c;
+	}
+}
+2019-04-16 12:43:16,159 ERROR main - Error: the model was not the same from the original after this generation
+2019-04-16 12:43:16,159 ERROR main - Undo Error: original: 
+public abstract class ContinuedFraction {
+	private static final double DEFAULT_EPSILON = 1.0E-8;
+
+	protected ContinuedFraction() {
+		super();
+	}
+
+	protected abstract double getA(int n, double x);
+
+	protected abstract double getB(int n, double x);
+
+	public double evaluate(double x) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, double epsilon) throws org.apache.commons.math.MathException {
+		return evaluate(x, epsilon, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, int maxIterations) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, maxIterations);
+	}
+
+	public double evaluate(double x, double epsilon, int maxIterations) throws org.apache.commons.math.MathException {
+		double p0 = 1.0;
+		double p1 = getA(0, x);
+		double q0 = 0.0;
+		double q1 = 1.0;
+		double c = p1 / q1;
+		int n = 0;
+		double relativeError = java.lang.Double.MAX_VALUE;
+		while ((n < maxIterations) && (relativeError > epsilon)) {
+			++n;
+			double a = getA(n, x);
+			double b = getB(n, x);
+			double p2 = (a * p1) + (b * p0);
+			double q2 = (a * q1) + (b * q0);
+			boolean infinite = false;
+			if ((java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2))) {
+				double scaleFactor = 1.0;
+				double lastScaleFactor = 1.0;
+				final int maxPower = 5;
+				final double scale = org.apache.commons.math.util.FastMath.max(a, b);
+				if (scale <= 0) {
+					throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+				}
+				infinite = true;
+				for (int i = 0; i < maxPower; i++) {
+					lastScaleFactor = scaleFactor;
+					scaleFactor *= scale;
+					if ((a != 0.0) && (a > b)) {
+						p2 = (p1 / lastScaleFactor) + ((b / scaleFactor) * p0);
+						q2 = (q1 / lastScaleFactor) + ((b / scaleFactor) * q0);
+					}else
+						if (b != 0) {
+							p2 = ((a / scaleFactor) * p1) + (p0 / lastScaleFactor);
+							q2 = ((a / scaleFactor) * q1) + (q0 / lastScaleFactor);
+						}
+					
+					infinite = (java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2));
+					if (!infinite) {
+						break;
+					}
+				}
+			}
+			if (infinite) {
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+			}
+			double r = p2 / q2;
+			if (java.lang.Double.isNaN(r))
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_NAN_DIVERGENCE, x);
+			
+			relativeError = org.apache.commons.math.util.FastMath.abs(((r / c) - 1.0));
+			c = p2 / q2;
+			p0 = p1;
+			p1 = p2;
+			q0 = q1;
+			q1 = q2;
+		} 
+		if (n >= maxIterations) {
+			throw new org.apache.commons.math.MaxIterationsExceededException(maxIterations, org.apache.commons.math.exception.util.LocalizedFormats.NON_CONVERGENT_CONTINUED_FRACTION, x);
+		}
+		return c;
+	}
+}
+2019-04-16 12:43:16,160 ERROR main - Undo Error: modified: 
+public abstract class ContinuedFraction {
+	private static final double DEFAULT_EPSILON = 1.0E-8;
+
+	protected ContinuedFraction() {
+		super();
+	}
+
+	protected abstract double getA(int n, double x);
+
+	protected abstract double getB(int n, double x);
+
+	public double evaluate(double x) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, double epsilon) throws org.apache.commons.math.MathException {
+		return evaluate(x, epsilon, java.lang.Integer.MAX_VALUE);
+	}
+
+	public double evaluate(double x, int maxIterations) throws org.apache.commons.math.MathException {
+		return evaluate(x, org.apache.commons.math.util.ContinuedFraction.DEFAULT_EPSILON, maxIterations);
+	}
+
+	public double evaluate(double x, double epsilon, int maxIterations) throws org.apache.commons.math.MathException {
+		double p0 = 1.0;
+		double p1 = getA(0, x);
+		double q0 = 0.0;
+		double q1 = 1.0;
+		double c = p1 / q1;
+		int n = 0;
+		double relativeError = java.lang.Double.MAX_VALUE;
+		while ((n < maxIterations) && (relativeError > epsilon)) {
+			++n;
+			double a = getA(n, x);
+			double b = getB(n, x);
+			double p2 = (a * p1) + (b * p0);
+			double q2 = (a * q1) + (b * q0);
+			boolean infinite = false;
+			if ((java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2))) {
+				double scaleFactor = 1.0;
+				double lastScaleFactor = 1.0;
+				final int maxPower = 5;
+				final double scale = org.apache.commons.math.util.FastMath.max(a, b);
+				if (scale <= 0) {
+					throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+				}
+				infinite = true;
+				for (int i = 0; i < maxPower; i++) {
+					lastScaleFactor = scaleFactor;
+					scaleFactor *= scale;
+					if ((a != 0.0) && (a > b)) {
+						p2 = (p1 / lastScaleFactor) + ((b / scaleFactor) * p0);
+						q2 = (q1 / lastScaleFactor) + ((b / scaleFactor) * q0);
+					}else
+						if (b != 0) {
+							p2 = ((a / scaleFactor) * p1) + (p0 / lastScaleFactor);
+							q2 = ((a / scaleFactor) * q1) + (q0 / lastScaleFactor);
+						}
+					
+					infinite = (java.lang.Double.isInfinite(p2)) || (java.lang.Double.isInfinite(q2));
+					if (!infinite)
+						break;
+					
+				}
+			}
+			if (infinite) {
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE, x);
+			}
+			double r = p2 / q2;
+			if (java.lang.Double.isNaN(r))
+				throw new org.apache.commons.math.ConvergenceException(org.apache.commons.math.exception.util.LocalizedFormats.CONTINUED_FRACTION_NAN_DIVERGENCE, x);
+			
+			relativeError = org.apache.commons.math.util.FastMath.abs(((r / c) - 1.0));
+			c = p2 / q2;
+			p0 = p1;
+			p1 = p2;
+			q0 = q1;
+			q1 = q2;
+		} 
+		if (n >= maxIterations) {
+			throw new org.apache.commons.math.MaxIterationsExceededException(maxIterations, org.apache.commons.math.exception.util.LocalizedFormats.NON_CONVERGENT_CONTINUED_FRACTION, x);
+		}
+		return c;
+	}
+}
+2019-04-16 12:58:01,292 INFO main - Time Repair Loop (s): 1149.631
+2019-04-16 12:58:01,292 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-16 12:58:01,292 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 12:58:01,292 INFO main - 
+failing_ing_attempts (600): [0, 0, 3, 31, 6, 1, 33, 3, 18, 11, 7, 2, 24, 9, 0, 1, 0, 0, 1, 0, 14, 0, 7, 5, 3, 0, 5, 18, 0, 2, 1, 0, 47, 0, 4, 1, 5, 0, 2, 0, 5, 7, 2, 121, 7, 9, 0, 3, 7, 9, 11, 4, 0, 0, 14, 1, 10, 7, 10, 1, 18, 12, 2, 0, 1, 0, 11, 2, 0, 10, 0, 113, 5, 0, 8, 0, 21, 0, 21, 1, 1, 6, 3, 0, 56, 0, 2, 9, 0, 1, 6, 4, 2, 1, 0, 2, 20, 0, 0, 0, 11, 15, 5, 2, 15, 8, 79, 7, 0, 0, 4, 0, 0, 3, 1, 2, 6, 1, 3, 0, 3, 0, 15, 0, 14, 9, 0, 8, 0, 3, 0, 1, 12, 0, 0, 6, 0, 1, 7, 0, 28, 1, 7, 0, 30, 37, 12, 2, 5, 7, 0, 0, 1, 3, 6, 13, 0, 0, 2, 0, 6, 1, 3, 4, 14, 3, 1, 11, 1, 0, 0, 1, 1, 0, 17, 0, 3, 2, 7, 0, 5, 29, 0, 2, 67, 0, 0, 0, 0, 2, 3, 14, 6, 4, 49, 2, 71, 0, 5, 7, 0, 14, 0, 3, 0, 2, 0, 0, 0, 64, 0, 0, 1, 0, 2, 1, 3, 1, 29, 0, 7, 1, 56, 0, 0, 18, 0, 5, 3, 9, 4, 1, 3, 5, 7, 40, 0, 4, 3, 1, 1, 4, 17, 8, 5, 0, 6, 4, 11, 4, 11, 0, 6, 5, 0, 0, 3, 4, 3, 3, 2, 0, 1, 0, 10, 0, 10, 0, 20, 10, 6, 8, 3, 0, 3, 0, 2, 1, 0, 23, 10, 0, 5, 0, 2, 44, 0, 14, 1, 5, 0, 8, 9, 0, 3, 2, 0, 16, 32, 0, 2, 11, 4, 12, 3, 0, 1, 18, 2, 3, 0, 1, 35, 4, 5, 0, 0, 1, 3, 0, 1, 2, 1, 3, 0, 0, 6, 11, 3, 2, 0, 5, 0, 3, 5, 8, 0, 0, 0, 8, 10, 5, 96, 0, 0, 11, 5, 0, 17, 2, 12, 4, 38, 2, 0, 7, 8, 0, 3, 9, 11, 0, 4, 4, 2, 11, 2, 3, 1, 8, 0, 33, 8, 0, 0, 2, 3, 0, 1, 15, 0, 40, 8, 0, 1, 1, 12, 3, 10, 1, 1, 0, 12, 1, 2, 71, 0, 0, 0, 41, 2, 6, 3, 0, 0, 3, 2, 1, 0, 0, 11, 39, 0, 19, 46, 7, 0, 0, 0, 3, 1, 6, 2, 55, 9, 6, 29, 4, 1, 0, 3, 2, 2, 10, 1, 2, 0, 5, 2, 0, 4, 0, 22, 16, 8, 0, 10, 10, 11, 3, 6, 14, 1, 5, 4, 9, 9, 30, 11, 2, 4, 7, 0, 2, 9, 0, 33, 2, 7, 2, 6, 0, 3, 1, 4, 0, 5, 5, 5, 11, 0, 4, 0, 4, 0, 1, 0, 2, 5, 0, 30, 0, 0, 21, 13, 1, 0, 7, 0, 2, 1, 0, 3, 8, 0, 0, 19, 0, 2, 0, 13, 1, 2, 10, 7, 53, 2, 6, 3, 5, 7, 4, 0, 2, 5, 0, 1, 8, 0, 0, 0, 8, 36, 2, 0, 16, 43, 0, 8, 2, 0, 3, 6, 0, 10, 4, 3, 6, 0, 2, 1, 1, 7, 0, 8, 22, 2, 2, 0, 0, 2, 0, 20, 2, 0, 7, 3, 2, 3, 13, 1, 12, 1, 0, 1, 8, 13, 5, 15, 20, 1, 9, 4, 0, 0, 11, 1, 24, 0, 20, 3, 3, 13, 28, 5, 13, 0, 0, 5, 2]
+2019-04-16 12:58:01,292 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 1315.172
+[DONE]
