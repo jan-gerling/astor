@@ -1,0 +1,246 @@
+2019-04-17 14:29:26,092 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jmutrepair  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests/math_77  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.1  -maxtime  100  -stopfirst  true]
+2019-04-17 14:29:26,870 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/test/astor/./outputMutation/AstorMain-math_77//bin//default from 230 classes with test cases
+2019-04-17 14:29:26,872 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.1
+2019-04-17 14:29:27,588 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/test/astor/./outputMutation/AstorMain-math_77//bin//default, /home/jan_gerling/test/astor/./examples/libs/junit-4.4.jar]
+2019-04-17 14:29:39,760 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.linear.ArrayRealVectorTest#testBasicFunctions
+2019-04-17 14:29:39,764 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.linear.SparseRealVectorTest#testBasicFunctions
+2019-04-17 14:29:39,769 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2129, fails: 2, GZoltar suspicious 17017
+2019-04-17 14:29:39,782 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 75 with susp > 0.1, we consider: 75
+2019-04-17 14:29:39,791 INFO main - building model: /home/jan_gerling/test/astor/./outputMutation/AstorMain-math_77//src//default, compliance level: 8
+2019-04-17 14:29:47,447 INFO main - 
+---- Initial suspicious size: 75
+2019-04-17 14:29:47,499 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{getL1Norm()D 0.0, lineNumber=709, susp=0.7071067811865475]
+2019-04-17 14:29:47,508 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{getL1Norm()D 0.0, lineNumber=710, susp=0.7071067811865475]
+2019-04-17 14:29:47,516 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{getL1Norm()D 0.0, lineNumber=711, susp=0.7071067811865475]
+2019-04-17 14:29:47,525 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{getL1Norm()D 0.0, lineNumber=713, susp=0.7071067811865475]
+2019-04-17 14:29:47,535 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{getLInfNorm()D 0.0, lineNumber=719, susp=0.7071067811865475]
+2019-04-17 14:29:47,545 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{getLInfNorm()D 0.0, lineNumber=720, susp=0.7071067811865475]
+2019-04-17 14:29:47,553 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{getLInfNorm()D 0.0, lineNumber=721, susp=0.7071067811865475]
+2019-04-17 14:29:47,559 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{getLInfNorm()D 0.0, lineNumber=723, susp=0.7071067811865475]
+2019-04-17 14:29:47,575 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractRealVector, methodName=org.apache.commons.math.linear.AbstractRealVector{getNorm()D 0.0, lineNumber=210, susp=0.7071067811865475]
+2019-04-17 14:29:47,580 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractRealVector, methodName=org.apache.commons.math.linear.AbstractRealVector{getNorm()D 0.0, lineNumber=211, susp=0.7071067811865475]
+2019-04-17 14:29:47,585 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractRealVector, methodName=org.apache.commons.math.linear.AbstractRealVector{getNorm()D 0.0, lineNumber=213, susp=0.7071067811865475]
+2019-04-17 14:29:47,591 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractRealVector, methodName=org.apache.commons.math.linear.AbstractRealVector{getNorm()D 0.0, lineNumber=214, susp=0.7071067811865475]
+2019-04-17 14:29:47,597 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractRealVector, methodName=org.apache.commons.math.linear.AbstractRealVector{getNorm()D 0.0, lineNumber=215, susp=0.7071067811865475]
+2019-04-17 14:29:47,602 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractRealVector, methodName=org.apache.commons.math.linear.AbstractRealVector{getNorm()D 0.0, lineNumber=216, susp=0.7071067811865475]
+2019-04-17 14:29:47,608 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractRealVector, methodName=org.apache.commons.math.linear.AbstractRealVector{getNorm()D 0.0, lineNumber=217, susp=0.7071067811865475]
+2019-04-17 14:29:47,612 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractRealVector, methodName=org.apache.commons.math.linear.AbstractRealVector{getL1Norm()D 0.0, lineNumber=222, susp=0.7071067811865475]
+2019-04-17 14:29:47,616 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractRealVector, methodName=org.apache.commons.math.linear.AbstractRealVector{getL1Norm()D 0.0, lineNumber=223, susp=0.7071067811865475]
+2019-04-17 14:29:47,620 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractRealVector, methodName=org.apache.commons.math.linear.AbstractRealVector{getL1Norm()D 0.0, lineNumber=225, susp=0.7071067811865475]
+2019-04-17 14:29:47,623 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractRealVector, methodName=org.apache.commons.math.linear.AbstractRealVector{getL1Norm()D 0.0, lineNumber=226, susp=0.7071067811865475]
+2019-04-17 14:29:47,625 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.AbstractRealVector, methodName=org.apache.commons.math.linear.AbstractRealVector{getL1Norm()D 0.0, lineNumber=228, susp=0.7071067811865475]
+2019-04-17 14:29:47,644 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector, methodName=org.apache.commons.math.linear.OpenMapRealVector{getLInfNorm()D 0.0, lineNumber=499, susp=0.7071067811865475]
+2019-04-17 14:29:47,648 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector, methodName=org.apache.commons.math.linear.OpenMapRealVector{getLInfNorm()D 0.0, lineNumber=500, susp=0.7071067811865475]
+2019-04-17 14:29:47,652 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector, methodName=org.apache.commons.math.linear.OpenMapRealVector{getLInfNorm()D 0.0, lineNumber=501, susp=0.7071067811865475]
+2019-04-17 14:29:47,655 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector, methodName=org.apache.commons.math.linear.OpenMapRealVector{getLInfNorm()D 0.0, lineNumber=502, susp=0.7071067811865475]
+2019-04-17 14:29:47,660 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector, methodName=org.apache.commons.math.linear.OpenMapRealVector{getLInfNorm()D 0.0, lineNumber=503, susp=0.7071067811865475]
+2019-04-17 14:29:47,663 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector, methodName=org.apache.commons.math.linear.OpenMapRealVector{getLInfNorm()D 0.0, lineNumber=505, susp=0.7071067811865475]
+2019-04-17 14:29:47,669 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector$OpenMapEntry, methodName=org.apache.commons.math.linear.OpenMapRealVector$OpenMapEntry{getValue()D 0.0, lineNumber=832, susp=0.5]
+2019-04-17 14:29:47,689 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector, methodName=org.apache.commons.math.linear.OpenMapRealVector{sparseIterator()Ljava/util/Iterator; 0.0, lineNumber=809, susp=0.5]
+2019-04-17 14:29:47,708 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector, methodName=org.apache.commons.math.linear.OpenMapRealVector{access$000(Lorg/apache/commons/math/linear/OpenMapRealVector;)Lorg/apache/commons/math/util/OpenIntToDoubleHashMap; 0.0, lineNumber=30, susp=0.5]
+2019-04-17 14:29:47,724 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector$OpenMapSparseIterator, methodName=org.apache.commons.math.linear.OpenMapRealVector$OpenMapSparseIterator{hasNext()Z 0.0, lineNumber=870, susp=0.5]
+2019-04-17 14:29:47,735 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector$OpenMapSparseIterator, methodName=org.apache.commons.math.linear.OpenMapRealVector$OpenMapSparseIterator{next()Lorg/apache/commons/math/linear/RealVector$Entry; 0.0, lineNumber=875, susp=0.5]
+2019-04-17 14:29:47,746 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector$OpenMapSparseIterator, methodName=org.apache.commons.math.linear.OpenMapRealVector$OpenMapSparseIterator{next()Lorg/apache/commons/math/linear/RealVector$Entry; 0.0, lineNumber=876, susp=0.5]
+2019-04-17 14:29:47,756 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector$OpenMapSparseIterator, methodName=org.apache.commons.math.linear.OpenMapRealVector$OpenMapSparseIterator{next()Ljava/lang/Object; 0.0, lineNumber=854, susp=0.5]
+2019-04-17 14:29:47,764 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.OpenMapRealVector, methodName=org.apache.commons.math.linear.OpenMapRealVector{isDefaultValue(D)Z 0.0, lineNumber=205, susp=0.2672612419124244]
+2019-04-17 14:29:47,775 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{getNorm()D 0.0, lineNumber=699, susp=0.19611613513818404]
+2019-04-17 14:29:47,786 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{getNorm()D 0.0, lineNumber=700, susp=0.19611613513818404]
+2019-04-17 14:29:47,796 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{getNorm()D 0.0, lineNumber=701, susp=0.19611613513818404]
+2019-04-17 14:29:47,806 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.linear.ArrayRealVector, methodName=org.apache.commons.math.linear.ArrayRealVector{getNorm()D 0.0, lineNumber=703, susp=0.19611613513818404]
+2019-04-17 14:29:47,823 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{access$300(Lorg/apache/commons/math/util/OpenIntToDoubleHashMap;)[D 0.0, lineNumber=39, susp=0.18257418583505536]
+2019-04-17 14:29:47,832 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator{hasNext()Z 0.0, lineNumber=525, susp=0.18257418583505536]
+2019-04-17 14:29:47,857 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator{value()D 0.0, lineNumber=561, susp=0.18257418583505536]
+2019-04-17 14:29:47,864 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator{advance()V 0.0, lineNumber=586, susp=0.18257418583505536]
+2019-04-17 14:29:47,878 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{iterator()Lorg/apache/commons/math/util/OpenIntToDoubleHashMap$Iterator; 0.0, lineNumber=248, susp=0.17677669529663687]
+2019-04-17 14:29:47,889 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{access$100(Lorg/apache/commons/math/util/OpenIntToDoubleHashMap;)I 0.0, lineNumber=39, susp=0.17677669529663687]
+2019-04-17 14:29:47,902 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{access$400(Lorg/apache/commons/math/util/OpenIntToDoubleHashMap;)[B 0.0, lineNumber=39, susp=0.17677669529663687]
+2019-04-17 14:29:47,916 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator{advance()V 0.0, lineNumber=578, susp=0.17677669529663687]
+2019-04-17 14:29:47,924 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator{advance()V 0.0, lineNumber=582, susp=0.17677669529663687]
+2019-04-17 14:29:47,927 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator{advance()V 0.0, lineNumber=590, susp=0.17677669529663687]
+2019-04-17 14:29:47,930 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator{advance()V 0.0, lineNumber=592, susp=0.17677669529663687]
+2019-04-17 14:29:47,934 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{computeCapacity(I)I 0.0, lineNumber=166, susp=0.10101525445522107]
+2019-04-17 14:29:47,937 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{findInsertionIndex(I)I 0.0, lineNumber=266, susp=0.10101525445522107]
+2019-04-17 14:29:47,941 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{findInsertionIndex([I[BII)I 0.0, lineNumber=279, susp=0.10101525445522107]
+2019-04-17 14:29:47,947 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{findInsertionIndex([I[BII)I 0.0, lineNumber=280, susp=0.10101525445522107]
+2019-04-17 14:29:47,955 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{findInsertionIndex([I[BII)I 0.0, lineNumber=282, susp=0.10101525445522107]
+2019-04-17 14:29:47,959 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{put(ID)D 0.0, lineNumber=417, susp=0.10101525445522107]
+2019-04-17 14:29:47,963 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{put(ID)D 0.0, lineNumber=418, susp=0.10101525445522107]
+2019-04-17 14:29:47,966 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{put(ID)D 0.0, lineNumber=419, susp=0.10101525445522107]
+2019-04-17 14:29:47,974 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{put(ID)D 0.0, lineNumber=425, susp=0.10101525445522107]
+2019-04-17 14:29:47,979 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{put(ID)D 0.0, lineNumber=426, susp=0.10101525445522107]
+2019-04-17 14:29:47,984 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{put(ID)D 0.0, lineNumber=427, susp=0.10101525445522107]
+2019-04-17 14:29:47,993 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{put(ID)D 0.0, lineNumber=429, susp=0.10101525445522107]
+2019-04-17 14:29:48,000 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{put(ID)D 0.0, lineNumber=433, susp=0.10101525445522107]
+2019-04-17 14:29:48,004 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{put(ID)D 0.0, lineNumber=435, susp=0.10101525445522107]
+2019-04-17 14:29:48,007 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{shouldGrowTable()Z 0.0, lineNumber=476, susp=0.10101525445522107]
+2019-04-17 14:29:48,011 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{computeCapacity(I)I 0.0, lineNumber=163, susp=0.1]
+2019-04-17 14:29:48,016 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.OpenIntToDoubleHashMap, methodName=org.apache.commons.math.util.OpenIntToDoubleHashMap{computeCapacity(I)I 0.0, lineNumber=164, susp=0.1]
+2019-04-17 14:29:48,022 INFO main - Total suspicious from FL: 75,  9
+2019-04-17 14:29:48,022 INFO main - Total ModPoint created: 9
+2019-04-17 14:29:48,022 INFO main - Creating program variant #1, [Variant id: 1, #gens: 9, #ops: 0, parent:-]
+2019-04-17 14:29:57,053 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-17 14:29:57,054 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-17 14:29:57,054 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-17 14:29:57,054 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-17 14:29:57,054 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.1
+2019-04-17 14:29:57,054 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-17 14:29:57,054 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-17 14:29:57,054 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-17 14:29:57,054 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-17 14:29:57,054 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-17 14:29:57,054 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-17 14:29:57,054 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-17 14:29:57,054 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-17 14:29:57,054 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/test/astor/./outputMutation
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jmutrepair
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= defect4j_tests/math_77
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-17 14:29:57,055 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= package
+2019-04-17 14:29:57,056 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-17 14:29:57,057 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-17 14:29:57,059 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 554, el: CtIfImpl
+2019-04-17 14:29:57,060 INFO main - -->op: IfExpresionMutOp: `(referenceCount) != (coun[...] ` ---> `(referenceCount) == (coun[...]` at pos -1 of parent `-`
+2019-04-17 14:29:58,338 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 554, el: CtIfImpl
+2019-04-17 14:29:58,338 INFO main - -->op: IfExpresionMutOp: `(referenceCount) != (coun[...] ` ---> `(referenceCount) >= (coun[...]` at pos -1 of parent `-`
+2019-04-17 14:29:58,999 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 554, el: CtIfImpl
+2019-04-17 14:29:59,000 INFO main - -->op: IfExpresionMutOp: `(referenceCount) != (coun[...] ` ---> `(referenceCount) > (count[...]` at pos -1 of parent `-`
+2019-04-17 14:29:59,666 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 554, el: CtIfImpl
+2019-04-17 14:29:59,667 INFO main - -->op: IfExpresionMutOp: `(referenceCount) != (coun[...] ` ---> `(referenceCount) <= (coun[...]` at pos -1 of parent `-`
+2019-04-17 14:30:00,237 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 554, el: CtIfImpl
+2019-04-17 14:30:00,238 INFO main - -->op: IfExpresionMutOp: `(referenceCount) != (coun[...] ` ---> `(referenceCount) < (count[...]` at pos -1 of parent `-`
+2019-04-17 14:30:00,741 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 554, el: CtIfImpl
+2019-04-17 14:30:00,741 INFO main - -->op: IfExpresionMutOp: `(referenceCount) != (coun[...] ` ---> `!((referenceCount) != (co[...]` at pos -1 of parent `-`
+2019-04-17 14:30:01,259 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 558, el: CtIfImpl
+2019-04-17 14:30:01,259 INFO main - -->op: IfExpresionMutOp: `(current) < 0 ` ---> `(current) == 0` at pos -1 of parent `-`
+2019-04-17 14:30:01,808 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 558, el: CtIfImpl
+2019-04-17 14:30:01,809 INFO main - -->op: IfExpresionMutOp: `(current) < 0 ` ---> `(current) != 0` at pos -1 of parent `-`
+2019-04-17 14:30:02,363 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 558, el: CtIfImpl
+2019-04-17 14:30:02,363 INFO main - -->op: IfExpresionMutOp: `(current) < 0 ` ---> `(current) >= 0` at pos -1 of parent `-`
+2019-04-17 14:30:02,828 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 558, el: CtIfImpl
+2019-04-17 14:30:02,828 INFO main - -->op: IfExpresionMutOp: `(current) < 0 ` ---> `(current) > 0` at pos -1 of parent `-`
+2019-04-17 14:30:03,286 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 558, el: CtIfImpl
+2019-04-17 14:30:03,287 INFO main - -->op: IfExpresionMutOp: `(current) < 0 ` ---> `(current) <= 0` at pos -1 of parent `-`
+2019-04-17 14:30:03,777 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 558, el: CtIfImpl
+2019-04-17 14:30:03,777 INFO main - -->op: IfExpresionMutOp: `(current) < 0 ` ---> `!((current) < 0)` at pos -1 of parent `-`
+2019-04-17 14:30:04,197 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 587, el: CtIfImpl
+2019-04-17 14:30:04,198 INFO main - -->op: IfExpresionMutOp: `(current) < 0 ` ---> `(current) == 0` at pos -1 of parent `-`
+2019-04-17 14:30:04,648 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 587, el: CtIfImpl
+2019-04-17 14:30:04,648 INFO main - -->op: IfExpresionMutOp: `(current) < 0 ` ---> `(current) != 0` at pos -1 of parent `-`
+2019-04-17 14:30:05,111 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 587, el: CtIfImpl
+2019-04-17 14:30:05,112 INFO main - -->op: IfExpresionMutOp: `(current) < 0 ` ---> `(current) >= 0` at pos -1 of parent `-`
+2019-04-17 14:30:05,515 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 587, el: CtIfImpl
+2019-04-17 14:30:05,516 INFO main - -->op: IfExpresionMutOp: `(current) < 0 ` ---> `(current) > 0` at pos -1 of parent `-`
+2019-04-17 14:30:05,965 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 587, el: CtIfImpl
+2019-04-17 14:30:05,965 INFO main - -->op: IfExpresionMutOp: `(current) < 0 ` ---> `(current) <= 0` at pos -1 of parent `-`
+2019-04-17 14:30:06,371 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 587, el: CtIfImpl
+2019-04-17 14:30:06,371 INFO main - -->op: IfExpresionMutOp: `(current) < 0 ` ---> `!((current) < 0)` at pos -1 of parent `-`
+2019-04-17 14:30:06,783 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 572, el: CtIfImpl
+2019-04-17 14:30:06,784 INFO main - -->op: IfExpresionMutOp: `(referenceCount) != (coun[...] ` ---> `(referenceCount) == (coun[...]` at pos -1 of parent `-`
+2019-04-17 14:30:07,171 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 572, el: CtIfImpl
+2019-04-17 14:30:07,171 INFO main - -->op: IfExpresionMutOp: `(referenceCount) != (coun[...] ` ---> `(referenceCount) >= (coun[...]` at pos -1 of parent `-`
+2019-04-17 14:30:07,614 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 572, el: CtIfImpl
+2019-04-17 14:30:07,615 INFO main - -->op: IfExpresionMutOp: `(referenceCount) != (coun[...] ` ---> `(referenceCount) > (count[...]` at pos -1 of parent `-`
+2019-04-17 14:30:08,046 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 572, el: CtIfImpl
+2019-04-17 14:30:08,046 INFO main - -->op: IfExpresionMutOp: `(referenceCount) != (coun[...] ` ---> `(referenceCount) <= (coun[...]` at pos -1 of parent `-`
+2019-04-17 14:30:08,456 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 572, el: CtIfImpl
+2019-04-17 14:30:08,456 INFO main - -->op: IfExpresionMutOp: `(referenceCount) != (coun[...] ` ---> `(referenceCount) < (count[...]` at pos -1 of parent `-`
+2019-04-17 14:30:08,918 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 572, el: CtIfImpl
+2019-04-17 14:30:08,918 INFO main - -->op: IfExpresionMutOp: `(referenceCount) != (coun[...] ` ---> `!((referenceCount) != (co[...]` at pos -1 of parent `-`
+2019-04-17 14:30:09,383 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 281, el: CtIfImpl
+2019-04-17 14:30:09,383 INFO main - -->op: IfExpresionMutOp: `(states[index]) == (org.a[...] ` ---> `(states[index]) != (org.a[...]` at pos -1 of parent `-`
+2019-04-17 14:30:09,886 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 281, el: CtIfImpl
+2019-04-17 14:30:09,886 INFO main - -->op: IfExpresionMutOp: `(states[index]) == (org.a[...] ` ---> `(states[index]) >= (org.a[...]` at pos -1 of parent `-`
+2019-04-17 14:30:10,322 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 281, el: CtIfImpl
+2019-04-17 14:30:10,323 INFO main - -->op: IfExpresionMutOp: `(states[index]) == (org.a[...] ` ---> `(states[index]) > (org.ap[...]` at pos -1 of parent `-`
+2019-04-17 14:30:10,736 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 281, el: CtIfImpl
+2019-04-17 14:30:10,736 INFO main - -->op: IfExpresionMutOp: `(states[index]) == (org.a[...] ` ---> `(states[index]) <= (org.a[...]` at pos -1 of parent `-`
+2019-04-17 14:30:11,146 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 281, el: CtIfImpl
+2019-04-17 14:30:11,146 INFO main - -->op: IfExpresionMutOp: `(states[index]) == (org.a[...] ` ---> `(states[index]) < (org.ap[...]` at pos -1 of parent `-`
+2019-04-17 14:30:11,556 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 281, el: CtIfImpl
+2019-04-17 14:30:11,557 INFO main - -->op: IfExpresionMutOp: `(states[index]) == (org.a[...] ` ---> `!((states[index]) == (org[...]` at pos -1 of parent `-`
+2019-04-17 14:30:11,958 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 420, el: CtIfImpl
+2019-04-17 14:30:11,959 INFO main - -->op: IfExpresionMutOp: `index < 0 ` ---> `index == 0` at pos -1 of parent `-`
+2019-04-17 14:30:12,353 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 420, el: CtIfImpl
+2019-04-17 14:30:12,353 INFO main - -->op: IfExpresionMutOp: `index < 0 ` ---> `index != 0` at pos -1 of parent `-`
+2019-04-17 14:30:12,758 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 420, el: CtIfImpl
+2019-04-17 14:30:12,759 INFO main - -->op: IfExpresionMutOp: `index < 0 ` ---> `index >= 0` at pos -1 of parent `-`
+2019-04-17 14:30:13,157 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 420, el: CtIfImpl
+2019-04-17 14:30:13,158 INFO main - -->op: IfExpresionMutOp: `index < 0 ` ---> `index > 0` at pos -1 of parent `-`
+2019-04-17 14:30:13,558 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 420, el: CtIfImpl
+2019-04-17 14:30:13,558 INFO main - -->op: IfExpresionMutOp: `index < 0 ` ---> `index <= 0` at pos -1 of parent `-`
+2019-04-17 14:30:14,082 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 420, el: CtIfImpl
+2019-04-17 14:30:14,083 INFO main - -->op: IfExpresionMutOp: `index < 0 ` ---> `!(index < 0)` at pos -1 of parent `-`
+2019-04-17 14:30:14,667 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 428, el: CtIfImpl
+2019-04-17 14:30:14,667 INFO main - -->op: IfExpresionMutOp: `newMapping ` ---> `!newMapping` at pos -1 of parent `-`
+2019-04-17 14:30:15,123 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 430, el: CtIfImpl
+2019-04-17 14:30:15,123 INFO main - -->op: IfExpresionMutOp: `shouldGrowTable() ` ---> `!(shouldGrowTable())` at pos -1 of parent `-`
+2019-04-17 14:30:15,561 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 165, el: CtIfImpl
+2019-04-17 14:30:15,561 INFO main - -->op: IfExpresionMutOp: `powerOfTwo == capacity ` ---> `powerOfTwo != capacity` at pos -1 of parent `-`
+2019-04-17 14:30:15,962 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 165, el: CtIfImpl
+2019-04-17 14:30:15,963 INFO main - -->op: IfExpresionMutOp: `powerOfTwo == capacity ` ---> `powerOfTwo >= capacity` at pos -1 of parent `-`
+2019-04-17 14:30:16,366 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 165, el: CtIfImpl
+2019-04-17 14:30:16,366 INFO main - -->op: IfExpresionMutOp: `powerOfTwo == capacity ` ---> `powerOfTwo > capacity` at pos -1 of parent `-`
+2019-04-17 14:30:16,781 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 165, el: CtIfImpl
+2019-04-17 14:30:16,782 INFO main - -->op: IfExpresionMutOp: `powerOfTwo == capacity ` ---> `powerOfTwo <= capacity` at pos -1 of parent `-`
+2019-04-17 14:30:17,206 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 165, el: CtIfImpl
+2019-04-17 14:30:17,207 INFO main - -->op: IfExpresionMutOp: `powerOfTwo == capacity ` ---> `powerOfTwo < capacity` at pos -1 of parent `-`
+2019-04-17 14:30:17,636 INFO main - mod_point ModificPoint=OpenIntToDoubleHashMap line: 165, el: CtIfImpl
+2019-04-17 14:30:17,637 INFO main - -->op: IfExpresionMutOp: `powerOfTwo == capacity ` ---> `!(powerOfTwo == capacity)` at pos -1 of parent `-`
+2019-04-17 14:30:18,078 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-17 14:30:18,079 INFO main - 
+successful_ing_attempts (0): []
+2019-04-17 14:30:18,079 INFO main - 
+failing_ing_attempts (44): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-17 14:30:18,079 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 51.98
