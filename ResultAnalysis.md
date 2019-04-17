@@ -54,6 +54,8 @@ Found by jkali local
 * just removed the throw of the exception
 * different from the paper, see snippet below
 * stoped here, because we have set stopfirst to true
+Hypothesis: remove stopfirst true to get more reasonable results
+TODO: rerun without stopfirst true
 
 ![Solution presented in the astor paper](Math-85-paper-solution.PNG)
 
@@ -62,6 +64,7 @@ Found by jkali local
 ### Math 50
 
 No Solution found!
+TODO: analyze rerun for math 50 with lower threshold
 
 ## Exception Analysis
 
