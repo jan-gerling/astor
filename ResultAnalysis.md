@@ -36,7 +36,8 @@ jgenprog local found this fix in 38.298 seconds
 
 ### Math 85
 
-Found by jkali loca, jkali package, jkali gobal, jgenprog local, jgenprog package
+Found by jkali local
+, jkali package, jkali gobal, jgenprog local, jgenprog package
 
 **Original statement:**
 
@@ -52,7 +53,7 @@ Found by jkali loca, jkali package, jkali gobal, jgenprog local, jgenprog packag
 
 * just removed the throw of the exception
 * different from the paper, see snippet below
-* not solving the problem at all!
+* stoped here, because we have set stopfirst to true
 
 ![Solution presented in the astor paper](Math-85-paper-solution.PNG)
 
@@ -68,6 +69,8 @@ No Solution found!
 *Variant without any modification point. It must have at least one.*
 
 * for unkwown reasons, jmutreapair finds some suspicious files/ points but reduces them all to none
+TODO:  - run jmutrepair with treshold .1 on IllegalStatExceptions runs
+Hypothesis: too high ftreshold -> 0.1
 
 ### SpoonException	
 *Cannot insert a statement before a super or this invocation.* 
