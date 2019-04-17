@@ -6,7 +6,7 @@ To run Astor for our final setup follow this guideline.
 
 ### VM Creation:
 
-- **7vCPUs** - *because Astor does only require a fraction of the available resources*
+- **6vCPUs** - *because Astor does only require a fraction of the available resources*
 - **39GB Memory** - *this should be enough*
 - **Debian 9 Stretch**
 
