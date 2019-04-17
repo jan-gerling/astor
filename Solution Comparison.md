@@ -1,4 +1,10 @@
-## Solution Comparison:
+## Time Analysis
+* execution time very similar for jmutrepair and jkali, because they are not locality aware
+* but once solution found on different localities, for math 81, because global had an IllegalState exception  
+* often package and local had very similar runtimes, but occasionally (e.g. 70, 73, 76, 77, 81, 86, 89) local was much faster, because the scope is smaller
+* in general package runs much faster than global, because the scope is much smaller
+
+## Fix Comparison:
 
 ### Math 70
 
@@ -47,4 +53,3 @@ Found by jkali loca, jkali package, jkali gobal, jgenprog local, jgenprog packag
 ### Math 50
 
 No Solution found!
-
