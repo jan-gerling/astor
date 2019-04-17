@@ -1,9 +1,9 @@
 ## Time Analysis
-* execution time very similar for jmutrepair and jkali, because they are not locality aware
-* but once solution found on different localities, for math 81, because global had an IllegalState exception  
-* often package and local had very similar runtimes, but occasionally (e.g. 70, 73, 76, 77, 81, 86, 89) local was much faster, because the scope is smaller
+* execution time very similar for jmutrepair and jkali for different scopes, because they are not locality aware
+* but once solutions were found on different localities (math 81) because global had an IllegalState Exception  
+* often package and local had very similar runtimes, but occasionally (math 70, 73, 76, 77, 81, 86, 89) local was much faster, because the scope is smaller
 * in general package runs much faster than global, because the scope is much smaller
-* in general we took considerably longer to run astor (factor 2 - 5)
+* in general our executions took considerably longer to run astor than the paper (factor 2 - 5)
 
 
 ## Fix Comparison:
