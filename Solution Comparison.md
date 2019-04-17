@@ -60,3 +60,15 @@ Found by jkali loca, jkali package, jkali gobal, jgenprog local, jgenprog packag
 ### Math 50
 
 No Solution found!
+
+## Exception Analysis
+
+### IllegalStateException 
+*Variant without any modification point. It must have at least one.*
+
+* for unkwown reasons, jmutreapair finds some suspicious files/ points but reduces them all to none
+
+### SpoonException	
+*Cannot insert a statement before a super or this invocation.* 
+
+* the source code to be fixed is a constructor calling a constructor from a super class and spoon cannot interact with those
