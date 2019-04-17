@@ -3,8 +3,15 @@
 * but once solution found on different localities, for math 81, because global had an IllegalState exception  
 * often package and local had very similar runtimes, but occasionally (e.g. 70, 73, 76, 77, 81, 86, 89) local was much faster, because the scope is smaller
 * in general package runs much faster than global, because the scope is much smaller
+* in general we took considerably longer to run astor (factor 2 - 5)
+
 
 ## Fix Comparison:
+* for the math problems 50 - 89 we found less solutions, than the paper
+Because:
+  * jmutrepair often had an IllegalStateException, where it could not find any variation and therefore, no results (math 71)
+  * for math 50, 78, 82 we did not find a solution with any of the specs, this might be due to a different version of astor, and or a different seed
+
 
 ### Math 70
 
