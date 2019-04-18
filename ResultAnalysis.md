@@ -5,14 +5,14 @@
 * in general package runs much faster than global, because the scope is much smaller
 * in general our executions took considerably longer to run astor than the paper (factor 2 - 5), probably due to the hardware, but it was not stated in the paper
 *  very similar ration on time comparison between scopes (see chart Time Comparison)
-
+![Time comparison in jgenprog for different localities](TimeComparison.PNG)
 
 ## Fix Comparison:
 * for the math problems 50 - 89 we found less solutions, than the paper
 Because:
   * jmutrepair often had an IllegalStateException, where it could not find any variation and therefore, no fixes
-  * for math 50, 71, 78, 82 we did not find a fix with any of the specs, this might be due to a different version of astor, and or a different seed - TODO: analyze further
-
+  * for math 50, 71, 78, 82 we did not find a fix with any of the specs, this might be due to a different version of astor, and or a different seed - TODO: analyze further?
+![All results for math 50 - 89](FullResults.PNG)
 
 ### Math 70
 
@@ -55,16 +55,13 @@ Found by jkali local
 * different from the paper, see snippet below
 * stoped here, because we have set stopfirst to true
 Hypothesis: remove stopfirst true to get more reasonable results
-TODO: rerun without stopfirst true
 
 ![Solution presented in the astor paper](Math-85-paper-solution.PNG)
-
-
 
 ### Math 50
 
 No Solution found!
-TODO: analyze rerun for math 50 with lower threshold
+
 
 ## Exception Analysis
 
@@ -73,6 +70,7 @@ TODO: analyze rerun for math 50 with lower threshold
 
 * for unkwown reasons, jmutreapair finds some suspicious files/ points but reduces them all to none
 * if the flthreshold is lower, 0.1, it is more likely to not throw the exception (see table Jmutrepair with threshhold 0.1)
+![Jmutrepair package with flthreshold 0.1](Jmutrepair-with-lower-threshold.PNG)
 
 ### SpoonException	
 *Cannot insert a statement before a super or this invocation.* 
