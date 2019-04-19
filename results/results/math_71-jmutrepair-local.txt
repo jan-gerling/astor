@@ -1,0 +1,29 @@
+2019-04-12 11:19:59,728 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jmutrepair  -scope  local  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests/math_71/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-12 11:20:00,403 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//bin//default from 234 classes with test cases
+2019-04-12 11:20:00,405 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-12 11:20:01,040 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//bin//default]
+2019-04-12 11:20:12,133 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.random.RandomAdaptorTest#testNextPoissonConsistency
+2019-04-12 11:20:12,136 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testMissedEndEvent
+2019-04-12 11:20:12,137 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testMissedEndEvent
+2019-04-12 11:20:12,141 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2169, fails: 3, GZoltar suspicious 17016
+2019-04-12 11:20:12,150 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 4 with susp > 0.5, we consider: 4
+2019-04-12 11:20:12,159 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_71//src//default, compliance level: 8
+2019-04-12 11:20:18,057 INFO main - 
+---- Initial suspicious size: 4
+2019-04-12 11:20:18,078 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.events.EventState, methodName=org.apache.commons.math.ode.events.EventState{evaluateStep(Lorg/apache/commons/math/ode/sampling/StepInterpolator;)Z 0.0, lineNumber=231, susp=0.8164965809277261]
+2019-04-12 11:20:18,078 INFO main -  Not ctClass for suspicious code Candidate [className=org.apache.commons.math.RetryTestCase, methodName=org.apache.commons.math.RetryTestCase{runTest()V 0.0, lineNumber=52, susp=0.5773502691896258]
+2019-04-12 11:20:18,078 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.RetryTestCase, methodName=org.apache.commons.math.RetryTestCase{runTest()V 0.0, lineNumber=52, susp=0.5773502691896258]
+2019-04-12 11:20:18,086 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=180, susp=0.5773502691896258]
+2019-04-12 11:20:18,095 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator, methodName=org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator{integrate(Lorg/apache/commons/math/ode/FirstOrderDifferentialEquations;D[DD[D)D 0.0, lineNumber=300, susp=0.5773502691896258]
+2019-04-12 11:20:18,095 INFO main - Total suspicious from FL: 4,  0
+2019-04-12 11:20:18,095 INFO main - Total ModPoint created: 0
+2019-04-12 11:20:18,095 INFO main - Creating program variant #1, [Variant id: 1, #gens: 0, #ops: 0, parent:-]
+Exception in thread "main" java.lang.IllegalStateException: Variant without any modification point. It must have at least one.
+	at fr.inria.astor.approaches.jgenprog.JGenProg.initializePopulation(JGenProg.java:183)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.initPopulation(JGenProg.java:73)
+	at fr.inria.astor.approaches.jgenprog.JGenProg.createInitialPopulation(JGenProg.java:50)
+	at fr.inria.main.evolution.AstorMain.createEngine(AstorMain.java:215)
+	at fr.inria.main.evolution.AstorMain.run(AstorMain.java:498)
+	at fr.inria.main.evolution.AstorMain.execute(AstorMain.java:571)
+	at fr.inria.main.evolution.AstorMain.main(AstorMain.java:550)
+[DONE]

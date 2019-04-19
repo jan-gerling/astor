@@ -1,0 +1,226 @@
+2019-04-12 09:52:09,458 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jmutrepair  -scope  package  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  defect4j_tests/math_85/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-12 09:52:11,556 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_85//bin//default from 214 classes with test cases
+2019-04-12 09:52:11,559 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-12 09:52:13,272 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_85//bin//default]
+2019-04-12 09:52:34,667 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.distribution.NormalDistributionTest#testMath280
+2019-04-12 09:52:34,673 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:1983, fails: 1, GZoltar suspicious 16490
+2019-04-12 09:52:34,693 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 24 with susp > 0.5, we consider: 24
+2019-04-12 09:52:34,706 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_85//src//default, compliance level: 8
+2019-04-12 09:52:49,724 INFO main - 
+---- Initial suspicious size: 24
+2019-04-12 09:52:49,811 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.distribution.AbstractContinuousDistribution, methodName=org.apache.commons.math.distribution.AbstractContinuousDistribution{inverseCumulativeProbability(D)D 0.0, lineNumber=104, susp=1.0]
+2019-04-12 09:52:49,830 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils{bracket(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[D 0.0, lineNumber=199, susp=1.0]
+2019-04-12 09:52:49,834 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils{bracket(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[D 0.0, lineNumber=203, susp=1.0]
+2019-04-12 09:52:49,838 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils, methodName=org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils{bracket(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[D 0.0, lineNumber=204, susp=1.0]
+2019-04-12 09:52:49,859 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.special.Gamma, methodName=org.apache.commons.math.special.Gamma{regularizedGammaP(DDDI)D 0.0, lineNumber=181, susp=0.7071067811865475]
+2019-04-12 09:52:49,874 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.distribution.NormalDistributionImpl, methodName=org.apache.commons.math.distribution.NormalDistributionImpl{cumulativeProbability(D)D 0.0, lineNumber=128, susp=0.7071067811865475]
+2019-04-12 09:52:49,900 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.distribution.NormalDistributionImpl, methodName=org.apache.commons.math.distribution.NormalDistributionImpl{cumulativeProbability(D)D 0.0, lineNumber=132, susp=0.7071067811865475]
+2019-04-12 09:52:49,919 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.distribution.NormalDistributionImpl, methodName=org.apache.commons.math.distribution.NormalDistributionImpl{getDomainLowerBound(D)D 0.0, lineNumber=181, susp=0.7071067811865475]
+2019-04-12 09:52:49,922 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.distribution.NormalDistributionImpl, methodName=org.apache.commons.math.distribution.NormalDistributionImpl{getDomainLowerBound(D)D 0.0, lineNumber=184, susp=0.7071067811865475]
+2019-04-12 09:52:49,941 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.distribution.NormalDistributionImpl, methodName=org.apache.commons.math.distribution.NormalDistributionImpl{getDomainUpperBound(D)D 0.0, lineNumber=203, susp=0.7071067811865475]
+2019-04-12 09:52:49,944 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.distribution.NormalDistributionImpl, methodName=org.apache.commons.math.distribution.NormalDistributionImpl{getDomainUpperBound(D)D 0.0, lineNumber=206, susp=0.7071067811865475]
+2019-04-12 09:52:49,951 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.distribution.NormalDistributionImpl, methodName=org.apache.commons.math.distribution.NormalDistributionImpl{getInitialDomain(D)D 0.0, lineNumber=224, susp=0.7071067811865475]
+2019-04-12 09:52:49,966 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.distribution.NormalDistributionImpl, methodName=org.apache.commons.math.distribution.NormalDistributionImpl{getInitialDomain(D)D 0.0, lineNumber=229, susp=0.7071067811865475]
+2019-04-12 09:52:49,969 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.distribution.NormalDistributionImpl, methodName=org.apache.commons.math.distribution.NormalDistributionImpl{inverseCumulativeProbability(D)D 0.0, lineNumber=162, susp=0.5773502691896258]
+2019-04-12 09:52:49,975 INFO main - Total suspicious from FL: 24,  10
+2019-04-12 09:52:49,975 INFO main - Total ModPoint created: 10
+2019-04-12 09:52:49,975 INFO main - Creating program variant #1, [Variant id: 1, #gens: 10, #ops: 0, parent:-]
+2019-04-12 09:53:02,877 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 09:53:02,877 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-12 09:53:02,877 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jmutrepair
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-12 09:53:02,878 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= defect4j_tests/math_85/
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 09:53:02,879 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-12 09:53:02,880 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-12 09:53:02,880 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-12 09:53:02,880 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-12 09:53:02,880 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-12 09:53:02,880 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-12 09:53:02,880 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-12 09:53:02,880 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-12 09:53:02,880 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-12 09:53:02,880 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-12 09:53:02,880 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-12 09:53:02,880 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= package
+2019-04-12 09:53:02,880 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-12 09:53:02,880 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-12 09:53:02,880 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-12 09:53:02,881 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 09:53:02,884 INFO main - mod_point ModificPoint=AbstractContinuousDistribution line: 97, el: CtIfImpl
+2019-04-12 09:53:02,885 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(rootF[...] ` ---> `(java.lang.Math.abs(rootF[...]` at pos -1 of parent `-`
+2019-04-12 09:53:04,391 INFO main - mod_point ModificPoint=AbstractContinuousDistribution line: 97, el: CtIfImpl
+2019-04-12 09:53:04,392 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(rootF[...] ` ---> `(java.lang.Math.abs(rootF[...]` at pos -1 of parent `-`
+2019-04-12 09:53:05,325 INFO main - mod_point ModificPoint=AbstractContinuousDistribution line: 97, el: CtIfImpl
+2019-04-12 09:53:05,325 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(rootF[...] ` ---> `(java.lang.Math.abs(rootF[...]` at pos -1 of parent `-`
+2019-04-12 09:53:06,121 INFO main - mod_point ModificPoint=AbstractContinuousDistribution line: 97, el: CtIfImpl
+2019-04-12 09:53:06,122 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(rootF[...] ` ---> `(java.lang.Math.abs(rootF[...]` at pos -1 of parent `-`
+2019-04-12 09:53:06,941 INFO main - mod_point ModificPoint=AbstractContinuousDistribution line: 97, el: CtIfImpl
+2019-04-12 09:53:06,942 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(rootF[...] ` ---> `(java.lang.Math.abs(rootF[...]` at pos -1 of parent `-`
+2019-04-12 09:53:07,719 INFO main - mod_point ModificPoint=AbstractContinuousDistribution line: 97, el: CtIfImpl
+2019-04-12 09:53:07,720 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(rootF[...] ` ---> `!((java.lang.Math.abs(roo[...]` at pos -1 of parent `-`
+2019-04-12 09:53:08,504 INFO main - mod_point ModificPoint=AbstractContinuousDistribution line: 100, el: CtIfImpl
+2019-04-12 09:53:08,504 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(rootF[...] ` ---> `(java.lang.Math.abs(rootF[...]` at pos -1 of parent `-`
+2019-04-12 09:53:09,247 INFO main - mod_point ModificPoint=AbstractContinuousDistribution line: 100, el: CtIfImpl
+2019-04-12 09:53:09,248 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(rootF[...] ` ---> `(java.lang.Math.abs(rootF[...]` at pos -1 of parent `-`
+2019-04-12 09:53:10,001 INFO main - mod_point ModificPoint=AbstractContinuousDistribution line: 100, el: CtIfImpl
+2019-04-12 09:53:10,001 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(rootF[...] ` ---> `(java.lang.Math.abs(rootF[...]` at pos -1 of parent `-`
+2019-04-12 09:53:10,705 INFO main - mod_point ModificPoint=AbstractContinuousDistribution line: 100, el: CtIfImpl
+2019-04-12 09:53:10,705 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(rootF[...] ` ---> `(java.lang.Math.abs(rootF[...]` at pos -1 of parent `-`
+2019-04-12 09:53:11,580 INFO main - mod_point ModificPoint=AbstractContinuousDistribution line: 100, el: CtIfImpl
+2019-04-12 09:53:11,581 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(rootF[...] ` ---> `(java.lang.Math.abs(rootF[...]` at pos -1 of parent `-`
+2019-04-12 09:53:12,354 INFO main - mod_point ModificPoint=AbstractContinuousDistribution line: 100, el: CtIfImpl
+2019-04-12 09:53:12,355 INFO main - -->op: IfExpresionMutOp: `(java.lang.Math.abs(rootF[...] ` ---> `!((java.lang.Math.abs(roo[...]` at pos -1 of parent `-`
+2019-04-12 09:53:12,957 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 129, el: CtIfImpl
+2019-04-12 09:53:12,958 INFO main - -->op: IfExpresionMutOp: `x < ((mean) - (20 * (stan[...] ` ---> `x == ((mean) - (20 * (sta[...]` at pos -1 of parent `-`
+2019-04-12 09:53:13,647 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 129, el: CtIfImpl
+2019-04-12 09:53:13,647 INFO main - -->op: IfExpresionMutOp: `x < ((mean) - (20 * (stan[...] ` ---> `x != ((mean) - (20 * (sta[...]` at pos -1 of parent `-`
+2019-04-12 09:53:14,437 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 129, el: CtIfImpl
+2019-04-12 09:53:14,437 INFO main - -->op: IfExpresionMutOp: `x < ((mean) - (20 * (stan[...] ` ---> `x >= ((mean) - (20 * (sta[...]` at pos -1 of parent `-`
+2019-04-12 09:53:15,146 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 129, el: CtIfImpl
+2019-04-12 09:53:15,147 INFO main - -->op: IfExpresionMutOp: `x < ((mean) - (20 * (stan[...] ` ---> `x > ((mean) - (20 * (stan[...]` at pos -1 of parent `-`
+2019-04-12 09:53:15,842 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 129, el: CtIfImpl
+2019-04-12 09:53:15,843 INFO main - -->op: IfExpresionMutOp: `x < ((mean) - (20 * (stan[...] ` ---> `x <= ((mean) - (20 * (sta[...]` at pos -1 of parent `-`
+2019-04-12 09:53:16,585 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 129, el: CtIfImpl
+2019-04-12 09:53:16,585 INFO main - -->op: IfExpresionMutOp: `x < ((mean) - (20 * (stan[...] ` ---> `!(x < ((mean) - (20 * (st[...]` at pos -1 of parent `-`
+2019-04-12 09:53:17,317 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 131, el: CtIfImpl
+2019-04-12 09:53:17,318 INFO main - -->op: IfExpresionMutOp: `x > ((mean) + (20 * (stan[...] ` ---> `x == ((mean) + (20 * (sta[...]` at pos -1 of parent `-`
+2019-04-12 09:53:18,015 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 131, el: CtIfImpl
+2019-04-12 09:53:18,016 INFO main - -->op: IfExpresionMutOp: `x > ((mean) + (20 * (stan[...] ` ---> `x != ((mean) + (20 * (sta[...]` at pos -1 of parent `-`
+2019-04-12 09:53:18,709 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 131, el: CtIfImpl
+2019-04-12 09:53:18,709 INFO main - -->op: IfExpresionMutOp: `x > ((mean) + (20 * (stan[...] ` ---> `x >= ((mean) + (20 * (sta[...]` at pos -1 of parent `-`
+2019-04-12 09:53:19,399 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 131, el: CtIfImpl
+2019-04-12 09:53:19,399 INFO main - -->op: IfExpresionMutOp: `x > ((mean) + (20 * (stan[...] ` ---> `x <= ((mean) + (20 * (sta[...]` at pos -1 of parent `-`
+2019-04-12 09:53:19,901 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 131, el: CtIfImpl
+2019-04-12 09:53:19,901 INFO main - -->op: IfExpresionMutOp: `x > ((mean) + (20 * (stan[...] ` ---> `x < ((mean) + (20 * (stan[...]` at pos -1 of parent `-`
+2019-04-12 09:53:20,520 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 131, el: CtIfImpl
+2019-04-12 09:53:20,520 INFO main - -->op: IfExpresionMutOp: `x > ((mean) + (20 * (stan[...] ` ---> `!(x > ((mean) + (20 * (st[...]` at pos -1 of parent `-`
+2019-04-12 09:53:21,164 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 178, el: CtIfImpl
+2019-04-12 09:53:21,164 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p == 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:21,802 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 178, el: CtIfImpl
+2019-04-12 09:53:21,803 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p != 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:22,508 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 178, el: CtIfImpl
+2019-04-12 09:53:22,509 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p >= 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:23,188 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 178, el: CtIfImpl
+2019-04-12 09:53:23,188 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p > 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:23,845 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 178, el: CtIfImpl
+2019-04-12 09:53:23,845 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p <= 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:24,536 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 178, el: CtIfImpl
+2019-04-12 09:53:24,536 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `!(p < 0.5)` at pos -1 of parent `-`
+2019-04-12 09:53:25,156 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 200, el: CtIfImpl
+2019-04-12 09:53:25,157 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p == 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:25,814 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 200, el: CtIfImpl
+2019-04-12 09:53:25,815 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p != 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:26,472 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 200, el: CtIfImpl
+2019-04-12 09:53:26,473 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p >= 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:27,162 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 200, el: CtIfImpl
+2019-04-12 09:53:27,163 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p > 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:27,819 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 200, el: CtIfImpl
+2019-04-12 09:53:27,819 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p <= 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:28,481 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 200, el: CtIfImpl
+2019-04-12 09:53:28,481 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `!(p < 0.5)` at pos -1 of parent `-`
+2019-04-12 09:53:29,142 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 221, el: CtIfImpl
+2019-04-12 09:53:29,143 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p == 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:29,857 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 221, el: CtIfImpl
+2019-04-12 09:53:29,858 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p != 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:30,540 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 221, el: CtIfImpl
+2019-04-12 09:53:30,541 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p >= 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:31,217 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 221, el: CtIfImpl
+2019-04-12 09:53:31,217 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p > 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:31,821 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 221, el: CtIfImpl
+2019-04-12 09:53:31,821 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `p <= 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:32,496 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 221, el: CtIfImpl
+2019-04-12 09:53:32,497 INFO main - -->op: IfExpresionMutOp: `p < 0.5 ` ---> `!(p < 0.5)` at pos -1 of parent `-`
+2019-04-12 09:53:33,193 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 223, el: CtIfImpl
+2019-04-12 09:53:33,193 INFO main - -->op: IfExpresionMutOp: `p > 0.5 ` ---> `p == 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:33,878 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 223, el: CtIfImpl
+2019-04-12 09:53:33,878 INFO main - -->op: IfExpresionMutOp: `p > 0.5 ` ---> `p != 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:34,559 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 223, el: CtIfImpl
+2019-04-12 09:53:34,559 INFO main - -->op: IfExpresionMutOp: `p > 0.5 ` ---> `p >= 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:35,197 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 223, el: CtIfImpl
+2019-04-12 09:53:35,197 INFO main - -->op: IfExpresionMutOp: `p > 0.5 ` ---> `p <= 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:36,016 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 223, el: CtIfImpl
+2019-04-12 09:53:36,016 INFO main - -->op: IfExpresionMutOp: `p > 0.5 ` ---> `p < 0.5` at pos -1 of parent `-`
+2019-04-12 09:53:36,737 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 223, el: CtIfImpl
+2019-04-12 09:53:36,738 INFO main - -->op: IfExpresionMutOp: `p > 0.5 ` ---> `!(p > 0.5)` at pos -1 of parent `-`
+2019-04-12 09:53:37,453 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 156, el: CtIfImpl
+2019-04-12 09:53:37,453 INFO main - -->op: IfExpresionMutOp: `p == 0 ` ---> `p != 0` at pos -1 of parent `-`
+2019-04-12 09:53:38,152 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 156, el: CtIfImpl
+2019-04-12 09:53:38,152 INFO main - -->op: IfExpresionMutOp: `p == 0 ` ---> `p >= 0` at pos -1 of parent `-`
+2019-04-12 09:53:38,792 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 156, el: CtIfImpl
+2019-04-12 09:53:38,792 INFO main - -->op: IfExpresionMutOp: `p == 0 ` ---> `p > 0` at pos -1 of parent `-`
+2019-04-12 09:53:39,513 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 156, el: CtIfImpl
+2019-04-12 09:53:39,513 INFO main - -->op: IfExpresionMutOp: `p == 0 ` ---> `p <= 0` at pos -1 of parent `-`
+2019-04-12 09:53:40,169 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 156, el: CtIfImpl
+2019-04-12 09:53:40,169 INFO main - -->op: IfExpresionMutOp: `p == 0 ` ---> `p < 0` at pos -1 of parent `-`
+2019-04-12 09:53:40,889 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 156, el: CtIfImpl
+2019-04-12 09:53:40,890 INFO main - -->op: IfExpresionMutOp: `p == 0 ` ---> `!(p == 0)` at pos -1 of parent `-`
+2019-04-12 09:53:41,525 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 159, el: CtIfImpl
+2019-04-12 09:53:41,525 INFO main - -->op: IfExpresionMutOp: `p == 1 ` ---> `p != 1` at pos -1 of parent `-`
+2019-04-12 09:53:42,296 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 159, el: CtIfImpl
+2019-04-12 09:53:42,296 INFO main - -->op: IfExpresionMutOp: `p == 1 ` ---> `p >= 1` at pos -1 of parent `-`
+2019-04-12 09:53:42,957 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 159, el: CtIfImpl
+2019-04-12 09:53:42,957 INFO main - -->op: IfExpresionMutOp: `p == 1 ` ---> `p > 1` at pos -1 of parent `-`
+2019-04-12 09:53:43,563 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 159, el: CtIfImpl
+2019-04-12 09:53:43,564 INFO main - -->op: IfExpresionMutOp: `p == 1 ` ---> `p <= 1` at pos -1 of parent `-`
+2019-04-12 09:53:44,157 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 159, el: CtIfImpl
+2019-04-12 09:53:44,158 INFO main - -->op: IfExpresionMutOp: `p == 1 ` ---> `p < 1` at pos -1 of parent `-`
+2019-04-12 09:53:44,809 INFO main - mod_point ModificPoint=NormalDistributionImpl line: 159, el: CtIfImpl
+2019-04-12 09:53:44,809 INFO main - -->op: IfExpresionMutOp: `p == 1 ` ---> `!(p == 1)` at pos -1 of parent `-`
+2019-04-12 09:53:45,459 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-12 09:53:45,459 INFO main - 
+successful_ing_attempts (0): []
+2019-04-12 09:53:45,459 INFO main - 
+failing_ing_attempts (60): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 09:53:45,459 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 95.983
+[DONE]

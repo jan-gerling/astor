@@ -1,0 +1,174 @@
+2019-04-16 15:01:33,485 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jkali  -scope  local  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan_gerling/astor/defect4j_tests/math_56/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-16 15:01:36,175 INFO main - -Executing Gzoltar classpath: /home/jan_gerling/astor/./outputMutation/AstorMain-math_56//bin//default from 262 classes with test cases
+2019-04-16 15:01:36,193 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-16 15:01:37,996 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan_gerling/astor/./examples/libs/junit-4.4.jar, /home/jan_gerling/astor/./outputMutation/AstorMain-math_56//bin//default]
+2019-04-16 15:06:00,280 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.util.MultidimensionalCounterTest#testIterationConsistency
+2019-04-16 15:06:00,299 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.util.FastMathTest#checkMissingFastMathClasses
+2019-04-16 15:06:00,306 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2400, fails: 2, GZoltar suspicious 20245
+2019-04-16 15:06:00,351 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 35 with susp > 0.5, we consider: 35
+2019-04-16 15:06:00,416 INFO main - building model: /home/jan_gerling/astor/./outputMutation/AstorMain-math_56//src//default, compliance level: 8
+2019-04-16 15:06:21,408 INFO main - 
+---- Initial suspicious size: 35
+2019-04-16 15:06:21,698 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MultidimensionalCounter, methodName=org.apache.commons.math.util.MultidimensionalCounter{access$200(Lorg/apache/commons/math/util/MultidimensionalCounter;)[I 0.0, lineNumber=46, susp=0.7071067811865475]
+2019-04-16 15:06:21,880 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MultidimensionalCounter, methodName=org.apache.commons.math.util.MultidimensionalCounter{access$000(Lorg/apache/commons/math/util/MultidimensionalCounter;)I 0.0, lineNumber=46, susp=0.5]
+2019-04-16 15:06:21,969 INFO main - -any mod point created for suspicious Candidate [className=org.apache.commons.math.util.MultidimensionalCounter, methodName=org.apache.commons.math.util.MultidimensionalCounter{access$100(Lorg/apache/commons/math/util/MultidimensionalCounter;)I 0.0, lineNumber=46, susp=0.5]
+2019-04-16 15:06:21,971 INFO main - Total suspicious from FL: 35,  32
+2019-04-16 15:06:21,971 INFO main - Total ModPoint created: 32
+2019-04-16 15:06:21,972 INFO main - Creating program variant #1, [Variant id: 1, #gens: 32, #ops: 0, parent:-]
+2019-04-16 15:09:48,887 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-16 15:09:48,888 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-16 15:09:48,888 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-16 15:09:48,888 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-16 15:09:48,888 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-16 15:09:48,901 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-16 15:09:48,902 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-16 15:09:48,902 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-16 15:09:48,902 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-16 15:09:48,902 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-16 15:09:48,902 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-16 15:09:48,902 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-16 15:09:48,903 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-16 15:09:48,903 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-16 15:09:48,903 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan_gerling/astor/./outputMutation
+2019-04-16 15:09:48,904 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jkali
+2019-04-16 15:09:48,906 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-16 15:09:48,906 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-16 15:09:48,906 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-16 15:09:48,906 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-16 15:09:48,907 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /home/jan_gerling/astor/defect4j_tests/math_56/
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-16 15:09:48,917 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= local
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-16 15:09:48,918 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-16 15:09:48,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-16 15:09:48,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-16 15:09:48,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-16 15:09:48,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-16 15:09:48,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-16 15:09:48,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-16 15:09:48,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-16 15:09:48,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-16 15:09:48,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-16 15:09:48,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-16 15:09:48,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-16 15:09:48,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-16 15:09:48,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-16 15:09:48,933 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-16 15:09:48,935 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 222, el: CtLocalVariableImpl
+2019-04-16 15:09:48,946 INFO main - -->op: RemoveOp: `final int[] indices = new[...] ` ---> `-` at pos 1 of parent `{ 	if ((index < 0) || (in[...]`
+2019-04-16 15:09:50,636 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 224, el: CtLocalVariableImpl
+2019-04-16 15:09:50,637 INFO main - -->op: RemoveOp: `int count = 0 ` ---> `-` at pos 2 of parent `{ 	if ((index < 0) || (in[...]`
+2019-04-16 15:09:50,868 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 225, el: CtForImpl
+2019-04-16 15:09:50,869 INFO main - -->op: RemoveOp: `for (int i = 0; i < (last[...] ` ---> `-` at pos 3 of parent `{ 	if ((index < 0) || (in[...]`
+2019-04-16 15:10:12,354 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 226, el: CtLocalVariableImpl
+2019-04-16 15:10:12,354 INFO main - -->op: RemoveOp: `int idx = 0 ` ---> `-` at pos 0 of parent `{ 	int idx = 0; 	final in[...]`
+2019-04-16 15:10:12,533 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 227, el: CtLocalVariableImpl
+2019-04-16 15:10:12,534 INFO main - -->op: RemoveOp: `final int offset = uniCou[...] ` ---> `-` at pos 1 of parent `{ 	int idx = 0; 	final in[...]`
+2019-04-16 15:10:12,657 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 228, el: CtWhileImpl
+2019-04-16 15:10:12,657 INFO main - -->op: RemoveOp: `while (count <= index) { [...] ` ---> `-` at pos 2 of parent `{ 	int idx = 0; 	final in[...]`
+2019-04-16 15:10:34,103 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 229, el: CtOperatorAssignmentImpl
+2019-04-16 15:10:34,103 INFO main - -->op: RemoveOp: `count += offset ` ---> `-` at pos 0 of parent `{ 	count += offset; 	++id[...]`
+2019-04-16 15:12:34,301 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-16 15:12:34,302 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 230, el: CtUnaryOperatorImpl
+2019-04-16 15:12:34,303 INFO main - -->op: RemoveOp: `++idx ` ---> `-` at pos 1 of parent `{ 	count += offset; 	++id[...]`
+2019-04-16 15:12:57,128 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 232, el: CtUnaryOperatorImpl
+2019-04-16 15:12:57,129 INFO main - -->op: RemoveOp: `--idx ` ---> `-` at pos 3 of parent `{ 	int idx = 0; 	final in[...]`
+2019-04-16 15:13:20,230 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 233, el: CtOperatorAssignmentImpl
+2019-04-16 15:13:20,231 INFO main - -->op: RemoveOp: `count -= offset ` ---> `-` at pos 4 of parent `{ 	int idx = 0; 	final in[...]`
+2019-04-16 15:13:43,136 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 234, el: CtAssignmentImpl
+2019-04-16 15:13:43,136 INFO main - -->op: RemoveOp: `indices[i] = idx ` ---> `-` at pos 5 of parent `{ 	int idx = 0; 	final in[...]`
+2019-04-16 15:14:05,616 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 237, el: CtLocalVariableImpl
+2019-04-16 15:14:05,617 INFO main - -->op: RemoveOp: `int idx = 1 ` ---> `-` at pos 4 of parent `{ 	if ((index < 0) || (in[...]`
+2019-04-16 15:14:05,770 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 238, el: CtWhileImpl
+2019-04-16 15:14:05,771 INFO main - -->op: RemoveOp: `while (count < index) { 	[...] ` ---> `-` at pos 5 of parent `{ 	if ((index < 0) || (in[...]`
+2019-04-16 15:14:27,786 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 239, el: CtOperatorAssignmentImpl
+2019-04-16 15:14:27,787 INFO main - -->op: RemoveOp: `count += idx ` ---> `-` at pos 0 of parent `{ 	count += idx; 	++idx; [...]`
+2019-04-16 15:16:27,973 INFO main - The Process that runs JUnit test cases had problems: process hasn't exited
+2019-04-16 15:16:27,973 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 240, el: CtUnaryOperatorImpl
+2019-04-16 15:16:27,974 INFO main - -->op: RemoveOp: `++idx ` ---> `-` at pos 1 of parent `{ 	count += idx; 	++idx; [...]`
+2019-04-16 15:16:51,922 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 242, el: CtUnaryOperatorImpl
+2019-04-16 15:16:51,923 INFO main - -->op: RemoveOp: `--idx ` ---> `-` at pos 6 of parent `{ 	if ((index < 0) || (in[...]`
+2019-04-16 15:17:15,939 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 243, el: CtAssignmentImpl
+2019-04-16 15:17:15,940 INFO main - -->op: RemoveOp: `indices[last] = idx ` ---> `-` at pos 7 of parent `{ 	if ((index < 0) || (in[...]`
+2019-04-16 15:17:40,787 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 245, el: CtReturnImpl
+2019-04-16 15:17:40,788 INFO main - -->op: RemoveOp: `return indices ` ---> `-` at pos 8 of parent `{ 	if ((index < 0) || (in[...]`
+2019-04-16 15:17:40,887 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 281, el: CtReturnImpl
+2019-04-16 15:17:40,887 INFO main - -->op: RemoveOp: `return totalSize ` ---> `-` at pos 0 of parent `{ 	return totalSize; }`
+2019-04-16 15:17:40,987 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 93, el: CtForImpl
+2019-04-16 15:17:40,987 INFO main - -->op: RemoveOp: `for (int i = 0; i < (dime[...] ` ---> `-` at pos 0 of parent `{ 	for (int i = 0; i < (d[...]`
+2019-04-16 15:18:05,052 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 94, el: CtIfImpl
+2019-04-16 15:18:05,053 INFO main - -->op: ReplaceIfBooleanOp: `if ((counter[i]) != ((siz[...] ` ---> `if (true) { 	return true;[...]` at pos 0 of parent `{ 	if ((counter[i]) != (([...]`
+2019-04-16 15:18:29,877 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 94, el: CtIfImpl
+2019-04-16 15:18:29,877 INFO main - -->op: ReplaceIfBooleanOp: `if ((counter[i]) != ((siz[...] ` ---> `if (false) { 	return true[...]` at pos 0 of parent `{ 	if ((counter[i]) != (([...]`
+2019-04-16 15:18:53,399 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 94, el: CtIfImpl
+2019-04-16 15:18:53,402 INFO main - -->op: RemoveOp: `if ((counter[i]) != ((siz[...] ` ---> `-` at pos 0 of parent `{ 	if ((counter[i]) != (([...]`
+2019-04-16 15:19:16,771 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 95, el: CtReturnImpl
+2019-04-16 15:19:16,771 INFO main - -->op: RemoveOp: `return true ` ---> `-` at pos 0 of parent `{ 	return true; }`
+2019-04-16 15:19:41,162 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 106, el: CtForImpl
+2019-04-16 15:19:41,163 INFO main - -->op: RemoveOp: `for (int i = last; i >= 0[...] ` ---> `-` at pos 0 of parent `{ 	for (int i = last; i >[...]`
+2019-04-16 15:20:05,384 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 107, el: CtIfImpl
+2019-04-16 15:20:05,384 INFO main - -->op: ReplaceIfBooleanOp: `if ((counter[i]) == ((siz[...] ` ---> `if (true) { 	counter[i] =[...]` at pos 0 of parent `{ 	if ((counter[i]) == (([...]`
+2019-04-16 15:20:29,666 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 107, el: CtIfImpl
+2019-04-16 15:20:29,667 INFO main - -->op: ReplaceIfBooleanOp: `if ((counter[i]) == ((siz[...] ` ---> `if (false) { 	counter[i] [...]` at pos 0 of parent `{ 	if ((counter[i]) == (([...]`
+2019-04-16 15:20:54,358 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 107, el: CtIfImpl
+2019-04-16 15:20:54,358 INFO main - -->op: RemoveOp: `if ((counter[i]) == ((siz[...] ` ---> `-` at pos 0 of parent `{ 	if ((counter[i]) == (([...]`
+2019-04-16 15:21:18,860 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 110, el: CtUnaryOperatorImpl
+2019-04-16 15:21:18,860 INFO main - -->op: RemoveOp: `++(counter[i]) ` ---> `-` at pos 0 of parent `{ 	++(counter[i]); 	break[...]`
+2019-04-16 15:21:42,523 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 111, el: CtBreakImpl
+2019-04-16 15:21:42,524 INFO main - -->op: RemoveOp: `break ` ---> `-` at pos 1 of parent `{ 	++(counter[i]); 	break[...]`
+2019-04-16 15:22:06,306 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 115, el: CtReturnImpl
+2019-04-16 15:22:06,306 INFO main - -->op: RemoveOp: `return ++(count) ` ---> `-` at pos 1 of parent `{ 	for (int i = last; i >[...]`
+2019-04-16 15:22:06,409 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 196, el: CtReturnImpl
+2019-04-16 15:22:06,410 INFO main - -->op: RemoveOp: `return new org.apache.com[...] ` ---> `-` at pos 0 of parent `{ 	return new org.apache.[...]`
+2019-04-16 15:22:06,506 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 205, el: CtReturnImpl
+2019-04-16 15:22:06,506 INFO main - -->op: RemoveOp: `return dimension ` ---> `-` at pos 0 of parent `{ 	return dimension; }`
+2019-04-16 15:22:06,563 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 217, el: CtIfImpl
+2019-04-16 15:22:06,563 INFO main - -->op: ReplaceIfBooleanOp: `if ((index < 0) || (index[...] ` ---> `if (true) { 	throw new or[...]` at pos 0 of parent `{ 	if ((index < 0) || (in[...]`
+2019-04-16 15:22:30,850 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 217, el: CtIfImpl
+2019-04-16 15:22:30,850 INFO main - -->op: ReplaceIfBooleanOp: `if ((index < 0) || (index[...] ` ---> `if (false) { 	throw new o[...]` at pos 0 of parent `{ 	if ((index < 0) || (in[...]`
+2019-04-16 15:22:56,038 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 217, el: CtIfImpl
+2019-04-16 15:22:56,039 INFO main - -->op: RemoveOp: `if ((index < 0) || (index[...] ` ---> `-` at pos 0 of parent `{ 	if ((index < 0) || (in[...]`
+2019-04-16 15:23:19,902 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 272, el: CtReturnImpl
+2019-04-16 15:23:19,902 INFO main - -->op: RemoveOp: `return count + (c[last]) ` ---> `-` at pos 3 of parent `{ 	if ((c.length) != (dim[...]`
+2019-04-16 15:23:20,027 INFO main - mod_point ModificPoint=MultidimensionalCounter line: 147, el: CtReturnImpl
+2019-04-16 15:23:20,027 INFO main - -->op: RemoveOp: `return counter[dim] ` ---> `-` at pos 0 of parent `{ 	return counter[dim]; }`
+2019-04-16 15:23:20,103 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-16 15:23:20,104 INFO main - 
+successful_ing_attempts (0): []
+2019-04-16 15:23:20,104 INFO main - 
+failing_ing_attempts (38): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-16 15:23:20,104 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 1306.583
+[DONE]

@@ -1,0 +1,132 @@
+2019-04-12 18:41:18,553 INFO main - command line arguments: [-jvm4testexecution  /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin  -mode  jkali  -scope  local  -srcjavafolder  /src/java/  -srctestfolder  /src/test/  -binjavafolder  /target/classes/  -bintestfolder  /target/test-classes/  -location  /home/jan/astor/defect4j_tests/math_72/  -dependencies  ./examples/libs/junit-4.4.jar  -flthreshold  0.5  -maxtime  100  -stopfirst  true]
+2019-04-12 18:41:19,467 INFO main - -Executing Gzoltar classpath: /home/jan/astor/./outputMutation/AstorMain-math_72//bin//default from 231 classes with test cases
+2019-04-12 18:41:19,471 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar fault localization: min susp value parameter: 0.5
+2019-04-12 18:41:20,315 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - -gz-Adding classpath: [/home/jan/astor/./examples/libs/junit-4.4.jar, /home/jan/astor/./outputMutation/AstorMain-math_72//bin//default]
+2019-04-12 18:41:32,490 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Test failt: org.apache.commons.math.analysis.solvers.BrentSolverTest#testRootEndpoints
+2019-04-12 18:41:32,495 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar Test Result Total:2140, fails: 1, GZoltar suspicious 16669
+2019-04-12 18:41:32,509 INFO fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization - Gzoltar found: 12 with susp > 0.5, we consider: 12
+2019-04-12 18:41:32,517 INFO main - building model: /home/jan/astor/./outputMutation/AstorMain-math_72//src//default, compliance level: 8
+2019-04-12 18:41:42,183 INFO main - 
+---- Initial suspicious size: 12
+2019-04-12 18:41:42,290 INFO main - Total suspicious from FL: 12,  12
+2019-04-12 18:41:42,290 INFO main - Total ModPoint created: 12
+2019-04-12 18:41:42,290 INFO main - Creating program variant #1, [Variant id: 1, #gens: 12, #ops: 0, parent:-]
+2019-04-12 18:41:50,123 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 18:41:50,123 INFO fr.inria.astor.core.setup.ConfigurationProperties - ---Configuration properties:---Execution values
+2019-04-12 18:41:50,123 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:faultlocalization= fr.inria.astor.core.faultlocalization.GZoltarFaultLocalization
+2019-04-12 18:41:50,123 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:packageToInstrument= 
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:flthreshold= 0.5
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:numberExecutions= 1
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuiteresultfolder= evosuite
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoredTestCases= 
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:skipfaultlocalization= false
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxGeneration= 200
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxsuspcandidates= 1000
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax2= 960000
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:tmax1= 120000
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:workingDirectory= /home/jan/astor/./outputMutation
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mode= jkali
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:ignoreflakyinfl= false
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:uniqueoptogen= false
+2019-04-12 18:41:50,124 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pathToMVNRepository= 
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:timezone= America/Los_Angeles
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:applyCrossover= false
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clonegranularity= types
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:modificationpointnavigation= weight
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:clusteringfilename= clustering.csv
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:maxtime= 100
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:probagenmutation= false
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:alternativecompliancelevel= 4
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:version-location= ./math-version/
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:location= /home/jan/astor/defect4j_tests/math_72/
+2019-04-12 18:41:50,125 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:filterfaultlocalization= true
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:stopfirst= true
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4testexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bugId= 280
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:mutationrate= 1 
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:forceExecuteRegression= false
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:projectIdentifier= 
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_buggy_class= true
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoRunOnBuggyClass= true
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resetoperations= false
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:jvm4evosuitetestexecution= /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:seed= 0
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:testbystep= false
+2019-04-12 18:41:50,126 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srctestfolder= /src/test/
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:javacompliancelevel= 8
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:bintestfolder= /target/test-classes/
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:fitnessfunction= fr.inria.astor.core.loop.population.TestCaseFitnessFunction
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:commandTrunk= 50000
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:dependenciespath= ./examples/libs/junit-4.4.jar
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:multipointmodification= false
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:transformingredient= false
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:validation= process
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:scope= local
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitetimeout= 120
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evoDSE= false
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:elementsToMutate= 10
+2019-04-12 18:41:50,127 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:allpoints= false
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:resourcesfolder= /src/main/resources:/src/test/resources:
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:regressionforfaultlocalization= true
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:population= 1
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:saveall= false
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:pvariantfoldername= variant-
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:populationcontroller= fr.inria.astor.core.loop.population.TestCaseBasedFitnessPopulationController
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:savesolution= true
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:srcjavafolder= /src/java/
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evo_affected_by_op= true
+2019-04-12 18:41:50,128 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:binjavafolder= /target/classes/
+2019-04-12 18:41:50,129 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:reintroduce= original-parents
+2019-04-12 18:41:50,129 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+2019-04-12 18:41:50,129 INFO fr.inria.astor.core.setup.ConfigurationProperties - p:learningdir= 
+2019-04-12 18:41:50,129 INFO fr.inria.astor.core.setup.ConfigurationProperties - ----------------------------
+2019-04-12 18:41:50,130 INFO main - mod_point ModificPoint=BrentSolver line: 115, el: CtInvocationImpl
+2019-04-12 18:41:50,131 INFO main - -->op: RemoveOp: `setResult(yMin, 0) ` ---> `-` at pos 0 of parent `{ 	setResult(yMin, 0); 	r[...]`
+2019-04-12 18:41:50,839 INFO main - mod_point ModificPoint=BrentSolver line: 116, el: CtReturnImpl
+2019-04-12 18:41:50,839 INFO main - -->op: RemoveOp: `return result ` ---> `-` at pos 1 of parent `{ 	setResult(yMin, 0); 	r[...]`
+2019-04-12 18:41:51,169 INFO main - mod_point ModificPoint=BrentSolver line: 184, el: CtInvocationImpl
+2019-04-12 18:41:51,170 INFO main - -->op: RemoveOp: `setResult(max, 0) ` ---> `-` at pos 0 of parent `{ 	setResult(max, 0); 	re[...]`
+2019-04-12 18:41:51,482 INFO main - mod_point ModificPoint=BrentSolver line: 185, el: CtAssignmentImpl
+2019-04-12 18:41:51,482 INFO main - -->op: RemoveOp: `ret = max ` ---> `-` at pos 1 of parent `{ 	setResult(max, 0); 	re[...]`
+2019-04-12 18:41:51,739 INFO main - mod_point ModificPoint=BrentSolver line: 102, el: CtInvocationImpl
+2019-04-12 18:41:51,740 INFO main - -->op: RemoveOp: `clearResult() ` ---> `-` at pos 0 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:51,984 INFO main - mod_point ModificPoint=BrentSolver line: 103, el: CtInvocationImpl
+2019-04-12 18:41:51,984 INFO main - -->op: RemoveOp: `verifySequence(min, initi[...] ` ---> `-` at pos 1 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:52,233 INFO main - mod_point ModificPoint=BrentSolver line: 106, el: CtLocalVariableImpl
+2019-04-12 18:41:52,234 INFO main - -->op: RemoveOp: `double yInitial = f.value[...] ` ---> `-` at pos 2 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:52,295 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
+2019-04-12 18:41:52,296 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (true) { 	setResult(in[...]` at pos 3 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:52,524 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
+2019-04-12 18:41:52,524 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (false) { 	setResult(i[...]` at pos 3 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:52,856 INFO main - mod_point ModificPoint=BrentSolver line: 107, el: CtIfImpl
+2019-04-12 18:41:52,857 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(y[...] ` ---> `-` at pos 3 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:53,147 INFO main - mod_point ModificPoint=BrentSolver line: 113, el: CtLocalVariableImpl
+2019-04-12 18:41:53,147 INFO main - -->op: RemoveOp: `double yMin = f.value(min[...] ` ---> `-` at pos 4 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:53,194 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
+2019-04-12 18:41:53,195 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (true) { 	setResult(yM[...]` at pos 5 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:53,442 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
+2019-04-12 18:41:53,443 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (false) { 	setResult(y[...]` at pos 5 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:53,697 INFO main - mod_point ModificPoint=BrentSolver line: 114, el: CtIfImpl
+2019-04-12 18:41:53,697 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(y[...] ` ---> `-` at pos 5 of parent `{ 	clearResult(); 	verify[...]`
+2019-04-12 18:41:53,910 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
+2019-04-12 18:41:53,911 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (true) { 	setResult(mi[...]` at pos 0 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 18:41:54,157 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
+2019-04-12 18:41:54,158 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (false) { 	setResult(m[...]` at pos 0 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 18:41:54,405 INFO main - mod_point ModificPoint=BrentSolver line: 180, el: CtIfImpl
+2019-04-12 18:41:54,405 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(y[...] ` ---> `-` at pos 0 of parent `{ 	if ((java.lang.Math.ab[...]`
+2019-04-12 18:41:54,606 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
+2019-04-12 18:41:54,607 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (true) { 	setResult(ma[...]` at pos 0 of parent ` 	if ((java.lang.Math.abs[...]`
+2019-04-12 18:41:54,851 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
+2019-04-12 18:41:54,851 INFO main - -->op: ReplaceIfBooleanOp: `if ((java.lang.Math.abs(y[...] ` ---> `if (false) { 	setResult(m[...]` at pos 0 of parent ` 	if ((java.lang.Math.abs[...]`
+2019-04-12 18:41:55,085 INFO main - mod_point ModificPoint=BrentSolver line: 183, el: CtIfImpl
+2019-04-12 18:41:55,085 INFO main - -->op: RemoveOp: `if ((java.lang.Math.abs(y[...] ` ---> `-` at pos 0 of parent ` 	if ((java.lang.Math.abs[...]`
+2019-04-12 18:41:55,289 INFO main - 
+----SUMMARY_EXECUTION---
+2019-04-12 18:41:55,290 INFO main - 
+successful_ing_attempts (0): []
+2019-04-12 18:41:55,290 INFO main - 
+failing_ing_attempts (20): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2019-04-12 18:41:55,290 INFO fr.inria.main.evolution.AstorMain - Time Total(s): 36.728
+[DONE]
