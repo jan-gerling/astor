@@ -1,4 +1,0 @@
-[INFO] start run at 13-04-2019-16-53-43
-[[35mBUILD[39m] astor in /home/jan_gerling/astor/
-[[31mFAILURE[39m]: lang_25 was not build properly with a failing test!
-[[34mRUN[39m] lang_25-jmutrepair-local

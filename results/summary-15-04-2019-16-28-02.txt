@@ -1,8 +1,0 @@
-[INFO] start run at 15-04-2019-16-28-02
-[[35mBUILD[39m] astor in /home/jan_gerling/astor/
-[[34mInfo[39m]: math_51 failed to build with test error:
-Tests in error: 
-  testIssue631(org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest): illegal state: maximal count (3,624) exceeded: evaluations
-
-Tests run: 2922, Failures: 1, Errors: 1, Skipped: 1
-[[34mRUN[39m] math_51-jmutrepair-local
